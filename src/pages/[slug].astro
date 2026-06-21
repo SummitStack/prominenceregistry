@@ -1,0 +1,257 @@
+---
+import peaksData from '../data/peaks.json';
+
+export function getStaticPaths() {
+  return peaksData.map(peak => ({
+    params: { slug: peak.slug },
+    props: { peak }
+  }));
+}
+
+type Peak = (typeof peaksData)[number];
+
+const { peak } = Astro.props as { peak: Peak };
+
+const mountainRange = 'mountainRange' in peak ? peak.mountainRange : null;
+const season = 'season' in peak ? peak.season : null;
+const hazards = 'hazards' in peak && Array.isArray(peak.hazards) ? peak.hazards : [];
+const bestRoute = 'bestRoute' in peak ? peak.bestRoute : null;
+const permitRequired =
+  'permitRequired' in peak
+    ? peak.permitRequired
+    : peak.difficulty >= 7 || peak.elevation >= 14000;
+const dataSource = 'dataSource' in peak ? peak.dataSource : null;
+
+const routeOverview = bestRoute
+  ? `${peak.name} (${mountainRange ?? peak.state}) is most commonly climbed via the ${bestRoute}. Rated ${peak.difficulty}/10 difficulty, the standard ascent typically takes ${peak.days} day${peak.days > 1 ? 's' : ''}, covering roughly ${peak.distance} miles with ${peak.gain.toLocaleString()} feet of vertical gain. The summit stands at ${peak.elevation.toLocaleString()} ft with ${peak.prominence.toLocaleString()} ft of clean prominence — among the most topographically significant peaks in the lower 48.`
+  : `${peak.name} is a ${peak.difficulty}/10 difficulty ascent in ${peak.state}, typically completed in ${peak.days} day${peak.days > 1 ? 's' : ''}. The standard route covers approximately ${peak.distance} miles with ${peak.gain.toLocaleString()} feet of vertical gain. With ${peak.prominence.toLocaleString()} feet of prominence and a summit elevation of ${peak.elevation.toLocaleString()} feet, it ranks among the most topographically significant peaks in the lower 48.`;
+
+const technicalRequirements =
+  peak.difficulty >= 8
+    ? [
+        'Glacier travel and crevasse rescue proficiency',
+        'Technical rock or ice climbing experience',
+        'High-altitude acclimatization and weather judgment',
+      ]
+    : peak.difficulty >= 6
+      ? [
+          'Class 2–3 scrambling on exposed terrain',
+          'Early alpine starts for snow and weather windows',
+          'Off-trail navigation and route-finding skills',
+        ]
+      : [
+          'Trail navigation and map/GPS literacy',
+          'Fitness for sustained elevation gain',
+          'Weather monitoring and turnaround planning',
+        ];
+
+const requiredGear =
+  peak.difficulty >= 8
+    ? [
+        'Ice axe, crampons, and mountaineering boots',
+        'Helmet, harness, and glacier travel kit',
+        'Layered insulation and storm shell',
+        'GPS device and emergency communication',
+      ]
+    : peak.difficulty >= 6
+      ? [
+          'Trekking poles and sturdy approach footwear',
+          'Headlamp, first aid, and emergency bivy supplies',
+          'Sun protection and full layering system',
+          '3+ liters water capacity and high-calorie food',
+        ]
+      : [
+          'Broken-in hiking boots and moisture-wicking layers',
+          'Rain shell, hat, and sun protection',
+          'Navigation tools and emergency whistle',
+          'Adequate water and trail snacks',
+        ];
+
+const permitStatus = permitRequired ? 'Permit Required' : 'No Permit Needed';
+const permitFee = permitRequired ? '$15–82' : 'Free';
+const displaySeason =
+  season ??
+  (peak.difficulty >= 8
+    ? 'June-September'
+    : peak.state === 'NH' || peak.state === 'NC'
+      ? 'May-October'
+      : peak.state === 'AZ'
+        ? 'April-November'
+        : 'June-October');
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{peak.name} · Prominence Registry</title>
+  </head>
+  <body style="margin: 0; background: #0f1419; color: #f0f1f3; font-family: system-ui, -apple-system, sans-serif; line-height: 1.5;">
+    <main style="min-height: 100vh;">
+      <section
+        style="position: relative; height: 360px; background: linear-gradient(180deg, rgba(15, 20, 25, 0.25) 0%, rgba(15, 20, 25, 0.92) 100%), linear-gradient(135deg, #1a2530 0%, #2a3a4a 45%, #1a1f27 100%); display: flex; align-items: flex-end;"
+      >
+        <div
+          style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #2a3139; font-size: 13px; font-family: ui-monospace, monospace; letter-spacing: 0.12em; text-transform: uppercase;"
+          aria-hidden="true"
+        >
+          Peak Image Placeholder
+        </div>
+        <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px 40px;">
+          <a
+            href="/"
+            style="display: inline-block; margin-bottom: 16px; color: #64b5f6; font-size: 13px; text-decoration: none;"
+          >
+            ← Back to Registry
+          </a>
+          <h1 style="margin: 0 0 12px; font-size: clamp(36px, 6vw, 56px); font-weight: 700; letter-spacing: -0.02em;">
+            {peak.name}
+          </h1>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <span
+              style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #64b5f6; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
+            >
+              {peak.state}
+            </span>
+            {mountainRange && (
+              <span
+                style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #8b92a1; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
+              >
+                {mountainRange}
+              </span>
+            )}
+            {bestRoute && (
+              <span
+                style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #8b92a1; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
+              >
+                {bestRoute}
+              </span>
+            )}
+          </div>
+        </div>
+      </section>
+
+      <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px;">
+        <section
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px;"
+        >
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Elevation</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.elevation.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+          </div>
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #64b5f6; margin-bottom: 8px;">Prominence</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.prominence.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+          </div>
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Difficulty</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.difficulty}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;">/10</span></div>
+          </div>
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Days</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.days}</div>
+          </div>
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Distance</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.distance}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> mi</span></div>
+          </div>
+          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Gain</div>
+            <div style="font-size: 28px; font-weight: 700;">{peak.gain.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+          </div>
+        </section>
+
+        <div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: flex-start;">
+          <div style="flex: 1; min-width: 280px;">
+            <section style="margin-bottom: 32px;">
+              <h2 style="margin: 0 0 16px; font-size: 24px; font-weight: 700;">Route Overview</h2>
+              <p style="margin: 0 0 16px; color: #8b92a1; font-size: 16px; line-height: 1.7;">
+                {routeOverview}
+              </p>
+              {hazards.length > 0 && (
+                <div style="padding: 16px 20px; background: rgba(100, 181, 246, 0.06); border: 1px solid #2a3139; border-radius: 8px;">
+                  <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #64b5f6; margin-bottom: 10px;">Known Hazards</div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                    {hazards.map((hazard) => (
+                      <span
+                        style="display: inline-block; padding: 4px 10px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 999px; font-size: 13px; color: #f0f1f3;"
+                      >
+                        {hazard}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </section>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+              <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+                <h3 style="margin: 0 0 16px; font-size: 18px; font-weight: 700; color: #64b5f6;">Technical Requirements</h3>
+                <ul style="margin: 0; padding-left: 20px; color: #8b92a1; font-size: 14px;">
+                  {technicalRequirements.map((item) => (
+                    <li style="margin-bottom: 8px;">{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
+                <h3 style="margin: 0 0 16px; font-size: 18px; font-weight: 700; color: #64b5f6;">Required Gear</h3>
+                <ul style="margin: 0; padding-left: 20px; color: #8b92a1; font-size: 14px;">
+                  {requiredGear.map((item) => (
+                    <li style="margin-bottom: 8px;">{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {dataSource && (
+              <p style="margin: 24px 0 0; font-size: 12px; color: #8b92a1; font-family: ui-monospace, monospace;">
+                Data source: {dataSource}
+              </p>
+            )}
+          </div>
+
+          <aside
+            style="width: 100%; max-width: 320px; flex-shrink: 0; padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;"
+          >
+            <h3 style="margin: 0 0 20px; font-size: 18px; font-weight: 700;">Plan Expedition</h3>
+
+            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
+              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Permit Status</div>
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span
+                  style={`display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${permitRequired ? '#f59e0b' : '#10b981'};`}
+                ></span>
+                <span style="font-size: 15px; font-weight: 600;">{permitStatus}</span>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
+              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Fee</div>
+              <div style="font-size: 15px; font-weight: 600;">{permitFee}</div>
+            </div>
+
+            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
+              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Season</div>
+              <div style="font-size: 15px; font-weight: 600;">{displaySeason}</div>
+            </div>
+
+            {bestRoute && (
+              <div style="margin-bottom: 24px;">
+                <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Best Route</div>
+                <div style="font-size: 15px; font-weight: 600;">{bestRoute}</div>
+              </div>
+            )}
+
+            <a
+              href="/"
+              style="display: block; width: 100%; padding: 14px 0; background: #64b5f6; color: #0f1419; border-radius: 8px; font-size: 14px; font-weight: 700; text-align: center; text-decoration: none;"
+            >
+              Browse All Peaks
+            </a>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
