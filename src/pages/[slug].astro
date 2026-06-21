@@ -2,16 +2,26 @@
 import peaksData from '../data/peaks.json';
 import { getHeroImage } from '../utils/imageHelpers';
 
+export const prerender = true;
+
 export function getStaticPaths() {
-  return peaksData.map(peak => ({
-    params: { slug: peak.slug },
-    props: { peak }
-  }));
+  return peaksData
+    .filter((peak) => typeof peak.slug === 'string' && peak.slug.length > 0)
+    .map((peak) => ({
+      params: { slug: peak.slug },
+      props: { peak },
+    }));
 }
 
 type Peak = (typeof peaksData)[number];
 
-const { peak } = Astro.props as { peak: Peak };
+const slug = Astro.params.slug;
+const peakFromProps = (Astro.props as { peak?: Peak }).peak;
+const peak = peakFromProps ?? peaksData.find((entry) => entry.slug === slug);
+
+if (!slug || !peak) {
+  return new Response('Peak not found', { status: 404 });
+}
 
 const mountainRange = 'mountainRange' in peak ? peak.mountainRange : null;
 const season = 'season' in peak ? peak.season : null;

@@ -1,7 +1,12 @@
 ---
 import peaksData from '../data/peaks.json';
+import imageTracking from '../data/image-tracking.json';
 import { getCardImage } from '../utils/imageHelpers';
-const featuredPeaks = peaksData.slice(0, 3);
+
+const peaksWithImages = peaksData.filter((peak) =>
+  imageTracking.peaks.find((entry) => entry.slug === peak.slug)?.needs_image === 'no'
+);
+const featuredPeaks = peaksWithImages.slice(0, 3);
 ---
 
 <html lang="en">
@@ -21,14 +26,109 @@ const featuredPeaks = peaksData.slice(0, 3);
     .cta:hover { opacity: 0.9; }
     .section { padding: 64px 0; }
     h2 { font-size: 32px; margin-bottom: 32px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 64px; }
-    .card { padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px; text-decoration: none; color: inherit; overflow: hidden; }
-    .card:hover { border-color: #64b5f6; }
-    .card picture { display: block; margin: -24px -24px 16px; }
-    .card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
-    .card h3 { font-size: 20px; margin-bottom: 8px; }
-    .card-subtitle { color: #8b92a1; margin-bottom: 16px; }
-    .card-stats { display: flex; justify-content: space-between; font-size: 14px; }
+    .featured-section { padding: 64px 0; }
+    .featured-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .featured-header h2 { font-size: 32px; margin: 0; }
+    .carousel-controls { display: flex; gap: 12px; }
+    .carousel-btn {
+      width: 40px;
+      height: 40px;
+      background: #64b5f6;
+      color: #0f1419;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .carousel-btn:hover:not(:disabled) { opacity: 0.8; }
+    .carousel-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .carousel-container {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .featured-carousel { margin-bottom: 0; }
+    .carousel-viewport { display: grid; width: 100%; }
+    .carousel-slide {
+      grid-area: 1 / 1;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 500ms ease, visibility 500ms ease;
+      pointer-events: none;
+    }
+    .carousel-slide.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .featured-card {
+      background: #1a1f27;
+      border: 1px solid #2a3139;
+      border-radius: 12px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .featured-card:hover { border-color: #64b5f6; }
+    .card-image-container {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      background: #0b0f12;
+    }
+    .card-image-container picture { display: block; width: 100%; height: 100%; }
+    .card-image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .rank-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 20, 25, 0.85);
+      border: 1px solid #2a3139;
+      color: #64b5f6;
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 4px;
+    }
+    .card-content { padding: 20px; }
+    .card-content h3 { font-size: 18px; font-weight: 600; margin: 0 0 8px; color: #f0f1f3; }
+    .card-location { font-size: 12px; color: #8b92a1; margin: 0 0 16px; }
+    .card-stats {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0;
+      padding: 0 4px;
+    }
+    .stat-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      border-right: 1px solid #2a3139;
+    }
+    .stat-column:last-child { border-right: none; }
+    .stat-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #8b92a1;
+      margin-bottom: 6px;
+    }
+    .stat-value { font-size: 14px; font-weight: 600; color: #f0f1f3; }
     .table-wrapper { background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px; overflow: hidden; }
     .table-header { padding: 24px; border-bottom: 1px solid #2a3139; }
     .table-desc { color: #8b92a1; font-size: 14px; margin-top: 8px; }
@@ -56,22 +156,49 @@ const featuredPeaks = peaksData.slice(0, 3);
       <a href="#database" class="cta">Browse all peaks</a>
     </div>
 
-    <div class="section">
-      <h2>Featured Peaks</h2>
-      <div class="grid">
-        {featuredPeaks.map(peak => (
-          <a href={`/${peak.slug}`} class="card">
-            <Fragment set:html={getCardImage(peak.slug, { alt: peak.name })} />
-            <h3>{peak.name}</h3>
-            <p class="card-subtitle">{peak.state} • {peak.mountainRange}</p>
-            <div class="card-stats">
-              <span><span style="color: #8b92a1;">Elevation: </span>{peak.elevation.toLocaleString()} ft</span>
-              <span><span style="color: #8b92a1;">Prominence: </span>{peak.prominence.toLocaleString()} ft</span>
-            </div>
-          </a>
-        ))}
+    <section class="featured-section">
+      <div class="featured-header">
+        <h2>Featured Peaks</h2>
+        <div class="carousel-controls">
+          <button type="button" id="prev-peak" class="carousel-btn" aria-label="Previous peak" disabled>←</button>
+          <button type="button" id="next-peak" class="carousel-btn" aria-label="Next peak" disabled={featuredPeaks.length <= 1}>→</button>
+        </div>
       </div>
-    </div>
+      <div class="carousel-container" id="featuredCarousel">
+        <div class="carousel-viewport">
+          {featuredPeaks.map((peak, index) => (
+            <a
+              href={`/${peak.slug}`}
+              class:list={['featured-card', 'carousel-slide', { active: index === 0 }]}
+              data-index={index}
+            >
+              <div class="card-image-container">
+                <Fragment set:html={getCardImage(peak.slug, { alt: peak.name })} />
+                <div class="rank-badge">RANK #{String(index + 1).padStart(2, '0')}</div>
+              </div>
+              <div class="card-content">
+                <h3>{peak.name}</h3>
+                <p class="card-location">{peak.state} • {peak.mountainRange}</p>
+                <div class="card-stats">
+                  <div class="stat-column">
+                    <span class="stat-label">Elevation</span>
+                    <span class="stat-value">{peak.elevation.toLocaleString()} ft</span>
+                  </div>
+                  <div class="stat-column">
+                    <span class="stat-label">Range</span>
+                    <span class="stat-value">{peak.mountainRange}</span>
+                  </div>
+                  <div class="stat-column">
+                    <span class="stat-label">Prominence</span>
+                    <span class="stat-value">{peak.prominence.toLocaleString()} ft</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <div class="section" id="database">
       <div class="table-wrapper">
@@ -112,6 +239,86 @@ const featuredPeaks = peaksData.slice(0, 3);
       </div>
     </div>
   </div>
+
+  <script define:vars={{ featuredPeaksCount: featuredPeaks.length }}>
+    const carousel = document.getElementById('featuredCarousel');
+    const prevBtn = document.getElementById('prev-peak');
+    const nextBtn = document.getElementById('next-peak');
+
+    if (carousel && prevBtn && nextBtn && featuredPeaksCount > 0) {
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      let currentIndex = 0;
+      let autoPlayInterval = null;
+      let resumeTimeout = null;
+
+      function updateButtons() {
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === featuredPeaksCount - 1;
+      }
+
+      function showSlide(index) {
+        if (index < 0 || index >= featuredPeaksCount) return;
+        currentIndex = index;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === currentIndex));
+        updateButtons();
+      }
+
+      function nextSlide() {
+        if (currentIndex < featuredPeaksCount - 1) {
+          showSlide(currentIndex + 1);
+        }
+      }
+
+      function prevSlide() {
+        if (currentIndex > 0) {
+          showSlide(currentIndex - 1);
+        }
+      }
+
+      function stopAutoPlay() {
+        if (autoPlayInterval !== null) {
+          window.clearInterval(autoPlayInterval);
+          autoPlayInterval = null;
+        }
+      }
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        if (featuredPeaksCount <= 1) return;
+        autoPlayInterval = window.setInterval(() => {
+          if (currentIndex < featuredPeaksCount - 1) {
+            nextSlide();
+          } else {
+            stopAutoPlay();
+          }
+        }, 15000);
+      }
+
+      function pauseAndScheduleResume() {
+        stopAutoPlay();
+        if (resumeTimeout !== null) {
+          window.clearTimeout(resumeTimeout);
+        }
+        resumeTimeout = window.setTimeout(() => {
+          resumeTimeout = null;
+          startAutoPlay();
+        }, 5000);
+      }
+
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        pauseAndScheduleResume();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        pauseAndScheduleResume();
+      });
+
+      showSlide(0);
+      startAutoPlay();
+    }
+  </script>
 
   <script define:vars={{ peaksData }}>
     const CLASS_ORDER = { '1': 1, '2': 2, '2+': 2.5, '3': 3, '3+': 3.5, '4': 4, '4+': 4.5, '5': 5 };

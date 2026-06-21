@@ -1,0 +1,403 @@
+{
+  "peaks": [
+    {
+      "slug": "mount-rainier",
+      "name": "Mount Rainier",
+      "primary_image_url": "https://wildernessbeta.com/images/rainier-wonderland-trail.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-whitney",
+      "name": "Mount Whitney",
+      "primary_image_url": "https://wildernessbeta.com/images/mount-whitney.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-shasta",
+      "name": "Mount Shasta",
+      "primary_image_url": "https://live.staticflickr.com/762/32595301075_21e37950a7_b.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-elbert",
+      "name": "Mount Elbert",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Elbert_and_horses.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-baker",
+      "name": "Mount Baker",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Baker_from_Boulder_Creek.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "san-jacinto-peak",
+      "name": "San Jacinto Peak",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Santa_Rosa_and_San_Jacinto_Mountains_283.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "san-gorgonio-mountain",
+      "name": "San Gorgonio Mountain",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:San_Gorgonio.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "charleston-peak",
+      "name": "Charleston Peak",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Charleston_Peak_from_north_1.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-adams",
+      "name": "Mount Adams",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Majestic_Mount_Adams.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-olympus",
+      "name": "Mount Olympus",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Olympus-JP2.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-hood",
+      "name": "Mount Hood",
+      "primary_image_url": "https://www.flickr.com/photos/8459432@N03/5968752601/",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "wheeler-peak",
+      "name": "Wheeler Peak",
+      "primary_image_url": "https://wildernessbeta.com/images/wheeler-peak.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "glacier-peak",
+      "name": "Glacier Peak",
+      "primary_image_url": "https://www.flickr.com/photos/29750062@N06/5462964965/",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "white-mountain-peak",
+      "name": "White Mountain Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "gannett-peak",
+      "name": "Gannett Peak",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Sourdough_Glacier_with_Klondike_Peak.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "cloud-peak",
+      "name": "Cloud Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "grand-teton",
+      "name": "Grand Teton",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "sacajawea-peak",
+      "name": "Sacajawea Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "kings-peak",
+      "name": "Kings Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-graham",
+      "name": "Mount Graham",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-san-antonio",
+      "name": "Mount San Antonio",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "telescope-peak",
+      "name": "Telescope Peak",
+      "primary_image_url": "https://wildernessbeta.com/images/telescope-sunset-drive-hero.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-peale",
+      "name": "Mount Peale",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-washington",
+      "name": "Mount Washington",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-mitchell",
+      "name": "Mount Mitchell",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "humphreys-peak",
+      "name": "Humphreys Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "borah-peak",
+      "name": "Borah Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-jefferson-nv",
+      "name": "Mount Jefferson",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-ellen",
+      "name": "Mount Ellen",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "deseret-peak",
+      "name": "Deseret Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-jefferson-or",
+      "name": "Mount Jefferson",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "pilot-peak",
+      "name": "Pilot Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "crazy-peak",
+      "name": "Crazy Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mcdonald-peak",
+      "name": "McDonald Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "south-sister",
+      "name": "South Sister",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "sierra-blanca-peak",
+      "name": "Sierra Blanca Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "pikes-peak",
+      "name": "Pikes Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-nebo",
+      "name": "Mount Nebo",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "snowshoe-peak",
+      "name": "Snowshoe Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "north-schell-peak",
+      "name": "North Schell Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "star-peak",
+      "name": "Star Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "hayford-peak",
+      "name": "Hayford Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "diamond-peak",
+      "name": "Diamond Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "flat-top-mountain",
+      "name": "Flat Top Mountain",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-stuart",
+      "name": "Mount Stuart",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "blanca-peak",
+      "name": "Blanca Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-timpanogos",
+      "name": "Mount Timpanogos",
+      "primary_image_url": "https://wildernessbeta.com/images/timpanogos-meadow.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "ibapah-peak",
+      "name": "Ibapah Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "lassen-peak",
+      "name": "Lassen Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-cleveland",
+      "name": "Mount Cleveland",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "arc-dome",
+      "name": "Arc Dome",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "she-devil",
+      "name": "She Devil",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "abercrombie-mountain",
+      "name": "Abercrombie Mountain",
+      "primary_image_url": null,
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
+      "slug": "mount-lemmon",
+      "name": "Mount Lemmon",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "chiricahua-peak",
+      "name": "Chiricahua Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "mount-eddy",
+      "name": "Mount Eddy",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    },
+    {
+      "slug": "miller-peak",
+      "name": "Miller Peak",
+      "primary_image_url": null,
+      "has_raw_image": false,
+      "needs_image": "yes"
+    }
+  ]
+}

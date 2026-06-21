@@ -1,0 +1,89 @@
+---
+import peaksData from '../data/peaks.json';
+import imageManifest from '../data/imageManifest.json';
+
+export const prerender = true;
+
+const peaks = peaksData.map((peak) => ({
+  ...peak,
+  images: imageManifest[peak.slug as keyof typeof imageManifest],
+}));
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Review</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f1419; color: #f0f1f3; font-family: system-ui; padding: 20px; }
+    .container { max-width: 1400px; margin: 0 auto; }
+    h1 { margin-bottom: 20px; font-size: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .item { background: #1a1f27; border: 1px solid #2a3139; border-radius: 8px; overflow: hidden; cursor: pointer; }
+    .item:hover { border-color: #64b5f6; }
+    .image-wrapper { width: 100%; height: 140px; overflow: hidden; background: #0b0f12; }
+    .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+    .image-wrapper.missing { display: flex; align-items: center; justify-content: center; color: #5a6271; font-size: 12px; }
+    .label { padding: 12px; font-size: 12px; }
+    .name { font-weight: 600; color: #f0f1f3; margin-bottom: 4px; }
+    .slug { color: #8b92a1; font-size: 10px; }
+    .toast { position: fixed; bottom: 24px; right: 24px; padding: 10px 16px; background: #64b5f6; color: #0f1419; border-radius: 8px; font-size: 13px; font-weight: 600; opacity: 0; pointer-events: none; transition: opacity 0.2s; }
+    .toast.visible { opacity: 1; }
+    @media (max-width: 1024px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Review — {peaks.length} peaks</h1>
+    <p style="color: #8b92a1; margin-bottom: 20px;">Scroll and identify bad/ridiculous images. Click a card to copy its slug.</p>
+    <div class="grid">
+      {peaks.map((peak) => {
+        const heroImage = peak.images?.heroDesktop?.webp || peak.images?.heroDesktop?.jpg;
+        return (
+          <div class="item" data-slug={peak.slug} title={`${peak.slug} — Click to copy slug`}>
+            <div class:list={['image-wrapper', { missing: !heroImage }]}>
+              {heroImage ? (
+                <img src={heroImage} alt={peak.name} loading="lazy" />
+              ) : (
+                <span>NO IMAGE</span>
+              )}
+            </div>
+            <div class="label">
+              <div class="name">{peak.name}</div>
+              <div class="slug">{peak.slug}</div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </div>
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script>
+    const toast = document.getElementById('toast');
+
+    function showToast(message) {
+      if (!toast) return;
+      toast.textContent = message;
+      toast.classList.add('visible');
+      window.setTimeout(() => toast.classList.remove('visible'), 1500);
+    }
+
+    document.querySelectorAll('.item').forEach((item) => {
+      item.addEventListener('click', async () => {
+        const slug = item.getAttribute('data-slug');
+        if (!slug) return;
+        try {
+          await navigator.clipboard.writeText(slug);
+          showToast(`Copied: ${slug}`);
+        } catch {
+          showToast(`Slug: ${slug}`);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
