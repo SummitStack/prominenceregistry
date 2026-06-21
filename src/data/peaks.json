@@ -21,7 +21,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "3",
-    "permitSeason": "May-October (climbing permit required year-round above 10,000 ft)"
+    "permitSeason": "May-October (climbing permit required year-round above 10,000 ft)",
+    "heroImage": "/images/peaks/mount-rainier.jpg"
   },
   {
     "slug": "mount-whitney",
@@ -45,7 +46,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "1",
-    "permitSeason": "May-November (quota); year-round permit required"
+    "permitSeason": "May-November (quota); year-round permit required",
+    "heroImage": "/images/peaks/mount-whitney.jpg"
   },
   {
     "slug": "mount-shasta",
@@ -69,7 +71,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "Year-round (summit pass above 10,000 ft)"
+    "permitSeason": "Year-round (summit pass above 10,000 ft)",
+    "heroImage": "/images/peaks/mount-shasta.jpg"
   },
   {
     "slug": "mount-elbert",
@@ -91,7 +94,8 @@
     "bestRoute": "Northeast Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/mount-elbert.jpg"
   },
   {
     "slug": "mount-baker",
@@ -115,7 +119,8 @@
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "Wilderness permit for overnight only"
+    "permitSeason": "Wilderness permit for overnight only",
+    "heroImage": "/images/peaks/mount-baker.jpg"
   },
   {
     "slug": "san-jacinto-peak",
@@ -138,7 +143,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "1",
-    "permitSeason": "Year-round (wilderness permit required)"
+    "permitSeason": "Year-round (wilderness permit required)",
+    "heroImage": "/images/peaks/san-jacinto-peak.jpg"
   },
   {
     "slug": "san-gorgonio-mountain",
@@ -161,7 +167,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "1",
-    "permitSeason": "Year-round (wilderness permit required)"
+    "permitSeason": "Year-round (wilderness permit required)",
+    "heroImage": "/images/peaks/san-gorgonio-mountain.jpg"
   },
   {
     "slug": "charleston-peak",
@@ -184,7 +191,8 @@
     "bestRoute": "South Loop Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/charleston-peak.jpg"
   },
   {
     "slug": "mount-adams",
@@ -209,7 +217,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2",
-    "permitSeason": "July 1-October 31 (Cascade Volcano Pass above 7,000 ft)"
+    "permitSeason": "July 1-October 31 (Cascade Volcano Pass above 7,000 ft)",
+    "heroImage": "/images/peaks/mount-adams.jpg"
   },
   {
     "slug": "mount-olympus",
@@ -233,7 +242,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "4+",
-    "permitSeason": "Year-round (wilderness permit required)"
+    "permitSeason": "Year-round (wilderness permit required)",
+    "heroImage": "/images/peaks/mount-olympus.jpg"
   },
   {
     "slug": "mount-hood",
@@ -258,7 +268,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "3",
-    "permitSeason": "Year-round (climbing permit above 9,500 ft)"
+    "permitSeason": "Year-round (climbing permit above 9,500 ft)",
+    "heroImage": "/images/peaks/mount-hood.jpg"
   },
   {
     "slug": "wheeler-peak",
@@ -280,7 +291,8 @@
     "bestRoute": "Wheeler Peak Summit Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/wheeler-peak.jpg"
   },
   {
     "slug": "glacier-peak",
@@ -303,7 +315,8 @@
     "bestRoute": "Cool Glacier",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3"
+    "class": "3",
+    "heroImage": "/images/peaks/glacier-peak.jpg"
   },
   {
     "slug": "white-mountain-peak",
@@ -325,7 +338,8 @@
     "bestRoute": "White Mountain Peak Road Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/white-mountain-peak.jpg"
   },
   {
     "slug": "gannett-peak",
@@ -348,7 +362,8 @@
     "bestRoute": "Glacier Trail — Gooseneck Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3+"
+    "class": "3+",
+    "heroImage": "/images/peaks/gannett-peak.jpg"
   },
   {
     "slug": "cloud-peak",
@@ -372,7 +387,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "Year-round (free wilderness registration at trailhead)"
+    "permitSeason": "Year-round (free wilderness registration at trailhead)",
+    "heroImage": "/images/peaks/cloud-peak.jpg"
   },
   {
     "slug": "grand-teton",
@@ -396,7 +412,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "4+",
-    "permitSeason": "Year-round (backcountry permit for overnight)"
+    "permitSeason": "Year-round (backcountry permit for overnight)",
+    "heroImage": "/images/peaks/grand-teton.jpg"
   },
   {
     "slug": "sacajawea-peak",
@@ -419,7 +436,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "Year-round (Eagle Cap Wilderness permit)"
+    "permitSeason": "Year-round (Eagle Cap Wilderness permit)",
+    "heroImage": "/images/peaks/sacajawea-peak.jpg"
   },
   {
     "slug": "kings-peak",
@@ -442,7 +460,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2",
-    "permitSeason": "Overnight only (free wilderness permit at trailhead)"
+    "permitSeason": "Overnight only (free wilderness permit at trailhead)",
+    "heroImage": "/images/peaks/kings-peak.jpg"
   },
   {
     "slug": "mount-graham",
@@ -465,7 +484,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "1",
-    "permitSeason": "Summit closed; special use only"
+    "permitSeason": "Summit closed; special use only",
+    "heroImage": "/images/peaks/mount-graham.jpg"
   },
   {
     "slug": "mount-san-antonio",
@@ -488,7 +508,8 @@
     "bestRoute": "Devil's Backbone",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-san-antonio.jpg"
   },
   {
     "slug": "telescope-peak",
@@ -511,7 +532,8 @@
     "bestRoute": "Telescope Peak Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/telescope-peak.jpg"
   },
   {
     "slug": "mount-peale",
@@ -533,7 +555,8 @@
     "bestRoute": "La Sal Pass — West Gully",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-peale.jpg"
   },
   {
     "slug": "mount-washington",
@@ -557,7 +580,8 @@
     "bestRoute": "Tuckerman Ravine Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-washington.jpg"
   },
   {
     "slug": "mount-mitchell",
@@ -579,7 +603,8 @@
     "bestRoute": "Mount Mitchell Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/mount-mitchell.jpg"
   },
   {
     "slug": "humphreys-peak",
@@ -601,7 +626,8 @@
     "bestRoute": "Humphreys Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/humphreys-peak.jpg"
   },
   {
     "slug": "borah-peak",
@@ -624,7 +650,8 @@
     "bestRoute": "Southwest Ridge (Chicken-out Ridge)",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "4"
+    "class": "4",
+    "heroImage": "/images/peaks/borah-peak.jpg"
   },
   {
     "slug": "mount-jefferson-nv",
@@ -647,7 +674,8 @@
     "bestRoute": "Meadow Canyon — Jefferson Summit Road",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-jefferson-nv.jpg"
   },
   {
     "slug": "mount-ellen",
@@ -669,7 +697,8 @@
     "bestRoute": "Mount Ellen Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-ellen.jpg"
   },
   {
     "slug": "deseret-peak",
@@ -691,7 +720,8 @@
     "bestRoute": "Mill Fork Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/deseret-peak.jpg"
   },
   {
     "slug": "mount-jefferson-or",
@@ -715,7 +745,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "3+",
-    "permitSeason": "May 15-November 30 (wilderness permit for overnight)"
+    "permitSeason": "May 15-November 30 (wilderness permit for overnight)",
+    "heroImage": "/images/peaks/mount-jefferson-or.jpg"
   },
   {
     "slug": "pilot-peak",
@@ -738,7 +769,8 @@
     "bestRoute": "Miner's Canyon Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2+"
+    "class": "2+",
+    "heroImage": "/images/peaks/pilot-peak.jpg"
   },
   {
     "slug": "crazy-peak",
@@ -761,7 +793,8 @@
     "bestRoute": "Big Timber Canyon — West Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3+"
+    "class": "3+",
+    "heroImage": "/images/peaks/crazy-peak.jpg"
   },
   {
     "slug": "mcdonald-peak",
@@ -785,7 +818,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "3+",
-    "permitSeason": "Year-round (Confederated Salish & Kootenai tribal permit)"
+    "permitSeason": "Year-round (Confederated Salish & Kootenai tribal permit)",
+    "heroImage": "/images/peaks/mcdonald-peak.jpg"
   },
   {
     "slug": "south-sister",
@@ -809,7 +843,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "June 15-October 15 (climbing permit required)"
+    "permitSeason": "June 15-October 15 (climbing permit required)",
+    "heroImage": "/images/peaks/south-sister.jpg"
   },
   {
     "slug": "sierra-blanca-peak",
@@ -832,7 +867,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2",
-    "permitSeason": "Year-round (Mescalero Apache tribal permit)"
+    "permitSeason": "Year-round (Mescalero Apache tribal permit)",
+    "heroImage": "/images/peaks/sierra-blanca-peak.jpg"
   },
   {
     "slug": "pikes-peak",
@@ -854,7 +890,8 @@
     "bestRoute": "Barr Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/pikes-peak.jpg"
   },
   {
     "slug": "mount-nebo",
@@ -876,7 +913,8 @@
     "bestRoute": "Nebo Loop Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-nebo.jpg"
   },
   {
     "slug": "snowshoe-peak",
@@ -899,7 +937,8 @@
     "bestRoute": "Northeast Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "4"
+    "class": "4",
+    "heroImage": "/images/peaks/snowshoe-peak.jpg"
   },
   {
     "slug": "north-schell-peak",
@@ -922,7 +961,8 @@
     "bestRoute": "Timber Creek Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/north-schell-peak.jpg"
   },
   {
     "slug": "star-peak",
@@ -944,7 +984,8 @@
     "bestRoute": "Star Peak Road — West Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/star-peak.jpg"
   },
   {
     "slug": "hayford-peak",
@@ -990,7 +1031,8 @@
     "bestRoute": "Little Fish Lake Creek — Southwest Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/diamond-peak.jpg"
   },
   {
     "slug": "flat-top-mountain",
@@ -1014,7 +1056,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "2+",
-    "permitSeason": "Year-round (private landowner permission required)"
+    "permitSeason": "Year-round (private landowner permission required)",
+    "heroImage": "/images/peaks/flat-top-mountain.jpg"
   },
   {
     "slug": "mount-stuart",
@@ -1037,7 +1080,8 @@
     "bestRoute": "Cascadian Couloir",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3"
+    "class": "3",
+    "heroImage": "/images/peaks/mount-stuart.jpg"
   },
   {
     "slug": "blanca-peak",
@@ -1060,7 +1104,8 @@
     "bestRoute": "Northwest Ridge via Lake Como",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3+"
+    "class": "3+",
+    "heroImage": "/images/peaks/blanca-peak.jpg"
   },
   {
     "slug": "mount-timpanogos",
@@ -1083,7 +1128,8 @@
     "bestRoute": "Aspen Grove Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/mount-timpanogos.jpg"
   },
   {
     "slug": "ibapah-peak",
@@ -1106,7 +1152,8 @@
     "bestRoute": "Granite Creek — East Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/ibapah-peak.jpg"
   },
   {
     "slug": "lassen-peak",
@@ -1129,7 +1176,8 @@
     "bestRoute": "Lassen Peak Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/lassen-peak.jpg"
   },
   {
     "slug": "mount-cleveland",
@@ -1154,7 +1202,8 @@
     "permitRequired": true,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "class": "3+",
-    "permitSeason": "Year-round (Glacier NP backcountry permit)"
+    "permitSeason": "Year-round (Glacier NP backcountry permit)",
+    "heroImage": "/images/peaks/mount-cleveland.jpg"
   },
   {
     "slug": "arc-dome",
@@ -1177,7 +1226,8 @@
     "bestRoute": "Toiyabe Crest Trail from Columbine Campground",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/arc-dome.jpg"
   },
   {
     "slug": "she-devil",
@@ -1200,7 +1250,8 @@
     "bestRoute": "Goat Pass — High Route (East Ridge)",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "3+"
+    "class": "3+",
+    "heroImage": "/images/peaks/she-devil.jpg"
   },
   {
     "slug": "abercrombie-mountain",
@@ -1223,7 +1274,8 @@
     "bestRoute": "Marble Creek — West Ridge",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/abercrombie-mountain.jpg"
   },
   {
     "slug": "mount-lemmon",
@@ -1245,7 +1297,8 @@
     "bestRoute": "Aspen Trail / Mount Lemmon Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/mount-lemmon.jpg"
   },
   {
     "slug": "chiricahua-peak",
@@ -1267,7 +1320,8 @@
     "bestRoute": "Greenhouse Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/chiricahua-peak.jpg"
   },
   {
     "slug": "mount-eddy",
@@ -1290,7 +1344,8 @@
     "bestRoute": "Deadfall Lakes Trail",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "1"
+    "class": "1",
+    "heroImage": "/images/peaks/mount-eddy.jpg"
   },
   {
     "slug": "miller-peak",
@@ -1313,6 +1368,7 @@
     "bestRoute": "Crest Trail from Montezuma Pass",
     "permitRequired": false,
     "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "class": "2"
+    "class": "2",
+    "heroImage": "/images/peaks/miller-peak.jpg"
   }
 ]

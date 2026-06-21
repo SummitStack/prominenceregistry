@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch-images": "node scripts/fetch-hero-images.js",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "astro": "^6.4.7"
@@ -17,6 +19,7 @@
   "devDependencies": {
     "autoprefixer": "^10.5.0",
     "postcss": "^8.5.15",
+    "sharp": "^0.35.2",
     "tailwindcss": "^4.3.1"
   }
 }

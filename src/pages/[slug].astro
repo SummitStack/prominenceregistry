@@ -1,5 +1,6 @@
 ---
 import peaksData from '../data/peaks.json';
+import { getHeroImage } from '../utils/imageHelpers';
 
 export function getStaticPaths() {
   return peaksData.map(peak => ({
@@ -85,18 +86,17 @@ const displaySeason =
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{peak.name} · Prominence Registry</title>
+    <style>
+      main > picture { display: block; height: 360px; overflow: hidden; }
+      main > picture img { width: 100%; height: 100%; object-fit: cover; }
+    </style>
   </head>
   <body style="margin: 0; background: #0f1419; color: #f0f1f3; font-family: system-ui, -apple-system, sans-serif; line-height: 1.5;">
     <main style="min-height: 100vh;">
+      <Fragment set:html={getHeroImage(peak.slug, { alt: `${peak.name} summit` })} />
       <section
-        style="position: relative; height: 360px; background: linear-gradient(180deg, rgba(15, 20, 25, 0.25) 0%, rgba(15, 20, 25, 0.92) 100%), linear-gradient(135deg, #1a2530 0%, #2a3a4a 45%, #1a1f27 100%); display: flex; align-items: flex-end;"
+        style="position: relative; margin-top: -360px; height: 360px; background: linear-gradient(180deg, rgba(15, 20, 25, 0.25) 0%, rgba(15, 20, 25, 0.92) 100%); display: flex; align-items: flex-end;"
       >
-        <div
-          style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #2a3139; font-size: 13px; font-family: ui-monospace, monospace; letter-spacing: 0.12em; text-transform: uppercase;"
-          aria-hidden="true"
-        >
-          Peak Image Placeholder
-        </div>
         <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px 40px;">
           <a
             href="/"

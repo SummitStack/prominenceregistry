@@ -1,0 +1,1010 @@
+{
+  "mount-rainier": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-rainier-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-rainier-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-rainier-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-rainier-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-rainier-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-rainier-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-rainier-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-rainier-card-300.jpg"
+    }
+  },
+  "mount-whitney": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-whitney-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-whitney-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-whitney-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-whitney-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-whitney-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-whitney-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-whitney-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-whitney-card-300.jpg"
+    }
+  },
+  "mount-shasta": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-shasta-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-shasta-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-shasta-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-shasta-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-shasta-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-shasta-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-shasta-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-shasta-card-300.jpg"
+    }
+  },
+  "mount-elbert": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-elbert-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-elbert-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-elbert-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-elbert-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-elbert-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-elbert-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-elbert-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-elbert-card-300.jpg"
+    }
+  },
+  "mount-baker": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-baker-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-baker-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-baker-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-baker-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-baker-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-baker-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-baker-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-baker-card-300.jpg"
+    }
+  },
+  "san-jacinto-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/san-jacinto-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/san-jacinto-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/san-jacinto-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/san-jacinto-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/san-jacinto-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/san-jacinto-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/san-jacinto-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/san-jacinto-peak-card-300.jpg"
+    }
+  },
+  "san-gorgonio-mountain": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/san-gorgonio-mountain-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/san-gorgonio-mountain-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/san-gorgonio-mountain-hero-768.webp",
+      "jpg": "/images/peaks/optimized/san-gorgonio-mountain-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/san-gorgonio-mountain-card-400.webp",
+      "jpg": "/images/peaks/optimized/san-gorgonio-mountain-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/san-gorgonio-mountain-card-300.webp",
+      "jpg": "/images/peaks/optimized/san-gorgonio-mountain-card-300.jpg"
+    }
+  },
+  "charleston-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/charleston-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/charleston-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/charleston-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/charleston-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/charleston-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/charleston-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/charleston-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/charleston-peak-card-300.jpg"
+    }
+  },
+  "mount-adams": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-adams-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-adams-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-adams-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-adams-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-adams-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-adams-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-adams-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-adams-card-300.jpg"
+    }
+  },
+  "mount-olympus": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-olympus-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-olympus-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-olympus-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-olympus-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-olympus-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-olympus-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-olympus-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-olympus-card-300.jpg"
+    }
+  },
+  "mount-hood": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-hood-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-hood-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-hood-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-hood-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-hood-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-hood-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-hood-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-hood-card-300.jpg"
+    }
+  },
+  "wheeler-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/wheeler-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/wheeler-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/wheeler-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/wheeler-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/wheeler-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/wheeler-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/wheeler-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/wheeler-peak-card-300.jpg"
+    }
+  },
+  "glacier-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/glacier-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/glacier-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/glacier-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/glacier-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/glacier-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/glacier-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/glacier-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/glacier-peak-card-300.jpg"
+    }
+  },
+  "white-mountain-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/white-mountain-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/white-mountain-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/white-mountain-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/white-mountain-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/white-mountain-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/white-mountain-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/white-mountain-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/white-mountain-peak-card-300.jpg"
+    }
+  },
+  "gannett-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/gannett-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/gannett-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/gannett-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/gannett-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-card-300.jpg"
+    }
+  },
+  "cloud-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/cloud-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/cloud-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/cloud-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/cloud-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-card-300.jpg"
+    }
+  },
+  "grand-teton": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/grand-teton-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/grand-teton-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/grand-teton-hero-768.webp",
+      "jpg": "/images/peaks/optimized/grand-teton-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/grand-teton-card-400.webp",
+      "jpg": "/images/peaks/optimized/grand-teton-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/grand-teton-card-300.webp",
+      "jpg": "/images/peaks/optimized/grand-teton-card-300.jpg"
+    }
+  },
+  "sacajawea-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/sacajawea-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/sacajawea-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/sacajawea-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/sacajawea-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-card-300.jpg"
+    }
+  },
+  "kings-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/kings-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/kings-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/kings-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/kings-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/kings-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/kings-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/kings-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/kings-peak-card-300.jpg"
+    }
+  },
+  "mount-graham": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-graham-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-graham-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-graham-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-graham-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-card-300.jpg"
+    }
+  },
+  "mount-san-antonio": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-san-antonio-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-san-antonio-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-san-antonio-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-san-antonio-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-san-antonio-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-san-antonio-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-san-antonio-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-san-antonio-card-300.jpg"
+    }
+  },
+  "telescope-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/telescope-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/telescope-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/telescope-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/telescope-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/telescope-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/telescope-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/telescope-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/telescope-peak-card-300.jpg"
+    }
+  },
+  "mount-peale": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-peale-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-peale-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-peale-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-peale-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-peale-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-peale-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-peale-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-peale-card-300.jpg"
+    }
+  },
+  "mount-washington": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-washington-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-washington-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-washington-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-washington-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-washington-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-washington-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-washington-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-washington-card-300.jpg"
+    }
+  },
+  "mount-mitchell": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-mitchell-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-mitchell-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-mitchell-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-mitchell-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-mitchell-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-mitchell-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-mitchell-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-mitchell-card-300.jpg"
+    }
+  },
+  "humphreys-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/humphreys-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/humphreys-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/humphreys-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/humphreys-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/humphreys-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/humphreys-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/humphreys-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/humphreys-peak-card-300.jpg"
+    }
+  },
+  "borah-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/borah-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/borah-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/borah-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/borah-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/borah-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/borah-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/borah-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/borah-peak-card-300.jpg"
+    }
+  },
+  "mount-jefferson-nv": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-jefferson-nv-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-nv-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-jefferson-nv-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-nv-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-jefferson-nv-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-nv-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-jefferson-nv-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-nv-card-300.jpg"
+    }
+  },
+  "mount-ellen": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-ellen-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-ellen-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-ellen-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-ellen-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-ellen-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-ellen-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-ellen-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-ellen-card-300.jpg"
+    }
+  },
+  "deseret-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/deseret-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/deseret-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/deseret-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/deseret-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/deseret-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/deseret-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/deseret-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/deseret-peak-card-300.jpg"
+    }
+  },
+  "mount-jefferson-or": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-jefferson-or-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-or-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-jefferson-or-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-or-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-jefferson-or-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-or-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-jefferson-or-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-jefferson-or-card-300.jpg"
+    }
+  },
+  "pilot-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/pilot-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/pilot-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/pilot-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/pilot-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/pilot-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/pilot-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/pilot-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/pilot-peak-card-300.jpg"
+    }
+  },
+  "crazy-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/crazy-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/crazy-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/crazy-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/crazy-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/crazy-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/crazy-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/crazy-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/crazy-peak-card-300.jpg"
+    }
+  },
+  "mcdonald-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mcdonald-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mcdonald-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mcdonald-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mcdonald-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mcdonald-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/mcdonald-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mcdonald-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/mcdonald-peak-card-300.jpg"
+    }
+  },
+  "south-sister": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/south-sister-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/south-sister-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/south-sister-hero-768.webp",
+      "jpg": "/images/peaks/optimized/south-sister-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/south-sister-card-400.webp",
+      "jpg": "/images/peaks/optimized/south-sister-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/south-sister-card-300.webp",
+      "jpg": "/images/peaks/optimized/south-sister-card-300.jpg"
+    }
+  },
+  "sierra-blanca-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/sierra-blanca-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/sierra-blanca-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/sierra-blanca-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/sierra-blanca-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/sierra-blanca-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/sierra-blanca-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/sierra-blanca-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/sierra-blanca-peak-card-300.jpg"
+    }
+  },
+  "pikes-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/pikes-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/pikes-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/pikes-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/pikes-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/pikes-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/pikes-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/pikes-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/pikes-peak-card-300.jpg"
+    }
+  },
+  "mount-nebo": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-nebo-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-nebo-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-nebo-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-nebo-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-card-300.jpg"
+    }
+  },
+  "snowshoe-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/snowshoe-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/snowshoe-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/snowshoe-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/snowshoe-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/snowshoe-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/snowshoe-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/snowshoe-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/snowshoe-peak-card-300.jpg"
+    }
+  },
+  "north-schell-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/north-schell-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/north-schell-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/north-schell-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/north-schell-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/north-schell-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/north-schell-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/north-schell-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/north-schell-peak-card-300.jpg"
+    }
+  },
+  "star-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/star-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/star-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/star-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/star-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/star-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/star-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/star-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/star-peak-card-300.jpg"
+    }
+  },
+  "diamond-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/diamond-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/diamond-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/diamond-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/diamond-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/diamond-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/diamond-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/diamond-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/diamond-peak-card-300.jpg"
+    }
+  },
+  "flat-top-mountain": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/flat-top-mountain-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/flat-top-mountain-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/flat-top-mountain-hero-768.webp",
+      "jpg": "/images/peaks/optimized/flat-top-mountain-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/flat-top-mountain-card-400.webp",
+      "jpg": "/images/peaks/optimized/flat-top-mountain-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/flat-top-mountain-card-300.webp",
+      "jpg": "/images/peaks/optimized/flat-top-mountain-card-300.jpg"
+    }
+  },
+  "mount-stuart": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-stuart-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-stuart-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-stuart-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-stuart-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-stuart-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-stuart-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-stuart-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-stuart-card-300.jpg"
+    }
+  },
+  "blanca-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/blanca-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/blanca-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/blanca-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/blanca-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/blanca-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/blanca-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/blanca-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/blanca-peak-card-300.jpg"
+    }
+  },
+  "mount-timpanogos": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-timpanogos-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-timpanogos-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-timpanogos-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-timpanogos-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-timpanogos-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-timpanogos-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-timpanogos-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-timpanogos-card-300.jpg"
+    }
+  },
+  "ibapah-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/ibapah-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/ibapah-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/ibapah-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/ibapah-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/ibapah-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/ibapah-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/ibapah-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/ibapah-peak-card-300.jpg"
+    }
+  },
+  "lassen-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/lassen-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/lassen-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/lassen-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/lassen-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/lassen-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/lassen-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/lassen-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/lassen-peak-card-300.jpg"
+    }
+  },
+  "mount-cleveland": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-cleveland-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-cleveland-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-cleveland-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-cleveland-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-cleveland-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-cleveland-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-cleveland-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-cleveland-card-300.jpg"
+    }
+  },
+  "arc-dome": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/arc-dome-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/arc-dome-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/arc-dome-hero-768.webp",
+      "jpg": "/images/peaks/optimized/arc-dome-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/arc-dome-card-400.webp",
+      "jpg": "/images/peaks/optimized/arc-dome-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/arc-dome-card-300.webp",
+      "jpg": "/images/peaks/optimized/arc-dome-card-300.jpg"
+    }
+  },
+  "she-devil": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/she-devil-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/she-devil-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/she-devil-hero-768.webp",
+      "jpg": "/images/peaks/optimized/she-devil-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/she-devil-card-400.webp",
+      "jpg": "/images/peaks/optimized/she-devil-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/she-devil-card-300.webp",
+      "jpg": "/images/peaks/optimized/she-devil-card-300.jpg"
+    }
+  },
+  "abercrombie-mountain": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/abercrombie-mountain-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/abercrombie-mountain-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/abercrombie-mountain-hero-768.webp",
+      "jpg": "/images/peaks/optimized/abercrombie-mountain-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/abercrombie-mountain-card-400.webp",
+      "jpg": "/images/peaks/optimized/abercrombie-mountain-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/abercrombie-mountain-card-300.webp",
+      "jpg": "/images/peaks/optimized/abercrombie-mountain-card-300.jpg"
+    }
+  },
+  "mount-lemmon": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-lemmon-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-lemmon-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-lemmon-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-lemmon-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-lemmon-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-lemmon-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-lemmon-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-lemmon-card-300.jpg"
+    }
+  },
+  "chiricahua-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/chiricahua-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/chiricahua-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/chiricahua-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/chiricahua-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/chiricahua-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/chiricahua-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/chiricahua-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/chiricahua-peak-card-300.jpg"
+    }
+  },
+  "mount-eddy": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-eddy-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-eddy-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-eddy-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-eddy-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-eddy-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-eddy-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-eddy-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-eddy-card-300.jpg"
+    }
+  },
+  "miller-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/miller-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/miller-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/miller-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/miller-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/miller-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/miller-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/miller-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/miller-peak-card-300.jpg"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 import peaksData from '../data/peaks.json';
+import { getCardImage } from '../utils/imageHelpers';
 const featuredPeaks = peaksData.slice(0, 3);
-const peaksJson = JSON.stringify(peaksData);
 ---
 
 <html lang="en">
@@ -22,8 +22,10 @@ const peaksJson = JSON.stringify(peaksData);
     .section { padding: 64px 0; }
     h2 { font-size: 32px; margin-bottom: 32px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-bottom: 64px; }
-    .card { padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px; text-decoration: none; color: inherit; }
+    .card { padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px; text-decoration: none; color: inherit; overflow: hidden; }
     .card:hover { border-color: #64b5f6; }
+    .card picture { display: block; margin: -24px -24px 16px; }
+    .card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; }
     .card h3 { font-size: 20px; margin-bottom: 8px; }
     .card-subtitle { color: #8b92a1; margin-bottom: 16px; }
     .card-stats { display: flex; justify-content: space-between; font-size: 14px; }
@@ -31,17 +33,18 @@ const peaksJson = JSON.stringify(peaksData);
     .table-header { padding: 24px; border-bottom: 1px solid #2a3139; }
     .table-desc { color: #8b92a1; font-size: 14px; margin-top: 8px; }
     .table-overflow { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; }
-    th { padding: 16px; text-align: left; font-size: 11px; text-transform: uppercase; color: #8b92a1; border-bottom: 1px solid #2a3139; font-weight: 600; cursor: pointer; user-select: none; }
-    th:hover { color: #64b5f6; }
-    td { padding: 16px; border-bottom: 1px solid #2a3139; }
+    table { width: 100%; border-collapse: collapse; min-width: 960px; }
+    th { padding: 16px; text-align: left; font-size: 11px; text-transform: uppercase; color: #8b92a1; border-bottom: 1px solid #2a3139; font-weight: 600; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover, th.active { color: #64b5f6; }
+    td { padding: 16px; border-bottom: 1px solid #2a3139; font-size: 14px; }
     tr:hover { background: rgba(100, 181, 246, 0.05); }
     a { color: #64b5f6; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .sort-indicator { margin-left: 4px; }
+    .sort-indicator { margin-left: 4px; color: #64b5f6; font-size: 10px; }
     .difficulty-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #2a3139; font-size: 11px; font-weight: 700; }
     .permit-required { color: #f97316; font-size: 10px; font-weight: 700; text-transform: uppercase; }
     .permit-no { color: #5a6271; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+    .range-cell { color: #8b92a1; font-size: 13px; }
   </style>
 </head>
 <body>
@@ -58,7 +61,7 @@ const peaksJson = JSON.stringify(peaksData);
       <div class="grid">
         {featuredPeaks.map(peak => (
           <a href={`/${peak.slug}`} class="card">
-            <div style="font-size: 12px; color: #8b92a1; text-transform: uppercase; margin-bottom: 8px;">Featured</div>
+            <Fragment set:html={getCardImage(peak.slug, { alt: peak.name })} />
             <h3>{peak.name}</h3>
             <p class="card-subtitle">{peak.state} • {peak.mountainRange}</p>
             <div class="card-stats">
@@ -80,79 +83,120 @@ const peaksJson = JSON.stringify(peaksData);
           <table id="peakTable">
             <thead>
               <tr>
-                <th onclick="sortTable('name')">Peak Name <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('state')">State <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('mountainRange')">Mountain Range <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('elevation')">Elevation (ft) <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('prominence')">Prominence (ft) <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('difficulty')">Difficulty <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('class')">Class <span class="sort-indicator"></span></th>
-                <th onclick="sortTable('permitRequired')">Permit <span class="sort-indicator"></span></th>
+                <th data-sort="name">Peak Name <span class="sort-indicator"></span></th>
+                <th data-sort="state">State <span class="sort-indicator"></span></th>
+                <th data-sort="mountainRange">Mountain Range <span class="sort-indicator"></span></th>
+                <th data-sort="elevation">Elevation (ft) <span class="sort-indicator"></span></th>
+                <th data-sort="prominence" class="active">Prominence (ft) <span class="sort-indicator">↓</span></th>
+                <th data-sort="difficulty">Difficulty <span class="sort-indicator"></span></th>
+                <th data-sort="ydsClass">Class <span class="sort-indicator"></span></th>
+                <th data-sort="permitRequired">Permit <span class="sort-indicator"></span></th>
               </tr>
             </thead>
-            <tbody id="tableBody"></tbody>
+            <tbody id="tableBody">
+              {peaksData.map(peak => (
+                <tr data-slug={peak.slug}>
+                  <td><a href={`/${peak.slug}`}>{peak.name}</a></td>
+                  <td>{peak.state}</td>
+                  <td class="range-cell">{peak.mountainRange}</td>
+                  <td>{peak.elevation.toLocaleString()}</td>
+                  <td>{peak.prominence.toLocaleString()}</td>
+                  <td><div class="difficulty-badge">{peak.difficulty}</div></td>
+                  <td>{peak.class}</td>
+                  <td class={peak.permitRequired ? 'permit-required' : 'permit-no'}>{peak.permitRequired ? 'Required' : 'No'}</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
     </div>
   </div>
 
-  <script type="application/json" id="peaksData">{peaksJson}</script>
-
-  <script>
-    const peaks = JSON.parse(document.getElementById('peaksData').textContent);
+  <script define:vars={{ peaksData }}>
+    const CLASS_ORDER = { '1': 1, '2': 2, '2+': 2.5, '3': 3, '3+': 3.5, '4': 4, '4+': 4.5, '5': 5 };
     let sortColumn = 'prominence';
     let sortDir = 'desc';
 
-    function renderTable() {
-      const sorted = [...peaks].sort((a, b) => {
-        let aVal = a[sortColumn];
-        let bVal = b[sortColumn];
-        if (typeof aVal === 'string') aVal = aVal.toLowerCase();
-        if (typeof bVal === 'string') bVal = bVal.toLowerCase();
-        if (typeof aVal === 'number' && typeof bVal === 'number') {
-          return sortDir === 'asc' ? aVal - bVal : bVal - aVal;
-        }
-        return sortDir === 'asc' ? (aVal > bVal ? 1 : -1) : (aVal < bVal ? 1 : -1);
+    function getSortValue(peak, column) {
+      switch (column) {
+        case 'name':
+          return peak.name.toLowerCase();
+        case 'state':
+          return peak.state;
+        case 'mountainRange':
+          return (peak.mountainRange || '').toLowerCase();
+        case 'elevation':
+          return peak.elevation;
+        case 'prominence':
+          return peak.prominence;
+        case 'difficulty':
+          return peak.difficulty;
+        case 'ydsClass':
+          return CLASS_ORDER[peak.class] ?? 0;
+        case 'permitRequired':
+          return peak.permitRequired ? 1 : 0;
+        default:
+          return 0;
+      }
+    }
+
+    function comparePeaks(a, b) {
+      const aVal = getSortValue(a, sortColumn);
+      const bVal = getSortValue(b, sortColumn);
+      let result = 0;
+
+      if (typeof aVal === 'string') {
+        result = aVal.localeCompare(bVal);
+      } else {
+        result = aVal - bVal;
+      }
+
+      return sortDir === 'asc' ? result : -result;
+    }
+
+    function sortTableRows() {
+      const tbody = document.getElementById('tableBody');
+      const rowBySlug = new Map();
+
+      tbody.querySelectorAll('tr[data-slug]').forEach((row) => {
+        rowBySlug.set(row.dataset.slug, row);
       });
 
-      const tbody = document.getElementById('tableBody');
-      tbody.innerHTML = sorted.map(peak => `
-        <tr>
-          <td><a href="/${peak.slug}">${peak.name}</a></td>
-          <td>${peak.state}</td>
-          <td>${peak.mountainRange}</td>
-          <td>${peak.elevation.toLocaleString()}</td>
-          <td>${peak.prominence.toLocaleString()}</td>
-          <td><div class="difficulty-badge">${peak.difficulty}</div></td>
-          <td>${peak.class}</td>
-          <td class="${peak.permitRequired ? 'permit-required' : 'permit-no'}">${peak.permitRequired ? 'Required' : 'No'}</td>
-        </tr>
-      `).join('');
+      const sorted = [...peaksData].sort(comparePeaks);
+      sorted.forEach((peak) => {
+        const row = rowBySlug.get(peak.slug);
+        if (row) tbody.appendChild(row);
+      });
 
       updateSortIndicators();
     }
 
-    function sortTable(col) {
-      if (sortColumn === col) {
-        sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-      } else {
-        sortColumn = col;
-        sortDir = 'desc';
-      }
-      renderTable();
-    }
-
     function updateSortIndicators() {
-      document.querySelectorAll('th .sort-indicator').forEach(el => el.textContent = '');
-      const headers = document.querySelectorAll('th');
-      const colMap = {'name': 0, 'state': 1, 'mountainRange': 2, 'elevation': 3, 'prominence': 4, 'difficulty': 5, 'class': 6, 'permitRequired': 7};
-      if (colMap[sortColumn] !== undefined) {
-        headers[colMap[sortColumn]].querySelector('.sort-indicator').textContent = sortDir === 'asc' ? '↑' : '↓';
-      }
+      document.querySelectorAll('#peakTable th[data-sort]').forEach(th => {
+        const col = th.dataset.sort;
+        const indicator = th.querySelector('.sort-indicator');
+        const isActive = col === sortColumn;
+
+        th.classList.toggle('active', isActive);
+        indicator.textContent = isActive ? (sortDir === 'asc' ? '↑' : '↓') : '';
+      });
     }
 
-    renderTable();
+    document.querySelectorAll('#peakTable th[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.sort;
+
+        if (sortColumn === col) {
+          sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortColumn = col;
+          sortDir = col === 'name' || col === 'state' || col === 'mountainRange' ? 'asc' : 'desc';
+        }
+
+        sortTableRows();
+      });
+    });
   </script>
 </body>
 </html>
