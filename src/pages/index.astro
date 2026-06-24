@@ -3,6 +3,7 @@ import peaksData from '../data/peaks.json';
 import imageTracking from '../data/image-tracking.json';
 import { getCardImage, hasPeakImages } from '../utils/imageHelpers';
 import OrganizationSchema from '../components/OrganizationSchema.astro';
+import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 
 const featuredPeaks = peaksData.filter(
@@ -17,6 +18,7 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <FathomAnalytics />
   <link rel="canonical" href="https://prominenceregistry.com/" />
   <title>Prominence Registry</title>
   <OrganizationSchema />

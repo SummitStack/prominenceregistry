@@ -2,6 +2,7 @@
 import peaksData from '../data/peaks.json';
 import imageManifest from '../data/imageManifest.json';
 import SiteFooter from '../components/SiteFooter.astro';
+import FathomAnalytics from '../components/FathomAnalytics.astro';
 
 export const prerender = true;
 
@@ -15,6 +16,7 @@ const peaks = peaksData.map((peak) => ({
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <FathomAnalytics />
   <title>Image Review</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }

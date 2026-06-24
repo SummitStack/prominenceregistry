@@ -38,6 +38,16 @@ export async function GET() {
       changefreq: 'weekly',
       priority: '1.0',
     }),
+    urlEntry({
+      loc: `${SITE_URL}/about/`,
+      changefreq: 'monthly',
+      priority: '0.6',
+    }),
+    urlEntry({
+      loc: `${SITE_URL}/glossary/`,
+      changefreq: 'monthly',
+      priority: '0.6',
+    }),
     ...publishedPeaks.map((peak) =>
       urlEntry({
         loc: `${SITE_URL}/${peak.slug}/`,
