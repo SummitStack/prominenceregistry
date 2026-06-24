@@ -1,6 +1,10 @@
 ---
 import SiteFooter from '../components/SiteFooter.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
+import SeoMeta from '../components/SeoMeta.astro';
+import { SITE_URL } from '../lib/constants';
+
+const pageUrl = `${SITE_URL}/about/`;
 
 const paragraphs = [
   "Most of my time outside is spent in the mountains, whether that means a week in high country or a weekend hike closer to home. I'm drawn to good views, and I've learned that prominence is one of the best clues for finding them.",
@@ -20,10 +24,10 @@ const paragraphs = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <FathomAnalytics />
-    <title>About | Prominence Registry</title>
-    <meta
-      name="description"
-      content="Why Prominence Registry exists: carefully sourced reference pages for all 57 ultra-prominent peaks in the contiguous United States."
+    <SeoMeta
+      title="About Prominence Registry | Ultra-Prominent Peak Guides"
+      description="Learn why Prominence Registry publishes carefully sourced route, permit, and planning guides for all 57 ultra-prominent peaks in the contiguous United States."
+      canonical={pageUrl}
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"

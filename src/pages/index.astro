@@ -4,7 +4,9 @@ import imageTracking from '../data/image-tracking.json';
 import { getCardImage, hasPeakImages } from '../utils/imageHelpers';
 import OrganizationSchema from '../components/OrganizationSchema.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
+import SeoMeta from '../components/SeoMeta.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_URL } from '../lib/constants';
 
 const featuredPeaks = peaksData.filter(
   (peak) =>
@@ -19,8 +21,12 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <FathomAnalytics />
-  <link rel="canonical" href="https://prominenceregistry.com/" />
-  <title>Prominence Registry</title>
+  <SeoMeta
+    title="Ultra-Prominent Peaks of the Lower 48 | Prominence Registry"
+    description="Explore the Prominence Registry, a guide to the 57 ultra-prominent peaks of the contiguous United States with elevation, prominence, key col, isolation, route class, permits, and planning notes."
+    ogDescription="Explore the 57 ultra-prominent peaks of the contiguous United States with prominence, elevation, key col, isolation, route class, permits, and planning notes."
+    canonical={`${SITE_URL}/`}
+  />
   <OrganizationSchema />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />

@@ -1,0 +1,35 @@
+---
+import { ORGANIZATION_NAME } from '../lib/constants';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogType?: 'website' | 'article';
+  image?: string | null;
+  ogDescription?: string;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogType = 'website',
+  image,
+  ogDescription = description,
+} = Astro.props;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:site_name" content={ORGANIZATION_NAME} />
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:url" content={canonical} />
+{image && <meta property="og:image" content={image} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={ogDescription} />
+{image && <meta name="twitter:image" content={image} />}

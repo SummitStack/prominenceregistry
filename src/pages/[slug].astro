@@ -9,7 +9,9 @@ import {
 } from '../utils/safetyLabels';
 import SiteFooter from '../components/SiteFooter.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
+import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
+import { getPeakHeroImageUrl } from '../lib/schema-generator';
 
 export const prerender = true;
 
@@ -172,6 +174,9 @@ const mapsUrl =
     : `https://www.google.com/maps/search/${encodeURIComponent(peak.name + ' ' + peak.state)}`;
 
 const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
+const seoTitle = `${peak.name} Route, Prominence & Permit Guide | Prominence Registry`;
+const seoDescription = `${peak.name} guide: ${peak.elevation.toLocaleString()} ft elevation, ${peak.prominence.toLocaleString()} ft prominence, route class ${ydsClass ?? '—'}, permits, standard route, and planning notes for this lower-48 ultra-prominent peak.`;
+const seoImage = getPeakHeroImageUrl(peak);
 ---
 
 <html lang="en">
@@ -239,8 +244,13 @@ const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
         })}
       />
     )}
-    <link rel="canonical" href={peakPageUrl} />
-    <title>{peak.name} · Prominence Registry</title>
+    <SeoMeta
+      title={seoTitle}
+      description={seoDescription}
+      canonical={peakPageUrl}
+      ogType="article"
+      image={seoImage}
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"

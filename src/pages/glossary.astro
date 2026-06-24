@@ -1,6 +1,10 @@
 ---
 import SiteFooter from '../components/SiteFooter.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
+import SeoMeta from '../components/SeoMeta.astro';
+import { SITE_URL } from '../lib/constants';
+
+const pageUrl = `${SITE_URL}/glossary/`;
 ---
 
 <html lang="en">
@@ -8,10 +12,10 @@ import FathomAnalytics from '../components/FathomAnalytics.astro';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <FathomAnalytics />
-    <title>Glossary | Prominence Registry</title>
-    <meta
-      name="description"
-      content="Definitions of topographic, glaciological, and climbing terms used throughout the Prominence Registry, including prominence, isolation, parent peak, exposure, and more."
+    <SeoMeta
+      title="Mountaineering & Topographic Glossary | Prominence Registry"
+      description="Definitions of topographic, glaciological, and climbing terms used throughout the Prominence Registry, including prominence, isolation, parent peak, exposure, and more."
+      canonical={pageUrl}
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
