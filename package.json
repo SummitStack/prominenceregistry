@@ -7,11 +7,12 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "npm run validate:peaks && npx tsx scripts/prebuild-schema.ts",
+    "prebuild": "npm run validate:peaks && npm run validate:seo-images && npx tsx scripts/prebuild-schema.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "validate:peaks": "npx tsx scripts/validatePeaks.ts",
+    "validate:seo-images": "npx tsx scripts/validateSeoImages.ts",
     "test": "npx tsx --test src/__tests__/schema.test.ts",
     "test:schema": "npm run test",
     "fetch-images": "node scripts/fetch-hero-images.js",
