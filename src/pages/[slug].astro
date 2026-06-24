@@ -44,10 +44,6 @@ const technicalRequirementLabels = technicalRequirementIds.map(getTechnicalRequi
 const gearLookup = Object.fromEntries(gearData.items.map((item) => [item.id, item.label]));
 const requiredGear = (peak.gear ?? []).map((id) => gearLookup[id]).filter(Boolean);
 const bestRoute = 'bestRoute' in peak ? peak.bestRoute : null;
-const permitRequired =
-  'permitRequired' in peak
-    ? peak.permitRequired
-    : peak.difficulty >= 7 || peak.elevation >= 14000;
 const dataSource = 'dataSource' in peak ? peak.dataSource : null;
 const ydsClass = 'class' in peak ? peak.class : null;
 
@@ -94,17 +90,47 @@ const contentFootnote = customContent?.footnote ?? null;
 const technicalRequirements = technicalRequirementLabels;
 
 const permitSeason = 'permitSeason' in peak ? peak.permitSeason : null;
-const permitLabel = permitRequired
-  ? 'Permit Required'
-  : permitSeason
-    ? 'No Climbing Permit'
-    : 'No Permit';
-const permitBadgeClass = permitRequired
-  ? 'badge-required'
-  : permitSeason
-    ? 'badge-access'
-    : 'badge-open';
-const permitFee = peak.permitFee ?? (permitRequired ? 'Verify with land manager' : 'Free');
+
+type PermitStatusKey = 'none' | 'self-register' | 'fee' | 'limited' | 'lottery';
+
+const permitStatusConfig: Record<
+  PermitStatusKey,
+  { label: string; color: string }
+> = {
+  none: { label: 'No Permit', color: '#10b981' },
+  'self-register': { label: 'Self-Register', color: '#3b82f6' },
+  fee: { label: 'Fee Required', color: '#f59e0b' },
+  limited: { label: 'Limited Permit', color: '#f59e0b' },
+  lottery: { label: 'Lottery', color: '#ef4444' },
+};
+
+const permitStatus =
+  'permitStatus' in peak &&
+  typeof peak.permitStatus === 'string' &&
+  peak.permitStatus in permitStatusConfig
+    ? (peak.permitStatus as PermitStatusKey)
+    : null;
+
+const permitConfig = permitStatus
+  ? permitStatusConfig[permitStatus]
+  : { label: 'See Details', color: '#8b92a1' };
+
+const needsClimbingPermit =
+  permitStatus === 'fee' || permitStatus === 'limited' || permitStatus === 'lottery';
+
+const permitFee = peak.permitFee ?? 'See details';
+const daysDisplay =
+  'daysDisplay' in peak && typeof peak.daysDisplay === 'string'
+    ? peak.daysDisplay
+    : `${peak.days} day${peak.days > 1 ? 's' : ''}`;
+const distanceDisplay =
+  'distanceDisplay' in peak && typeof peak.distanceDisplay === 'string'
+    ? peak.distanceDisplay
+    : `${peak.distance} miles round-trip`;
+const gainDisplay =
+  'gainDisplay' in peak && typeof peak.gainDisplay === 'string'
+    ? peak.gainDisplay
+    : `${peak.gain.toLocaleString()} ft`;
 const displaySeason =
   season ??
   (peak.difficulty >= 8
@@ -128,9 +154,6 @@ const nearbyPeaks = peaksData
     return Math.abs(a.elevation - peak.elevation) - Math.abs(b.elevation - peak.elevation);
   })
   .slice(0, 5);
-
-const timeEstimate =
-  peak.days > 1 ? `${peak.days - 1}-${peak.days}` : `${peak.days}`;
 
 const prominenceRank = peaksData.findIndex((p) => p.slug === peak.slug) + 1;
 const weatherUrl = 'weatherForecastUrl' in peak ? peak.weatherForecastUrl : null;
@@ -630,32 +653,19 @@ const mapsUrl =
         color: #e0e2e8;
         font-weight: 600;
       }
-      .badge-required {
-        background: rgba(245, 158, 11, 0.15);
-        color: #f59e0b;
-        padding: 4px 12px;
-        border-radius: 4px;
-        font-size: 10px;
-        font-weight: 700;
-        text-transform: uppercase;
+      .permit-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #e0e2e8;
+        font-size: 12px;
+        font-weight: 600;
       }
-      .badge-access {
-        background: rgba(59, 130, 246, 0.15);
-        color: #3b82f6;
-        padding: 4px 12px;
-        border-radius: 4px;
-        font-size: 10px;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
-      .badge-open {
-        background: rgba(16, 185, 129, 0.15);
-        color: #10b981;
-        padding: 4px 12px;
-        border-radius: 4px;
-        font-size: 10px;
-        font-weight: 700;
-        text-transform: uppercase;
+      .permit-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
       }
       .sidebar-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
       .btn-primary {
@@ -1021,30 +1031,21 @@ const mapsUrl =
               Est. Time
               <span class="material-symbols-outlined">schedule</span>
             </p>
-            <p class="stat-card-value">
-              {timeEstimate}
-              <span class="stat-card-unit"> Days</span>
-            </p>
+            <p class="stat-card-value">{daysDisplay}</p>
           </div>
           <div class="stat-card">
             <p class="stat-card-label">
               Distance
               <span class="material-symbols-outlined">route</span>
             </p>
-            <p class="stat-card-value">
-              {peak.distance}
-              <span class="stat-card-unit"> mi</span>
-            </p>
+            <p class="stat-card-value">{distanceDisplay}</p>
           </div>
           <div class="stat-card">
             <p class="stat-card-label">
               Vert Gain
               <span class="material-symbols-outlined">trending_up</span>
             </p>
-            <p class="stat-card-value">
-              {peak.gain.toLocaleString()}
-              <span class="stat-card-unit"> ft</span>
-            </p>
+            <p class="stat-card-value">{gainDisplay}</p>
           </div>
         </div>
       </section>
@@ -1105,7 +1106,7 @@ const mapsUrl =
                   <p>{permitsClimbingText}</p>
                 ) : (
                   <p>
-                    {permitRequired
+                    {needsClimbingPermit
                       ? <>A climbing permit is <strong>required</strong> for summit attempts on {peak.name}. Fees typically range <strong>{permitFee}</strong>. Reservations are strongly recommended during peak season ({displaySeason}).</>
                       : <>No special climbing permit is required for {peak.name}, though wilderness or park entry fees may apply. Peak season runs <strong>{displaySeason}</strong>.</>}
                   </p>
@@ -1207,7 +1208,10 @@ const mapsUrl =
             <h3 class="sidebar-title">Plan Expedition</h3>
             <div class="sidebar-row">
               <span>Permit Status</span>
-              <span class={permitBadgeClass}>{permitLabel}</span>
+              <span class="permit-status">
+                <span class="permit-dot" style={`background: ${permitConfig.color}`}></span>
+                {permitConfig.label}
+              </span>
             </div>
             {permitSeason && (
               <p class="sidebar-note">{permitSeason}</p>

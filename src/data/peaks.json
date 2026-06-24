@@ -7,6 +7,15 @@
     "prominence": 13257,
     "difficulty": 8,
     "days": 3,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 7900,
+    "gainMax": 10100,
+    "gainDisplay": "~7,900–10,100 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 15,
     "gain": 9000,
     "mountainRange": "Cascade Range",
@@ -105,7 +114,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Verify current NPS fee",
-    "published": true
+    "published": true,
+    "permitStatus": "limited"
   },
   {
     "slug": "mount-whitney",
@@ -115,6 +125,15 @@
     "prominence": 10075,
     "difficulty": 5,
     "days": 2,
+    "distanceMin": 19,
+    "distanceMax": 25,
+    "distanceDisplay": "~19–25 miles round-trip",
+    "gainMin": 5350,
+    "gainMax": 6850,
+    "gainDisplay": "~5,350–6,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 22,
     "gain": 6100,
     "mountainRange": "Sierra Nevada",
@@ -191,7 +210,8 @@
       "microspikes"
     ],
     "permitFee": "Free (wilderness permit required)",
-    "published": true
+    "published": true,
+    "permitStatus": "lottery"
   },
   {
     "slug": "mount-shasta",
@@ -201,6 +221,15 @@
     "prominence": 9761,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 10,
+    "distanceMax": 12,
+    "distanceDisplay": "~10–12 miles round-trip",
+    "gainMin": 6150,
+    "gainMax": 7850,
+    "gainDisplay": "~6,150–7,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 11,
     "gain": 7000,
     "mountainRange": "Cascade Range",
@@ -289,7 +318,8 @@
       "avalanche_kit"
     ],
     "permitFee": "$25 per person (summit pass, 3-day); $30 annual",
-    "published": true
+    "published": true,
+    "permitStatus": "fee"
   },
   {
     "slug": "mount-elbert",
@@ -299,6 +329,15 @@
     "prominence": 9093,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 4380,
+    "gainMax": 4380,
+    "gainDisplay": "4,380 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 9,
     "gain": 4380,
     "mountainRange": "Sawatch Range",
@@ -374,7 +413,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Free",
-    "published": true
+    "published": true,
+    "permitStatus": "none"
   },
   {
     "slug": "mount-baker",
@@ -384,6 +424,15 @@
     "prominence": 8845,
     "difficulty": 7,
     "days": 3,
+    "distanceMin": 11,
+    "distanceMax": 13,
+    "distanceDisplay": "~11–13 miles round-trip",
+    "gainMin": 6350,
+    "gainMax": 8050,
+    "gainDisplay": "~6,350–8,050 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 12,
     "gain": 7200,
     "mountainRange": "Cascade Range",
@@ -468,7 +517,8 @@
       "waterproof_shell"
     ],
     "permitFee": "No climbing permit fee; parking pass required",
-    "published": true
+    "published": true,
+    "permitStatus": "fee"
   },
   {
     "slug": "san-jacinto-peak",
@@ -478,6 +528,15 @@
     "prominence": 8311,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 4600,
+    "gainMax": 4600,
+    "gainDisplay": "4,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 14,
     "gain": 4600,
     "mountainRange": "San Jacinto Mountains",
@@ -522,7 +581,8 @@
     "isolation": 21,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "san-gorgonio-mountain",
@@ -532,6 +592,15 @@
     "prominence": 8282,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 18,
+    "distanceMax": 18,
+    "distanceDisplay": "18 miles round-trip",
+    "gainMin": 5500,
+    "gainMax": 5500,
+    "gainDisplay": "5,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 18,
     "gain": 5500,
     "mountainRange": "San Bernardino Mountains",
@@ -577,7 +646,8 @@
     "isolation": 163,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "charleston-peak",
@@ -587,6 +657,15 @@
     "prominence": 8243,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 17,
+    "distanceMax": 17,
+    "distanceDisplay": "17 miles round-trip",
+    "gainMin": 4200,
+    "gainMax": 4200,
+    "gainDisplay": "4,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 17,
     "gain": 4200,
     "mountainRange": "Spring Mountains",
@@ -630,7 +709,8 @@
     "isolation": 135,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-adams",
@@ -640,6 +720,15 @@
     "prominence": 8116,
     "difficulty": 5,
     "days": 2,
+    "distanceMin": 11,
+    "distanceMax": 15,
+    "distanceDisplay": "~11–15 miles round-trip",
+    "gainMin": 5900,
+    "gainMax": 7500,
+    "gainDisplay": "~5,900–7,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 13,
     "gain": 6700,
     "mountainRange": "Cascade Range",
@@ -724,7 +813,8 @@
       "waterproof_shell"
     ],
     "permitFee": "$20 per person per climbing trip",
-    "published": true
+    "published": true,
+    "permitStatus": "fee"
   },
   {
     "slug": "mount-olympus",
@@ -734,6 +824,15 @@
     "prominence": 7829,
     "difficulty": 9,
     "days": 4,
+    "distanceMin": 39,
+    "distanceMax": 49,
+    "distanceDisplay": "~39–49 miles round-trip",
+    "gainMin": 6500,
+    "gainMax": 8300,
+    "gainDisplay": "~6,500–8,300 ft",
+    "daysMin": 3,
+    "daysMax": 4,
+    "daysDisplay": "3–4 days",
     "distance": 44,
     "gain": 7400,
     "mountainRange": "Olympic Mountains",
@@ -786,7 +885,8 @@
     "isolation": 108,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-hood",
@@ -796,6 +896,15 @@
     "prominence": 7709,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 6,
+    "distanceMax": 8,
+    "distanceDisplay": "~6–8 miles round-trip",
+    "gainMin": 4750,
+    "gainMax": 6050,
+    "gainDisplay": "~4,750–6,050 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 6.8,
     "gain": 5400,
     "mountainRange": "Cascade Range",
@@ -885,7 +994,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Verify current Recreation.gov fee",
-    "published": true
+    "published": true,
+    "permitStatus": "limited"
   },
   {
     "slug": "wheeler-peak",
@@ -895,6 +1005,15 @@
     "prominence": 7563,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 8.6,
+    "distanceMax": 8.6,
+    "distanceDisplay": "8.6 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 3000,
+    "gainDisplay": "3,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 8.6,
     "gain": 3000,
     "mountainRange": "Snake Range",
@@ -963,7 +1082,8 @@
       "microspikes"
     ],
     "permitFee": "Free (no climbing permit; $20/site campground)",
-    "published": true
+    "published": true,
+    "permitStatus": "none"
   },
   {
     "slug": "glacier-peak",
@@ -973,6 +1093,15 @@
     "prominence": 7531,
     "difficulty": 8,
     "days": 4,
+    "distanceMin": 30,
+    "distanceMax": 38,
+    "distanceDisplay": "~30–38 miles round-trip",
+    "gainMin": 7900,
+    "gainMax": 10100,
+    "gainDisplay": "~7,900–10,100 ft",
+    "daysMin": 3,
+    "daysMax": 4,
+    "daysDisplay": "3–4 days",
     "distance": 34,
     "gain": 9000,
     "mountainRange": "Cascade Range",
@@ -1054,7 +1183,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Free (wilderness)",
-    "published": true
+    "published": true,
+    "permitStatus": "self-register"
   },
   {
     "slug": "white-mountain-peak",
@@ -1064,6 +1194,15 @@
     "prominence": 7196,
     "difficulty": 3,
     "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 2600,
+    "gainMax": 2600,
+    "gainDisplay": "2,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 14,
     "gain": 2600,
     "mountainRange": "White Mountains",
@@ -1111,7 +1250,8 @@
     "isolation": 40,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "gannett-peak",
@@ -1121,6 +1261,15 @@
     "prominence": 7076,
     "difficulty": 9,
     "days": 6,
+    "distanceMin": 44,
+    "distanceMax": 56,
+    "distanceDisplay": "~44–56 miles round-trip",
+    "gainMin": 9700,
+    "gainMax": 12300,
+    "gainDisplay": "~9,700–12,300 ft",
+    "daysMin": 5,
+    "daysMax": 6,
+    "daysDisplay": "5–6 days",
     "distance": 50,
     "gain": 11000,
     "mountainRange": "Wind River Range",
@@ -1210,7 +1359,8 @@
       "bear_canister"
     ],
     "permitFee": "Free (wilderness)",
-    "published": true
+    "published": true,
+    "permitStatus": "self-register"
   },
   {
     "slug": "cloud-peak",
@@ -1220,6 +1370,15 @@
     "prominence": 7077,
     "difficulty": 6,
     "days": 3,
+    "distanceMin": 20,
+    "distanceMax": 26,
+    "distanceDisplay": "~20–26 miles round-trip",
+    "gainMin": 4650,
+    "gainMax": 5950,
+    "gainDisplay": "~4,650–5,950 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 23,
     "gain": 5300,
     "mountainRange": "Bighorn Mountains",
@@ -1295,7 +1454,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Free",
-    "published": true
+    "published": true,
+    "permitStatus": "self-register"
   },
   {
     "slug": "grand-teton",
@@ -1305,6 +1465,15 @@
     "prominence": 6535,
     "difficulty": 8,
     "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 16,
+    "distanceDisplay": "~12–16 miles round-trip",
+    "gainMin": 6150,
+    "gainMax": 7850,
+    "gainDisplay": "~6,150–7,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 14,
     "gain": 7000,
     "mountainRange": "Teton Range",
@@ -1395,7 +1564,8 @@
       "waterproof_shell"
     ],
     "permitFee": "No day-use climbing fee; backcountry permit fee for overnight",
-    "published": true
+    "published": true,
+    "permitStatus": "limited"
   },
   {
     "slug": "sacajawea-peak",
@@ -1405,6 +1575,15 @@
     "prominence": 6392,
     "difficulty": 6,
     "days": 2,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 4300,
+    "gainMax": 5500,
+    "gainDisplay": "~4,300–5,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 15,
     "gain": 4900,
     "mountainRange": "Wallowa Mountains",
@@ -1484,7 +1663,8 @@
       "bear_canister"
     ],
     "permitFee": "Free (self-issue wilderness permit)",
-    "published": true
+    "published": true,
+    "permitStatus": "self-register"
   },
   {
     "slug": "kings-peak",
@@ -1494,6 +1674,15 @@
     "prominence": 6348,
     "difficulty": 5,
     "days": 4,
+    "distanceMin": 24,
+    "distanceMax": 30,
+    "distanceDisplay": "~24–30 miles round-trip",
+    "gainMin": 3950,
+    "gainMax": 5000,
+    "gainDisplay": "~3,950–5,000 ft",
+    "daysMin": 3,
+    "daysMax": 4,
+    "daysDisplay": "3–4 days",
     "distance": 27,
     "gain": 4480,
     "mountainRange": "Uinta Mountains",
@@ -1568,7 +1757,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Free",
-    "published": true
+    "published": true,
+    "permitStatus": "self-register"
   },
   {
     "slug": "mount-graham",
@@ -1578,6 +1768,15 @@
     "prominence": 6320,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 12,
+    "distanceMax": 12,
+    "distanceDisplay": "12 miles round-trip",
+    "gainMin": 1700,
+    "gainMax": 1700,
+    "gainDisplay": "1,700 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 12,
     "gain": 1700,
     "mountainRange": "Pinaleño Mountains",
@@ -1625,7 +1824,8 @@
     "isolation": 83,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-san-antonio",
@@ -1635,6 +1835,15 @@
     "prominence": 6224,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 11,
+    "distanceMax": 11,
+    "distanceDisplay": "11 miles round-trip",
+    "gainMin": 3900,
+    "gainMax": 3900,
+    "gainDisplay": "3,900 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 11,
     "gain": 3900,
     "mountainRange": "San Gabriel Mountains",
@@ -1682,7 +1891,8 @@
     "isolation": 45,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "telescope-peak",
@@ -1692,6 +1902,15 @@
     "prominence": 6168,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 3000,
+    "gainDisplay": "3,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 14,
     "gain": 3000,
     "mountainRange": "Panamint Range",
@@ -1736,7 +1955,8 @@
     "isolation": 58,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-peale",
@@ -1746,6 +1966,15 @@
     "prominence": 6161,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 6,
+    "distanceMax": 6,
+    "distanceDisplay": "6 miles round-trip",
+    "gainMin": 2400,
+    "gainMax": 2400,
+    "gainDisplay": "2,400 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 6,
     "gain": 2400,
     "mountainRange": "La Sal Mountains",
@@ -1795,7 +2024,8 @@
     "isolation": 73,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-washington",
@@ -1805,6 +2035,15 @@
     "prominence": 6138,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 4300,
+    "gainMax": 4300,
+    "gainDisplay": "4,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 8,
     "gain": 4300,
     "mountainRange": "Presidential Range",
@@ -1855,7 +2094,8 @@
     "isolation": 820,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-mitchell",
@@ -1865,6 +2105,15 @@
     "prominence": 6089,
     "difficulty": 3,
     "days": 1,
+    "distanceMin": 12,
+    "distanceMax": 12,
+    "distanceDisplay": "12 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 3600,
+    "gainDisplay": "3,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 12,
     "gain": 3600,
     "mountainRange": "Black Mountains",
@@ -1911,7 +2160,8 @@
     "isolation": 1195,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "humphreys-peak",
@@ -1921,6 +2171,15 @@
     "prominence": 6042,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 3300,
+    "gainMax": 3300,
+    "gainDisplay": "3,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 3300,
     "mountainRange": "San Francisco Peaks",
@@ -1998,7 +2257,8 @@
       "microspikes"
     ],
     "permitFee": "Free",
-    "published": true
+    "published": true,
+    "permitStatus": "none"
   },
   {
     "slug": "borah-peak",
@@ -2008,6 +2268,15 @@
     "prominence": 5982,
     "difficulty": 6,
     "days": 1,
+    "distanceMin": 7,
+    "distanceMax": 7,
+    "distanceDisplay": "7 miles round-trip",
+    "gainMin": 5300,
+    "gainMax": 5300,
+    "gainDisplay": "5,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 7,
     "gain": 5300,
     "mountainRange": "Lost River Range",
@@ -2054,7 +2323,8 @@
     "isolation": 151,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-jefferson-nv",
@@ -2064,6 +2334,15 @@
     "prominence": 5861,
     "difficulty": 6,
     "days": 2,
+    "distanceMin": 18,
+    "distanceMax": 22,
+    "distanceDisplay": "~18–22 miles round-trip",
+    "gainMin": 5100,
+    "gainMax": 6500,
+    "gainDisplay": "~5,100–6,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 20,
     "gain": 5800,
     "mountainRange": "Toquima Range",
@@ -2114,7 +2393,8 @@
     "isolation": 100,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-ellen",
@@ -2124,6 +2404,15 @@
     "prominence": 5842,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 3500,
+    "gainMax": 3500,
+    "gainDisplay": "3,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 8,
     "gain": 3500,
     "mountainRange": "Henry Mountains",
@@ -2173,7 +2462,8 @@
     "isolation": 56,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "deseret-peak",
@@ -2183,6 +2473,15 @@
     "prominence": 5811,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 3600,
+    "gainDisplay": "3,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 8,
     "gain": 3600,
     "mountainRange": "Stansbury Mountains",
@@ -2232,7 +2531,8 @@
     "isolation": 46,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-jefferson-or",
@@ -2242,6 +2542,15 @@
     "prominence": 5770,
     "difficulty": 8,
     "days": 3,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 6400,
+    "gainMax": 8100,
+    "gainDisplay": "~6,400–8,100 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 15,
     "gain": 7250,
     "mountainRange": "Cascade Range",
@@ -2326,7 +2635,8 @@
       "bear_canister"
     ],
     "permitFee": "$1/person day use; $6/group overnight",
-    "published": true
+    "published": true,
+    "permitStatus": "limited"
   },
   {
     "slug": "pilot-peak",
@@ -2336,6 +2646,15 @@
     "prominence": 5726,
     "difficulty": 6,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 4200,
+    "gainMax": 4200,
+    "gainDisplay": "4,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 4200,
     "mountainRange": "Pilot Range",
@@ -2386,7 +2705,8 @@
     "isolation": 54,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "crazy-peak",
@@ -2396,6 +2716,15 @@
     "prominence": 5709,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 16,
+    "distanceDisplay": "~12–16 miles round-trip",
+    "gainMin": 5200,
+    "gainMax": 6600,
+    "gainDisplay": "~5,200–6,600 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 14,
     "gain": 5900,
     "mountainRange": "Crazy Mountains",
@@ -2447,7 +2776,8 @@
     "isolation": 50,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mcdonald-peak",
@@ -2457,6 +2787,15 @@
     "prominence": 5640,
     "difficulty": 8,
     "days": 2,
+    "distanceMin": 19,
+    "distanceMax": 25,
+    "distanceDisplay": "~19–25 miles round-trip",
+    "gainMin": 6350,
+    "gainMax": 8050,
+    "gainDisplay": "~6,350–8,050 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 22,
     "gain": 7200,
     "mountainRange": "Mission Mountains",
@@ -2509,7 +2848,8 @@
     "isolation": 80,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "south-sister",
@@ -2519,6 +2859,15 @@
     "prominence": 5590,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 13,
+    "distanceMax": 13,
+    "distanceDisplay": "13 miles round-trip",
+    "gainMin": 4950,
+    "gainMax": 4950,
+    "gainDisplay": "4,950 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 13,
     "gain": 4950,
     "mountainRange": "Cascade Range",
@@ -2598,7 +2947,8 @@
       "microspikes"
     ],
     "permitFee": "$1/person day-use; $6/group overnight",
-    "published": true
+    "published": true,
+    "permitStatus": "limited"
   },
   {
     "slug": "sierra-blanca-peak",
@@ -2608,6 +2958,15 @@
     "prominence": 5533,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 3500,
+    "gainMax": 3500,
+    "gainDisplay": "3,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 3500,
     "mountainRange": "Sacramento Mountains",
@@ -2659,7 +3018,8 @@
     "isolation": 168,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "pikes-peak",
@@ -2669,6 +3029,15 @@
     "prominence": 5530,
     "difficulty": 5,
     "days": 3,
+    "distanceMin": 23,
+    "distanceMax": 29,
+    "distanceDisplay": "~23–29 miles round-trip",
+    "gainMin": 6550,
+    "gainMax": 8350,
+    "gainDisplay": "~6,550–8,350 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 26,
     "gain": 7450,
     "mountainRange": "Front Range",
@@ -2744,7 +3113,8 @@
       "microspikes"
     ],
     "permitFee": "Free (no climbing permit; trailhead parking fee applies)",
-    "published": true
+    "published": true,
+    "permitStatus": "none"
   },
   {
     "slug": "mount-nebo",
@@ -2754,6 +3124,15 @@
     "prominence": 5488,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 3600,
+    "gainDisplay": "3,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 9,
     "gain": 3600,
     "mountainRange": "Wasatch Range",
@@ -2797,7 +3176,8 @@
     "isolation": 79,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "snowshoe-peak",
@@ -2807,6 +3187,15 @@
     "prominence": 5418,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 14,
+    "distanceMax": 18,
+    "distanceDisplay": "~14–18 miles round-trip",
+    "gainMin": 5100,
+    "gainMax": 6500,
+    "gainDisplay": "~5,100–6,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 16,
     "gain": 5800,
     "mountainRange": "Cabinet Mountains",
@@ -2858,7 +3247,8 @@
     "isolation": 80,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "north-schell-peak",
@@ -2868,6 +3258,15 @@
     "prominence": 5403,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 3800,
+    "gainMax": 3800,
+    "gainDisplay": "3,800 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 8,
     "gain": 3800,
     "mountainRange": "Schell Creek Mountains",
@@ -2912,7 +3311,8 @@
     "isolation": 24,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "star-peak",
@@ -2922,6 +3322,15 @@
     "prominence": 5396,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 7,
+    "distanceMax": 7,
+    "distanceDisplay": "7 miles round-trip",
+    "gainMin": 3200,
+    "gainMax": 3200,
+    "gainDisplay": "3,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 7,
     "gain": 3200,
     "mountainRange": "Humboldt Range",
@@ -2966,7 +3375,8 @@
     "isolation": 69,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "hayford-peak",
@@ -2976,6 +3386,15 @@
     "prominence": 5392,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 2900,
+    "gainMax": 2900,
+    "gainDisplay": "2,900 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 9,
     "gain": 2900,
     "mountainRange": "Sheep Range",
@@ -3020,7 +3439,8 @@
     "isolation": 34,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "diamond-peak",
@@ -3030,6 +3450,15 @@
     "prominence": 5377,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 12,
+    "distanceMax": 12,
+    "distanceDisplay": "12 miles round-trip",
+    "gainMin": 3500,
+    "gainMax": 3500,
+    "gainDisplay": "3,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 12,
     "gain": 3500,
     "mountainRange": "Lemhi Range",
@@ -3073,7 +3502,8 @@
     "isolation": 33,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "flat-top-mountain",
@@ -3083,6 +3513,15 @@
     "prominence": 5370,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 4400,
+    "gainMax": 4400,
+    "gainDisplay": "4,400 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 4400,
     "mountainRange": "Oquirrh Mountains",
@@ -3134,7 +3573,8 @@
     "isolation": 24,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-stuart",
@@ -3144,6 +3584,15 @@
     "prominence": 5335,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 16,
+    "distanceDisplay": "~12–16 miles round-trip",
+    "gainMin": 4400,
+    "gainMax": 5600,
+    "gainDisplay": "~4,400–5,600 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 14,
     "gain": 5000,
     "mountainRange": "Stuart Range",
@@ -3195,7 +3644,8 @@
     "isolation": 45,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "blanca-peak",
@@ -3205,6 +3655,15 @@
     "prominence": 5305,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 16,
+    "distanceDisplay": "~12–16 miles round-trip",
+    "gainMin": 4650,
+    "gainMax": 5950,
+    "gainDisplay": "~4,650–5,950 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 14,
     "gain": 5300,
     "mountainRange": "Sangre de Cristo Mountains",
@@ -3249,7 +3708,8 @@
     "isolation": 104,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-timpanogos",
@@ -3259,6 +3719,15 @@
     "prominence": 5270,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 4389,
+    "gainMax": 4389,
+    "gainDisplay": "4,389 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 14,
     "gain": 4389,
     "mountainRange": "Wasatch Range",
@@ -3336,7 +3805,8 @@
       "waterproof_shell"
     ],
     "permitFee": "Free (timed parking permit required on weekends/holidays)",
-    "published": true
+    "published": true,
+    "permitStatus": "none"
   },
   {
     "slug": "ibapah-peak",
@@ -3346,6 +3816,15 @@
     "prominence": 5269,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 4100,
+    "gainMax": 4100,
+    "gainDisplay": "4,100 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 9,
     "gain": 4100,
     "mountainRange": "Deep Creek Range",
@@ -3396,7 +3875,8 @@
     "isolation": 62,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "lassen-peak",
@@ -3406,6 +3886,15 @@
     "prominence": 5229,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 5,
+    "distanceDisplay": "5 miles round-trip",
+    "gainMin": 2000,
+    "gainMax": 2000,
+    "gainDisplay": "2,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 5,
     "gain": 2000,
     "mountainRange": "Cascade Range",
@@ -3454,7 +3943,8 @@
     "isolation": 72,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-cleveland",
@@ -3464,6 +3954,15 @@
     "prominence": 5226,
     "difficulty": 8,
     "days": 3,
+    "distanceMin": 40,
+    "distanceMax": 50,
+    "distanceDisplay": "~40–50 miles round-trip",
+    "gainMin": 5450,
+    "gainMax": 6950,
+    "gainDisplay": "~5,450–6,950 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
     "distance": 45,
     "gain": 6200,
     "mountainRange": "Lewis Range",
@@ -3508,7 +4007,8 @@
     "isolation": 98,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "arc-dome",
@@ -3518,6 +4018,15 @@
     "prominence": 5213,
     "difficulty": 5,
     "days": 2,
+    "distanceMin": 18,
+    "distanceMax": 22,
+    "distanceDisplay": "~18–22 miles round-trip",
+    "gainMin": 3850,
+    "gainMax": 4950,
+    "gainDisplay": "~3,850–4,950 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 20,
     "gain": 4400,
     "mountainRange": "Toiyabe Range",
@@ -3568,7 +4077,8 @@
     "isolation": 23,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "she-devil",
@@ -3578,6 +4088,15 @@
     "prominence": 5200,
     "difficulty": 7,
     "days": 2,
+    "distanceMin": 16,
+    "distanceMax": 20,
+    "distanceDisplay": "~16–20 miles round-trip",
+    "gainMin": 5100,
+    "gainMax": 6500,
+    "gainDisplay": "~5,100–6,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
     "distance": 18,
     "gain": 5800,
     "mountainRange": "Seven Devils Mountains",
@@ -3622,7 +4141,8 @@
     "isolation": 31,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "abercrombie-mountain",
@@ -3632,6 +4152,15 @@
     "prominence": 5168,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 7,
+    "distanceMax": 7,
+    "distanceDisplay": "7 miles round-trip",
+    "gainMin": 3200,
+    "gainMax": 3200,
+    "gainDisplay": "3,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 7,
     "gain": 3200,
     "mountainRange": "Selkirk Mountains",
@@ -3675,7 +4204,8 @@
     "isolation": 14,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-lemmon",
@@ -3685,6 +4215,15 @@
     "prominence": 5157,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 2800,
+    "gainMax": 2800,
+    "gainDisplay": "2,800 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 2800,
     "mountainRange": "Santa Catalina Mountains",
@@ -3731,7 +4270,8 @@
     "isolation": 52,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "chiricahua-peak",
@@ -3741,6 +4281,15 @@
     "prominence": 5139,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 11,
+    "distanceMax": 11,
+    "distanceDisplay": "11 miles round-trip",
+    "gainMin": 2600,
+    "gainMax": 2600,
+    "gainDisplay": "2,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 11,
     "gain": 2600,
     "mountainRange": "Chiricahua Mountains",
@@ -3789,7 +4338,8 @@
     "isolation": 64,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "mount-eddy",
@@ -3799,6 +4349,15 @@
     "prominence": 5105,
     "difficulty": 4,
     "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 4200,
+    "gainMax": 4200,
+    "gainDisplay": "4,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 10,
     "gain": 4200,
     "mountainRange": "Trinity Mountains",
@@ -3845,7 +4404,8 @@
     "isolation": 15,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   },
   {
     "slug": "miller-peak",
@@ -3855,6 +4415,15 @@
     "prominence": 5006,
     "difficulty": 5,
     "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 3200,
+    "gainMax": 3200,
+    "gainDisplay": "3,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
     "distance": 9,
     "gain": 3200,
     "mountainRange": "Huachuca Mountains",
@@ -3905,6 +4474,7 @@
     "isolation": 67,
     "gear": [],
     "permitFee": null,
-    "published": false
+    "published": false,
+    "permitStatus": null
   }
 ]
