@@ -13,6 +13,7 @@ import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
 import { getPeakHeroImageUrl } from '../lib/schema-generator';
 import { buildPeakSeoDescription, buildPeakSeoTitle } from '../lib/seoMeta';
+import { buildPeakPageStructuredData } from '../lib/peakStructuredData';
 
 export const prerender = true;
 
@@ -178,6 +179,16 @@ const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
 const seoTitle = buildPeakSeoTitle(peak);
 const seoDescription = buildPeakSeoDescription(peak);
 const seoImage = getPeakHeroImageUrl(peak);
+const peakStructuredData =
+  peak.published === true && latitude !== null && longitude !== null
+    ? buildPeakPageStructuredData({
+        peak,
+        peakPageUrl,
+        seoTitle,
+        seoDescription,
+        imageUrl: seoImage,
+      })
+    : null;
 ---
 
 <html lang="en">
@@ -188,63 +199,8 @@ const seoImage = getPeakHeroImageUrl(peak);
     {!peak.published && (
       <meta name="robots" content="noindex, nofollow" />
     )}
-    {latitude !== null && longitude !== null && (
-      <script
-        type="application/ld+json"
-        set:html={JSON.stringify({
-          '@context': 'https://schema.org',
-          '@graph': [
-            {
-              '@type': 'Mountain',
-              '@id': `${peakPageUrl}#mountain`,
-              name: peak.name,
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: latitude,
-                longitude: longitude,
-              },
-              elevation: {
-                '@type': 'QuantitativeValue',
-                value: peak.elevation,
-                unitCode: 'FOT',
-              },
-              description: `${peak.name} is an ultra-prominent peak in the contiguous United States with ${peak.prominence} feet of topographic prominence.`,
-            },
-            {
-              '@type': 'Article',
-              '@id': `${peakPageUrl}#article`,
-              headline: seoTitle,
-              description: seoDescription,
-              about: {
-                '@id': `${peakPageUrl}#mountain`,
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Prominence Registry',
-                url: 'https://prominenceregistry.com',
-              },
-              url: peakPageUrl,
-            },
-            {
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                {
-                  '@type': 'ListItem',
-                  position: 1,
-                  name: 'All Peaks',
-                  item: `${SITE_URL}/`,
-                },
-                {
-                  '@type': 'ListItem',
-                  position: 2,
-                  name: peak.name,
-                  item: peakPageUrl,
-                },
-              ],
-            },
-          ],
-        })}
-      />
+    {peakStructuredData && (
+      <script type="application/ld+json" set:html={JSON.stringify(peakStructuredData)} />
     )}
     <SeoMeta
       title={seoTitle}
