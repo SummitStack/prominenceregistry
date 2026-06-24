@@ -12,7 +12,7 @@ import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
 import { getPeakHeroImageUrl } from '../lib/schema-generator';
-import { buildPeakSeoDescription } from '../lib/seoMeta';
+import { buildPeakSeoDescription, buildPeakSeoTitle } from '../lib/seoMeta';
 
 export const prerender = true;
 
@@ -175,7 +175,7 @@ const mapsUrl =
     : `https://www.google.com/maps/search/${encodeURIComponent(peak.name + ' ' + peak.state)}`;
 
 const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
-const seoTitle = `${peak.name} Route, Prominence & Permit Guide | Prominence Registry`;
+const seoTitle = buildPeakSeoTitle(peak);
 const seoDescription = buildPeakSeoDescription(peak);
 const seoImage = getPeakHeroImageUrl(peak);
 ---
