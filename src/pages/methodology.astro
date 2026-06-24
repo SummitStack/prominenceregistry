@@ -1,0 +1,185 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+
+const paragraphs = [
+  "Prominence Registry uses topographic prominence as its core organizing metric. Prominence measures how much a peak rises above the lowest contour line that encircles it without encircling any higher peak. It is an objective, calculable figure that reflects a summit's independence from surrounding terrain.",
+  "The registry covers all 57 ultra-prominent peaks in the contiguous United States — peaks with at least 5,000 feet (approximately 1,500 meters) of topographic prominence. This list was compiled by Edward Earl, Andy Martin, John Roper, David Olson, Ken Jones, and Ron Tagliapietra in 1999 and is the standard reference for ultra-prominence in the lower 48.",
+  "Elevation and prominence figures are sourced primarily from the USGS (U.S. Geological Survey) and cross-referenced against Peakbagger, ListsOfJohn, and Wikipedia's ultra-prominent peaks list. Where sources disagree, the USGS figure is used for elevation and ListsOfJohn is used as the tiebreaker for key col elevation, from which prominence is derived.",
+  "Key col (saddle) elevations are taken from ListsOfJohn LiDAR data where available. Prominence is calculated as summit elevation minus key col elevation using these verified figures.",
+  "Permit information, fees, and access details are sourced from official land manager websites: NPS, USFS, Recreation.gov, and state agency pages. Because permit systems change seasonally, all regulatory information includes a recommendation to verify with the relevant land manager before travel.",
+  "Route descriptions are sourced from primary trip reports, land manager publications, and established climbing references. No route information is invented or extrapolated. Where information could not be verified against a primary source, it is either omitted or flagged.",
+  "This page will be expanded with full methodology documentation, source citations, and editorial standards before the site's public launch.",
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Methodology | Prominence Registry</title>
+    <meta
+      name="description"
+      content="How Prominence Registry sources, verifies, and presents data on the 57 ultra-prominent peaks in the contiguous United States."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style is:inline>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #101418;
+        color: #e0e2e8;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .alpine-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      a { color: inherit; text-decoration: none; }
+      .page-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background: rgba(16, 20, 24, 0.8);
+        border-bottom: 1px solid #404850;
+        transition: box-shadow 0.15s;
+      }
+      .page-nav.nav-scrolled { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4); }
+      .page-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 64px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-inner { padding: 0 48px; }
+      }
+      .page-nav-brand {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .page-nav-links {
+        display: none;
+        gap: 32px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-links { display: flex; }
+      }
+      .page-nav-links a {
+        color: #c0c7d1;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .page-nav-links a.active {
+        color: #9bcfff;
+        font-weight: 700;
+        border-bottom: 2px solid #9bcfff;
+        padding-bottom: 4px;
+      }
+      .page-nav-links a:hover { color: #9bcfff; }
+      main { padding: 96px 0 80px; }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      @media (min-width: 768px) {
+        .container { padding: 0 48px; }
+      }
+      .about-article {
+        max-width: 672px;
+        margin: 0 auto;
+      }
+      .about-header {
+        margin-bottom: 48px;
+      }
+      .page-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #e0e2e8;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        .page-title { font-size: 56px; }
+      }
+      .about-accent {
+        width: 64px;
+        height: 4px;
+        background: #9bcfff;
+        border-radius: 999px;
+      }
+      .prose { color: #c0c7d1; line-height: 1.7; }
+      .prose p + p { margin-top: 24px; }
+      .prose a {
+        color: #9bcfff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.15s;
+      }
+      .prose a:hover { color: #ffbe57; }
+      .about-closing {
+        margin-top: 48px;
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #e0e2e8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="page-nav alpine-blur">
+      <div class="page-nav-inner">
+        <a href="/" class="page-nav-brand">Prominence Registry</a>
+        <div class="page-nav-links">
+          <a href="/#database">Directory</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <article class="about-article">
+          <header class="about-header">
+            <h1 class="page-title">Methodology</h1>
+            <div class="about-accent" aria-hidden="true"></div>
+          </header>
+
+          <section class="prose">
+            {paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <SiteFooter />
+
+    <script is:inline>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.page-nav');
+        if (nav) {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+        }
+      });
+    </script>
+  </body>
+</html>
