@@ -1,0 +1,191 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+
+const paragraphs = [
+  "Most of my time outside is spent in the mountains, whether that means a week in high country or a weekend hike closer to home. I'm drawn to good views, and I've learned that prominence is one of the best clues for finding them.",
+  "A peak with significant prominence rises high above its surroundings. That kind of rise often brings the long-distance panorama that makes a climb worthwhile. For me, prominence is not just a statistic. It is a filter for finding mountains with real presence.",
+  "I don't plan to hike all 57 ultra-prominent peaks in the contiguous United States. Some are pure type-2 fun, better suited to people with different goals than mine. I respect that. My time in the mountains is finite, and I'd rather spend it climbing peaks I actually want to see than checking boxes for their own sake.",
+  "But for others, hiking all 57 is the point. That kind of objective has its own satisfaction, and it is equally valid. Prominence Registry exists because people pursuing these peaks deserve better information.",
+  "Right now, that information lives everywhere and nowhere. A few sentences in a climbing guide. A scattered trip report. A Wikipedia stub. A personal blog from ten years ago. There is rarely one place that gathers what you actually need: the standard route, permit requirements, camping options, access issues, terrain, and useful context.",
+  "I started Prominence Registry because I got tired of assembling that picture from scratch every time I found a peak I wanted to climb. I figured I was not alone.",
+  "The goal is simple: one place with carefully sourced, detailed information about all 57 ultra-prominent peaks in the contiguous United States. Each peak gets a reference page covering what makes it distinctive, how people typically climb it, what you need to get there, and what to know before you go.",
+  "No speculation. No drama. Just useful information to help you decide whether a summit belongs on your list.",
+  "This site would not exist without the hiking community: the people who write trip reports, maintain personal blogs, document their ascents, share conditions, and make hard-won information available to others. The sources are scattered, but the generosity is real. Thank you.",
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Prominence Registry</title>
+    <meta
+      name="description"
+      content="Why Prominence Registry exists: carefully sourced reference pages for all 57 ultra-prominent peaks in the contiguous United States."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style is:inline>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #101418;
+        color: #e0e2e8;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .alpine-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      a { color: inherit; text-decoration: none; }
+      .page-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background: rgba(16, 20, 24, 0.8);
+        border-bottom: 1px solid #404850;
+        transition: box-shadow 0.15s;
+      }
+      .page-nav.nav-scrolled { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4); }
+      .page-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 64px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-inner { padding: 0 48px; }
+      }
+      .page-nav-brand {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .page-nav-links {
+        display: none;
+        gap: 32px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-links { display: flex; }
+      }
+      .page-nav-links a {
+        color: #c0c7d1;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .page-nav-links a.active {
+        color: #9bcfff;
+        font-weight: 700;
+        border-bottom: 2px solid #9bcfff;
+        padding-bottom: 4px;
+      }
+      .page-nav-links a:hover { color: #9bcfff; }
+      main { padding: 96px 0 80px; }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      @media (min-width: 768px) {
+        .container { padding: 0 48px; }
+      }
+      .about-article {
+        max-width: 672px;
+        margin: 0 auto;
+      }
+      .about-header {
+        margin-bottom: 48px;
+      }
+      .page-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #e0e2e8;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        .page-title { font-size: 56px; }
+      }
+      .about-accent {
+        width: 64px;
+        height: 4px;
+        background: #9bcfff;
+        border-radius: 999px;
+      }
+      .prose { color: #c0c7d1; line-height: 1.7; }
+      .prose p + p { margin-top: 24px; }
+      .prose a {
+        color: #9bcfff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.15s;
+      }
+      .prose a:hover { color: #ffbe57; }
+      .about-closing {
+        margin-top: 48px;
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #e0e2e8;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="page-nav alpine-blur">
+      <div class="page-nav-inner">
+        <a href="/" class="page-nav-brand">Prominence Registry</a>
+        <div class="page-nav-links">
+          <a href="/#database">Directory</a>
+          <a href="/about" class="active">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <article class="about-article">
+          <header class="about-header">
+            <h1 class="page-title">About Prominence Registry</h1>
+            <div class="about-accent" aria-hidden="true"></div>
+          </header>
+
+          <section class="prose">
+            {paragraphs.map((paragraph) => (
+              <p>{paragraph}</p>
+            ))}
+            <p>
+              If something is wrong or out of date, I want to know. Send corrections to{' '}
+              <a href="mailto:info@prominenceregistry.com">info@prominenceregistry.com</a>.
+            </p>
+            <p class="about-closing">The mountains will still be there. Make them count.</p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <SiteFooter />
+
+    <script is:inline>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.page-nav');
+        if (nav) {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+        }
+      });
+    </script>
+  </body>
+</html>

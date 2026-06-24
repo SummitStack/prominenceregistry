@@ -1,0 +1,18 @@
+---
+/**
+ * Homepage Organization JSON-LD for site-wide authority signals.
+ */
+import { generateOrganizationSchema } from '../lib/schema-generator';
+import { SITE_URL } from '../lib/constants';
+
+interface Props {
+  siteUrl?: string;
+}
+
+const { siteUrl = SITE_URL } = Astro.props;
+const schema = generateOrganizationSchema(siteUrl);
+const jsonLd = JSON.stringify(schema);
+---
+
+<!-- Organization schema: Prominence Registry -->
+<script type="application/ld+json" set:html={jsonLd} />

@@ -16,6 +16,18 @@ export type ImageManifest = Record<string, PeakImageSet>;
 
 const manifest = imageManifest as ImageManifest;
 
+/** Inline fill styles — injected HTML bypasses Astro scoped CSS in dev. */
+const FILL_PICTURE_STYLE =
+  'position:absolute;inset:0;display:block;width:100%;height:100%;margin:0';
+const FILL_IMG_STYLE =
+  'position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;display:block';
+
+function buildImgStyle(options: PictureOptions): string {
+  const fit = options.objectFit ?? 'cover';
+  const position = options.objectPosition ?? 'center';
+  return `position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:${fit};object-position:${position};display:block`;
+}
+
 function escapeAttr(value: string): string {
   return value
     .replace(/&/g, '&amp;')
@@ -32,11 +44,25 @@ export function getPeakImages(slug: string): PeakImageSet | null {
   return manifest[slug] ?? null;
 }
 
+function heroWidths(images: PeakImageSet) {
+  const mobile = images.heroMobile.webp.includes('hero-md') ? 800 : 768;
+  const desktop = images.heroDesktop.webp.includes('hero-lg') ? 1200 : 1440;
+  return { mobile, desktop };
+}
+
+function cardWidths(images: PeakImageSet) {
+  const mobile = images.cardMobile.webp.includes('card-sm') ? 300 : 300;
+  const desktop = images.cardDesktop.webp.includes('hero-sm') ? 400 : 400;
+  return { mobile, desktop };
+}
+
 export type PictureOptions = {
   alt: string;
   lazy?: boolean;
   className?: string;
   sizes?: string;
+  objectFit?: 'cover' | 'contain';
+  objectPosition?: string;
 };
 
 /**
@@ -73,18 +99,20 @@ export function getHeroImage(slug: string, options: PictureOptions): string {
   const sizes =
     options.sizes ?? '(max-width: 768px) 100vw, min(100vw, 1440px)';
 
-  const webpSrcset = `${images.heroMobile.webp} 768w, ${images.heroDesktop.webp} 1440w`;
-  const jpgSrcset = `${images.heroMobile.jpg} 768w, ${images.heroDesktop.jpg} 1440w`;
+  const { mobile: heroMobileW, desktop: heroDesktopW } = heroWidths(images);
+  const webpSrcset = `${images.heroMobile.webp} ${heroMobileW}w, ${images.heroDesktop.webp} ${heroDesktopW}w`;
+  const jpgSrcset = `${images.heroMobile.jpg} ${heroMobileW}w, ${images.heroDesktop.jpg} ${heroDesktopW}w`;
 
-  return `<picture${className}>
+  return `<picture${className} style="${FILL_PICTURE_STYLE}">
   <source type="image/webp" srcset="${webpSrcset}" sizes="${escapeAttr(sizes)}" />
   <img
     src="${images.heroDesktop.jpg}"
     srcset="${jpgSrcset}"
     sizes="${escapeAttr(sizes)}"
     alt="${alt}"
-    width="1440"
-    height="810"
+    width="${heroDesktopW}"
+    height="${Math.round(heroDesktopW * (9 / 16))}"
+    style="${buildImgStyle(options)}"
     decoding="async"${loading}
   />
 </picture>`;
@@ -123,18 +151,20 @@ export function getCardImage(slug: string, options: PictureOptions): string {
   const loading = options.lazy === false ? '' : ' loading="lazy"';
   const sizes = options.sizes ?? '(max-width: 768px) 300px, 400px';
 
-  const webpSrcset = `${images.cardMobile.webp} 300w, ${images.cardDesktop.webp} 400w`;
-  const jpgSrcset = `${images.cardMobile.jpg} 300w, ${images.cardDesktop.jpg} 400w`;
+  const { mobile: cardMobileW, desktop: cardDesktopW } = cardWidths(images);
+  const webpSrcset = `${images.cardMobile.webp} ${cardMobileW}w, ${images.cardDesktop.webp} ${cardDesktopW}w`;
+  const jpgSrcset = `${images.cardMobile.jpg} ${cardMobileW}w, ${images.cardDesktop.jpg} ${cardDesktopW}w`;
 
-  return `<picture${className}>
+  return `<picture${className} style="${FILL_PICTURE_STYLE}">
   <source type="image/webp" srcset="${webpSrcset}" sizes="${escapeAttr(sizes)}" />
   <img
     src="${images.cardDesktop.jpg}"
     srcset="${jpgSrcset}"
     sizes="${escapeAttr(sizes)}"
     alt="${alt}"
-    width="400"
-    height="250"
+    width="${cardDesktopW}"
+    height="${Math.round(cardDesktopW * (10 / 16))}"
+    style="${FILL_IMG_STYLE}"
     decoding="async"${loading}
   />
 </picture>`;

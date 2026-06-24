@@ -253,38 +253,38 @@
   },
   "gannett-peak": {
     "heroDesktop": {
-      "webp": "/images/peaks/optimized/gannett-peak-hero-1440.webp",
-      "jpg": "/images/peaks/optimized/gannett-peak-hero-1440.jpg"
+      "webp": "/images/peaks/optimized/gannett-peak-hero-lg.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-hero-lg.jpg"
     },
     "heroMobile": {
-      "webp": "/images/peaks/optimized/gannett-peak-hero-768.webp",
-      "jpg": "/images/peaks/optimized/gannett-peak-hero-768.jpg"
+      "webp": "/images/peaks/optimized/gannett-peak-hero-md.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-hero-md.jpg"
     },
     "cardDesktop": {
-      "webp": "/images/peaks/optimized/gannett-peak-card-400.webp",
-      "jpg": "/images/peaks/optimized/gannett-peak-card-400.jpg"
+      "webp": "/images/peaks/optimized/gannett-peak-hero-sm.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-hero-sm.jpg"
     },
     "cardMobile": {
-      "webp": "/images/peaks/optimized/gannett-peak-card-300.webp",
-      "jpg": "/images/peaks/optimized/gannett-peak-card-300.jpg"
+      "webp": "/images/peaks/optimized/gannett-peak-card-sm.webp",
+      "jpg": "/images/peaks/optimized/gannett-peak-card-sm.jpg"
     }
   },
   "cloud-peak": {
     "heroDesktop": {
-      "webp": "/images/peaks/optimized/cloud-peak-hero-1440.webp",
-      "jpg": "/images/peaks/optimized/cloud-peak-hero-1440.jpg"
+      "webp": "/images/peaks/optimized/cloud-peak-hero-lg.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-hero-lg.jpg"
     },
     "heroMobile": {
-      "webp": "/images/peaks/optimized/cloud-peak-hero-768.webp",
-      "jpg": "/images/peaks/optimized/cloud-peak-hero-768.jpg"
+      "webp": "/images/peaks/optimized/cloud-peak-hero-md.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-hero-md.jpg"
     },
     "cardDesktop": {
-      "webp": "/images/peaks/optimized/cloud-peak-card-400.webp",
-      "jpg": "/images/peaks/optimized/cloud-peak-card-400.jpg"
+      "webp": "/images/peaks/optimized/cloud-peak-hero-sm.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-hero-sm.jpg"
     },
     "cardMobile": {
-      "webp": "/images/peaks/optimized/cloud-peak-card-300.webp",
-      "jpg": "/images/peaks/optimized/cloud-peak-card-300.jpg"
+      "webp": "/images/peaks/optimized/cloud-peak-card-sm.webp",
+      "jpg": "/images/peaks/optimized/cloud-peak-card-sm.jpg"
     }
   },
   "grand-teton": {
@@ -307,30 +307,30 @@
   },
   "sacajawea-peak": {
     "heroDesktop": {
-      "webp": "/images/peaks/optimized/sacajawea-peak-hero-1440.webp",
-      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-1440.jpg"
+      "webp": "/images/peaks/optimized/sacajawea-peak-hero-lg.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-lg.jpg"
     },
     "heroMobile": {
-      "webp": "/images/peaks/optimized/sacajawea-peak-hero-768.webp",
-      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-768.jpg"
+      "webp": "/images/peaks/optimized/sacajawea-peak-hero-md.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-md.jpg"
     },
     "cardDesktop": {
-      "webp": "/images/peaks/optimized/sacajawea-peak-card-400.webp",
-      "jpg": "/images/peaks/optimized/sacajawea-peak-card-400.jpg"
+      "webp": "/images/peaks/optimized/sacajawea-peak-hero-sm.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-hero-sm.jpg"
     },
     "cardMobile": {
-      "webp": "/images/peaks/optimized/sacajawea-peak-card-300.webp",
-      "jpg": "/images/peaks/optimized/sacajawea-peak-card-300.jpg"
+      "webp": "/images/peaks/optimized/sacajawea-peak-card-sm.webp",
+      "jpg": "/images/peaks/optimized/sacajawea-peak-card-sm.jpg"
     }
   },
   "kings-peak": {
     "heroDesktop": {
-      "webp": "/images/peaks/optimized/kings-peak-hero-1440.webp",
-      "jpg": "/images/peaks/optimized/kings-peak-hero-1440.jpg"
+      "webp": "/images/kings-henrys-fork-basin.webp",
+      "jpg": "/images/kings-henrys-fork-basin.jpg"
     },
     "heroMobile": {
-      "webp": "/images/peaks/optimized/kings-peak-hero-768.webp",
-      "jpg": "/images/peaks/optimized/kings-peak-hero-768.jpg"
+      "webp": "/images/kings-henrys-fork-basin.webp",
+      "jpg": "/images/kings-henrys-fork-basin.jpg"
     },
     "cardDesktop": {
       "webp": "/images/peaks/optimized/kings-peak-card-400.webp",
@@ -343,20 +343,20 @@
   },
   "mount-graham": {
     "heroDesktop": {
-      "webp": "/images/peaks/optimized/mount-graham-hero-1440.webp",
-      "jpg": "/images/peaks/optimized/mount-graham-hero-1440.jpg"
+      "webp": "/images/peaks/optimized/mount-graham-hero-lg.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-hero-lg.jpg"
     },
     "heroMobile": {
-      "webp": "/images/peaks/optimized/mount-graham-hero-768.webp",
-      "jpg": "/images/peaks/optimized/mount-graham-hero-768.jpg"
+      "webp": "/images/peaks/optimized/mount-graham-hero-md.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-hero-md.jpg"
     },
     "cardDesktop": {
-      "webp": "/images/peaks/optimized/mount-graham-card-400.webp",
-      "jpg": "/images/peaks/optimized/mount-graham-card-400.jpg"
+      "webp": "/images/peaks/optimized/mount-graham-hero-sm.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-hero-sm.jpg"
     },
     "cardMobile": {
-      "webp": "/images/peaks/optimized/mount-graham-card-300.webp",
-      "jpg": "/images/peaks/optimized/mount-graham-card-300.jpg"
+      "webp": "/images/peaks/optimized/mount-graham-card-sm.webp",
+      "jpg": "/images/peaks/optimized/mount-graham-card-sm.jpg"
     }
   },
   "mount-san-antonio": {
@@ -987,6 +987,42 @@
     "cardMobile": {
       "webp": "/images/peaks/optimized/miller-peak-card-300.webp",
       "jpg": "/images/peaks/optimized/miller-peak-card-300.jpg"
+    }
+  },
+  "mount-nebo": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-nebo-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-nebo-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-nebo-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-nebo-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-nebo-card-300.jpg"
+    }
+  },
+  "hayford-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/hayford-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/hayford-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/hayford-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/hayford-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/hayford-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/hayford-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/hayford-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/hayford-peak-card-300.jpg"
     }
   }
 }

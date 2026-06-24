@@ -1,6 +1,7 @@
 ---
 import peaksData from '../data/peaks.json';
 import imageManifest from '../data/imageManifest.json';
+import SiteFooter from '../components/SiteFooter.astro';
 
 export const prerender = true;
 
@@ -85,5 +86,6 @@ const peaks = peaksData.map((peak) => ({
       });
     });
   </script>
+  <SiteFooter />
 </body>
 </html>

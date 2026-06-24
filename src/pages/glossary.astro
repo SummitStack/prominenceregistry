@@ -1,0 +1,379 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glossary | Prominence Registry</title>
+    <meta
+      name="description"
+      content="Definitions of topographic, glaciological, and climbing terms used throughout the Prominence Registry, including prominence, isolation, parent peak, exposure, and more."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style is:inline>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #101418;
+        color: #e0e2e8;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .alpine-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      a { color: inherit; text-decoration: none; }
+      .page-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background: rgba(16, 20, 24, 0.8);
+        border-bottom: 1px solid #404850;
+        transition: box-shadow 0.15s;
+      }
+      .page-nav.nav-scrolled { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4); }
+      .page-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 64px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-inner { padding: 0 48px; }
+      }
+      .page-nav-brand {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .page-nav-links {
+        display: none;
+        gap: 32px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-links { display: flex; }
+      }
+      .page-nav-links a {
+        color: #c0c7d1;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .page-nav-links a:hover { color: #9bcfff; }
+      main { padding: 96px 0 80px; }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      @media (min-width: 768px) {
+        .container { padding: 0 48px; }
+      }
+      .glossary-article {
+        max-width: 672px;
+        margin: 0 auto;
+      }
+      .glossary-header {
+        margin-bottom: 48px;
+      }
+      .page-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #e0e2e8;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        .page-title { font-size: 56px; }
+      }
+      .glossary-accent {
+        width: 64px;
+        height: 4px;
+        background: #9bcfff;
+        border-radius: 999px;
+      }
+      .prose { color: #c0c7d1; line-height: 1.7; }
+      .prose p { margin-bottom: 24px; }
+      .prose p:last-child { margin-bottom: 0; }
+      .prose section { margin-top: 64px; }
+      .prose h2 {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #e0e2e8;
+        margin-bottom: 32px;
+      }
+      .prose h3 {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: #e0e2e8;
+        margin-top: 32px;
+        margin-bottom: 12px;
+      }
+      .prose h3:first-child { margin-top: 0; }
+      .prose ul {
+        margin: 0 0 24px 1.25rem;
+        color: #c0c7d1;
+      }
+      .prose li { margin-bottom: 8px; }
+      .prose li:last-child { margin-bottom: 0; }
+    </style>
+  </head>
+  <body>
+    <nav class="page-nav alpine-blur">
+      <div class="page-nav-inner">
+        <a href="/" class="page-nav-brand">Prominence Registry</a>
+        <div class="page-nav-links">
+          <a href="/#database">Directory</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <article class="glossary-article">
+          <header class="glossary-header">
+            <h1 class="page-title">Glossary</h1>
+            <div class="glossary-accent" aria-hidden="true"></div>
+          </header>
+
+          <div class="prose">
+            <p>
+              This glossary defines terms used throughout the Prominence Registry. Entries cover topographic measurement concepts, mountaineering terrain vocabulary, and the specific metrics used to classify and rank ultra-prominent peaks.
+            </p>
+
+            <section aria-labelledby="topographic-concepts">
+              <h2 id="topographic-concepts">Topographic Concepts</h2>
+
+              <h3>Prominence</h3>
+              <p>
+                The vertical distance between a peak's true summit and the highest col (saddle) that must be crossed to reach any higher peak. Prominence measures a peak's independent vertical rise from its surroundings and is independent of elevation. A peak with high prominence rises dramatically above adjacent terrain; a peak with low prominence sits near the height of neighboring ridges, even if its elevation is high. The standard threshold for ultra-prominent peaks is 1,500 meters (4,921 feet) of prominence.
+              </p>
+
+              <h3>Topographic Isolation</h3>
+              <p>
+                The horizontal distance from a given peak to the nearest point of equal or greater elevation. Where prominence measures vertical independence, isolation measures horizontal separation. A peak with high isolation stands far from any equal-height terrain, regardless of how much it rises above its immediate surroundings. Isolation is typically expressed in kilometers or miles. Mount Rainier, for instance, has an isolation of roughly 1,350 kilometers to the nearest point of equal elevation in the Cascade or Sierra Nevada ranges.
+              </p>
+
+              <h3>Elevation</h3>
+              <p>
+                The height of a summit above mean sea level, typically expressed in feet or meters. Elevation is the most widely cited mountain statistic but is a poor predictor of a peak's visual dominance or physical distinctiveness. Two summits at the same elevation may have very different prominence values depending on their surrounding terrain.
+              </p>
+
+              <h3>Key Col (Saddle)</h3>
+              <p>
+                The highest mountain pass or saddle that connects a peak to higher terrain. The key col is the reference point from which prominence is calculated: prominence equals the summit elevation minus the key col elevation. The key col is sometimes called the "connecting col" or "linking col."
+              </p>
+
+              <h3>Parent Peak</h3>
+              <p>
+                The nearest peak of greater elevation to a given summit. The parent is identified by following the ridge that contains the key col outward to the first higher summit encountered. Because parent identification depends on which ridge is chosen, there are different conventions for defining parentage; the most common in North American usage follows the "prominence lineage" or "ridge walk" method.
+              </p>
+
+              <h3>Line Parent</h3>
+              <p>
+                The most prominent peak that is higher than a given summit and reachable by a path that stays at or above the key col elevation at all times. The line parent is sometimes described as the "prominence parent" and differs from the simple parent in that it may skip over intermediate peaks if those peaks have lower prominence. For the highest peaks in a given range, the line parent is often a peak in a distant range or, ultimately, Mount Everest.
+              </p>
+
+              <h3>Ultra-Prominent Peak (Ultra)</h3>
+              <p>
+                A summit with at least 1,500 meters (4,921 feet) of topographic prominence. The threshold is an international standard used by the prominence-bagging community. There are 57 ultra-prominent peaks in the contiguous United States; globally there are 1,524. The ultra threshold selects for peaks with substantial, independent vertical presence, filtering out high but subsidiary summits.
+              </p>
+
+              <h3>Isolation Contour</h3>
+              <p>
+                A theoretical ring drawn around a peak at the radius equal to its isolation value. Any terrain touching the isolation contour is at the same elevation as the summit or higher. Isolation contours are used in mapping and analysis to visualize a peak's geographic footprint.
+              </p>
+
+              <h3>Subsidiary Summit</h3>
+              <p>
+                A summit that does not meet a defined prominence threshold relative to its parent peak. Most named summits on long ridges are subsidiary to the highest point of that ridge. Whether a subsidiary summit qualifies as a distinct peak depends on which prominence threshold is applied; 300 feet (91 meters) is common for general lists, 500 feet for more selective ones, and 1,500 meters for ultra-prominent lists.
+              </p>
+            </section>
+
+            <section aria-labelledby="glacier-alpine-terrain">
+              <h2 id="glacier-alpine-terrain">Glacier and Alpine Terrain</h2>
+
+              <h3>Bergschrund</h3>
+              <p>
+                The crevasse or gap that separates the moving glacier ice from the stationary snowfield or ice attached to the headwall above. Bergschrunds form where ice flow begins to pull away from the rock face. Crossing a bergschrund is often the crux of glaciated routes; early-season conditions typically allow easier passage when the gap is filled with consolidated snow.
+              </p>
+
+              <h3>Crevasse</h3>
+              <p>
+                A crack in a glacier's surface formed by stress as ice moves over irregular terrain or bends around curves. Crevasses can range from a few inches wide to tens of feet, and may be hidden under snow bridges that appear solid. Travel on glaciated terrain generally requires roped travel and crevasse rescue proficiency.
+              </p>
+
+              <h3>Seracs</h3>
+              <p>
+                Columns or blocks of glacial ice formed where crevasse systems intersect. Seracs are inherently unstable and can collapse without warning; routes that traverse beneath seracs carry objective hazard that cannot be fully managed by a climbing party. Many Cascade routes carry serac exposure that dictates early start times or alternate line selection.
+              </p>
+
+              <h3>Moraine</h3>
+              <p>
+                An accumulation of rock debris deposited by a glacier at its margins or terminus. Lateral moraines run along the sides of a glacier; terminal moraines mark the furthest point a glacier has advanced. Moraines are common landmarks on approach trails and may provide camping sites above the glacier.
+              </p>
+
+              <h3>Glacier Travel</h3>
+              <p>
+                Movement over glaciated terrain, typically requiring crampons, ice axe, and roped travel to manage crevasse and fall hazard. Glacier routes are rated separately from rock routes; glacier travel on steeper terrain requires additional skills including self-arrest technique and anchor placement in snow and ice.
+              </p>
+
+              <h3>Couloir</h3>
+              <p>
+                A steep gully on a mountain face, often holding snow or ice well into summer. Couloirs are common lines on moderate alpine routes and can offer efficient paths to ridges or summits. They also concentrate falling rock, ice, and avalanche debris; timing is critical on any couloir route.
+              </p>
+
+              <h3>Talus</h3>
+              <p>
+                A field of angular rock fragments accumulated below a cliff face through weathering and freeze-thaw cycles. Talus travel is slower than trail travel and requires attention to unstable rocks. Much of the upper terrain on non-glaciated ultra-prominent peaks involves talus or blocky scrambling.
+              </p>
+
+              <h3>Scree</h3>
+              <p>
+                Loose, small rock debris covering a slope. Scree slopes are common on volcanic and crumbling sedimentary terrain. Descending scree is often faster than ascending by the same route; many routes use scree gullies as descent lines.
+              </p>
+
+              <h3>Snowfield</h3>
+              <p>
+                A permanent or semi-permanent expanse of snow on a mountain face that does not flow as a true glacier. Snowfields may require crampons early in the season, and often transition to firm, icy conditions by midsummer. The distinction between a snowfield and a small glacier is typically based on whether the mass shows measurable flow.
+              </p>
+
+              <h3>Firn</h3>
+              <p>
+                Compacted, granular snow that has survived at least one melt season and is transitioning toward glacial ice. Firn is denser and harder than new snow and holds a boot kick less readily. It is found on the accumulation zones of glaciers and on high snowfields that persist year-round.
+              </p>
+
+              <h3>Cirque</h3>
+              <p>
+                A bowl-shaped basin carved into a mountainside by glacial erosion. Cirques form at the head of a glacier where ice quarries into the rock over thousands of years, leaving a steep, amphitheater-like hollow. Most glaciated ultra-prominent peaks have one or more cirques visible from the approach; they are common locations for high camps, snowfields, and bergschrunds at their upper headwalls.
+              </p>
+
+              <h3>Snow Bridge</h3>
+              <p>
+                A span of consolidated snow arching over a crevasse. Snow bridges form when windblown snow accumulates across a gap in the glacier surface. They can appear solid while holding little actual weight; early-season and cold-morning conditions generally produce more reliable bridges than late-season afternoon travel. Probing ahead and maintaining rope tension between team members are standard practice when crossing snow bridges.
+              </p>
+
+              <h3>Accumulation Zone</h3>
+              <p>
+                The upper portion of a glacier where annual snowfall exceeds melt, adding mass to the ice system. Below the equilibrium line lies the ablation zone, where melt exceeds accumulation and the glacier loses mass. Most climbing routes on glaciated peaks begin in or traverse through the accumulation zone, where crevassing is typically less severe than lower on the glacier. A glacier in retreat has a shrinking accumulation zone relative to its ablation zone.
+              </p>
+
+              <h3>Rimrock</h3>
+              <p>
+                A ledge or outcropping of harder rock at the edge of a plateau or canyon rim, left standing after softer surrounding material has eroded away. Rimrock is common terrain in the Basin and Range province and on the approaches to some Colorado Plateau peaks.
+              </p>
+            </section>
+
+            <section aria-labelledby="climbing-classification">
+              <h2 id="climbing-classification">Climbing Classification</h2>
+
+              <h3>Yosemite Decimal System (YDS)</h3>
+              <p>
+                The rating scale used throughout the Prominence Registry to classify route difficulty. The scale runs from Class 1 through Class 5 (technical rock climbing), with Class 5 subdivided into decimal grades (5.0 through 5.15+).
+              </p>
+              <ul>
+                <li>Class 1: Trail walking or off-trail travel on stable terrain. No hands required.</li>
+                <li>Class 2: Off-trail travel over talus, scree, or rough terrain. Occasional use of hands for balance.</li>
+                <li>Class 3: Scrambling with hands used regularly for upward progress. Exposure present; a fall could be serious.</li>
+                <li>Class 4: Exposed scrambling or easy climbing where a fall would likely be fatal. Many parties rope up on Class 4 terrain.</li>
+                <li>Class 5: Technical rock climbing requiring a rope, protection placement, and belay system. Subdivided by decimal grades.</li>
+              </ul>
+
+              <h3>Exposure</h3>
+              <p>The consequence of a fall from a given position on a route.</p>
+              <p>
+                "Exposure" is a euphemism. What it describes is the distance a climber would fall, and what would stop them. A trail section rated Class 1 with a thousand-foot drop on one side is exposed. A Class 4 scramble on a wide ledge above a talus field is not particularly exposed. The rating tells you how hard the climbing is; exposure tells you what happens if you get it wrong.
+              </p>
+              <p>
+                Exposure accumulates across the features that define a route. A couloir may be moderate in angle but expose a party to rockfall and avalanche debris funneling from above. A glacier crossing puts climbers over crevasse fields where a misstep without roped travel means a fall into ice. A ridgeline traverse above a moraine may involve no technical climbing but place a climber on terrain where a slip lands on scree hundreds of feet below. Seracs above a route introduce objective hazard that no amount of skill eliminates.
+              </p>
+              <p>
+                A useful frame: technical difficulty measures what a climber must do; exposure measures what the mountain will do in return for a mistake. A route's YDS class captures the first; exposure must be assessed independently, route section by route section, before committing to a line.
+              </p>
+
+              <h3>Objective Hazard</h3>
+              <p>
+                A hazard inherent to the terrain or environment that exists independent of a climber's skill level. Rockfall from above, serac collapse, avalanche paths, and crevasse fields are objective hazards. Unlike technical difficulty, objective hazard cannot be eliminated by skill or experience, only managed through timing, route selection, and situational awareness.
+              </p>
+
+              <h3>Approach</h3>
+              <p>
+                The non-technical portion of travel between the trailhead and the point where a route's primary climbing terrain begins. Approaches range from a short walk across a parking lot to multi-day wilderness travel crossing passes, fording rivers, and gaining significant elevation before any climbing starts. Approach conditions, including trail quality, snow coverage, and water availability, are often the primary logistical variable on long routes.
+              </p>
+
+              <h3>Alpine Start</h3>
+              <p>
+                A departure time well before dawn, typically between 10 PM and 3 AM, used to reach technical terrain while temperatures are cold and conditions are favorable. On glaciated routes, an alpine start ensures travel over snow bridges and beneath seracs before daytime warming softens the snowpack and destabilizes ice. On rocky routes, it targets the summit before afternoon convective storms build. An alpine start is a timing strategy, not a difficulty rating, but its absence on certain routes is a meaningful safety failure.
+              </p>
+
+              <h3>Rope Team</h3>
+              <p>
+                A group of climbers connected by a shared rope for travel on glaciated or otherwise hazardous terrain. Standard rope teams are two or three climbers; spacing between members is adjusted based on crevasse size and terrain steepness. A rope team on a glacier maintains enough tension to catch a crevasse fall before the falling climber drops below the surface. Rope team travel requires that all members understand arrest technique and crevasse rescue procedures, not just the most experienced member.
+              </p>
+
+              <h3>Bivy</h3>
+              <p>
+                Short for bivouac: an unplanned or minimally equipped overnight stop on a route, or a designated high camp used as a staging point for a summit push. A bivy site is any location suitable for sleeping that is not a developed campsite. Established bivy sites on ultra-prominent routes are noted in the Camping section of each peak page; unplanned bivies are a contingency that should be anticipated in gear selection on any long route where weather or pace could prevent same-day descent.
+              </p>
+
+              <h3>Wilderness Boundary</h3>
+              <p>
+                The point at which a designated Wilderness Area begins, as established by the Wilderness Act of 1964 and subsequent legislation. Wilderness boundaries typically mark where permit requirements take effect, where mechanized equipment (including wheeled carts and drones) is prohibited, and where specific camping and campfire regulations apply. The wilderness boundary and the trailhead are not always the same location; some trailheads sit inside wilderness, others outside it.
+              </p>
+            </section>
+
+            <section aria-labelledby="registry-specific-terms">
+              <h2 id="registry-specific-terms">Registry-Specific Terms</h2>
+
+              <h3>Ultra 57</h3>
+              <p>
+                The common shorthand for the 57 ultra-prominent peaks in the contiguous United States. The list is derived from topographic data (primarily SRTM and high-resolution DEMs) and is widely accepted across the peak-bagging community, though minor variations exist in older sources.
+              </p>
+
+              <h3>Permit Status</h3>
+              <p>
+                The classification used throughout the Registry to indicate the current access requirement for a given peak. Status values are: Open (no permit required), Limited (quota in place, first-come or advance reservation), Lottery (permit access by competitive random draw), Closed (access prohibited), and Seasonal (restrictions vary by time of year).
+              </p>
+
+              <h3>DEM (Digital Elevation Model)</h3>
+              <p>
+                A grid of elevation values derived from remote sensing data, used to calculate prominence and isolation values. Modern DEMs used for prominence calculation typically come from the Shuttle Radar Topography Mission (SRTM) at 3-arc-second resolution or from higher-resolution LIDAR data where available. DEM-derived values may differ slightly from survey-based elevations; the Registry uses officially surveyed elevations where available.
+              </p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <SiteFooter />
+
+    <script is:inline>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.page-nav');
+        if (nav) {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+        }
+      });
+    </script>
+  </body>
+</html>

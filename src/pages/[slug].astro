@@ -1,6 +1,14 @@
 ---
 import peaksData from '../data/peaks.json';
-import { getHeroImage } from '../utils/imageHelpers';
+import gearData from '../data/gear.json';
+import { getCardImage, getHeroImage, hasPeakImages } from '../utils/imageHelpers';
+import { getStateName } from '../utils/stateNames';
+import {
+  getHazardLabel,
+  getTechnicalRequirementLabel,
+} from '../utils/safetyLabels';
+import PeakSchemaHead from '../components/PeakSchemaHead.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 
 export const prerender = true;
 
@@ -25,61 +33,69 @@ if (!slug || !peak) {
 
 const mountainRange = 'mountainRange' in peak ? peak.mountainRange : null;
 const season = 'season' in peak ? peak.season : null;
-const hazards = 'hazards' in peak && Array.isArray(peak.hazards) ? peak.hazards : [];
+const hazardIds =
+  'hazards' in peak && Array.isArray(peak.hazards) ? peak.hazards : [];
+const technicalRequirementIds =
+  'technicalRequirements' in peak && Array.isArray(peak.technicalRequirements)
+    ? peak.technicalRequirements
+    : [];
+
+const hazardLabels = hazardIds.map(getHazardLabel);
+const technicalRequirementLabels = technicalRequirementIds.map(getTechnicalRequirementLabel);
+const gearLookup = Object.fromEntries(gearData.items.map((item) => [item.id, item.label]));
+const requiredGear = (peak.gear ?? []).map((id) => gearLookup[id]).filter(Boolean);
 const bestRoute = 'bestRoute' in peak ? peak.bestRoute : null;
 const permitRequired =
   'permitRequired' in peak
     ? peak.permitRequired
     : peak.difficulty >= 7 || peak.elevation >= 14000;
 const dataSource = 'dataSource' in peak ? peak.dataSource : null;
+const ydsClass = 'class' in peak ? peak.class : null;
 
-const routeOverview = bestRoute
+const hasCallout = peak.hasCallout === true;
+const calloutText = hasCallout && typeof peak.callout === 'string' ? peak.callout : '';
+const hasSafetyNote = peak.hasSafetyNote === true;
+const safetyNoteText = hasSafetyNote && typeof peak.safetyNote === 'string' ? peak.safetyNote : '';
+
+type PeakContent = {
+  overview?: string[];
+  routeDescription?: string[];
+  routeLandmarks?: string[];
+  permitsClimbing?: string;
+  permitsCamping?: string | string[];
+  wildlife?: string;
+  footnote?: string;
+};
+
+const customContent =
+  'content' in peak && peak.content && typeof peak.content === 'object' && !Array.isArray(peak.content)
+    ? (peak.content as PeakContent)
+    : null;
+
+const defaultRouteOverview = bestRoute
   ? `${peak.name} (${mountainRange ?? peak.state}) is most commonly climbed via the ${bestRoute}. Rated ${peak.difficulty}/10 difficulty, the standard ascent typically takes ${peak.days} day${peak.days > 1 ? 's' : ''}, covering roughly ${peak.distance} miles with ${peak.gain.toLocaleString()} feet of vertical gain. The summit stands at ${peak.elevation.toLocaleString()} ft with ${peak.prominence.toLocaleString()} ft of clean prominence — among the most topographically significant peaks in the lower 48.`
   : `${peak.name} is a ${peak.difficulty}/10 difficulty ascent in ${peak.state}, typically completed in ${peak.days} day${peak.days > 1 ? 's' : ''}. The standard route covers approximately ${peak.distance} miles with ${peak.gain.toLocaleString()} feet of vertical gain. With ${peak.prominence.toLocaleString()} feet of prominence and a summit elevation of ${peak.elevation.toLocaleString()} feet, it ranks among the most topographically significant peaks in the lower 48.`;
 
-const technicalRequirements =
-  peak.difficulty >= 8
-    ? [
-        'Glacier travel and crevasse rescue proficiency',
-        'Technical rock or ice climbing experience',
-        'High-altitude acclimatization and weather judgment',
-      ]
-    : peak.difficulty >= 6
-      ? [
-          'Class 2–3 scrambling on exposed terrain',
-          'Early alpine starts for snow and weather windows',
-          'Off-trail navigation and route-finding skills',
-        ]
-      : [
-          'Trail navigation and map/GPS literacy',
-          'Fitness for sustained elevation gain',
-          'Weather monitoring and turnaround planning',
-        ];
+const overviewParagraphs =
+  customContent?.overview && customContent.overview.length > 0
+    ? customContent.overview
+    : [defaultRouteOverview];
 
-const requiredGear =
-  peak.difficulty >= 8
-    ? [
-        'Ice axe, crampons, and mountaineering boots',
-        'Helmet, harness, and glacier travel kit',
-        'Layered insulation and storm shell',
-        'GPS device and emergency communication',
-      ]
-    : peak.difficulty >= 6
-      ? [
-          'Trekking poles and sturdy approach footwear',
-          'Headlamp, first aid, and emergency bivy supplies',
-          'Sun protection and full layering system',
-          '3+ liters water capacity and high-calorie food',
-        ]
-      : [
-          'Broken-in hiking boots and moisture-wicking layers',
-          'Rain shell, hat, and sun protection',
-          'Navigation tools and emergency whistle',
-          'Adequate water and trail snacks',
-        ];
+const routeParagraphs = customContent?.routeDescription ?? [];
+const routeLandmarks = customContent?.routeLandmarks ?? [];
+const permitsClimbingText = customContent?.permitsClimbing ?? null;
+const permitsCampingParagraphs = customContent?.permitsCamping
+  ? Array.isArray(customContent.permitsCamping)
+    ? customContent.permitsCamping
+    : [customContent.permitsCamping]
+  : null;
+const wildlifeText = customContent?.wildlife ?? null;
+const contentFootnote = customContent?.footnote ?? null;
 
-const permitStatus = permitRequired ? 'Permit Required' : 'No Permit Needed';
-const permitFee = permitRequired ? '$15–82' : 'Free';
+const technicalRequirements = technicalRequirementLabels;
+
+const permitStatus = permitRequired ? 'Required' : 'Open';
+const permitFee = peak.permitFee ?? (permitRequired ? 'Verify with land manager' : 'Free');
 const displaySeason =
   season ??
   (peak.difficulty >= 8
@@ -89,179 +105,1126 @@ const displaySeason =
       : peak.state === 'AZ'
         ? 'April-November'
         : 'June-October');
+
+// No coordinates in dataset; rank by same range, then state, then elevation proximity
+const nearbyPeaks = peaksData
+  .filter((p) => p.slug !== peak.slug)
+  .sort((a, b) => {
+    const aSameRange = mountainRange && a.mountainRange === mountainRange ? 0 : 1;
+    const bSameRange = mountainRange && b.mountainRange === mountainRange ? 0 : 1;
+    if (aSameRange !== bSameRange) return aSameRange - bSameRange;
+    const aSameState = a.state === peak.state ? 0 : 1;
+    const bSameState = b.state === peak.state ? 0 : 1;
+    if (aSameState !== bSameState) return aSameState - bSameState;
+    return Math.abs(a.elevation - peak.elevation) - Math.abs(b.elevation - peak.elevation);
+  })
+  .slice(0, 5);
+
+const timeEstimate =
+  peak.days > 1 ? `${peak.days - 1}-${peak.days}` : `${peak.days}`;
+
+const prominenceRank = peaksData.findIndex((p) => p.slug === peak.slug) + 1;
+const permitSeason = 'permitSeason' in peak ? peak.permitSeason : null;
+const weatherUrl = 'weatherForecastUrl' in peak ? peak.weatherForecastUrl : null;
+const stateName = getStateName(peak.state);
+
+const latitude = typeof peak.latitude === 'number' ? peak.latitude : null;
+const longitude = typeof peak.longitude === 'number' ? peak.longitude : null;
+
+function formatCoordinate(value: number, positive: string, negative: string) {
+  const direction = value >= 0 ? positive : negative;
+  return `${Math.abs(value).toFixed(4)}° ${direction}`;
+}
+
+const coordinatesDisplay =
+  latitude !== null && longitude !== null
+    ? `${formatCoordinate(latitude, 'N', 'S')}, ${formatCoordinate(longitude, 'E', 'W')}`
+    : null;
+
+const mapsUrl =
+  latitude !== null && longitude !== null
+    ? `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`
+    : `https://www.google.com/maps/search/${encodeURIComponent(peak.name + ' ' + peak.state)}`;
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {!peak.published && (
+      <meta name="robots" content="noindex, nofollow" />
+    )}
     <title>{peak.name} · Prominence Registry</title>
-    <style>
-      main > picture { display: block; height: 360px; overflow: hidden; }
-      main > picture img { width: 100%; height: 100%; object-fit: cover; }
+    <PeakSchemaHead peak={peak} />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <style is:inline is:global>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #101418;
+        color: #e0e2e8;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .alpine-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      a { color: inherit; text-decoration: none; }
+      .page-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background: rgba(16, 20, 24, 0.8);
+        border-bottom: 1px solid #404850;
+        transition: box-shadow 0.15s;
+      }
+      .page-nav.nav-scrolled { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4); }
+      .page-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 64px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-inner { padding: 0 48px; }
+      }
+      .page-nav-brand {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .page-nav-links {
+        display: none;
+        gap: 32px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-links { display: flex; }
+      }
+      .page-nav-links a {
+        color: #c0c7d1;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .page-nav-links a.active {
+        color: #9bcfff;
+        font-weight: 700;
+        border-bottom: 2px solid #9bcfff;
+        padding-bottom: 4px;
+      }
+      .page-nav-links a:hover { color: #9bcfff; }
+      main { padding: 96px 0 80px; }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      @media (min-width: 768px) {
+        .container { padding: 0 48px; }
+      }
+      .breadcrumbs {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 24px;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #c0c7d1;
+      }
+      .breadcrumbs a:hover { color: #9bcfff; }
+      .breadcrumbs .current { color: #9bcfff; }
+      .breadcrumbs .material-symbols-outlined { font-size: 14px; }
+      .page-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #e0e2e8;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        .page-title { font-size: 56px; }
+      }
+      .tags { display: flex; flex-wrap: wrap; gap: 12px; }
+      .tag {
+        background: #313539;
+        border: 1px solid #404850;
+        border-radius: 4px;
+        padding: 4px 10px;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #9bcfff;
+      }
+      .hero-section { margin-block: 48px; }
+      .hero-visual {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 21 / 9;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #404850;
+      }
+      .hero-visual-fallback {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, #1a2530 0%, #2a3a4a 45%, #181c20 100%);
+      }
+      .hero-gradient {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+        z-index: 10;
+        pointer-events: none;
+      }
+      .hero-rank {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 20;
+        background: rgba(11, 15, 18, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 16px;
+        min-width: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .hero-rank-label {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #c0c7d1;
+        margin-bottom: 4px;
+      }
+      .hero-rank-value {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        color: #9bcfff;
+        line-height: 1;
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        margin-bottom: 80px;
+      }
+      @media (min-width: 768px) {
+        .stats-grid { grid-template-columns: repeat(3, 1fr); }
+      }
+      @media (min-width: 1024px) {
+        .stats-grid { grid-template-columns: repeat(6, 1fr); }
+      }
+      .stat-card {
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 24px;
+        transition: border-color 0.15s;
+      }
+      .stat-card:hover { border-color: #9bcfff; }
+      .stat-card-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #c0c7d1;
+        margin-bottom: 16px;
+      }
+      .stat-card-label .material-symbols-outlined { font-size: 18px; }
+      .stat-card-value {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 24px;
+        color: #e0e2e8;
+      }
+      .stat-card-unit {
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 14px;
+        color: #c0c7d1;
+      }
+      .content-grid {
+        display: grid;
+        gap: 48px;
+      }
+      @media (min-width: 768px) {
+        .content-grid { grid-template-columns: 2fr 1fr; gap: 48px; }
+      }
+      .section-title {
+        display: flex;
+        align-items: center;
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+        margin-bottom: 24px;
+      }
+      .section-title-bar {
+        width: 4px;
+        height: 32px;
+        background: #9bcfff;
+        border-radius: 999px;
+        flex-shrink: 0;
+        margin-right: 16px;
+      }
+      .prose { color: #c0c7d1; line-height: 1.7; }
+      .prose p + p { margin-top: 24px; }
+      .info-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 24px;
+      }
+      @media (min-width: 640px) {
+        .info-cards { grid-template-columns: 1fr 1fr; }
+      }
+      .info-card {
+        background: #1c2024;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 16px;
+      }
+      .info-card h4 {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .info-card-primary h4 { color: #9bcfff; }
+      .info-card-tertiary h4 { color: #ffbe57; }
+      .info-card ul {
+        list-style: none;
+        font-size: 14px;
+        color: #c0c7d1;
+      }
+      .info-card li {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 8px;
+      }
+      .info-card li span { font-size: 16px; }
+      .info-card-primary li span { color: #9bcfff; }
+      .info-card-tertiary li span { color: #ffbe57; }
+      .hazards-block {
+        margin-top: 24px;
+        padding: 16px 20px;
+        background: rgba(155, 207, 255, 0.06);
+        border: 1px solid #404850;
+        border-radius: 12px;
+      }
+      .hazards-label {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #9bcfff;
+        margin-bottom: 10px;
+      }
+      .hazard-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+      .hazard-tag {
+        padding: 4px 10px;
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 999px;
+        font-size: 13px;
+      }
+      .map-placeholder {
+        width: 100%;
+        height: 320px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #404850;
+        position: relative;
+        background: #0f1419;
+        margin-bottom: 24px;
+      }
+      .map-grid {
+        position: absolute;
+        inset: 0;
+        opacity: 0.4;
+        background-image: radial-gradient(#2a3139 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+      .map-center {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .map-center .material-symbols-outlined {
+        font-size: 48px;
+        color: #9bcfff;
+        font-variation-settings: 'FILL' 1;
+      }
+      .map-center p {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #c0c7d1;
+        margin-top: 8px;
+      }
+      .coords-card {
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      @media (min-width: 768px) {
+        .coords-card {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+      .coords-label {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #c0c7d1;
+        margin-bottom: 4px;
+      }
+      .coords-value {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #8a919b;
+        color: #e0e2e8;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: background 0.15s;
+        cursor: pointer;
+        background: transparent;
+        font-size: 14px;
+      }
+      .btn-outline:hover { background: #313539; }
+      .sidebar-card {
+        background: #1c2024;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 24px;
+      }
+      .sidebar-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 24px;
+      }
+      .sidebar-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #404850;
+        color: #c0c7d1;
+      }
+      .sidebar-row-value {
+        color: #e0e2e8;
+        font-weight: 600;
+      }
+      .badge-required {
+        background: #93000a;
+        color: #ffb4ab;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .badge-open {
+        background: rgba(16, 185, 129, 0.15);
+        color: #10b981;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .sidebar-actions { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+      .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        background: #64b5f6;
+        color: #00456c;
+        padding: 14px;
+        border-radius: 8px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: filter 0.15s;
+      }
+      .btn-primary:hover { filter: brightness(1.1); }
+      .btn-weather {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        background: #36393e;
+        color: #e0e2e8;
+        padding: 14px;
+        border-radius: 8px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.15s;
+      }
+      .btn-weather:hover { background: #313539; }
+      .gear-card {
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 24px;
+        margin-top: 32px;
+      }
+      .gear-card h3 {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #facc15;
+        margin-bottom: 24px;
+      }
+      .gear-card ul { list-style: none; }
+      .gear-card li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #c0c7d1;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+      .gear-card li::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #facc15;
+        flex-shrink: 0;
+      }
+      .sidebar-note {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 12px;
+        font-style: italic;
+        color: #c0c7d1;
+      }
+      .nearby-card { margin-top: 32px; }
+      .nearby-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .nearby-list { display: flex; flex-direction: column; gap: 12px; }
+      .nearby-item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 12px;
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        transition: border-color 0.15s;
+      }
+      .nearby-item:hover { border-color: #9bcfff; }
+      .nearby-thumb {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        background: #313539;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+      .nearby-name {
+        font-weight: 500;
+        color: #e0e2e8;
+        transition: color 0.15s;
+      }
+      .nearby-item:hover .nearby-name { color: #9bcfff; }
+      .nearby-meta { font-size: 12px; color: #c0c7d1; }
+      .data-source {
+        margin-top: 24px;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 12px;
+        color: #8a919b;
+      }
+      .fab {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #9bcfff;
+        color: #003352;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+        transition: transform 0.15s;
+        z-index: 40;
+        border: none;
+        cursor: pointer;
+      }
+      .fab:hover { transform: scale(1.05); }
+      .fab .material-symbols-outlined { font-variation-settings: 'FILL' 1; }
+      aside { display: flex; flex-direction: column; }
+      .main-column { display: flex; flex-direction: column; gap: 64px; }
+      article + article { margin-top: 0; }
+      .intro-blockquote {
+        background: #181c20;
+        border-left: 4px solid #9bcfff;
+        padding: 16px;
+        border-radius: 0 8px 8px 0;
+        font-style: italic;
+        color: #e0e2e8;
+      }
+      .route-subtitle {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        color: #e0e2e8;
+        margin-bottom: 12px;
+      }
+      .route-landmarks-label {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #9bcfff;
+        margin-top: 24px;
+        margin-bottom: 12px;
+      }
+      .route-landmarks {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px 32px;
+        color: #c0c7d1;
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 8px;
+      }
+      @media (min-width: 640px) {
+        .route-landmarks { grid-template-columns: 1fr 1fr; }
+      }
+      .content-footnote {
+        margin-top: 24px;
+        font-size: 12px;
+        font-style: italic;
+        color: #8a919b;
+      }
+      .safety-note {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        background: rgba(147, 0, 10, 0.2);
+        border: 1px solid rgba(255, 180, 171, 0.3);
+        padding: 16px;
+        border-radius: 12px;
+        margin-top: 24px;
+      }
+      .safety-note .material-symbols-outlined { color: #ffb4ab; font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+      .safety-note p { font-size: 14px; color: #ffb4ab; font-weight: 500; }
+      .safety-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      @media (min-width: 768px) {
+        .safety-grid { grid-template-columns: 1fr 1fr; }
+      }
+      .safety-card {
+        background: #181c20;
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 32px;
+      }
+      .safety-card h3 {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 24px;
+      }
+      .safety-card-primary h3 { color: #9bcfff; }
+      .safety-card-danger h3 { color: #ef4444; }
+      .safety-card ul { list-style: none; }
+      .safety-card li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #c0c7d1;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+      .safety-card li::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+      .safety-card-primary li::before { background: #9bcfff; }
+      .safety-card-danger li::before { background: #ef4444; }
+      .permits-subtitle {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #e0e2e8;
+        margin-bottom: 12px;
+      }
+      .permits-section { display: flex; flex-direction: column; gap: 40px; }
+      .permits-block p { font-size: 16px; color: #c0c7d1; line-height: 1.7; }
+      .permits-block strong { color: #e0e2e8; }
+    </style>
+    <style is:global>
+      .hero-visual picture,
+      .hero-visual img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+      .hero-visual picture { margin: 0; }
+      .hero-visual img { transition: transform 0.7s ease; }
+      .hero-visual:hover img { transform: scale(1.05); }
+      .nearby-thumb picture,
+      .nearby-thumb img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        display: block;
+      }
     </style>
   </head>
-  <body style="margin: 0; background: #0f1419; color: #f0f1f3; font-family: system-ui, -apple-system, sans-serif; line-height: 1.5;">
-    <main style="min-height: 100vh;">
-      <Fragment set:html={getHeroImage(peak.slug, { alt: `${peak.name} summit` })} />
-      <section
-        style="position: relative; margin-top: -360px; height: 360px; background: linear-gradient(180deg, rgba(15, 20, 25, 0.25) 0%, rgba(15, 20, 25, 0.92) 100%); display: flex; align-items: flex-end;"
-      >
-        <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px 40px;">
-          <a
-            href="/"
-            style="display: inline-block; margin-bottom: 16px; color: #64b5f6; font-size: 13px; text-decoration: none;"
-          >
-            ← Back to Registry
-          </a>
-          <h1 style="margin: 0 0 12px; font-size: clamp(36px, 6vw, 56px); font-weight: 700; letter-spacing: -0.02em;">
-            {peak.name}
-          </h1>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-            <span
-              style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #64b5f6; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
-            >
-              {peak.state}
-            </span>
+  <body class="peak-detail">
+    <nav class="page-nav alpine-blur">
+      <div class="page-nav-inner">
+        <a href="/" class="page-nav-brand">Prominence Registry</a>
+        <div class="page-nav-links">
+          <a href="/#database">Directory</a>
+          <a href="/about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol style="display:flex;align-items:center;gap:8px;list-style:none;">
+            <li><a href="/">Directory</a></li>
+            <li aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></li>
             {mountainRange && (
-              <span
-                style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #8b92a1; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
-              >
-                {mountainRange}
-              </span>
+              <>
+                <li>{mountainRange}</li>
+                <li aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></li>
+              </>
             )}
-            {bestRoute && (
-              <span
-                style="display: inline-block; padding: 6px 12px; background: #1a1f27; border: 1px solid #2a3139; color: #8b92a1; font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; border-radius: 6px;"
-              >
-                {bestRoute}
-              </span>
-            )}
+            <li class="current" style="font-weight:700;color:#e0e2e8;">{peak.name}</li>
+          </ol>
+        </nav>
+        <h1 class="page-title">{peak.name}</h1>
+        <div class="tags">
+          <span class="tag">{stateName}</span>
+          {ydsClass && (
+            <span class="tag">Class {ydsClass}</span>
+          )}
+          {mountainRange && (
+            <span class="tag">{mountainRange}</span>
+          )}
+        </div>
+      </header>
+
+      <section class="container hero-section">
+        <div class="hero-visual">
+          {hasPeakImages(peak.slug) ? (
+            <Fragment
+              set:html={getHeroImage(peak.slug, {
+                alt: `${peak.name} summit landscape`,
+                lazy: false,
+                sizes: '100vw',
+              })}
+            />
+          ) : (
+            <div class="hero-visual-fallback" aria-hidden="true"></div>
+          )}
+          <div class="hero-gradient"></div>
+          <div class="hero-rank">
+            <span class="hero-rank-label">Rank</span>
+            <span class="hero-rank-value">{String(prominenceRank).padStart(2, '0')}</span>
           </div>
         </div>
       </section>
 
-      <div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px;">
-        <section
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-bottom: 40px;"
-        >
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Elevation</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.elevation.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+      <section class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Elevation
+              <span class="material-symbols-outlined">landscape</span>
+            </p>
+            <p class="stat-card-value">
+              {peak.elevation.toLocaleString()}
+              <span class="stat-card-unit"> ft</span>
+            </p>
           </div>
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #64b5f6; margin-bottom: 8px;">Prominence</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.prominence.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Prominence
+              <span class="material-symbols-outlined">height</span>
+            </p>
+            <p class="stat-card-value">
+              {peak.prominence.toLocaleString()}
+              <span class="stat-card-unit"> ft</span>
+            </p>
           </div>
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Difficulty</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.difficulty}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;">/10</span></div>
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Difficulty
+              <span class="material-symbols-outlined">signal_cellular_alt</span>
+            </p>
+            <p class="stat-card-value">{ydsClass ? `Class ${ydsClass}` : `${peak.difficulty}/10`}</p>
           </div>
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Days</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.days}</div>
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Est. Time
+              <span class="material-symbols-outlined">schedule</span>
+            </p>
+            <p class="stat-card-value">
+              {timeEstimate}
+              <span class="stat-card-unit"> Days</span>
+            </p>
           </div>
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Distance</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.distance}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> mi</span></div>
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Distance
+              <span class="material-symbols-outlined">route</span>
+            </p>
+            <p class="stat-card-value">
+              {peak.distance}
+              <span class="stat-card-unit"> mi</span>
+            </p>
           </div>
-          <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-            <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 8px;">Gain</div>
-            <div style="font-size: 28px; font-weight: 700;">{peak.gain.toLocaleString()}<span style="font-size: 14px; color: #8b92a1; font-weight: 500;"> ft</span></div>
+          <div class="stat-card">
+            <p class="stat-card-label">
+              Vert Gain
+              <span class="material-symbols-outlined">trending_up</span>
+            </p>
+            <p class="stat-card-value">
+              {peak.gain.toLocaleString()}
+              <span class="stat-card-unit"> ft</span>
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <div style="display: flex; gap: 32px; flex-wrap: wrap; align-items: flex-start;">
-          <div style="flex: 1; min-width: 280px;">
-            <section style="margin-bottom: 32px;">
-              <h2 style="margin: 0 0 16px; font-size: 24px; font-weight: 700;">Route Overview</h2>
-              <p style="margin: 0 0 16px; color: #8b92a1; font-size: 16px; line-height: 1.7;">
-                {routeOverview}
-              </p>
-              {hazards.length > 0 && (
-                <div style="padding: 16px 20px; background: rgba(100, 181, 246, 0.06); border: 1px solid #2a3139; border-radius: 8px;">
-                  <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #64b5f6; margin-bottom: 10px;">Known Hazards</div>
-                  <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-                    {hazards.map((hazard) => (
-                      <span
-                        style="display: inline-block; padding: 4px 10px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 999px; font-size: 13px; color: #f0f1f3;"
-                      >
-                        {hazard}
-                      </span>
-                    ))}
+      <section class="container content-grid">
+        <div class="main-column">
+          <article id="introduction">
+            <div class="prose">
+              {overviewParagraphs.map((paragraph) => (
+                <p>{paragraph}</p>
+              ))}
+              {hasCallout && calloutText && (
+                <div class="intro-blockquote">{calloutText}</div>
+              )}
+            </div>
+          </article>
+
+          {bestRoute && (
+            <article id="route-details">
+              <h2 class="section-title">
+                <span class="section-title-bar"></span>
+                Recommended Route
+              </h2>
+              <div class="prose">
+                <h3 class="route-subtitle">{bestRoute}</h3>
+                {routeParagraphs.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
+                {routeLandmarks.length > 0 && (
+                  <>
+                    <h4 class="route-landmarks-label">Key Landmarks</h4>
+                    <ul class="route-landmarks">
+                      {routeLandmarks.map((landmark) => (
+                        <li>{landmark}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {hasSafetyNote && safetyNoteText && (
+                  <div class="safety-note">
+                    <span class="material-symbols-outlined">warning</span>
+                    <p>{safetyNoteText}</p>
                   </div>
+                )}
+              </div>
+            </article>
+          )}
+
+          <article id="permits-camping">
+            <h2 class="section-title">
+              <span class="section-title-bar"></span>
+              Permits &amp; Camping
+            </h2>
+            <div class="permits-section">
+              <div class="permits-block">
+                <h3 class="permits-subtitle">Climbing Permits</h3>
+                {permitsClimbingText ? (
+                  <p>{permitsClimbingText}</p>
+                ) : (
+                  <p>
+                    {permitRequired
+                      ? <>A climbing permit is <strong>required</strong> for summit attempts on {peak.name}. Fees typically range <strong>{permitFee}</strong>. Reservations are strongly recommended during peak season ({displaySeason}).</>
+                      : <>No special climbing permit is required for {peak.name}, though wilderness or park entry fees may apply. Peak season runs <strong>{displaySeason}</strong>.</>}
+                  </p>
+                )}
+              </div>
+              {(permitsCampingParagraphs || permitSeason) && (
+                <div class="permits-block">
+                  <h3 class="permits-subtitle">{permitsCampingParagraphs ? 'Camping & Wilderness' : 'Season & Access'}</h3>
+                  {permitsCampingParagraphs ? (
+                    permitsCampingParagraphs.map((paragraph) => <p>{paragraph}</p>)
+                  ) : (
+                    <p>{permitSeason}</p>
+                  )}
                 </div>
               )}
-            </section>
+              {contentFootnote && (
+                <p class="content-footnote">{contentFootnote}</p>
+              )}
+            </div>
+          </article>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
-              <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-                <h3 style="margin: 0 0 16px; font-size: 18px; font-weight: 700; color: #64b5f6;">Technical Requirements</h3>
-                <ul style="margin: 0; padding-left: 20px; color: #8b92a1; font-size: 14px;">
+          {wildlifeText && (
+            <article id="wildlife">
+              <h2 class="section-title">
+                <span class="section-title-bar"></span>
+                Wildlife &amp; Seasonal Conditions
+              </h2>
+              <div class="prose">
+                <p>{wildlifeText}</p>
+              </div>
+            </article>
+          )}
+
+          <article id="safety-info">
+            <h2 class="section-title">
+              <span class="section-title-bar"></span>
+              Safety Information
+            </h2>
+            <div class="safety-grid">
+              <div class="safety-card safety-card-primary">
+                <h3>Technical Requirements</h3>
+                <ul>
                   {technicalRequirements.map((item) => (
-                    <li style="margin-bottom: 8px;">{item}</li>
+                    <li>{item}</li>
                   ))}
                 </ul>
               </div>
+              {hazardLabels.length > 0 && (
+                <div class="safety-card safety-card-danger">
+                  <h3>Known Hazards</h3>
+                  <ul>
+                    {hazardLabels.map((hazard) => (
+                      <li>{hazard}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </article>
 
-              <div style="padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;">
-                <h3 style="margin: 0 0 16px; font-size: 18px; font-weight: 700; color: #64b5f6;">Required Gear</h3>
-                <ul style="margin: 0; padding-left: 20px; color: #8b92a1; font-size: 14px;">
-                  {requiredGear.map((item) => (
-                    <li style="margin-bottom: 8px;">{item}</li>
-                  ))}
-                </ul>
+          <article id="getting-there">
+            <h2 class="section-title">
+              <span class="section-title-bar"></span>
+              Getting There
+            </h2>
+            <div class="map-placeholder">
+              <div class="map-grid"></div>
+              <div class="map-center">
+                <span class="material-symbols-outlined">location_on</span>
+                <p>{peak.name} · {peak.state}</p>
               </div>
             </div>
+            <div class="coords-card">
+              <div>
+                <p class="coords-label">Coordinates</p>
+                <p class="coords-value">
+                  {coordinatesDisplay ?? (mountainRange ?? peak.state)}
+                </p>
+              </div>
+              <a
+                class="btn-outline"
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="material-symbols-outlined" style="font-size: 20px;">directions</span>
+                Open in Maps
+              </a>
+            </div>
+          </article>
 
-            {dataSource && (
-              <p style="margin: 24px 0 0; font-size: 12px; color: #8b92a1; font-family: ui-monospace, monospace;">
-                Data source: {dataSource}
-              </p>
+          {dataSource && (
+            <p class="data-source">Data source: {dataSource}</p>
+          )}
+        </div>
+
+        <aside>
+          <div class="sidebar-card">
+            <h3 class="sidebar-title">Plan Expedition</h3>
+            <div class="sidebar-row">
+              <span>Permit Status</span>
+              <span class={permitRequired ? 'badge-required' : 'badge-open'}>{permitStatus}</span>
+            </div>
+            <div class="sidebar-row">
+              <span>Climbing Fee</span>
+              <span class="sidebar-row-value">{permitFee}</span>
+            </div>
+            <div class="sidebar-row">
+              <span>Peak Season</span>
+              <span class="sidebar-row-value">{displaySeason}</span>
+            </div>
+            {bestRoute && (
+              <div class="sidebar-row" style="border-bottom: none;">
+                <span>Best Route</span>
+                <span class="sidebar-row-value">{bestRoute}</span>
+              </div>
+            )}
+            <div class="sidebar-actions">
+              <a href="/#database" class="btn-primary">
+                <span class="material-symbols-outlined" style="font-size: 20px;">confirmation_number</span>
+                Check Permits
+              </a>
+              {weatherUrl && (
+                <a
+                  class="btn-weather"
+                  href={weatherUrl}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <span class="material-symbols-outlined" style="font-size: 20px;">light_mode</span>
+                  Detailed Weather
+                </a>
+              )}
+            </div>
+            {permitRequired && (
+              <p class="sidebar-note">* Permit may be required for summit attempts.</p>
             )}
           </div>
 
-          <aside
-            style="width: 100%; max-width: 320px; flex-shrink: 0; padding: 24px; background: #1a1f27; border: 1px solid #2a3139; border-radius: 12px;"
-          >
-            <h3 style="margin: 0 0 20px; font-size: 18px; font-weight: 700;">Plan Expedition</h3>
+          {requiredGear.length > 0 && (
+            <div class="gear-card">
+              <h3>Required Gear</h3>
+              <ul>
+                {requiredGear.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
-            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
-              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Permit Status</div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span
-                  style={`display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${permitRequired ? '#f59e0b' : '#10b981'};`}
-                ></span>
-                <span style="font-size: 15px; font-weight: 600;">{permitStatus}</span>
+          {nearbyPeaks.length > 0 && (
+            <div class="nearby-card">
+              <h4 class="nearby-title">Nearby Peaks</h4>
+              <div class="nearby-list">
+                {nearbyPeaks.map((nearby) => (
+                  <a href={`/${nearby.slug}`} class="nearby-item">
+                    <div class="nearby-thumb">
+                      {hasPeakImages(nearby.slug) ? (
+                        <Fragment set:html={getCardImage(nearby.slug, { alt: nearby.name })} />
+                      ) : (
+                        <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#313539;">
+                          <span class="material-symbols-outlined" style="color:#c0c7d1;">landscape</span>
+                        </div>
+                      )}
+                    </div>
+                    <div>
+                      <p class="nearby-name">{nearby.name}</p>
+                      <p class="nearby-meta">
+                        {nearby.elevation.toLocaleString()} ft · Class {'class' in nearby ? nearby.class : '—'}
+                      </p>
+                    </div>
+                  </a>
+                ))}
               </div>
             </div>
-
-            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
-              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Fee</div>
-              <div style="font-size: 15px; font-weight: 600;">{permitFee}</div>
-            </div>
-
-            <div style="margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #2a3139;">
-              <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Season</div>
-              <div style="font-size: 15px; font-weight: 600;">{displaySeason}</div>
-            </div>
-
-            {bestRoute && (
-              <div style="margin-bottom: 24px;">
-                <div style="font-size: 11px; font-family: ui-monospace, monospace; text-transform: uppercase; letter-spacing: 0.08em; color: #8b92a1; margin-bottom: 6px;">Best Route</div>
-                <div style="font-size: 15px; font-weight: 600;">{bestRoute}</div>
-              </div>
-            )}
-
-            <a
-              href="/"
-              style="display: block; width: 100%; padding: 14px 0; background: #64b5f6; color: #0f1419; border-radius: 8px; font-size: 14px; font-weight: 700; text-align: center; text-decoration: none;"
-            >
-              Browse All Peaks
-            </a>
-          </aside>
-        </div>
-      </div>
+          )}
+        </aside>
+      </section>
     </main>
+
+    <SiteFooter />
+
+    <a href="/#database" class="fab" aria-label="Browse peaks">
+      <span class="material-symbols-outlined">add</span>
+    </a>
+    <script is:inline>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.page-nav');
+        if (nav) {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+        }
+      });
+    </script>
   </body>
 </html>

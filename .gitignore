@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# generated schema cache (rebuilt by npm run prebuild)
+src/data/generated/
+
 # dependencies
 node_modules/
 

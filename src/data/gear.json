@@ -1,0 +1,18 @@
+{
+  "items": [
+    { "id": "crampons", "label": "Crampons" },
+    { "id": "ice_axe", "label": "Ice axe" },
+    { "id": "mountaineering_boots", "label": "Mountaineering boots" },
+    { "id": "helmet", "label": "Helmet" },
+    { "id": "rope_harness", "label": "Rope & harness" },
+    { "id": "insulating_layer", "label": "Insulating layer" },
+    { "id": "waterproof_shell", "label": "Waterproof shell jacket" },
+    { "id": "bear_canister", "label": "Bear canister" },
+    { "id": "microspikes", "label": "Microspikes" },
+    { "id": "trekking_poles", "label": "Trekking poles" },
+    { "id": "gaiters", "label": "Gaiters" },
+    { "id": "avalanche_kit", "label": "Avalanche beacon, shovel & probe" },
+    { "id": "insulating_hat", "label": "Insulating hat" },
+    { "id": "water_capacity", "label": "Extra water capacity" }
+  ]
+}

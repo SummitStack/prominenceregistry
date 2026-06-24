@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-06-24T03:27:09.262Z",
+  "peaks": {
+    "hayford-peak": {
+      "requestedUrl": "https://bobspirko.ca/USTrips/Nevada/HayfordPeak/HayfordPeak_2830.jpg",
+      "sourceUrl": "https://bobspirko.ca/USTrips/Nevada/HayfordPeak/HayfordPeak_2830.jpg",
+      "raw": {
+        "bytes": 682720,
+        "size": "666.7 KB"
+      },
+      "optimizedTotal": {
+        "bytes": 1532465,
+        "size": "1.46 MB"
+      },
+      "overallCompressionRatio": "43.9%",
+      "variants": [
+        {
+          "variant": "hero-1440",
+          "webp": {
+            "bytes": 639670,
+            "size": "624.7 KB"
+          },
+          "jpg": {
+            "bytes": 461932,
+            "size": "451.1 KB"
+          },
+          "combined": {
+            "bytes": 1101602,
+            "size": "1.05 MB"
+          },
+          "compressionRatio": "-61.4%"
+        },
+        {
+          "variant": "hero-768",
+          "webp": {
+            "bytes": 175366,
+            "size": "171.3 KB"
+          },
+          "jpg": {
+            "bytes": 123391,
+            "size": "120.5 KB"
+          },
+          "combined": {
+            "bytes": 298757,
+            "size": "291.8 KB"
+          },
+          "compressionRatio": "56.2%"
+        },
+        {
+          "variant": "card-400",
+          "webp": {
+            "bytes": 49166,
+            "size": "48.0 KB"
+          },
+          "jpg": {
+            "bytes": 34113,
+            "size": "33.3 KB"
+          },
+          "combined": {
+            "bytes": 83279,
+            "size": "81.3 KB"
+          },
+          "compressionRatio": "87.8%"
+        },
+        {
+          "variant": "card-300",
+          "webp": {
+            "bytes": 28820,
+            "size": "28.1 KB"
+          },
+          "jpg": {
+            "bytes": 20007,
+            "size": "19.5 KB"
+          },
+          "combined": {
+            "bytes": 48827,
+            "size": "47.7 KB"
+          },
+          "compressionRatio": "92.8%"
+        }
+      ],
+      "manifestEntry": {
+        "slug": "hayford-peak",
+        "raw": "hayford-peak.jpg",
+        "variants": {
+          "hero-1440": {
+            "webp": "hayford-peak-hero-1440.webp",
+            "jpg": "hayford-peak-hero-1440.jpg"
+          },
+          "hero-768": {
+            "webp": "hayford-peak-hero-768.webp",
+            "jpg": "hayford-peak-hero-768.jpg"
+          },
+          "card-400": {
+            "webp": "hayford-peak-card-400.webp",
+            "jpg": "hayford-peak-card-400.jpg"
+          },
+          "card-300": {
+            "webp": "hayford-peak-card-300.webp",
+            "jpg": "hayford-peak-card-300.jpg"
+          }
+        }
+      }
+    }
+  }
+}

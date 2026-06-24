@@ -1,43 +1,67 @@
-# Astro Starter Kit: Minimal
+# Prominence Registry
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Static field guides for the most topographically prominent peaks in the contiguous United States. Built with [Astro](https://astro.build).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Commands
 
-## 🚀 Project Structure
+| Command | Action |
+| :------ | :----- |
+| `npm install` | Install dependencies |
+| `npm run dev` | Dev server at `localhost:4321` |
+| `npm run prebuild` | Validate peaks and generate schema cache |
+| `npm run build` | Prebuild schema + production build to `./dist/` |
+| `npm run test` | Run schema unit tests |
+| `npm run preview` | Preview production build |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Schema & SEO
+
+Every peak page includes [schema.org](https://schema.org) **Mountain** and **GeoCoordinates** JSON-LD in the page `<head>`, generated from `src/data/peaks.json`. The homepage includes an **Organization** schema.
+
+### Adding or updating a peak
+
+1. Edit the peak entry in `src/data/peaks.json`.
+2. Schema updates automatically on the next dev request or build (hash-based cache invalidation).
+3. Run `npm run prebuild` to validate all peaks and refresh the schema cache.
+
+### Required fields for Mountain schema
+
+| Field | Source | Rule |
+| :---- | :----- | :--- |
+| `name` | `peak.name` | Non-empty string |
+| `elevation` | `peak.elevation` | 5,000–21,000 ft |
+| `latitude` / `longitude` | `peak.latitude`, `peak.longitude` | Valid WGS84 ranges |
+| `state` | `peak.state` | Two-letter US state code |
+| `slug` | `peak.slug` | Used for canonical URL |
+| `description` | `content.overview[0]` | First 75 words (fallback auto-generated) |
+
+Optional: `mountainRange` → `location`, `alternateName`, hero image from image manifest.
+
+### Validation errors
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+✗ Mount Example: latitude is required and must be a number
+✗ Mount Example: elevation must be > 5000 and < 21000 (got 3000)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Peaks missing coordinates or with invalid data are **skipped** for JSON-LD (page still builds). Set `SCHEMA_STRICT=1` on prebuild to fail the build when any peak is invalid:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+```sh
+SCHEMA_STRICT=1 npm run build
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Manual cache invalidation
 
-## 🧞 Commands
+```ts
+import { invalidateSchema, invalidateAllSchemas } from './src/lib/schema-cache';
+invalidateSchema('mount-whitney');
+invalidateAllSchemas();
+```
 
-All commands are run from the root of the project, from a terminal:
+### Key modules
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- `src/types/peak.ts` — Peak type and validation constants
+- `src/lib/schema-generator.ts` — `generateMountainSchema`, `validatePeakData`
+- `src/lib/schema-cache.ts` — In-memory cache
+- `src/lib/peak-loader.ts` — `getPeakData`, `getPeakSchema`, change detection
+- `src/components/PeakSchemaHead.astro` — Injects JSON-LD on peak pages
+- `scripts/prebuild-schema.ts` — Validates all peaks before build

@@ -1,0 +1,27 @@
+---
+/**
+ * Injects schema.org Mountain + GeoCoordinates JSON-LD into the page head.
+ * Uses peak-loader cache; regenerates when peak data hash changes.
+ */
+import type { Peak } from '../types/peak';
+import { getPeakSchema } from '../lib/peak-loader';
+import { SITE_URL } from '../lib/constants';
+
+interface Props {
+  peak: Peak;
+  siteUrl?: string;
+}
+
+const { peak, siteUrl = SITE_URL } = Astro.props;
+const schemaResult = getPeakSchema(peak, siteUrl);
+const jsonLd = schemaResult ? JSON.stringify(schemaResult.schema) : null;
+---
+
+{
+  schemaResult && jsonLd && (
+    <>
+      {/* Mountain schema: {peak.name} (updated {schemaResult.updatedAt}) */}
+      <script type="application/ld+json" set:html={jsonLd} />
+    </>
+  )
+}

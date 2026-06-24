@@ -1,0 +1,1910 @@
+[
+  {
+    "slug": "mount-rainier",
+    "hazards": [
+      "crevasse-fall",
+      "bergschrund",
+      "rockfall",
+      "avalanche",
+      "altitude-sickness",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunglasses",
+        "sunscreen",
+        "gaiters",
+        "gloves",
+        "insulating-hat",
+        "shell-pants",
+        "compass",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "mount-whitney",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "bears"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "gloves",
+        "compass",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "mount-shasta",
+    "hazards": [
+      "altitude-sickness",
+      "wind-extreme-weather",
+      "whiteout-conditions",
+      "avalanche",
+      "rockfall",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel",
+      "glacier-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "avalanche-gear",
+        "gloves",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "compass",
+        "gaiters",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "mount-elbert",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "gloves",
+        "emergency-comm",
+        "insulating-hat"
+      ]
+    }
+  },
+  {
+    "slug": "mount-baker",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunglasses",
+        "sunscreen",
+        "compass",
+        "gaiters",
+        "gloves",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "san-jacinto-peak",
+    "hazards": [
+      "altitude-sickness",
+      "heat-exhaustion",
+      "dehydration",
+      "lightning-exposure"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "insulating-layer"
+      ]
+    }
+  },
+  {
+    "slug": "san-gorgonio-mountain",
+    "hazards": [
+      "altitude-sickness",
+      "heat-exhaustion",
+      "dehydration",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "insulating-layer",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "charleston-peak",
+    "hazards": [
+      "altitude-sickness",
+      "heat-exhaustion",
+      "dehydration",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "insulating-layer"
+      ]
+    }
+  },
+  {
+    "slug": "mount-adams",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia",
+      "loose-rock-scree",
+      "rockfall",
+      "avalanche",
+      "bears"
+    ],
+    "technicalRequirements": [
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses",
+        "sunscreen"
+      ],
+      "secondary": [
+        "gaiters",
+        "gloves",
+        "compass",
+        "water-capacity",
+        "hat",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "mount-olympus",
+    "hazards": [
+      "class-4-climbing",
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "hypothermia",
+      "whiteout-conditions"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "exposed-rock-climbing",
+      "alpine-start",
+      "snow-travel",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "rope-harness",
+        "climbing-protection",
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "belay-device",
+        "gaiters",
+        "avalanche-gear",
+        "microspikes",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "mount-hood",
+    "hazards": [
+      "bergschrund",
+      "crevasse-fall",
+      "rockfall",
+      "avalanche",
+      "altitude-sickness",
+      "whiteout-conditions"
+    ],
+    "technicalRequirements": [
+      "snow-travel",
+      "glacier-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses"
+      ],
+      "secondary": [
+        "sunscreen",
+        "compass",
+        "rope-harness",
+        "gloves",
+        "gaiters",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "wheeler-peak",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "microspikes",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "water-capacity",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gloves",
+        "emergency-comm",
+        "compass"
+      ]
+    }
+  },
+  {
+    "slug": "glacier-peak",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia",
+      "bears",
+      "loose-rock-scree",
+      "altitude-sickness"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "water-capacity",
+        "gaiters",
+        "gloves",
+        "high-calorie-food",
+        "sunscreen"
+      ]
+    }
+  },
+  {
+    "slug": "white-mountain-peak",
+    "hazards": [
+      "altitude-sickness",
+      "dehydration",
+      "hypothermia",
+      "wind-extreme-weather",
+      "lightning-exposure"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gloves",
+        "insulating-hat",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "gannett-peak",
+    "hazards": [
+      "crevasse-fall",
+      "bergschrund",
+      "avalanche",
+      "altitude-sickness",
+      "water-crossing",
+      "lightning-exposure",
+      "bears",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "sunglasses",
+        "sunscreen",
+        "gloves",
+        "water-capacity",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "cloud-peak",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "hypothermia",
+      "wind-extreme-weather",
+      "dehydration",
+      "bears"
+    ],
+    "technicalRequirements": [
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "compass",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "hat",
+        "gloves",
+        "insect-repellent",
+        "high-calorie-food",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "grand-teton",
+    "hazards": [
+      "off-trail-navigation",
+      "exposure",
+      "lightning-exposure",
+      "rockfall",
+      "altitude-sickness",
+      "class-4-climbing"
+    ],
+    "technicalRequirements": [
+      "exposed-rock-climbing",
+      "altitude-acclimatization",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "rope-harness",
+        "climbing-protection",
+        "belay-device",
+        "climbing-shoes",
+        "ice-axe",
+        "crampons"
+      ],
+      "secondary": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "compass",
+        "emergency-comm",
+        "water-capacity"
+      ]
+    }
+  },
+  {
+    "slug": "sacajawea-peak",
+    "hazards": [
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "rockfall",
+      "whiteout-conditions",
+      "lightning-exposure",
+      "hypothermia",
+      "water-crossing"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "compass",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen"
+      ],
+      "secondary": [
+        "microspikes",
+        "crampons",
+        "gaiters",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "kings-peak",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "exposed-scrambling",
+      "off-trail-nav",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "gloves",
+        "emergency-comm",
+        "insect-repellent"
+      ]
+    }
+  },
+  {
+    "slug": "mount-graham",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "bears",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "shell-jacket",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "insect-repellent",
+        "compass",
+        "emergency-comm",
+        "insulating-layer",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "mount-san-antonio",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "scrambling-exposed"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "exposed-scrambling",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "shell-jacket",
+        "insulating-layer"
+      ],
+      "secondary": [
+        "microspikes",
+        "helmet",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "telescope-peak",
+    "hazards": [
+      "altitude-sickness",
+      "dehydration",
+      "heat-exhaustion",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "mount-peale",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "lightning-exposure",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "mount-washington",
+    "hazards": [
+      "hypothermia",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "exposure",
+      "rockfall"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "exposed-scrambling",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "shell-pants",
+        "gloves",
+        "insulating-hat",
+        "traction-descent",
+        "emergency-comm"
+      ],
+      "secondary": [
+        "microspikes",
+        "crampons",
+        "compass",
+        "water-capacity",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "mount-mitchell",
+    "hazards": [
+      "lightning-exposure",
+      "hypothermia",
+      "exposure",
+      "wind-extreme-weather",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "compass",
+        "emergency-comm",
+        "gloves"
+      ],
+      "secondary": [
+        "microspikes",
+        "hat",
+        "high-calorie-food",
+        "insect-repellent",
+        "traction-descent"
+      ]
+    }
+  },
+  {
+    "slug": "humphreys-peak",
+    "hazards": [
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "dehydration",
+      "heat-exhaustion"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start",
+      "altitude-acclimatization",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "gloves",
+        "emergency-comm",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "borah-peak",
+    "hazards": [
+      "altitude-sickness",
+      "class-4-climbing",
+      "exposure",
+      "rockfall",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "exposed-rock-climbing",
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "rope-harness",
+        "climbing-protection",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "climbing-shoes",
+        "compass",
+        "emergency-comm",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "mount-jefferson-nv",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "rockfall"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "helmet",
+        "shell-jacket",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "mount-ellen",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "lightning-exposure",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "rock-scrambling-loose",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "deseret-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "scrambling-exposed"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "rock-scrambling-loose",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "mount-jefferson-or",
+    "hazards": [
+      "exposure",
+      "scrambling-exposed",
+      "bergschrund",
+      "rockfall",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "altitude-sickness",
+      "whiteout-conditions"
+    ],
+    "technicalRequirements": [
+      "snow-travel",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "climbing-protection",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "water-capacity",
+        "gloves",
+        "gaiters",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "pilot-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "exposure",
+      "rockfall"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "helmet",
+        "shell-jacket",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves",
+        "traction-descent"
+      ]
+    }
+  },
+  {
+    "slug": "crazy-peak",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "scrambling-exposed",
+      "hypothermia",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "exposed-scrambling",
+      "alpine-start",
+      "snow-travel",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "sunscreen"
+      ],
+      "secondary": [
+        "avalanche-gear",
+        "microspikes",
+        "water-capacity",
+        "emergency-comm",
+        "high-calorie-food",
+        "compass"
+      ]
+    }
+  },
+  {
+    "slug": "mcdonald-peak",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "hypothermia",
+      "whiteout-conditions",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "alpine-start",
+      "snow-travel",
+      "exposed-scrambling",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "avalanche-gear"
+      ],
+      "secondary": [
+        "microspikes",
+        "insulating-hat",
+        "water-capacity",
+        "emergency-comm",
+        "high-calorie-food",
+        "compass"
+      ]
+    }
+  },
+  {
+    "slug": "south-sister",
+    "hazards": [
+      "lightning-exposure",
+      "loose-rock-scree",
+      "rockfall",
+      "altitude-sickness",
+      "whiteout-conditions",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "crampons",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "sierra-blanca-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "scrambling-exposed"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "pikes-peak",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "dehydration",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "sunscreen",
+        "gloves",
+        "emergency-comm"
+      ]
+    }
+  },
+  {
+    "slug": "mount-nebo",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "hypothermia",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "insulating-hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "helmet"
+      ]
+    }
+  },
+  {
+    "slug": "snowshoe-peak",
+    "hazards": [
+      "class-4-climbing",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "hypothermia",
+      "rockfall",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "exposed-rock-climbing",
+      "rock-scrambling-loose",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "rope-harness",
+        "climbing-protection",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "water-capacity"
+      ],
+      "secondary": [
+        "belay-device",
+        "microspikes",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "north-schell-peak",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "scrambling-exposed",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "star-peak",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "scrambling-exposed",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "hayford-peak",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "hypothermia",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "diamond-peak",
+    "hazards": [
+      "altitude-sickness",
+      "hypothermia",
+      "wind-extreme-weather",
+      "lightning-exposure"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "insulating-hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "sunscreen"
+      ]
+    }
+  },
+  {
+    "slug": "flat-top-mountain",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "rockfall"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "helmet",
+        "shell-jacket",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "mount-stuart",
+    "hazards": [
+      "crevasse-fall",
+      "rockfall",
+      "scrambling-exposed",
+      "hypothermia",
+      "loose-rock-scree",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "exposed-scrambling",
+      "alpine-start",
+      "snow-travel",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "sunscreen"
+      ],
+      "secondary": [
+        "microspikes",
+        "water-capacity",
+        "emergency-comm",
+        "high-calorie-food",
+        "compass",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "blanca-peak",
+    "hazards": [
+      "altitude-sickness",
+      "hypothermia",
+      "lightning-exposure",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "insulating-hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "sunscreen",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "mount-timpanogos",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "avalanche",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "rock-scrambling-loose",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "gloves",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "ibapah-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "exposure",
+      "lightning-exposure"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "lassen-peak",
+    "hazards": [
+      "dehydration",
+      "hypothermia",
+      "lightning-exposure",
+      "rockfall",
+      "exposure",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "shell-jacket",
+        "insulating-layer",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "gloves",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "mount-cleveland",
+    "hazards": [
+      "altitude-sickness",
+      "hypothermia",
+      "bears",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "insulating-hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    }
+  },
+  {
+    "slug": "arc-dome",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "rock-scrambling-loose",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "shell-jacket",
+        "insulating-layer",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "helmet",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "microspikes"
+      ]
+    }
+  },
+  {
+    "slug": "she-devil",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "scrambling-exposed",
+      "hypothermia"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "duct-tape"
+      ]
+    }
+  },
+  {
+    "slug": "abercrombie-mountain",
+    "hazards": [
+      "altitude-sickness",
+      "exposure",
+      "hypothermia",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "insulating-hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "helmet"
+      ]
+    }
+  },
+  {
+    "slug": "mount-lemmon",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "bears",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "shell-jacket",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "insulating-layer",
+        "compass",
+        "emergency-comm",
+        "insect-repellent",
+        "gloves"
+      ]
+    }
+  },
+  {
+    "slug": "chiricahua-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "bears",
+      "loose-rock-scree",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "shell-jacket",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "insulating-layer",
+        "compass",
+        "emergency-comm",
+        "insect-repellent",
+        "gloves",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "mount-eddy",
+    "hazards": [
+      "dehydration",
+      "hypothermia",
+      "lightning-exposure",
+      "off-trail-navigation",
+      "bears"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "shell-jacket",
+        "insulating-layer",
+        "compass",
+        "sunscreen",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves",
+        "gaiters"
+      ]
+    }
+  },
+  {
+    "slug": "miller-peak",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "exposure",
+      "bears"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "helmet",
+        "shell-jacket",
+        "hat",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "insulating-layer",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "insect-repellent"
+      ]
+    }
+  }
+]
