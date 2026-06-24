@@ -131,15 +131,7 @@ const gainDisplay =
   'gainDisplay' in peak && typeof peak.gainDisplay === 'string'
     ? peak.gainDisplay
     : `${peak.gain.toLocaleString()} ft`;
-const displaySeason =
-  season ??
-  (peak.difficulty >= 8
-    ? 'June-September'
-    : peak.state === 'NH' || peak.state === 'NC'
-      ? 'May-October'
-      : peak.state === 'AZ'
-        ? 'April-November'
-        : 'June-October');
+const displaySeason = season ?? 'June-September';
 
 // No coordinates in dataset; rank by same range, then state, then elevation proximity
 const nearbyPeaks = peaksData
