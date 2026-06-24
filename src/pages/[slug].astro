@@ -12,6 +12,7 @@ import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
 import { getPeakHeroImageUrl } from '../lib/schema-generator';
+import { buildPeakSeoDescription } from '../lib/seoMeta';
 
 export const prerender = true;
 
@@ -175,7 +176,7 @@ const mapsUrl =
 
 const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
 const seoTitle = `${peak.name} Route, Prominence & Permit Guide | Prominence Registry`;
-const seoDescription = `${peak.name} guide: ${peak.elevation.toLocaleString()} ft elevation, ${peak.prominence.toLocaleString()} ft prominence, route class ${ydsClass ?? '—'}, permits, standard route, and planning notes for this lower-48 ultra-prominent peak.`;
+const seoDescription = buildPeakSeoDescription(peak);
 const seoImage = getPeakHeroImageUrl(peak);
 ---
 
@@ -212,7 +213,8 @@ const seoImage = getPeakHeroImageUrl(peak);
             {
               '@type': 'Article',
               '@id': `${peakPageUrl}#article`,
-              headline: `${peak.name} — Prominence Registry`,
+              headline: seoTitle,
+              description: seoDescription,
               about: {
                 '@id': `${peakPageUrl}#mountain`,
               },
@@ -952,7 +954,8 @@ const seoImage = getPeakHeroImageUrl(peak);
         <a href="/" class="page-nav-brand">Prominence Registry</a>
         <div class="page-nav-links">
           <a href="/#database">Directory</a>
-          <a href="/about">About</a>
+          <a href="/glossary/">Glossary</a>
+          <a href="/about/">About</a>
         </div>
       </div>
     </nav>

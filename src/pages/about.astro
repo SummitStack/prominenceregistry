@@ -3,6 +3,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
+import { ABOUT_META_DESCRIPTION } from '../lib/seoMeta';
 
 const pageUrl = `${SITE_URL}/about/`;
 
@@ -26,7 +27,7 @@ const paragraphs = [
     <FathomAnalytics />
     <SeoMeta
       title="About Prominence Registry | Ultra-Prominent Peak Guides"
-      description="Learn why Prominence Registry publishes carefully sourced route, permit, and planning guides for all 57 ultra-prominent peaks in the contiguous United States."
+      description={ABOUT_META_DESCRIPTION}
       canonical={pageUrl}
     />
     <link
@@ -156,7 +157,8 @@ const paragraphs = [
         <a href="/" class="page-nav-brand">Prominence Registry</a>
         <div class="page-nav-links">
           <a href="/#database">Directory</a>
-          <a href="/about" class="active">About</a>
+          <a href="/glossary/">Glossary</a>
+          <a href="/about/" class="active">About</a>
         </div>
       </div>
     </nav>

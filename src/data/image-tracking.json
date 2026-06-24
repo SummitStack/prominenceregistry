@@ -297,30 +297,30 @@
     {
       "slug": "diamond-peak",
       "name": "Diamond Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Diamond-peak-from-birch-cr-campground-6-_26-2010-roger-peterson.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "flat-top-mountain",
       "name": "Flat Top Mountain",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:N_end_of_the_Oquirrh_Mountains_UT.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-stuart",
       "name": "Mount Stuart",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Stuart_7814p.JPG",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "blanca-peak",
       "name": "Blanca Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Blanca_Peak_and_Ellingwood_Point.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-timpanogos",
