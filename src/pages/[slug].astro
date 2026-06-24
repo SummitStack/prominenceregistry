@@ -8,6 +8,7 @@ import {
   getTechnicalRequirementLabel,
 } from '../utils/safetyLabels';
 import SiteFooter from '../components/SiteFooter.astro';
+import { SITE_URL } from '../lib/constants';
 
 export const prerender = true;
 
@@ -45,7 +46,7 @@ const gearLookup = Object.fromEntries(gearData.items.map((item) => [item.id, ite
 const requiredGear = (peak.gear ?? []).map((id) => gearLookup[id]).filter(Boolean);
 const bestRoute = 'bestRoute' in peak ? peak.bestRoute : null;
 const dataSource = 'dataSource' in peak ? peak.dataSource : null;
-const ydsClass = 'class' in peak ? peak.class : null;
+const ydsClass = 'ydsClass' in peak ? peak.ydsClass : null;
 
 const hasCallout = peak.hasCallout === true;
 const calloutText = hasCallout && typeof peak.callout === 'string' ? peak.callout : '';
@@ -168,6 +169,8 @@ const mapsUrl =
   latitude !== null && longitude !== null
     ? `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`
     : `https://www.google.com/maps/search/${encodeURIComponent(peak.name + ' ' + peak.state)}`;
+
+const peakPageUrl = `${SITE_URL}/${peak.slug}/`;
 ---
 
 <html lang="en">
@@ -185,7 +188,7 @@ const mapsUrl =
           '@graph': [
             {
               '@type': 'Mountain',
-              '@id': `https://prominenceregistry.com/peaks/${peak.slug}#mountain`,
+              '@id': `${peakPageUrl}#mountain`,
               name: peak.name,
               geo: {
                 '@type': 'GeoCoordinates',
@@ -201,17 +204,17 @@ const mapsUrl =
             },
             {
               '@type': 'Article',
-              '@id': `https://prominenceregistry.com/peaks/${peak.slug}#article`,
+              '@id': `${peakPageUrl}#article`,
               headline: `${peak.name} — Prominence Registry`,
               about: {
-                '@id': `https://prominenceregistry.com/peaks/${peak.slug}#mountain`,
+                '@id': `${peakPageUrl}#mountain`,
               },
               publisher: {
                 '@type': 'Organization',
                 name: 'Prominence Registry',
                 url: 'https://prominenceregistry.com',
               },
-              url: `https://prominenceregistry.com/peaks/${peak.slug}`,
+              url: peakPageUrl,
             },
             {
               '@type': 'BreadcrumbList',
@@ -220,13 +223,13 @@ const mapsUrl =
                   '@type': 'ListItem',
                   position: 1,
                   name: 'All Peaks',
-                  item: 'https://prominenceregistry.com/peaks',
+                  item: `${SITE_URL}/`,
                 },
                 {
                   '@type': 'ListItem',
                   position: 2,
                   name: peak.name,
-                  item: `https://prominenceregistry.com/peaks/${peak.slug}`,
+                  item: peakPageUrl,
                 },
               ],
             },
@@ -234,6 +237,7 @@ const mapsUrl =
         })}
       />
     )}
+    <link rel="canonical" href={peakPageUrl} />
     <title>{peak.name} · Prominence Registry</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
@@ -1257,7 +1261,7 @@ const mapsUrl =
               <h4 class="nearby-title">Nearby Peaks</h4>
               <div class="nearby-list">
                 {nearbyPeaks.map((nearby) => (
-                  <a href={`/${nearby.slug}`} class="nearby-item">
+                  <a href={`/${nearby.slug}/`} class="nearby-item">
                     <div class="nearby-thumb">
                       {hasPeakImages(nearby.slug) ? (
                         <Fragment set:html={getCardImage(nearby.slug, { alt: nearby.name })} />
@@ -1270,7 +1274,7 @@ const mapsUrl =
                     <div>
                       <p class="nearby-name">{nearby.name}</p>
                       <p class="nearby-meta">
-                        {nearby.elevation.toLocaleString()} ft · Class {'class' in nearby ? nearby.class : '—'}
+                        {nearby.elevation.toLocaleString()} ft · Class {'ydsClass' in nearby ? nearby.ydsClass : '—'}
                       </p>
                     </div>
                   </a>

@@ -17,6 +17,7 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="https://prominenceregistry.com/" />
   <title>Prominence Registry</title>
   <OrganizationSchema />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -422,7 +423,7 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
         <div class="carousel-window">
           <div class="carousel-track" id="carouselTrack">
             {featuredPeaks.map((peak) => (
-              <a href={`/${peak.slug}`} class="featured-card" data-slug={peak.slug}>
+              <a href={`/${peak.slug}/`} class="featured-card" data-slug={peak.slug}>
                 <div class="card-image-container">
                   <Fragment set:html={getCardImage(peak.slug, {
                     alt: peak.name,
@@ -564,14 +565,14 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
               {peaksData.map(peak => (
                 <tr data-slug={peak.slug}>
                   <td>{String(prominenceRankBySlug.get(peak.slug) ?? 0).padStart(2, '0')}</td>
-                  <td><a href={`/${peak.slug}`}>{peak.name}</a></td>
+                  <td><a href={`/${peak.slug}/`}>{peak.name}</a></td>
                   <td>{peak.state}</td>
                   <td class="range-cell">{peak.mountainRange}</td>
                   <td>{peak.elevation.toLocaleString()}</td>
                   <td>{peak.prominence.toLocaleString()}</td>
                   <td>{(peak.elevation - peak.prominence).toLocaleString()}</td>
                   <td>{peak.isolation}</td>
-                  <td>{peak.class}</td>
+                  <td>{peak.ydsClass}</td>
                 </tr>
               ))}
             </tbody>
@@ -726,7 +727,7 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
         case 'isolation':
           return peak.isolation;
         case 'ydsClass':
-          return CLASS_ORDER[peak.class] ?? 0;
+          return CLASS_ORDER[peak.ydsClass] ?? 0;
         default:
           return 0;
       }

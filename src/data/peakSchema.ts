@@ -42,7 +42,7 @@ export const PeakSchema = z.object({
   latitude: z.number().optional().nullable(),
   longitude: z.number().optional().nullable(),
   mountainRange: z.string().min(1),
-  class: z.string().min(1),
+  ydsClass: z.string().min(1),
   difficulty: z.number().min(1).max(10),
   days: z.number().positive(),
   daysMin: z.number().positive(),

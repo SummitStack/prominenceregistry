@@ -128,7 +128,7 @@ export function getHeroImage(slug: string, options: PictureOptions): string {
  * ---
  * <div class="grid">
  *   {featuredPeaks.map((peak) => (
- *     <a href={`/${peak.slug}`} class="card">
+ *     <a href={`/${peak.slug}/`} class="card">
  *       <div class="card-image">
  *         <Fragment set:html={getCardImage(peak.slug, { alt: peak.name })} />
  *       </div>

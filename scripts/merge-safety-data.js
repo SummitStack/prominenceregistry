@@ -88,7 +88,7 @@ function validateEntry(entry, peak) {
     }
   }
 
-  if (isClass4Plus(peak.class)) {
+  if (isClass4Plus(peak.ydsClass)) {
     if (!requiredGear.priority.includes('rope-harness')) {
       errors.push('class 4+ peak missing rope-harness in priority gear');
     }

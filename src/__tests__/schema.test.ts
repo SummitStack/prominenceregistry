@@ -53,7 +53,7 @@ describe('generateMountainSchema', () => {
     assert.equal(schema.elevation.unitCode, 'ft');
     assert.equal(schema.geo.latitude, 36.5758);
     assert.equal(schema.geo.longitude, -118.292);
-    assert.equal(schema.url, 'https://prominenceregistry.com/mount-whitney');
+    assert.equal(schema.url, 'https://prominenceregistry.com/mount-whitney/');
     assert.equal(schema.address.addressRegion, 'California');
     assert.equal(schema.address.addressCountry, 'US');
     assert.equal(schema.location?.name, 'Sierra Nevada');

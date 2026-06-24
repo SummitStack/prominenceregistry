@@ -67,7 +67,7 @@ function getIntroSource(peak: Peak): string {
 
 export function getPeakPageUrl(peak: Peak, siteUrl = SITE_URL): string {
   const base = siteUrl.replace(/\/$/, '');
-  return `${base}/${peak.slug}`;
+  return `${base}/${peak.slug}/`;
 }
 
 export function getPeakHeroImageUrl(peak: Peak, siteUrl = SITE_URL): string | undefined {
@@ -135,8 +135,8 @@ export function validatePeakData(peak: Peak, siteUrl = SITE_URL): ValidationResu
   }
 
   const expectedUrl = getPeakPageUrl(peak, siteUrl);
-  if (peak.slug && !expectedUrl.endsWith(`/${peak.slug}`)) {
-    errors.push(`url must match peak slug (expected path /${peak.slug})`);
+  if (peak.slug && !expectedUrl.endsWith(`/${peak.slug}/`)) {
+    errors.push(`url must match peak slug (expected path /${peak.slug}/)`);
   }
 
   if (typeof peak.prominence !== 'number' || peak.prominence <= 0) {
