@@ -115,7 +115,17 @@
     ],
     "permitFee": "Verify current NPS fee",
     "published": true,
-    "permitStatus": "limited"
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-whitney",
@@ -211,7 +221,17 @@
     ],
     "permitFee": "Free (wilderness permit required)",
     "published": true,
-    "permitStatus": "lottery"
+    "permitStatus": "lottery",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Inyo National Forest",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-shasta",
@@ -319,7 +339,18 @@
     ],
     "permitFee": "$25 per person (summit pass, 3-day); $30 annual",
     "published": true,
-    "permitStatus": "fee"
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Recreation.gov",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-elbert",
@@ -414,7 +445,16 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "none"
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Peakbagger",
+        "San Isabel NF"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-baker",
@@ -518,7 +558,17 @@
     ],
     "permitFee": "No climbing permit fee; parking pass required",
     "published": true,
-    "permitStatus": "fee"
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "san-jacinto-peak",
@@ -582,7 +632,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "san-gorgonio-mountain",
@@ -647,7 +703,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "charleston-peak",
@@ -711,6 +773,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -815,7 +883,17 @@
     ],
     "permitFee": "$20 per person per climbing trip",
     "published": true,
-    "permitStatus": "fee"
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Gifford Pinchot NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-olympus",
@@ -887,7 +965,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "mount-hood",
@@ -996,7 +1080,17 @@
     ],
     "permitFee": "Verify current Recreation.gov fee",
     "published": true,
-    "permitStatus": "limited"
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Hood NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "wheeler-peak",
@@ -1084,7 +1178,16 @@
     ],
     "permitFee": "Free (no climbing permit; $20/site campground)",
     "published": true,
-    "permitStatus": "none"
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Great Basin",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "glacier-peak",
@@ -1185,7 +1288,18 @@
     ],
     "permitFee": "Free (wilderness)",
     "published": true,
-    "permitStatus": "self-register"
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "white-mountain-peak",
@@ -1253,6 +1367,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -1362,7 +1482,18 @@
     ],
     "permitFee": "Free (wilderness)",
     "published": true,
-    "permitStatus": "self-register"
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shoshone NF",
+        "Bridger-Teton NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "cloud-peak",
@@ -1457,7 +1588,16 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "self-register"
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Bighorn NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "grand-teton",
@@ -1567,7 +1707,16 @@
     ],
     "permitFee": "No day-use climbing fee; backcountry permit fee for overnight",
     "published": true,
-    "permitStatus": "limited"
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Grand Teton",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "sacajawea-peak",
@@ -1666,7 +1815,17 @@
     ],
     "permitFee": "Free (self-issue wilderness permit)",
     "published": true,
-    "permitStatus": "self-register"
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Wallowa-Whitman NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "kings-peak",
@@ -1760,7 +1919,16 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "self-register"
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Ashley NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-graham",
@@ -1827,7 +1995,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "mount-san-antonio",
@@ -1895,6 +2069,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -1960,6 +2140,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2030,6 +2216,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2101,6 +2293,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2168,6 +2366,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2265,7 +2469,16 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "none"
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Coconino NF",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "borah-peak",
@@ -2332,6 +2545,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2403,6 +2622,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2473,6 +2698,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2543,6 +2774,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2647,7 +2884,17 @@
     ],
     "permitFee": "$1/person day use; $6/group overnight",
     "published": true,
-    "permitStatus": "limited"
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Willamette NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "pilot-peak",
@@ -2718,6 +2965,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2790,6 +3043,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -2862,7 +3121,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "south-sister",
@@ -2961,7 +3226,17 @@
     ],
     "permitFee": "$1/person day-use; $6/group overnight",
     "published": true,
-    "permitStatus": "limited"
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Deschutes NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "sierra-blanca-peak",
@@ -3032,7 +3307,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "pikes-peak",
@@ -3127,7 +3408,16 @@
     ],
     "permitFee": "Free (no climbing permit; trailhead parking fee applies)",
     "published": true,
-    "permitStatus": "none"
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Pike NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "mount-nebo",
@@ -3191,6 +3481,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3263,6 +3559,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3328,6 +3630,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3393,6 +3701,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3458,6 +3772,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3522,6 +3842,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3593,7 +3919,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "mount-stuart",
@@ -3665,6 +3997,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3730,6 +4068,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3827,7 +4171,16 @@
     ],
     "permitFee": "Free (timed parking permit required on weekends/holidays)",
     "published": true,
-    "permitStatus": "none"
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
   },
   {
     "slug": "ibapah-peak",
@@ -3898,6 +4251,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -3967,6 +4326,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4031,7 +4396,13 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    }
   },
   {
     "slug": "arc-dome",
@@ -4102,6 +4473,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4167,6 +4544,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4231,6 +4614,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4298,6 +4687,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4367,6 +4762,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4434,6 +4835,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   },
   {
@@ -4505,6 +4912,12 @@
     "permitFee": null,
     "published": false,
     "permitStatus": null,
+    "verification": {
+      "status": "needs-review",
+      "lastChecked": null,
+      "checkedAgainst": [],
+      "notes": null
+    },
     "permitSeason": "Permit details pending editorial review"
   }
 ]
