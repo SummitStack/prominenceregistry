@@ -7,10 +7,11 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "npx tsx scripts/prebuild-schema.ts",
+    "prebuild": "npm run validate:peaks && npx tsx scripts/prebuild-schema.ts",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "validate:peaks": "npx tsx scripts/validatePeaks.ts",
     "test": "npx tsx --test src/__tests__/schema.test.ts",
     "test:schema": "npm run test",
     "fetch-images": "node scripts/fetch-hero-images.js",
@@ -18,7 +19,8 @@
     "fetch-weather-urls": "node scripts/apply-weather-urls.js"
   },
   "dependencies": {
-    "astro": "^6.4.7"
+    "astro": "^6.4.7",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.5.0",

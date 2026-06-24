@@ -710,7 +710,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-adams",
@@ -1251,7 +1252,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "gannett-peak",
@@ -1892,7 +1894,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "telescope-peak",
@@ -1956,7 +1959,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-peale",
@@ -2025,7 +2029,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-washington",
@@ -2095,7 +2100,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-mitchell",
@@ -2161,7 +2167,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "humphreys-peak",
@@ -2324,7 +2331,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-jefferson-nv",
@@ -2394,7 +2402,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-ellen",
@@ -2463,7 +2472,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "deseret-peak",
@@ -2532,7 +2542,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-jefferson-or",
@@ -2706,7 +2717,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "crazy-peak",
@@ -2777,7 +2789,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mcdonald-peak",
@@ -3177,7 +3190,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "snowshoe-peak",
@@ -3248,7 +3262,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "north-schell-peak",
@@ -3312,7 +3327,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "star-peak",
@@ -3376,7 +3392,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "hayford-peak",
@@ -3440,7 +3457,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "diamond-peak",
@@ -3503,7 +3521,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "flat-top-mountain",
@@ -3645,7 +3664,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "blanca-peak",
@@ -3709,7 +3729,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-timpanogos",
@@ -3876,7 +3897,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "lassen-peak",
@@ -3944,7 +3966,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-cleveland",
@@ -4078,7 +4101,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "she-devil",
@@ -4142,7 +4166,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "abercrombie-mountain",
@@ -4205,7 +4230,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-lemmon",
@@ -4271,7 +4297,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "chiricahua-peak",
@@ -4339,7 +4366,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "mount-eddy",
@@ -4405,7 +4433,8 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   },
   {
     "slug": "miller-peak",
@@ -4475,6 +4504,7 @@
     "gear": [],
     "permitFee": null,
     "published": false,
-    "permitStatus": null
+    "permitStatus": null,
+    "permitSeason": "Permit details pending editorial review"
   }
 ]
