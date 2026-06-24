@@ -7,7 +7,6 @@ import {
   getHazardLabel,
   getTechnicalRequirementLabel,
 } from '../utils/safetyLabels';
-import PeakSchemaHead from '../components/PeakSchemaHead.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 
 export const prerender = true;
@@ -94,7 +93,17 @@ const contentFootnote = customContent?.footnote ?? null;
 
 const technicalRequirements = technicalRequirementLabels;
 
-const permitStatus = permitRequired ? 'Required' : 'Open';
+const permitSeason = 'permitSeason' in peak ? peak.permitSeason : null;
+const permitLabel = permitRequired
+  ? 'Permit Required'
+  : permitSeason
+    ? 'No Climbing Permit'
+    : 'No Permit';
+const permitBadgeClass = permitRequired
+  ? 'badge-required'
+  : permitSeason
+    ? 'badge-access'
+    : 'badge-open';
 const permitFee = peak.permitFee ?? (permitRequired ? 'Verify with land manager' : 'Free');
 const displaySeason =
   season ??
@@ -124,7 +133,6 @@ const timeEstimate =
   peak.days > 1 ? `${peak.days - 1}-${peak.days}` : `${peak.days}`;
 
 const prominenceRank = peaksData.findIndex((p) => p.slug === peak.slug) + 1;
-const permitSeason = 'permitSeason' in peak ? peak.permitSeason : null;
 const weatherUrl = 'weatherForecastUrl' in peak ? peak.weatherForecastUrl : null;
 const stateName = getStateName(peak.state);
 
@@ -154,8 +162,64 @@ const mapsUrl =
     {!peak.published && (
       <meta name="robots" content="noindex, nofollow" />
     )}
+    {latitude !== null && longitude !== null && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify({
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'Mountain',
+              '@id': `https://prominenceregistry.com/peaks/${peak.slug}#mountain`,
+              name: peak.name,
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: latitude,
+                longitude: longitude,
+              },
+              elevation: {
+                '@type': 'QuantitativeValue',
+                value: peak.elevation,
+                unitCode: 'FOT',
+              },
+              description: `${peak.name} is an ultra-prominent peak in the contiguous United States with ${peak.prominence} feet of topographic prominence.`,
+            },
+            {
+              '@type': 'Article',
+              '@id': `https://prominenceregistry.com/peaks/${peak.slug}#article`,
+              headline: `${peak.name} — Prominence Registry`,
+              about: {
+                '@id': `https://prominenceregistry.com/peaks/${peak.slug}#mountain`,
+              },
+              publisher: {
+                '@type': 'Organization',
+                name: 'Prominence Registry',
+                url: 'https://prominenceregistry.com',
+              },
+              url: `https://prominenceregistry.com/peaks/${peak.slug}`,
+            },
+            {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: 'All Peaks',
+                  item: 'https://prominenceregistry.com/peaks',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: peak.name,
+                  item: `https://prominenceregistry.com/peaks/${peak.slug}`,
+                },
+              ],
+            },
+          ],
+        })}
+      />
+    )}
     <title>{peak.name} · Prominence Registry</title>
-    <PeakSchemaHead peak={peak} />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
@@ -567,8 +631,17 @@ const mapsUrl =
         font-weight: 600;
       }
       .badge-required {
-        background: #93000a;
-        color: #ffb4ab;
+        background: rgba(245, 158, 11, 0.15);
+        color: #f59e0b;
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .badge-access {
+        background: rgba(59, 130, 246, 0.15);
+        color: #3b82f6;
         padding: 4px 12px;
         border-radius: 4px;
         font-size: 10px;
@@ -1134,8 +1207,11 @@ const mapsUrl =
             <h3 class="sidebar-title">Plan Expedition</h3>
             <div class="sidebar-row">
               <span>Permit Status</span>
-              <span class={permitRequired ? 'badge-required' : 'badge-open'}>{permitStatus}</span>
+              <span class={permitBadgeClass}>{permitLabel}</span>
             </div>
+            {permitSeason && (
+              <p class="sidebar-note">{permitSeason}</p>
+            )}
             <div class="sidebar-row">
               <span>Climbing Fee</span>
               <span class="sidebar-row-value">{permitFee}</span>
@@ -1167,9 +1243,6 @@ const mapsUrl =
                 </a>
               )}
             </div>
-            {permitRequired && (
-              <p class="sidebar-note">* Permit may be required for summit attempts.</p>
-            )}
           </div>
 
           {requiredGear.length > 0 && (
