@@ -715,71 +715,113 @@
     "slug": "charleston-peak",
     "name": "Charleston Peak",
     "state": "NV",
-    "elevation": 11918,
-    "prominence": 8243,
-    "difficulty": 5,
+    "elevation": 11916,
+    "prominence": 8259,
+    "latitude": 36.3156,
+    "longitude": -115.6583,
+    "difficulty": 4,
     "days": 1,
-    "distanceMin": 17,
+    "distanceMin": 16,
     "distanceMax": 17,
-    "distanceDisplay": "17 miles round-trip",
+    "distanceDisplay": "~16–17 miles round-trip",
     "gainMin": 4200,
-    "gainMax": 4200,
-    "gainDisplay": "4,200 ft",
+    "gainMax": 4700,
+    "gainDisplay": "~4,200–4,700 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 17,
-    "gain": 4200,
+    "daysDisplay": "8–10 hours",
+    "distance": 16.5,
+    "gain": 4450,
     "mountainRange": "Spring Mountains",
-    "season": "June-September",
+    "season": "June-October",
     "hazards": [
       "altitude-sickness",
       "heat-exhaustion",
       "dehydration",
-      "exposure"
+      "exposure",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "whiteout-conditions"
     ],
     "bestRoute": "South Loop Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/charleston-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Charleston/forecasts/3633",
     "technicalRequirements": [
+      "alpine-start",
       "altitude-acclimatization",
-      "alpine-start"
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
-        "sunscreen",
-        "sunglasses",
-        "hat",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "gaiters",
         "water-capacity",
-        "high-calorie-food"
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
+        "microspikes",
+        "crampons",
+        "ice-axe",
         "compass",
         "emergency-comm",
-        "insulating-layer"
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 36.3156,
-    "longitude": -115.6583,
+    "hasSafetyNote": true,
+    "safetyNote": "The upper South Loop route is exposed to wind, lightning, and rapid temperature change, while the lower trailhead area can be hot in summer. Start early, carry all needed water, and plan to be off the exposed summit ridge before afternoon storms build.",
+    "content": {
+      "overview": [
+        "Charleston Peak is the highest mountain in southern Nevada and the tallest peak in Clark County, dominating the Spring Mountains roughly 35 miles northwest of Las Vegas. With 8,259 feet of prominence, it is one of Nevada's major ultra-prominent summits. The peak rises within the Mount Charleston Wilderness in the Humboldt–Toiyabe National Forest and is visible from parts of the Las Vegas Valley, including portions of the Strip on clear days.",
+        "The mountain supports ancient bristlecone pines, among the oldest known non-clonal trees on Earth. A 2013 wildfire, the Carpenter 1 Fire, burned portions of the ridge approach, but the landscape remains distinctive for its high-altitude conifer ecosystem. From the summit, views can extend for well over 100 miles on clear days, reaching toward the Sierra Nevada, Mount Whitney, Death Valley, and Telescope Peak."
+      ],
+      "routeDescription": [
+        "The South Loop Trail from Cathedral Rock Picnic Area is the main route described here. Most GPS tracks for the South Loop approach and common South/North Loop variations place the hike in the roughly 16–17 mile range with about 4,200–4,700 feet of cumulative gain, depending on the exact start point, side travel, descent route, and recording method. Beyond the opening switchbacks, the trail opens westward into the Meadows section, where views of Pahrump, Death Valley, and the Sierra Nevada become visible. The route then follows the ridgeline through ancient bristlecone pine forest, with scattered flat areas suitable for camping. The final approach steepens across rocky, wind-exposed terrain near the summit, with an excavated summit shelter pit offering limited protection from the wind.",
+        "The North Loop is also heavily used and is often preferred by some hikers, while this page focuses on the South Loop from the Cathedral Rock / South Loop Trailhead. The two routes are commonly combined as a longer circuit option. The route begins at Cathedral Rock / South Loop Trailhead, adjacent to Cathedral Rock Picnic Area near the upper end of Kyle Canyon Road (State Route 157)."
+      ],
+      "routeLandmarks": [
+        "Cathedral Rock / South Loop Trailhead",
+        "Meadows section (approximately 9,500 ft; seasonal water possible but unreliable)",
+        "Bristlecone ridge / burned bristlecone forest (approximately 10,700 ft)",
+        "Summit shelter pit (11,916 ft)"
+      ],
+      "permitsClimbing": "No permit is required for day hiking or backpacking in Mount Charleston Wilderness.",
+      "permitsCamping": "Campfire restrictions in the Spring Mountains are strict and may be in effect year-round. Campfires are generally limited to approved rings or grills in developed recreation sites when allowed; backpackers should plan to use a portable stove with an on/off valve and check current restrictions before departure. Dispersed camping is generally permitted in the wilderness, subject to Forest Service regulations and seasonal fire restrictions. Camp at least 200 feet from water sources and trails. Developed campgrounds in the broader Mount Charleston area include Mahogany Grove, Hilltop, McWilliams, and Fletcher View, with facilities and seasonal availability varying by site. Backcountry camping is possible where durable flat sites exist and wilderness/fire regulations allow, but water is limited and exposed ridge camps can be windy.",
+      "wildlife": "While technically Class 1, the South Loop is extremely demanding due to distance, altitude, wind exposure, and terrain. Exposure increases substantially on the upper ridgeline, where wind and weather become the primary hazards. Thunderstorms can develop rapidly during afternoon hours, particularly from July through September. The final summit push is steep, rocky, and fully exposed to ridge winds. Snow-free conditions typically occur June through October, with May and November showing high variability. Winter ascents require appropriate technical experience and familiarity with snow travel; heavy snowfall can obscure the trail completely, and navigation becomes difficult. Extreme cold and wind at the summit can quickly become life-threatening for unprepared parties. Ice axe, snowshoes, and crampons may be needed depending on conditions. Wreckage from a November 17, 1955 military C-54 crash remains in the upper mountain area; all 14 people aboard were killed after the aircraft went down in storm conditions.",
+      "footnote": "Elevation 11,916 ft (traditional public figure); Peakbagger LiDAR lists 11,919.8 ft. Prominence 8,259 ft. Route distance and gain vary by GPS track, trailhead, and whether cumulative or net gain is reported. Confirm current Humboldt–Toiyabe National Forest guidance and Spring Mountains fire restrictions before travel."
+    },
     "isolation": 135,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "gaiters",
+      "microspikes"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No permit required for day hiking or backpacking in Mount Charleston Wilderness"
   },
   {
     "slug": "mount-adams",
@@ -2818,79 +2860,103 @@
     "slug": "deseret-peak",
     "name": "Deseret Peak",
     "state": "UT",
-    "elevation": 11035,
-    "prominence": 5811,
-    "latitude": 40.4596,
-    "longitude": -112.6282,
-    "difficulty": 4,
+    "elevation": 11031,
+    "prominence": 5807,
+    "latitude": 40.45948,
+    "longitude": -112.6263,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 8,
-    "distanceMax": 8,
-    "distanceDisplay": "8 miles round-trip",
-    "gainMin": 3600,
-    "gainMax": 3600,
-    "gainDisplay": "3,600 ft",
+    "distanceMin": 7.8,
+    "distanceMax": 7.8,
+    "distanceDisplay": "7.8 miles round-trip",
+    "gainMin": 3613,
+    "gainMax": 3613,
+    "gainDisplay": "3,613 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 8,
-    "gain": 3600,
-    "mountainRange": "Stansbury Mountains",
-    "season": "June-September",
+    "daysDisplay": "5–7 hours",
+    "distance": 7.8,
+    "gain": 3613,
+    "mountainRange": "Stansbury Range",
+    "season": "June-October",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "lightning-exposure",
       "loose-rock-scree",
-      "scrambling-exposed"
+      "exposure"
     ],
-    "bestRoute": "Mill Fork Trail",
+    "bestRoute": "Mill Fork Trail from Loop Campground",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2",
+    "dataSource": "Uinta-Wasatch-Cache National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
     "heroImage": "/images/peaks/deseret-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Deseret-Peak/forecasts/3362",
     "technicalRequirements": [
       "alpine-start",
-      "rock-scrambling-loose",
-      "off-trail-nav",
-      "water-crossings"
+      "water-crossings",
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
         "water-capacity",
-        "sunscreen",
-        "sunglasses",
+        "trekking-poles",
         "shell-jacket",
         "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
-        "helmet",
         "gaiters",
         "compass",
         "emergency-comm",
-        "gloves",
+        "hat",
+        "high-calorie-food",
         "microspikes"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "False summits near the peak can create navigation hazards on descent. Before descending, identify the main summit cairn carefully to avoid drifting onto adjacent ridge systems or following false summit terrain. Cloud cover can shroud summit areas while surrounding desert basins remain clear, reducing visibility for route-finding.",
+    "content": {
+      "overview": [
+        "Deseret Peak stands at 11,031 feet as the highest point of Tooele County and the dominant summit of the Deseret Peak Wilderness, a 25,500-acre protected area in the Stansbury Range west of Salt Lake City. The peak rises prominently from surrounding high-desert basins, making it a major landmark in western Utah. Congress designated the wilderness area in 1984, preserving the transition zone between the low valleys of the Great Salt Lake Desert and the forested slopes above 8,000 feet.",
+        "The standard route up Deseret Peak is short enough for a day hike but steep enough to demand real effort. The landscape—aspen groves, alpine meadows, and loose rocky slopes—is typical of mountain ranges west of the Wasatch, but shaped by the drier climate of the Great Basin. From the summit, the view extends west across the Bonneville Salt Flats and east into the Wasatch Mountains; on clear days, distant landmarks include Pilot Peak nearly 60 miles northwest in Nevada and Mount Nebo roughly 60 miles southeast. The peak receives far less visitation than comparable summits in the Wasatch Range, making it an attractive objective for those pursuing the Ultra-57 list."
+      ],
+      "routeDescription": [
+        "The Mill Fork Trail is the standard and most direct route to Deseret Peak. The route covers 7.8 miles round-trip, gaining 3,613 feet over 5 to 7 hours of hiking. The trail begins at the Mill Fork Trailhead near Loop Campground at approximately 7,418 feet, climbs through aspen forest for roughly 0.75 miles, and crosses South Willow Creek before reaching a junction. The left fork continues toward Deseret Peak; the right branch leads to Willow Lakes. Past the junction, the trail enters Mill Fork valley and climbs steeply through meadows with increasingly open views of Deseret Peak's southwest face. At the head of the canyon, the trail reaches a saddle and then ascends via switchbacks on loose, rocky terrain before gaining the summit ridge and reaching the peak. The descent follows the same route."
+      ],
+      "routeLandmarks": [
+        "South Willow Creek crossing (~7,600 ft)",
+        "Mill Fork valley saddle (~10,200 ft)"
+      ],
+      "permitsClimbing": "No climbing permit is required to ascend Deseret Peak. Campground fees apply for overnight stays at Loop Campground; verify current day-use parking and access fees before travel.",
+      "permitsCamping": "Developed campsites at Loop Campground near the trailhead offer vault restrooms; potable water may not be available, so campers should bring all drinking water. Upper Narrows and Lower Narrows campgrounds, also managed by the Forest Service, provide additional overnight options accessible from South Willow Canyon Road on a first-come, first-served basis. Overnight camping within Deseret Peak Wilderness is governed by Forest Service wilderness regulations. Current rules cover group-size limits, campsite setbacks from water sources and trails, fire restrictions, and prohibitions on motorized and mechanized equipment. Verify specific requirements with the Salt Lake Ranger District before overnight travel, as regulations may change seasonally.",
+      "wildlife": "The Mill Fork Trail is classified as YDS Class 1 hiking, but the upper mountain features rough, loose, and steeply graded terrain that slows travel and demands careful footing. Loose scree covers much of the upper slopes and especially affects the descent. Parties consistently report the difficulty of route-finding on the descent due to the presence of multiple false summits; identifying the main peak before heading down is critical to avoid wasting time and effort. There is no reliable water available along the Mill Fork Trail in typical summer conditions. Hikers should carry all drinking water from the trailhead and plan accordingly. Snow patches may persist in the Mill Fork drainage into early summer, often around mid-June. Afternoon thunderstorms and weather changes are common at this elevation; summit conditions can differ significantly from weather in the surrounding desert basins.",
+      "footnote": "Summit coordinates approximately 40.45948°N, 112.62630°W. Mill Fork Trailhead near Loop Campground approximately 40.48431°N, 112.60589°W. Elevation 11,031 ft; prominence 5,807 ft. Verify coordinates against current map, GPS track, or Forest Service source before travel."
+    },
     "isolation": 46,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "water_capacity",
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer"
+    ],
+    "permitFee": "Free; campground fees apply",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit required; campground fees apply at Loop Campground"
   },
   {
     "slug": "mount-jefferson-or",
@@ -4584,23 +4650,23 @@
     "slug": "arc-dome",
     "name": "Arc Dome",
     "state": "NV",
-    "elevation": 11773,
+    "elevation": 11778,
     "prominence": 5213,
-    "latitude": 38.8627,
-    "longitude": -117.3533,
-    "difficulty": 5,
-    "days": 2,
-    "distanceMin": 18,
-    "distanceMax": 22,
-    "distanceDisplay": "~18–22 miles round-trip",
-    "gainMin": 3850,
-    "gainMax": 4950,
-    "gainDisplay": "~3,850–4,950 ft",
+    "latitude": 38.90009,
+    "longitude": -117.37609,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 14.6,
+    "distanceMax": 14.6,
+    "distanceDisplay": "14.6 miles round-trip",
+    "gainMin": 4335,
+    "gainMax": 4335,
+    "gainDisplay": "4,335 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 20,
-    "gain": 4400,
+    "daysMax": 1,
+    "daysDisplay": "8–10 hours",
+    "distance": 14.6,
+    "gain": 4335,
     "mountainRange": "Toiyabe Range",
     "season": "June-September",
     "hazards": [
@@ -4608,56 +4674,80 @@
       "heat-exhaustion",
       "altitude-sickness",
       "loose-rock-scree",
-      "scrambling-exposed",
+      "lightning-exposure",
       "exposure"
     ],
-    "bestRoute": "Toiyabe Crest Trail from Columbine Campground",
+    "bestRoute": "Columbine Campground Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2",
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
     "heroImage": "/images/peaks/arc-dome.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Arc-Dome/forecasts/3589",
     "technicalRequirements": [
       "alpine-start",
-      "rock-scrambling-loose",
-      "off-trail-nav",
       "water-crossings"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "sunscreen",
-        "sunglasses",
+        "trekking-poles",
+        "gaiters",
         "shell-jacket",
         "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "water-capacity"
       ],
       "secondary": [
-        "helmet",
-        "gaiters",
+        "sunscreen",
+        "sunglasses",
+        "hat",
         "compass",
         "emergency-comm",
-        "gloves",
-        "microspikes"
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common in the Toiyabe Range during summer. Start early and aim to be off the summit ridge and exposed high crest before storms develop. Much of the upper route is open terrain with limited shelter from lightning, wind, or sudden temperature drops.",
+    "content": {
+      "overview": [
+        "Arc Dome reaches 11,778 feet in the central Nevada Great Basin and is one of the most prominent summits in the state. It is the highest point in the Toiyabe Range and one of central Nevada's defining high-country landmarks. The peak anchors the 120,551-acre Arc Dome Wilderness Area, where lush, alpine-like canyons contrast with desert valleys thousands of feet below.",
+        "The range's high elevation and exposed crest hold lingering snow into the shoulder seasons, creating a cooler high-country environment above the surrounding desert basins. From the summit, visibility extends across the central Great Basin and into California, including views of Mount Jefferson, the White Mountains, and surrounding ranges."
+      ],
+      "routeDescription": [
+        "The standard route begins at Columbine Campground, approximately 8,600 feet, and follows the Columbine Trail toward Stewart Creek before reaching the Toiyabe Crest National Recreation Trail. The route climbs roughly 4,335 feet over 14.6 miles round-trip. Near the upper basin, the route turns toward Arc Dome and climbs through open meadows with broad views of the southwest face. The grade steepens near the saddle at the head of the canyon, where tight switchbacks lead toward the summit ridge. Above 11,000 feet, the trail crosses talus and loose rock, making progress slower despite the nontechnical terrain. The final section remains Class 1 hiking on an established trail.",
+        "Columbine Campground is remote, and the approach can take longer than mileage alone suggests. From US 50 west of Austin, Nevada, take State Route 722 and Route 21 via the Yomba Indian Reservation, then follow Forest Service Road 119 for approximately 10 miles to the campground. The final stretch is rough dirt road; high-clearance vehicles are recommended, and conditions can vary seasonally. Plan extra time for the drive and verify current road conditions with the Humboldt-Toiyabe National Forest before departing."
+      ],
+      "routeLandmarks": [
+        "Columbine Campground (~8,600 ft)",
+        "Toiyabe Crest National Recreation Trail",
+        "Summit ridge and Arc Dome (11,778 ft)"
+      ],
+      "permitsClimbing": "No climbing permit or fee is required for Arc Dome. Normal wilderness regulations apply to backcountry camping. The Arc Dome Wilderness Area prohibits motorized vehicles and mechanized transport, including bicycles.",
+      "permitsCamping": "Columbine Campground trailhead offers free campsites with 7 camp units and functions as the primary access point. The campground may see heavier use during hunting season. Backcountry camping is possible along the route where durable sites and water access allow, but the Toiyabe Crest is exposed and often dry. Camp at least 100 feet from water sources. Fires may be restricted, especially near or above tree line and during dry periods; check current Forest Service regulations before your trip.",
+      "wildlife": "The route is strenuous Class 1 hiking on established trails and loose upper-mountain tread. The crux follows tight switchbacks across loose rock and talus above 11,000 feet; while the route remains Class 1, the steep grade, unstable footing, and elevation make the final 1,000 vertical feet the most strenuous part of the climb. June through September offers the most reliable conditions. May and October are possible depending on snowpack and weather. Early-season and late-season ascents may require waterproof boots and gaiters due to lingering snow and wet conditions above 10,000 feet. Summer temperatures at the trailhead can be hot, and afternoon thunderstorms are frequent; parties should start early and aim to be off exposed high terrain before storms develop. The Toiyabe Crest has little reliable water; carry sufficient capacity and plan water sources carefully. Wild horses may be encountered in the Toiyabe Range and Arc Dome Wilderness, particularly near open meadows and along portions of the Toiyabe Crest Trail. Mule deer and sage grouse may also be seen. Treat or filter all backcountry water due to wildlife and grazing activity in the area.",
+      "footnote": "Elevation commonly cited as 11,778 ft; sources vary between 11,773 and 11,778 ft. Prominence 5,213 ft (ListsOfJohn). Trailhead: Columbine Campground N 38.90009° W 117.37609°. Route stats per Humboldt-Toiyabe National Forest and standard trip reports (14.6 miles round-trip, 4,335 ft gain)."
+    },
     "isolation": 23,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "gaiters",
+      "waterproof_shell",
+      "insulating_layer"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit or fee; free Columbine Campground trailhead access"
   },
   {
     "slug": "she-devil",

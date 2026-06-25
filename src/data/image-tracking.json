@@ -206,9 +206,9 @@
     {
       "slug": "deseret-peak",
       "name": "Deseret Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "user-provided hero image",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-jefferson-or",
