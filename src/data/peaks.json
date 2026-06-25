@@ -2802,75 +2802,99 @@
     "prominence": 5842,
     "latitude": 38.1127,
     "longitude": -110.8135,
-    "difficulty": 5,
+    "difficulty": 3,
     "days": 1,
-    "distanceMin": 8,
-    "distanceMax": 8,
-    "distanceDisplay": "8 miles round-trip",
-    "gainMin": 3500,
-    "gainMax": 3500,
-    "gainDisplay": "3,500 ft",
+    "distanceMin": 3.8,
+    "distanceMax": 3.8,
+    "distanceDisplay": "3.8 miles round-trip",
+    "gainMin": 1250,
+    "gainMax": 1250,
+    "gainDisplay": "1,250 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 8,
-    "gain": 3500,
+    "daysDisplay": "2–4 hours",
+    "distance": 3.8,
+    "gain": 1250,
     "mountainRange": "Henry Mountains",
-    "season": "June-September",
+    "season": "June-October",
     "hazards": [
+      "altitude-sickness",
       "dehydration",
       "heat-exhaustion",
-      "altitude-sickness",
       "lightning-exposure",
-      "loose-rock-scree"
+      "off-trail-navigation",
+      "exposure"
     ],
-    "bestRoute": "Mount Ellen Trail",
+    "bestRoute": "Bull Creek Pass to Mount Ellen North Ridge",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2",
+    "dataSource": "BLM Hanksville-Henry Mountains Field Office, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
     "heroImage": "/images/peaks/mount-ellen.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Ellen-Utah/forecasts/3512",
     "technicalRequirements": [
-      "alpine-start",
-      "rock-scrambling-loose",
-      "off-trail-nav",
-      "water-crossings"
+      "alpine-start"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "sunscreen",
-        "sunglasses",
+        "trekking-poles",
         "shell-jacket",
         "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
-        "helmet",
+        "microspikes",
         "gaiters",
         "compass",
         "emergency-comm",
-        "gloves",
-        "microspikes"
+        "hat",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The false summit near 11,400 feet appears terminal and may initially seem to be the highest point. Continue past it; the true summit lies beyond and is distinguished by a mailbox registry.",
+    "content": {
+      "overview": [
+        "Mount Ellen is the highest peak in the Henry Mountains and the tallest mountain in Garfield County, Utah, rising 11,522 feet above remote BLM land roughly 1 hour south of Hanksville via dirt and rock roads. The Henry Mountains are often described as the last major mountain range in the contiguous United States to be formally mapped by Euro-American survey parties, with Powell's expedition reaching the area in the 1870s. Mount Ellen's 5,842-foot prominence makes it one of the most isolated and geologically distinctive peaks in the region, with summit views extending across a vast portion of southern Utah and toward surrounding desert ranges on clear days.",
+        "The Henry Mountains themselves are exceptionally remote, with minimal infrastructure and limited development. The peak stands directly adjacent to Mount Ellen Peak (11,506 feet, just 16 feet lower), making it possible to traverse between both summits in a single outing. A free-ranging bison herd, one of the most notable in the Lower 48, inhabits the Henry Mountains region."
+      ],
+      "routeDescription": [
+        "The standard route follows a worn hiking route from Bull Creek Pass trailhead (10,500 ft), ascending the north ridge through rolling alpine terrain. The route climbs approximately 1,250 feet over 3.8 miles round-trip in 2–4 hours. The path is generally clear and well-used in normal snow-free conditions, passing through tundra and scattered rock to a false summit near 11,400 feet. The true summit lies beyond and is distinguished by a mailbox registry. These distance and gain figures assume road access to Bull Creek Pass; starting from Lonesome Beaver Campground adds approximately 12.4 miles round-trip and 3,250 feet of elevation gain. An optional traverse to Mount Ellen Peak adds approximately 400 feet of descent and re-ascent with 30–45 minutes of additional Class 2–3 scrambling on steep rocky terrain.",
+        "The Henry Mountains are accessed via remote dirt and rock roads from Hanksville, Utah. Bull Creek Pass trailhead is located approximately 1 hour south of Hanksville and requires a vehicle capable of handling dirt/rock road surfaces. Roads may wash out during precipitation or snowmelt. Check with the BLM Hanksville-Henry Mountains Field Office or local recreation guides for current road conditions before departure."
+      ],
+      "routeLandmarks": [
+        "Lonesome Beaver Campground (8,215 ft)",
+        "Bull Creek Pass trailhead/parking (10,500 ft)",
+        "False summit (11,400 ft)"
+      ],
+      "permitsClimbing": "No standard climbing permit is generally required for Mount Ellen. The peak is managed by the BLM and receives zero permit fees. The region is typically open to public access without standard hiking registration requirements or usage quotas. However, visitors should confirm current regulations and any temporary land-use notices with the BLM Hanksville-Henry Mountains Field Office before departure.",
+      "permitsCamping": "Wild camping is typically permitted on surrounding BLM lands. Bull Creek Pass area is the primary staging point when road access is clear. Lonesome Beaver Campground (8,215 ft) is the established alternate used for accessing Mount Ellen when the Bull Creek Pass road is snow-blocked in early season; this approach adds approximately 12.4 miles round-trip and 3,250 feet of elevation gain. The campground typically offers vault toilets and picnic facilities; confirm potable water availability before relying on it. Campfires may be allowed when seasonal fire restrictions are not in effect, but stove use is the safer low-impact option. Water sources are limited on the upper route; carry sufficient capacity from the trailhead. Confirm current fire restrictions and camping policies with the BLM office before your visit.",
+      "wildlife": "No technical climbing skills are required on the standard route in normal snow-free conditions. The route is a non-technical hike, but parties should be comfortable with high-altitude hiking, exposed weather, and basic route awareness near the false summit. The optional Mount Ellen Peak traverse is more difficult than the standard Mount Ellen route and includes Class 2–3 scrambling. Afternoon thunderstorms are common from July through August, with over 30% of annual precipitation falling during summer months as heavy thunderstorms. The upper ridge is fully exposed with minimal shelter; lightning is a serious hazard. Early-morning alpine starts or afternoon descents are standard practice for avoiding electrical storms. Road access to Bull Creek Pass can be blocked by snow into late June or even early July in heavy snow years. If the road is impassable, hiking is feasible from Lonesome Beaver Campground, adding approximately 12.4 miles round-trip and 3,250 feet of elevation gain. A free-ranging bison herd inhabits the Henry Mountains. Observe from a safe distance; stay at least 100 yards away when possible. Never approach for photographs or closer observation. High-altitude exposure with minimal tree cover creates significant UV hazard; sunscreen is essential.",
+      "footnote": "Bull Creek Pass trailhead: N 37.9267° W 110.5683°. Elevation 11,522 ft; prominence 5,842 ft. Standard route stats assume Bull Creek Pass road access (3.8 miles round-trip, 1,250 ft gain). Mount Ellen Peak (11,506 ft) optional traverse is Class 2–3 and significantly more difficult than the standard route."
+    },
     "isolation": 56,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "BLM Henry Mountains",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit required; BLM-managed public land"
   },
   {
     "slug": "deseret-peak",
@@ -3171,81 +3195,113 @@
     "slug": "crazy-peak",
     "name": "Crazy Peak",
     "state": "MT",
-    "elevation": 11209,
-    "prominence": 5709,
-    "latitude": 46.0216,
-    "longitude": -110.2738,
-    "difficulty": 7,
-    "days": 2,
-    "distanceMin": 12,
-    "distanceMax": 16,
-    "distanceDisplay": "~12–16 miles round-trip",
-    "gainMin": 5200,
-    "gainMax": 6600,
-    "gainDisplay": "~5,200–6,600 ft",
+    "elevation": 11214,
+    "prominence": 5733,
+    "latitude": 46.01815,
+    "longitude": -110.27667,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 12.7,
+    "distanceMax": 12.7,
+    "distanceDisplay": "12.7 miles round-trip",
+    "gainMin": 4809,
+    "gainMax": 4809,
+    "gainDisplay": "4,809 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 14,
-    "gain": 5900,
+    "daysMax": 1,
+    "daysDisplay": "10–14 hours",
+    "distance": 12.7,
+    "gain": 4809,
     "mountainRange": "Crazy Mountains",
     "season": "July-September",
     "hazards": [
-      "crevasse-fall",
-      "avalanche",
       "rockfall",
       "scrambling-exposed",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "exposure",
       "hypothermia",
-      "loose-rock-scree"
+      "bears"
     ],
-    "bestRoute": "Big Timber Canyon — West Ridge",
+    "bestRoute": "West Ridge Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "3+",
+    "dataSource": "Custer Gallatin National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
     "heroImage": "/images/peaks/crazy-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Crazy-Peak/forecasts/3418",
     "technicalRequirements": [
-      "glacier-travel",
-      "exposed-scrambling",
       "alpine-start",
-      "snow-travel",
-      "off-trail-nav"
+      "exposed-scrambling",
+      "rock-scrambling-loose",
+      "off-trail-nav",
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
-        "ice-axe",
-        "crampons",
         "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
         "gaiters",
-        "sunscreen"
+        "compass",
+        "water-capacity"
       ],
       "secondary": [
-        "avalanche-gear",
+        "sunscreen",
+        "sunglasses",
+        "hat",
         "microspikes",
-        "water-capacity",
         "emergency-comm",
-        "high-calorie-food",
-        "compass"
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Rockfall hazard exists on loose scree sections, particularly where parties travel on the same slope. Avoid positioning directly above or below other climbers, move efficiently through scree, and consider wearing a helmet when multiple groups share the route.",
+    "content": {
+      "overview": [
+        "Crazy Peak is the highest summit in the Crazy Mountains, an island range that rises abruptly from south-central Montana prairie roughly 12 miles north of Big Timber. Crazy Peak is widely cited as one of Montana's most topographically prominent mountains, often ranking above Granite Peak in prominence comparisons despite lower absolute elevation. The Crazy Mountains hold cultural significance as a vision quest site for the Crow Nation. Regional accounts describe Chief Plenty Coups receiving an important guiding vision in the range; treat cultural sites and traditional lands with respect.",
+        "The West Ridge ascent is widely regarded as one of the more aesthetic scrambles in the Northern Rockies, combining moderate technical terrain with sustained exposure and sweeping views across the prairie and toward the Beartooth, Absaroka, and Bridger ranges to the south and east. Mountain goats frequent the ridge sections, and a glacier persists on the northeast slope year-round."
+      ],
+      "routeDescription": [
+        "The standard West Ridge route is approximately 12.7 miles round-trip from Half Moon Campground, gaining 4,809 feet over 10 to 14 hours. The Big Timber Creek Trail ascends a well-maintained path with multiple creek crossings to Blue Lake at approximately 7,000 feet, then continues to the base of the West Ridge. From the saddle near 8,900 feet, the route enters loose scree and Class 2-3 scrambling on the West Ridge proper. The crux occurs in the final approach: a 20-foot descent down a crack passage, a traverse around two rock pinnacles (the most technical section), and a final 30-foot scramble to the true summit. Route-finding is generally straightforward in clear conditions, with cairns often marking the way, but parties should still carry a map, compass/GPS, and be prepared to navigate independently.",
+        "Established alternatives include the North Ridge (Class 3, more exposed and less frequently climbed) and the Crazy Couloir (45-degree terrain, serious snow and ice hazard). Twin Lakes offers another approach variation from the southwest."
+      ],
+      "routeLandmarks": [
+        "Blue Lake (approximately 7,000 ft)",
+        "West Ridge saddle (approximately 8,900 ft)",
+        "False summit (11,050 ft)"
+      ],
+      "permitsClimbing": "No climbing permit or registration is required for Crazy Peak. The peak falls within the Big Timber Ranger District of the Custer Gallatin National Forest.",
+      "permitsCamping": "Dispersed/backcountry camping is generally allowed on National Forest land in the Crazy Mountains, subject to current Forest Service regulations, fire restrictions, food-storage rules, and private-land boundaries. Half Moon Campground, the primary trailhead, offers established camping for a fee; check current Forest Service information for seasonal status, rates, and vehicle charges. Water is available from Big Timber Creek along the approach. Because public and private lands are intermingled around the Crazy Mountains, confirm legal access before departure and avoid crossing private land without permission. Bear canisters are recommended for food storage, as grizzly bear activity is possible in this region; bear boxes are not provided at Half Moon Campground. Check current Custer Gallatin National Forest regulations for group size, camping, fire restrictions, and food-storage requirements before departure.",
+      "wildlife": "The West Ridge route is Class 2-3 scrambling with sections of sustained exposure. Exposure on the north side reaches 1,000+ feet with manageable drop-offs for experienced scramblers. Loose talus and scree are common throughout the upper sections. The final approach to the true summit is the most technical section, requiring careful foot placement and route awareness. Weather deteriorates rapidly in the Crazy Mountains. Afternoon thunderstorms are common from July through August, and extreme wind exposure is typical on ridge sections above 10,000 feet. Snow is possible into June and early July. Strong winds can develop quickly, especially in late afternoon. Rockfall is a meaningful hazard on the upper route, especially on loose scree and talus. Helmets are recommended when multiple parties are on the mountain or when climbing below other groups. The climbing season runs July through September, with the peak season from mid-July through mid-August. June ascents are possible with snow travel skills and microspikes or light crampons for consolidated snow. Late August through September offers more stable conditions with less snow and fewer afternoon thunderstorms than July and August.",
+      "footnote": "Summit coordinates 46.01815°N, 110.27667°W (ListsOfJohn). Elevation 11,214 ft; prominence 5,733 ft (Montana #1 by prominence). Trailhead: Half Moon Campground (~4,900 ft). Custer Gallatin National Forest, Big Timber Ranger District."
+    },
     "isolation": 50,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "bear_canister"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "ListsOfJohn",
+        "Custer Gallatin NF",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit required; Half Moon Campground fee may apply"
   },
   {
     "slug": "mcdonald-peak",
@@ -3781,72 +3837,106 @@
     "slug": "north-schell-peak",
     "name": "North Schell Peak",
     "state": "NV",
-    "elevation": 11883,
+    "elevation": 11891,
     "prominence": 5403,
-    "difficulty": 5,
+    "latitude": 39.4133,
+    "longitude": -114.5998,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 8,
+    "distanceMin": 6,
     "distanceMax": 8,
-    "distanceDisplay": "8 miles round-trip",
-    "gainMin": 3800,
-    "gainMax": 3800,
-    "gainDisplay": "3,800 ft",
+    "distanceDisplay": "~6–8 miles round-trip",
+    "gainMin": 2800,
+    "gainMax": 3100,
+    "gainDisplay": "~2,800–3,100 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 8,
-    "gain": 3800,
-    "mountainRange": "Schell Creek Mountains",
-    "season": "June-September",
+    "daysDisplay": "5–6 hours",
+    "distance": 7,
+    "gain": 2950,
+    "mountainRange": "Schell Creek Range",
+    "season": "June-October",
     "hazards": [
       "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
       "exposure",
-      "scrambling-exposed",
-      "hypothermia"
+      "hypothermia",
+      "off-trail-navigation"
     ],
     "bestRoute": "Timber Creek Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/north-schell-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/North-Schell-Peak/forecasts/3622",
     "technicalRequirements": [
+      "alpine-start",
       "altitude-acclimatization",
-      "exposed-scrambling",
-      "alpine-start"
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "water-capacity"
+        "gaiters",
+        "water-capacity",
+        "compass"
       ],
       "secondary": [
-        "compass",
+        "sunscreen",
+        "sunglasses",
         "emergency-comm",
-        "duct-tape"
+        "microspikes",
+        "gloves",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 39.2506,
-    "longitude": -115.3394,
+    "hasSafetyNote": true,
+    "safetyNote": "Timber Creek Road access can vary due to maintenance, seasonal conditions, or temporary closures. Verify access with the Ely Ranger District at 775-289-3031 before traveling to the trailhead.",
+    "content": {
+      "overview": [
+        "North Schell Peak rises to 11,883 feet in the Schell Creek Range of northeastern Nevada and ranks among the state's most prominent summits. Located in the High Schells Wilderness within Humboldt-Toiyabe National Forest, roughly 19 miles northeast of Ely, the peak anchors a remote section of the range and sees far less traffic than Wheeler Peak. For hikers seeking a quiet Great Basin summit with broad desert-and-range views, North Schell offers a high likelihood of solitude outside peak summer weekends.",
+        "The range climbs from 6,500 feet in adjacent valleys to the high ridgeline where multiple significant peaks dominate the crest. The peak's position at the center of this ridge system makes it ideal for parties interested in extended ridge traverses linking South Schell Peak and Taft Peak into a longer mountain loop."
+      ],
+      "routeDescription": [
+        "The Timber Creek Trail is the standard approach to North Schell Peak. Beginning near Timber Creek Campground at approximately 9,000 feet, the route covers roughly 6 to 8 miles round-trip with about 2,800 to 3,100 feet of elevation gain. Most parties should expect a 5 to 6 hour outing. From the campground trailhead, an established trail follows Timber Creek through aspen and meadow terrain. The trail transitions into a heavily overgrown former 4x4 road that becomes increasingly indistinct. Where the old road ends at approximately 10,500 feet, parties leave trail entirely and walk off-trail over grass, talus, and rocky slopes to gain the ridge crest. Once on the ridge, a social trail provides intermittent route guidance across multiple false summits before the final walk to the summit."
+      ],
+      "routeLandmarks": [
+        "Timber Creek Campground trailhead (~9,000 ft)",
+        "End of former 4x4 road (~10,500 ft)",
+        "Ridge crest and false summits"
+      ],
+      "permitsClimbing": "No permits are required for day hiking within Humboldt-Toiyabe National Forest. Overnight backpackers may generally use dispersed camping in the surrounding national forest, subject to current Humboldt-Toiyabe National Forest and High Schells Wilderness regulations. For current road, trail, and camping conditions, contact the Ely Ranger District at 775-289-3031.",
+      "permitsCamping": "Timber Creek Campground is a developed Forest Service group campground near the route, with vault toilets and drinking water provided in season. Current Forest Service information indicates reservations are generally required, and Recreation.gov lists campground fees. It is pack-in/pack-out with no trash collection. Verify seasonal water, road access, reservations, and fees before relying on it as a trailhead basecamp. Additional dispersed camping is available in the surrounding national forest, subject to current Humboldt-Toiyabe National Forest and High Schells Wilderness regulations.",
+      "wildlife": "Established trail from the campground follows Timber Creek and transitions into a heavily overgrown former 4x4 road. From the road's end at approximately 10,500 feet, the route leaves trail entirely for off-trail Class 2 hiking over grass, talus, and rocky slopes to reach the ridge crest. Once on the ridge, a social trail provides intermittent route guidance. Navigation requires comfort with off-trail travel and the ability to use a map, compass, GPS device, or offline map app. No hands-on climbing is required. Great Basin weather deteriorates rapidly, particularly during July and August when afternoon thunderstorms develop frequently. The exposed alpine ridge carries significant lightning risk. Wind exposure is constant at the summit. Large temperature swings between valley and ridgeline are common; layers are essential. Snow patches may persist into July in years with above-average precipitation. June through October is the typical climbing season; optimal dry conditions are usually mid-July through September. Experienced parties sometimes continue south along the ridgeline to South Schell Peak (11,765 ft) and Taft Peak (11,734 ft), extending the outing into a loop hike with additional exposure and unobstructed Great Basin vistas.",
+      "footnote": "Elevation 11,891 ft (LiDAR); USGS/topographic sources commonly list 11,883 ft. Prominence 5,403 ft. Summit 39.41330°N, 114.59980°W. North Fork Timber Creek Trailhead near Timber Creek Campground 39.40025°N, 114.61907°W. Ely Ranger District: 775-289-3031."
+    },
     "isolation": 24,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "water_capacity"
+    ],
+    "permitFee": "Free; campground fees apply",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No day-hiking permit; Timber Creek Campground reservations and fees may apply"
   },
   {
     "slug": "star-peak",
@@ -4064,80 +4154,105 @@
     "slug": "flat-top-mountain",
     "name": "Flat Top Mountain",
     "state": "UT",
-    "elevation": 10620,
+    "elevation": 10624,
     "prominence": 5370,
-    "latitude": 40.0049,
-    "longitude": -110.9396,
-    "difficulty": 5,
+    "latitude": 40.5864,
+    "longitude": -111.9398,
+    "difficulty": 1,
     "days": 1,
-    "distanceMin": 10,
+    "distanceMin": 8,
     "distanceMax": 10,
-    "distanceDisplay": "10 miles round-trip",
-    "gainMin": 4400,
-    "gainMax": 4400,
-    "gainDisplay": "4,400 ft",
+    "distanceDisplay": "~8–10 miles round-trip",
+    "gainMin": 2500,
+    "gainMax": 3000,
+    "gainDisplay": "~2,500–3,000 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 10,
-    "gain": 4400,
+    "daysDisplay": "6 hours",
+    "distance": 9,
+    "gain": 2750,
     "mountainRange": "Oquirrh Mountains",
-    "season": "May-October",
+    "season": "June-October",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "lightning-exposure",
       "loose-rock-scree",
-      "scrambling-exposed",
-      "rockfall"
+      "off-trail-navigation",
+      "exposure"
     ],
-    "bestRoute": "South Fork Ophir Canyon — Lewiston Peak traverse",
-    "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2+",
-    "permitSeason": "Year-round (private landowner permission required)",
+    "bestRoute": "South Fork Ophir Canyon Route",
+    "permitRequired": false,
+    "dataSource": "USGS GNIS, ListsOfJohn, PeakBagger/SummitPost (route, class, hazards, access)",
+    "ydsClass": "1",
     "heroImage": "/images/peaks/flat-top-mountain.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Flattop-Mountain/forecasts/3808",
     "technicalRequirements": [
-      "rock-scrambling-loose",
-      "exposed-scrambling",
       "alpine-start",
       "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "sunscreen",
-        "sunglasses",
-        "helmet",
+        "trekking-poles",
+        "gaiters",
         "shell-jacket",
         "insulating-layer",
-        "hat"
+        "compass",
+        "water-capacity"
       ],
       "secondary": [
-        "gaiters",
-        "compass",
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
         "emergency-comm",
-        "high-calorie-food",
-        "gloves",
-        "microspikes"
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Private land surrounds much of the approach and summit area. Current access permission must be independently verified with the appropriate landowner or land manager before any attempt. Stay on the approved route to avoid trespassing or entering restricted mining property.",
+    "content": {
+      "overview": [
+        "Flat Top Mountain is Utah's sixth most prominent peak at 5,370 feet and the highest point in the Oquirrh Mountains, which rise southwest of Salt Lake City between the Salt Lake Valley and Rush Valley. The Oquirrh Mountains are geologically significant as a tilted fault-block range, their north-facing slopes cloaked in aspen and conifer at elevation while sagebrush and juniper dominate the lower terrain. Despite proximity to the Salt Lake Valley only 1.5 hours' drive from downtown, Flat Top remains largely unknown outside regional hiking circles, entirely overshadowed by the nearby Wasatch Range.",
+        "Access to Flat Top Mountain is heavily constrained by private ownership and nearby Rio Tinto Kennecott mining operations, which control much of the Oquirrh Mountains. Hiking access should not be assumed. Historically, access has sometimes been granted by local landowners on a case-by-case basis. Current permission must be independently verified with the appropriate landowner or land manager before any attempt. Because of these restrictions, Flat Top sees far fewer visitors than comparable prominent peaks near the Salt Lake Valley."
+      ],
+      "routeDescription": [
+        "The standard approach follows South Fork Ophir Canyon Road from Ophir (6,700 feet) southeast toward Halls Canyon, where a trail climbs to the ridge junction with Lewiston Peak (10,400 feet). From the ridge, hikers traverse north roughly 0.5 miles to Flat Top's summit (10,624 feet). Total distance is approximately 8–10 miles round-trip with 2,500–3,000 feet of elevation gain. The trail becomes faint or disappears near the upper ridge, where route-finding requires careful attention to multiple false summits and brushy subalpine slopes. Map and GPS are essential to identify the true summit.",
+        "The final 3 miles of Ophir Canyon Road are rough and rocky; high-clearance 4WD is recommended for the final miles, especially after storms or during early season. Experienced parties note that whiteout conditions on the featureless plateau can be disorienting, and a topo map, compass, and GPS track are strongly recommended to identify the true summit and avoid drifting onto private or restricted land. The ridge traverse is exposed to afternoon thunderstorm development."
+      ],
+      "routeLandmarks": [
+        "Ophir town (~6,700 ft)",
+        "Halls Canyon trailhead",
+        "Summit ridge junction with Lewiston Peak (~10,400 ft)",
+        "Flat Top summit (10,624 ft)"
+      ],
+      "permitsClimbing": "No wilderness permits are required to climb Flat Top Mountain. Private land access is the primary gate for this peak. Historically, access has sometimes been granted by local landowners on a case-by-case basis. Current permission must be independently verified with the appropriate landowner or land manager before any attempt.",
+      "permitsCamping": "Camping may be available near the Half Moon area or in the broader Ophir Canyon vicinity where permitted, but land ownership, facilities, water availability, and current restrictions should be verified before planning an overnight trip. Do not assume that camping is allowed along the approach without explicit permission from the appropriate landowner or land manager.",
+      "wildlife": "Multiple false summits and broad subalpine terrain require careful navigation with map and GPS near the upper ridge and summit plateau. Cross-country travel crosses brushy subalpine slopes, scattered krummholz, and intermittent open terrain; trails become intermittent or disappear entirely. Ridge terrain is exposed to afternoon thunderstorms June through September; wind is constant on the high plateau. Staying on route is essential to avoid trespassing. Current access permission must be independently verified with the appropriate landowner or land manager before any attempt. May may involve lingering snow, mud, and difficult road access; June through October is typically the most reliable hiking season.",
+      "footnote": "Summit coordinates approximately 40.5864°N, 111.9398°W (verify against USGS GNIS or ListsOfJohn). Ophir town approximately N 40.5894° W 111.9245°. Elevation 10,624 ft; prominence 5,370 ft. Typical time about 6 hours for 9-mile round-trip with ~2,750 ft gain; actual time varies with route-finding, snow, and terrain."
+    },
     "isolation": 24,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "microspikes",
+      "trekking_poles",
+      "gaiters",
+      "insulating_layer"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
-    }
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "USGS GNIS",
+        "ListsOfJohn",
+        "PeakBagger"
+      ],
+      "notes": "Private land access must be verified independently before each attempt."
+    },
+    "permitSeason": "No wilderness permit; private landowner permission required — verify current access before attempting"
   },
   {
     "slug": "mount-stuart",
