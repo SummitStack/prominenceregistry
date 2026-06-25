@@ -42,6 +42,17 @@ const TARGETS = [
     commonsUrl:
       'https://commons.wikimedia.org/wiki/File:Blanca_Peak_and_Ellingwood_Point.jpg',
   },
+  {
+    slug: 'ibapah-peak',
+    file: 'Ibapah_Peak.JPG',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/File:Ibapah_Peak.JPG',
+  },
+  {
+    slug: 'mount-cleveland',
+    file: 'Mount_Cleveland_-_Glacier_National_Park.jpg',
+    commonsUrl:
+      'https://commons.wikimedia.org/wiki/File:Mount_Cleveland_-_Glacier_National_Park.jpg',
+  },
 ];
 
 async function commonsApi(params) {

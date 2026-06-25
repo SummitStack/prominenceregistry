@@ -1,103 +1,204 @@
 {
-  "generatedAt": "2026-06-24T03:27:09.262Z",
+  "generatedAt": "2026-06-25T16:54:32.331Z",
   "peaks": {
-    "hayford-peak": {
-      "requestedUrl": "https://bobspirko.ca/USTrips/Nevada/HayfordPeak/HayfordPeak_2830.jpg",
-      "sourceUrl": "https://bobspirko.ca/USTrips/Nevada/HayfordPeak/HayfordPeak_2830.jpg",
+    "arc-dome": {
+      "requestedUrl": "user-provided hero image",
+      "sourceUrl": "/Users/chrisridings/Projects/prominenceregistry/minor-mars/public/images/peaks/raw-sources/arc-dome-hero.png",
       "raw": {
-        "bytes": 682720,
-        "size": "666.7 KB"
+        "bytes": 270984,
+        "size": "264.6 KB"
       },
       "optimizedTotal": {
-        "bytes": 1532465,
-        "size": "1.46 MB"
+        "bytes": 681124,
+        "size": "665.2 KB"
       },
-      "overallCompressionRatio": "43.9%",
+      "overallCompressionRatio": "37.2%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 639670,
-            "size": "624.7 KB"
+            "bytes": 252394,
+            "size": "246.5 KB"
           },
           "jpg": {
-            "bytes": 461932,
-            "size": "451.1 KB"
+            "bytes": 195297,
+            "size": "190.7 KB"
           },
           "combined": {
-            "bytes": 1101602,
-            "size": "1.05 MB"
+            "bytes": 447691,
+            "size": "437.2 KB"
           },
-          "compressionRatio": "-61.4%"
+          "compressionRatio": "-65.2%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 175366,
-            "size": "171.3 KB"
+            "bytes": 89100,
+            "size": "87.0 KB"
           },
           "jpg": {
-            "bytes": 123391,
-            "size": "120.5 KB"
+            "bytes": 64568,
+            "size": "63.1 KB"
           },
           "combined": {
-            "bytes": 298757,
-            "size": "291.8 KB"
+            "bytes": 153668,
+            "size": "150.1 KB"
           },
-          "compressionRatio": "56.2%"
+          "compressionRatio": "43.3%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 49166,
-            "size": "48.0 KB"
+            "bytes": 28042,
+            "size": "27.4 KB"
           },
           "jpg": {
-            "bytes": 34113,
-            "size": "33.3 KB"
+            "bytes": 21348,
+            "size": "20.8 KB"
           },
           "combined": {
-            "bytes": 83279,
-            "size": "81.3 KB"
+            "bytes": 49390,
+            "size": "48.2 KB"
           },
-          "compressionRatio": "87.8%"
+          "compressionRatio": "81.8%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 28820,
-            "size": "28.1 KB"
+            "bytes": 17234,
+            "size": "16.8 KB"
           },
           "jpg": {
-            "bytes": 20007,
-            "size": "19.5 KB"
+            "bytes": 13141,
+            "size": "12.8 KB"
           },
           "combined": {
-            "bytes": 48827,
-            "size": "47.7 KB"
+            "bytes": 30375,
+            "size": "29.7 KB"
           },
-          "compressionRatio": "92.8%"
+          "compressionRatio": "88.8%"
         }
       ],
       "manifestEntry": {
-        "slug": "hayford-peak",
-        "raw": "hayford-peak.jpg",
+        "slug": "arc-dome",
+        "raw": "arc-dome.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "hayford-peak-hero-1440.webp",
-            "jpg": "hayford-peak-hero-1440.jpg"
+            "webp": "arc-dome-hero-1440.webp",
+            "jpg": "arc-dome-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "hayford-peak-hero-768.webp",
-            "jpg": "hayford-peak-hero-768.jpg"
+            "webp": "arc-dome-hero-768.webp",
+            "jpg": "arc-dome-hero-768.jpg"
           },
           "card-400": {
-            "webp": "hayford-peak-card-400.webp",
-            "jpg": "hayford-peak-card-400.jpg"
+            "webp": "arc-dome-card-400.webp",
+            "jpg": "arc-dome-card-400.jpg"
           },
           "card-300": {
-            "webp": "hayford-peak-card-300.webp",
-            "jpg": "hayford-peak-card-300.jpg"
+            "webp": "arc-dome-card-300.webp",
+            "jpg": "arc-dome-card-300.jpg"
+          }
+        }
+      }
+    },
+    "mount-cleveland": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mount_Cleveland_-_Glacier_National_Park.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Mount_Cleveland_-_Glacier_National_Park.jpg",
+      "raw": {
+        "bytes": 1399020,
+        "size": "1.33 MB"
+      },
+      "optimizedTotal": {
+        "bytes": 1000008,
+        "size": "976.6 KB"
+      },
+      "overallCompressionRatio": "82.1%",
+      "variants": [
+        {
+          "variant": "hero-1440",
+          "webp": {
+            "bytes": 426482,
+            "size": "416.5 KB"
+          },
+          "jpg": {
+            "bytes": 283652,
+            "size": "277.0 KB"
+          },
+          "combined": {
+            "bytes": 710134,
+            "size": "693.5 KB"
+          },
+          "compressionRatio": "49.2%"
+        },
+        {
+          "variant": "hero-768",
+          "webp": {
+            "bytes": 117506,
+            "size": "114.8 KB"
+          },
+          "jpg": {
+            "bytes": 78123,
+            "size": "76.3 KB"
+          },
+          "combined": {
+            "bytes": 195629,
+            "size": "191.0 KB"
+          },
+          "compressionRatio": "86.0%"
+        },
+        {
+          "variant": "card-400",
+          "webp": {
+            "bytes": 34590,
+            "size": "33.8 KB"
+          },
+          "jpg": {
+            "bytes": 23906,
+            "size": "23.3 KB"
+          },
+          "combined": {
+            "bytes": 58496,
+            "size": "57.1 KB"
+          },
+          "compressionRatio": "95.8%"
+        },
+        {
+          "variant": "card-300",
+          "webp": {
+            "bytes": 21034,
+            "size": "20.5 KB"
+          },
+          "jpg": {
+            "bytes": 14715,
+            "size": "14.4 KB"
+          },
+          "combined": {
+            "bytes": 35749,
+            "size": "34.9 KB"
+          },
+          "compressionRatio": "97.4%"
+        }
+      ],
+      "manifestEntry": {
+        "slug": "mount-cleveland",
+        "raw": "mount-cleveland.jpg",
+        "variants": {
+          "hero-1440": {
+            "webp": "mount-cleveland-hero-1440.webp",
+            "jpg": "mount-cleveland-hero-1440.jpg"
+          },
+          "hero-768": {
+            "webp": "mount-cleveland-hero-768.webp",
+            "jpg": "mount-cleveland-hero-768.jpg"
+          },
+          "card-400": {
+            "webp": "mount-cleveland-card-400.webp",
+            "jpg": "mount-cleveland-card-400.jpg"
+          },
+          "card-300": {
+            "webp": "mount-cleveland-card-300.webp",
+            "jpg": "mount-cleveland-card-300.jpg"
           }
         }
       }

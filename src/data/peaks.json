@@ -2239,22 +2239,22 @@
     "name": "Mount Washington",
     "state": "NH",
     "elevation": 6288,
-    "prominence": 6138,
+    "prominence": 6148,
     "latitude": 44.2705,
     "longitude": -71.3033,
-    "difficulty": 5,
+    "difficulty": 3,
     "days": 1,
-    "distanceMin": 8,
-    "distanceMax": 8,
-    "distanceDisplay": "8 miles round-trip",
-    "gainMin": 4300,
+    "distanceMin": 8.2,
+    "distanceMax": 8.6,
+    "distanceDisplay": "~8.2–8.6 miles round-trip",
+    "gainMin": 4100,
     "gainMax": 4300,
-    "gainDisplay": "4,300 ft",
+    "gainDisplay": "~4,100–4,300 ft",
     "daysMin": 1,
     "daysMax": 1,
     "daysDisplay": "1 day",
-    "distance": 8,
-    "gain": 4300,
+    "distance": 8.4,
+    "gain": 4200,
     "mountainRange": "Presidential Range",
     "season": "June-September",
     "hazards": [
@@ -2263,130 +2263,181 @@
       "wind-extreme-weather",
       "lightning-exposure",
       "exposure",
-      "rockfall"
+      "rockfall",
+      "avalanche"
     ],
     "bestRoute": "Tuckerman Ravine Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2",
+    "dataSource": "USGS, AMC, White Mountain National Forest, Mount Washington Avalanche Center; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
     "heroImage": "/images/peaks/mount-washington.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Washington-2/forecasts/1917",
     "technicalRequirements": [
       "alpine-start",
-      "off-trail-nav",
-      "exposed-scrambling",
       "snow-travel"
     ],
     "requiredGear": {
       "priority": [
-        "insulating-layer",
+        "trekking-poles",
         "shell-jacket",
-        "shell-pants",
-        "gloves",
-        "insulating-hat",
-        "traction-descent",
-        "emergency-comm"
+        "insulating-layer",
+        "microspikes"
       ],
       "secondary": [
-        "microspikes",
-        "crampons",
-        "compass",
+        "gloves",
+        "insulating-hat",
+        "shell-pants",
         "water-capacity",
-        "high-calorie-food",
-        "gaiters"
+        "compass",
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Tuckerman Ravine and nearby terrain are subject to avalanche forecasts, General Bulletins, and seasonal closures or route restrictions when snow, ice, undermined snow, waterfall holes, or avalanche conditions create unacceptable hazard. In spring, specific sections such as the Lip area of the Tuckerman Ravine Trail may be closed until snow has melted out. Check Mount Washington Avalanche Center and Pinkham Notch guidance before entering the ravine.",
+    "content": {
+      "overview": [
+        "Mount Washington stands 6,288 feet in the Presidential Range of northern New Hampshire, the highest point in the Northeast and one of the most famously exposed summits in the eastern United States. With roughly 6,148 feet of prominence, Mount Washington is one of the most topographically dominant peaks in the region. The peak is legendary for weather extremes: the summit recorded a 231 mph gust on April 12, 1934, recognized for decades as the world record for surface wind speed before being surpassed by a tropical-cyclone gust measured in Australia in 1996. Conditions can shift from benign to dangerous in minutes.",
+        "Geologically, Mount Washington consists of quartzite and mica schist bedrock exposed above treeline, creating a barren, windswept summit plateau. The Appalachian Trail crosses the summit, making Mount Washington one of the most prominent and weather-exposed summits on the AT corridor. Despite its modest absolute elevation, Mount Washington presents hazards comparable to far higher peaks due to its latitude, exposure, and weather patterns. The Sherman Adams summit building houses a museum, cafeteria, and meteorological observatory—infrastructure that makes the summit unusually developed compared with most major hiking peaks."
+      ],
+      "routeDescription": [
+        "The Tuckerman Ravine Trail is a strenuous non-technical hike, best described as Class 1+ in normal summer conditions, with steep rock steps and boulder-strewn footing near the ravine and summit cone. The first 2.4 miles ascend through forest to Hermit Lake shelters (approximately 1,800 feet of gain), establishing a steady grade on well-maintained trail. From Hermit Lake, the route steepens as it enters Tuckerman Ravine itself, a classic glacial cirque bounded by steep headwalls. The final approach to the summit cone involves rock-hopping over angular boulders, with the steepest pitches occurring in the final few hundred feet. Total round-trip distance is 8.2–8.6 miles; experienced parties typically complete this in 5–10 hours depending on conditions and fitness.",
+        "Other established approaches include the Lion Head Trail (steeper and rougher, approximately 3.6 miles to summit), the Ammonoosuc Ravine Trail (a shorter but steep and rugged west-side approach), and the Huntington Ravine Trail (involving exposed scrambling, appropriate only for experienced hikers with existing scrambling competency). The summit is also accessible via the Mount Washington Cog Railway and Auto Road—an alternative to hiking for parties wishing to avoid the ascent."
+      ],
+      "routeLandmarks": [
+        "Hermit Lake Shelters (approximately 1,800 ft gain, ~2.4 miles from Pinkham Notch)",
+        "Tuckerman Ravine floor/headwall area — seasonal snow, ice, avalanche, and closure concerns",
+        "Summit cone — rough rock steps and boulder-strewn trail above treeline"
+      ],
+      "permitsClimbing": "No special climbing permit is required to ascend Mount Washington. Parking, recreation-pass requirements, and facility rules vary by trailhead and managing organization, including White Mountain National Forest and AMC-operated facilities in the area. Verify current fees and pass requirements before departure. Services at Pinkham Notch Visitor Center and on the summit vary seasonally; verify current hours before relying on food, water, restrooms, or indoor shelter.",
+      "permitsCamping": "Hermit Lake Shelters provide managed backcountry camping below Tuckerman Ravine, with lean-tos, tent platforms, outhouses, seasonal water access, and caretaker-managed procedures. Individual campers purchase permits at AMC Pinkham Notch Visitor Center; confirm current booking procedures and stay limits before planning. The AMC Lakes of the Clouds Hut (5,012 feet) offers seasonal bunk accommodations with meals; reservations required during full-service season. The Harvard Cabin operates as a winter facility with limited cabin and tent-site accommodations; confirm current dates and procedures before planning. Above-treeline camping is generally prohibited. The winter exception applies only when at least two feet of snow covers the ground, and it does not allow camping in the Cutler River Drainage, including Tuckerman and Huntington Ravines.",
+      "wildlife": "The Tuckerman Ravine Trail is non-technical with relentless elevation gain and a sustained moderate-to-steep grade. The route remains a trail hike in normal summer conditions, but the summit cone and upper ravine sections involve rough footing, rock steps, and boulder travel. Alternative routes vary significantly in difficulty: Lion Head Trail is steeper and rougher, while Huntington Ravine Trail involves exposed scrambling and is appropriate only for experienced hikers with existing scrambling competency. Mount Washington's weather is the primary hazard. The peak is known colloquially as the \"Home of the World's Worst Weather\" and experiences severe storms, including snow and sleet, during any month of the year. Winds can exceed 60 mph even in summer, and the combination of wind, cold, and wetness can exhaust strong hikers. More than 100 deaths have been documented on and around Mount Washington, with some counts approaching or exceeding 150 depending on the area and date range included. A rapid deterioration of conditions at higher elevations can leave parties exposed and unable to descend safely. Parties should carry adequate insulation and rain protection regardless of forecast conditions and be prepared to turn back if conditions worsen.",
+      "footnote": "Elevation 6,288 ft (traditional public figure); 6,286.5 ft NAVD88 may appear in technical sources. Prominence approximately 6,148 ft. Wind record: 231 mph, April 12, 1934. Parking, recreation-pass, and facility fees vary by trailhead; verify current AMC, WMNF, and MWAC requirements before travel."
+    },
     "isolation": 820,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "microspikes"
+    ],
+    "permitFee": "Free; parking, recreation pass, or facility fees may apply by trailhead",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "USGS",
+        "AMC",
+        "White Mountain National Forest",
+        "Mount Washington Avalanche Center"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit for day hiking; parking, recreation pass, and facility fees vary by trailhead (AMC/WMNF)"
   },
   {
     "slug": "mount-mitchell",
     "name": "Mount Mitchell",
     "state": "NC",
-    "elevation": 6699,
-    "prominence": 6089,
+    "elevation": 6684,
+    "prominence": 6090,
     "latitude": 35.7649,
     "longitude": -82.2651,
     "difficulty": 3,
     "days": 1,
-    "distanceMin": 12,
+    "distanceMin": 11.2,
     "distanceMax": 12,
-    "distanceDisplay": "12 miles round-trip",
+    "distanceDisplay": "~11.2–12 miles round-trip",
     "gainMin": 3600,
-    "gainMax": 3600,
-    "gainDisplay": "3,600 ft",
+    "gainMax": 3700,
+    "gainDisplay": "~3,600–3,700 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 12,
-    "gain": 3600,
+    "daysDisplay": "6–8 hours",
+    "distance": 11.6,
+    "gain": 3650,
     "mountainRange": "Black Mountains",
     "season": "May-October",
     "hazards": [
-      "lightning-exposure",
       "hypothermia",
-      "exposure",
       "wind-extreme-weather",
-      "off-trail-navigation"
+      "lightning-exposure",
+      "exposure"
     ],
     "bestRoute": "Mount Mitchell Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "USGS, NC State Parks, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards, permits)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-mitchell.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Mitchell/forecasts/2037",
     "technicalRequirements": [
       "alpine-start",
-      "off-trail-nav",
-      "water-crossings"
+      "water-crossings",
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "shell-jacket",
+        "trekking-poles",
         "insulating-layer",
-        "water-capacity",
-        "compass",
-        "emergency-comm",
-        "gloves"
+        "shell-jacket",
+        "water-capacity"
       ],
       "secondary": [
         "microspikes",
-        "hat",
-        "high-calorie-food",
-        "insect-repellent",
-        "traction-descent"
+        "gaiters",
+        "gloves",
+        "compass",
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Above 5,000 feet, fog and wind exposure increase markedly, and travel can feel significantly more severe than lower sections despite remaining on trail. Dense fog, cold rain, and strong winds can occur in any season; carry insulating layers and a waterproof shell.",
+    "content": {
+      "overview": [
+        "Mount Mitchell is the highest peak east of the Mississippi River, rising 6,684 feet above North Carolina's Black Mountains roughly 30 miles northeast of Asheville. With approximately 6,090 feet of prominence, it ranks among the most isolated summits in the eastern United States. The peak occupies Mount Mitchell State Park, a rare remnant of the Southern Appalachian spruce-fir forest dominated by red spruce and Fraser fir at elevations above 4,500 feet.",
+        "The summit marks a distinct ecological boundary. Visiting hikers encounter conditions characteristic of far northern forests despite the latitude, with winter snowfall averaging 104 inches and recorded temperatures dropping to −34°F. Dense fog, cold rain, and strong winds can occur in any season, making this an unusually severe mountain environment for the eastern slope of the Appalachians."
+      ],
+      "routeDescription": [
+        "The Mount Mitchell Trail is the standard and most heavily traveled non-motorized route to the summit, ascending from Black Mountain Campground. The trail gains approximately 3,600 to 3,700 feet over 11.2 to 12 miles round-trip on sustained but well-maintained footpath. The route begins near Black Mountain Campground at roughly 2,995 feet, follows gentle grades through deciduous forest in the lower sections, then steepens as switchbacks climb toward the high ridge. The physical crux is the relentless sustained climbing with minimal rest sections, particularly in the upper reaches where the trail enters the dense spruce-fir forest. Above 5,000 feet, fog and wind exposure increase markedly, and travel can feel significantly more severe than lower sections despite remaining on trail. The route finishes at the developed summit area, where a short path leads to the observation deck.",
+        "The Black Mountain Crest Trail offers a significantly more strenuous alternative, traversing the high ridge over terrain requiring strong fitness and comfort with steep, rugged footing."
+      ],
+      "routeLandmarks": [
+        "Black Mountain Campground (~2,995 ft)",
+        "Spruce-fir forest zone (above ~4,500 ft)",
+        "Summit observation deck (6,684 ft)"
+      ],
+      "permitsClimbing": "No climbing permit is required for day hiking Mount Mitchell. Mount Mitchell State Park charges no day-use entrance fee for vehicles parking outside the summit area. However, the Mount Mitchell State Park campground at Black Mountain Campground is closed for the entire 2025 and 2026 seasons due to water line installation. Verify current access and campground status before planning an overnight trip, as operations are subject to seasonal closures and maintenance.",
+      "permitsCamping": "The Mount Mitchell State Park campground at Black Mountain Campground is currently closed for the entire 2025 and 2026 seasons due to water line installation and will reopen in 2027. When the campground operates in future years, non-electric tent camping costs $27 per night and requires advance reservation through Reserve America. Backcountry camping rules vary by jurisdiction; confirm current registration or permit requirements with the relevant land manager before departure. Water is available from springs in the lower sections of the trail during normal conditions. Upper-elevation water sources are unreliable; parties should carry sufficient water from lower elevations. Fire regulations vary by location and season; confirm current requirements with the park office before camping. Black bears are present in the region; inquire at the visitor center regarding current food storage protocols and bear-awareness guidelines.",
+      "wildlife": "Peak season runs May through October. Winter snowfall averages 104 inches at the summit, with recorded temperatures dropping to −34°F. Dense fog, cold rain, and strong winds can occur in any season, making this an unusually severe mountain environment for the eastern slope of the Appalachians despite the moderate summit elevation.",
+      "footnote": "Stats sources: USGS and NC State Parks (elevation 6,684 ft); ListsOfJohn (prominence 6,090 ft); NC State Parks Mount Mitchell Trail description (11.2–12 miles round-trip, 3,600–3,700 ft gain). Campground closed 2025–2026 for water line installation; reopens 2027. Future non-electric tent sites $27/night via Reserve America (rates subject to change)."
+    },
     "isolation": 1195,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes",
+      "gaiters"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "USGS",
+        "NC State Parks",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit required; Black Mountain Campground closed 2025–2026 (reopens 2027)"
   },
   {
     "slug": "humphreys-peak",
@@ -2498,74 +2549,113 @@
     "slug": "borah-peak",
     "name": "Borah Peak",
     "state": "ID",
-    "elevation": 12668,
-    "prominence": 5982,
+    "elevation": 12662,
+    "prominence": 5990,
     "difficulty": 6,
     "days": 1,
-    "distanceMin": 7,
-    "distanceMax": 7,
-    "distanceDisplay": "7 miles round-trip",
-    "gainMin": 5300,
+    "distanceMin": 8,
+    "distanceMax": 8.2,
+    "distanceDisplay": "~8–8.2 miles round-trip",
+    "gainMin": 5200,
     "gainMax": 5300,
-    "gainDisplay": "5,300 ft",
+    "gainDisplay": "~5,200–5,300 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 7,
-    "gain": 5300,
+    "daysDisplay": "8–10 hours",
+    "distance": 8.1,
+    "gain": 5250,
     "mountainRange": "Lost River Range",
-    "season": "June-September",
+    "season": "July-September",
     "hazards": [
       "altitude-sickness",
-      "class-4-climbing",
-      "exposure",
+      "lightning-exposure",
       "rockfall",
+      "scrambling-exposed",
+      "exposure",
+      "loose-rock-scree",
       "hypothermia"
     ],
-    "bestRoute": "Southwest Ridge (Chicken-out Ridge)",
+    "bestRoute": "Southwest Ridge",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "4",
+    "dataSource": "Salmon–Challis National Forest, USGS GNIS, USGS Earthquake Hazards; Idaho: A Climbing Guide, Sawtooth Mountain Guides, SummitPost, U.S. Highpoint Guide",
+    "ydsClass": "3",
     "heroImage": "/images/peaks/borah-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
     "technicalRequirements": [
-      "exposed-rock-climbing",
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
       "altitude-acclimatization",
-      "alpine-start"
+      "snow-travel",
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "rope-harness",
-        "climbing-protection",
         "helmet",
         "insulating-layer",
-        "shell-jacket"
+        "shell-jacket",
+        "trekking-poles",
+        "water-capacity"
       ],
       "secondary": [
-        "climbing-shoes",
+        "ice-axe",
+        "crampons",
+        "microspikes",
+        "gloves",
         "compass",
-        "emergency-comm",
-        "gloves"
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "A very early start, often 3–4 AM, is strongly recommended in summer. Plan to summit early and be descending well before afternoon thunderstorm development, which is common July through August. The exposed ridge presents significant lightning risk.",
     "latitude": 44.1308,
     "longitude": -113.7514,
+    "content": {
+      "overview": [
+        "Borah Peak at 12,662 feet is Idaho's highest mountain and the most prominent peak in the state, standing well above the surrounding basin landscape of central Idaho. The peak anchors the Lost River Range, which contains most of Idaho's 12,000-foot peaks. Named for U.S. Senator William Borah, the mountain rises as the dominant feature in a region characterized by sparse vegetation and high-desert conditions.",
+        "The peak is best known for Chickenout Ridge, an exposed Class 3 crux between 11,200 and 11,400 feet where the psychological exposure often exceeds the actual technical difficulty. The ridge is narrow, features loose rock, and drops steeply on the north flank. Many experienced climbers choose to turn back here despite solid route-finding skills. The October 1983 Borah Peak earthquake uplifted the Lost River fault by several feet; modern published elevations commonly cite 12,662 feet, though topographic surveys have some variation."
+      ],
+      "routeDescription": [
+        "The Southwest Ridge is the standard and most-traveled route to the summit. The climb begins at Borah Peak Trailhead at 7,400 feet and gains approximately 5,200 to 5,300 feet over roughly 8 to 8.2 miles round-trip. The lower section ascends steep sagebrush-covered slopes on an established trail, reaching open alpine terrain by mid-elevation. From there, the route follows the southwest ridge spine upward through increasingly exposed scrambling terrain.",
+        "The Chickenout Ridge crux occupies the narrow section between 11,200 and 11,400 feet. This Class 3 section requires solid scrambling technique over loose rock, careful footwork, and comfort with significant exposure. The north flank drops steeply toward the basin below, creating serious exposure. Parties must navigate route variations around the ridge crest, all of which demand careful attention to foot placement and route-finding in order to avoid rockfall hazard to climbers below. Above the crux, parties continue on scree and talus slopes to reach the bare rock summit, which offers expansive views across the Lost River Range, Lemhi Mountains, and surrounding peaks to the south and east.",
+        "Descent follows the same route; the Chickenout Ridge presents the same technical challenge on the way down. Early-season snow may make glissading appealing but adds significant risk; downclimbing the Class 3 section is the safer choice."
+      ],
+      "routeLandmarks": [
+        "Chickenout Ridge (11,200–11,400 ft) — exposed Class 3 scrambling with serious exposure on the north flank",
+        "Summit (12,662 ft) — bare rock with expansive alpine views"
+      ],
+      "permitsClimbing": "No climbing permit or quota is required for Borah Peak. Verify current road access, fire restrictions, and any temporary Forest Service closures before travel by contacting Salmon–Challis National Forest.",
+      "permitsCamping": "The Borah Peak Trailhead, located 2.5 miles from Highway 93, has a primitive first-come campground and vault toilet. No reliable potable water is available at the trailhead or along the route. Parties should arrive with all water needed for the climb and trailhead camping. The steep terrain above 7,400 feet offers little practical camping; day climbing from the trailhead is standard. Dispersed camping exists nearby if the trailhead campground is full. Contact Salmon–Challis National Forest for current campground details, site availability, and seasonal access before travel.",
+      "wildlife": "July through early September offers the most stable and snow-free conditions. Late June can be snow-dependent. September brings shorter days and colder conditions, with snow possible later in the month. May and June involve snow; early-season ascents require winter mountaineering competency. Downclimbing is safer than glissading on early-season snow. The sustained elevation gain of 5,200 to 5,300 feet demands strong fitness. Class 3 scrambling requires comfort with hands-and-feet movement on loose, exposed rock. Mountain navigation in poor visibility and sound turnaround discipline are essential. Ropes and climbing protection are not required in dry summer conditions. Snow-covered ascents, common in May and June and possible into July or again in September, are significantly more technical. Steep snowfields, potential avalanche terrain on the north face, and narrow snow ridges require an ice axe, crampons, and solid winter mountaineering skills with self-arrest ability. Afternoon thunderstorm development is typical July through August; the exposed ridge presents extreme lightning risk. The rapid ascent to 12,662 feet may cause altitude sickness; adequate acclimatization is important. Despite its Class 3 technical grade, Borah ranks among the most challenging state highpoints due to sustained elevation gain, altitude, exposure, and the mental discipline required to turn back if conditions warrant.",
+      "footnote": "Location: Lost River Range, Idaho — Custer County; Salmon–Challis National Forest. Primary sources: Salmon–Challis National Forest, USGS GNIS, USGS Earthquake Hazards (1983 Borah Peak earthquake). Route and community sources: Idaho: A Climbing Guide, Sawtooth Mountain Guides, SummitPost, U.S. Highpoint Guide."
+    },
     "isolation": 151,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "trekking_poles",
+      "water_capacity",
+      "ice_axe",
+      "crampons",
+      "microspikes"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Salmon-Challis NF",
+        "USGS GNIS",
+        "USGS Earthquake Hazards"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit required; primitive first-come trailhead campground at Borah Peak Trailhead"
   },
   {
     "slug": "mount-jefferson-nv",
@@ -4376,71 +4466,119 @@
     "slug": "mount-cleveland",
     "name": "Mount Cleveland",
     "state": "MT",
-    "elevation": 10479,
-    "prominence": 5226,
-    "difficulty": 8,
+    "elevation": 10466,
+    "prominence": 5252,
+    "latitude": 47.6092,
+    "longitude": -112.3839,
+    "difficulty": 4,
     "days": 3,
-    "distanceMin": 40,
-    "distanceMax": 50,
-    "distanceDisplay": "~40–50 miles round-trip",
-    "gainMin": 5450,
-    "gainMax": 6950,
-    "gainDisplay": "~5,450–6,950 ft",
+    "distanceMin": 28,
+    "distanceMax": 32,
+    "distanceDisplay": "~28–32 miles round-trip",
+    "gainMin": 6300,
+    "gainMax": 6700,
+    "gainDisplay": "~6,300–6,700 ft",
     "daysMin": 2,
     "daysMax": 3,
     "daysDisplay": "2–3 days",
-    "distance": 45,
-    "gain": 6200,
+    "distance": 30,
+    "gain": 6500,
     "mountainRange": "Lewis Range",
-    "season": "July-September",
+    "season": "Late July-Mid-September",
     "hazards": [
       "altitude-sickness",
-      "hypothermia",
+      "avalanche",
       "bears",
+      "exposure",
+      "hypothermia",
+      "loose-rock-scree",
+      "rockfall",
+      "scrambling-exposed",
+      "whiteout-conditions",
       "wind-extreme-weather"
     ],
-    "bestRoute": "West Face",
+    "bestRoute": "Stoney Indian Route",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "3+",
-    "permitSeason": "Year-round (Glacier NP backcountry permit)",
+    "dataSource": "Glacier National Park, Recreation.gov, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "4",
     "heroImage": "/images/peaks/mount-cleveland.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Cleveland-Montana/forecasts/3190",
     "technicalRequirements": [
+      "alpine-start",
       "altitude-acclimatization",
-      "alpine-start"
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
+        "helmet",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "insulating-hat",
-        "water-capacity"
+        "water-capacity",
+        "compass"
       ],
       "secondary": [
-        "compass",
+        "ice-axe",
+        "crampons",
+        "microspikes",
+        "avalanche-gear",
+        "gloves",
+        "insulating-hat",
         "emergency-comm",
         "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 47.6092,
-    "longitude": -112.3839,
+    "hasSafetyNote": true,
+    "safetyNote": "Route-finding is difficult on the Stoney Indian Peaks traverse, particularly along the exposed east-side section. Parties commonly lose the route in poor visibility. Descending in deteriorating weather on loose, unstable rock is hazardous. Early-season attempts can involve lingering snow on narrow ledges, increasing avalanche and slip risk.",
+    "content": {
+      "overview": [
+        "Mount Cleveland is the highest peak in Glacier National Park and the tallest summit in Montana's Lewis Range, commonly listed at 10,466 feet. With prominence around 5,252 feet depending on the source, it is one of the most isolated and visually dominant peaks in the Northern Rockies. The mountain sits on the Continental Divide near Glacier's northern boundary, close to Waterton Lakes National Park in Canada.",
+        "Climbers approaching Mount Cleveland face one of the more logistically demanding ultra-prominent peaks in the Lower 48. International border proximity, limited backcountry permit availability, long wilderness approaches, and complex route-finding make this a serious objective for experienced and self-sufficient parties. Mount Cleveland is also associated with one of Glacier National Park's most serious mountaineering tragedies: a December 1969 avalanche on the west face killed five climbers."
+      ],
+      "routeDescription": [
+        "The standard approach to Mount Cleveland follows the Stoney Indian Route via Stoney Indian Lake, roughly 28–32 miles round-trip depending on approach, with over 6,500 feet of cumulative elevation gain. Most parties complete the climb in 2 to 3 days. Parties commonly access the route via the Goat Haunt area, which may involve a Waterton Lake boat shuttle from Canada, or by approaching from the Kootenay Lake area. Both approaches converge near Stoney Indian Lake, the primary base camp for the route. From Stoney Indian Lake, the route traverses the exposed east side of the Stoney Indian Peaks before ascending the 3rd and 4th class summit terrain on loose scree, talus, and blocky rock. The traverse is narrow and exposed, with little margin for error. Route-finding difficulties are commonly reported, especially in poor visibility. The descent is punishing on loose terrain and requires careful navigation.",
+        "Other established approaches include the West Face Route, a serious alternative with significant avalanche exposure, the Southeast Face Route from Chief Mountain Customs via Glenns Lake and Whitecrow Glacier, and longer U.S.-based options via the Belly River Trail from Chief Mountain Customs, the Highline Trail from Logan Pass, or Many Glacier via Ptarmigan Tunnel. These alternatives generally require more time, stronger route-finding ability, and greater technical judgment than the Stoney Indian Route."
+      ],
+      "routeLandmarks": [
+        "Stoney Indian Lake, approximately 8,100 ft",
+        "Stoney Indian Peaks east traverse, approximately 9,500–10,000 ft"
+      ],
+      "permitsClimbing": "Backcountry permits are required for overnight camping in Glacier National Park. Mount Cleveland is usually approached through highly competitive backcountry zones, and advance reservations through Recreation.gov are strongly recommended. Limited walk-up availability may exist, but parties should not rely on obtaining a same-day permit for this objective. Glacier National Park charges backcountry permit and per-person camping fees during the main season. Fee amounts, reservation windows, and walk-up procedures can change, so parties should confirm current requirements with Glacier National Park and Recreation.gov before planning an itinerary. Commercial guiding may be restricted and requires proper authorization. Climbers should assume they need to be self-sufficient unless they have confirmed access to a legally authorized guide service.",
+      "permitsCamping": "Stoney Indian Lake is the designated backcountry campsite closest to the peak, but availability is limited. Parties unable to secure Stoney Indian Lake may need to plan alternative camps at Kootenay Lake, Goat Haunt, or other permitted backcountry sites. All parties must follow Glacier National Park food-storage regulations. Approved bear-resistant storage or designated food-storage infrastructure may be required depending on the campsite. Bear spray is strongly recommended and should be readily accessible. Campfire restrictions, group-size limits, and distance-from-water regulations apply; confirm current rules with park rangers when obtaining permits.",
+      "wildlife": "The Stoney Indian Route involves sustained scrambling on unstable scree and talus, exposed traversing with little margin for error, and complex route-finding on and around the Stoney Indian Peaks. The summit terrain includes 3rd and 4th class scrambling on loose rock. Roped climbing is not typically required for experienced parties in dry summer conditions, but exposure, loose rock, and route-finding make the route serious. Route descriptions from experienced parties consistently mention disorientation on the exposed traverse and difficulty relocating the descent route under stress, fatigue, or poor visibility. Mount Cleveland sits in a severe alpine environment where weather can deteriorate quickly, even in midsummer. Early-season attempts, especially in June and early July, may encounter heavy snowpack on narrow ledges, creating avalanche danger and serious slip risk. Late-season attempts face shorter days, colder temperatures, and early winter storms. The best climbing window is usually late July through mid-September, when snow coverage is lower and weather is generally more stable. Winter and early-spring ascents are serious mountaineering objectives requiring advanced snow, avalanche, and cold-weather skills.",
+      "footnote": "Elevation 10,466 ft (commonly cited; LiDAR-derived sources may vary slightly). Prominence approximately 5,252 ft (ListsOfJohn). Route mileage varies by approach (Goat Haunt, Belly River, Kootenai/Kintla). Confirm current Glacier NP backcountry permit windows, fees, and access procedures on NPS/Recreation.gov before travel. International travel logistics and Canadian border proximity may affect Waterton access."
+    },
     "isolation": 98,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "mountaineering_boots",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister",
+      "ice_axe",
+      "crampons",
+      "avalanche_kit",
+      "water_capacity"
+    ],
+    "permitFee": "No climbing fee; entrance and backcountry permit fees apply",
+    "published": true,
+    "permitStatus": "limited",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Glacier National Park",
+        "Recreation.gov",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
-    }
+    },
+    "permitSeason": "Backcountry permit required for overnight itineraries; advance Recreation.gov reservations strongly recommended"
   },
   {
     "slug": "arc-dome",

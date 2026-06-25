@@ -332,9 +332,9 @@
     {
       "slug": "ibapah-peak",
       "name": "Ibapah Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Ibapah_Peak.JPG",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "lassen-peak",
@@ -346,16 +346,16 @@
     {
       "slug": "mount-cleveland",
       "name": "Mount Cleveland",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Cleveland_-_Glacier_National_Park.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "arc-dome",
       "name": "Arc Dome",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "user-provided hero image",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "she-devil",

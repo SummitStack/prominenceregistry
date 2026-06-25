@@ -23,10 +23,20 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'south-sister',
+    slug: 'arc-dome',
     source: {
-      type: 'url',
-      url: 'https://wildernessbeta.com/images/south-sister-oregon-permit.jpg',
+      type: 'local',
+      path: path.join(ROOT, 'public/images/peaks/raw-sources/arc-dome-hero.png'),
+      requestedUrl: 'user-provided hero image',
+    },
+  },
+  {
+    slug: 'mount-cleveland',
+    source: {
+      type: 'wikimedia',
+      file: 'Mount_Cleveland_-_Glacier_National_Park.jpg',
+      requestedUrl:
+        'https://commons.wikimedia.org/wiki/File:Mount_Cleveland_-_Glacier_National_Park.jpg',
     },
   },
 ];
