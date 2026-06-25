@@ -1213,6 +1213,14 @@
       "permitsClimbing": "No permit is required for day-use climbing. Great Basin National Park does not charge an entrance fee for day-use visitors. Backcountry permits are required only for camping on the Baker-Johnson Lakes Loop, including Baker Lake or Johnson Lake trips. These permits are free, have no quota, and are available at either park visitor center. For other backcountry camping, free registration is strongly recommended but not required.",
       "permitsCamping": "Wheeler Peak Campground sits at the top of Wheeler Peak Scenic Drive at approximately 9,886 feet and provides accessible staging for early starts. The campground has 36 sites with vault toilets, picnic tables, and campfire grills. Potable water is not available at the campground. Reservations are made through Recreation.gov, and the nightly fee is $20 per site (50% discount for America the Beautiful Senior and Access Pass holders). The campground typically opens in late May and closes in early fall, weather permitting. Ely, Nevada, approximately 65 miles west, offers lodging and services; Baker, Nevada, is closer but has very limited lodging options."
     },
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Wheeler Peak trip report",
+        "description": "For firsthand route notes, campground logistics, Stella Lake, and summit-day pacing, read the Wilderness Beta Wheeler Peak trip report.",
+        "href": "https://wildernessbeta.com/trip-reports/wheeler-peak-great-basin/"
+      }
+    ],
     "isolation": 232,
     "gear": [
       "trekking_poles",
@@ -1957,6 +1965,14 @@
       "permitsCamping": "No advance permits are required for backcountry camping. The Henry's Fork Campground sits at the trailhead with no reservations. On-route campsites include Dollar Lake at 7 to 8 miles and 11,000 feet, the most popular basecamp with established sites on the north and west sides. Alligator Lake at 3 miles and Henry's Lake in the basin offer earlier camping options. Upper basin campsites above Dollar Lake are possible for parties seeking higher altitude camps. Backcountry camping is generally permitted throughout the High Uintas Wilderness, subject to current Forest Service regulations. Establish camps at least 100 feet from water sources. Fires are restricted in high-use areas including the Dollar Lake basin; check current Forest Service regulations before your trip.",
       "wildlife": "Moose are regularly spotted around Henry's Fork Lake and Dollar Lake, particularly from June through August; maintain at least 75 feet (25 meters) distance if encountered. Elk are regularly spotted in the Upper Yellowstone Creek Basin. Alpine zones support marmots and pikas in the talus fields. Mosquitoes are heavy around lakes during mid-summer months."
     },
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Kings Peak trip report",
+        "description": "For a firsthand Henry's Fork itinerary with Dollar Lake camp notes, Gunsight Pass route choices, and summit-day timing, read the Wilderness Beta Kings Peak trip report.",
+        "href": "https://wildernessbeta.com/trip-reports/kings-peak-august-2025/"
+      }
+    ],
     "isolation": 167,
     "gear": [
       "trekking_poles",
@@ -3399,6 +3415,14 @@
       "wildlife": "July through September is the standard climbing season. May through June ascents may require crampons and ice axe above 8,000 feet. Afternoon convective storms are common in July and August; plan an early start and aim to clear the exposed upper mountain before early afternoon. The standard route does not require glacier travel; avoid entering glacier terrain without proper equipment and training.",
       "footnote": "Trailhead: Devil's Lake Trailhead (N 43.9793°, W 121.7415°), Deschutes National Forest. Access via Cascade Lakes Highway, which is seasonally closed in winter and spring; confirm road status before shoulder-season trips."
     },
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "South Sister permit system",
+        "description": "For current release windows, quota strategy, and day-use versus overnight rules, see the Wilderness Beta guide to the South Sister permit system.",
+        "href": "https://wildernessbeta.com/permits/south-sister/"
+      }
+    ],
     "isolation": 40,
     "gear": [
       "trekking_poles",

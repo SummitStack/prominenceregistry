@@ -68,6 +68,13 @@ type PeakContent = {
   footnote?: string;
 };
 
+type RelatedLink = {
+  section: 'route-details' | 'permits-camping';
+  label: string;
+  description: string;
+  href: string;
+};
+
 const customContent =
   'content' in peak && peak.content && typeof peak.content === 'object' && !Array.isArray(peak.content)
     ? (peak.content as PeakContent)
@@ -92,6 +99,14 @@ const permitsCampingParagraphs = customContent?.permitsCamping
   : null;
 const wildlifeText = customContent?.wildlife ?? null;
 const contentFootnote = customContent?.footnote ?? null;
+
+const relatedLinks =
+  'relatedLinks' in peak && Array.isArray(peak.relatedLinks)
+    ? (peak.relatedLinks as RelatedLink[])
+    : [];
+
+const routeRelatedLinks = relatedLinks.filter((link) => link.section === 'route-details');
+const permitRelatedLinks = relatedLinks.filter((link) => link.section === 'permits-camping');
 
 const technicalRequirements = technicalRequirementLabels;
 
@@ -876,6 +891,47 @@ const peakStructuredData =
       .permits-section { display: flex; flex-direction: column; gap: 40px; }
       .permits-block p { font-size: 16px; color: #c0c7d1; line-height: 1.7; }
       .permits-block strong { color: #e0e2e8; }
+      .related-links {
+        display: grid;
+        gap: 12px;
+        margin-top: 24px;
+      }
+      .related-link-card {
+        display: block;
+        background: rgba(155, 207, 255, 0.06);
+        border: 1px solid #404850;
+        border-radius: 12px;
+        padding: 16px 18px;
+        transition: border-color 0.15s, background 0.15s;
+        text-decoration: none;
+      }
+      .related-link-card:hover {
+        border-color: #9bcfff;
+        background: rgba(155, 207, 255, 0.1);
+      }
+      .related-link-kicker {
+        display: block;
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #9bcfff;
+        margin-bottom: 6px;
+      }
+      .related-link-title {
+        display: block;
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #e0e2e8;
+        margin-bottom: 4px;
+      }
+      .related-link-description {
+        display: block;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #c0c7d1;
+      }
     </style>
     <style is:global>
       .hero-visual picture,
@@ -1057,6 +1113,17 @@ const peakStructuredData =
                     <p>{safetyNoteText}</p>
                   </div>
                 )}
+                {routeRelatedLinks.length > 0 && (
+                  <div class="related-links">
+                    {routeRelatedLinks.map((link) => (
+                      <a class="related-link-card" href={link.href} target="_blank" rel="noopener noreferrer">
+                        <span class="related-link-kicker">Field Notes</span>
+                        <span class="related-link-title">{link.label}</span>
+                        <span class="related-link-description">{link.description}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
             </article>
           )}
@@ -1077,6 +1144,17 @@ const peakStructuredData =
                       ? <>A climbing permit is <strong>required</strong> for summit attempts on {peak.name}. Fees typically range <strong>{permitFee}</strong>. Reservations are strongly recommended during peak season ({displaySeason}).</>
                       : <>No special climbing permit is required for {peak.name}, though wilderness or park entry fees may apply. Peak season runs <strong>{displaySeason}</strong>.</>}
                   </p>
+                )}
+                {permitRelatedLinks.length > 0 && (
+                  <div class="related-links">
+                    {permitRelatedLinks.map((link) => (
+                      <a class="related-link-card" href={link.href} target="_blank" rel="noopener noreferrer">
+                        <span class="related-link-kicker">Planning Guide</span>
+                        <span class="related-link-title">{link.label}</span>
+                        <span class="related-link-description">{link.description}</span>
+                      </a>
+                    ))}
+                  </div>
                 )}
               </div>
               {(permitsCampingParagraphs || permitSeason) && (
