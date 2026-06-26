@@ -4570,80 +4570,110 @@
     "slug": "ibapah-peak",
     "name": "Ibapah Peak",
     "state": "UT",
-    "elevation": 12109,
-    "prominence": 5269,
-    "latitude": 39.8283,
-    "longitude": -113.9199,
-    "difficulty": 5,
+    "elevation": 12087,
+    "prominence": 5247,
+    "latitude": 39.794,
+    "longitude": -113.458,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 9,
-    "distanceMax": 9,
-    "distanceDisplay": "9 miles round-trip",
-    "gainMin": 4100,
-    "gainMax": 4100,
-    "gainDisplay": "4,100 ft",
+    "distanceMin": 14.9,
+    "distanceMax": 14.9,
+    "distanceDisplay": "14.9 miles round-trip",
+    "gainMin": 5990,
+    "gainMax": 5990,
+    "gainDisplay": "5,990 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 9,
-    "gain": 4100,
+    "daysDisplay": "10–12 hours",
+    "distance": 14.9,
+    "gain": 5990,
     "mountainRange": "Deep Creek Range",
     "season": "June-September",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "altitude-sickness",
-      "loose-rock-scree",
+      "off-trail-navigation",
+      "lightning-exposure",
       "exposure",
-      "lightning-exposure"
+      "water-crossing"
     ],
-    "bestRoute": "Granite Creek — East Ridge",
+    "bestRoute": "Granite Creek Road Approach",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Utah BLM, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/ibapah-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Ibapah/forecasts/3688",
     "technicalRequirements": [
       "alpine-start",
       "altitude-acclimatization",
-      "rock-scrambling-loose",
-      "off-trail-nav"
+      "off-trail-nav",
+      "water-crossings"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
         "water-capacity",
         "sunscreen",
-        "sunglasses",
-        "shell-jacket",
-        "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "sunglasses"
       ],
       "secondary": [
-        "helmet",
-        "gaiters",
         "compass",
         "emergency-comm",
+        "gaiters",
+        "high-calorie-food",
         "gloves",
-        "microspikes"
+        "microspikes",
+        "hat"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Access is severely constrained by the Goshute Indian Reservation, which blocks western approaches; remain on the Granite Creek corridor and do not cross reservation lands without explicit permission. The area is extremely remote with no cell service and emergency response many hours away. Water availability decreases above 10,000 feet; carry sufficient capacity for long dry stretches.",
+    "content": {
+      "overview": [
+        "Ibapah Peak rises to 12,087 feet in Utah's Deep Creek Mountains, with 5,247 feet of prominence, making it an ultra-prominent summit and one of the more remote county highpoints in the contiguous United States. Located in extreme western Utah roughly 4 hours from Salt Lake City, Ibapah rises 7,300 feet above the surrounding Great Basin desert. Access is severely constrained by the Goshute Indian Reservation, which blocks western approaches and confines climbing parties to a single corridor via Granite Creek Canyon.",
+        "The peak sits within remote BLM-managed terrain characterized by stark geographic isolation where self-rescue capability is not optional. Granite architecture dominates the drainage, with impressive granite cliffs framing Granite Creek Canyon. Haystack Peak, nearly equal in elevation at 11,980+ feet, rises nearby and can be visited as an extension to the standard ascent."
+      ],
+      "routeDescription": [
+        "The standard route ascends Ibapah via the Granite Creek drainage, starting from a trailhead accessed via rough dirt roads from the Tooele Valley. Parking elevation varies based on vehicle high-clearance capability: low clearance vehicles park around 6,900 feet, while high-clearance or 4WD vehicles can drive to approximately 7,500 feet. The climb gains 5,990 feet over 14.9 miles round-trip and typically takes 10 to 12 hours for a strenuous day hike, though a 2-day backpack with an overnight at higher elevation is a safer approach for many parties.",
+        "From the highest trailhead parking, the route follows a closed roadbed through the Granite Creek drainage, gaining elevation steadily through a transition zone from sagebrush desert to coniferous forest. Stream crossings are necessary—water is reliable through the forest zone. The terrain becomes increasingly steep, with few switchbacks and a sustained climb above 10,000 feet. At approximately 10,000 feet, the forest opens into a large alpine meadow. Route-finding becomes critical here: a faintly cairned trail crosses the meadow toward a distinct sub-peak at roughly 11,000 feet, but the trail is frustratingly difficult to follow on the ascent and requires care. Above the meadow, the route becomes off-trail, ascending toward the saddle between the sub-peak and Ibapah's summit. The final 900 vertical feet to the 12,087-foot summit follow a well-cairned, nontechnical ridge over mostly stable terrain."
+      ],
+      "routeLandmarks": [
+        "Granite Creek Trailhead (~6,900–7,500 ft)",
+        "Alpine meadow (~10,000 ft)",
+        "Sub-peak ridge (~11,000 ft)",
+        "Ibapah Peak summit (12,087 ft)"
+      ],
+      "permitsClimbing": "No permits are required to climb Ibapah Peak. The area is managed by the Bureau of Land Management, and dispersed camping is free at the Granite Creek Trailhead and throughout the surrounding BLM lands. Fire rings exist at the trailhead area for established campsites. Climbers should remain on the Granite Creek approach and avoid crossing onto Goshute Indian Reservation lands without explicit permission. Because the approach is long and rough—40+ miles of dirt roads from the nearest paved highway—advance vehicle planning is essential. High-clearance or 4WD capability is strongly recommended. Parties should arrive with full water containers and self-sufficient camping supplies; no facilities exist near the trailhead.",
+      "permitsCamping": "For overnight parties, camping options exist between 7,500 feet (near the road access) and approximately 10,000 feet in the alpine meadow zone. Water availability decreases significantly above 10,000 feet; reliable water sources are present in stream drainages through the forested section and are marginal in the upper meadow. Although Granite Creek usually provides water through the forested drainage, parties should not depend on untreated or seasonal sources and should arrive with enough carrying capacity for long dry stretches. Standard BLM dispersed camping practices apply, but visitors should confirm current restrictions, especially fire rules and any temporary closures, before driving in.",
+      "wildlife": "May through October represents the optimal climbing window. June through September is peak season, when snow has cleared from the meadow and water is most reliable. Late May and early June require preparation for residual snowpack that may block the upper meadow approaches. September and early October offer stable weather and lower temperatures but require attention to early snow possibility and shorter daylight hours. Map-and-compass or GPS navigation is essential through the faint cairned trail in the alpine meadow and off-trail sections above 10,000 feet. Afternoon thunderstorms are possible during climbing season, and nonexistent cell service throughout the approach demands complete self-sufficiency.",
+      "footnote": "Summit 39.794°N, 113.458°W. Granite Creek Trailhead N 39.851° W 113.385° (~6,900–7,500 ft). Elevation 12,087 ft; prominence 5,247 ft. BLM-managed lands."
+    },
     "isolation": 62,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Utah BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No permit required; verify BLM fire restrictions and road conditions before travel"
   },
   {
     "slug": "lassen-peak",

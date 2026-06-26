@@ -23,12 +23,14 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'white-mountain-peak',
+    slug: 'she-devil',
     source: {
-      type: 'local',
-      path: path.join(ROOT, 'public/images/peaks/raw-sources/white-mountain-peak-hero.png'),
-      requestedUrl: 'user-provided hero image',
+      type: 'wikimedia',
+      file: 'Seven_Devils_Panorama_edit.jpg',
+      requestedUrl:
+        'https://commons.wikimedia.org/wiki/File:Seven_Devils_Panorama_edit.jpg',
     },
+    rawCrop: { aspect: 16 / 9, position: 'centre' },
   },
 ];
 
@@ -125,15 +127,38 @@ async function resolveSourceUrl(source) {
   throw new Error(`Unknown source type: ${source.type}`);
 }
 
-async function saveRawFromSource(source, destPath) {
+async function saveRawFromSource(source, destPath, crop) {
+  let input;
   if (source.type === 'local') {
-    await sharp(source.path).jpeg({ quality: 95, mozjpeg: true }).toFile(destPath);
-    const stat = await fs.stat(destPath);
-    return stat.size;
+    input = sharp(source.path);
+  } else {
+    const sourceUrl = await resolveSourceUrl(source);
+    const response = await fetch(sourceUrl, { headers: { 'User-Agent': USER_AGENT } });
+    if (!response.ok) throw new Error(`Download failed HTTP ${response.status} for ${sourceUrl}`);
+    input = sharp(Buffer.from(await response.arrayBuffer()));
   }
 
-  const sourceUrl = await resolveSourceUrl(source);
-  return downloadToFile(sourceUrl, destPath);
+  if (crop) {
+    const meta = await input.metadata();
+    const width = meta.width ?? 0;
+    const height = meta.height ?? 0;
+    const targetAspect = crop.aspect ?? 16 / 9;
+    const currentAspect = width / height;
+
+    if (currentAspect > targetAspect) {
+      const newWidth = Math.round(height * targetAspect);
+      const left = Math.floor((width - newWidth) / 2);
+      input = input.extract({ left, top: 0, width: newWidth, height });
+    } else if (currentAspect < targetAspect) {
+      const newHeight = Math.round(width / targetAspect);
+      const top = Math.floor((height - newHeight) / 2);
+      input = input.extract({ left: 0, top, width, height: newHeight });
+    }
+  }
+
+  await input.jpeg({ quality: 95, mozjpeg: true }).toFile(destPath);
+  const stat = await fs.stat(destPath);
+  return stat.size;
 }
 
 const HERO_CONTAIN_BG = { r: 16, g: 20, b: 24 };
@@ -211,7 +236,7 @@ async function main() {
       console.log(`  Download: ${sourceUrl}`);
     }
 
-    const rawBytes = await saveRawFromSource(peak.source, rawPath);
+    const rawBytes = await saveRawFromSource(peak.source, rawPath, peak.rawCrop);
     console.log(`  Raw saved: ${rawPath} (${formatBytes(rawBytes)})`);
 
     const manifestEntry = {

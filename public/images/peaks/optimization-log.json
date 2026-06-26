@@ -1,103 +1,103 @@
 {
-  "generatedAt": "2026-06-26T18:02:22.590Z",
+  "generatedAt": "2026-06-26T19:47:08.476Z",
   "peaks": {
-    "white-mountain-peak": {
-      "requestedUrl": "user-provided hero image",
-      "sourceUrl": "/Users/chrisridings/Projects/prominenceregistry/minor-mars/public/images/peaks/raw-sources/white-mountain-peak-hero.png",
+    "she-devil": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Seven_Devils_Panorama_edit.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Seven_Devils_Panorama_edit.jpg",
       "raw": {
-        "bytes": 385372,
-        "size": "376.3 KB"
+        "bytes": 2508649,
+        "size": "2.39 MB"
       },
       "optimizedTotal": {
-        "bytes": 1128998,
-        "size": "1.08 MB"
+        "bytes": 943487,
+        "size": "921.4 KB"
       },
-      "overallCompressionRatio": "26.8%",
+      "overallCompressionRatio": "90.6%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 447518,
-            "size": "437.0 KB"
+            "bytes": 384524,
+            "size": "375.5 KB"
           },
           "jpg": {
-            "bytes": 323448,
-            "size": "315.9 KB"
+            "bytes": 273909,
+            "size": "267.5 KB"
           },
           "combined": {
-            "bytes": 770966,
-            "size": "752.9 KB"
+            "bytes": 658433,
+            "size": "643.0 KB"
           },
-          "compressionRatio": "-100.1%"
+          "compressionRatio": "73.8%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 144360,
-            "size": "141.0 KB"
+            "bytes": 109028,
+            "size": "106.5 KB"
           },
           "jpg": {
-            "bytes": 100958,
-            "size": "98.6 KB"
+            "bytes": 78970,
+            "size": "77.1 KB"
           },
           "combined": {
-            "bytes": 245318,
-            "size": "239.6 KB"
+            "bytes": 187998,
+            "size": "183.6 KB"
           },
-          "compressionRatio": "36.3%"
+          "compressionRatio": "92.5%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 41700,
-            "size": "40.7 KB"
+            "bytes": 35086,
+            "size": "34.3 KB"
           },
           "jpg": {
-            "bytes": 29230,
-            "size": "28.5 KB"
+            "bytes": 25457,
+            "size": "24.9 KB"
           },
           "combined": {
-            "bytes": 70930,
-            "size": "69.3 KB"
+            "bytes": 60543,
+            "size": "59.1 KB"
           },
-          "compressionRatio": "81.6%"
+          "compressionRatio": "97.6%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 24534,
-            "size": "24.0 KB"
+            "bytes": 21124,
+            "size": "20.6 KB"
           },
           "jpg": {
-            "bytes": 17250,
-            "size": "16.8 KB"
+            "bytes": 15389,
+            "size": "15.0 KB"
           },
           "combined": {
-            "bytes": 41784,
-            "size": "40.8 KB"
+            "bytes": 36513,
+            "size": "35.7 KB"
           },
-          "compressionRatio": "89.2%"
+          "compressionRatio": "98.5%"
         }
       ],
       "manifestEntry": {
-        "slug": "white-mountain-peak",
-        "raw": "white-mountain-peak.jpg",
+        "slug": "she-devil",
+        "raw": "she-devil.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "white-mountain-peak-hero-1440.webp",
-            "jpg": "white-mountain-peak-hero-1440.jpg"
+            "webp": "she-devil-hero-1440.webp",
+            "jpg": "she-devil-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "white-mountain-peak-hero-768.webp",
-            "jpg": "white-mountain-peak-hero-768.jpg"
+            "webp": "she-devil-hero-768.webp",
+            "jpg": "she-devil-hero-768.jpg"
           },
           "card-400": {
-            "webp": "white-mountain-peak-card-400.webp",
-            "jpg": "white-mountain-peak-card-400.jpg"
+            "webp": "she-devil-card-400.webp",
+            "jpg": "she-devil-card-400.jpg"
           },
           "card-300": {
-            "webp": "white-mountain-peak-card-300.webp",
-            "jpg": "white-mountain-peak-card-300.jpg"
+            "webp": "she-devil-card-300.webp",
+            "jpg": "she-devil-card-300.jpg"
           }
         }
       }
