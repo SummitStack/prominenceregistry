@@ -3116,80 +3116,109 @@
     "slug": "pilot-peak",
     "name": "Pilot Peak",
     "state": "NV",
-    "elevation": 10720,
-    "prominence": 5726,
-    "latitude": 41.036,
-    "longitude": -114.0791,
-    "difficulty": 6,
+    "elevation": 10719,
+    "prominence": 5725,
+    "latitude": 41.0210959,
+    "longitude": -114.0772837,
+    "difficulty": 3,
     "days": 1,
-    "distanceMin": 10,
-    "distanceMax": 10,
-    "distanceDisplay": "10 miles round-trip",
-    "gainMin": 4200,
-    "gainMax": 4200,
-    "gainDisplay": "4,200 ft",
+    "distanceMin": 4.4,
+    "distanceMax": 4.4,
+    "distanceDisplay": "4.4 miles round-trip",
+    "gainMin": 2400,
+    "gainMax": 2400,
+    "gainDisplay": "2,400 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 10,
-    "gain": 4200,
+    "daysDisplay": "7–10 hours",
+    "distance": 4.4,
+    "gain": 2400,
     "mountainRange": "Pilot Range",
-    "season": "June-September",
+    "season": "August-September",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "loose-rock-scree",
       "scrambling-exposed",
       "exposure",
-      "rockfall"
+      "rockfall",
+      "wind-extreme-weather"
     ],
-    "bestRoute": "Miner's Canyon Trail",
+    "bestRoute": "Miners Canyon Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2+",
+    "dataSource": "Nevada BLM Elko District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
     "heroImage": "/images/peaks/pilot-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Pilot-Peak-Nevada/forecasts/3267",
     "technicalRequirements": [
+      "alpine-start",
       "rock-scrambling-loose",
       "exposed-scrambling",
-      "alpine-start",
       "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "sunscreen",
-        "sunglasses",
         "helmet",
+        "trekking-poles",
         "shell-jacket",
         "insulating-layer",
-        "hat"
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
         "gaiters",
         "compass",
         "emergency-comm",
+        "hat",
         "high-calorie-food",
-        "gloves",
-        "traction-descent"
+        "gloves"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The route is exceptionally steep with minimal relief. Afternoon wind on the exposed ridge can rapidly increase objective danger; an early morning start is strongly recommended. Water is extremely scarce along the route; carry substantial capacity or pre-position water.",
+    "content": {
+      "overview": [
+        "Pilot Peak rises 10,719 feet in the Pilot Range of northeastern Nevada, just west of the Nevada-Utah border near Wendover. The peak stands as the fourth-most prominent summit in Nevada and dominates the high desert landscape between the Bonneville Salt Flats and the Great Basin interior. Its distinctive pyramidal shape has served as an important navigational landmark since the 1840s. John C. Fremont named the peak during his third expedition across the Great Basin, recognizing its profile as a useful landmark visible from great distances.",
+        "The summit retains stone wind shelters and rock alignments whose origins have sparked historical interest. Some accounts attribute them to Civil War-era signaling use, though the best-documented occupation was by William Eimbeck of the U.S. Coast and Geodetic Survey, who established a heliograph station on the summit in July 1889 as part of the 39th parallel survey. The remote location and steep terrain keep visitation low despite the peak's prominence and location on Bureau of Land Management land."
+      ],
+      "routeDescription": [
+        "The Miners Canyon route is the standard approach for most parties attempting the summit. From the Miners Canyon Trailhead at approximately 8,300 feet, the route gains roughly 2,400 feet in about 2.2 miles through steep gullies, sagebrush, and increasingly loose talus fields. The terrain steepens significantly as the route gains elevation; many trip reports describe the climb as relentless loose volcanic rock and boulder fields with minimal respite. After reaching the ridge crest at approximately 9,300 feet, the route follows the exposed ridge crest northward with Class 2–3 scrambling across unstable talus terrain and significant exposure before the final summit approach. The descent is typically slower than the ascent due to the loose footing and route-finding challenges on steep terrain. Round-trip hiking time typically ranges from 7 to 10 hours depending on fitness and route-finding speed, though experienced parties report the ascent is considerably more difficult than the mileage and elevation gain might initially suggest."
+      ],
+      "routeLandmarks": [
+        "Miners Canyon Trailhead (~8,300 ft)",
+        "Ridge crest (~9,300 ft)",
+        "Pilot Peak summit (10,719 ft)"
+      ],
+      "permitsClimbing": "Pilot Peak sits on public land administered by the Bureau of Land Management with no climbing permits or fees required. The peak is managed by the Nevada BLM Elko District Office, and public access is unrestricted. Be aware that while Pilot Mountain Road is public, ranch roads and certain private parcels border the approach area. Confirm access routing through current Nevada BLM resources or local contacts before starting the approach.",
+      "permitsCamping": "Dispersed camping is available on surrounding BLM lands at no cost, but the remote location demands complete self-sufficiency. There are no developed campgrounds, running water, or facilities on or near the standard route. Water sources in the area are extremely limited; parties typically carry all water for the climb or pre-position supplies near the trailhead. There are no established campsites on the route itself, and the terrain is not conducive to comfortable high camps. Most parties complete the climb in a single long day from the trailhead.",
+      "wildlife": "The route involves Class 2–3 scrambling with significant exposure on ridge terrain, comfortable route-finding on unmarked, untracked terrain without a clear path, and efficient movement across steep loose rock and boulder fields. Loose volcanic rock and unstable talus are present throughout the route; poor rock quality makes footing unreliable. Significant exposure on steep ridge terrain carries serious fall potential on loose footing. Afternoon wind on the exposed ridge can bring sudden weather deterioration. Dehydration risk is high due to minimal water availability and intense desert sun exposure. Cellular service is minimal; self-rescue is essential due to the remote location far from emergency services.",
+      "footnote": "Summit 41.0210959°N, 114.0772837°W. Miners Canyon Trailhead N 41.0156° W 114.0744° (~8,300 ft). Elevation 10,719 ft; prominence 5,725 ft. Nevada BLM Elko District."
+    },
     "isolation": 54,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No climbing permit or fee; BLM-managed public land"
   },
   {
     "slug": "crazy-peak",
