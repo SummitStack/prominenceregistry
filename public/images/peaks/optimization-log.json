@@ -1,103 +1,103 @@
 {
-  "generatedAt": "2026-06-25T18:39:56.967Z",
+  "generatedAt": "2026-06-26T18:02:22.590Z",
   "peaks": {
-    "deseret-peak": {
+    "white-mountain-peak": {
       "requestedUrl": "user-provided hero image",
-      "sourceUrl": "/Users/chrisridings/Projects/prominenceregistry/minor-mars/public/images/peaks/raw-sources/deseret-peak-hero.png",
+      "sourceUrl": "/Users/chrisridings/Projects/prominenceregistry/minor-mars/public/images/peaks/raw-sources/white-mountain-peak-hero.png",
       "raw": {
-        "bytes": 276446,
-        "size": "270.0 KB"
+        "bytes": 385372,
+        "size": "376.3 KB"
       },
       "optimizedTotal": {
-        "bytes": 728176,
-        "size": "711.1 KB"
+        "bytes": 1128998,
+        "size": "1.08 MB"
       },
-      "overallCompressionRatio": "34.1%",
+      "overallCompressionRatio": "26.8%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 250738,
-            "size": "244.9 KB"
+            "bytes": 447518,
+            "size": "437.0 KB"
           },
           "jpg": {
-            "bytes": 201867,
-            "size": "197.1 KB"
+            "bytes": 323448,
+            "size": "315.9 KB"
           },
           "combined": {
-            "bytes": 452605,
-            "size": "442.0 KB"
+            "bytes": 770966,
+            "size": "752.9 KB"
           },
-          "compressionRatio": "-63.7%"
+          "compressionRatio": "-100.1%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 99666,
-            "size": "97.3 KB"
+            "bytes": 144360,
+            "size": "141.0 KB"
           },
           "jpg": {
-            "bytes": 73336,
-            "size": "71.6 KB"
+            "bytes": 100958,
+            "size": "98.6 KB"
           },
           "combined": {
-            "bytes": 173002,
-            "size": "168.9 KB"
+            "bytes": 245318,
+            "size": "239.6 KB"
           },
-          "compressionRatio": "37.4%"
+          "compressionRatio": "36.3%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 36518,
-            "size": "35.7 KB"
+            "bytes": 41700,
+            "size": "40.7 KB"
           },
           "jpg": {
-            "bytes": 26231,
-            "size": "25.6 KB"
+            "bytes": 29230,
+            "size": "28.5 KB"
           },
           "combined": {
-            "bytes": 62749,
-            "size": "61.3 KB"
+            "bytes": 70930,
+            "size": "69.3 KB"
           },
-          "compressionRatio": "77.3%"
+          "compressionRatio": "81.6%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 23268,
-            "size": "22.7 KB"
+            "bytes": 24534,
+            "size": "24.0 KB"
           },
           "jpg": {
-            "bytes": 16552,
-            "size": "16.2 KB"
+            "bytes": 17250,
+            "size": "16.8 KB"
           },
           "combined": {
-            "bytes": 39820,
-            "size": "38.9 KB"
+            "bytes": 41784,
+            "size": "40.8 KB"
           },
-          "compressionRatio": "85.6%"
+          "compressionRatio": "89.2%"
         }
       ],
       "manifestEntry": {
-        "slug": "deseret-peak",
-        "raw": "deseret-peak.jpg",
+        "slug": "white-mountain-peak",
+        "raw": "white-mountain-peak.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "deseret-peak-hero-1440.webp",
-            "jpg": "deseret-peak-hero-1440.jpg"
+            "webp": "white-mountain-peak-hero-1440.webp",
+            "jpg": "white-mountain-peak-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "deseret-peak-hero-768.webp",
-            "jpg": "deseret-peak-hero-768.jpg"
+            "webp": "white-mountain-peak-hero-768.webp",
+            "jpg": "white-mountain-peak-hero-768.jpg"
           },
           "card-400": {
-            "webp": "deseret-peak-card-400.webp",
-            "jpg": "deseret-peak-card-400.jpg"
+            "webp": "white-mountain-peak-card-400.webp",
+            "jpg": "white-mountain-peak-card-400.jpg"
           },
           "card-300": {
-            "webp": "deseret-peak-card-300.webp",
-            "jpg": "deseret-peak-card-300.jpg"
+            "webp": "white-mountain-peak-card-300.webp",
+            "jpg": "white-mountain-peak-card-300.jpg"
           }
         }
       }

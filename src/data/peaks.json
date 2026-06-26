@@ -1358,55 +1358,55 @@
     "name": "White Mountain Peak",
     "state": "CA",
     "elevation": 14252,
-    "prominence": 7196,
-    "latitude": 37.6341,
-    "longitude": -118.2557,
-    "difficulty": 3,
+    "prominence": 7193,
+    "latitude": 37.63412,
+    "longitude": -118.25567,
+    "difficulty": 1,
     "days": 1,
-    "distanceMin": 14,
-    "distanceMax": 14,
-    "distanceDisplay": "14 miles round-trip",
-    "gainMin": 2600,
-    "gainMax": 2600,
-    "gainDisplay": "2,600 ft",
+    "distanceMin": 14.6,
+    "distanceMax": 14.6,
+    "distanceDisplay": "14.6 miles round-trip",
+    "gainMin": 3400,
+    "gainMax": 3400,
+    "gainDisplay": "3,400 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 14,
-    "gain": 2600,
+    "daysDisplay": "6–10 hours",
+    "distance": 14.6,
+    "gain": 3400,
     "mountainRange": "White Mountains",
-    "season": "June-October",
+    "season": "June-September",
     "hazards": [
       "altitude-sickness",
       "dehydration",
       "hypothermia",
       "wind-extreme-weather",
-      "lightning-exposure"
+      "lightning-exposure",
+      "exposure"
     ],
-    "bestRoute": "White Mountain Peak Road Trail",
+    "bestRoute": "South Face Route via Barcroft Gate",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Inyo National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/white-mountain-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/White-Mountain-Peak/forecasts/4342",
     "technicalRequirements": [
       "alpine-start",
-      "altitude-acclimatization",
-      "off-trail-nav"
+      "altitude-acclimatization"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
         "water-capacity",
         "sunscreen",
-        "sunglasses",
-        "shell-jacket",
-        "insulating-layer",
-        "hat"
+        "sunglasses"
       ],
       "secondary": [
         "gloves",
         "insulating-hat",
-        "compass",
+        "hat",
         "emergency-comm",
         "high-calorie-food",
         "microspikes"
@@ -1414,20 +1414,46 @@
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Water is not available on the mountain. Hikers should carry sufficient water capacity for the entire ascent and descent. Afternoon thunderstorms are possible from July through September. Extreme winds have been recorded on the mountain in severe weather, and even ordinary summit-day winds can be exhausting on the exposed ridge. Temperature can drop 30 degrees or more from the adjacent valley floor.",
+    "content": {
+      "overview": [
+        "White Mountain Peak is the third-highest summit in California and the state's tallest point outside the Sierra Nevada, rising to 14,252 feet in the White Mountains northeast of Bishop. Its roughly 7,193 feet of prominence makes it one of California's most topographically dominant summits, with sweeping views across the eastern Sierra and deep into Nevada. The peak lies in the White Mountains of Inyo National Forest, near the White Mountain Wilderness and the Ancient Bristlecone Pine Forest, which is home to some of Earth's oldest living trees.",
+        "The White Mountains form a stark transition zone between high desert and alpine tundra. White Mountain's accessibility via a high-clearance road to the Barcroft Gate trailhead at roughly 12,000 feet has made it one of California's most approachable ultra-prominent peaks. The lack of technical difficulty does not diminish the physiological demand of gaining 3,400 feet from an already high 12,000-foot start."
+      ],
+      "routeDescription": [
+        "The standard route ascends the South Face from Barcroft Gate, following the closed/restricted summit road for most or all of the approach. Starting near 12,000 feet, the route follows the old road past Barcroft Station and across a broad alpine plateau before making the long, exposed climb toward the summit. The upper section becomes steeper, with rocky and sandy stretches increasing the effort on otherwise straightforward terrain. Total distance is 14.6 miles round-trip over 6 to 10 hours, gaining 3,400 feet of elevation entirely on Class 1 terrain. The crux is sustained altitude combined with exposure to wind and rapid weather change rather than technical difficulty."
+      ],
+      "routeLandmarks": [
+        "Barcroft Station / UC Research Center (12,470 ft)",
+        "Summit hut area / upper road switchbacks"
+      ],
+      "permitsClimbing": "No permit is required for day hikes on White Mountain Peak. Overnight use does not require a wilderness permit for the Barcroft Gate road route.",
+      "permitsCamping": "Primitive overnight camping is commonly used near Barcroft Gate on a first-come, first-served basis, though there is no running water and visitors should verify current restrictions before departure. The immediate trailhead area has limited suitable ground for tent camping, and overnight visitors commonly sleep in vehicles. Visitors using stoves or fires where allowed may need a California campfire permit, and seasonal fire restrictions should be checked before departure. Grandview Campground, located at 8,500 feet and accessible by vehicle, is a first-come, first-served Forest Service campground with vault toilets and no potable water; visitors should verify current fee status and restrictions before arrival. Check current Inyo National Forest road, gate, fire-restriction, and camping information before departure, as access conditions and regulations may change seasonally.",
+      "wildlife": "No specialized climbing skills are required. The route follows a closed/restricted high-elevation road toward the summit and presents straightforward route-finding. High altitude is sustained from 12,000 feet; thin air affects physiology. Extreme wind exposure is common on the exposed ridge. Rapid weather changes and afternoon thunderstorms are possible July through September. Temperature swings of 30 or more degrees from valley conditions are typical. No water is available on the mountain. Minimal shelter or escape options exist on exposed terrain. White Mountain Peak is typically accessible from June through September; the Barcroft Gate trailhead is generally accessible June through September, though winter and shoulder-season snow can prevent vehicle access. August and September see the most stable weather windows, though afternoon thunderstorms remain possible.",
+      "footnote": "Summit 37.63412°N, 118.25567°W. Barcroft Gate trailhead N 37.6396° W 118.2574° (~12,000 ft). Elevation 14,252 ft; prominence 7,193 ft. Inyo National Forest."
+    },
     "isolation": 40,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Inyo NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No day-hiking permit required; verify current road, gate, and fire restrictions"
   },
   {
     "slug": "gannett-peak",
@@ -3134,7 +3160,7 @@
     "distance": 4.4,
     "gain": 2400,
     "mountainRange": "Pilot Range",
-    "season": "August-September",
+    "season": "July-September",
     "hazards": [
       "dehydration",
       "heat-exhaustion",

@@ -23,10 +23,10 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'deseret-peak',
+    slug: 'white-mountain-peak',
     source: {
       type: 'local',
-      path: path.join(ROOT, 'public/images/peaks/raw-sources/deseret-peak-hero.png'),
+      path: path.join(ROOT, 'public/images/peaks/raw-sources/white-mountain-peak-hero.png'),
       requestedUrl: 'user-provided hero image',
     },
   },
