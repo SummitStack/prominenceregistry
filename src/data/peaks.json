@@ -644,70 +644,105 @@
     "slug": "san-gorgonio-mountain",
     "name": "San Gorgonio Mountain",
     "state": "CA",
-    "elevation": 11502,
-    "prominence": 8282,
-    "difficulty": 5,
+    "elevation": 11499,
+    "prominence": 8296,
+    "latitude": 34.099256,
+    "longitude": -116.824985,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 18,
-    "distanceMax": 18,
-    "distanceDisplay": "18 miles round-trip",
+    "distanceMin": 17.4,
+    "distanceMax": 17.4,
+    "distanceDisplay": "17.4 miles round-trip",
     "gainMin": 5500,
     "gainMax": 5500,
     "gainDisplay": "5,500 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 18,
+    "daysDisplay": "8–12 hours",
+    "distance": 17.4,
     "gain": 5500,
     "mountainRange": "San Bernardino Mountains",
-    "season": "May-October",
+    "season": "June-October",
     "hazards": [
+      "lightning-exposure",
       "altitude-sickness",
-      "heat-exhaustion",
       "dehydration",
-      "exposure"
+      "exposure",
+      "wind-extreme-weather",
+      "heat-exhaustion"
     ],
     "bestRoute": "Vivian Creek Trail",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "San Bernardino National Forest, SGWA, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
-    "permitSeason": "Year-round (wilderness permit required)",
+    "permitSeason": "Free wilderness permit required for all day and overnight trips via SGWA; Adventure Pass required for trailhead parking",
     "heroImage": "/images/peaks/san-gorgonio-mountain.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/San-Gorgonio/forecasts/3505",
     "technicalRequirements": [
       "altitude-acclimatization",
-      "alpine-start"
+      "alpine-start",
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
-        "sunscreen",
-        "sunglasses",
-        "hat",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
         "water-capacity",
-        "high-calorie-food"
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
         "compass",
         "emergency-comm",
-        "insulating-layer",
-        "duct-tape"
+        "microspikes",
+        "high-calorie-food",
+        "hat",
+        "gloves"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 34.1119,
-    "longitude": -116.8219,
+    "hasSafetyNote": true,
+    "safetyNote": "Alpine starts before dawn are strongly recommended from July through September so hikers can summit early and descend below exposed ridge terrain before afternoon thunderstorms develop.",
+    "content": {
+      "overview": [
+        "San Gorgonio Mountain is the highest peak in Southern California, reaching 11,499 feet in the San Bernardino National Forest roughly 82 miles east of Los Angeles. Known locally as \"Old Grayback,\" the peak dominates the San Gorgonio Wilderness within Sand to Snow National Monument. Its high prominence and isolated position create sweeping views across Southern California, from desert basins to forested ranges and subalpine summit terrain.",
+        "The peak's distinctiveness lies in the rapid elevation change visitors experience. Starting near 6,000 feet, hikers gain nearly 5,500 feet in a single push, creating noticeable altitude-acclimatization challenges for those coming from lower elevations. The wilderness area protects sensitive plant and animal species across its elevation bands, making San Gorgonio a convergence point for desert, montane forest, and subalpine habitat."
+      ],
+      "routeDescription": [
+        "Vivian Creek Trail is the shortest and steepest standard route to the summit, gaining 5,500 feet over 17.4 miles round-trip, typically taking 8 to 12 hours. The trail ascends from Vivian Creek Trailhead near Forest Falls through a series of established camps—Vivian Creek Camp at 7,100 feet, Halfway Camp at 8,100 feet, and High Creek Camp at 9,200 feet—before the final three miles climb steeply to the summit. The upper sections become increasingly exposed to wind; the final approach crosses open ridge terrain where afternoon thunderstorms can develop rapidly from July through September.",
+        "Other established routes include the South Fork Trail (10+ miles one-way) and Fish Creek Trail (9.1 miles one-way), both less frequently traveled."
+      ],
+      "routeLandmarks": [
+        "Vivian Creek Camp (7,100 ft)",
+        "Halfway Camp (8,100 ft)",
+        "High Creek Camp (9,200 ft)"
+      ],
+      "permitsClimbing": "San Gorgonio Wilderness requires free permits for all day-hikes and overnight trips, available through the San Gorgonio Wilderness Association permit system. Permits are issued online and can be requested up to 90 days in advance, with one reservation covering a group of up to 12 people. An Adventure Pass or Interagency Pass is required for parking at Vivian Creek Trailhead.",
+      "permitsCamping": "Three established camps lie on the standard route: Vivian Creek Camp (7,100 ft), Halfway Camp (8,100 ft), and High Creek Camp (9,200 ft). Overnight users must camp only in the location specified on their permit and follow current SGWA and Forest Service campsite quotas and wilderness regulations. Water sources are seasonal and unreliable, especially higher on the route; carry ample water capacity and confirm current conditions before starting. SGWA strongly recommends bear-proof canisters for food storage and no longer recommends hanging food from trees.",
+      "wildlife": "June through October is the standard climbing window on the Vivian Creek route. No technical climbing or specialized skills are required on the standard route, but altitude awareness and acclimatization are recommended for hikers coming from lower elevations. Early alpine starts are strongly recommended from July through September to reduce afternoon thunderstorm exposure on the open summit ridge. Snow and ice can persist from winter into early or mid-summer, requiring appropriate traction and mountaineering judgment when present. Dehydration risk is elevated due to seasonal, unreliable water sources along the route.",
+      "footnote": "Summit 34.099256°N, 116.824985°W. Vivian Creek Trailhead N 34.08194444° W 116.8897222° (~6,003 ft). Elevation 11,499 ft; prominence 8,296 ft. San Gorgonio Wilderness, San Bernardino National Forest."
+    },
     "isolation": 163,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "San Bernardino NF",
+        "SGWA",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     }
   },
@@ -2173,9 +2208,11 @@
     "slug": "telescope-peak",
     "name": "Telescope Peak",
     "state": "CA",
-    "elevation": 11043,
+    "elevation": 11049,
     "prominence": 6168,
-    "difficulty": 5,
+    "latitude": 36.16984,
+    "longitude": -117.08921,
+    "difficulty": 2,
     "days": 1,
     "distanceMin": 14,
     "distanceMax": 14,
@@ -2185,60 +2222,94 @@
     "gainDisplay": "3,000 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
+    "daysDisplay": "7–9 hours",
     "distance": 14,
     "gain": 3000,
     "mountainRange": "Panamint Range",
-    "season": "April-October",
+    "season": "Late June-October",
     "hazards": [
-      "altitude-sickness",
+      "exposure",
+      "wind-extreme-weather",
+      "lightning-exposure",
       "dehydration",
       "heat-exhaustion",
-      "exposure"
+      "altitude-sickness"
     ],
-    "bestRoute": "Telescope Peak Trail",
+    "bestRoute": "Mahogany Flat Campground Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Death Valley National Park, NPS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/telescope-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Telescope-Peak/forecasts/3368",
     "technicalRequirements": [
-      "altitude-acclimatization",
       "alpine-start",
-      "off-trail-nav"
+      "altitude-acclimatization",
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
-        "sunscreen",
-        "sunglasses",
-        "hat",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "insulating-hat",
         "water-capacity",
-        "high-calorie-food"
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
+        "microspikes",
         "compass",
         "emergency-comm",
-        "duct-tape"
+        "high-calorie-food",
+        "gloves",
+        "hat"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 36.2039,
-    "longitude": -117.0881,
+    "hasSafetyNote": true,
+    "safetyNote": "The upper ridge provides little shelter and is exposed to strong winds, rapid weather changes, and occasional summer thunderstorms. Start early, especially in warm weather or unsettled forecasts, and avoid being on the summit ridge if storms are building.",
+    "content": {
+      "overview": [
+        "Telescope Peak is the highest point within Death Valley National Park and the tallest summit in the Panamint Mountains. From Badwater Basin, 282 feet below sea level, to the 11,049-foot summit, the local relief exceeds 11,300 feet, creating one of the most striking elevation contrasts in the contiguous United States.",
+        "The mountain's upper slopes support ancient bristlecone pines, some more than 3,000 years old, while the lower elevations transition quickly into desert scrub. This sharp ecological gradient is one of the defining features of the climb. The Wildrose Charcoal Kilns, ten stone structures built in 1877 for mining operations, stand near the trailhead as a notable historical stop."
+      ],
+      "routeDescription": [
+        "The standard route begins at Mahogany Flat Campground (8,133 feet) and follows a maintained National Park Service trail for approximately 13–14 miles round-trip with 3,000 feet of elevation gain. The trail climbs steadily to the main ridge, passes the Bennett Peak area and Arcane Meadows, then continues along a broad open ridgeline before steepening through switchbacks across exposed alpine terrain to the 11,049-foot summit. In dry conditions, the route is Class 1 hiking with clear tread and straightforward navigation; the main challenges are distance, altitude, sun exposure, wind, and lack of shelter along the upper ridge.",
+        "The Hanaupah Canyon approach from the Death Valley side, starting near Shorty's Well, gains approximately 11,300 feet over roughly 30 miles round-trip. This route is rarely used and recommended only for experienced desert mountaineers with extensive water management and logistics planning."
+      ],
+      "routeLandmarks": [
+        "Bennett Peak area / ridge high point (near 10,000 ft)",
+        "Arcane Meadows (approximately 9,650 ft)"
+      ],
+      "permitsClimbing": "No permit is required for a day hike of Telescope Peak. For overnight backcountry trips, free voluntary backcountry permits are available for Telescope Peak; self-registered permits can be submitted online or at ranger stations. Permits for other popular Death Valley backcountry areas require advance reservation through Recreation.gov (up to six months ahead) and carry a $10 per permit fee; check current National Park Service rules to confirm whether Telescope Peak's wilderness area falls under the reservation system.",
+      "permitsCamping": "Mahogany Flat Campground is a free, first-come, first-served facility open seasonally (generally March through November depending on snow and road conditions). Pit toilets are available, but there is no running water; pack all water in. Thorndike Campground (6 sites, 2 miles downcanyon) and Wildrose Campground (23 sites, 9 miles away, water available year-round) serve as alternatives. Bear canisters are not a normal requirement for this arid high-desert environment, but all food, trash, and scented items must be secured from rodents, ravens, coyotes, and other wildlife. Fire regulations vary by season and area; verify current National Park Service rules before planning an overnight trip.",
+      "wildlife": "In dry summer conditions, the standard route requires no specialized climbing skills. Shoulder-season and winter ascents may involve snow and ice requiring traction, route-finding judgment, and appropriate snow-travel experience. The exposed alpine ridge offers strong wind and minimal shelter, with rapid weather changes and occasional summer thunderstorms. Lightning risk is significant on the open summit and ridgeline, and the summit is often several dozen degrees cooler than the valley floor. The unmaintained dirt road to Mahogany Flat is commonly recommended for high-clearance vehicles and may close or become impassable after snow, storms, or washouts. Late June through October is typically the most reliable snow-free window; shoulder-season ascents in May or November may involve snow or ice on the upper ridge. Bennett Peak is a natural short side trip from the main ridge; Rogers Peak is also accessible from the broader ridge system but requires significantly more time and planning.",
+      "footnote": "Summit 36.16984°N, 117.08921°W. Mahogany Flat Campground N 36.2073° W 117.0967° (~8,133 ft). Elevation 11,049 ft; prominence 6,168 ft. Death Valley National Park."
+    },
     "isolation": 58,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "insulating_hat",
+      "water_capacity",
+      "microspikes"
+    ],
+    "permitFee": "Free; Death Valley entrance fee may apply",
+    "published": true,
+    "permitStatus": "self-register",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Death Valley NPS",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "Day hikes require no permit; voluntary backcountry permits for overnight trips; verify current NPS rules and road conditions"
   },
   {
     "slug": "mount-peale",
@@ -4393,72 +4464,109 @@
     "slug": "blanca-peak",
     "name": "Blanca Peak",
     "state": "CO",
-    "elevation": 14349,
-    "prominence": 5305,
-    "difficulty": 7,
-    "days": 2,
-    "distanceMin": 12,
-    "distanceMax": 16,
-    "distanceDisplay": "~12–16 miles round-trip",
-    "gainMin": 4650,
-    "gainMax": 5950,
-    "gainDisplay": "~4,650–5,950 ft",
+    "elevation": 14351,
+    "prominence": 5331,
+    "latitude": 37.57753,
+    "longitude": -105.48566,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 17,
+    "distanceDisplay": "14–17 miles round-trip",
+    "gainMin": 6000,
+    "gainMax": 6500,
+    "gainDisplay": "6,000–6,500 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 14,
-    "gain": 5300,
+    "daysMax": 1,
+    "daysDisplay": "8–12 hours",
+    "distance": 15.5,
+    "gain": 6250,
     "mountainRange": "Sangre de Cristo Mountains",
-    "season": "June-September",
+    "season": "July-September",
     "hazards": [
-      "altitude-sickness",
-      "hypothermia",
       "lightning-exposure",
-      "wind-extreme-weather"
+      "wind-extreme-weather",
+      "exposure",
+      "loose-rock-scree",
+      "altitude-sickness",
+      "hypothermia"
     ],
-    "bestRoute": "Northwest Ridge via Lake Como",
+    "bestRoute": "Lake Como Road Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "3+",
+    "dataSource": "Rio Grande National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
     "heroImage": "/images/peaks/blanca-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Blanca-Peak/forecasts/4372",
     "technicalRequirements": [
       "altitude-acclimatization",
-      "alpine-start"
+      "alpine-start",
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
+        "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
+        "water-capacity",
         "gloves",
-        "insulating-hat",
-        "water-capacity"
+        "insulating-hat"
       ],
       "secondary": [
         "compass",
         "emergency-comm",
+        "microspikes",
         "sunscreen",
-        "high-calorie-food"
+        "sunglasses",
+        "high-calorie-food",
+        "gaiters"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 37.5771,
-    "longitude": -105.4858,
+    "hasSafetyNote": true,
+    "safetyNote": "Lake Como Road is extremely rough and impassable to standard passenger vehicles. Confirm vehicle capability before attempting to drive beyond the lower parking area. Snowmelt, runoff, washouts, and lingering snow can make sections of the road temporarily impassable, especially in June and early July.",
+    "content": {
+      "overview": [
+        "Blanca Peak is the fourth-highest peak in Colorado and the highest and most prominent summit in the Sangre de Cristo Range, a major subrange of the Rocky Mountains straddling the Colorado-New Mexico border. Located approximately 20 miles east-northeast of Alamosa, Blanca rises 14,351 feet above the San Luis Valley and dominates the landscape of southern Colorado's backcountry. The peak is a major objective for Colorado fourteeners and prominence-focused peak-baggers.",
+        "The Blanca massif sits in the rugged southern Sangre de Cristo Range, where steep alpine basins, loose talus, and exposed ridgelines define the standard route. Private land boundaries restrict southern and eastern approaches, making the Lake Como Road approach from the west the primary standard public route. Most climbers use this approach, which crosses montane forest and alpine tundra before reaching the summit in a zone of rapid weather transitions and significant wind exposure."
+      ],
+      "routeDescription": [
+        "The Lake Como Road Route is the standard and most popular approach to Blanca Peak. Most parties begin from the lower Lake Como Road parking area near 8,000 feet, though high-clearance vehicles may continue to higher pullouts depending on road conditions and vehicle capability. The initial segment follows an extremely rough four-wheel-drive road with multiple switchbacks; passenger cars typically stop at the lower parking area, while high-clearance and four-wheel-drive vehicles may advance to successively higher parking points. Beyond the highest practical parking point, most parties continue on foot up Lake Como Road. The road reaches Lake Como at about 11,750 feet, continues around the lake, and ends near Blue Lakes around 12,200 feet. From there, climbers continue on trail and talus toward Blanca's northwest ridge, with the upper route involving steep Class 2 hiking and scrambling on loose rock, with route-finding required near the headwall and summit ridge. Total distance varies widely depending on parking location, ranging from approximately 14 to 17 miles round trip with roughly 6,000 to 6,500 feet of elevation gain. Most parties complete the climb in 8–12 hours, though low-start or overnight itineraries may take longer."
+      ],
+      "routeLandmarks": [
+        "Holbrook Creek crossing (~10,700 ft)",
+        "Lake Como (~11,750 ft)",
+        "Blue Lakes / road end (~12,200 ft)"
+      ],
+      "permitsClimbing": "No permits are generally required for day hiking on National Forest land. Dispersed camping is available in the Lake Como area, but overnight rules, fire restrictions, group-size limits, and camping closures can change. Check with the Rio Grande National Forest before planning overnight trips.",
+      "permitsCamping": "Lake Como serves as the primary overnight camping area for parties ascending Blanca. The lake sits at approximately 11,750 feet in a high alpine setting with no developed facilities; camping is dispersed. Camp well away from lakes, streams, and trails, and treat all water. Private land boundaries restrict southern and eastern access; use only established public access routes.",
+      "wildlife": "July through September is the standard climbing window on the Lake Como route. The upper route involves Class 2 scrambling with route-finding in alpine terrain above treeline and comfort moving on loose rock and exposed high-elevation terrain. Afternoon thunderstorms are common in July and August; parties must plan for rapid weather deterioration on exposed ridge terrain with significant wind and lightning hazard during storms. Early-season snowfields, postholing, hidden holes, and icy slopes may persist near Lake Como and above the lakes. Loose rock on the final ridge and headwall requires careful foot placement, especially when multiple parties are on the mountain.",
+      "footnote": "Summit 37.57753°N, 105.48566°W. Lake Como Road lower parking area (~8,000 ft). Elevation 14,351 ft; prominence 5,331 ft. Rio Grande National Forest."
+    },
     "isolation": 104,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Rio Grande NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No permit for standard day hiking; verify current Forest Service camping and fire restrictions"
   },
   {
     "slug": "mount-timpanogos",
@@ -4975,74 +5083,110 @@
   },
   {
     "slug": "she-devil",
-    "name": "She Devil",
+    "name": "She-Devil",
     "state": "ID",
     "elevation": 9400,
     "prominence": 5200,
-    "difficulty": 7,
-    "days": 2,
-    "distanceMin": 16,
-    "distanceMax": 20,
-    "distanceDisplay": "~16–20 miles round-trip",
-    "gainMin": 5100,
-    "gainMax": 6500,
-    "gainDisplay": "~5,100–6,500 ft",
+    "latitude": 45.56,
+    "longitude": -116.375,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 7,
+    "distanceMax": 7,
+    "distanceDisplay": "7+ miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 4000,
+    "gainDisplay": "3,000–4,000 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 18,
-    "gain": 5800,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 7,
+    "gain": 3500,
     "mountainRange": "Seven Devils Mountains",
     "season": "July-September",
     "hazards": [
-      "altitude-sickness",
-      "exposure",
+      "loose-rock-scree",
+      "rockfall",
       "scrambling-exposed",
-      "hypothermia"
+      "exposure",
+      "off-trail-navigation",
+      "lightning-exposure",
+      "wind-extreme-weather"
     ],
-    "bestRoute": "Goat Pass — High Route (East Ridge)",
+    "bestRoute": "She-Devil High Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "3+",
+    "dataSource": "Nez Perce-Clearwater National Forest, Hells Canyon Wilderness, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
     "heroImage": "/images/peaks/she-devil.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Seven-Devils-Mountains/forecasts/2859",
     "technicalRequirements": [
-      "altitude-acclimatization",
+      "alpine-start",
+      "rock-scrambling-loose",
       "exposed-scrambling",
-      "alpine-start"
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
         "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
         "water-capacity"
       ],
       "secondary": [
         "compass",
         "emergency-comm",
-        "duct-tape"
+        "gloves",
+        "gaiters",
+        "high-calorie-food",
+        "sunscreen",
+        "sunglasses"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 45.0153,
-    "longitude": -116.1742,
+    "hasSafetyNote": true,
+    "safetyNote": "A rope may provide limited benefit on much of this route because protection can be unreliable in loose volcanic rock, and party movement can increase rockfall exposure. Route-finding is essential; parties should carry detailed maps and possess competency in cross-country navigation through complex volcanic terrain.",
+    "content": {
+      "overview": [
+        "She-Devil Peak is part of one of Idaho's ultra-prominent summit complexes, rising roughly 9,400 feet in the Seven Devils range near the Idaho-Oregon border and Hells Canyon. Remote, rugged, and composed of unstable volcanic rock, She-Devil and its near-twin He-Devil dominate a dramatic massif above one of North America's deepest river gorges. The peaks' names are commonly associated with Nez Perce stories of seven giants, and the surrounding terrain preserves that severe character through broken ridges, loose volcanic rock, exposed talus, and complex cross-country travel.",
+        "The high-point status of She-Devil versus He-Devil was historically ambiguous because the two summits are nearly identical in height. Recent precision survey data has measured She-Devil at 9,385.89 feet and He-Devil at 9,385.63 feet, suggesting that She-Devil is higher by approximately three inches. This makes She-Devil the currently accepted ultra-prominent peak of the pair and the recognized target for climbers pursuing the Ultra-57 list. Older publications and some sources may still list the peaks as co-equal or attribute ultra-prominent status to He-Devil. Parties pursuing the list can plan a direct ascent of She-Devil alone via Class 3 terrain, avoiding the Class 4 complications that arise when attempting to link both peaks via the direct ridge traverse. Many climbers nonetheless visit both peaks in a single day by descending She-Devil and approaching He-Devil separately, though this adds significant time and elevation loss."
+      ],
+      "routeDescription": [
+        "The She-Devil High Route approaches from Windy Saddle Trailhead, accessed via Forest Road 517 from Riggins. From the trailhead at roughly 7,600 feet, the route joins the Seven Devils Loop Trail junction and transitions to cross-country terrain toward the Sheep Lake area. The route involves approximately 3,000 to 4,000 feet of cumulative elevation gain due to ridge transitions, lake approaches, and multiple ascents across complex terrain. The overall commitment typically requires 7 to 10 hours. Class 3 scrambling dominates the High Route's ridge approaches, with terrain composed of exposed talus and scree fields throughout. With careful route-finding, the standard direct ascent of She-Devil stays solidly Class 3. The Class 4 terrain is encountered only when attempting a direct ridge traverse from She-Devil to He-Devil, a connection that requires experienced scrambling and significant exposure. Most parties who want both peaks instead descend She-Devil and approach He-Devil separately via its standard northwest ridge (Class 2–3), which adds considerable time and elevation loss but avoids the difficult traverse."
+      ],
+      "routeLandmarks": [
+        "Windy Saddle Trailhead (~7,600 ft)",
+        "Seven Devils Loop Trail junction",
+        "Sheep Lake area",
+        "She-Devil summit (~9,400 ft)"
+      ],
+      "permitsClimbing": "No standard recreation permit is typically required for day use or overnight travel in Hells Canyon Wilderness, but visitors should check current Forest Service regulations before departure.",
+      "permitsCamping": "Dispersed camping is generally permitted throughout the wilderness, including near Windy Saddle and surrounding backcountry areas, though facilities are minimal and parties should be fully self-sufficient with water, food, and waste management. Camp at least 100 feet from water sources where possible. Fire restrictions, group-size limits, and seasonal closures can change, especially during late summer wildfire season.",
+      "wildlife": "July through September is peak season for the She-Devil High Route, when snow has cleared from the alpine terrain and access via Forest Road 517 is generally reliable. Loose volcanic rock and extensive talus and scree fields dominate the route, with dead-ends, loose gullies, and vanishing ledges possible when route-finding fails. Exposed positions carry wind exposure and rapid weather changes; afternoon thunderstorms are possible in summer. The remote Hells Canyon Wilderness location demands complete self-sufficiency and self-rescue capability.",
+      "footnote": "Summit 45.5600°N, 116.3750°W. Windy Saddle Trailhead N 45.5622° W 116.3783° (~7,600 ft). Elevation 9,400 ft; prominence 5,200 ft. Hells Canyon Wilderness, Nez Perce-Clearwater National Forest."
+    },
     "isolation": 31,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nez Perce-Clearwater NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No standard recreation permit; check current Forest Service regulations and seasonal closures"
   },
   {
     "slug": "abercrombie-mountain",
