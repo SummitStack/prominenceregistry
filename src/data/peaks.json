@@ -574,34 +574,39 @@
     "slug": "san-jacinto-peak",
     "name": "San Jacinto Peak",
     "state": "CA",
-    "elevation": 10842,
-    "prominence": 8311,
-    "difficulty": 5,
+    "elevation": 10834,
+    "prominence": 8299,
+    "latitude": 33.814727,
+    "longitude": -116.679396,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 14,
-    "distanceMax": 14,
-    "distanceDisplay": "14 miles round-trip",
-    "gainMin": 4600,
-    "gainMax": 4600,
-    "gainDisplay": "4,600 ft",
+    "distanceMin": 11.6,
+    "distanceMax": 11.6,
+    "distanceDisplay": "11.6 miles round-trip",
+    "gainMin": 2400,
+    "gainMax": 2620,
+    "gainDisplay": "2,400–2,620 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 14,
-    "gain": 4600,
+    "daysDisplay": "5–7 hours",
+    "distance": 11.6,
+    "gain": 2510,
     "mountainRange": "San Jacinto Mountains",
-    "season": "May-October",
+    "season": "June-October",
     "hazards": [
       "altitude-sickness",
       "heat-exhaustion",
       "dehydration",
-      "lightning-exposure"
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "exposure"
     ],
-    "bestRoute": "Marion Mountain Trail",
+    "bestRoute": "Round Valley Trail via Tramway",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Mount San Jacinto State Park, Palm Springs Aerial Tramway, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
     "ydsClass": "1",
-    "permitSeason": "Year-round (wilderness permit required)",
+    "permitSeason": "Free self-issue day-use wilderness permit required; $5/person overnight quota permit",
     "heroImage": "/images/peaks/san-jacinto-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-San-Jacinto-Peak/forecasts/3293",
     "technicalRequirements": [
@@ -610,33 +615,66 @@
     ],
     "requiredGear": {
       "priority": [
-        "sunscreen",
-        "sunglasses",
-        "hat",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
         "water-capacity",
-        "high-calorie-food"
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
+        "microspikes",
         "compass",
         "emergency-comm",
-        "insulating-layer"
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food",
+        "hat"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 33.8186,
-    "longitude": -116.6792,
+    "hasSafetyNote": true,
+    "safetyNote": "The temperature differential between Palm Springs and the summit is extreme, often reaching 30 to 40 degrees Fahrenheit cooler at the peak. Afternoon thunderstorms are common during summer, particularly during monsoonal patterns in July and August, and pose serious risk on exposed terrain above 9,500 feet. Winter and shoulder-season conditions may require traction devices such as microspikes or crampons.",
+    "content": {
+      "overview": [
+        "San Jacinto Peak rises abruptly from the Coachella Valley floor to 10,834 feet in an unusually compressed horizontal distance, creating one of the sharpest desert-to-alpine transitions in the contiguous United States. The mountain is accessible via the Palm Springs Aerial Tramway, which deposits hikers at 8,516 feet in a ten-minute ride, making it the most accessible ultra-prominent peak in California. From the desert floor near Palm Springs, the summit captures approximately 10,200 feet of local relief, an extraordinary elevation differential that produces temperature swings of 30 to 40 degrees Fahrenheit between base and summit.",
+        "The peak sits within Mount San Jacinto State Park and Wilderness, accessed primarily through Long Valley. A historic Civilian Conservation Corps stone shelter, completed in 1935, stands near the summit today. The compressed ecosystem of San Jacinto ranges from Sonoran desert at its foot to alpine forest above 8,000 feet, containing distinct plant communities typical of areas separated by hundreds of miles in elevation elsewhere. For peak-baggers, San Jacinto is notable not for technical difficulty but for its dramatic vertical relief, extreme exposure, and the convenience of the tramway-assisted approach."
+      ],
+      "routeDescription": [
+        "The standard route from Mountain Station gains approximately 2,400 feet over 11.6 miles round-trip, typically requiring 5 to 7 hours. The route begins at Mountain Station (8,516 ft), traverses gently to Long Valley, then climbs through Round Valley campground to Wellman Divide at approximately 9,700 feet. The Wellman Divide section is the steepest section, gaining roughly 700 feet over uneven rocky terrain. Above the divide, the grade moderates and the route traverses across alpine terrain to the final summit approach, which crosses rocky ground but requires no technical scrambling in summer conditions.",
+        "The Deer Springs Trail from Idyllwild approaches from the north, covering approximately 18.4 miles round-trip with 5,300 feet of elevation gain, suited for multi-day trips. Experienced parties also attempt the Cactus to Clouds route from the Palm Springs Desert Museum, an extremely strenuous day hike gaining over 10,400 vertical feet in a single push."
+      ],
+      "routeLandmarks": [
+        "Mountain Station (8,516 ft)",
+        "Round Valley Campground (approximately 8,800 ft)",
+        "Wellman Divide (approximately 9,700 ft)"
+      ],
+      "permitsClimbing": "A free day-use wilderness permit is required to enter the wilderness beyond developed areas. Day-use permits are available 24 hours a day at the Long Valley Ranger Station at the top of the tramway, at park headquarters in Idyllwild, or at Stone Creek Campground. Both Mount San Jacinto State Park and San Bernardino National Forest honor each other's day-use permits. Overnight wilderness camping requires a permit at $5 per person with a quota system limiting use of designated campsites. Overnight permits operate on a first-come, first-served basis with advance booking up to 8 weeks (56 days) in advance through mail application to Mount San Jacinto State Park, PO Box 308, Idyllwild, CA 92549.",
+      "permitsCamping": "The primary on-route campsites are Little Round Valley and Round Valley, both accessible from the standard route. Tamarack Valley is an alternative approach. Campfires and barbeques are prohibited in all wilderness areas. Only portable camp stoves with manual on/off switches are permitted for cooking in designated campsites. Camp at least 100 feet from all water sources. Group size limit is 15 persons per permit. Dogs are prohibited in wilderness areas; only trained service animals are permitted. Bear-resistant food storage is strongly recommended.",
+      "wildlife": "June through October is the most reliable climbing window; winter conditions are highly variable. The route is Class 1 hiking throughout with no rope work or scrambling required in normal summer conditions. San Jacinto's defining hazard is its rapid elevation change and exposure. Afternoon thunderstorms are common during summer monsoonal patterns in July and August. Late fall, early spring, and winter can produce significant snow and ice requiring traction devices. Snow and ice can persist unexpectedly into late spring. The park occasionally implements fire-danger closures affecting access.",
+      "footnote": "Summit 33.814727°N, 116.679396°W. Palm Springs Aerial Tramway Valley Station: 1 Tramway Road, Palm Springs, CA 92262 (2,643 ft). Mountain Station 8,516 ft. Elevation 10,834 ft; prominence 8,299 ft. Mount San Jacinto State Park and Wilderness."
+    },
     "isolation": 21,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free day-use permit; tram ticket additional",
+    "published": true,
+    "permitStatus": "self-register",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Mount San Jacinto State Park",
+        "Palm Springs Aerial Tramway",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     }
   },
@@ -3973,22 +4011,22 @@
     "name": "Snowshoe Peak",
     "state": "MT",
     "elevation": 8738,
-    "prominence": 5418,
-    "latitude": 47.9969,
-    "longitude": -115.6458,
-    "difficulty": 7,
-    "days": 2,
-    "distanceMin": 14,
-    "distanceMax": 18,
-    "distanceDisplay": "~14–18 miles round-trip",
-    "gainMin": 5100,
-    "gainMax": 6500,
-    "gainDisplay": "~5,100–6,500 ft",
+    "prominence": 5442,
+    "latitude": 48.2478,
+    "longitude": -115.8958,
+    "difficulty": 6,
+    "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 7,
+    "distanceDisplay": "5–7 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 4200,
+    "gainDisplay": "3,600–4,200 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 16,
-    "gain": 5800,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 6,
+    "gain": 3900,
     "mountainRange": "Cabinet Mountains",
     "season": "July-September",
     "hazards": [
@@ -3997,11 +4035,15 @@
       "scrambling-exposed",
       "hypothermia",
       "rockfall",
-      "off-trail-navigation"
+      "off-trail-navigation",
+      "bears",
+      "crevasse-fall",
+      "lightning-exposure",
+      "exposure"
     ],
-    "bestRoute": "Northeast Ridge",
+    "bestRoute": "Northeast Ridge via Leigh Lake",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "PeakBagger, Kootenai NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
     "ydsClass": "4",
     "heroImage": "/images/peaks/snowshoe-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Snowshoe-Peak/forecasts/2663",
@@ -4010,43 +4052,78 @@
       "rock-scrambling-loose",
       "alpine-start",
       "off-trail-nav",
-      "snow-travel"
+      "snow-travel",
+      "glacier-travel",
+      "exposed-scrambling"
     ],
     "requiredGear": {
       "priority": [
+        "helmet",
         "rope-harness",
         "climbing-protection",
-        "helmet",
         "insulating-layer",
         "shell-jacket",
-        "gaiters",
         "water-capacity"
       ],
       "secondary": [
+        "ice-axe",
+        "crampons",
         "belay-device",
-        "microspikes",
         "compass",
         "emergency-comm",
-        "high-calorie-food",
-        "gloves"
+        "gaiters",
+        "gloves",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "isolation": 80,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
-    "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+    "hasSafetyNote": true,
+    "safetyNote": "The crux Class 4 chimney features moderate exposure and loose limestone; a rope team should be prepared for rapid weather deterioration on the exposed upper ridge. Descent of the crux and rocky creek-bed descent can be hazardous; a rope is strongly recommended for parties considering the descent route.",
+    "content": {
+      "overview": [
+        "Snowshoe Peak stands as the highest summit in Montana's Cabinet Range and the third-most prominent peak in the state, with 5,442 feet of prominence separating it from its key col. Located in the Kootenai National Forest approximately 17 miles northeast of Libby, this remote peak dominates northwestern Montana's most isolated high country and represents a serious mountaineering objective, not a casual hike.",
+        "The peak's significance lies in its tectonic geography: the Cabinet Mountains form part of the Coeur d'Alene metamorphic core complex, and Snowshoe Peak's prominence reflects its dramatic rise from the surrounding valleys. Blackwell Glacier, a remnant named glacier on the peak's north slope, is an important feature of the mountain, though standard summer ascents of the northeast ridge generally treat the route as exposed scrambling rather than glacier travel."
+      ],
+      "routeDescription": [
+        "The standard route approaches from Leigh Lake to the northeast, ascending via exposed scrambling and Class 4 terrain along the peak's northeast ridge. From the Leigh Lake trailhead (accessed via a rocky road requiring high-clearance vehicles), hikers travel approximately 1.5 miles to Leigh Lake at around 5,100 feet, then continue around the northeast side of the lake before ascending a creek drainage to the summit route. From Leigh Lake, the route ascends roughly 3,600 feet of mixed terrain—much of it straightforward hiking and Class 3 scrambling on ledges and chimneys—before reaching the crux: a short but stiff Class 4 chimney with moderate exposure, where solid handholds and ledges provide reasonable climbing features. Above the crux, terrain reverts to scrambling and hiking until reaching the upper ridge sections near the summit.",
+        "Blackwell Glacier lies on the peak's north side. Early-season parties and some route variations may encounter glacier or steep-snow sections requiring snow travel skills and crevasse awareness, but standard late-summer ascents on the northeast ridge may navigate around it entirely through scrambling. The upper ridge features significant exposure and loose rock, particularly on descent."
+      ],
+      "routeLandmarks": [
+        "Leigh Lake (5,100 ft)",
+        "Shelf area / high bench (6,800 ft)",
+        "Class 4 chimney crux on upper ridge"
+      ],
+      "permitsClimbing": "No climbing permit is generally required for Snowshoe Peak. The peak lies within Kootenai National Forest, where dispersed backcountry camping is generally available, subject to current forest and wilderness regulations. Parties should verify current access, camping, and food-storage rules before departure.",
+      "permitsCamping": "Camping is not allowed at Leigh Lake (per Visit Montana / Forest Service regulations). Parties using the Leigh Lake approach should plan accordingly. On-route camping for the standard northeast ridge approach from Leigh Lake is limited. Snowshoe Lake, on the peak's western side, provides camping around 6,000 feet for parties using or exploring western approaches via longer routes. It is not part of the standard Leigh Lake northeast approach. The Cabinet Mountains Wilderness area applies standard backcountry protocols: camp at least 100 feet from water sources. Campfire rules vary by location and season; check current restrictions with Kootenai National Forest. A stove is the safer and lower-impact choice.",
+      "wildlife": "July through September is the standard climbing window. Solid Class 4 scrambling ability is required for the crux chimney; rock climbing experience and exposure management on the upper ridge are essential. Self-arrest with an ice axe on moderate snow slopes may be needed seasonally. Rope, harness, and anchor skills are commonly brought for the Class 4 crux and descent. Self-arrest, snow climbing, glacier travel, and crevasse recognition may be needed in early season or on alternate route lines. The Cabinet-Yaak ecosystem supports approximately 20–30 grizzly bears; bear-resistant food storage is required under Kootenai National Forest food-storage and sanitation order.",
+      "footnote": "Trailhead: Leigh Lake (rocky road, high-clearance vehicle recommended), approximately 17 miles northeast of Libby, MT. Summit 48.2478°N, 115.8958°W. Elevation 8,738 ft (LiDAR/Peakbagger); prominence 5,442 ft (Peakbagger clean prominence). Kootenai National Forest."
     },
-    "permitSeason": "Permit details pending editorial review"
+    "isolation": 80,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister",
+      "ice_axe",
+      "crampons",
+      "rope_harness"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "Kootenai NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Leigh Lake trailhead coordinates and high-clearance road access. Verify whether mid-summer parties can safely manage the crux without rope. Alternative Snowshoe Lake / west-side approach details pending."
+    },
+    "permitSeason": "No climbing permit required; bear-resistant food storage required under Kootenai NF rules"
   },
   {
     "slug": "north-schell-peak",
@@ -4364,71 +4441,110 @@
     "slug": "diamond-peak",
     "name": "Diamond Peak",
     "state": "ID",
-    "elevation": 12202,
+    "elevation": 12200,
     "prominence": 5377,
-    "difficulty": 5,
+    "latitude": 43.9103,
+    "longitude": -113.0847,
+    "difficulty": 4,
     "days": 1,
-    "distanceMin": 12,
-    "distanceMax": 12,
-    "distanceDisplay": "12 miles round-trip",
-    "gainMin": 3500,
-    "gainMax": 3500,
-    "gainDisplay": "3,500 ft",
+    "distanceMin": 5,
+    "distanceMax": 6,
+    "distanceDisplay": "5–6 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 4000,
+    "gainDisplay": "4,000 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 12,
-    "gain": 3500,
+    "daysDisplay": "5–8 hours",
+    "distance": 5.5,
+    "gain": 4000,
     "mountainRange": "Lemhi Range",
-    "season": "July-September",
+    "season": "June-September",
     "hazards": [
       "altitude-sickness",
       "hypothermia",
       "wind-extreme-weather",
-      "lightning-exposure"
+      "lightning-exposure",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "rockfall",
+      "exposure"
     ],
-    "bestRoute": "Little Fish Lake Creek — Southwest Ridge",
+    "bestRoute": "East Ridge via Birch Creek Valley",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "2",
+    "dataSource": "PeakBagger, BLM, Caribou-Targhee NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
+    "ydsClass": "3",
     "heroImage": "/images/peaks/diamond-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
     "technicalRequirements": [
       "altitude-acclimatization",
-      "alpine-start"
+      "alpine-start",
+      "exposed-scrambling",
+      "rock-scrambling-loose",
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
+        "helmet",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "insulating-hat",
-        "water-capacity"
+        "water-capacity",
+        "trekking-poles"
       ],
       "secondary": [
         "compass",
         "emergency-comm",
-        "sunscreen"
+        "sunscreen",
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 42.6106,
-    "longitude": -114.1364,
-    "isolation": 33,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
-    "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms represent the primary hazard on the exposed ridge. Parties must plan to be off the summit by early afternoon, which typically necessitates a 5:00–6:00 AM start. The rapid elevation gain also demands adequate acclimatization; many parties spend a night at Birch Creek Campground or nearby alternatives before attempting the climb.",
+    "content": {
+      "overview": [
+        "Diamond Peak ranks as Idaho's fourth-highest summit and commands the Lemhi Range as the highest peak outside the Lost River Range. Rising to 12,200 feet, it holds 5,377 feet of prominence and stands as one of only three Idaho summits with more than 5,000 feet of prominence. In clear weather, Diamond Peak is visible from long distances across eastern Idaho, a measure of its isolation within the central Idaho high country.",
+        "The Lemhi Range occupies a unique geomorphic position in the Basin and Range province. The peak's east ridge, offering the standard ascent, presents a classic Idaho scramble concentrated with significant elevation gain in a short distance—approximately 4,000 feet gained in under 3 miles."
+      ],
+      "routeDescription": [
+        "The standard route ascends the steep East Ridge, beginning from Birch Creek Campground near the trailhead at approximately 8,200 feet. The route maintains a sustained Class 3 scramble throughout, climbing 4,000 feet in rapid succession with a notable crux in the mid-route section. Most of the elevation gain occurs in the first 3 miles, creating a sustained, nearly 4,000-foot ridge scramble. The final sections lead to a summit plateau with expansive views across eastern Idaho's high country. Staying near the ridge crest provides the most stable terrain; terrain immediately adjacent to the ridge can become Class 4 or steeper, so staying on the ridge line is essential.",
+        "The ascent is straightforward in its objective but demanding in its steepness. Loose rock hazards are present throughout, particularly on the mid-route sections where the exposure becomes notable without reaching technical climbing terrain. Wind is common along the ridge, and afternoon thunderstorm potential increases with elevation. An early alpine start is essential—parties should reach the summit well before midday to avoid weather hazard. Parties approaching from the Badger Creek drainage on the west side will encounter a longer, more remote route that rates Class 3 but with less defined travel; this approach is rarely used and requires solid routefinding ability and 4WD access to the trailhead."
+      ],
+      "routeLandmarks": [
+        "Birch Creek Campground trailhead (8,200 ft)",
+        "Summit plateau (12,200 ft)"
+      ],
+      "permitsClimbing": "No climbing permit is generally required. The standard east-side access uses BLM land around Birch Creek and reaches Diamond Peak on Caribou-Targhee National Forest land. Parties should verify current access, camping, fire, and land-management rules before departure.",
+      "permitsCamping": "Birch Creek Campground is a BLM campground with no standard site fee; group sites require reservations and a fee. The campground frequently fills on summer weekends due to fishing and off-road vehicle traffic in the region. Badger Creek drainage on the west side offers alternative camping at lower demand, with shadier sites and a typically less-crowded atmosphere, though this approach requires 4WD access and is less direct. Camp at least 100 feet from all water sources. Campfire rules vary by season and jurisdiction; use a stove where possible and avoid fires in fragile alpine and subalpine areas.",
+      "wildlife": "June through September is the standard climbing window. Class 3 scrambling on steep, exposed terrain is required throughout; navigation on the exposed ridge is essential as the route is not marked. Rapid elevation gain—4,000 feet in under 3 miles—requires adequate acclimatization. Afternoon thunderstorms on the fully exposed ridge present a significant lightning hazard.",
+      "footnote": "Trailhead: Birch Creek Campground, approximately 8,200 feet, accessed from the Birch Creek Valley on the east side of the Lemhi Range, central Idaho. Summit 43.9103°N, 113.0847°W. Elevation 12,200 ft; prominence 5,377 ft (approximate)."
     },
-    "permitSeason": "Permit details pending editorial review"
+    "isolation": 33,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "trekking_poles"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "BLM",
+        "Caribou-Targhee NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Elevation sources vary around 12,197–12,200 ft; prominence approximate at 5,377 ft. Confirm Birch Creek Campground trailhead coordinates and seasonal access."
+    },
+    "permitSeason": "No climbing permit required; confirm current BLM and Caribou-Targhee NF camping and fire rules"
   },
   {
     "slug": "flat-top-mountain",
@@ -5568,76 +5684,103 @@
     "slug": "mount-eddy",
     "name": "Mount Eddy",
     "state": "CA",
-    "elevation": 9037,
-    "prominence": 5105,
+    "elevation": 9025,
+    "prominence": 5153,
     "latitude": 41.3207,
     "longitude": -122.4544,
-    "difficulty": 4,
+    "difficulty": 1,
     "days": 1,
-    "distanceMin": 10,
-    "distanceMax": 10,
-    "distanceDisplay": "10 miles round-trip",
-    "gainMin": 4200,
-    "gainMax": 4200,
-    "gainDisplay": "4,200 ft",
+    "distanceMin": 9.5,
+    "distanceMax": 10.5,
+    "distanceDisplay": "9.5–10.5 miles round-trip",
+    "gainMin": 2150,
+    "gainMax": 2500,
+    "gainDisplay": "2,150–2,500 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
+    "daysDisplay": "5–7 hours",
     "distance": 10,
-    "gain": 4200,
-    "mountainRange": "Trinity Mountains",
+    "gain": 2325,
+    "mountainRange": "Trinity Divide",
     "season": "June-October",
     "hazards": [
-      "dehydration",
-      "hypothermia",
       "lightning-exposure",
-      "off-trail-navigation",
-      "bears"
+      "hypothermia",
+      "wind-extreme-weather",
+      "bears",
+      "dehydration"
     ],
-    "bestRoute": "Deadfall Lakes Trail",
+    "bestRoute": "Parks Creek Trail to Summit",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Shasta-Trinity National Forest, Mount Shasta Trail Association, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-eddy.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Eddy/forecasts/2751",
     "technicalRequirements": [
-      "alpine-start",
-      "off-trail-nav",
-      "water-crossings"
+      "alpine-start"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "shell-jacket",
+        "trekking-poles",
         "insulating-layer",
-        "compass",
+        "shell-jacket",
+        "water-capacity",
         "sunscreen",
-        "hat"
+        "sunglasses"
       ],
       "secondary": [
         "microspikes",
+        "compass",
         "emergency-comm",
-        "high-calorie-food",
         "gloves",
-        "gaiters"
+        "hat",
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Mount Eddy's remote location at the crest of the Trinity Divide exposes hikers to rapid weather changes. Summer afternoon thunderstorms are common from July through September. Early-season ascents in June may encounter significant snow above 8,500 feet. Afternoon winds can be severe at the summit.",
+    "content": {
+      "overview": [
+        "Mount Eddy stands as the highest point in the Trinity Divide, a subrange of the Klamath Mountains, and is commonly cited as the highest peak in the United States west of Interstate 5. At 9,025 feet, it dominates the landscape of northern California's upland terrain and straddles a critical hydrological divide between the Sacramento and Klamath-Trinity river drainage systems. The summit commands views across the entire north-central California range on clear days, with Mount Shasta, Black Butte, Mount Lassen, and the Trinity Alps all visible from the top.",
+        "The peak's significance lies not in technical challenge but in its distinctiveness as a remote alpine summit accessible via high-altitude lakes and maintained trails. Surrounding the peak are several alpine lakes of exceptional clarity, meadows that support rare botanical species including carnivorous pitcher plants, and the historic route of the Sisson-Callahan National Recreation Trail, established in the 1880s to link ranger stations across the Trinity Divide."
+      ],
+      "routeDescription": [
+        "The standard Parks Creek route gains approximately 2,150 to 2,500 feet over 9.5 to 10.5 miles round-trip, typically requiring 5 to 7 hours. The route begins at Parks Creek Summit Trailhead at 6,800 feet and follows the Pacific Crest Trail southbound across nearly flat terrain to Deadfall Meadows at approximately 7,400 feet. From there, a well-signed junction leads to the Deadfall Lakes basin, where the trail climbs steadily through alpine terrain to Upper Deadfall Lake at approximately 7,800 feet. From the upper lakes, the route ascends steep, rocky switchbacks toward Deadfall Summit (approximately 9,000 feet) and the summit ridge before the short final approach to Mount Eddy's broad summit. The upper switchbacks are rocky and loose in places, requiring careful foot placement but no scrambling."
+      ],
+      "routeLandmarks": [
+        "Deadfall Meadows (approximately 7,400 ft)",
+        "Upper Deadfall Lake (approximately 7,800 ft)",
+        "Deadfall Summit (approximately 9,000 ft)"
+      ],
+      "permitsClimbing": "No wilderness permit is required for day hiking. Overnight camping at Deadfall Lakes requires a free self-issue wilderness permit available at Parks Creek Trailhead or by contacting Mount Shasta Ranger Station at (530) 926-4511. A California campfire permit is required year-round if using a stove or campfire. Campfire permits are free and available online at permit.preventwildfiresca.org or at any Forest Service ranger station.",
+      "permitsCamping": "The Deadfall Lakes basin has commonly used backcountry campsites, particularly near Middle Deadfall Lake. Upper Deadfall Lake, while popular, sits in a fragile alpine meadow that is exposed to wind and requires careful site selection to minimize impact. Avoid camping in or adjacent to meadows and practice low-impact techniques. Water is abundant from alpine lakes. Parks Creek Summit Trailhead has a map kiosk and vault toilet; verify current facility status with the ranger station. Road access to Parks Creek is seasonal, with typical access from mid-June through mid-October; early-season and late-season snow can block Forest Road 17.",
+      "wildlife": "June through October is the standard climbing window, with typical road access from mid-June through mid-October. The route is Class 1 hiking throughout with no scrambling, rope work, or specialized mountain skills required. Trekking poles are strongly recommended for boggy meadow sections and loose upper switchbacks. Early-season ascents in June may encounter significant snow above 8,500 feet.",
+      "footnote": "Summit 41.3207°N, 122.4544°W. Parks Creek Summit Trailhead N 41.31968° W 122.47927° (~6,800 ft). Elevation 9,025 ft; prominence 5,153 ft. Shasta-Trinity National Forest."
+    },
     "isolation": 15,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Mount Shasta Trail Association",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "Self-issue wilderness permit for overnight camping; California campfire permit required for stoves and fires"
   },
   {
     "slug": "miller-peak",
