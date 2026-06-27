@@ -1,1 +1,139 @@
-noop
+---
+import SummitMapEnhancer from './SummitMapEnhancer.astro';
+---
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="site-footer-grid">
+      <div class="site-footer-brand-col">
+        <div class="site-footer-title">Peak Directory</div>
+        <p class="site-footer-desc">
+          The Prominence Registry provides precision topographical data for serious high-altitude explorers.
+        </p>
+      </div>
+      <div class="site-footer-nav-cols">
+        <div>
+          <h4 class="site-footer-nav-heading">Explore</h4>
+          <nav class="site-footer-nav" aria-label="Explore">
+            <a href="/#database">All Peaks Index</a>
+            <a href="/glossary/">Glossary</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="site-footer-nav-heading">Site</h4>
+          <nav class="site-footer-nav" aria-label="Site">
+            <a href="/about/">About the Registry</a>
+            <a href="mailto:info@prominenceregistry.com">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <p class="site-footer-copy">
+        © <span id="footer-year"></span> Prominence Registry. Precise topographic data for the high-altitude explorer.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<SummitMapEnhancer />
+
+<script is:inline>
+  const yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+</script>
+
+<style>
+  .site-footer {
+    background: #181c20;
+    border-top: 1px solid #404850;
+  }
+  .site-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 16px;
+  }
+  @media (min-width: 768px) {
+    .site-footer-inner { padding: 64px 48px; }
+  }
+  .site-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+  @media (min-width: 768px) {
+    .site-footer-grid { grid-template-columns: 1fr 2fr; }
+  }
+  .site-footer-brand-col { display: flex; flex-direction: column; gap: 24px; }
+  .site-footer-title {
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #e0e2e8;
+  }
+  .site-footer-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c0c7d1;
+    max-width: 20rem;
+    margin: 0;
+  }
+  .site-footer-nav-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  @media (min-width: 640px) {
+    .site-footer-nav-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 768px) {
+    .site-footer-nav-cols { padding-left: 48px; }
+  }
+  .site-footer-nav-heading {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #64b5f6;
+    margin: 0 0 24px;
+  }
+  .site-footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .site-footer-nav a {
+    color: #c0c7d1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.15s ease;
+  }
+  .site-footer-nav a:hover { color: #e0e2e8; }
+  .site-footer-bottom {
+    padding-top: 32px;
+    border-top: 1px solid #404850;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  @media (min-width: 768px) {
+    .site-footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .site-footer-copy {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c0c7d1;
+    margin: 0;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .site-footer-copy { text-align: left; }
+  }
+</style>
