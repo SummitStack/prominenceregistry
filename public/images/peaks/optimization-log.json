@@ -1,103 +1,103 @@
 {
-  "generatedAt": "2026-06-27T17:58:33.751Z",
+  "generatedAt": "2026-06-27T18:04:34.869Z",
   "peaks": {
-    "mount-eddy": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mount_Eddy,_California.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Mount_Eddy%2C_California.jpg",
+    "mount-lemmon": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon,_AZ.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg/3840px-View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg",
       "raw": {
-        "bytes": 133758,
-        "size": "130.6 KB"
+        "bytes": 1215867,
+        "size": "1.16 MB"
       },
       "optimizedTotal": {
-        "bytes": 780581,
-        "size": "762.3 KB"
+        "bytes": 617150,
+        "size": "602.7 KB"
       },
-      "overallCompressionRatio": "-45.9%",
+      "overallCompressionRatio": "87.3%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 259844,
-            "size": "253.8 KB"
+            "bytes": 233128,
+            "size": "227.7 KB"
           },
           "jpg": {
-            "bytes": 211255,
-            "size": "206.3 KB"
+            "bytes": 177324,
+            "size": "173.2 KB"
           },
           "combined": {
-            "bytes": 471099,
-            "size": "460.1 KB"
+            "bytes": 410452,
+            "size": "400.8 KB"
           },
-          "compressionRatio": "-252.2%"
+          "compressionRatio": "66.2%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 117604,
-            "size": "114.8 KB"
+            "bytes": 76164,
+            "size": "74.4 KB"
           },
           "jpg": {
-            "bytes": 85443,
-            "size": "83.4 KB"
+            "bytes": 57464,
+            "size": "56.1 KB"
           },
           "combined": {
-            "bytes": 203047,
-            "size": "198.3 KB"
+            "bytes": 133628,
+            "size": "130.5 KB"
           },
-          "compressionRatio": "-51.8%"
+          "compressionRatio": "89.0%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 38256,
-            "size": "37.4 KB"
+            "bytes": 26090,
+            "size": "25.5 KB"
           },
           "jpg": {
-            "bytes": 27959,
-            "size": "27.3 KB"
+            "bytes": 19400,
+            "size": "18.9 KB"
           },
           "combined": {
-            "bytes": 66215,
-            "size": "64.7 KB"
+            "bytes": 45490,
+            "size": "44.4 KB"
           },
-          "compressionRatio": "50.5%"
+          "compressionRatio": "96.3%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 23280,
-            "size": "22.7 KB"
+            "bytes": 15846,
+            "size": "15.5 KB"
           },
           "jpg": {
-            "bytes": 16940,
-            "size": "16.5 KB"
+            "bytes": 11734,
+            "size": "11.5 KB"
           },
           "combined": {
-            "bytes": 40220,
-            "size": "39.3 KB"
+            "bytes": 27580,
+            "size": "26.9 KB"
           },
-          "compressionRatio": "69.9%"
+          "compressionRatio": "97.7%"
         }
       ],
       "manifestEntry": {
-        "slug": "mount-eddy",
-        "raw": "mount-eddy.jpg",
+        "slug": "mount-lemmon",
+        "raw": "mount-lemmon.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "mount-eddy-hero-1440.webp",
-            "jpg": "mount-eddy-hero-1440.jpg"
+            "webp": "mount-lemmon-hero-1440.webp",
+            "jpg": "mount-lemmon-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "mount-eddy-hero-768.webp",
-            "jpg": "mount-eddy-hero-768.jpg"
+            "webp": "mount-lemmon-hero-768.webp",
+            "jpg": "mount-lemmon-hero-768.jpg"
           },
           "card-400": {
-            "webp": "mount-eddy-card-400.webp",
-            "jpg": "mount-eddy-card-400.jpg"
+            "webp": "mount-lemmon-card-400.webp",
+            "jpg": "mount-lemmon-card-400.jpg"
           },
           "card-300": {
-            "webp": "mount-eddy-card-300.webp",
-            "jpg": "mount-eddy-card-300.jpg"
+            "webp": "mount-lemmon-card-300.webp",
+            "jpg": "mount-lemmon-card-300.jpg"
           }
         }
       }

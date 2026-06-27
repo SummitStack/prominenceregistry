@@ -23,12 +23,12 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'mount-eddy',
+    slug: 'mount-lemmon',
     source: {
       type: 'url',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/8/8d/Mount_Eddy%2C_California.jpg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg/3840px-View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg',
       requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Mount_Eddy,_California.jpg',
+        'https://commons.wikimedia.org/wiki/File:View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon,_AZ.jpg',
     },
   },
 ];

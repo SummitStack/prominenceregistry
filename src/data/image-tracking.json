@@ -376,16 +376,16 @@
     {
       "slug": "abercrombie-mountain",
       "name": "Abercrombie Mountain",
-      "primary_image_url": null,
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Abercrombie_Mountain_WA.jpg",
       "has_raw_image": true,
       "needs_image": "no"
     },
     {
       "slug": "mount-lemmon",
       "name": "Mount Lemmon",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon,_AZ.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "chiricahua-peak",
