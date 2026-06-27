@@ -1,406 +1,103 @@
 {
-  "generatedAt": "2026-06-27T18:13:25.750Z",
+  "generatedAt": "2026-06-27T18:15:40.119Z",
   "peaks": {
-    "mount-san-antonio": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Mt.SanAntonio.jpg",
+    "mount-ellen": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mount_Ellen_Ridge,_Garfield_County,_Utah.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mount_Ellen_Ridge%2C_Garfield_County%2C_Utah.jpg",
       "raw": {
-        "bytes": 1880290,
-        "size": "1.79 MB"
+        "bytes": 332525,
+        "size": "324.7 KB"
       },
       "optimizedTotal": {
-        "bytes": 417994,
-        "size": "408.2 KB"
+        "bytes": 822987,
+        "size": "803.7 KB"
       },
-      "overallCompressionRatio": "94.4%",
+      "overallCompressionRatio": "38.1%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 158464,
-            "size": "154.8 KB"
+            "bytes": 304292,
+            "size": "297.2 KB"
           },
           "jpg": {
-            "bytes": 117308,
-            "size": "114.6 KB"
+            "bytes": 230430,
+            "size": "225.0 KB"
           },
           "combined": {
-            "bytes": 275772,
-            "size": "269.3 KB"
+            "bytes": 534722,
+            "size": "522.2 KB"
           },
-          "compressionRatio": "85.3%"
+          "compressionRatio": "-60.8%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 50438,
-            "size": "49.3 KB"
+            "bytes": 112856,
+            "size": "110.2 KB"
           },
           "jpg": {
-            "bytes": 38925,
-            "size": "38.0 KB"
+            "bytes": 80643,
+            "size": "78.8 KB"
           },
           "combined": {
-            "bytes": 89363,
-            "size": "87.3 KB"
+            "bytes": 193499,
+            "size": "189.0 KB"
           },
-          "compressionRatio": "95.2%"
+          "compressionRatio": "41.8%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 17842,
-            "size": "17.4 KB"
+            "bytes": 33960,
+            "size": "33.2 KB"
           },
           "jpg": {
-            "bytes": 14359,
-            "size": "14.0 KB"
+            "bytes": 25323,
+            "size": "24.7 KB"
           },
           "combined": {
-            "bytes": 32201,
-            "size": "31.4 KB"
+            "bytes": 59283,
+            "size": "57.9 KB"
           },
-          "compressionRatio": "98.3%"
+          "compressionRatio": "82.2%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 11480,
-            "size": "11.2 KB"
+            "bytes": 20398,
+            "size": "19.9 KB"
           },
           "jpg": {
-            "bytes": 9178,
-            "size": "9.0 KB"
+            "bytes": 15085,
+            "size": "14.7 KB"
           },
           "combined": {
-            "bytes": 20658,
-            "size": "20.2 KB"
+            "bytes": 35483,
+            "size": "34.7 KB"
           },
-          "compressionRatio": "98.9%"
+          "compressionRatio": "89.3%"
         }
       ],
       "manifestEntry": {
-        "slug": "mount-san-antonio",
-        "raw": "mount-san-antonio.jpg",
+        "slug": "mount-ellen",
+        "raw": "mount-ellen.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "mount-san-antonio-hero-1440.webp",
-            "jpg": "mount-san-antonio-hero-1440.jpg"
+            "webp": "mount-ellen-hero-1440.webp",
+            "jpg": "mount-ellen-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "mount-san-antonio-hero-768.webp",
-            "jpg": "mount-san-antonio-hero-768.jpg"
+            "webp": "mount-ellen-hero-768.webp",
+            "jpg": "mount-ellen-hero-768.jpg"
           },
           "card-400": {
-            "webp": "mount-san-antonio-card-400.webp",
-            "jpg": "mount-san-antonio-card-400.jpg"
+            "webp": "mount-ellen-card-400.webp",
+            "jpg": "mount-ellen-card-400.jpg"
           },
           "card-300": {
-            "webp": "mount-san-antonio-card-300.webp",
-            "jpg": "mount-san-antonio-card-300.jpg"
-          }
-        }
-      }
-    },
-    "mount-graham": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mount_Graham,_Safford,_Arizona_2008.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Mount_Graham%2C_Safford%2C_Arizona_2008.jpg",
-      "raw": {
-        "bytes": 815344,
-        "size": "796.2 KB"
-      },
-      "optimizedTotal": {
-        "bytes": 392477,
-        "size": "383.3 KB"
-      },
-      "overallCompressionRatio": "88.0%",
-      "variants": [
-        {
-          "variant": "hero-1440",
-          "webp": {
-            "bytes": 164338,
-            "size": "160.5 KB"
-          },
-          "jpg": {
-            "bytes": 111521,
-            "size": "108.9 KB"
-          },
-          "combined": {
-            "bytes": 275859,
-            "size": "269.4 KB"
-          },
-          "compressionRatio": "66.2%"
-        },
-        {
-          "variant": "hero-768",
-          "webp": {
-            "bytes": 41472,
-            "size": "40.5 KB"
-          },
-          "jpg": {
-            "bytes": 33871,
-            "size": "33.1 KB"
-          },
-          "combined": {
-            "bytes": 75343,
-            "size": "73.6 KB"
-          },
-          "compressionRatio": "90.8%"
-        },
-        {
-          "variant": "card-400",
-          "webp": {
-            "bytes": 13072,
-            "size": "12.8 KB"
-          },
-          "jpg": {
-            "bytes": 12106,
-            "size": "11.8 KB"
-          },
-          "combined": {
-            "bytes": 25178,
-            "size": "24.6 KB"
-          },
-          "compressionRatio": "96.9%"
-        },
-        {
-          "variant": "card-300",
-          "webp": {
-            "bytes": 8518,
-            "size": "8.3 KB"
-          },
-          "jpg": {
-            "bytes": 7579,
-            "size": "7.4 KB"
-          },
-          "combined": {
-            "bytes": 16097,
-            "size": "15.7 KB"
-          },
-          "compressionRatio": "98.0%"
-        }
-      ],
-      "manifestEntry": {
-        "slug": "mount-graham",
-        "raw": "mount-graham.jpg",
-        "variants": {
-          "hero-1440": {
-            "webp": "mount-graham-hero-1440.webp",
-            "jpg": "mount-graham-hero-1440.jpg"
-          },
-          "hero-768": {
-            "webp": "mount-graham-hero-768.webp",
-            "jpg": "mount-graham-hero-768.jpg"
-          },
-          "card-400": {
-            "webp": "mount-graham-card-400.webp",
-            "jpg": "mount-graham-card-400.jpg"
-          },
-          "card-300": {
-            "webp": "mount-graham-card-300.webp",
-            "jpg": "mount-graham-card-300.jpg"
-          }
-        }
-      }
-    },
-    "sacajawea-peak": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mirror_Lake,_Eagle_Cap_Wilderness.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Mirror_Lake%2C_Eagle_Cap_Wilderness.jpg",
-      "raw": {
-        "bytes": 342495,
-        "size": "334.5 KB"
-      },
-      "optimizedTotal": {
-        "bytes": 828460,
-        "size": "809.0 KB"
-      },
-      "overallCompressionRatio": "39.5%",
-      "variants": [
-        {
-          "variant": "hero-1440",
-          "webp": {
-            "bytes": 296164,
-            "size": "289.2 KB"
-          },
-          "jpg": {
-            "bytes": 230058,
-            "size": "224.7 KB"
-          },
-          "combined": {
-            "bytes": 526222,
-            "size": "513.9 KB"
-          },
-          "compressionRatio": "-53.6%"
-        },
-        {
-          "variant": "hero-768",
-          "webp": {
-            "bytes": 114560,
-            "size": "111.9 KB"
-          },
-          "jpg": {
-            "bytes": 82312,
-            "size": "80.4 KB"
-          },
-          "combined": {
-            "bytes": 196872,
-            "size": "192.3 KB"
-          },
-          "compressionRatio": "42.5%"
-        },
-        {
-          "variant": "card-400",
-          "webp": {
-            "bytes": 37994,
-            "size": "37.1 KB"
-          },
-          "jpg": {
-            "bytes": 27270,
-            "size": "26.6 KB"
-          },
-          "combined": {
-            "bytes": 65264,
-            "size": "63.7 KB"
-          },
-          "compressionRatio": "80.9%"
-        },
-        {
-          "variant": "card-300",
-          "webp": {
-            "bytes": 23264,
-            "size": "22.7 KB"
-          },
-          "jpg": {
-            "bytes": 16838,
-            "size": "16.4 KB"
-          },
-          "combined": {
-            "bytes": 40102,
-            "size": "39.2 KB"
-          },
-          "compressionRatio": "88.3%"
-        }
-      ],
-      "manifestEntry": {
-        "slug": "sacajawea-peak",
-        "raw": "sacajawea-peak.jpg",
-        "variants": {
-          "hero-1440": {
-            "webp": "sacajawea-peak-hero-1440.webp",
-            "jpg": "sacajawea-peak-hero-1440.jpg"
-          },
-          "hero-768": {
-            "webp": "sacajawea-peak-hero-768.webp",
-            "jpg": "sacajawea-peak-hero-768.jpg"
-          },
-          "card-400": {
-            "webp": "sacajawea-peak-card-400.webp",
-            "jpg": "sacajawea-peak-card-400.jpg"
-          },
-          "card-300": {
-            "webp": "sacajawea-peak-card-300.webp",
-            "jpg": "sacajawea-peak-card-300.jpg"
-          }
-        }
-      }
-    },
-    "cloud-peak": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg",
-      "raw": {
-        "bytes": 239124,
-        "size": "233.5 KB"
-      },
-      "optimizedTotal": {
-        "bytes": 868284,
-        "size": "847.9 KB"
-      },
-      "overallCompressionRatio": "9.2%",
-      "variants": [
-        {
-          "variant": "hero-1440",
-          "webp": {
-            "bytes": 289116,
-            "size": "282.3 KB"
-          },
-          "jpg": {
-            "bytes": 236655,
-            "size": "231.1 KB"
-          },
-          "combined": {
-            "bytes": 525771,
-            "size": "513.4 KB"
-          },
-          "compressionRatio": "-119.9%"
-        },
-        {
-          "variant": "hero-768",
-          "webp": {
-            "bytes": 130300,
-            "size": "127.2 KB"
-          },
-          "jpg": {
-            "bytes": 93250,
-            "size": "91.1 KB"
-          },
-          "combined": {
-            "bytes": 223550,
-            "size": "218.3 KB"
-          },
-          "compressionRatio": "6.5%"
-        },
-        {
-          "variant": "card-400",
-          "webp": {
-            "bytes": 43066,
-            "size": "42.1 KB"
-          },
-          "jpg": {
-            "bytes": 30416,
-            "size": "29.7 KB"
-          },
-          "combined": {
-            "bytes": 73482,
-            "size": "71.8 KB"
-          },
-          "compressionRatio": "69.3%"
-        },
-        {
-          "variant": "card-300",
-          "webp": {
-            "bytes": 26926,
-            "size": "26.3 KB"
-          },
-          "jpg": {
-            "bytes": 18555,
-            "size": "18.1 KB"
-          },
-          "combined": {
-            "bytes": 45481,
-            "size": "44.4 KB"
-          },
-          "compressionRatio": "81.0%"
-        }
-      ],
-      "manifestEntry": {
-        "slug": "cloud-peak",
-        "raw": "cloud-peak.jpg",
-        "variants": {
-          "hero-1440": {
-            "webp": "cloud-peak-hero-1440.webp",
-            "jpg": "cloud-peak-hero-1440.jpg"
-          },
-          "hero-768": {
-            "webp": "cloud-peak-hero-768.webp",
-            "jpg": "cloud-peak-hero-768.jpg"
-          },
-          "card-400": {
-            "webp": "cloud-peak-card-400.webp",
-            "jpg": "cloud-peak-card-400.jpg"
-          },
-          "card-300": {
-            "webp": "cloud-peak-card-300.webp",
-            "jpg": "cloud-peak-card-300.jpg"
+            "webp": "mount-ellen-card-300.webp",
+            "jpg": "mount-ellen-card-300.jpg"
           }
         }
       }

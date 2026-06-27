@@ -199,9 +199,9 @@
     {
       "slug": "mount-ellen",
       "name": "Mount Ellen",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Ellen_Ridge,_Garfield_County,_Utah.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "deseret-peak",

@@ -23,38 +23,12 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'mount-san-antonio',
+    slug: 'mount-ellen',
     source: {
-      type: 'wikimedia',
-      file: 'Mt.SanAntonio.jpg',
-      requestedUrl: 'https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg',
-    },
-  },
-  {
-    slug: 'mount-graham',
-    source: {
-      type: 'wikimedia',
-      file: 'Mount_Graham,_Safford,_Arizona_2008.jpg',
+      type: 'url',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/a/ae/Mount_Ellen_Ridge%2C_Garfield_County%2C_Utah.jpg',
       requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Mount_Graham,_Safford,_Arizona_2008.jpg',
-    },
-  },
-  {
-    slug: 'sacajawea-peak',
-    source: {
-      type: 'wikimedia',
-      file: 'Mirror_Lake,_Eagle_Cap_Wilderness.jpg',
-      requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Mirror_Lake,_Eagle_Cap_Wilderness.jpg',
-    },
-  },
-  {
-    slug: 'cloud-peak',
-    source: {
-      type: 'wikimedia',
-      file: 'Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
-      requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
+        'https://commons.wikimedia.org/wiki/File:Mount_Ellen_Ridge,_Garfield_County,_Utah.jpg',
     },
   },
 ];
