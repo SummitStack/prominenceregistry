@@ -1,5 +1,6 @@
 import { SITE_URL } from './constants';
 import type { Peak } from '../types/peak';
+import { buildPeakImageAlt } from '../utils/imageHelpers';
 
 export type PeakStructuredDataInput = {
   peak: Peak;
@@ -15,6 +16,39 @@ type PropertyValue = {
   name: string;
   value: string;
 };
+
+type ImageObject = {
+  '@type': 'ImageObject';
+  '@id': string;
+  url: string;
+  contentUrl: string;
+  caption: string;
+  representativeOfPage: true;
+};
+
+function isAbsoluteHttpUrl(value: string): boolean {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
+  }
+}
+
+function buildPrimaryHeroImageObject(
+  peakPageUrl: string,
+  imageUrl: string,
+  caption: string,
+): ImageObject {
+  return {
+    '@type': 'ImageObject',
+    '@id': `${peakPageUrl}#primary-image`,
+    url: imageUrl,
+    contentUrl: imageUrl,
+    caption,
+    representativeOfPage: true,
+  };
+}
 
 export function buildPeakPageStructuredData({
   peak,
@@ -88,8 +122,19 @@ export function buildPeakPageStructuredData({
     },
   };
 
-  if (imageUrl) {
-    article.image = imageUrl;
+  const graph: Record<string, unknown>[] = [mountain, article];
+
+  if (imageUrl && isAbsoluteHttpUrl(imageUrl)) {
+    const heroImage = buildPrimaryHeroImageObject(
+      peakPageUrl,
+      imageUrl,
+      buildPeakImageAlt(peak.slug),
+    );
+    const imageRef = { '@id': heroImage['@id'] };
+
+    article.image = imageRef;
+    article.primaryImageOfPage = imageRef;
+    graph.push(heroImage);
   }
 
   const breadcrumbList = {
@@ -110,8 +155,10 @@ export function buildPeakPageStructuredData({
     ],
   };
 
+  graph.push(breadcrumbList);
+
   return {
     '@context': 'https://schema.org',
-    '@graph': [mountain, article, breadcrumbList],
+    '@graph': graph,
   };
 }

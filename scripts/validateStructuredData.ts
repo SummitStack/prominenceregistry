@@ -3,11 +3,15 @@ import path from 'node:path';
 
 import peaksData from '../src/data/peaks.json';
 import { SITE_URL } from '../src/lib/constants.ts';
+import { getPeakHeroImageUrl } from '../src/lib/schema-generator.ts';
+import { buildPeakImageAlt } from '../src/utils/imageHelpers.ts';
 
 const DIST_DIR = path.join(process.cwd(), 'dist');
 const errors: string[] = [];
 
 type JsonObject = Record<string, unknown>;
+
+type PeakRecord = (typeof peaksData)[number];
 
 function parseJsonLdBlocks(html: string): JsonObject[] {
   const blocks: JsonObject[] = [];
@@ -44,7 +48,9 @@ function findByType(blocks: JsonObject[], type: string): JsonObject | undefined 
 }
 
 function hasStructuredData(blocks: JsonObject[]): boolean {
-  return ['Mountain', 'Article', 'BreadcrumbList'].some((type) => !!findByType(blocks, type));
+  return ['Mountain', 'Article', 'BreadcrumbList', 'ImageObject'].some(
+    (type) => !!findByType(blocks, type),
+  );
 }
 
 function isNonCanonicalPeaksPageUrl(url: string): boolean {
@@ -54,6 +60,15 @@ function isNonCanonicalPeaksPageUrl(url: string): boolean {
     return pathname === '/peaks' || pathname.startsWith('/peaks/');
   } catch {
     return url === '/peaks' || url.startsWith('/peaks/');
+  }
+}
+
+function isAbsoluteHttpUrl(value: string): boolean {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+  } catch {
+    return false;
   }
 }
 
@@ -76,6 +91,64 @@ function collectUrls(value: unknown, urls: string[]): void {
     for (const nested of Object.values(value as JsonObject)) {
       collectUrls(nested, urls);
     }
+  }
+}
+
+function validatePrimaryImageSchema(slug: string, blocks: JsonObject[], article: JsonObject): void {
+  const peak = peaksData.find((entry) => entry.slug === slug);
+  if (!peak) return;
+
+  const expectedHeroUrl = getPeakHeroImageUrl(peak, SITE_URL);
+  const imageObject = findByType(blocks, 'ImageObject');
+
+  if (!expectedHeroUrl) {
+    if (imageObject) {
+      errors.push(`[${slug}] page without hero image must not emit ImageObject JSON-LD`);
+    }
+    if ('primaryImageOfPage' in article) {
+      errors.push(`[${slug}] Article.primaryImageOfPage must not be set without a hero image`);
+    }
+    return;
+  }
+
+  if (!imageObject) {
+    errors.push(`[${slug}] published page with hero image is missing ImageObject JSON-LD`);
+    return;
+  }
+
+  for (const field of ['url', 'contentUrl'] as const) {
+    const value = imageObject[field];
+    if (typeof value !== 'string' || !isAbsoluteHttpUrl(value)) {
+      errors.push(`[${slug}] ImageObject.${field} must be an absolute URL`);
+    } else if (value !== expectedHeroUrl) {
+      errors.push(`[${slug}] ImageObject.${field} must match the peak hero image URL`);
+    }
+  }
+
+  const caption = imageObject.caption;
+  const expectedCaption = buildPeakImageAlt(slug);
+  if (typeof caption !== 'string' || caption.length === 0) {
+    errors.push(`[${slug}] ImageObject.caption is missing`);
+  } else if (caption !== expectedCaption) {
+    errors.push(`[${slug}] ImageObject.caption must match the peak hero image alt text`);
+  }
+
+  if (imageObject.representativeOfPage !== true) {
+    errors.push(`[${slug}] ImageObject.representativeOfPage must be true`);
+  }
+
+  const primaryImage = article.primaryImageOfPage;
+  if (!primaryImage || typeof primaryImage !== 'object') {
+    errors.push(`[${slug}] Article.primaryImageOfPage is missing`);
+    return;
+  }
+
+  const primaryImageId = (primaryImage as JsonObject)['@id'];
+  const imageObjectId = imageObject['@id'];
+  if (typeof primaryImageId !== 'string' || primaryImageId.length === 0) {
+    errors.push(`[${slug}] Article.primaryImageOfPage must reference ImageObject @id`);
+  } else if (typeof imageObjectId === 'string' && primaryImageId !== imageObjectId) {
+    errors.push(`[${slug}] Article.primaryImageOfPage must reference the primary ImageObject`);
   }
 }
 
@@ -117,6 +190,8 @@ function validatePublishedPeak(slug: string, html: string): void {
         errors.push(`[${slug}] Article.${field} is missing`);
       }
     }
+
+    validatePrimaryImageSchema(slug, blocks, article);
   }
 
   if (!breadcrumb) {
@@ -157,7 +232,7 @@ function validateUnpublishedPeak(slug: string, html: string): void {
   const blocks = parseJsonLdBlocks(html);
   if (hasStructuredData(blocks)) {
     errors.push(
-      `[${slug}] unpublished/noindex page must not emit Mountain, Article, or BreadcrumbList JSON-LD`,
+      `[${slug}] unpublished/noindex page must not emit Mountain, Article, BreadcrumbList, or ImageObject JSON-LD`,
     );
   }
 }
