@@ -42,6 +42,14 @@ function buildImgStyle(options: PictureOptions): string {
   return `position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:${fit};object-position:${position};display:block`;
 }
 
+function buildLoadingAttrs(options: PictureOptions): string {
+  if (options.lazy === false) {
+    return ' loading="eager" fetchpriority="high"';
+  }
+
+  return ' loading="lazy"';
+}
+
 function escapeAttr(value: string): string {
   return value
     .replace(/&/g, '&amp;')
@@ -133,7 +141,7 @@ export function getHeroImage(slug: string, options: PictureOptions): string {
 
   const alt = escapeAttr(buildPeakImageAlt(slug, options.alt));
   const className = options.className ? ` class="${escapeAttr(options.className)}"` : '';
-  const loading = options.lazy === false ? '' : ' loading="lazy"';
+  const loadingAttrs = buildLoadingAttrs(options);
   const sizes =
     options.sizes ?? '(max-width: 768px) 100vw, min(100vw, 1440px)';
 
@@ -151,7 +159,7 @@ export function getHeroImage(slug: string, options: PictureOptions): string {
      width="${heroDesktopW}"
      height="${Math.round(heroDesktopW * (9 / 16))}"
      style="${buildImgStyle(options)}"
-     decoding="async"${loading}
+     decoding="async"${loadingAttrs}
    />
  </picture>`;
 }
@@ -186,7 +194,7 @@ export function getCardImage(slug: string, options: PictureOptions): string {
 
   const alt = escapeAttr(buildPeakImageAlt(slug, options.alt));
   const className = options.className ? ` class="${escapeAttr(options.className)}"` : '';
-  const loading = options.lazy === false ? '' : ' loading="lazy"';
+  const loadingAttrs = buildLoadingAttrs(options);
   const sizes = options.sizes ?? '(max-width: 768px) 300px, 400px';
 
   const { mobile: cardMobileW, desktop: cardDesktopW } = cardWidths(images);
@@ -203,7 +211,7 @@ export function getCardImage(slug: string, options: PictureOptions): string {
      width="${cardDesktopW}"
      height="${Math.round(cardDesktopW * (10 / 16))}"
      style="${FILL_IMG_STYLE}"
-     decoding="async"${loading}
+     decoding="async"${loadingAttrs}
    />
  </picture>`;
 }
