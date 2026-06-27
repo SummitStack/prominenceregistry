@@ -397,9 +397,9 @@
     {
       "slug": "mount-eddy",
       "name": "Mount Eddy",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Eddy,_California.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "miller-peak",

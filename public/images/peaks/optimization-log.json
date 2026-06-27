@@ -1,103 +1,103 @@
 {
-  "generatedAt": "2026-06-27T13:00:35.231Z",
+  "generatedAt": "2026-06-27T17:58:33.751Z",
   "peaks": {
-    "mount-jefferson-nv": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson,_Nevada.JPG",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson%2C_Nevada.JPG",
+    "mount-eddy": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Mount_Eddy,_California.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Mount_Eddy%2C_California.jpg",
       "raw": {
-        "bytes": 1832271,
-        "size": "1.75 MB"
+        "bytes": 133758,
+        "size": "130.6 KB"
       },
       "optimizedTotal": {
-        "bytes": 602877,
-        "size": "588.7 KB"
+        "bytes": 780581,
+        "size": "762.3 KB"
       },
-      "overallCompressionRatio": "91.8%",
+      "overallCompressionRatio": "-45.9%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 229484,
-            "size": "224.1 KB"
+            "bytes": 259844,
+            "size": "253.8 KB"
           },
           "jpg": {
-            "bytes": 176408,
-            "size": "172.3 KB"
+            "bytes": 211255,
+            "size": "206.3 KB"
           },
           "combined": {
-            "bytes": 405892,
-            "size": "396.4 KB"
+            "bytes": 471099,
+            "size": "460.1 KB"
           },
-          "compressionRatio": "77.8%"
+          "compressionRatio": "-252.2%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 73664,
-            "size": "71.9 KB"
+            "bytes": 117604,
+            "size": "114.8 KB"
           },
           "jpg": {
-            "bytes": 52968,
-            "size": "51.7 KB"
+            "bytes": 85443,
+            "size": "83.4 KB"
           },
           "combined": {
-            "bytes": 126632,
-            "size": "123.7 KB"
+            "bytes": 203047,
+            "size": "198.3 KB"
           },
-          "compressionRatio": "93.1%"
+          "compressionRatio": "-51.8%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 24904,
-            "size": "24.3 KB"
+            "bytes": 38256,
+            "size": "37.4 KB"
           },
           "jpg": {
-            "bytes": 18343,
-            "size": "17.9 KB"
+            "bytes": 27959,
+            "size": "27.3 KB"
           },
           "combined": {
-            "bytes": 43247,
-            "size": "42.2 KB"
+            "bytes": 66215,
+            "size": "64.7 KB"
           },
-          "compressionRatio": "97.6%"
+          "compressionRatio": "50.5%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 15616,
-            "size": "15.3 KB"
+            "bytes": 23280,
+            "size": "22.7 KB"
           },
           "jpg": {
-            "bytes": 11490,
-            "size": "11.2 KB"
+            "bytes": 16940,
+            "size": "16.5 KB"
           },
           "combined": {
-            "bytes": 27106,
-            "size": "26.5 KB"
+            "bytes": 40220,
+            "size": "39.3 KB"
           },
-          "compressionRatio": "98.5%"
+          "compressionRatio": "69.9%"
         }
       ],
       "manifestEntry": {
-        "slug": "mount-jefferson-nv",
-        "raw": "mount-jefferson-nv.jpg",
+        "slug": "mount-eddy",
+        "raw": "mount-eddy.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "mount-jefferson-nv-hero-1440.webp",
-            "jpg": "mount-jefferson-nv-hero-1440.jpg"
+            "webp": "mount-eddy-hero-1440.webp",
+            "jpg": "mount-eddy-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "mount-jefferson-nv-hero-768.webp",
-            "jpg": "mount-jefferson-nv-hero-768.jpg"
+            "webp": "mount-eddy-hero-768.webp",
+            "jpg": "mount-eddy-hero-768.jpg"
           },
           "card-400": {
-            "webp": "mount-jefferson-nv-card-400.webp",
-            "jpg": "mount-jefferson-nv-card-400.jpg"
+            "webp": "mount-eddy-card-400.webp",
+            "jpg": "mount-eddy-card-400.jpg"
           },
           "card-300": {
-            "webp": "mount-jefferson-nv-card-300.webp",
-            "jpg": "mount-jefferson-nv-card-300.jpg"
+            "webp": "mount-eddy-card-300.webp",
+            "jpg": "mount-eddy-card-300.jpg"
           }
         }
       }
