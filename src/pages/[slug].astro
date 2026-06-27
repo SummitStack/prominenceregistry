@@ -977,14 +977,8 @@ const peakStructuredData =
       <header class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <ol style="display:flex;align-items:center;gap:8px;list-style:none;">
-            <li><a href="/">Directory</a></li>
+            <li><a href="/">All Peaks</a></li>
             <li aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></li>
-            {mountainRange && (
-              <>
-                <li>{mountainRange}</li>
-                <li aria-hidden="true"><span class="material-symbols-outlined">chevron_right</span></li>
-              </>
-            )}
             <li class="current" style="font-weight:700;color:#e0e2e8;">{peak.name}</li>
           </ol>
         </nav>
