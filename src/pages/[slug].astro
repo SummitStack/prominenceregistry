@@ -155,19 +155,89 @@ const gainDisplay =
     : `${peak.gain.toLocaleString()} ft`;
 const displaySeason = season ?? 'June-September';
 
-// No coordinates in dataset; rank by same range, then state, then elevation proximity
-const nearbyPeaks = peaksData
-  .filter((p) => p.slug !== peak.slug)
-  .sort((a, b) => {
-    const aSameRange = mountainRange && a.mountainRange === mountainRange ? 0 : 1;
-    const bSameRange = mountainRange && b.mountainRange === mountainRange ? 0 : 1;
-    if (aSameRange !== bSameRange) return aSameRange - bSameRange;
-    const aSameState = a.state === peak.state ? 0 : 1;
-    const bSameState = b.state === peak.state ? 0 : 1;
-    if (aSameState !== bSameState) return aSameState - bSameState;
-    return Math.abs(a.elevation - peak.elevation) - Math.abs(b.elevation - peak.elevation);
-  })
-  .slice(0, 5);
+const NEARBY_PEAKS_LIMIT = 5;
+
+type NearbyPeak = Peak & { distanceMiles?: number };
+
+function hasValidCoordinates(entry: Peak): boolean {
+  return (
+    typeof entry.latitude === 'number' &&
+    !Number.isNaN(entry.latitude) &&
+    typeof entry.longitude === 'number' &&
+    !Number.isNaN(entry.longitude)
+  );
+}
+
+function getDistanceMiles(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const toRadians = (degrees: number) => (degrees * Math.PI) / 180;
+  const earthRadiusMiles = 3958.8;
+  const deltaLat = toRadians(lat2 - lat1);
+  const deltaLon = toRadians(lon2 - lon1);
+  const haversine =
+    Math.sin(deltaLat / 2) ** 2 +
+    Math.cos(toRadians(lat1)) * Math.cos(toRadians(lat2)) * Math.sin(deltaLon / 2) ** 2;
+  return earthRadiusMiles * 2 * Math.atan2(Math.sqrt(haversine), Math.sqrt(1 - haversine));
+}
+
+function compareFallbackPeaks(a: Peak, b: Peak): number {
+  const aSameRange = mountainRange && a.mountainRange === mountainRange ? 0 : 1;
+  const bSameRange = mountainRange && b.mountainRange === mountainRange ? 0 : 1;
+  if (aSameRange !== bSameRange) return aSameRange - bSameRange;
+  const aSameState = a.state === peak.state ? 0 : 1;
+  const bSameState = b.state === peak.state ? 0 : 1;
+  if (aSameState !== bSameState) return aSameState - bSameState;
+  return Math.abs(a.elevation - peak.elevation) - Math.abs(b.elevation - peak.elevation);
+}
+
+function getFallbackNearbyPeaks(excludeSlugs: Set<string>, limit: number): NearbyPeak[] {
+  return peaksData
+    .filter(
+      (candidate) =>
+        candidate.slug !== peak.slug &&
+        candidate.published === true &&
+        !excludeSlugs.has(candidate.slug),
+    )
+    .sort(compareFallbackPeaks)
+    .slice(0, limit);
+}
+
+function getNearbyPeaks(): NearbyPeak[] {
+  const publishedCandidates = peaksData.filter(
+    (candidate) => candidate.slug !== peak.slug && candidate.published === true,
+  );
+
+  if (!hasValidCoordinates(peak)) {
+    return getFallbackNearbyPeaks(new Set(), NEARBY_PEAKS_LIMIT);
+  }
+
+  const distanceBased = publishedCandidates
+    .filter(hasValidCoordinates)
+    .map((candidate) => ({
+      ...candidate,
+      distanceMiles: getDistanceMiles(
+        peak.latitude as number,
+        peak.longitude as number,
+        candidate.latitude as number,
+        candidate.longitude as number,
+      ),
+    }))
+    .sort((a, b) => (a.distanceMiles ?? 0) - (b.distanceMiles ?? 0))
+    .slice(0, NEARBY_PEAKS_LIMIT);
+
+  if (distanceBased.length >= NEARBY_PEAKS_LIMIT) {
+    return distanceBased;
+  }
+
+  const usedSlugs = new Set(distanceBased.map((candidate) => candidate.slug));
+  const fallback = getFallbackNearbyPeaks(
+    usedSlugs,
+    NEARBY_PEAKS_LIMIT - distanceBased.length,
+  );
+
+  return [...distanceBased, ...fallback];
+}
+
+const nearbyPeaks = getNearbyPeaks();
 
 const prominenceRank = peaksData.findIndex((p) => p.slug === peak.slug) + 1;
 const weatherUrl = 'weatherForecastUrl' in peak ? peak.weatherForecastUrl : null;
@@ -1319,6 +1389,9 @@ const peakStructuredData =
                       <p class="nearby-name">{nearby.name}</p>
                       <p class="nearby-meta">
                         {nearby.elevation.toLocaleString()} ft · Class {'ydsClass' in nearby ? nearby.ydsClass : '—'}
+                        {'distanceMiles' in nearby && typeof nearby.distanceMiles === 'number' && (
+                          <> · ~{Math.round(nearby.distanceMiles)} mi away</>
+                        )}
                       </p>
                     </div>
                   </a>
