@@ -285,7 +285,7 @@
     {
       "slug": "north-schell-peak",
       "name": "North Schell Peak",
-      "primary_image_url": null,
+      "primary_image_url": "user-provided hero image",
       "has_raw_image": true,
       "needs_image": "no"
     },
