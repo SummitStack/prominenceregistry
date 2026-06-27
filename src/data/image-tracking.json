@@ -108,9 +108,9 @@
     {
       "slug": "cloud-peak",
       "name": "Cloud Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "grand-teton",
@@ -122,9 +122,9 @@
     {
       "slug": "sacajawea-peak",
       "name": "Sacajawea Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mirror_Lake,_Eagle_Cap_Wilderness.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "kings-peak",
@@ -136,16 +136,16 @@
     {
       "slug": "mount-graham",
       "name": "Mount Graham",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Graham,_Safford,_Arizona_2008.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-san-antonio",
       "name": "Mount San Antonio",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "telescope-peak",

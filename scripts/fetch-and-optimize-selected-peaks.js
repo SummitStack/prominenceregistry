@@ -23,20 +23,38 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'miller-peak',
+    slug: 'mount-san-antonio',
     source: {
-      type: 'url',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Miller_Canyon.jpg',
-      requestedUrl: 'https://commons.wikimedia.org/wiki/File:Miller_Canyon.jpg',
+      type: 'wikimedia',
+      file: 'Mt.SanAntonio.jpg',
+      requestedUrl: 'https://commons.wikimedia.org/wiki/File:Mt.SanAntonio.jpg',
     },
   },
   {
-    slug: 'lassen-peak',
+    slug: 'mount-graham',
     source: {
-      type: 'url',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Lassen_Peak_in_June_2020.jpg',
+      type: 'wikimedia',
+      file: 'Mount_Graham,_Safford,_Arizona_2008.jpg',
       requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg',
+        'https://commons.wikimedia.org/wiki/File:Mount_Graham,_Safford,_Arizona_2008.jpg',
+    },
+  },
+  {
+    slug: 'sacajawea-peak',
+    source: {
+      type: 'wikimedia',
+      file: 'Mirror_Lake,_Eagle_Cap_Wilderness.jpg',
+      requestedUrl:
+        'https://commons.wikimedia.org/wiki/File:Mirror_Lake,_Eagle_Cap_Wilderness.jpg',
+    },
+  },
+  {
+    slug: 'cloud-peak',
+    source: {
+      type: 'wikimedia',
+      file: 'Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
+      requestedUrl:
+        'https://commons.wikimedia.org/wiki/File:Cloud_Peak_viewed_from_Paint_Rock_Creek.jpg',
     },
   },
 ];
