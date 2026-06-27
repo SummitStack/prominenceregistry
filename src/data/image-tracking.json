@@ -348,9 +348,9 @@
     {
       "slug": "lassen-peak",
       "name": "Lassen Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-cleveland",
@@ -390,9 +390,9 @@
     {
       "slug": "chiricahua-peak",
       "name": "Chiricahua Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Chiricahua_Peak_from_the_Chiricahua_Helispot.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "mount-eddy",
@@ -404,9 +404,9 @@
     {
       "slug": "miller-peak",
       "name": "Miller Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Miller_Canyon.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     }
   ]
 }

@@ -23,12 +23,20 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'mount-lemmon',
+    slug: 'miller-peak',
     source: {
       type: 'url',
-      url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg/3840px-View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/3/39/Miller_Canyon.jpg',
+      requestedUrl: 'https://commons.wikimedia.org/wiki/File:Miller_Canyon.jpg',
+    },
+  },
+  {
+    slug: 'lassen-peak',
+    source: {
+      type: 'url',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Lassen_Peak_in_June_2020.jpg',
       requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon,_AZ.jpg',
+        'https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg',
     },
   },
 ];

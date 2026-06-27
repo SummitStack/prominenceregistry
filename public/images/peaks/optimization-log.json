@@ -1,103 +1,204 @@
 {
-  "generatedAt": "2026-06-27T18:04:34.869Z",
+  "generatedAt": "2026-06-27T18:08:16.768Z",
   "peaks": {
-    "mount-lemmon": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon,_AZ.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg/3840px-View_of_the_Santa_Catalina_Mountains_from_West_Saguaro_National_Park_near_Tuscon%2C_AZ.jpg",
+    "miller-peak": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Miller_Canyon.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Miller_Canyon.jpg",
       "raw": {
-        "bytes": 1215867,
-        "size": "1.16 MB"
+        "bytes": 229966,
+        "size": "224.6 KB"
       },
       "optimizedTotal": {
-        "bytes": 617150,
-        "size": "602.7 KB"
+        "bytes": 618404,
+        "size": "603.9 KB"
       },
-      "overallCompressionRatio": "87.3%",
+      "overallCompressionRatio": "32.8%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 233128,
-            "size": "227.7 KB"
+            "bytes": 214506,
+            "size": "209.5 KB"
           },
           "jpg": {
-            "bytes": 177324,
-            "size": "173.2 KB"
+            "bytes": 174522,
+            "size": "170.4 KB"
           },
           "combined": {
-            "bytes": 410452,
-            "size": "400.8 KB"
+            "bytes": 389028,
+            "size": "379.9 KB"
           },
-          "compressionRatio": "66.2%"
+          "compressionRatio": "-69.2%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 76164,
-            "size": "74.4 KB"
+            "bytes": 91152,
+            "size": "89.0 KB"
           },
           "jpg": {
-            "bytes": 57464,
-            "size": "56.1 KB"
+            "bytes": 61532,
+            "size": "60.1 KB"
           },
           "combined": {
-            "bytes": 133628,
-            "size": "130.5 KB"
+            "bytes": 152684,
+            "size": "149.1 KB"
           },
-          "compressionRatio": "89.0%"
+          "compressionRatio": "33.6%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 26090,
-            "size": "25.5 KB"
+            "bytes": 28754,
+            "size": "28.1 KB"
           },
           "jpg": {
-            "bytes": 19400,
-            "size": "18.9 KB"
+            "bytes": 19515,
+            "size": "19.1 KB"
           },
           "combined": {
-            "bytes": 45490,
-            "size": "44.4 KB"
+            "bytes": 48269,
+            "size": "47.1 KB"
           },
-          "compressionRatio": "96.3%"
+          "compressionRatio": "79.0%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 15846,
-            "size": "15.5 KB"
+            "bytes": 16848,
+            "size": "16.5 KB"
           },
           "jpg": {
-            "bytes": 11734,
-            "size": "11.5 KB"
+            "bytes": 11575,
+            "size": "11.3 KB"
           },
           "combined": {
-            "bytes": 27580,
-            "size": "26.9 KB"
+            "bytes": 28423,
+            "size": "27.8 KB"
           },
-          "compressionRatio": "97.7%"
+          "compressionRatio": "87.6%"
         }
       ],
       "manifestEntry": {
-        "slug": "mount-lemmon",
-        "raw": "mount-lemmon.jpg",
+        "slug": "miller-peak",
+        "raw": "miller-peak.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "mount-lemmon-hero-1440.webp",
-            "jpg": "mount-lemmon-hero-1440.jpg"
+            "webp": "miller-peak-hero-1440.webp",
+            "jpg": "miller-peak-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "mount-lemmon-hero-768.webp",
-            "jpg": "mount-lemmon-hero-768.jpg"
+            "webp": "miller-peak-hero-768.webp",
+            "jpg": "miller-peak-hero-768.jpg"
           },
           "card-400": {
-            "webp": "mount-lemmon-card-400.webp",
-            "jpg": "mount-lemmon-card-400.jpg"
+            "webp": "miller-peak-card-400.webp",
+            "jpg": "miller-peak-card-400.jpg"
           },
           "card-300": {
-            "webp": "mount-lemmon-card-300.webp",
-            "jpg": "mount-lemmon-card-300.jpg"
+            "webp": "miller-peak-card-300.webp",
+            "jpg": "miller-peak-card-300.jpg"
+          }
+        }
+      }
+    },
+    "lassen-peak": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Lassen_Peak_in_June_2020.jpg",
+      "raw": {
+        "bytes": 6522411,
+        "size": "6.22 MB"
+      },
+      "optimizedTotal": {
+        "bytes": 1045363,
+        "size": "1020.9 KB"
+      },
+      "overallCompressionRatio": "96.0%",
+      "variants": [
+        {
+          "variant": "hero-1440",
+          "webp": {
+            "bytes": 433358,
+            "size": "423.2 KB"
+          },
+          "jpg": {
+            "bytes": 291844,
+            "size": "285.0 KB"
+          },
+          "combined": {
+            "bytes": 725202,
+            "size": "708.2 KB"
+          },
+          "compressionRatio": "88.9%"
+        },
+        {
+          "variant": "hero-768",
+          "webp": {
+            "bytes": 127116,
+            "size": "124.1 KB"
+          },
+          "jpg": {
+            "bytes": 86062,
+            "size": "84.0 KB"
+          },
+          "combined": {
+            "bytes": 213178,
+            "size": "208.2 KB"
+          },
+          "compressionRatio": "96.7%"
+        },
+        {
+          "variant": "card-400",
+          "webp": {
+            "bytes": 38704,
+            "size": "37.8 KB"
+          },
+          "jpg": {
+            "bytes": 27227,
+            "size": "26.6 KB"
+          },
+          "combined": {
+            "bytes": 65931,
+            "size": "64.4 KB"
+          },
+          "compressionRatio": "99.0%"
+        },
+        {
+          "variant": "card-300",
+          "webp": {
+            "bytes": 23984,
+            "size": "23.4 KB"
+          },
+          "jpg": {
+            "bytes": 17068,
+            "size": "16.7 KB"
+          },
+          "combined": {
+            "bytes": 41052,
+            "size": "40.1 KB"
+          },
+          "compressionRatio": "99.4%"
+        }
+      ],
+      "manifestEntry": {
+        "slug": "lassen-peak",
+        "raw": "lassen-peak.jpg",
+        "variants": {
+          "hero-1440": {
+            "webp": "lassen-peak-hero-1440.webp",
+            "jpg": "lassen-peak-hero-1440.jpg"
+          },
+          "hero-768": {
+            "webp": "lassen-peak-hero-768.webp",
+            "jpg": "lassen-peak-hero-768.jpg"
+          },
+          "card-400": {
+            "webp": "lassen-peak-card-400.webp",
+            "jpg": "lassen-peak-card-400.jpg"
+          },
+          "card-300": {
+            "webp": "lassen-peak-card-300.webp",
+            "jpg": "lassen-peak-card-300.jpg"
           }
         }
       }
