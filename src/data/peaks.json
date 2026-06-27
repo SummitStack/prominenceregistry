@@ -2814,82 +2814,108 @@
   },
   {
     "slug": "mount-jefferson-nv",
-    "name": "Mount Jefferson (NV)",
+    "name": "Mount Jefferson (South Summit)",
     "state": "NV",
-    "elevation": 11941,
-    "prominence": 5861,
-    "latitude": 38.7507,
-    "longitude": -116.9244,
-    "difficulty": 6,
-    "days": 2,
-    "distanceMin": 18,
-    "distanceMax": 22,
-    "distanceDisplay": "~18–22 miles round-trip",
-    "gainMin": 5100,
-    "gainMax": 6500,
-    "gainDisplay": "~5,100–6,500 ft",
+    "elevation": 11949,
+    "prominence": 5876,
+    "latitude": 38.75198,
+    "longitude": -116.92673,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 4,
+    "distanceMax": 6,
+    "distanceDisplay": "4–6 miles round-trip",
+    "gainMin": 1500,
+    "gainMax": 2000,
+    "gainDisplay": "1,500–2,000 ft",
     "daysMin": 1,
-    "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 20,
-    "gain": 5800,
+    "daysMax": 1,
+    "daysDisplay": "4–6 hours",
+    "distance": 5,
+    "gain": 1750,
     "mountainRange": "Toquima Range",
-    "season": "June-September",
+    "season": "May-October",
     "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "wind-extreme-weather",
       "dehydration",
       "heat-exhaustion",
-      "altitude-sickness",
-      "loose-rock-scree",
-      "scrambling-exposed",
-      "rockfall"
+      "exposure"
     ],
-    "bestRoute": "Meadow Canyon — Jefferson Summit Road",
+    "bestRoute": "Jefferson Summit Access to South Summit",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-jefferson-nv.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Jefferson-Nevada/forecasts/3642",
     "technicalRequirements": [
-      "rock-scrambling-loose",
-      "exposed-scrambling",
       "alpine-start",
+      "altitude-acclimatization",
       "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
         "water-capacity",
         "sunscreen",
-        "sunglasses",
-        "helmet",
-        "shell-jacket",
-        "insulating-layer",
-        "hat"
+        "sunglasses"
       ],
       "secondary": [
-        "gaiters",
-        "compass",
         "emergency-comm",
-        "high-calorie-food",
+        "hat",
         "gloves",
+        "high-calorie-food",
         "microspikes"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "isolation": 100,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
-    "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+    "hasSafetyNote": true,
+    "safetyNote": "High altitude near 12,000 feet combined with rapid elevation gain demands proper acclimatization. Parties unaccustomed to altitude above 10,000 feet should allow extra time and descend if symptoms of acute mountain sickness develop. Summer thunderstorms are common in July and August; plan morning starts and be prepared to descend quickly if storms threaten.",
+    "content": {
+      "overview": [
+        "Mount Jefferson's South Summit rises to 11,949 feet and ranks among Nevada's most prominent peaks. With approximately 100 miles of isolation by ListsOfJohn, Mount Jefferson is the highest point for a vast stretch of central Nevada's high desert. Located in the Toquima Range within the Alta Toquima Wilderness roughly 50 miles northeast of Tonopah, the peak anchors a continuous ridge that includes North and Middle summits.",
+        "The ridge traverses high alpine terrain cloaked in sparse grasses, windswept sedges, and scattered alpine shrubs. Pockets of limber pine and bristlecone pine occupy lower ridge sections and sheltered saddles. Experienced parties can traverse the ridgeline to visit multiple summits in a single day. Listed elevations vary by source and elevation model; public agency and tourism sources commonly cite roughly 11,814–11,820 feet for North Summit and 11,686–11,692 feet for Middle Summit."
+      ],
+      "routeDescription": [
+        "The most direct South Summit approach begins at Jefferson Summit, approximately 8,786 feet elevation, via Forest Road 44010 (Round Mountain–Meadow Creek Road). An old forest road extends from the trailhead into the wilderness boundary, then transitions to trail and eventually cross-country terrain as elevation increases. The route gains 1,500–2,000 feet over 4–6 miles round trip, ascending steadily toward the ridge crest. The final section traces the open alpine ridge on mostly Class 1 terrain to the South Summit, though short cross-country sections may feel like easy Class 2 depending on the exact line chosen. The main challenge is not technical difficulty, but altitude, exposure, and steady elevation gain over 2 or more miles at high elevation. The outing typically takes 4–6 hours for fit parties; less experienced hikers should allow additional time and plan for turnaround well before afternoon.",
+        "The Pine Creek Trail approach is a substantially longer route that uses Pine Creek Trail to reach the Mount Jefferson Trail north of South Summit, trading the short high-start approach for a longer canyon-and-ridge route."
+      ],
+      "routeLandmarks": [
+        "Jefferson Summit trailhead (~8,786 ft)",
+        "Alta Toquima Wilderness boundary",
+        "South Summit ridge crest (~11,949 ft)"
+      ],
+      "permitsClimbing": "No permit is required for day hiking or dispersed overnight camping in the Alta Toquima Wilderness. Backcountry camping is free. Visitors should confirm current Humboldt-Toiyabe National Forest rules, seasonal fire restrictions, and road conditions before departure.",
+      "permitsCamping": "Within Alta Toquima Wilderness, motorized equipment, bicycles, mountain bikes, and other wheeled or mechanized transport are prohibited. Established campsites are limited due to the exposed ridge-top nature of the climb. Most parties camp in Meadow Canyon or at lower elevations within the Pine Creek drainage system. Water is available in creek systems at lower elevations; parties should confirm water availability before committing to high-altitude camps. Pine Creek Campground is generally open May 15 through October 31, weather permitting, and is free. Dispersed camping rules apply: camp at least 100–200 feet from water sources, avoid established social trails, and pack all waste. Visitors should confirm any current group-size limits with the managing agency; in any case, smaller parties are better suited to this exposed alpine terrain. Campfires are generally inappropriate at higher elevations due to sparse fuel, fragile alpine vegetation, and seasonal fire restrictions. Cook stoves are recommended.",
+      "wildlife": "Late May through October is the standard climbing window on the Jefferson Summit approach. No specialized mountaineering skills are required on the South Summit route described here, but route-finding on the ridge system benefits from compass navigation and basic topographic map reading in poor visibility or winter conditions. Summer thunderstorms are common in July and August, developing rapidly in afternoon hours. Wind exposure on the ridge is persistent and can be severe in spring and fall. Winter ascents are feasible but uncommon; snow and ice may persist into early summer depending on the prior winter's snowfall. The peak is remote, roughly 50 miles from services in Tonopah.",
+      "footnote": "South Summit 38.75198°N, 116.92673°W. Jefferson Summit access via Forest Road 44010 (Round Mountain–Meadow Creek Road, ~8,786 ft). Elevation 11,949 ft; prominence 5,876 ft. Alta Toquima Wilderness, Humboldt-Toiyabe National Forest."
     },
-    "permitSeason": "Permit details pending editorial review"
+    "isolation": 100,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Jefferson Summit trailhead parking, FR 44010 road conditions, and secondary summit elevations before travel."
+    },
+    "permitSeason": "No permit generally required; confirm current fire, road, and wilderness restrictions"
   },
   {
     "slug": "mount-ellen",
@@ -4233,72 +4259,106 @@
     "slug": "hayford-peak",
     "name": "Hayford Peak",
     "state": "NV",
-    "elevation": 9924,
-    "prominence": 5392,
-    "difficulty": 5,
+    "elevation": 9917,
+    "prominence": 5417,
+    "latitude": 36.6578,
+    "longitude": -115.2008,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 9,
-    "distanceMax": 9,
-    "distanceDisplay": "9 miles round-trip",
-    "gainMin": 2900,
-    "gainMax": 2900,
-    "gainDisplay": "2,900 ft",
+    "distanceMin": 15,
+    "distanceMax": 18,
+    "distanceDisplay": "15–18 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 4250,
+    "gainDisplay": "4,000–4,250 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 9,
-    "gain": 2900,
+    "daysDisplay": "8–10 hours",
+    "distance": 16.5,
+    "gain": 4125,
     "mountainRange": "Sheep Range",
-    "season": "March-November",
+    "season": "April-October",
     "hazards": [
+      "lightning-exposure",
+      "dehydration",
+      "heat-exhaustion",
       "altitude-sickness",
       "exposure",
-      "hypothermia",
-      "wind-extreme-weather"
+      "wind-extreme-weather",
+      "hypothermia"
     ],
-    "bestRoute": "Dead Man Canyon — Hidden Forest Trail",
+    "bestRoute": "Deadman Canyon Route",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Desert National Wildlife Refuge, FWS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
-    "heroImage": "/images/peaks/optimized/hayford-peak-hero-1440.jpg",
+    "heroImage": "/images/peaks/hayford-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Griffith-Peak/forecasts/3371",
     "technicalRequirements": [
+      "alpine-start",
       "altitude-acclimatization",
-      "exposed-scrambling",
-      "alpine-start"
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "water-capacity"
+        "compass",
+        "water-capacity",
+        "emergency-comm"
       ],
       "secondary": [
-        "compass",
-        "emergency-comm",
-        "duct-tape"
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "gloves",
+        "high-calorie-food",
+        "microspikes"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 39.0461,
-    "longitude": -115.4583,
-    "isolation": 34,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
-    "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+    "hasSafetyNote": true,
+    "safetyNote": "Check the FWS current conditions page before departure. As of the May 28, 2026 FWS update, Alamo Road was only partially open, with sections between Hidden Forest Road and the Dry Lake bed closed. Access from Corn Creek to Hidden Forest Road requires high-clearance and 4WD vehicles. Because the route is remote and emergency response may be significantly delayed, parties should be prepared for self-rescue and carry communication devices.",
+    "content": {
+      "overview": [
+        "Hayford Peak is the tallest mountain within the Desert National Wildlife Refuge, the largest national wildlife refuge outside Alaska, and ranks sixth among Nevada's ultra-prominent peaks. Rising to 9,917 feet in the Sheep Range roughly 50 miles north of Las Vegas, it dominates an expansive refuge landscape of high-desert basins and limestone ridges within the refuge's 1.5 million acres.",
+        "The refuge protects one of the most isolated swaths of high-desert terrain in the contiguous United States. The Sheep Range ecosystem transitions sharply with elevation: Joshua tree woodland at lower elevations gives way to pinyon-juniper forest, then ponderosa pine, and finally bristlecone pine and sparse subalpine terrain near the summit. Hayford Peak's isolation and remoteness make solitude likely even during peak season, with relatively few party reports annually."
+      ],
+      "routeDescription": [
+        "The common Deadman Canyon route begins at Deadman Canyon trailhead (approximately 5,000 feet), accessed from Corn Creek Visitor Center via 15 miles of Alamo Road north, then Hidden Forest Road. The approach gains roughly 1,700 feet over 5 miles through Deadman Canyon to Hidden Forest Cabin at 8,000 feet, ascending through sagebrush slopes and pinyon-juniper woodland. From the cabin, the final several miles present the climbing crux: steep, rocky Class 2 terrain gaining approximately 2,500 feet to the summit ridge. Above 8,000 feet, cairns and use paths guide hikers through bristlecone pine and increasingly open, rocky high-elevation terrain. The upper ridge becomes increasingly exposed and rocky, with the steepest section occupying the final 400 feet. Total distance is 15–18 miles round trip, depending on exact starting point and route variation. Route-finding is straightforward once committed to the ridge, though navigation skills and a topographic map are essential due to the remote location."
+      ],
+      "routeLandmarks": [
+        "Hidden Forest Cabin (8,000 ft)",
+        "Summit ridge (above 8,500 ft)"
+      ],
+      "permitsClimbing": "No backpacking permit is required to climb Hayford Peak. Backcountry camping is free. Visitors should confirm current Desert National Wildlife Refuge rules before traveling, particularly regarding road closures, which change seasonally.",
+      "permitsCamping": "Backpacking is allowed without a permit. Camps must be established at least 100 yards from springs or water developments to protect water sources and comply with FWS regulations. Campfires are prohibited in the backcountry, including at Hidden Forest Cabin; gas backpacking stoves are allowed. Water is available from nearby springs, though flow varies seasonally and should not be assumed reliable. Wiregrass Spring near Hidden Forest Cabin is the key documented water source for this route, but flow can vary and should not be assumed without recent confirmation. The historic Hidden Forest Cabin sits near 8,000 feet and is a useful landmark and rest point on the route. FWS describes the cabin as a historic structure that is not intended for overnight use, so parties should plan to camp outside while following refuge camping rules. Backpackers commonly use the Hidden Forest area as a base for a second-day summit attempt, but camps must be at least 100 yards from springs or water developments. Dispersed camping is generally allowed in appropriate backcountry areas of the Sheep Range, subject to current refuge restrictions. All camping parties must practice Leave-No-Trace principles.",
+      "wildlife": "April through October is the standard climbing window on Hayford Peak. The standard route requires no technical climbing skills, but competency with topographic map navigation and basic backcountry route-finding is essential given the remote location and limited trail infrastructure above Hidden Forest Cabin. Rapid elevation gain exposes hikers to sharply changing temperatures, wind, and storm conditions. Summer monsoon storms can build quickly during afternoon hours. Winter and early spring bring significant snowfall at higher elevations; snow and ice conditions can make the upper ridge hazardous even for experienced mountaineers. The rough road access requires advance planning to coordinate vehicle capability with seasonal road conditions. Desert bighorn sheep inhabit the range; mountain lions are possible though rarely encountered.",
+      "footnote": "Summit 36.6578°N, 115.2008°W. Deadman Canyon / Hidden Forest access from Corn Creek Visitor Center via Alamo Road and Hidden Forest Road. Elevation 9,917 ft; prominence 5,417 ft. Desert National Wildlife Refuge."
     },
-    "permitSeason": "Permit details pending editorial review"
+    "isolation": 34,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Desert NWR",
+        "FWS",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Hidden Forest Cabin status, road closures, and Wiregrass Spring water availability before travel."
+    },
+    "permitSeason": "No backpacking permit required; confirm current refuge rules, road closures, and fire restrictions"
   },
   {
     "slug": "diamond-peak",
