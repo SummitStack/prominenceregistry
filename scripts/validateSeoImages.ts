@@ -3,9 +3,11 @@ import path from 'node:path';
 import peaksData from '../src/data/peaks.json';
 import { SITE_URL } from '../src/lib/constants';
 import { getPeakHeroImageUrl } from '../src/lib/schema-generator';
+import { buildPeakImageAlt } from '../src/utils/imageHelpers';
 
 const publishedPeaks = peaksData.filter((peak) => peak.published === true);
 const errors: string[] = [];
+const MAX_ALT_LENGTH = 125;
 
 for (const peak of publishedPeaks) {
   const { slug, heroImage } = peak;
@@ -59,6 +61,27 @@ for (const peak of publishedPeaks) {
       `[${slug}] SEO image file missing: ${seoPublicPath} (from "${seoImageUrl}")`,
     );
   }
+
+  const imageAlt = buildPeakImageAlt(slug, peak.name);
+  const normalizedPeakName = peak.name
+    .replace(/\s+\(OR\)$/u, '')
+    .replace(/\s+\(South Summit\)$/u, ' South Summit');
+
+  if (!imageAlt || imageAlt.trim().length === 0) {
+    errors.push(`[${slug}] hero image alt text is required`);
+  }
+
+  if (!imageAlt.includes(normalizedPeakName)) {
+    errors.push(
+      `[${slug}] hero image alt text must include peak name "${normalizedPeakName}" (got "${imageAlt}")`,
+    );
+  }
+
+  if (imageAlt.length > MAX_ALT_LENGTH) {
+    errors.push(
+      `[${slug}] hero image alt text is ${imageAlt.length} characters (max ${MAX_ALT_LENGTH})`,
+    );
+  }
 }
 
 if (errors.length > 0) {
@@ -70,5 +93,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `✅ SEO images valid — ${publishedPeaks.length} published peaks passed hero image checks`,
+  `✅ SEO images valid — ${publishedPeaks.length} published peaks passed hero image and alt text checks`,
 );
