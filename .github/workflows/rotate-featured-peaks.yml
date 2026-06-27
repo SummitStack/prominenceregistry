@@ -1,0 +1,51 @@
+name: Rotate Featured Peaks
+
+on:
+  schedule:
+    # GitHub cron cannot express true biweekly cadence directly.
+    # Run daily at an off-peak minute; deploy only on 14-day rotation boundaries.
+    - cron: '23 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger-pages-rebuild:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_PAGES_DEPLOY_HOOK_URL: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK_URL }}
+    steps:
+      - name: Decide whether to deploy
+        id: rotation
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run: triggering deploy."
+            exit 0
+          fi
+
+          epoch="2026-01-05"
+          today="$(date -u +%Y-%m-%d)"
+          epoch_seconds="$(date -u -d "$epoch" +%s)"
+          today_seconds="$(date -u -d "$today" +%s)"
+          days_since_epoch="$(( (today_seconds - epoch_seconds) / 86400 ))"
+
+          if (( days_since_epoch >= 0 && days_since_epoch % 14 == 0 )); then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            echo "Rotation boundary: triggering deploy for period $(( days_since_epoch / 14 ))."
+          else
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            echo "Not a rotation boundary: skipping deploy."
+          fi
+
+      - name: Trigger Cloudflare Pages deploy hook
+        if: steps.rotation.outputs.should_deploy == 'true' && env.CLOUDFLARE_PAGES_DEPLOY_HOOK_URL != ''
+        shell: bash
+        run: |
+          curl --fail --request POST "$CLOUDFLARE_PAGES_DEPLOY_HOOK_URL"
+
+      - name: Explain missing deploy hook
+        if: steps.rotation.outputs.should_deploy == 'true' && env.CLOUDFLARE_PAGES_DEPLOY_HOOK_URL == ''
+        shell: bash
+        run: |
+          echo "No CLOUDFLARE_PAGES_DEPLOY_HOOK_URL secret is configured."
+          echo "Add a Cloudflare Pages deploy hook URL as a repository secret to enable automatic featured peak rotation."

@@ -2,6 +2,7 @@
 import peaksData from '../data/peaks.json';
 import imageTracking from '../data/image-tracking.json';
 import { getCardImage, hasPeakImages } from '../utils/imageHelpers';
+import { selectFeaturedPeaks } from '../utils/featuredPeaks';
 import OrganizationSchema from '../components/OrganizationSchema.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SeoMeta from '../components/SeoMeta.astro';
@@ -9,11 +10,12 @@ import SiteFooter from '../components/SiteFooter.astro';
 import { SITE_URL } from '../lib/constants';
 import { HOMEPAGE_META_DESCRIPTION } from '../lib/seoMeta';
 
-const featuredPeaks = peaksData.filter(
+const eligibleFeaturedPeaks = peaksData.filter(
   (peak) =>
     imageTracking.peaks.find((entry) => entry.slug === peak.slug)?.needs_image === 'no' &&
     hasPeakImages(peak.slug)
 );
+const featuredPeaks = selectFeaturedPeaks(eligibleFeaturedPeaks);
 const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, index + 1]));
 ---
 
