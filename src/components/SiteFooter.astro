@@ -45,6 +45,23 @@
     const mapPlaceholders = Array.from(document.querySelectorAll('.map-placeholder'));
     if (mapPlaceholders.length === 0) return;
 
+    mapPlaceholders.forEach((mapEl) => {
+      const locationArticle = mapEl.closest('article');
+      const locationHeading = locationArticle?.querySelector('.section-title');
+      const mapsLink = locationArticle?.querySelector('a[href*="google.com/maps/search"]');
+
+      if (locationHeading) {
+        const titleBar = locationHeading.querySelector('.section-title-bar');
+        locationHeading.textContent = '';
+        if (titleBar) locationHeading.appendChild(titleBar);
+        locationHeading.append('Summit Location');
+      }
+
+      if (mapsLink) {
+        mapsLink.setAttribute('rel', 'noopener noreferrer nofollow');
+      }
+    });
+
     function getCoordinatesFromMapsUrl(mapEl) {
       const locationArticle = mapEl.closest('article');
       const mapsLink = locationArticle?.querySelector('a[href*="google.com/maps/search"]');
