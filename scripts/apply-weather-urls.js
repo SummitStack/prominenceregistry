@@ -55,8 +55,8 @@ const FORECAST_URLS = {
   'mount-nebo': `${BASE}/Mount-Nebo/forecasts/3636`,
   'snowshoe-peak': `${BASE}/Snowshoe-Peak/forecasts/2663`,
   'north-schell-peak': `${BASE}/North-Schell-Peak/forecasts/3622`,
-  // No dedicated page — nearest listed summit in Humboldt/Schell Creek area
-  'star-peak': `${BASE}/North-Schell-Peak/forecasts/3622`,
+  // No dedicated page — nearest listed summit (~99 mi) in central Nevada high country
+  'star-peak': `${BASE}/Desatoya-Peak/forecasts/3041`,
   // No dedicated page — nearest listed summit in Spring/Sheep Range area
   'hayford-peak': `${BASE}/Griffith-Peak/forecasts/3371`,
   // No dedicated page — nearest listed summit in Lemhi/Lost River Range

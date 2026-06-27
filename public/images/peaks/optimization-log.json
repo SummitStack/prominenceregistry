@@ -1,103 +1,103 @@
 {
-  "generatedAt": "2026-06-26T19:47:08.476Z",
+  "generatedAt": "2026-06-27T13:00:35.231Z",
   "peaks": {
-    "she-devil": {
-      "requestedUrl": "https://commons.wikimedia.org/wiki/File:Seven_Devils_Panorama_edit.jpg",
-      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Seven_Devils_Panorama_edit.jpg",
+    "mount-jefferson-nv": {
+      "requestedUrl": "https://commons.wikimedia.org/wiki/File:2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson,_Nevada.JPG",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson%2C_Nevada.JPG",
       "raw": {
-        "bytes": 2508649,
-        "size": "2.39 MB"
+        "bytes": 1832271,
+        "size": "1.75 MB"
       },
       "optimizedTotal": {
-        "bytes": 943487,
-        "size": "921.4 KB"
+        "bytes": 602877,
+        "size": "588.7 KB"
       },
-      "overallCompressionRatio": "90.6%",
+      "overallCompressionRatio": "91.8%",
       "variants": [
         {
           "variant": "hero-1440",
           "webp": {
-            "bytes": 384524,
-            "size": "375.5 KB"
+            "bytes": 229484,
+            "size": "224.1 KB"
           },
           "jpg": {
-            "bytes": 273909,
-            "size": "267.5 KB"
+            "bytes": 176408,
+            "size": "172.3 KB"
           },
           "combined": {
-            "bytes": 658433,
-            "size": "643.0 KB"
+            "bytes": 405892,
+            "size": "396.4 KB"
           },
-          "compressionRatio": "73.8%"
+          "compressionRatio": "77.8%"
         },
         {
           "variant": "hero-768",
           "webp": {
-            "bytes": 109028,
-            "size": "106.5 KB"
+            "bytes": 73664,
+            "size": "71.9 KB"
           },
           "jpg": {
-            "bytes": 78970,
-            "size": "77.1 KB"
+            "bytes": 52968,
+            "size": "51.7 KB"
           },
           "combined": {
-            "bytes": 187998,
-            "size": "183.6 KB"
+            "bytes": 126632,
+            "size": "123.7 KB"
           },
-          "compressionRatio": "92.5%"
+          "compressionRatio": "93.1%"
         },
         {
           "variant": "card-400",
           "webp": {
-            "bytes": 35086,
-            "size": "34.3 KB"
+            "bytes": 24904,
+            "size": "24.3 KB"
           },
           "jpg": {
-            "bytes": 25457,
-            "size": "24.9 KB"
+            "bytes": 18343,
+            "size": "17.9 KB"
           },
           "combined": {
-            "bytes": 60543,
-            "size": "59.1 KB"
+            "bytes": 43247,
+            "size": "42.2 KB"
           },
           "compressionRatio": "97.6%"
         },
         {
           "variant": "card-300",
           "webp": {
-            "bytes": 21124,
-            "size": "20.6 KB"
+            "bytes": 15616,
+            "size": "15.3 KB"
           },
           "jpg": {
-            "bytes": 15389,
-            "size": "15.0 KB"
+            "bytes": 11490,
+            "size": "11.2 KB"
           },
           "combined": {
-            "bytes": 36513,
-            "size": "35.7 KB"
+            "bytes": 27106,
+            "size": "26.5 KB"
           },
           "compressionRatio": "98.5%"
         }
       ],
       "manifestEntry": {
-        "slug": "she-devil",
-        "raw": "she-devil.jpg",
+        "slug": "mount-jefferson-nv",
+        "raw": "mount-jefferson-nv.jpg",
         "variants": {
           "hero-1440": {
-            "webp": "she-devil-hero-1440.webp",
-            "jpg": "she-devil-hero-1440.jpg"
+            "webp": "mount-jefferson-nv-hero-1440.webp",
+            "jpg": "mount-jefferson-nv-hero-1440.jpg"
           },
           "hero-768": {
-            "webp": "she-devil-hero-768.webp",
-            "jpg": "she-devil-hero-768.jpg"
+            "webp": "mount-jefferson-nv-hero-768.webp",
+            "jpg": "mount-jefferson-nv-hero-768.jpg"
           },
           "card-400": {
-            "webp": "she-devil-card-400.webp",
-            "jpg": "she-devil-card-400.jpg"
+            "webp": "mount-jefferson-nv-card-400.webp",
+            "jpg": "mount-jefferson-nv-card-400.jpg"
           },
           "card-300": {
-            "webp": "she-devil-card-300.webp",
-            "jpg": "she-devil-card-300.jpg"
+            "webp": "mount-jefferson-nv-card-300.webp",
+            "jpg": "mount-jefferson-nv-card-300.jpg"
           }
         }
       }

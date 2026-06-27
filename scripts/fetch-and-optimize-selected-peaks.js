@@ -23,14 +23,13 @@ const JPEG_QUALITY = 85;
 
 const PEAKS = [
   {
-    slug: 'she-devil',
+    slug: 'mount-jefferson-nv',
     source: {
-      type: 'wikimedia',
-      file: 'Seven_Devils_Panorama_edit.jpg',
+      type: 'url',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/73/2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson%2C_Nevada.JPG',
       requestedUrl:
-        'https://commons.wikimedia.org/wiki/File:Seven_Devils_Panorama_edit.jpg',
+        'https://commons.wikimedia.org/wiki/File:2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson,_Nevada.JPG',
     },
-    rawCrop: { aspect: 16 / 9, position: 'centre' },
   },
 ];
 

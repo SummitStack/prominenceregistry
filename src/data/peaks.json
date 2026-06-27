@@ -3434,45 +3434,48 @@
     "name": "McDonald Peak",
     "state": "MT",
     "elevation": 9820,
-    "prominence": 5640,
-    "latitude": 47.3958,
-    "longitude": -113.9897,
-    "difficulty": 8,
+    "prominence": 5636,
+    "latitude": 47.38269,
+    "longitude": -113.91945,
+    "difficulty": 3,
     "days": 2,
-    "distanceMin": 19,
-    "distanceMax": 25,
-    "distanceDisplay": "~19–25 miles round-trip",
-    "gainMin": 6350,
-    "gainMax": 8050,
-    "gainDisplay": "~6,350–8,050 ft",
+    "distanceMin": 10,
+    "distanceMax": 15,
+    "distanceDisplay": "10–15 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 5000,
+    "gainDisplay": "4,000+ ft",
     "daysMin": 1,
     "daysMax": 2,
-    "daysDisplay": "1–2 days",
-    "distance": 22,
-    "gain": 7200,
+    "daysDisplay": "8–14 hours or 1–2 days",
+    "distance": 12.5,
+    "gain": 4500,
     "mountainRange": "Mission Mountains",
-    "season": "July-September",
+    "season": "June-July",
     "hazards": [
+      "bears",
       "crevasse-fall",
       "avalanche",
       "rockfall",
       "hypothermia",
-      "whiteout-conditions",
-      "off-trail-navigation"
+      "off-trail-navigation",
+      "scrambling-exposed",
+      "exposure"
     ],
-    "bestRoute": "Glacier Lake Trail — Southwest Ridge",
+    "bestRoute": "Red Horn Lane / Ashley Lakes Approach toward Duncan Lake",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
-    "ydsClass": "3+",
-    "permitSeason": "Year-round (Confederated Salish & Kootenai tribal permit)",
+    "dataSource": "Confederated Salish & Kootenai Tribes, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "permitSeason": "Flathead Reservation Conservation License required; McDonald Peak Grizzly Bear Closure Area closed July 15–October 1 unless posted otherwise",
     "heroImage": "/images/peaks/mcdonald-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/McDonald-Peak/forecasts/2993",
     "technicalRequirements": [
-      "glacier-travel",
       "alpine-start",
       "snow-travel",
+      "glacier-travel",
+      "off-trail-nav",
       "exposed-scrambling",
-      "off-trail-nav"
+      "rock-scrambling-loose"
     ],
     "requiredGear": {
       "priority": [
@@ -3482,30 +3485,62 @@
         "insulating-layer",
         "shell-jacket",
         "gaiters",
-        "avalanche-gear"
+        "water-capacity"
       ],
       "secondary": [
-        "microspikes",
-        "insulating-hat",
-        "water-capacity",
+        "avalanche-gear",
+        "compass",
         "emergency-comm",
+        "insulating-hat",
+        "gloves",
         "high-calorie-food",
-        "compass"
+        "microspikes"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The McDonald Peak Grizzly Bear Closure Area is closed to all recreational use from July 15 through October 1 each year unless posted otherwise. Do not attempt the climb during this closure window. The practical climbing season is generally early June through July 14, depending on snowpack, road access, and posted tribal regulations. Confirm closure status, access conditions, and all permit requirements with the Confederated Salish and Kootenai Tribes before entering the area.",
+    "content": {
+      "overview": [
+        "McDonald Peak is the highest summit in the Mission Mountains and Montana's second most prominent peak, with approximately 5,636–5,640 feet of topographic prominence. Located on the Flathead Indian Reservation in northwestern Montana, McDonald Peak stands nearly 80 miles from its nearest higher neighbor, Mount Stimson. This extreme isolation, combined with modest elevation, accounts for its substantial prominence rank and makes the peak a distinctive objective in a remote section of the Northern Rockies.",
+        "The peak sits within a tightly regulated tribal wilderness area managed by the Confederated Salish and Kootenai Tribes. Access is restricted by a mandatory seasonal closure beginning July 15 for grizzly bear conservation. The closure protects grizzly bears that gather at high elevation to feed on army cutworm moths, which concentrate in alpine talus fields during July, August, and September. This closure compresses the practical climbing window into a short early-season period, generally from early June through July 14, depending on snowpack, road access, and current tribal regulations."
+      ],
+      "routeDescription": [
+        "The standard approach begins from a high ridge trailhead accessed via the Red Horn Lane / Ashley Lakes side, requiring high-clearance 4WD vehicles and experienced drivers on rough terrain. From the trailhead, the route gains approximately 4,000+ feet over 10–15 miles round trip, requiring 8–14 hours or an overnight expedition. Parties ascend toward Duncan Lake, traverse the high country toward Post Creek Saddle near 8,900 feet, then traverse the final alpine ridge to the summit. The traverse crosses complex terrain with sustained elevation loss and gain, demanding careful route-finding and solid judgment in early-season snow. Class 2–3 scrambling on the upper slopes requires comfort with exposure and loose ground. An ice axe and crampons are often essential in June and may remain necessary into July depending on snow conditions. The route is remote and committing, well beyond easy self-rescue reach.",
+        "Western approaches from the Glacier Lake side may provide alternative vehicle access but involve different route logistics and remain highly committing; experienced parties report day-hike feasibility only under excellent conditions."
+      ],
+      "routeLandmarks": [
+        "Red Horn Lane trailhead (~4,987 ft)",
+        "Duncan Lake",
+        "Post Creek Saddle (~8,900 ft)",
+        "McDonald Glacier area (~8,600 ft)"
+      ],
+      "permitsClimbing": "Climbing on the Flathead Indian Reservation requires a Flathead Reservation Conservation License for non-members. Overnight users also require a Flathead Reservation Camping License ($100). Non-member Conservation Licenses cost $100 for an annual license, $80 for a three-day permit, or $105 for a combined three-day fishing and conservation license. Licenses can be obtained through the Flathead Tribes' Recreation Department or authorized vendors throughout western Montana. Contact the Tribal Recreation Office in Pablo at (406) 675-2700 to confirm current regulations, availability, and road access conditions.",
+      "permitsCamping": "Commonly used backcountry camping areas have been reported around Duncan Lake and in the Post Creek basin, but overnight use requires the appropriate tribal authorization. Bear country rules are strict on tribal lands. All food, garbage, cooking gear, containers, pet items, and other attractants must be stored in a bear-resistant manner when unattended—either in an approved bear-resistant container or suspended at least 10 feet up and 4 feet out from an upright support. Campfire regulations vary with season and location; verify current fire rules before travel. Tribal wilderness rules prohibit cutting live vegetation and restrict fuel gathering near water sources, trails, and campsites. Groups in the Mission Mountains Tribal Wilderness may not exceed eight people and eight head of livestock unless approved in writing by the Tribes. Camp at least 100 feet from all water sources.",
+      "wildlife": "Early June through July 14 is the practical climbing window before the McDonald Peak Grizzly Bear Closure Area takes effect. Early-season snow and ice at higher elevations often require self-arrest skills with an ice axe and crampons. McDonald Glacier near 8,600 feet presents cornice, moat, and crevasse hazards on north-facing terrain. Exposed Class 2–3 scrambling with complex route-finding dominates the upper route. Remote terrain beyond easy self-rescue reach offers limited cell service. Bear spray and strict bear-resistant food storage are strongly recommended on tribal lands.",
+      "footnote": "Summit 47.38269°N, 113.91945°W. Red Horn Lane trailhead N 47.37372° W 113.99283° (~4,987 ft). Elevation 9,820 ft; prominence 5,636 ft. Flathead Indian Reservation, Confederated Salish & Kootenai Tribes."
+    },
     "isolation": 80,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "ice_axe",
+      "crampons",
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister"
+    ],
+    "permitFee": "$80 three-day Conservation License; $100 annual; $100 Camping License for overnight",
+    "published": true,
+    "permitStatus": "fee",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "CSKT",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     }
   },
@@ -3630,78 +3665,106 @@
     "slug": "sierra-blanca-peak",
     "name": "Sierra Blanca Peak",
     "state": "NM",
-    "elevation": 11981,
-    "prominence": 5533,
-    "latitude": 33.3742,
-    "longitude": -105.8086,
-    "difficulty": 5,
+    "elevation": 11975,
+    "prominence": 5543,
+    "latitude": 33.37433,
+    "longitude": -105.80871,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 10,
-    "distanceMax": 10,
-    "distanceDisplay": "10 miles round-trip",
-    "gainMin": 3500,
+    "distanceMin": 9,
+    "distanceMax": 12,
+    "distanceDisplay": "9–12 miles round-trip",
+    "gainMin": 3000,
     "gainMax": 3500,
-    "gainDisplay": "3,500 ft",
+    "gainDisplay": "3,000–3,500 ft",
     "daysMin": 1,
     "daysMax": 1,
     "daysDisplay": "1 day",
-    "distance": 10,
-    "gain": 3500,
-    "mountainRange": "Sacramento Mountains",
-    "season": "June-September",
+    "distance": 10.5,
+    "gain": 3250,
+    "mountainRange": "Sierra Blanca Range",
+    "season": "June-October",
     "hazards": [
-      "dehydration",
-      "heat-exhaustion",
-      "altitude-sickness",
+      "rockfall",
       "lightning-exposure",
       "loose-rock-scree",
-      "scrambling-exposed"
+      "scrambling-exposed",
+      "off-trail-navigation",
+      "altitude-sickness"
     ],
-    "bestRoute": "Sierra Blanca Crest Trail",
+    "bestRoute": "Lookout Mountain Ridge Route",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Mescalero Apache Tribe, Lincoln National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
-    "permitSeason": "Year-round (Mescalero Apache tribal permit)",
+    "permitSeason": "Tribal land access; verify current Mescalero Apache, Ski Apache, and Lincoln National Forest requirements",
     "heroImage": "/images/peaks/sierra-blanca-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Sierra-Blanca/forecasts/3659",
     "technicalRequirements": [
       "alpine-start",
       "altitude-acclimatization",
-      "rock-scrambling-loose",
-      "off-trail-nav"
+      "off-trail-nav",
+      "rock-scrambling-loose"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
         "water-capacity",
         "sunscreen",
-        "sunglasses",
-        "shell-jacket",
-        "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "sunglasses"
       ],
       "secondary": [
-        "helmet",
-        "gaiters",
-        "compass",
+        "microspikes",
         "emergency-comm",
         "gloves",
-        "microspikes"
+        "hat",
+        "high-calorie-food",
+        "gaiters"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Past forest fires have left fire-scarred slopes on upper sections of the route with increased rockfall hazard from loose, unstable rock. Beyond Lookout Mountain, the route fades and requires careful map and compass navigation on exposed terrain where route-finding becomes a significant consideration.",
+    "content": {
+      "overview": [
+        "Sierra Blanca Peak is the highest mountain in the southern half of New Mexico, rising 11,975 feet above sea level in the Sierra Blanca Range, also known as the White Mountains, near Ruidoso. The peak dominates the landscape above the Tularosa Basin and has 5,543 feet of prominence, making it one of New Mexico's most significant summits. The mountain is sacred to the Mescalero Apache people, and the summit lies on Mescalero Apache Reservation land.",
+        "Sierra Blanca is part of an ancient volcanic complex whose high ridges preserve evidence of volcanic and glacial history. Weather patterns are unpredictable at elevation; thunderstorms develop rapidly in the summer monsoon season, and snow can linger into June or return as early as October. Despite the moderate Class 1–2 technical rating of most routes, the exposed ridge approach, thin air at nearly 12,000 feet, and fire-damaged terrain on upper slopes create objective hazards beyond basic hiking."
+      ],
+      "routeDescription": [
+        "The most commonly used approach to Sierra Blanca gains 3,000 to 3,500 feet over 9 to 12 miles round-trip, depending on trailhead and access point. The route ascends toward Lookout Mountain on the ridge system, passing through mixed conifer forest before breaking into alpine terrain. Beyond Lookout Mountain, the trail becomes faint and the route transitions to low Class 2 ridge walking and light scrambling on exposed high-country terrain. Navigation is essential on the final approach; parties should expect loose talus, rockfall hazard from fire-scarred slopes, and wind-swept ridge conditions.",
+        "Longer approaches through the White Mountain Wilderness trail system exist, but they do not necessarily provide legal access to the summit if the final route crosses tribal land. Ski Apache operates seasonally with resort facilities including gondola and hiking access, but resort amenities do not grant summit permission. Verify boundaries and current tribal access authorization before planning any approach."
+      ],
+      "routeLandmarks": [
+        "Lookout Mountain (~11,500 ft)",
+        "Ice Spring area (historic map reference; water reliability uncertain)"
+      ],
+      "permitsClimbing": "Sierra Blanca Peak's summit lies on Mescalero Apache Reservation land. The Mescalero Apache Tribe officially requires permits for summit access and has issued statements indicating that climbing may no longer be allowed due to the sacred status of the mountain. Permit availability and current access policies are uncertain. Contact the Mescalero Apache Travel Office at (575) 464-4494 to determine current access status before planning an ascent. Enforcement of access restrictions varies by season and conditions (fire bans, drought restrictions, etc.). Do not assume that prior trip reports, Ski Apache resort facilities, or gondola rides authorize summit access beyond the resort boundary.",
+      "permitsCamping": "Backcountry camping may be available on portions of Lincoln National Forest land, subject to current forest orders and fire restrictions. Overnight camping should be planned only on lands where camping is currently permitted; verify that your intended campsite is not on tribal land, resort property, or in areas with seasonal closures. Tribal, resort, and national forest lands are intermingled in this area, so boundary verification is essential. Water is limited and unreliable on ridge routes; carry sufficient capacity for overnight travel. Confirm current camping regulations and land-use status with Lincoln National Forest before your trip.",
+      "wildlife": "June through October is the standard climbing window on Sierra Blanca. Afternoon thunderstorms are common at high altitude during the summer monsoon season. Rockfall from fire-scarred slopes with loose rock is a significant hazard on upper sections. Beyond Lookout Mountain, the ridge route becomes faint with low Class 2 scrambling on exposed terrain where navigation is essential. Snow can linger into June or return as early as October; microspikes may be useful during shoulder-season travel.",
+      "footnote": "Summit 33.37433°N, 105.80871°W. Verify current parking and access points with Ski Apache or Lincoln National Forest. Elevation 11,975 ft; prominence 5,543 ft. Mescalero Apache Reservation / Lincoln National Forest."
+    },
     "isolation": 168,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Varies; verify current access, tribal, and resort requirements",
+    "published": true,
+    "permitStatus": "limited",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Mescalero Apache Tribe",
+        "Lincoln NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     }
   },
@@ -4068,72 +4131,103 @@
     "slug": "star-peak",
     "name": "Star Peak",
     "state": "NV",
-    "elevation": 9840,
-    "prominence": 5396,
-    "difficulty": 4,
+    "elevation": 9837,
+    "prominence": 5400,
+    "latitude": 40.52244,
+    "longitude": -118.17077,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 7,
-    "distanceMax": 7,
-    "distanceDisplay": "7 miles round-trip",
-    "gainMin": 3200,
-    "gainMax": 3200,
-    "gainDisplay": "3,200 ft",
+    "distanceMin": 6,
+    "distanceMax": 10,
+    "distanceDisplay": "6–10 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 5000,
+    "gainDisplay": "3,000–5,000 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 7,
-    "gain": 3200,
+    "daysDisplay": "5–8 hours",
+    "distance": 8,
+    "gain": 4000,
     "mountainRange": "Humboldt Range",
-    "season": "April-October",
+    "season": "May-October",
     "hazards": [
-      "altitude-sickness",
-      "exposure",
-      "scrambling-exposed",
-      "hypothermia"
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "heat-exhaustion",
+      "exposure"
     ],
-    "bestRoute": "Star Peak Road — West Ridge",
+    "bestRoute": "El Dorado Canyon Road Approach",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Nevada BLM Winnemucca District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/star-peak.jpg",
-    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/North-Schell-Peak/forecasts/3622",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Desatoya-Peak/forecasts/3041",
     "technicalRequirements": [
-      "altitude-acclimatization",
-      "exposed-scrambling",
-      "alpine-start"
+      "alpine-start",
+      "off-trail-nav"
     ],
     "requiredGear": {
       "priority": [
-        "helmet",
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "water-capacity"
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
       ],
       "secondary": [
         "compass",
         "emergency-comm",
-        "duct-tape"
+        "hat",
+        "high-calorie-food",
+        "gloves"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
-    "latitude": 39.2342,
-    "longitude": -115.3306,
+    "hasSafetyNote": true,
+    "safetyNote": "El Dorado Canyon Road is rough and boulder-strewn, especially in the upper sections. High-clearance four-wheel drive should be the planning baseline. Lower portions may be accessible to standard vehicles depending on conditions, but undercarriage damage is possible. Choose your parking point and vehicle accordingly.",
+    "content": {
+      "overview": [
+        "Star Peak is the highest point in the Humboldt Range, standing 9,837 feet above the high desert of north-central Nevada roughly 30 miles north of Lovelock. With 5,400 feet of prominence, it is one of Nevada's most prominent summits and serves as a visual landmark along Interstate 80 for travelers crossing the Great Basin. Despite straightforward road access and a nontechnical route, the peak remains lightly visited, offering 360-degree desert views with the solitude typical of Nevada's basin and range country.",
+        "The peak's rounded, sage-covered slopes lack dramatic topographic relief when viewed from the highway, which contributes to its overlooked status. Mining activity in the region and rough road conditions deter casual visitors, but clear air and open horizons make the summit distinctive for parties seeking high desert vistas without technical climbing."
+      ],
+      "routeDescription": [
+        "El Dorado Canyon Road is one of the commonly described western approaches to Star Peak. The route begins at Interstate 80 Exit 138 and follows rough BLM roads northward into the Humboldt Range for 3 to 5 miles, gaining 1,200 to 1,700 feet depending on where a vehicle can be parked. High-clearance four-wheel drive is strongly recommended for the upper sections, though lower portions may be passable in a standard vehicle in good conditions. Abandoned buildings at approximately 5,700 feet mark a major waypoint where the road deteriorates substantially. From there, most parties either continue hiking the rough road or drive higher if conditions and vehicle capability allow. The remaining summit climb from the upper road area is a short off-road hike over open sage slopes, gaining 1,300 to 2,000 additional feet depending on parking location. Total distance ranges from 6 to 10 miles round-trip with 3,000 to 5,000 feet of elevation gain, depending on vehicle capability and parking decisions. The route is Class 2 throughout, mainly due to off-trail sagebrush slopes and uneven rocky road surfaces, with straightforward route-finding on the open upper slopes. Typical parties report 5 to 8 hours round-trip from their parking point, depending on road conditions, parking location, and pace.",
+        "Black Canyon and Star City approaches also provide access to the summit, so route details and distances vary significantly by source and current road conditions. A communications antenna near the summit marks the high point."
+      ],
+      "routeLandmarks": [
+        "I-80 Exit 138 (El Dorado Canyon approach start)",
+        "Abandoned buildings (~5,700 ft)",
+        "Summit communications antenna (~9,837 ft)"
+      ],
+      "permitsClimbing": "No permits are required to climb Star Peak. The peak lies on Bureau of Land Management land managed by the Winnemucca District Office, and access is generally unrestricted. Climbers should verify current access and road conditions with the Winnemucca District Office (775-623-1500, 5100 East Winnemucca Blvd, Winnemucca, NV 89445), as mining activity and seasonal road damage may affect approach routes.",
+      "permitsCamping": "Free dispersed camping is available throughout the surrounding BLM land. No developed campgrounds exist in the immediate area, and facilities are minimal in the region. Water sources are scarce on the peak and approach; carrying sufficient water is essential. Dispersed camping regulations require campers to be self-sufficient regarding sanitation and fire management.",
+      "wildlife": "May through October is the standard climbing window on Star Peak. Competent navigation on rough BLM roads in a high-clearance vehicle and basic route-finding on open sage slopes are the main technical demands. Afternoon thunderstorms are common July through August, with considerable lightning exposure on the open summit. Wind exposure is significant on the upper slopes, and minimal water availability creates dehydration risk in high-desert conditions. Rough road conditions can cause undercarriage damage with inadequate vehicles.",
+      "footnote": "Summit 40.52244°N, 118.17077°W. El Dorado Canyon approach from I-80 Exit 138. Elevation 9,837 ft; prominence 5,400 ft. Nevada BLM Winnemucca District."
+    },
     "isolation": 69,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
       "notes": null
     },
-    "permitSeason": "Permit details pending editorial review"
+    "permitSeason": "No permit required; verify current BLM road access and conditions"
   },
   {
     "slug": "hayford-peak",

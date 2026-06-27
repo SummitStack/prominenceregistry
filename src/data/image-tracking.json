@@ -192,7 +192,7 @@
     {
       "slug": "mount-jefferson-nv",
       "name": "Mount Jefferson (NV)",
-      "primary_image_url": null,
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:2014-10-19_15_08_27_View_south-southwest_towards_Jefferson_Summit_from_about_10560_feet_along_the_trail_between_Jefferson_Summit_and_the_south_summit_of_Mount_Jefferson,_Nevada.JPG",
       "has_raw_image": true,
       "needs_image": "no"
     },
@@ -213,9 +213,18 @@
     {
       "slug": "mount-jefferson-or",
       "name": "Mount Jefferson (OR)",
-      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Jefferson_Park_Meadows_Mount_Jefferson_Wilderness.jpg",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mt._Jefferson_from_Three_Fingered_Jack.JPG",
       "has_raw_image": true,
-      "needs_image": "no"
+      "needs_image": "no",
+      "archived_images": [
+        {
+          "role": "previous-hero",
+          "is_hero": false,
+          "primary_image_url": "https://commons.wikimedia.org/wiki/File:Jefferson_Park_Meadows_Mount_Jefferson_Wilderness.jpg",
+          "raw": "raw-sources/mount-jefferson-or-previous-hero.jpg",
+          "optimized_dir": "archived/mount-jefferson-or/jefferson-park-meadows-previous-hero"
+        }
+      ]
     },
     {
       "slug": "pilot-peak",
@@ -234,9 +243,9 @@
     {
       "slug": "mcdonald-peak",
       "name": "McDonald Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://i.redd.it/1k23p54z3ut61.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "south-sister",
@@ -248,9 +257,9 @@
     {
       "slug": "sierra-blanca-peak",
       "name": "Sierra Blanca Peak",
-      "primary_image_url": null,
-      "has_raw_image": false,
-      "needs_image": "yes"
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Sierra_Blanca_Peak_at_dawn_(49305982407).jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
     },
     {
       "slug": "pikes-peak",
