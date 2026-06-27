@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://prominenceregistry.com/sitemap.xml
+Sitemap: https://prominenceregistry.com/image-sitemap.xml
