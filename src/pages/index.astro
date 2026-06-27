@@ -17,6 +17,29 @@ const eligibleFeaturedPeaks = peaksData.filter(
 );
 const featuredPeaks = selectFeaturedPeaks(eligibleFeaturedPeaks);
 const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, index + 1]));
+
+const publishedPeaks = peaksData.filter(
+  (peak) =>
+    peak.published === true &&
+    typeof peak.slug === 'string' &&
+    peak.slug.length > 0
+);
+
+const itemListStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Ultra-Prominent Peaks of the Lower 48',
+  description: 'A ranked directory of ultra-prominent peaks in the contiguous United States.',
+  url: `${SITE_URL}/`,
+  numberOfItems: publishedPeaks.length,
+  itemListOrder: 'https://schema.org/ItemListOrderAscending',
+  itemListElement: publishedPeaks.map((peak, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: peak.name,
+    url: `${SITE_URL}/${peak.slug}/`,
+  })),
+};
 ---
 
 <html lang="en">
@@ -30,6 +53,7 @@ const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, 
     canonical={`${SITE_URL}/`}
   />
   <OrganizationSchema />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListStructuredData)} />
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <style>
