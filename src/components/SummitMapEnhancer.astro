@@ -1,0 +1,164 @@
+---
+---
+
+<script is:inline>
+  (() => {
+    const mapPlaceholders = Array.from(document.querySelectorAll('.map-placeholder'));
+    if (mapPlaceholders.length === 0) return;
+
+    function getCoordinatesFromMapsUrl(mapEl) {
+      const locationArticle = mapEl.closest('article');
+      const mapsLink = locationArticle?.querySelector('a[href*="google.com/maps/search"]');
+      const href = mapsLink?.getAttribute('href');
+      if (!href) return null;
+
+      const match = href.match(/[?&]query=(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)/);
+      if (!match) return null;
+
+      const latitude = Number(match[1]);
+      const longitude = Number(match[2]);
+
+      if (!Number.isFinite(latitude) || !Number.isFinite(longitude)) return null;
+      return { latitude, longitude };
+    }
+
+    const summitMaps = mapPlaceholders
+      .map((mapEl) => ({ mapEl, coordinates: getCoordinatesFromMapsUrl(mapEl) }))
+      .filter(({ coordinates }) => coordinates !== null);
+
+    if (summitMaps.length === 0) return;
+
+    function loadStylesheet(href) {
+      if (document.querySelector(`link[href="${href}"]`)) return;
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      document.head.appendChild(link);
+    }
+
+    function loadScript(src) {
+      return new Promise((resolve, reject) => {
+        if (window.L) {
+          resolve();
+          return;
+        }
+
+        const existingScript = document.querySelector(`script[src="${src}"]`);
+        if (existingScript) {
+          existingScript.addEventListener('load', resolve, { once: true });
+          existingScript.addEventListener('error', reject, { once: true });
+          return;
+        }
+
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+    }
+
+    let leafletReady;
+
+    function prepareLeaflet() {
+      if (!leafletReady) {
+        loadStylesheet('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+        leafletReady = loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
+      }
+      return leafletReady;
+    }
+
+    async function initializeMap(mapEl, coordinates) {
+      if (mapEl.dataset.mapInitialized === 'true') return;
+      mapEl.dataset.mapInitialized = 'true';
+      mapEl.setAttribute('aria-label', 'Interactive summit location map');
+
+      try {
+        await prepareLeaflet();
+        if (!window.L) return;
+
+        mapEl.innerHTML = '';
+        mapEl.classList.add('summit-map-loaded');
+
+        const map = window.L.map(mapEl, {
+          attributionControl: true,
+          zoomControl: true,
+          scrollWheelZoom: false,
+        }).setView([coordinates.latitude, coordinates.longitude], 10);
+
+        window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer nofollow">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        const peakName = document.querySelector('.page-title')?.textContent?.trim() ?? 'Summit location';
+        const marker = window.L.marker([coordinates.latitude, coordinates.longitude]).addTo(map);
+        marker.bindPopup(peakName);
+      } catch (error) {
+        mapEl.dataset.mapInitialized = 'false';
+        console.warn('Unable to load summit map', error);
+      }
+    }
+
+    const observer = 'IntersectionObserver' in window
+      ? new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const match = summitMaps.find(({ mapEl }) => mapEl === entry.target);
+            if (!match || !match.coordinates) return;
+            initializeMap(match.mapEl, match.coordinates);
+            observer.unobserve(entry.target);
+          });
+        }, { rootMargin: '250px 0px' })
+      : null;
+
+    summitMaps.forEach(({ mapEl, coordinates }) => {
+      mapEl.classList.add('summit-map-pending');
+      mapEl.dataset.latitude = String(coordinates.latitude);
+      mapEl.dataset.longitude = String(coordinates.longitude);
+
+      if (observer) {
+        observer.observe(mapEl);
+      } else {
+        initializeMap(mapEl, coordinates);
+      }
+    });
+  })();
+</script>
+
+<style is:global>
+  .summit-map-pending::after {
+    content: 'Loading summit map';
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #c0c7d1;
+  }
+
+  .summit-map-loaded {
+    background: #18212a;
+  }
+
+  .summit-map-loaded .leaflet-control-attribution,
+  .summit-map-loaded .leaflet-control-zoom a {
+    background: rgba(16, 20, 24, 0.88);
+    color: #e0e2e8;
+    border-color: #404850;
+  }
+
+  .summit-map-loaded .leaflet-control-attribution a {
+    color: #9bcfff;
+  }
+
+  .summit-map-loaded .leaflet-popup-content-wrapper,
+  .summit-map-loaded .leaflet-popup-tip {
+    background: #181c20;
+    color: #e0e2e8;
+  }
+</style>

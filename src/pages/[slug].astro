@@ -8,6 +8,7 @@ import {
   getTechnicalRequirementLabel,
 } from '../utils/safetyLabels';
 import SiteFooter from '../components/SiteFooter.astro';
+import SummitMapEnhancer from '../components/SummitMapEnhancer.astro';
 import FathomAnalytics from '../components/FathomAnalytics.astro';
 import SeoMeta from '../components/SeoMeta.astro';
 import { SITE_URL } from '../lib/constants';
@@ -1215,7 +1216,7 @@ const peakStructuredData =
           <article id="getting-there">
             <h2 class="section-title">
               <span class="section-title-bar"></span>
-              Getting There
+              Summit Location
             </h2>
             <div class="map-placeholder">
               <div class="map-grid"></div>
@@ -1235,7 +1236,7 @@ const peakStructuredData =
                 class="btn-outline"
                 href={mapsUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
               >
                 <span class="material-symbols-outlined" style="font-size: 20px;">directions</span>
                 Open in Maps
@@ -1336,6 +1337,8 @@ const peakStructuredData =
     </main>
 
     <SiteFooter />
+
+    <SummitMapEnhancer />
 
     <a href="/#database" class="fab" aria-label="Browse peaks">
       <span class="material-symbols-outlined">add</span>
