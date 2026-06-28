@@ -28,8 +28,9 @@ const publishedPeaks = peaksData.filter(
 const itemListStructuredData = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  name: 'Ultra-Prominent Peaks of the Lower 48',
-  description: 'A ranked directory of ultra-prominent peaks in the contiguous United States.',
+  name: 'Prominence Registry Ranked Peaks',
+  description:
+    'A ranked directory of prominent peaks in the contiguous United States, with elevation, prominence, route difficulty, and planning details.',
   url: `${SITE_URL}/`,
   numberOfItems: publishedPeaks.length,
   itemListOrder: 'https://schema.org/ItemListOrderAscending',
