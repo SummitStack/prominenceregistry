@@ -141,18 +141,47 @@ const needsClimbingPermit =
   permitStatus === 'fee' || permitStatus === 'limited' || permitStatus === 'lottery';
 
 const permitFee = peak.permitFee ?? 'See details';
-const daysDisplay =
+
+function stripStatApproxPrefix(value: string): string {
+  return value.replace(/^~\s*/, '');
+}
+
+function formatStatDistance(raw: string): string {
+  return stripStatApproxPrefix(raw)
+    .replace(/\s*miles?\s*round\s*-?\s*trip/gi, ' mi')
+    .replace(/\s*miles?\b/gi, ' mi')
+    .trim();
+}
+
+function formatStatGain(raw: string): string {
+  return stripStatApproxPrefix(raw)
+    .replace(/\s*gain\b/gi, '')
+    .trim();
+}
+
+function formatStatTime(raw: string): string {
+  return stripStatApproxPrefix(raw)
+    .replace(/\bhours\b/gi, 'hr')
+    .replace(/\bhour\b/gi, 'hr')
+    .trim();
+}
+
+const rawDaysDisplay =
   'daysDisplay' in peak && typeof peak.daysDisplay === 'string'
     ? peak.daysDisplay
     : `${peak.days} day${peak.days > 1 ? 's' : ''}`;
-const distanceDisplay =
+const rawDistanceDisplay =
   'distanceDisplay' in peak && typeof peak.distanceDisplay === 'string'
     ? peak.distanceDisplay
     : `${peak.distance} miles round-trip`;
-const gainDisplay =
+const rawGainDisplay =
   'gainDisplay' in peak && typeof peak.gainDisplay === 'string'
     ? peak.gainDisplay
     : `${peak.gain.toLocaleString()} ft`;
+
+const statTimeDisplay = formatStatTime(rawDaysDisplay);
+const statDistanceDisplay = formatStatDistance(rawDistanceDisplay);
+const statGainDisplay = formatStatGain(rawGainDisplay);
 const displaySeason = season ?? 'June-September';
 
 const NEARBY_PEAKS_LIMIT = 5;
@@ -1119,21 +1148,21 @@ const peakStructuredData =
               Est. Time
               <span class="material-symbols-outlined">schedule</span>
             </p>
-            <p class="stat-card-value">{daysDisplay}</p>
+            <p class="stat-card-value">{statTimeDisplay}</p>
           </div>
           <div class="stat-card">
             <p class="stat-card-label">
               Distance
               <span class="material-symbols-outlined">route</span>
             </p>
-            <p class="stat-card-value">{distanceDisplay}</p>
+            <p class="stat-card-value">{statDistanceDisplay}</p>
           </div>
           <div class="stat-card">
             <p class="stat-card-label">
               Vert Gain
               <span class="material-symbols-outlined">trending_up</span>
             </p>
-            <p class="stat-card-value">{gainDisplay}</p>
+            <p class="stat-card-value">{statGainDisplay}</p>
           </div>
         </div>
       </section>
