@@ -28,6 +28,7 @@ const PEAK_TITLE_OVERRIDES: Record<string, string> = {
   'sierra-blanca-peak': 'Sierra Blanca Peak – Prominence, Access, and Hiking Routes',
   'mcdonald-peak': 'McDonald Peak – Prominence, Access, and Hiking Routes',
   'snowshoe-peak': 'Snowshoe Peak – Prominence and Climbing Routes',
+  'south-sister': 'South Sister – Prominence, Permits, and Hiking Routes',
 };
 
 /** Class 1–3 trail/scramble peaks that should not use the Climbing Routes title. */

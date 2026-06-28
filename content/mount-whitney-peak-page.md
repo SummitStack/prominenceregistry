@@ -6,9 +6,9 @@
 
 ## Overview
 
-Mount Whitney is the highest point in the contiguous United States, rising above Lone Pine in the Owens Valley to the east. Located on the Sierra Crest in eastern California on the Inyo/Tulare county line, the peak is composed primarily of Cretaceous granite exposed by relatively recent uplift and erosion that shaped the eastern Sierra Nevada.
+Mount Whitney ranks No. 2 among the 57 ultra-prominent peaks in the contiguous United States, rising 14,505 feet on the Sierra Crest in eastern California with 10,075 feet of clean prominence. It is the highest point in the contiguous United States. The Mount Whitney Trail is the standard route at 22 miles round-trip with 6,100 feet of elevation gain on maintained Class 1 terrain. Wilderness permits are required year-round, with quota-season entries allocated by lottery from May 1 through November 1.
 
-The peak was named in 1864 for California State Geologist Josiah Whitney. With 10,075 feet of clean prominence, it ranks among the most topographically significant peaks in North America and the second most prominent in the contiguous United States.
+The peak was named in 1864 for California State Geologist Josiah Whitney. Located on the Inyo/Tulare county line above Lone Pine in the Owens Valley, the summit rests on Cretaceous granite shaped by uplift and erosion of the eastern Sierra Nevada.
 
 The standard route follows a well-established trail, but the 6,100-foot elevation gain and altitude exposure demand proper acclimatization and preparation.
 
