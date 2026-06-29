@@ -2245,80 +2245,110 @@
     "name": "Mount San Antonio",
     "state": "CA",
     "elevation": 10064,
-    "prominence": 6224,
+    "prominence": 6247,
     "latitude": 34.2894,
     "longitude": -117.6464,
-    "difficulty": 5,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 11,
+    "distanceMin": 10,
     "distanceMax": 11,
-    "distanceDisplay": "11 miles round-trip",
+    "distanceDisplay": "10–11 miles round-trip",
     "gainMin": 3900,
-    "gainMax": 3900,
-    "gainDisplay": "3,900 ft",
+    "gainMax": 4300,
+    "gainDisplay": "3,900–4,300 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 11,
-    "gain": 3900,
+    "daysDisplay": "6–10 hours",
+    "distance": 10.5,
+    "gain": 4100,
     "mountainRange": "San Gabriel Mountains",
     "season": "May-October",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "lightning-exposure",
-      "loose-rock-scree",
-      "scrambling-exposed"
+      "exposure",
+      "rockfall",
+      "wind-extreme-weather"
     ],
-    "bestRoute": "Devil's Backbone",
+    "bestRoute": "Devil's Backbone from Manker Flats",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "PeakBagger, ListsOfJohn, Angeles National Forest, Peakery; San Gabriel Mountains (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-san-antonio.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-San-Antonio/forecasts/3068",
     "technicalRequirements": [
       "alpine-start",
       "exposed-scrambling",
-      "off-trail-nav"
+      "snow-travel"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "helmet",
+        "microspikes"
+      ],
+      "secondary": [
         "water-capacity",
         "sunscreen",
         "sunglasses",
         "hat",
-        "shell-jacket",
-        "insulating-layer"
-      ],
-      "secondary": [
-        "microspikes",
-        "helmet",
+        "crampons",
+        "ice-axe",
         "compass",
-        "emergency-comm",
-        "high-calorie-food",
-        "gloves"
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms develop rapidly over the summit July through August. The exposed Backbone ridge offers no shelter; parties should plan to be off the ridge by midday during monsoon season.",
     "isolation": 45,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "helmet",
+      "microspikes"
+    ],
+    "permitFee": "Parking/day-use fee at Manker Flats; verify current pass rules with Angeles National Forest",
+    "published": true,
+    "permitStatus": "fee",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Angeles National Forest",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map 10,064 ft; ListsOfJohn/PeakBagger LiDAR values are about 10,068 ft. Prominence: ListsOfJohn rise 6,247 ft; PeakBagger lists about 6,290 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "Parking or federal recreation pass required at Manker Flats; free wilderness permit required for designated wilderness entry",
     "content": {
       "overview": [
-        "Mount San Antonio ranks No. 21 among the 57 ultra-prominent peaks in the contiguous United States, rising 10,064 feet in the San Gabriel Mountains of Southern California with 6,224 feet of clean prominence. It is the highest summit in the San Gabriel Mountains. Most hikers use the Devil's Backbone route for 11 miles round-trip with 3,900 feet of gain on Class 2 terrain with exposed scrambling."
-      ]
+        "Mount San Antonio ranks No. 21 among the 57 ultra-prominent peaks in the contiguous United States, rising 10,064 feet in the San Gabriel Mountains of Southern California, with 6,247 feet of clean prominence. It is the highest summit in the San Gabriel Mountains and the high point of Los Angeles County on the Los Angeles–San Bernardino county boundary. Most hikers use the Devil's Backbone from Manker Flats for roughly 10 to 11 miles round-trip with about 3,900 to 4,300 feet of gain on Class 1–2 terrain with sustained ridge exposure. Parking at Manker Flats requires a day-use fee or valid federal recreation pass.",
+        "More commonly called Mount Baldy, the peak is visible across much of the Los Angeles Basin, where its snow-capped profile appears above the horizon on clear winter and spring mornings. The summit lies roughly 35 miles northeast of downtown Los Angeles within Angeles National Forest.",
+        "The San Gabriels are a tectonically active range uplifting rapidly along the San Andreas and related fault systems. Baldy's upper slopes are composed of granitic rock characteristic of the Transverse Ranges. The Devil's Backbone, which forms the final section of the standard route, is a narrow crest shaped by frost action and mass wasting, with steep drops on both sides. The Sierra Club Ski Hut at approximately 8,200 feet on the Baldy Bowl approach has served climbers and skiers for decades and is reservable through the Sierra Club Angeles Chapter."
+      ],
+      "routeDescription": [
+        "The standard route begins at Manker Flats Trailhead at approximately 6,160 feet and follows the road or trail up to Baldy Notch before continuing along the Devil's Backbone ridge to the summit. From Manker Flats, the full outing commonly runs 10 to 11 miles round-trip with roughly 3,900 to 4,300 feet of gain; parties using the Mount Baldy Resort ski lift to Baldy Notch substantially reduce both. From the notch at approximately 7,800 feet, the Backbone Trail traverses a narrow exposed crest northeast toward the summit, with steep drops on both sides in sections. In dry conditions the ridge is Class 1–2 hiking with exposure; wind, snow, or ice can make the terrain significantly more serious. Most parties allow 6 to 10 hours round-trip from Manker Flats.",
+        "Other established routes include the Baldy Bowl Trail from Manker Flats via the Sierra Club Ski Hut, a steeper alternative with a sustained scree section, and the longer Icehouse Canyon approach from the east."
+      ],
+      "routeLandmarks": [
+        "Manker Flats Trailhead (~6,160 ft)",
+        "Baldy Notch (~7,800 ft)",
+        "Devil's Backbone Ridge",
+        "Summit (10,064 ft)"
+      ],
+      "permitsClimbing": "Parking at Manker Flats requires payment of a day-use fee or a valid federal recreation pass; the Adventure Pass has historically been the applicable instrument for this area, but the Manker Flat day-use fee and pass rules are subject to change. Day-hiking the Devil's Backbone route generally does not require a wilderness permit, but wilderness permits are required for entry into designated wilderness areas along the route and are free. Confirm current parking, pass, and permit requirements directly with Angeles National Forest before departure.",
+      "permitsCamping": "Backcountry camping rules vary by wilderness area and management unit around Mount Baldy; check current Angeles National Forest and San Bernardino National Forest guidance before planning an overnight trip. A California campfire permit may be required for stoves or open flames outside developed facilities, and seasonal fire restrictions frequently prohibit all flames. The Sierra Club Ski Hut at 8,200 feet is reservable through the Sierra Club Angeles Chapter and provides a shelter option for parties making an early start. Water may be available near Manker Flats or developed facilities; do not rely on untreated backcountry sources.",
+      "wildlife": "Comfort on exposed Class 2 ridge terrain is required in dry summer conditions. Snow or ice above Baldy Notch requires self-arrest competency with ice axe and crampons, and winter and spring conditions can persist on the upper route well into May. Rockfall from parties above in Baldy Bowl is a hazard on that approach; the Devil's Backbone route reduces this exposure. The exposed summit ridge carries serious consequence in wind or icy conditions. Trailhead parking at Manker Flats fills by early morning on peak-season weekends.",
+      "footnote": "Summit N 34.28940° W 117.64640°. Manker Flats Trailhead: N 34.23320° W 117.64660° (~6,160 ft). Elevation 10,064 ft; prominence 6,247 ft. Angeles National Forest, San Gabriel Mountains."
     }
   },
   {
@@ -2432,83 +2462,109 @@
     "slug": "mount-peale",
     "name": "Mount Peale",
     "state": "UT",
-    "elevation": 12721,
-    "prominence": 6161,
+    "elevation": 12727,
+    "prominence": 6180,
     "latitude": 38.4388,
     "longitude": -109.2294,
-    "difficulty": 4,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 6,
+    "distanceMin": 5,
     "distanceMax": 6,
-    "distanceDisplay": "6 miles round-trip",
-    "gainMin": 2400,
-    "gainMax": 2400,
-    "gainDisplay": "2,400 ft",
+    "distanceDisplay": "5–6 miles round-trip",
+    "gainMin": 2600,
+    "gainMax": 2600,
+    "gainDisplay": "2,600 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 6,
-    "gain": 2400,
+    "daysDisplay": "5–7 hours",
+    "distance": 5.5,
+    "gain": 2600,
     "mountainRange": "La Sal Mountains",
     "season": "July-September",
     "hazards": [
-      "dehydration",
-      "heat-exhaustion",
       "altitude-sickness",
+      "dehydration",
       "lightning-exposure",
-      "loose-rock-scree"
+      "loose-rock-scree",
+      "wind-extreme-weather",
+      "off-trail-navigation"
     ],
-    "bestRoute": "La Sal Pass — West Gully",
+    "bestRoute": "Burlfriends Trail from La Sal Pass",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "PeakBagger, ListsOfJohn, Manti-La Sal NF, Peakery; Moab Ranger District (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-peale.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Peale/forecasts/3877",
     "technicalRequirements": [
       "alpine-start",
       "altitude-acclimatization",
-      "rock-scrambling-loose",
-      "off-trail-nav"
+      "off-trail-nav",
+      "rock-scrambling-loose"
     ],
     "requiredGear": {
       "priority": [
-        "water-capacity",
-        "sunscreen",
-        "sunglasses",
+        "trekking-poles",
         "shell-jacket",
         "insulating-layer",
-        "hat",
-        "high-calorie-food"
+        "water-capacity"
       ],
       "secondary": [
-        "helmet",
-        "gaiters",
+        "sunscreen",
+        "sunglasses",
+        "hat",
         "compass",
         "emergency-comm",
-        "gloves",
-        "microspikes"
+        "microspikes",
+        "crampons"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Snow can persist in shaded gullies and on north-facing slopes into early or mid-summer. June and early-July ascents may require crampons, an ice axe, and the ability to self-arrest if firm snow remains in the upper gully. Water sources above treeline are very limited; carry adequate supply from the trailhead.",
     "isolation": 73,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Manti-La Sal NF",
+        "Peakery",
+        "Moab Ranger District",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: LiDAR 12,727 ft per ListsOfJohn and PeakBagger; traditional USGS/map value commonly listed as 12,721 ft. Prominence: ListsOfJohn LiDAR 6,180 ft; PeakBagger 6,167 ft; older/public sources may list about 6,161 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "No permit required for climbing or dispersed camping; confirm current Manti-La Sal NF fire and road rules",
     "content": {
       "overview": [
-        "Mount Peale ranks No. 23 among the 57 ultra-prominent peaks in the contiguous United States, rising 12,721 feet in the La Sal Mountains of eastern Utah with 6,161 feet of clean prominence. It is the highest summit in the La Sal Mountains near Moab. Most hikers use the La Sal Pass — West Gully route for 6 miles round-trip with 2,400 feet of gain on Class 2 terrain."
-      ]
+        "Mount Peale ranks No. 23 among the 57 ultra-prominent peaks in the contiguous United States, rising 12,727 feet in the La Sal Mountains of eastern Utah, with 6,180 feet of clean prominence. It is the highest summit in the La Sal Mountains and San Juan County. Most hikers use the Burlfriends Trail from La Sal Pass for 5 to 6 miles round-trip with about 2,600 feet of gain on Class 2 terrain with off-trail navigation above treeline.",
+        "The La Sals contain Utah's highest summits outside the Uinta Mountains, and on ListsOfJohn, Peale ranks second behind Kings Peak among Utah peaks by prominence. The range rises sharply above the canyon country around Moab, creating a direct transition from the red-rock Colorado Plateau to alpine terrain within a few vertical miles. From Moab, Mount Tukuhnikivatz often appears higher on the skyline than Peale, though it stands roughly 250 feet lower, a reliable source of confusion for observers approaching from the west.",
+        "The La Sal Mountains are a classic laccolithic range, formed when igneous intrusions pushed overlying sedimentary rock upward without reaching the surface as lava. Above treeline, the terrain gives way to loose talus fields with minimal vegetation and a high-alpine character that can feel remote despite the range's proximity to Moab. On clear days the summit provides views extending to Arches National Park, Canyonlands National Park, and ranges more than 100 miles distant."
+      ],
+      "routeDescription": [
+        "The standard approach begins at La Sal Pass Trailhead at approximately 10,125 feet, following the Burlfriends Trail south through grassy meadows and open conifer forest. The maintained trail gives way to an off-trail route at the base of the upper gully; above that point there is no constructed summit trail, and parties follow use paths and boot tracks through loose talus toward the ridge. The round trip from the pass trailhead is 5 to 6 miles with approximately 2,600 feet of gain, typically requiring 5 to 7 hours. Navigation requires attention on the upper mountain, especially in poor visibility.",
+        "In favorable conditions, high-clearance 4x4 vehicles may be able to continue farther along the approach road, shortening the hike; road conditions vary significantly with snow, mud, runoff damage, and seasonal closures, and the La Sal Pass Road includes a creek crossing that requires higher clearance."
+      ],
+      "routeLandmarks": [
+        "La Sal Pass Trailhead (approximately 10,125 ft)",
+        "Upper gully entry / off-trail transition point",
+        "Summit ridge (12,727 ft)"
+      ],
+      "permitsClimbing": "No permit is required to climb Mount Peale or access La Sal Pass in Manti-La Sal National Forest, and no trailhead quota or self-registration applies.",
+      "permitsCamping": "Dispersed camping is generally allowed on national forest land in the area; stay limits cap any single site at 14 days within any 60-day period, after which campers must move at least 10 miles. Dispersed camping is not permitted within developed trailhead or picnic areas. Fire restrictions, road closures, and seasonal rules apply; confirm current conditions with the Moab Ranger District before any overnight trip. Water is scarce at and above treeline, so plan procurement carefully on multi-day itineraries.",
+      "wildlife": "The standard route is Class 2, with off-trail navigation required above the lower trail and occasional Class 2+ movement on loose talus near the upper gully and summit ridge. No rope or harness is needed under summer conditions. Acclimatization is a real factor: the trailhead sits above 10,000 feet and the summit above 12,700 feet, with the full elevation gain compressed into 2.5 to 3 miles. For early-season ascents, crampons and an ice axe may be required if firm snow remains in shaded gully sections or on north-facing slopes. Afternoon thunderstorms are possible July through August. Wind exposure on the summit ridge is significant, and the range sees low enough visitation that self-rescue planning is appropriate.",
+      "footnote": "Summit N 38.43880° W 109.22940°. La Sal Pass Trailhead: N 38.41943° W 109.25206° (approximately 10,125–10,134 ft). Elevation 12,727 ft; prominence 6,180 ft. Manti-La Sal National Forest, La Sal Mountains."
     }
   },
   {
@@ -4025,74 +4081,105 @@
     "name": "Mount Nebo",
     "state": "UT",
     "elevation": 11928,
-    "prominence": 5488,
-    "difficulty": 4,
+    "prominence": 5500,
+    "difficulty": 2,
     "days": 1,
     "distanceMin": 9,
     "distanceMax": 9,
     "distanceDisplay": "9 miles round-trip",
-    "gainMin": 3600,
-    "gainMax": 3600,
-    "gainDisplay": "3,600 ft",
+    "gainMin": 3150,
+    "gainMax": 3650,
+    "gainDisplay": "3,150 ft (3,650 ft round-trip cumulative)",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
+    "daysDisplay": "4–6 hours",
     "distance": 9,
-    "gain": 3600,
+    "gain": 3150,
     "mountainRange": "Wasatch Range",
-    "season": "July-September",
+    "season": "June-September",
     "hazards": [
       "altitude-sickness",
-      "exposure",
-      "hypothermia",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "rockfall",
       "wind-extreme-weather"
     ],
-    "bestRoute": "Nebo Loop Trail",
+    "bestRoute": "North Peak Trail from North Mount Nebo Trailhead",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "PeakBagger, ListsOfJohn, Uinta-Wasatch-Cache NF, Peakery; Mount Nebo Wilderness (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-nebo.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Nebo/forecasts/3636",
     "technicalRequirements": [
+      "alpine-start",
       "altitude-acclimatization",
-      "alpine-start"
+      "rock-scrambling-loose"
     ],
     "requiredGear": {
       "priority": [
+        "trekking-poles",
         "insulating-layer",
         "shell-jacket",
-        "gloves",
-        "insulating-hat",
-        "water-capacity"
+        "gaiters",
+        "helmet"
       ],
       "secondary": [
+        "water-capacity",
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
         "compass",
-        "emergency-comm",
-        "helmet"
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Loose shale and black limestone on the final ridge create rockfall hazard in parties. Members should maintain separation on the upper pitch and avoid stopping beneath other climbers on the ascent.",
     "latitude": 39.8161,
     "longitude": -111.6558,
     "isolation": 79,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "helmet"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Uinta-Wasatch-Cache NF",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map and Forest Service 11,928 ft; ListsOfJohn LiDAR 11,941 ft. Prominence: ListsOfJohn 5,500 ft; older sources may list about 5,488 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "No permit required for day hiking or overnight travel in Mount Nebo Wilderness",
     "content": {
       "overview": [
-        "Mount Nebo ranks No. 38 among the 57 ultra-prominent peaks in the contiguous United States, rising 11,928 feet in the Wasatch Range of central Utah with 5,488 feet of clean prominence. It is the highest summit in the southern Wasatch Mountains and Juab County. Most hikers use the Nebo Loop Trail for 9 miles round-trip with 3,600 feet of gain on Class 2 terrain."
-      ]
+        "Mount Nebo ranks No. 38 among the 57 ultra-prominent peaks in the contiguous United States, rising 11,928 feet in the Wasatch Range of central Utah, with 5,500 feet of clean prominence. It is the highest and southernmost summit in the Wasatch Range and the high point of Utah County. Most hikers use the North Peak Trail from the North Mount Nebo Trailhead for 9 miles round-trip with about 3,150 feet of gain to the summit on Class 2 terrain.",
+        "The peak's name comes from the biblical mountain from which Moses viewed the Promised Land, and the surrounding Mount Nebo Wilderness preserves roughly 28,000 acres of roadless terrain in the southern Wasatch. Nebo's upper flanks are capped in dark limestone and loose shale, the same rock that defines the scrambling crux on the standard route. The roughly 35–38-mile Nebo Loop National Scenic Byway circles the base and is well-known for autumn foliage.",
+        "Although visible from much of the Wasatch Front, Nebo sits far enough south of Salt Lake City to see lighter traffic than Timpanogos on most summer weekends. Three distinct summits run north to south along its main ridge; the northernmost is the high point."
+      ],
+      "routeDescription": [
+        "The standard approach to the high summit follows North Peak Trail from the North Mount Nebo Trailhead on the east side of the mountain at 9,262 feet. The route covers 9 miles round-trip with 3,150 feet of gain to the summit and approximately 3,650 feet cumulative round-trip. A maintained trail runs the full length of the route, following a fence line from the trailhead before climbing through conifer stands and open ridge terrain. The trail steepens considerably on the approach to Wolf Pass, then ascends the final ridge to the summit on a steep, rocky path with some loose rock and minor exposure. The summit ridge includes multiple high points; the northern summit of Mount Nebo is the high point and the standard objective. Most parties complete the round-trip in 4 to 6 hours.",
+        "Other established routes include the Andrews Ridge approach from the south and the Willow Creek Canyon approach from the west, both less frequently used and longer to the high summit."
+      ],
+      "routeLandmarks": [
+        "North Mount Nebo Trailhead (9,262 ft)",
+        "Northern Summit, Mount Nebo (11,928 ft)"
+      ],
+      "permitsClimbing": "No permit is required to climb Mount Nebo. The North Mount Nebo Trailhead sits on Uinta-Wasatch-Cache National Forest land within the Mount Nebo Wilderness. There is no fee, self-registration, or quota for day use or overnight travel.",
+      "permitsCamping": "Dispersed camping is permitted throughout the Mount Nebo Wilderness with no designated site requirement. No bear canister mandate is generally associated with this area, but food should be secured from wildlife and never left unattended. Campfires are subject to seasonal restrictions that vary by year; consult the Uinta-Wasatch-Cache National Forest for current closure orders before any overnight trip. Developed campgrounds with vault toilets are available along the Nebo Loop Byway for parties preferring frontcountry options. Water may be limited or absent along the standard route; carry what you need from the trailhead and treat any backcountry water.",
+      "wildlife": "No specialized technical skills are required for the standard summer route, though loose-rock scrambling experience is helpful for the final ridge pitch. Loose shale and limestone on the upper ridge create rockfall risk in groups. Afternoon thunderstorms are common July through August; the exposed summit ridge offers no shelter. Snow can linger on the upper trail into late June or early July; microspikes are advisable for early-season travel.",
+      "footnote": "Summit N 39.81610° W 111.65580°. North Mount Nebo Trailhead: N 39.84848° W 111.72217° (9,262 ft). Elevation 11,928 ft; prominence 5,500 ft. Mount Nebo Wilderness, Uinta-Wasatch-Cache National Forest."
     }
   },
   {
@@ -5636,80 +5723,102 @@
     "slug": "mount-lemmon",
     "name": "Mount Lemmon",
     "state": "AZ",
-    "elevation": 9157,
-    "prominence": 5157,
+    "elevation": 9171,
+    "prominence": 5164,
     "latitude": 32.4433,
     "longitude": -110.7882,
-    "difficulty": 4,
+    "difficulty": 1,
     "days": 1,
-    "distanceMin": 10,
-    "distanceMax": 10,
-    "distanceDisplay": "10 miles round-trip",
-    "gainMin": 2800,
-    "gainMax": 2800,
-    "gainDisplay": "2,800 ft",
+    "distanceMin": 4,
+    "distanceMax": 9,
+    "distanceDisplay": "4–9 miles round-trip",
+    "gainMin": 2000,
+    "gainMax": 3500,
+    "gainDisplay": "2,000–3,500 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 10,
-    "gain": 2800,
+    "daysDisplay": "4–6 hours",
+    "distance": 6.5,
+    "gain": 2750,
     "mountainRange": "Santa Catalina Mountains",
-    "season": "April-October",
+    "season": "May-October",
     "hazards": [
       "dehydration",
       "heat-exhaustion",
       "lightning-exposure",
-      "bears",
-      "loose-rock-scree"
+      "wind-extreme-weather",
+      "bears"
     ],
-    "bestRoute": "Aspen Trail / Mount Lemmon Trail",
+    "bestRoute": "Aspen Trail / Marshall Gulch Trail",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Santa Catalina Ranger District (route, class, hazards, permits)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-lemmon.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Lemmon/forecasts/2791",
     "technicalRequirements": [
-      "alpine-start",
-      "off-trail-nav",
-      "water-crossings"
+      "alpine-start"
     ],
     "requiredGear": {
       "priority": [
+        "shell-jacket",
+        "insulating-layer",
         "water-capacity",
+        "trekking-poles"
+      ],
+      "secondary": [
         "sunscreen",
         "sunglasses",
         "hat",
-        "shell-jacket",
-        "high-calorie-food"
-      ],
-      "secondary": [
-        "insulating-layer",
+        "high-calorie-food",
         "compass",
-        "emergency-comm",
-        "insect-repellent",
-        "gloves"
+        "emergency-comm"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The summit is often 20 to 30 degrees Fahrenheit cooler than Tucson, especially during warm-season afternoons. Summer thunderstorms build rapidly on the ridgeline from July through September; plan to be off exposed terrain before midday.",
     "isolation": 52,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity",
+      "trekking_poles"
+    ],
+    "permitFee": "$8 per vehicle",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery",
+        "Santa Catalina Ranger District"
+      ],
+      "notes": "Elevation: traditional/public summit 9,171 ft; PeakBagger LiDAR 9,166.5 ft; ListsOfJohn LiDAR 9,166 ft. Prominence: ListsOfJohn LiDAR 5,164 ft; PeakBagger 5,164.8 ft; map value 5,177 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "No hiking permit required; Coronado National Forest or Interagency pass required at Marshall Gulch ($8 day-use on-site)",
     "content": {
       "overview": [
-        "Mount Lemmon ranks No. 55 among the 57 ultra-prominent peaks in the contiguous United States, rising 9,157 feet in the Santa Catalina Mountains north of Tucson, Arizona with 5,157 feet of clean prominence. It is the highest summit in the Santa Catalina Mountains and one of southern Arizona's major sky islands. Most hikers use the Aspen Trail / Mount Lemmon Trail for 10 miles round-trip with 2,800 feet of gain on Class 1 terrain."
-      ]
+        "Mount Lemmon ranks No. 55 among the 57 ultra-prominent peaks in the contiguous United States, rising 9,171 feet in the Santa Catalina Mountains north of Tucson, Arizona, with 5,164 feet of clean prominence. It is the highest summit in the Santa Catalina Mountains and Pima County. Most hikers use the Aspen Trail and Marshall Gulch Trail from Marshall Gulch for roughly 4 to 9 miles round-trip with about 2,000 to 3,500 feet of gain on Class 1 terrain. A Coronado National Forest or Interagency pass is required to park at Marshall Gulch.",
+        "The peak carries the O'odham name Babad Do'ag, meaning Frog Mountain, and was later named for botanist Sara Plummer Lemmon, who reached the summit on her 1881 honeymoon. The Catalina Highway climbs roughly 27 miles from the desert edge to the summit zone, gaining more than 6,500 feet in the process, an elevation change that compresses the ecological equivalent of driving from Mexico to Canada into a single mountain corridor.",
+        "The summit area supports mixed conifer and fir forest entirely unlike the surrounding Sonoran Desert. This abrupt transition, combined with 5,164 feet of prominence, makes the peak a significant ecological island above the desert floor. The summit zone includes the Lemmon Rock Lookout fire tower and the village of Summerhaven. Mount Lemmon Ski Valley, on the north face near the summit, is widely noted as the southernmost ski area in the continental United States."
+      ],
+      "routeDescription": [
+        "The primary foot approaches to the summit use the Aspen Trail and the Marshall Gulch Trail, both of which begin at Marshall Gulch Picnic Area at the end of the road south of Summerhaven. The two trails are commonly combined as a loop of approximately 3.9 miles with around 1,500 feet of gain. Parties seeking the true summit can continue from Marshall Saddle via the Aspen Trail's upper section toward the summit zone, adding mileage and gain; because roads reach the upper mountain, total hiking distance and elevation gain vary considerably depending on chosen trailhead and finishing point. The terrain is maintained trail throughout, remaining Class 1 with no scrambling required. The Lemmon Rock Lookout Trail provides an alternate approach from a different point along the Catalina Highway."
+      ],
+      "routeLandmarks": [
+        "Marshall Gulch Picnic Area (standard trailhead south of Summerhaven)",
+        "Marshall Saddle (junction for summit extension via upper Aspen Trail)",
+        "Lemmon Rock Lookout Trail (alternate Catalina Highway approach)"
+      ],
+      "permitsClimbing": "No hiking permit or trail quota applies on Mount Lemmon or in the surrounding Santa Catalinas within Coronado National Forest. Parking at Marshall Gulch Picnic Area requires a Coronado National Forest or Interagency pass; day-use passes are available on-site for $8 per vehicle. Marshall Gulch is a day-use area; overnight parking for backpackers is permitted at the trailhead only, and picnicking overnight is not permitted. Confirm current fee rules and any seasonal gate closures with the Santa Catalina Ranger District before your trip.",
+      "permitsCamping": "Dispersed camping is available on Coronado National Forest land in the Santa Catalinas at no charge, subject to current fire restrictions and camping regulations. The upper Catalina Highway gate is closed seasonally from December 15 through February 28, restricting vehicle access to the Marshall Gulch area during that period. Fire restrictions are common and can be strict in this region; check current conditions with the Santa Catalina Ranger District before any overnight trip.",
+      "wildlife": "Mount Lemmon is Class 1 on maintained trails for all standard foot routes. No technical gear or scrambling skills are required under normal conditions. The primary hazards are weather: summer thunderstorms can develop quickly above the ridgeline between July and September, and winter can bring snow, ice, road closures, and hazardous footing at upper elevations. Wind exposure near the summit is significant year-round. The mountain's southerly latitude means winter snow melts faster than on ranges farther north, but upper trails can remain icy or snow-covered from late fall through early spring.",
+      "footnote": "Summit N 32.44330° W 110.78820°. Marshall Gulch Picnic Area: N 32.42806° W 110.75528°. Elevation 9,171 ft; prominence 5,164 ft. Coronado National Forest, Santa Catalina Mountains."
     }
   },
   {
