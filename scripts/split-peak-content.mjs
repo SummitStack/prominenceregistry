@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * Split long-form peak article content out of src/data/peaks.json.
+ * Split long-form peak article content out of src/data/peaks.ts.
  *
  * What it does with --apply:
- * 1. Reads src/data/peaks.json
+ * 1. Reads src/data/peaks.ts
  * 2. Removes each peak.content object from the main peak records
  * 3. Writes slim records to src/data/peaks/peaks.json
  * 4. Writes extracted content records to src/data/peaks/content.json
@@ -30,7 +30,7 @@ const apply = args.has('--apply');
 const rewriteImports = args.has('--rewrite-imports');
 
 const root = process.cwd();
-const sourcePath = path.join(root, 'src/data/peaks.json');
+const sourcePath = path.join(root, 'src/data/peaks.ts');
 const splitDir = path.join(root, 'src/data/peaks');
 const slimPath = path.join(splitDir, 'peaks.json');
 const contentPath = path.join(splitDir, 'content.json');
@@ -80,7 +80,7 @@ function rewritePeakImports() {
     const before = text;
 
     // Handles imports such as:
-    // import peaks from '../data/peaks.json'
+    // import peaks from '../data/peaks'
     // import peaks from '../../data/peaks.json'
     // import peaks from '@/data/peaks.json'
     // import('../data/peaks.json')
@@ -96,7 +96,7 @@ function rewritePeakImports() {
 }
 
 const peaks = readJson(sourcePath);
-assert(Array.isArray(peaks), 'Expected src/data/peaks.json to be a JSON array.');
+assert(Array.isArray(peaks), 'Expected src/data/peaks.ts to be a JSON array.');
 
 const seen = new Set();
 const duplicateSlugs = [];

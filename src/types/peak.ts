@@ -1,6 +1,6 @@
 /**
  * Peak metadata used for page rendering and schema.org JSON-LD generation.
- * Source of truth: src/data/peaks.json
+ * Source of truth: src/data/peaks.ts
  */
 
 export type PeakContent = {

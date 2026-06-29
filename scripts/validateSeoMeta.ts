@@ -1,4 +1,4 @@
-import peaksData from '../src/data/peaks.json';
+import peaksData from '../src/data/peaks';
 import {
   ABOUT_META_DESCRIPTION,
   ABOUT_META_TITLE,

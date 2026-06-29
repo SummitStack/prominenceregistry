@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const peaksPath = join(__dirname, '../src/data/peaks.json');
+const peaksPath = join(__dirname, '../src/data/peaks.ts');
 const BASE = 'https://www.mountain-forecast.com';
 
 const STATE_NAMES = {

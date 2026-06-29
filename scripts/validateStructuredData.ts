@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 
-import peaksData from '../src/data/peaks.json';
+import peaksData from '../src/data/peaks';
 import { SITE_URL } from '../src/lib/constants.ts';
 import { getPeakHeroImageUrl } from '../src/lib/schema-generator.ts';
 import { buildPeakImageAlt } from '../src/utils/imageHelpers.ts';

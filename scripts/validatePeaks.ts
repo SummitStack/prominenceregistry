@@ -1,4 +1,4 @@
-import peaksData from '../src/data/peaks.json';
+import peaksData from '../src/data/peaks';
 import { PeaksArraySchema } from '../src/data/peakSchema';
 
 const result = PeaksArraySchema.safeParse(peaksData);

@@ -17,7 +17,7 @@ import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const PEAKS_PATH = path.join(ROOT, 'src/data/peaks.json');
+const PEAKS_PATH = path.join(ROOT, 'src/data/peaks.ts');
 const RAW_DIR = path.join(ROOT, 'public/images/peaks/raw');
 const LEGACY_DIR = path.join(ROOT, 'public/images/peaks');
 const OPTIMIZED_DIR = path.join(ROOT, 'public/images/peaks/optimized');
