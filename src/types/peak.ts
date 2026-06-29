@@ -18,7 +18,7 @@ export type RequiredGear = {
   secondary?: string[];
 };
 
-/** Peak record from peaks.json, with fields required for schema generation. */
+/** Peak record from joined peak data, with fields required for schema generation. */
 export type Peak = {
   slug: string;
   name: string;
@@ -35,7 +35,7 @@ export type Peak = {
   alternateName?: string;
   bestRoute?: string;
   heroImage?: string;
-  content?: PeakContent;
+  content?: PeakContent | null;
   hazards?: string[];
   technicalRequirements?: string[];
   requiredGear?: RequiredGear;
