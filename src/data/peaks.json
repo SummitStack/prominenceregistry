@@ -5648,75 +5648,101 @@
     "slug": "abercrombie-mountain",
     "name": "Abercrombie Mountain",
     "state": "WA",
-    "elevation": 7308,
-    "prominence": 5168,
-    "difficulty": 4,
+    "elevation": 7310,
+    "prominence": 5174,
+    "difficulty": 2,
     "days": 1,
-    "distanceMin": 7,
-    "distanceMax": 7,
-    "distanceDisplay": "7 miles round-trip",
-    "gainMin": 3200,
-    "gainMax": 3200,
-    "gainDisplay": "3,200 ft",
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 2300,
+    "gainMax": 2300,
+    "gainDisplay": "2,300 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
-    "distance": 7,
-    "gain": 3200,
+    "daysDisplay": "4–6 hours",
+    "distance": 8,
+    "gain": 2300,
     "mountainRange": "Selkirk Mountains",
-    "season": "June-September",
+    "season": "June-October",
     "hazards": [
-      "altitude-sickness",
-      "exposure",
-      "hypothermia",
+      "bears",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "dehydration",
       "wind-extreme-weather"
     ],
-    "bestRoute": "Marble Creek — West Ridge",
+    "bestRoute": "Flume Creek Trail #502 (Eastern Approach)",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Colville National Forest, Willhite Web, Out There Outdoors, Peakbagger, SummitPost, WTA",
     "ydsClass": "2",
     "heroImage": "/images/peaks/abercrombie-mountain.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Abercrombie-Peak/forecasts/2175",
     "technicalRequirements": [
-      "altitude-acclimatization",
+      "rock-scrambling-loose",
       "alpine-start"
     ],
     "requiredGear": {
       "priority": [
-        "insulating-layer",
+        "insect-repellent",
+        "trekking-poles",
         "shell-jacket",
-        "gloves",
-        "insulating-hat",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat",
         "water-capacity"
-      ],
-      "secondary": [
-        "compass",
-        "emergency-comm",
-        "helmet"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Start early to reduce exposure to afternoon thunderstorms, which develop rapidly mid-summer over exposed alpine terrain where the summit offers minimal shelter.",
     "latitude": 48.9281,
     "longitude": -118.2764,
     "isolation": 14,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Colville National Forest",
+        "Peakbagger",
+        "SummitPost",
+        "WTA",
+        "Out There Outdoors",
+        "Willhite Web"
+      ],
+      "notes": "Elevation: traditional/public value 7,310 ft; Peakbagger LiDAR lists 7,314.4 ft. Prominence: Peakbagger clean prominence 5,174 ft; optimistic prominence is 5,194 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "No permit required for day hiking on Colville National Forest land",
     "content": {
       "overview": [
-        "Abercrombie Mountain ranks No. 53 among the 57 ultra-prominent peaks in the contiguous United States, rising 7,308 feet in the Selkirk Mountains of northeastern Washington with 5,168 feet of clean prominence. It is the highest summit in northeast Washington and the Stevens County high point. Most hikers use the Marble Creek — West Ridge route for 7 miles round-trip with 3,200 feet of gain on Class 2 terrain."
-      ]
+        "Abercrombie Mountain ranks No. 53 among the 57 ultra-prominent peaks in the contiguous United States, rising 7,310 feet in the Selkirk Mountains of northeastern Washington, with 5,174 feet of clean prominence. It is the highest point in Stevens County and often cited as the second-highest peak in eastern Washington. Most hikers use Flume Creek Trail #502 for 8 miles round-trip with 2,300 feet of gain on Class 1–2 terrain.",
+        "Although modest by Cascade standards, Abercrombie towers above the Pend Oreille River valley and the surrounding Colville National Forest in one of Washington's quieter and more isolated mountain settings.",
+        "Named for Lieutenant William R. Abercrombie, who explored the nearby Pend Oreille River in 1879 and 1883, the mountain served as the site of a fire lookout tower from 1934 until its demolition in the 1960s. Stone steps and a small stone shelter remain at the summit along with a peak register."
+      ],
+      "routeDescription": [
+        "The standard eastern approach follows Flume Creek Trail #502 from the Flume Creek Trailhead at 5,120 feet. The route covers 8 miles round-trip with 2,300 feet of gain over moderate grades, climbing roughly 3.9 miles one way through forested terrain with several creek crossings. Dry campsites lie along the trail at 1.9 and 3.1 miles for parties making an overnight trip.",
+        "At 3.1 miles and approximately 6,700 feet, the trail reaches a junction with Abercrombie Trail; bear right toward the summit. The final 0.8 mile steepens considerably over loose talus and scree to the open summit plateau. Most parties complete the round-trip in 4 to 6 hours."
+      ],
+      "routeLandmarks": [
+        "Flume Creek Trailhead (5,120 ft) — limited parking; accessed via FR 6200350 / Flume Creek Road from Boundary Road north of Metaline Falls",
+        "Campsite areas (1.9 miles and 3.1 miles) — dry campsites",
+        "Trail junction with Abercrombie Trail (3.1 miles, ~6,700 ft) — bear right",
+        "Summit plateau (7,310 ft) — fire lookout remnants, peak register"
+      ],
+      "permitsClimbing": "No permit is required to climb Abercrombie Mountain. The route lies on Colville National Forest land with no fee, self-registration, or quota for day use.",
+      "permitsCamping": "Two dry campsites lie along the standard route at 1.9 and 3.1 miles. Dispersed camping is allowed elsewhere on National Forest land subject to current regulations. Bear-resistant food storage is required; use an IGBC-approved container or approved hang method. Pack out all waste.",
+      "wildlife": "No specialized technical skills are required beyond standard hiking and Class 1–2 scrambling on the final talus section. Grizzly bears inhabit the broader Selkirk ecosystem; store food securely and keep a clean camp. Mosquitoes can be intense from June through August. Afternoon thunderstorms develop rapidly over exposed alpine terrain in mid-summer. The final 0.8 mile crosses loose talus and scree. Forest Road 6200350 / Flume Creek Road to the trailhead is rough and may require high-clearance vehicles. The peak sits in a remote corner of northeastern Washington with limited services nearby.",
+      "footnote": "Sources: Colville National Forest Recreation | Willhite Web | Out There Outdoors | Peakbagger | SummitPost | WTA"
     }
   },
   {
