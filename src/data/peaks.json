@@ -4831,84 +4831,111 @@
     "name": "Mount Stuart",
     "state": "WA",
     "elevation": 9415,
-    "prominence": 5335,
-    "latitude": 47.4654,
-    "longitude": -120.9013,
-    "difficulty": 7,
+    "prominence": 5354,
+    "latitude": 47.43671,
+    "longitude": -120.93711,
+    "difficulty": 3,
     "days": 2,
     "distanceMin": 12,
-    "distanceMax": 16,
-    "distanceDisplay": "~12–16 miles round-trip",
-    "gainMin": 4400,
-    "gainMax": 5600,
-    "gainDisplay": "~4,400–5,600 ft",
+    "distanceMax": 13,
+    "distanceDisplay": "12–13 miles round-trip",
+    "gainMin": 8000,
+    "gainMax": 8000,
+    "gainDisplay": "8,000 ft",
     "daysMin": 1,
     "daysMax": 2,
     "daysDisplay": "1–2 days",
-    "distance": 14,
-    "gain": 5000,
+    "distance": 12.5,
+    "gain": 8000,
     "mountainRange": "Stuart Range",
-    "season": "July-September",
+    "season": "June-October",
     "hazards": [
-      "crevasse-fall",
       "rockfall",
       "scrambling-exposed",
-      "hypothermia",
       "loose-rock-scree",
-      "exposure"
+      "off-trail-navigation",
+      "exposure",
+      "hypothermia",
+      "wind-extreme-weather"
     ],
     "bestRoute": "Cascadian Couloir",
     "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "dataSource": "Okanogan-Wenatchee National Forest, USGS, Peakbagger, SummitPost, Cascade Alpine Guides",
     "ydsClass": "3",
     "heroImage": "/images/peaks/mount-stuart.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Stuart/forecasts/2869",
     "technicalRequirements": [
-      "glacier-travel",
       "exposed-scrambling",
-      "alpine-start",
-      "snow-travel",
-      "off-trail-nav"
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "alpine-start"
     ],
     "requiredGear": {
       "priority": [
-        "ice-axe",
-        "crampons",
         "helmet",
         "insulating-layer",
         "shell-jacket",
-        "gaiters",
-        "sunscreen"
+        "trekking-poles",
+        "compass",
+        "water-capacity"
       ],
       "secondary": [
+        "ice-axe",
+        "crampons",
         "microspikes",
-        "water-capacity",
+        "gloves",
         "emergency-comm",
-        "high-calorie-food",
-        "compass",
-        "gloves"
+        "high-calorie-food"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Rockfall is a serious overhead hazard in the Cascadian Couloir, especially when multiple parties are active. A climbing helmet should be considered essential. Route-finding on the upper mountain is complex and unmarked; carry a topographic map, GPS track, and the skills to navigate without relying on cairns alone. Early-season ascents may require an ice axe, crampons, and snow-climbing experience.",
     "isolation": 45,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Northwest Forest Pass or equivalent required at trailhead",
+    "published": true,
+    "permitStatus": "fee",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Okanogan-Wenatchee National Forest",
+        "USGS",
+        "Peakbagger",
+        "SummitPost",
+        "Cascade Alpine Guides"
+      ],
+      "notes": "Prominence: 5,354 ft clean prominence per editorial sources; prior database value 5,335 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "No climbing permit required; Northwest Forest Pass or federal interagency pass required at Esmeralda Trailhead",
     "content": {
       "overview": [
-        "Mount Stuart ranks No. 45 among the 57 ultra-prominent peaks in the contiguous United States, rising 9,415 feet in the Stuart Range of central Washington with 5,335 feet of clean prominence. It is the highest non-volcanic summit in Washington and the dominant peak of the Alpine Lakes Wilderness. Most climbers use the Cascadian Couloir for roughly 12 to 16 miles round-trip with about 4,400 to 5,600 feet of gain on Class 3 snow and rock."
-      ]
+        "Mount Stuart ranks No. 45 among the 57 ultra-prominent peaks in the contiguous United States, rising 9,415 feet in the Stuart Range of central Washington, with 5,354 feet of clean prominence. It is the highest non-volcanic summit in Washington and the dominant peak of the Alpine Lakes Wilderness. Most climbers use the Cascadian Couloir for 12 to 13 miles round-trip with about 8,000 feet of cumulative gain on Class 3 terrain.",
+        "Mount Stuart commands attention not through raw elevation alone but through staggering local relief: the south face rises roughly 5,000 feet in about 2 horizontal miles of granite relief. While the peak is known for excellent rock on many technical routes, the standard Cascadian Couloir follows looser gullies, scree, and broken terrain that define the nontechnical ascent.",
+        "The peak was named in September 1853 by surveyor George B. McClellan in honor of a fallen friend. Mount Stuart's proximity to Seattle, combined with its alpine setting, complex route-finding, and surrounding lakes and granite basins, makes it a destination for experienced scramblers and climbers capable of managing loose terrain, rockfall hazard, and extended wilderness approaches."
+      ],
+      "routeDescription": [
+        "The Cascadian Couloir is the standard and most frequently traveled nontechnical route to the summit. Parties typically begin at the Esmeralda Trailhead, ascend toward Longs Pass, then descend into the Ingalls Creek basin, a common overnight area. From Ingalls Creek, the route continues toward the south side of Mount Stuart and ascends the Cascadian Couloir, a broad gully system of loose rock, sand, scree, and intermittent boot paths.",
+        "The couloir gains roughly 2,000 feet and is notorious for rockfall, especially when multiple parties are above one another. Above the couloir, climbers navigate broken terrain, intermittent cairns, and false summits before reaching the summit area. The easiest line is generally Class 3, with sustained loose Class 2 travel and short sections of exposed scrambling near the top. Strong parties may complete the climb in a long day, but many parties climb it as a two-day trip with a camp near Ingalls Creek."
+      ],
+      "routeLandmarks": [
+        "Esmeralda Trailhead (5,400 ft)",
+        "Longs Pass (6,300 ft)",
+        "Ingalls Creek Camp (5,400 ft)",
+        "Cascadian Couloir base (7,000 ft)",
+        "False summit (9,100 ft)"
+      ],
+      "permitsClimbing": "No climbing permit is required for Mount Stuart by the standard Cascadian Couloir route. A valid Northwest Forest Pass or equivalent federal recreation pass is typically required for parking at the Esmeralda Trailhead. Confirm current pass requirements and purchase options with the Okanogan-Wenatchee National Forest before departure.",
+      "permitsCamping": "Ingalls Creek is the common overnight area for parties using the Cascadian Couloir, with established campsites and seasonal water nearby. Above Ingalls Creek, reliable water should not be expected except from seasonal snowmelt. Camp at least 100 feet from water sources and trails, use durable surfaces, and pack out all waste. Other approaches near Ingalls Lake or the Enchantments may be subject to different wilderness rules, seasonal restrictions, or permit zones; confirm current regulations before planning an alternate camp. Campfire restrictions, food-storage requirements, and group-size limits vary by zone and season, so check current Alpine Lakes Wilderness regulations before departure.",
+      "wildlife": "Mount Stuart demands advanced scrambling ability on steep, loose granite, scree, and talus. Route-finding is difficult on the upper mountain, where confusing paths and intermittent cairns create navigation hazards. Excellent map-reading and navigation skills are essential. Climbers should be comfortable moving on steep, unprotected talus and broken rock, with enough fitness and judgment for self-rescue in remote alpine terrain. Helmet use is strongly advised due to frequent overhead rockfall risk, especially in and below the couloir.",
+      "footnote": "Sources: Okanogan-Wenatchee National Forest | USGS | Peakbagger | SummitPost | Cascade Alpine Guides"
     }
   },
   {
