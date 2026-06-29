@@ -348,9 +348,18 @@
     {
       "slug": "lassen-peak",
       "name": "Lassen Peak",
-      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Lassen-Peak-Large.jpg",
       "has_raw_image": true,
-      "needs_image": "no"
+      "needs_image": "no",
+      "archived_images": [
+        {
+          "role": "previous-hero",
+          "is_hero": false,
+          "primary_image_url": "https://commons.wikimedia.org/wiki/File:Lassen_Peak_in_June_2020.jpg",
+          "raw": "raw-sources/lassen-peak-previous-hero.jpg",
+          "optimized_dir": "archived/lassen-peak/lassen-peak-june-2020-previous-hero"
+        }
+      ]
     },
     {
       "slug": "mount-cleveland",
