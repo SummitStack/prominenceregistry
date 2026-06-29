@@ -4,7 +4,7 @@ export const MAX_META_DESCRIPTION_LENGTH = 155;
 export const MAX_META_TITLE_LENGTH = 80;
 
 export const HOMEPAGE_META_TITLE =
-  'Ultra-Prominent Peaks of the Lower 48 | Prominence Registry';
+  '57 Ultra-Prominent Peaks of the Lower 48: Ranked List & Route Guides';
 
 export const ABOUT_META_TITLE = 'About Prominence Registry | Ultra-Prominent Peak Guides';
 
@@ -12,7 +12,7 @@ export const GLOSSARY_META_TITLE =
   'Mountaineering & Topographic Glossary | Prominence Registry';
 
 export const HOMEPAGE_META_DESCRIPTION =
-  'Explore the 57 ultra-prominent peaks of the lower 48 with elevation, prominence, key col, isolation, route class, permits, and planning notes.';
+  'A ranked guide to all 57 lower-48 ultra-prominent peaks, with elevation, prominence, routes, permits, difficulty, hazards, and planning notes.';
 
 export const GLOSSARY_META_DESCRIPTION =
   'Definitions of prominence, isolation, key col, YDS class, exposure, glacier travel, and other terms used throughout Prominence Registry.';
@@ -21,14 +21,36 @@ export const ABOUT_META_DESCRIPTION =
   'Learn why Prominence Registry publishes carefully sourced route, permit, and planning guides for the 57 ultra-prominent peaks of the lower 48.';
 
 const PEAK_TITLE_OVERRIDES: Record<string, string> = {
-  'mount-whitney': 'Mount Whitney – Prominence, Permits, and Hiking Routes',
-  'mount-shasta': 'Mount Shasta – Prominence, Permits, and Hiking Routes',
-  'grand-teton': 'Grand Teton – Prominence, Permits, and Climbing Routes',
-  'mount-olympus': 'Mount Olympus – Prominence and Climbing Routes',
-  'sierra-blanca-peak': 'Sierra Blanca Peak – Prominence, Access, and Hiking Routes',
-  'mcdonald-peak': 'McDonald Peak – Prominence, Access, and Hiking Routes',
-  'snowshoe-peak': 'Snowshoe Peak – Prominence and Climbing Routes',
-  'south-sister': 'South Sister – Prominence, Permits, and Hiking Routes',
+  'mount-rainier': 'Mount Rainier Climbing Guide: Permits, Route, Gear & Hazards',
+  'mount-whitney': 'Mount Whitney Hiking Guide: Permits, Route, Elevation & Difficulty',
+  'mount-shasta': 'Mount Shasta Climbing Guide: Permits, Route, Gear & Hazards',
+  'grand-teton': 'Grand Teton Climbing Guide: Route, Permits, Gear & Hazards',
+  'mount-olympus': 'Mount Olympus Climbing Guide: Route, Permits, Gear & Hazards',
+  'sierra-blanca-peak': 'Sierra Blanca Peak Access Guide: Route, Permits & Planning',
+  'mcdonald-peak': 'McDonald Peak Access Guide: Route, Permits & Planning',
+  'snowshoe-peak': 'Snowshoe Peak Climbing Guide: Route, Gear & Hazards',
+  'south-sister': 'South Sister Hiking Guide: Permits, Route & Difficulty',
+};
+
+const PEAK_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  'mount-rainier':
+    'Plan Mount Rainier via Disappointment Cleaver with permits, camps, glacier gear, hazards, season timing, and summit logistics.',
+  'mount-whitney':
+    'Plan Mount Whitney with the main trail route, lottery permit rules, camps, mileage, gain, altitude risks, and summit-day logistics.',
+  'mount-shasta':
+    'Avalanche Gulch guide with summit pass rules, Bunny Flat approach, Helen Lake camping, spring snow gear, hazards, and season timing.',
+  'grand-teton':
+    'Plan Grand Teton with route options, climbing permits, camping zones, technical gear, exposure, hazards, and season timing.',
+  'mount-olympus':
+    'Plan Mount Olympus with Blue Glacier access, wilderness permits, camps, glacier travel, summit block climbing, and approach mileage.',
+  'south-sister':
+    'Plan South Sister with the standard route, Central Cascades permits, mileage, elevation gain, season timing, and volcanic terrain notes.',
+  'sierra-blanca-peak':
+    'Sierra Blanca Peak guide with access rules, route context, permits, elevation, prominence, terrain notes, and planning cautions.',
+  'mcdonald-peak':
+    'McDonald Peak guide with Flathead Reservation access, seasonal closure rules, route context, terrain, hazards, and planning notes.',
+  'snowshoe-peak':
+    'Snowshoe Peak guide with Cabinet Range access, route difficulty, scrambling hazards, mileage, gain, season timing, and planning notes.',
 };
 
 /** Class 1–3 trail/scramble peaks that should not use the Climbing Routes title. */
@@ -179,11 +201,35 @@ function isPermitHeavyPeak(peak: Peak): boolean {
   );
 }
 
+function isHikingRoutePeak(peak: Peak): boolean {
+  return HIKE_ROUTE_SLUGS.has(peak.slug) || !isTechnicalClimbingPeak(peak);
+}
+
+function fitTitle(primary: string, peak: Peak): string {
+  if (primary.length <= MAX_META_TITLE_LENGTH) {
+    return primary;
+  }
+
+  const fallback = isTechnicalClimbingPeak(peak)
+    ? `${peak.name} Guide: Route, Gear & Hazards`
+    : isAccessSensitivePeak(peak)
+      ? `${peak.name} Guide: Access, Route & Planning`
+      : isPermitHeavyPeak(peak)
+        ? `${peak.name} Guide: Route, Permits & Difficulty`
+        : `${peak.name} Hiking Guide: Route & Difficulty`;
+
+  if (fallback.length <= MAX_META_TITLE_LENGTH) {
+    return fallback;
+  }
+
+  return `${peak.name} Guide | Prominence Registry`;
+}
+
 function buildHikingRouteTitle(peak: Peak): string {
   if (isPermitHeavyPeak(peak)) {
-    return `${peak.name} – Prominence, Permits, and Hiking Routes`;
+    return fitTitle(`${peak.name} Hiking Guide: Route, Permits, Elevation & Difficulty`, peak);
   }
-  return `${peak.name} – Prominence and Hiking Routes`;
+  return fitTitle(`${peak.name} Hiking Guide: Route, Elevation & Difficulty`, peak);
 }
 
 export function buildPeakPageTitle(peak: Peak): string {
@@ -195,44 +241,88 @@ export function buildPeakPageTitle(peak: Peak): string {
   const { name } = peak;
 
   if (isAccessSensitivePeak(peak)) {
-    return `${name} – Prominence, Access, and Hiking Routes`;
+    return fitTitle(`${name} Access Guide: Route, Permits, Restrictions & Planning`, peak);
   }
 
-  if (HIKE_ROUTE_SLUGS.has(peak.slug)) {
+  if (isHikingRoutePeak(peak)) {
     return buildHikingRouteTitle(peak);
   }
 
   if (isTechnicalClimbingPeak(peak)) {
     if (isPermitHeavyPeak(peak)) {
-      return `${name} – Prominence, Permits, and Climbing Routes`;
+      return fitTitle(`${name} Climbing Guide: Route, Permits, Gear & Hazards`, peak);
     }
-    return `${name} – Prominence and Climbing Routes`;
+    return fitTitle(`${name} Climbing Guide: Route, Gear & Hazards`, peak);
   }
 
-  if (isPermitHeavyPeak(peak)) {
-    return `${name} – Prominence, Permits, and Hiking Routes`;
+  return buildHikingRouteTitle(peak);
+}
+
+function formatRouteForDescription(peak: Peak): string | null {
+  if (typeof peak.bestRoute !== 'string' || peak.bestRoute.trim().length === 0) {
+    return null;
   }
 
-  return `${name} – Prominence and Hiking Routes`;
+  return peak.bestRoute
+    .trim()
+    .replace(/^the\s+/i, '')
+    .replace(/\s+/g, ' ');
+}
+
+function buildDescriptionCandidates(peak: Peak): string[] {
+  const elevation = peak.elevation.toLocaleString('en-US');
+  const prominence = peak.prominence.toLocaleString('en-US');
+  const ydsClass = typeof peak.ydsClass === 'string' && peak.ydsClass.length > 0 ? peak.ydsClass : null;
+  const route = formatRouteForDescription(peak);
+  const routePhrase = route ? ` via ${route}` : '';
+  const permitPhrase = isPermitHeavyPeak(peak)
+    ? 'permits'
+    : peak.permitRequired === true
+      ? 'permit rules'
+      : 'access';
+  const routeAndStats = route
+    ? `${route} route, ${elevation} ft elevation, ${prominence} ft prominence`
+    : `${elevation} ft elevation, ${prominence} ft prominence`;
+
+  if (isAccessSensitivePeak(peak)) {
+    return [
+      `${peak.name} guide with ${permitPhrase}, restrictions, route context, terrain notes, elevation, prominence, and planning cautions.`,
+      `${peak.name}: access, restrictions, route planning, terrain, ${elevation} ft elevation, and ${prominence} ft prominence.`,
+    ];
+  }
+
+  if (isTechnicalClimbingPeak(peak)) {
+    return [
+      `Plan ${peak.name}${routePhrase} with ${permitPhrase}, gear, hazards, season timing, route notes, elevation, and prominence.`,
+      `${peak.name} climbing guide: ${routeAndStats}, gear, hazards, season timing, and planning notes.`,
+    ];
+  }
+
+  return [
+    `Plan ${peak.name}${routePhrase} with ${permitPhrase}, mileage, gain, difficulty, season timing, elevation, and prominence.`,
+    `${peak.name} hiking guide: ${routeAndStats}, difficulty, mileage, gain, season timing, and planning notes.`,
+    `${peak.name}: ${elevation} ft elevation, ${prominence} ft prominence, Class ${ydsClass ?? '—'}, route and planning guide.`,
+  ];
 }
 
 export function buildPeakSeoDescription(peak: Peak): string {
-  const ydsClass =
-    typeof peak.ydsClass === 'string' && peak.ydsClass.length > 0 ? peak.ydsClass : '—';
-  const elevation = peak.elevation.toLocaleString('en-US');
-  const prominence = peak.prominence.toLocaleString('en-US');
-  const accessTail =
-    peak.permitRequired === true
-      ? 'permits, and planning notes.'
-      : 'access, and planning notes.';
-
-  const primary = `${peak.name} guide: ${elevation} ft elevation, ${prominence} ft prominence, Class ${ydsClass}, standard route, ${accessTail}`;
-
-  if (primary.length <= MAX_META_DESCRIPTION_LENGTH) {
-    return primary;
+  const override = PEAK_DESCRIPTION_OVERRIDES[peak.slug];
+  if (override) {
+    return override;
   }
 
-  return `${peak.name}: ${elevation} ft elevation, ${prominence} ft prominence, Class ${ydsClass}, route and planning guide.`;
+  const candidates = buildDescriptionCandidates(peak);
+  const validCandidate = candidates.find(
+    (candidate) => candidate.length <= MAX_META_DESCRIPTION_LENGTH,
+  );
+
+  if (validCandidate) {
+    return validCandidate;
+  }
+
+  const elevation = peak.elevation.toLocaleString('en-US');
+  const prominence = peak.prominence.toLocaleString('en-US');
+  return `${peak.name}: ${elevation} ft elevation, ${prominence} ft prominence, route, difficulty, access, and planning guide.`;
 }
 
 export function buildPeakSeoTitle(peak: Peak): string {
@@ -240,17 +330,17 @@ export function buildPeakSeoTitle(peak: Peak): string {
 }
 
 export function getPeakPageTitleBucket(title: string): string {
-  if (title.includes('Permits, and Climbing Routes')) {
-    return 'Permits and Climbing Routes';
+  if (title.includes('Access Guide')) {
+    return 'Access Guide';
   }
-  if (title.includes('Permits, and Hiking Routes')) {
-    return 'Permits and Hiking Routes';
+  if (title.includes('Climbing Guide')) {
+    return 'Climbing Guide';
   }
-  if (title.includes('Access, and Hiking Routes')) {
-    return 'Access and Hiking Routes';
+  if (title.includes('Hiking Guide')) {
+    return 'Hiking Guide';
   }
-  if (title.includes('and Climbing Routes')) {
-    return 'Climbing Routes';
+  if (title.includes('Guide: Route, Permits')) {
+    return 'Route and Permits Guide';
   }
-  return 'Hiking Routes';
+  return 'Route Guide';
 }
