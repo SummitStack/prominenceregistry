@@ -1,0 +1,5058 @@
+[
+  {
+    "slug": "mount-rainier",
+    "name": "Mount Rainier",
+    "state": "WA",
+    "elevation": 14406,
+    "prominence": 13257,
+    "difficulty": 8,
+    "days": 3,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 7900,
+    "gainMax": 10100,
+    "gainDisplay": "~7,900–10,100 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 15,
+    "gain": 9000,
+    "mountainRange": "Cascade Range",
+    "season": "Late May-Mid-September",
+    "hazards": [
+      "crevasse-fall",
+      "bergschrund",
+      "rockfall",
+      "avalanche",
+      "altitude-sickness",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "bestRoute": "Disappointment Cleaver",
+    "permitRequired": true,
+    "dataSource": "Recreation.gov, Mount Rainier National Park (NPS), USGS Cascades Volcano Observatory, The Mountaineers, Washington Trails Association",
+    "ydsClass": "3",
+    "permitSeason": "Climbing permit required for glacier travel or above ~10,000 ft; wilderness reservations via Recreation.gov May–September",
+    "heroImage": "/images/peaks/mount-rainier.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Rainier/forecasts/4392",
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunglasses",
+        "sunscreen",
+        "gaiters",
+        "gloves",
+        "insulating-hat",
+        "shell-pants",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Alpine starts are standard on the Disappointment Cleaver route. Parties usually leave high camp at night or in the early morning to move through crevassed terrain and rockfall-prone sections before daytime warming increases hazard. Turnaround times should be firm, especially if weather, route conditions, or team pace deteriorate.",
+    "latitude": 46.8517,
+    "longitude": -121.7562,
+    "isolation": 733,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Verify current NPS fee",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-whitney",
+    "name": "Mount Whitney",
+    "state": "CA",
+    "elevation": 14505,
+    "prominence": 10075,
+    "difficulty": 5,
+    "days": 2,
+    "distanceMin": 19,
+    "distanceMax": 25,
+    "distanceDisplay": "~19–25 miles round-trip",
+    "gainMin": 5350,
+    "gainMax": 6850,
+    "gainDisplay": "~5,350–6,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 22,
+    "gain": 6100,
+    "mountainRange": "Sierra Nevada",
+    "season": "May-November",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "bears"
+    ],
+    "bestRoute": "Mount Whitney Trail",
+    "permitRequired": true,
+    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "ydsClass": "1",
+    "permitSeason": "May 1–November 1 (quota lottery); year-round wilderness permit required",
+    "heroImage": "/images/peaks/mount-whitney.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Whitney/forecasts/4418",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "exposed-scrambling",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "gloves",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "A pre-dawn start from Trail Camp, often around 4 AM, is strongly recommended for summit-day hikers. The upper mountain is fully exposed to afternoon thunderstorms and high winds. Experienced parties prioritize an early summit and descent.",
+    "latitude": 36.5786,
+    "longitude": -118.2921,
+    "isolation": 1650,
+    "gear": [
+      "bear_canister",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free (wilderness permit required)",
+    "published": true,
+    "permitStatus": "lottery",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Inyo National Forest",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-shasta",
+    "name": "Mount Shasta",
+    "state": "CA",
+    "elevation": 14163,
+    "prominence": 9761,
+    "difficulty": 7,
+    "days": 2,
+    "distanceMin": 10,
+    "distanceMax": 12,
+    "distanceDisplay": "~10–12 miles round-trip",
+    "gainMin": 6150,
+    "gainMax": 7850,
+    "gainDisplay": "~6,150–7,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 11,
+    "gain": 7000,
+    "mountainRange": "Cascade Range",
+    "season": "Late Spring-Early Summer",
+    "hazards": [
+      "altitude-sickness",
+      "wind-extreme-weather",
+      "whiteout-conditions",
+      "avalanche",
+      "rockfall",
+      "loose-rock-scree"
+    ],
+    "bestRoute": "Avalanche Gulch",
+    "permitRequired": true,
+    "dataSource": "Shasta-Trinity National Forest, SummitPost, PeakBagger, USGS, trip reports",
+    "ydsClass": "2",
+    "permitSeason": "Free wilderness permit year-round; $25 summit pass above 10,000 ft (3 days) or $30 annual pass",
+    "heroImage": "/images/peaks/mount-shasta.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Shasta/forecasts/4317",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel",
+      "glacier-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "avalanche-gear",
+        "gloves",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "compass",
+        "gaiters",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Avalanche Gulch is often climbed on firm spring snow, when crampons and ice axe are standard equipment. Start early, ascend while the snow is firm, and descend before afternoon warming increases rockfall, wet-slide, and soft-snow hazards. In dry late-season conditions, expect loose scree, increased rockfall exposure, and slow travel.",
+    "latitude": 41.4092,
+    "longitude": -122.1949,
+    "isolation": 335,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "avalanche_kit"
+    ],
+    "permitFee": "$25 per person (summit pass, 3-day); $30 annual",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Recreation.gov",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-elbert",
+    "name": "Mount Elbert",
+    "state": "CO",
+    "elevation": 14440,
+    "prominence": 9093,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 4380,
+    "gainMax": 4380,
+    "gainDisplay": "4,380 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 9,
+    "gain": 4380,
+    "mountainRange": "Sawatch Range",
+    "season": "Mid-June-September",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "hypothermia"
+    ],
+    "bestRoute": "North Mount Elbert Trail",
+    "permitRequired": false,
+    "dataSource": "San Isabel National Forest, Leadville Ranger District, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "1",
+    "permitSeason": "No climbing permit required for standard summer day hikes",
+    "heroImage": "/images/peaks/mount-elbert.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Elbert/forecasts/4399",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "gloves",
+        "emergency-comm",
+        "insulating-hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The upper mountain is broad, open, and highly exposed to lightning. Afternoon thunderstorms are common in July and August, so most parties start before dawn and aim to be descending from the summit area by late morning or midday.",
+    "latitude": 39.1178,
+    "longitude": -106.4454,
+    "isolation": 670,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Peakbagger",
+        "San Isabel NF"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-baker",
+    "name": "Mount Baker",
+    "state": "WA",
+    "elevation": 10781,
+    "prominence": 8845,
+    "difficulty": 7,
+    "days": 3,
+    "distanceMin": 11,
+    "distanceMax": 13,
+    "distanceDisplay": "~11–13 miles round-trip",
+    "gainMin": 6350,
+    "gainMax": 8050,
+    "gainDisplay": "~6,350–8,050 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 12,
+    "gain": 7200,
+    "mountainRange": "Cascade Range",
+    "season": "June-Early September",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "bestRoute": "Coleman-Deming Glacier",
+    "permitRequired": true,
+    "dataSource": "USDA Forest Service, Mount Baker-Snoqualmie National Forest, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "2+",
+    "permitSeason": "No dedicated climbing permit; recreation/parking pass required at Heliotrope Ridge trailhead",
+    "heroImage": "/images/peaks/mount-baker.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Baker/forecasts/3285",
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "sunglasses",
+        "sunscreen",
+        "compass",
+        "gaiters",
+        "gloves",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "An alpine start is strongly recommended. Cooler morning conditions often provide firmer travel and reduce warming-related wet-snow hazards, while also improving crampon purchase on the Roman Wall approach. Afternoon conditions on the lower Coleman Glacier can become slushy, and crevasse-fall risk increases as snow bridges soften.",
+    "latitude": 48.7767,
+    "longitude": -121.8146,
+    "isolation": 132,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "No climbing permit fee; parking pass required",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "san-jacinto-peak",
+    "name": "San Jacinto Peak",
+    "state": "CA",
+    "elevation": 10834,
+    "prominence": 8299,
+    "latitude": 33.814727,
+    "longitude": -116.679396,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 11.6,
+    "distanceMax": 11.6,
+    "distanceDisplay": "11.6 miles round-trip",
+    "gainMin": 2400,
+    "gainMax": 2620,
+    "gainDisplay": "2,400–2,620 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–7 hours",
+    "distance": 11.6,
+    "gain": 2510,
+    "mountainRange": "San Jacinto Mountains",
+    "season": "June-October",
+    "hazards": [
+      "altitude-sickness",
+      "heat-exhaustion",
+      "dehydration",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "exposure"
+    ],
+    "bestRoute": "Round Valley Trail via Tramway",
+    "permitRequired": true,
+    "dataSource": "Mount San Jacinto State Park, Palm Springs Aerial Tramway, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
+    "ydsClass": "1",
+    "permitSeason": "Free self-issue day-use wilderness permit required; $5/person overnight quota permit",
+    "heroImage": "/images/peaks/san-jacinto-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-San-Jacinto-Peak/forecasts/3293",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food",
+        "hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The temperature differential between Palm Springs and the summit is extreme, often reaching 30 to 40 degrees Fahrenheit cooler at the peak. Afternoon thunderstorms are common during summer, particularly during monsoonal patterns in July and August, and pose serious risk on exposed terrain above 9,500 feet. Winter and shoulder-season conditions may require traction devices such as microspikes or crampons.",
+    "isolation": 21,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free day-use permit; tram ticket additional",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Mount San Jacinto State Park",
+        "Palm Springs Aerial Tramway",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "san-gorgonio-mountain",
+    "name": "San Gorgonio Mountain",
+    "state": "CA",
+    "elevation": 11499,
+    "prominence": 8296,
+    "latitude": 34.099256,
+    "longitude": -116.824985,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 17.4,
+    "distanceMax": 17.4,
+    "distanceDisplay": "17.4 miles round-trip",
+    "gainMin": 5500,
+    "gainMax": 5500,
+    "gainDisplay": "5,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–12 hours",
+    "distance": 17.4,
+    "gain": 5500,
+    "mountainRange": "San Bernardino Mountains",
+    "season": "June-October",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "dehydration",
+      "exposure",
+      "wind-extreme-weather",
+      "heat-exhaustion"
+    ],
+    "bestRoute": "Vivian Creek Trail",
+    "permitRequired": true,
+    "dataSource": "San Bernardino National Forest, SGWA, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "permitSeason": "Free wilderness permit required for all day and overnight trips via SGWA; Adventure Pass required for trailhead parking",
+    "heroImage": "/images/peaks/san-gorgonio-mountain.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/San-Gorgonio/forecasts/3505",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "microspikes",
+        "high-calorie-food",
+        "hat",
+        "gloves"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Alpine starts before dawn are strongly recommended from July through September so hikers can summit early and descend below exposed ridge terrain before afternoon thunderstorms develop.",
+    "isolation": 163,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "San Bernardino NF",
+        "SGWA",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "charleston-peak",
+    "name": "Charleston Peak",
+    "state": "NV",
+    "elevation": 11916,
+    "prominence": 8259,
+    "latitude": 36.3156,
+    "longitude": -115.6583,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 16,
+    "distanceMax": 17,
+    "distanceDisplay": "~16–17 miles round-trip",
+    "gainMin": 4200,
+    "gainMax": 4700,
+    "gainDisplay": "~4,200–4,700 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–10 hours",
+    "distance": 16.5,
+    "gain": 4450,
+    "mountainRange": "Spring Mountains",
+    "season": "June-October",
+    "hazards": [
+      "altitude-sickness",
+      "heat-exhaustion",
+      "dehydration",
+      "exposure",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "whiteout-conditions"
+    ],
+    "bestRoute": "South Loop Trail",
+    "permitRequired": false,
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/charleston-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Charleston/forecasts/3633",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "gaiters",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "crampons",
+        "ice-axe",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The upper South Loop route is exposed to wind, lightning, and rapid temperature change, while the lower trailhead area can be hot in summer. Start early, carry all needed water, and plan to be off the exposed summit ridge before afternoon storms build.",
+    "isolation": 135,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "gaiters",
+      "microspikes"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No permit required for day hiking or backpacking in Mount Charleston Wilderness"
+  },
+  {
+    "slug": "mount-adams",
+    "name": "Mount Adams",
+    "state": "WA",
+    "elevation": 12276,
+    "prominence": 8116,
+    "difficulty": 5,
+    "days": 2,
+    "distanceMin": 11,
+    "distanceMax": 15,
+    "distanceDisplay": "~11–15 miles round-trip",
+    "gainMin": 5900,
+    "gainMax": 7500,
+    "gainDisplay": "~5,900–7,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 13,
+    "gain": 6700,
+    "mountainRange": "Cascade Range",
+    "season": "June-Early September",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia",
+      "loose-rock-scree",
+      "rockfall",
+      "avalanche",
+      "bears"
+    ],
+    "bestRoute": "South Spur",
+    "permitRequired": true,
+    "dataSource": "Recreation.gov, Mount Adams Ranger District, Gifford Pinchot National Forest, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "2",
+    "permitSeason": "Climbing pass required May 1–September 30 above 7,000 ft ($20/person via Recreation.gov); $5 day-use at Cold Springs trailhead",
+    "heroImage": "/images/peaks/mount-adams.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Adams/forecasts/3741",
+    "technicalRequirements": [
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses",
+        "sunscreen"
+      ],
+      "secondary": [
+        "gaiters",
+        "gloves",
+        "compass",
+        "water-capacity",
+        "hat",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common in summer on Mount Adams. Plan firm turnaround times, carry layers for rapid weather changes, and aim to descend before storm activity intensifies. The South Spur is best climbed when significant snow covers the route; without snow, the upper approach becomes loose, unpleasant scree. Glissading is a common descent on soft snow but requires self-arrest skill; avoid glissading on firm or icy snow where a fall cannot be arrested.",
+    "latitude": 46.2025,
+    "longitude": -121.4909,
+    "isolation": 47,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "$20 per person per climbing trip",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Gifford Pinchot NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-olympus",
+    "name": "Mount Olympus",
+    "state": "WA",
+    "elevation": 7980,
+    "prominence": 7828,
+    "latitude": 47.80122,
+    "longitude": -123.7109,
+    "difficulty": 9,
+    "days": 4,
+    "distanceMin": 39,
+    "distanceMax": 49,
+    "distanceDisplay": "~39–49 miles round-trip",
+    "gainMin": 6500,
+    "gainMax": 8300,
+    "gainDisplay": "~6,500–8,300 ft",
+    "daysMin": 4,
+    "daysMax": 5,
+    "daysDisplay": "4–5 days",
+    "distance": 44,
+    "gain": 7400,
+    "mountainRange": "Olympic Mountains",
+    "season": "Late June-August",
+    "hazards": [
+      "crevasse-fall",
+      "class-4-climbing",
+      "scrambling-exposed",
+      "exposure",
+      "water-crossing",
+      "wind-extreme-weather",
+      "whiteout-conditions",
+      "hypothermia",
+      "rockfall",
+      "avalanche"
+    ],
+    "bestRoute": "Hoh River Trail to Blue Glacier",
+    "permitRequired": true,
+    "dataSource": "PeakBagger, USGS, Olympic National Park (NPS), Recreation.gov, The Mountaineers, Washington Trails Association, SummitPost",
+    "ydsClass": "5",
+    "permitSeason": "Wilderness permits required May 15–October 15; summer permits released April 15 via Recreation.gov",
+    "heroImage": "/images/peaks/mount-olympus.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Olympus-2/forecasts/2427",
+    "technicalRequirements": [
+      "glacier-travel",
+      "exposed-rock-climbing",
+      "alpine-start",
+      "snow-travel",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "rope-harness",
+        "ice-axe",
+        "crampons",
+        "insulating-layer",
+        "shell-jacket",
+        "climbing-protection"
+      ],
+      "secondary": [
+        "belay-device",
+        "gaiters",
+        "avalanche-gear",
+        "microspikes",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Crevasse Hazard: Blue Glacier is subject to significant annual change due to glacier recession. Crevasse patterns shift yearly; bridged crevasses collapse without warning. Rope teams must maintain constant awareness and be prepared to reassess the route during each crossing.",
+    "isolation": 108,
+    "gear": [
+      "helmet",
+      "rope_harness",
+      "ice_axe",
+      "crampons",
+      "mountaineering_boots",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "$6 reservation + $8/person/night (verify on Recreation.gov)",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "USGS",
+        "NPS",
+        "Recreation.gov",
+        "The Mountaineers",
+        "WTA"
+      ],
+      "notes": "West Peak commonly cited as 7,980 ft; Peakbagger LiDAR/NAVD88 lists 7,973.1 ft. Peakbagger lists 7,842 ft clean prominence; Wikipedia/traditional sources list 7,828–7,829 ft."
+    }
+  },
+  {
+    "slug": "mount-hood",
+    "name": "Mount Hood",
+    "state": "OR",
+    "elevation": 11249,
+    "prominence": 7709,
+    "difficulty": 7,
+    "days": 2,
+    "distanceMin": 6,
+    "distanceMax": 8,
+    "distanceDisplay": "~6–8 miles round-trip",
+    "gainMin": 4750,
+    "gainMax": 6050,
+    "gainDisplay": "~4,750–6,050 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 6.8,
+    "gain": 5400,
+    "mountainRange": "Cascade Range",
+    "season": "May-July",
+    "hazards": [
+      "bergschrund",
+      "crevasse-fall",
+      "rockfall",
+      "avalanche",
+      "altitude-sickness",
+      "whiteout-conditions"
+    ],
+    "bestRoute": "Hogsback",
+    "permitRequired": true,
+    "dataSource": "Mount Hood National Forest, USGS, SummitPost, PeakBagger, Recreation.gov, trip reports",
+    "ydsClass": "3",
+    "permitSeason": "Mount Hood Climbing Permit required year-round above 9,500 ft via Recreation.gov",
+    "heroImage": "/images/peaks/mount-hood.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Hood/forecasts/3426",
+    "technicalRequirements": [
+      "snow-travel",
+      "glacier-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses"
+      ],
+      "secondary": [
+        "sunscreen",
+        "compass",
+        "rope-harness",
+        "gloves",
+        "gaiters",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "An alpine start is standard on Mount Hood. Most parties climb overnight or before dawn to complete descent before afternoon warming increases rockfall, wet-snow, and snow-bridge hazards. Turnaround times should be firm, especially if weather, visibility, or snow conditions deteriorate.",
+    "latitude": 45.3735,
+    "longitude": -121.697,
+    "isolation": 58,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Verify current Recreation.gov fee",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Hood NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "wheeler-peak",
+    "name": "Wheeler Peak",
+    "state": "NV",
+    "elevation": 13065,
+    "prominence": 7563,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 8.6,
+    "distanceMax": 8.6,
+    "distanceDisplay": "8.6 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 3000,
+    "gainDisplay": "3,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 8.6,
+    "gain": 3000,
+    "mountainRange": "Snake Range",
+    "season": "June-October",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "loose-rock-scree"
+    ],
+    "bestRoute": "Wheeler Peak Summit Trail",
+    "permitRequired": false,
+    "dataSource": "Great Basin National Park, SummitPost, PeakBagger, NPS",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/wheeler-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Wheeler-Peak/forecasts/3982",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "microspikes",
+        "shell-jacket",
+        "sunscreen",
+        "sunglasses",
+        "water-capacity",
+        "insulating-layer",
+        "hat"
+      ],
+      "secondary": [
+        "gloves",
+        "emergency-comm",
+        "compass"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "An early start is strongly recommended. Afternoon thunderstorms are common during summer, and the summit ridge is fully exposed to lightning and high winds. Parties that delay departure risk sudden weather forcing retreat near the summit.",
+    "latitude": 39.0156,
+    "longitude": -114.3158,
+    "permitSeason": "June–October; no day-use permit required",
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Wheeler Peak trip report",
+        "description": "For firsthand route notes, campground logistics, Stella Lake, and summit-day pacing, read the Wilderness Beta Wheeler Peak trip report.",
+        "href": "https://wildernessbeta.com/trip-reports/wheeler-peak-great-basin/"
+      }
+    ],
+    "isolation": 232,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free (no climbing permit; $20/site campground)",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Great Basin",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "glacier-peak",
+    "name": "Glacier Peak",
+    "state": "WA",
+    "elevation": 10541,
+    "prominence": 7531,
+    "difficulty": 8,
+    "days": 4,
+    "distanceMin": 30,
+    "distanceMax": 38,
+    "distanceDisplay": "~30–38 miles round-trip",
+    "gainMin": 7900,
+    "gainMax": 10100,
+    "gainDisplay": "~7,900–10,100 ft",
+    "daysMin": 3,
+    "daysMax": 4,
+    "daysDisplay": "3–4 days",
+    "distance": 34,
+    "gain": 9000,
+    "mountainRange": "Cascade Range",
+    "season": "July-September",
+    "hazards": [
+      "crevasse-fall",
+      "avalanche",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia",
+      "bears",
+      "loose-rock-scree",
+      "altitude-sickness"
+    ],
+    "bestRoute": "North Fork Sauk Trail",
+    "permitRequired": false,
+    "dataSource": "USGS Glacier Peak; Mt. Baker-Snoqualmie National Forest; Okanogan-Wenatchee National Forest; Washington Trails Association; Fred Beckey, Cascade Alpine Guides Vol. 2",
+    "ydsClass": "3",
+    "permitSeason": "No quota climbing permit; sign trailhead register. Northwest Forest Pass or federal interagency pass required at North Fork Sauk Trailhead",
+    "heroImage": "/images/peaks/glacier-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Glacier-Peak/forecasts/3213",
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "water-capacity",
+        "gaiters",
+        "gloves",
+        "high-calorie-food",
+        "sunscreen"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Glacier travel demands proficiency with crevasse rescue, self-arrest, and roped team movement. Parties without recent glacier-travel practice should build time into the itinerary for review of rope systems, crevasse rescue, and self-arrest before the summit push.",
+    "latitude": 48.1128,
+    "longitude": -121.1135,
+    "isolation": 56,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free (wilderness)",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "white-mountain-peak",
+    "name": "White Mountain Peak",
+    "state": "CA",
+    "elevation": 14252,
+    "prominence": 7193,
+    "latitude": 37.63412,
+    "longitude": -118.25567,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 14.6,
+    "distanceMax": 14.6,
+    "distanceDisplay": "14.6 miles round-trip",
+    "gainMin": 3400,
+    "gainMax": 3400,
+    "gainDisplay": "3,400 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–10 hours",
+    "distance": 14.6,
+    "gain": 3400,
+    "mountainRange": "White Mountains",
+    "season": "June-September",
+    "hazards": [
+      "altitude-sickness",
+      "dehydration",
+      "hypothermia",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "exposure"
+    ],
+    "bestRoute": "South Face Route via Barcroft Gate",
+    "permitRequired": false,
+    "dataSource": "Inyo National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/white-mountain-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/White-Mountain-Peak/forecasts/4342",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "gloves",
+        "insulating-hat",
+        "hat",
+        "emergency-comm",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Water is not available on the mountain. Hikers should carry sufficient water capacity for the entire ascent and descent. Afternoon thunderstorms are possible from July through September. Extreme winds have been recorded on the mountain in severe weather, and even ordinary summit-day winds can be exhausting on the exposed ridge. Temperature can drop 30 degrees or more from the adjacent valley floor.",
+    "isolation": 40,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Inyo NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No day-hiking permit required; verify current road, gate, and fire restrictions"
+  },
+  {
+    "slug": "gannett-peak",
+    "name": "Gannett Peak",
+    "state": "WY",
+    "elevation": 13804,
+    "prominence": 7076,
+    "difficulty": 9,
+    "days": 6,
+    "distanceMin": 44,
+    "distanceMax": 56,
+    "distanceDisplay": "~44–56 miles round-trip",
+    "gainMin": 9700,
+    "gainMax": 12300,
+    "gainDisplay": "~9,700–12,300 ft",
+    "daysMin": 5,
+    "daysMax": 6,
+    "daysDisplay": "5–6 days",
+    "distance": 50,
+    "gain": 11000,
+    "mountainRange": "Wind River Range",
+    "season": "July-August",
+    "hazards": [
+      "crevasse-fall",
+      "bergschrund",
+      "avalanche",
+      "altitude-sickness",
+      "water-crossing",
+      "lightning-exposure",
+      "bears",
+      "hypothermia"
+    ],
+    "bestRoute": "Glacier Trail Approach",
+    "permitRequired": false,
+    "dataSource": "Shoshone National Forest, Bridger-Teton National Forest, PeakBagger, SummitPost, trip reports",
+    "ydsClass": "3",
+    "permitSeason": "Open for individual climbers; group-use visitor permit may be required for organized, commercial, or stock-supported parties",
+    "heroImage": "/images/peaks/gannett-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Gannett-Peak/forecasts/4207",
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "avalanche-gear",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "sunglasses",
+        "sunscreen",
+        "gloves",
+        "water-capacity",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Alpine start (midnight to 5 AM) is highly recommended to secure stable snow conditions, minimize crevasse hazard, and allow time to manage bergschrund crossing before afternoon warming weakens snow bridges.",
+    "latitude": 43.1825,
+    "longitude": -109.6272,
+    "isolation": 291,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister"
+    ],
+    "permitFee": "Free (wilderness)",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shoshone NF",
+        "Bridger-Teton NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "cloud-peak",
+    "name": "Cloud Peak",
+    "state": "WY",
+    "elevation": 13167,
+    "prominence": 7077,
+    "difficulty": 6,
+    "days": 3,
+    "distanceMin": 20,
+    "distanceMax": 26,
+    "distanceDisplay": "~20–26 miles round-trip",
+    "gainMin": 4650,
+    "gainMax": 5950,
+    "gainDisplay": "~4,650–5,950 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 23,
+    "gain": 5300,
+    "mountainRange": "Bighorn Mountains",
+    "season": "July-August",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "hypothermia",
+      "wind-extreme-weather",
+      "dehydration",
+      "bears"
+    ],
+    "bestRoute": "West Tensleep Trail to Mistymoon Lake",
+    "permitRequired": false,
+    "dataSource": "Bighorn National Forest, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "2",
+    "permitSeason": "Free self-issued wilderness registration at trailhead; no climbing fee",
+    "heroImage": "/images/peaks/cloud-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Cloud-Peak/forecasts/4013",
+    "technicalRequirements": [
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "altitude-acclimatization",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "compass",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "hat",
+        "gloves",
+        "insect-repellent",
+        "high-calorie-food",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "An early alpine start from Mistymoon Lake is strongly recommended to reduce exposure to afternoon thunderstorms during the summit push and descent through the boulder field.",
+    "latitude": 44.3825,
+    "longitude": -107.1317,
+    "isolation": 145,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Bighorn NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "grand-teton",
+    "name": "Grand Teton",
+    "state": "WY",
+    "elevation": 13775,
+    "prominence": 6535,
+    "difficulty": 8,
+    "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 16,
+    "distanceDisplay": "~12–16 miles round-trip",
+    "gainMin": 6150,
+    "gainMax": 7850,
+    "gainDisplay": "~6,150–7,850 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 14,
+    "gain": 7000,
+    "mountainRange": "Teton Range",
+    "season": "July-September",
+    "hazards": [
+      "off-trail-navigation",
+      "exposure",
+      "lightning-exposure",
+      "rockfall",
+      "altitude-sickness",
+      "class-4-climbing"
+    ],
+    "bestRoute": "Owen-Spalding Route",
+    "permitRequired": true,
+    "dataSource": "Grand Teton National Park, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "5",
+    "permitSeason": "No climbing permit for day use; backcountry permit required for overnight camping (quotas apply for Garnet Canyon and Lower Saddle)",
+    "heroImage": "/images/peaks/grand-teton.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Grand-Teton/forecasts/4197",
+    "technicalRequirements": [
+      "exposed-rock-climbing",
+      "altitude-acclimatization",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "rope-harness",
+        "climbing-protection",
+        "belay-device",
+        "climbing-shoes",
+        "ice-axe",
+        "crampons"
+      ],
+      "secondary": [
+        "insulating-layer",
+        "shell-jacket",
+        "gloves",
+        "compass",
+        "emergency-comm",
+        "water-capacity"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Route-finding on the descent from the Upper Saddle is a common source of error on this route, and afternoon storms can make the upper mountain dangerous quickly. Parties should confirm the descent line before committing to the upper route and plan to be off exposed terrain before thunderstorm development.",
+    "latitude": 43.7412,
+    "longitude": -110.8024,
+    "isolation": 69,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "No day-use climbing fee; backcountry permit fee for overnight",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Grand Teton",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "sacajawea-peak",
+    "name": "Sacajawea Peak",
+    "state": "OR",
+    "elevation": 9844,
+    "prominence": 6392,
+    "difficulty": 6,
+    "days": 2,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 4300,
+    "gainMax": 5500,
+    "gainDisplay": "~4,300–5,500 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 15,
+    "gain": 4900,
+    "mountainRange": "Wallowa Mountains",
+    "season": "July-September",
+    "hazards": [
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "rockfall",
+      "whiteout-conditions",
+      "lightning-exposure",
+      "hypothermia",
+      "water-crossing"
+    ],
+    "bestRoute": "Hurricane Creek Trail / Thorp Creek East Ridge",
+    "permitRequired": false,
+    "dataSource": "Wallowa-Whitman National Forest, Eagle Cap Wilderness, SummitPost, PeakBagger, ListsOfJohn",
+    "ydsClass": "3",
+    "permitSeason": "Free self-issue Eagle Cap Wilderness permit at trailhead; Northwest Forest Pass or America the Beautiful Pass required for Hurricane Creek Trailhead parking",
+    "heroImage": "/images/peaks/sacajawea-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Sacajawea-Peak/forecasts/2999",
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "compass",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen"
+      ],
+      "secondary": [
+        "microspikes",
+        "crampons",
+        "gaiters",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "No trail exists above treeline. Route-finding on the east ridge requires map and compass or GPS; multiple cairn lines, social paths, and game trails can mislead climbers in low visibility. An early start is strongly recommended to clear the exposed upper ridge before afternoon thunderstorms can develop during summer.",
+    "latitude": 45.2451,
+    "longitude": -117.3006,
+    "isolation": 125,
+    "gear": [
+      "trekking_poles",
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes",
+      "bear_canister"
+    ],
+    "permitFee": "Free (self-issue wilderness permit)",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Wallowa-Whitman NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "kings-peak",
+    "name": "Kings Peak",
+    "state": "UT",
+    "elevation": 13528,
+    "prominence": 6348,
+    "difficulty": 5,
+    "days": 4,
+    "distanceMin": 24,
+    "distanceMax": 30,
+    "distanceDisplay": "~24–30 miles round-trip",
+    "gainMin": 3950,
+    "gainMax": 5000,
+    "gainDisplay": "~3,950–5,000 ft",
+    "daysMin": 3,
+    "daysMax": 4,
+    "daysDisplay": "3–4 days",
+    "distance": 27,
+    "gain": 4480,
+    "mountainRange": "Uinta Mountains",
+    "season": "July-September",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "off-trail-navigation"
+    ],
+    "bestRoute": "Henry's Fork Trail",
+    "permitRequired": false,
+    "dataSource": "SummitPost, USGS/Utah Geological Survey, AllTrails, Paria Outdoor Products, multiple recent trip reports",
+    "ydsClass": "2",
+    "permitSeason": "July through September; free sign-in kiosk at Henry's Fork Trailhead",
+    "heroImage": "/images/kings-henrys-fork-basin.webp",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Kings-Peak/forecasts/4123",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "exposed-scrambling",
+      "off-trail-nav",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "compass",
+        "gloves",
+        "emergency-comm",
+        "insect-repellent"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common in July and August. Start early and plan to be off the exposed summit ridge before storms develop. Lightning is a significant hazard.",
+    "latitude": 40.7756,
+    "longitude": -110.3778,
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Kings Peak trip report",
+        "description": "For a firsthand Henry's Fork itinerary with Dollar Lake camp notes, Gunsight Pass route choices, and summit-day timing, read the Wilderness Beta Kings Peak trip report.",
+        "href": "https://wildernessbeta.com/trip-reports/kings-peak-august-2025/"
+      }
+    ],
+    "isolation": 167,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Ashley NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-graham",
+    "name": "Mount Graham",
+    "state": "AZ",
+    "elevation": 10709,
+    "prominence": 6313,
+    "latitude": 32.70167,
+    "longitude": -109.87141,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 9,
+    "distanceDisplay": "8–9 miles round-trip",
+    "gainMin": 1600,
+    "gainMax": 1600,
+    "gainDisplay": "1,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "4–5 hours",
+    "distance": 8.5,
+    "gain": 1600,
+    "mountainRange": "Pinaleño Mountains",
+    "season": "April-November",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "bears",
+      "altitude-sickness"
+    ],
+    "bestRoute": "High Peak Road (summit closed to public)",
+    "permitRequired": true,
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, USFS; Mount Graham International Observatory (access context)",
+    "ydsClass": "1",
+    "permitSeason": "Summit closed to public; special authorization required for legal entry",
+    "heroImage": "/images/peaks/mount-graham.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Graham/forecasts/3267",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "high-calorie-food",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": true,
+    "callout": "Mount Graham is the awkward one. The summit is one of the 57 lower-48 ultras and, by prominence logic, a mandatory objective. Physically, the route is not mysterious: the upper service-road corridor beyond the public closure leads toward the summit area, and the terrain is essentially a high-elevation road walk. Legally, that same corridor enters the Mount Graham Red Squirrel Refugium, where public access is restricted to protect endangered-species habitat.",
+    "hasSafetyNote": true,
+    "safetyNote": "Unauthorized entry into the Mount Graham Red Squirrel Refugium can carry federal consequences. The closure exists because the summit area overlaps protected habitat for the Mount Graham red squirrel. Mount Graham is ultimately an ethics-and-risk decision rather than a routefinding challenge.",
+    "isolation": 83,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "No standard public summit access; observatory tours may be available seasonally",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "USFS",
+        "AZDOT"
+      ],
+      "notes": "Elevation: PeakBagger/ListsOfJohn LiDAR/NAVD88 10,709 ft; traditional sources commonly list 10,720 ft. Prominence: ListsOfJohn LiDAR 6,313 ft; Peakbagger 6,309 ft; older sources may list ~6,340 ft. Summit closed within Red Squirrel Refugium; confirm current closure boundaries and observatory tour availability."
+    }
+  },
+  {
+    "slug": "mount-san-antonio",
+    "name": "Mount San Antonio",
+    "state": "CA",
+    "elevation": 10064,
+    "prominence": 6247,
+    "latitude": 34.2894,
+    "longitude": -117.6464,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 11,
+    "distanceDisplay": "10–11 miles round-trip",
+    "gainMin": 3900,
+    "gainMax": 4300,
+    "gainDisplay": "3,900–4,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–10 hours",
+    "distance": 10.5,
+    "gain": 4100,
+    "mountainRange": "San Gabriel Mountains",
+    "season": "May-October",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "exposure",
+      "rockfall",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "Devil's Backbone from Manker Flats",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Angeles National Forest, Peakery; San Gabriel Mountains (route, class, hazards, permits)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/mount-san-antonio.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-San-Antonio/forecasts/3068",
+    "technicalRequirements": [
+      "alpine-start",
+      "exposed-scrambling",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "helmet",
+        "microspikes"
+      ],
+      "secondary": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "crampons",
+        "ice-axe",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms develop rapidly over the summit July through August. The exposed Backbone ridge offers no shelter; parties should plan to be off the ridge by midday during monsoon season.",
+    "isolation": 45,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "helmet",
+      "microspikes"
+    ],
+    "permitFee": "Parking/day-use fee at Manker Flats; verify current pass rules with Angeles National Forest",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Angeles National Forest",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map 10,064 ft; ListsOfJohn/PeakBagger LiDAR values are about 10,068 ft. Prominence: ListsOfJohn rise 6,247 ft; PeakBagger lists about 6,290 ft."
+    },
+    "permitSeason": "Parking or federal recreation pass required at Manker Flats; free wilderness permit required for designated wilderness entry"
+  },
+  {
+    "slug": "telescope-peak",
+    "name": "Telescope Peak",
+    "state": "CA",
+    "elevation": 11049,
+    "prominence": 6168,
+    "latitude": 36.16984,
+    "longitude": -117.08921,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 3000,
+    "gainDisplay": "3,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–9 hours",
+    "distance": 14,
+    "gain": 3000,
+    "mountainRange": "Panamint Range",
+    "season": "Late June-October",
+    "hazards": [
+      "exposure",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness"
+    ],
+    "bestRoute": "Mahogany Flat Campground Trail",
+    "permitRequired": false,
+    "dataSource": "Death Valley National Park, NPS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/telescope-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Telescope-Peak/forecasts/3368",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "insulating-hat",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gloves",
+        "hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The upper ridge provides little shelter and is exposed to strong winds, rapid weather changes, and occasional summer thunderstorms. Start early, especially in warm weather or unsettled forecasts, and avoid being on the summit ridge if storms are building.",
+    "isolation": 58,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "insulating_hat",
+      "water_capacity",
+      "microspikes"
+    ],
+    "permitFee": "Free; Death Valley entrance fee may apply",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Death Valley NPS",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "Day hikes require no permit; voluntary backcountry permits for overnight trips; verify current NPS rules and road conditions"
+  },
+  {
+    "slug": "mount-peale",
+    "name": "Mount Peale",
+    "state": "UT",
+    "elevation": 12727,
+    "prominence": 6180,
+    "latitude": 38.4388,
+    "longitude": -109.2294,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 6,
+    "distanceDisplay": "5–6 miles round-trip",
+    "gainMin": 2600,
+    "gainMax": 2600,
+    "gainDisplay": "2,600 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–7 hours",
+    "distance": 5.5,
+    "gain": 2600,
+    "mountainRange": "La Sal Mountains",
+    "season": "July-September",
+    "hazards": [
+      "altitude-sickness",
+      "dehydration",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "wind-extreme-weather",
+      "off-trail-navigation"
+    ],
+    "bestRoute": "Burlfriends Trail from La Sal Pass",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Manti-La Sal NF, Peakery; Moab Ranger District (route, class, hazards, permits)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/mount-peale.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Peale/forecasts/3877",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "compass",
+        "emergency-comm",
+        "microspikes",
+        "crampons"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Snow can persist in shaded gullies and on north-facing slopes into early or mid-summer. June and early-July ascents may require crampons, an ice axe, and the ability to self-arrest if firm snow remains in the upper gully. Water sources above treeline are very limited; carry adequate supply from the trailhead.",
+    "isolation": 73,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Manti-La Sal NF",
+        "Peakery",
+        "Moab Ranger District",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: LiDAR 12,727 ft per ListsOfJohn and PeakBagger; traditional USGS/map value commonly listed as 12,721 ft. Prominence: ListsOfJohn LiDAR 6,180 ft; PeakBagger 6,167 ft; older/public sources may list about 6,161 ft."
+    },
+    "permitSeason": "No permit required for climbing or dispersed camping; confirm current Manti-La Sal NF fire and road rules"
+  },
+  {
+    "slug": "mount-washington",
+    "name": "Mount Washington",
+    "state": "NH",
+    "elevation": 6288,
+    "prominence": 6148,
+    "latitude": 44.2705,
+    "longitude": -71.3033,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 8.2,
+    "distanceMax": 8.6,
+    "distanceDisplay": "~8.2–8.6 miles round-trip",
+    "gainMin": 4100,
+    "gainMax": 4300,
+    "gainDisplay": "~4,100–4,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 8.4,
+    "gain": 4200,
+    "mountainRange": "Presidential Range",
+    "season": "June-September",
+    "hazards": [
+      "hypothermia",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "exposure",
+      "rockfall",
+      "avalanche"
+    ],
+    "bestRoute": "Tuckerman Ravine Trail",
+    "permitRequired": false,
+    "dataSource": "USGS, AMC, White Mountain National Forest, Mount Washington Avalanche Center; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/mount-washington.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Washington-2/forecasts/1917",
+    "technicalRequirements": [
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "microspikes"
+      ],
+      "secondary": [
+        "gloves",
+        "insulating-hat",
+        "shell-pants",
+        "water-capacity",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Tuckerman Ravine and nearby terrain are subject to avalanche forecasts, General Bulletins, and seasonal closures or route restrictions when snow, ice, undermined snow, waterfall holes, or avalanche conditions create unacceptable hazard. In spring, specific sections such as the Lip area of the Tuckerman Ravine Trail may be closed until snow has melted out. Check Mount Washington Avalanche Center and Pinkham Notch guidance before entering the ravine.",
+    "isolation": 820,
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "microspikes"
+    ],
+    "permitFee": "Free; parking, recreation pass, or facility fees may apply by trailhead",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "USGS",
+        "AMC",
+        "White Mountain National Forest",
+        "Mount Washington Avalanche Center"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit for day hiking; parking, recreation pass, and facility fees vary by trailhead (AMC/WMNF)"
+  },
+  {
+    "slug": "mount-mitchell",
+    "name": "Mount Mitchell",
+    "state": "NC",
+    "elevation": 6684,
+    "prominence": 6090,
+    "latitude": 35.7649,
+    "longitude": -82.2651,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 11.2,
+    "distanceMax": 12,
+    "distanceDisplay": "~11.2–12 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 3700,
+    "gainDisplay": "~3,600–3,700 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–8 hours",
+    "distance": 11.6,
+    "gain": 3650,
+    "mountainRange": "Black Mountains",
+    "season": "May-October",
+    "hazards": [
+      "hypothermia",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "exposure"
+    ],
+    "bestRoute": "Mount Mitchell Trail",
+    "permitRequired": false,
+    "dataSource": "USGS, NC State Parks, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards, permits)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/mount-mitchell.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Mitchell/forecasts/2037",
+    "technicalRequirements": [
+      "alpine-start",
+      "water-crossings",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity"
+      ],
+      "secondary": [
+        "microspikes",
+        "gaiters",
+        "gloves",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Above 5,000 feet, fog and wind exposure increase markedly, and travel can feel significantly more severe than lower sections despite remaining on trail. Dense fog, cold rain, and strong winds can occur in any season; carry insulating layers and a waterproof shell.",
+    "isolation": 1195,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes",
+      "gaiters"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "USGS",
+        "NC State Parks",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit required; Black Mountain Campground closed 2025–2026 (reopens 2027)"
+  },
+  {
+    "slug": "humphreys-peak",
+    "name": "Humphreys Peak",
+    "state": "AZ",
+    "elevation": 12633,
+    "prominence": 6042,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gainMin": 3300,
+    "gainMax": 3300,
+    "gainDisplay": "3,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 10,
+    "gain": 3300,
+    "mountainRange": "San Francisco Peaks",
+    "season": "May-October",
+    "hazards": [
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "hypothermia",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "dehydration",
+      "heat-exhaustion"
+    ],
+    "bestRoute": "Humphreys Peak Trail",
+    "permitRequired": false,
+    "dataSource": "Coconino National Forest, SummitPost, U.S. Highpoint Guide, Arizona Highways",
+    "ydsClass": "2",
+    "permitSeason": "No permit required for day use; verify winter road access and any seasonal requirements with Coconino National Forest",
+    "heroImage": "/images/peaks/humphreys-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Humphreys-Peak/forecasts/3851",
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start",
+      "altitude-acclimatization",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "gloves",
+        "emergency-comm",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms build rapidly during the July through September monsoon season, with lightning posing a documented fatality risk on the exposed upper ridge. During monsoon season, many parties start at or before dawn and aim to be off the exposed ridge before noon.",
+    "latitude": 35.3464,
+    "longitude": -111.678,
+    "isolation": 247,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Coconino NF",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "borah-peak",
+    "name": "Borah Peak",
+    "state": "ID",
+    "elevation": 12662,
+    "prominence": 5990,
+    "difficulty": 6,
+    "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8.2,
+    "distanceDisplay": "~8–8.2 miles round-trip",
+    "gainMin": 5200,
+    "gainMax": 5300,
+    "gainDisplay": "~5,200–5,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–10 hours",
+    "distance": 8.1,
+    "gain": 5250,
+    "mountainRange": "Lost River Range",
+    "season": "July-September",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "rockfall",
+      "scrambling-exposed",
+      "exposure",
+      "loose-rock-scree",
+      "hypothermia"
+    ],
+    "bestRoute": "Southwest Ridge",
+    "permitRequired": false,
+    "dataSource": "Salmon–Challis National Forest, USGS GNIS, USGS Earthquake Hazards; Idaho: A Climbing Guide, Sawtooth Mountain Guides, SummitPost, U.S. Highpoint Guide",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/borah-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "alpine-start",
+      "altitude-acclimatization",
+      "snow-travel",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "trekking-poles",
+        "water-capacity"
+      ],
+      "secondary": [
+        "ice-axe",
+        "crampons",
+        "microspikes",
+        "gloves",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "A very early start, often 3–4 AM, is strongly recommended in summer. Plan to summit early and be descending well before afternoon thunderstorm development, which is common July through August. The exposed ridge presents significant lightning risk.",
+    "latitude": 44.1308,
+    "longitude": -113.7514,
+    "isolation": 151,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "trekking_poles",
+      "water_capacity",
+      "ice_axe",
+      "crampons",
+      "microspikes"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Salmon-Challis NF",
+        "USGS GNIS",
+        "USGS Earthquake Hazards"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit required; primitive first-come trailhead campground at Borah Peak Trailhead"
+  },
+  {
+    "slug": "mount-jefferson-nv",
+    "name": "Mount Jefferson (South Summit)",
+    "state": "NV",
+    "elevation": 11949,
+    "prominence": 5876,
+    "latitude": 38.75198,
+    "longitude": -116.92673,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 4,
+    "distanceMax": 6,
+    "distanceDisplay": "4–6 miles round-trip",
+    "gainMin": 1500,
+    "gainMax": 2000,
+    "gainDisplay": "1,500–2,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "4–6 hours",
+    "distance": 5,
+    "gain": 1750,
+    "mountainRange": "Toquima Range",
+    "season": "May-October",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "wind-extreme-weather",
+      "dehydration",
+      "heat-exhaustion",
+      "exposure"
+    ],
+    "bestRoute": "Jefferson Summit Access to South Summit",
+    "permitRequired": false,
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/mount-jefferson-nv.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Jefferson-Nevada/forecasts/3642",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "emergency-comm",
+        "hat",
+        "gloves",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "High altitude near 12,000 feet combined with rapid elevation gain demands proper acclimatization. Parties unaccustomed to altitude above 10,000 feet should allow extra time and descend if symptoms of acute mountain sickness develop. Summer thunderstorms are common in July and August; plan morning starts and be prepared to descend quickly if storms threaten.",
+    "isolation": 100,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Jefferson Summit trailhead parking, FR 44010 road conditions, and secondary summit elevations before travel."
+    },
+    "permitSeason": "No permit generally required; confirm current fire, road, and wilderness restrictions"
+  },
+  {
+    "slug": "mount-ellen",
+    "name": "Mount Ellen",
+    "state": "UT",
+    "elevation": 11522,
+    "prominence": 5842,
+    "latitude": 38.1127,
+    "longitude": -110.8135,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 3.8,
+    "distanceMax": 3.8,
+    "distanceDisplay": "3.8 miles round-trip",
+    "gainMin": 1250,
+    "gainMax": 1250,
+    "gainDisplay": "1,250 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "2–4 hours",
+    "distance": 3.8,
+    "gain": 1250,
+    "mountainRange": "Henry Mountains",
+    "season": "June-October",
+    "hazards": [
+      "altitude-sickness",
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "off-trail-navigation",
+      "exposure"
+    ],
+    "bestRoute": "Bull Creek Pass to Mount Ellen North Ridge",
+    "permitRequired": false,
+    "dataSource": "BLM Hanksville-Henry Mountains Field Office, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/mount-ellen.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Ellen-Utah/forecasts/3512",
+    "technicalRequirements": [
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "hat",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The false summit near 11,400 feet appears terminal and may initially seem to be the highest point. Continue past it; the true summit lies beyond and is distinguished by a mailbox registry.",
+    "isolation": 56,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "BLM Henry Mountains",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit required; BLM-managed public land"
+  },
+  {
+    "slug": "deseret-peak",
+    "name": "Deseret Peak",
+    "state": "UT",
+    "elevation": 11031,
+    "prominence": 5807,
+    "latitude": 40.45948,
+    "longitude": -112.6263,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 7.8,
+    "distanceMax": 7.8,
+    "distanceDisplay": "7.8 miles round-trip",
+    "gainMin": 3613,
+    "gainMax": 3613,
+    "gainDisplay": "3,613 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–7 hours",
+    "distance": 7.8,
+    "gain": 3613,
+    "mountainRange": "Stansbury Range",
+    "season": "June-October",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "exposure"
+    ],
+    "bestRoute": "Mill Fork Trail from Loop Campground",
+    "permitRequired": false,
+    "dataSource": "Uinta-Wasatch-Cache National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/deseret-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Deseret-Peak/forecasts/3362",
+    "technicalRequirements": [
+      "alpine-start",
+      "water-crossings",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "hat",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "False summits near the peak can create navigation hazards on descent. Before descending, identify the main summit cairn carefully to avoid drifting onto adjacent ridge systems or following false summit terrain. Cloud cover can shroud summit areas while surrounding desert basins remain clear, reducing visibility for route-finding.",
+    "isolation": 46,
+    "gear": [
+      "water_capacity",
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer"
+    ],
+    "permitFee": "Free; campground fees apply",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit required; campground fees apply at Loop Campground"
+  },
+  {
+    "slug": "mount-jefferson-or",
+    "name": "Mount Jefferson (OR)",
+    "state": "OR",
+    "elevation": 10497,
+    "prominence": 5770,
+    "difficulty": 8,
+    "days": 3,
+    "distanceMin": 13,
+    "distanceMax": 17,
+    "distanceDisplay": "~13–17 miles round-trip",
+    "gainMin": 6400,
+    "gainMax": 8100,
+    "gainDisplay": "~6,400–8,100 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 15,
+    "gain": 7250,
+    "mountainRange": "Cascade Range",
+    "season": "June-July",
+    "hazards": [
+      "exposure",
+      "scrambling-exposed",
+      "bergschrund",
+      "rockfall",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "altitude-sickness",
+      "whiteout-conditions"
+    ],
+    "bestRoute": "South Ridge via Pamelia Lake",
+    "permitRequired": true,
+    "dataSource": "USGS Mount Jefferson; Willamette National Forest; Recreation.gov Central Cascades Wilderness Permit; Washington Trails Association trip reports",
+    "ydsClass": "4",
+    "permitSeason": "Central Cascades Wilderness Permit required June 15–October 15: $1/person day use, $6/group overnight via Recreation.gov; federal recreation pass required at Pamelia Lake Trailhead",
+    "heroImage": "/images/peaks/mount-jefferson-or.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Jefferson/forecasts/3199",
+    "technicalRequirements": [
+      "snow-travel",
+      "exposed-scrambling",
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "climbing-protection",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "water-capacity",
+        "gloves",
+        "gaiters",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": true,
+    "callout": "Route character changes substantially with snowpack. Late June to mid-July is generally preferred when snowfields are consolidated and firm. Late-season conditions on bare rock involve sections reported as low 5th class. Soft afternoon snow on the traverse has contributed to serious accidents; an early start from high camp is standard practice. Check current trip reports and ranger-district notices before committing to the climb. This route description is not a substitute for a map, GPS track, current conditions report, and competent alpine route-finding.",
+    "hasSafetyNote": false,
+    "safetyNote": "",
+    "latitude": 44.6725,
+    "longitude": -121.8028,
+    "isolation": 49,
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister"
+    ],
+    "permitFee": "$1/person day use; $6/group overnight",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Willamette NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "pilot-peak",
+    "name": "Pilot Peak",
+    "state": "NV",
+    "elevation": 10719,
+    "prominence": 5725,
+    "latitude": 41.0210959,
+    "longitude": -114.0772837,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 4.4,
+    "distanceMax": 4.4,
+    "distanceDisplay": "4.4 miles round-trip",
+    "gainMin": 2400,
+    "gainMax": 2400,
+    "gainDisplay": "2,400 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 4.4,
+    "gain": 2400,
+    "mountainRange": "Pilot Range",
+    "season": "July-September",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "exposure",
+      "rockfall",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "Miners Canyon Route",
+    "permitRequired": false,
+    "dataSource": "Nevada BLM Elko District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/pilot-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Pilot-Peak-Nevada/forecasts/3267",
+    "technicalRequirements": [
+      "alpine-start",
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "gaiters",
+        "compass",
+        "emergency-comm",
+        "hat",
+        "high-calorie-food",
+        "gloves"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The route is exceptionally steep with minimal relief. Afternoon wind on the exposed ridge can rapidly increase objective danger; an early morning start is strongly recommended. Water is extremely scarce along the route; carry substantial capacity or pre-position water.",
+    "isolation": 54,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit or fee; BLM-managed public land"
+  },
+  {
+    "slug": "crazy-peak",
+    "name": "Crazy Peak",
+    "state": "MT",
+    "elevation": 11214,
+    "prominence": 5733,
+    "latitude": 46.01815,
+    "longitude": -110.27667,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 12.7,
+    "distanceMax": 12.7,
+    "distanceDisplay": "12.7 miles round-trip",
+    "gainMin": 4809,
+    "gainMax": 4809,
+    "gainDisplay": "4,809 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "10–14 hours",
+    "distance": 12.7,
+    "gain": 4809,
+    "mountainRange": "Crazy Mountains",
+    "season": "July-September",
+    "hazards": [
+      "rockfall",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "exposure",
+      "hypothermia",
+      "bears"
+    ],
+    "bestRoute": "West Ridge Route",
+    "permitRequired": false,
+    "dataSource": "Custer Gallatin National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/crazy-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Crazy-Peak/forecasts/3418",
+    "technicalRequirements": [
+      "alpine-start",
+      "exposed-scrambling",
+      "rock-scrambling-loose",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "compass",
+        "water-capacity"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "microspikes",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Rockfall hazard exists on loose scree sections, particularly where parties travel on the same slope. Avoid positioning directly above or below other climbers, move efficiently through scree, and consider wearing a helmet when multiple groups share the route.",
+    "isolation": 50,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "bear_canister"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "ListsOfJohn",
+        "Custer Gallatin NF",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit required; Half Moon Campground fee may apply"
+  },
+  {
+    "slug": "mcdonald-peak",
+    "name": "McDonald Peak",
+    "state": "MT",
+    "elevation": 9820,
+    "prominence": 5636,
+    "latitude": 47.38269,
+    "longitude": -113.91945,
+    "difficulty": 3,
+    "days": 2,
+    "distanceMin": 10,
+    "distanceMax": 15,
+    "distanceDisplay": "10–15 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 5000,
+    "gainDisplay": "4,000+ ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "8–14 hours or 1–2 days",
+    "distance": 12.5,
+    "gain": 4500,
+    "mountainRange": "Mission Mountains",
+    "season": "June-July",
+    "hazards": [
+      "bears",
+      "crevasse-fall",
+      "avalanche",
+      "rockfall",
+      "hypothermia",
+      "off-trail-navigation",
+      "scrambling-exposed",
+      "exposure"
+    ],
+    "bestRoute": "Red Horn Lane / Ashley Lakes Approach toward Duncan Lake",
+    "permitRequired": true,
+    "dataSource": "Confederated Salish & Kootenai Tribes, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "permitSeason": "Flathead Reservation Conservation License required; McDonald Peak Grizzly Bear Closure Area closed July 15–October 1 unless posted otherwise",
+    "heroImage": "/images/peaks/mcdonald-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/McDonald-Peak/forecasts/2993",
+    "technicalRequirements": [
+      "alpine-start",
+      "snow-travel",
+      "glacier-travel",
+      "off-trail-nav",
+      "exposed-scrambling",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "water-capacity"
+      ],
+      "secondary": [
+        "avalanche-gear",
+        "compass",
+        "emergency-comm",
+        "insulating-hat",
+        "gloves",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The McDonald Peak Grizzly Bear Closure Area is closed to all recreational use from July 15 through October 1 each year unless posted otherwise. Do not attempt the climb during this closure window. The practical climbing season is generally early June through July 14, depending on snowpack, road access, and posted tribal regulations. Confirm closure status, access conditions, and all permit requirements with the Confederated Salish and Kootenai Tribes before entering the area.",
+    "isolation": 80,
+    "gear": [
+      "ice_axe",
+      "crampons",
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister"
+    ],
+    "permitFee": "$80 three-day Conservation License; $100 annual; $100 Camping License for overnight",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "CSKT",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "south-sister",
+    "name": "South Sister",
+    "state": "OR",
+    "elevation": 10363,
+    "prominence": 5590,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 13,
+    "distanceMax": 13,
+    "distanceDisplay": "13 miles round-trip",
+    "gainMin": 4950,
+    "gainMax": 4950,
+    "gainDisplay": "4,950 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 13,
+    "gain": 4950,
+    "mountainRange": "Cascade Range",
+    "season": "July-September",
+    "hazards": [
+      "lightning-exposure",
+      "loose-rock-scree",
+      "rockfall",
+      "altitude-sickness",
+      "whiteout-conditions",
+      "hypothermia"
+    ],
+    "bestRoute": "South Sister Climber Trail (Devil's Lake)",
+    "permitRequired": true,
+    "dataSource": "Deschutes National Forest, Recreation.gov Central Cascades Wilderness Permit, USGS Cascades Volcano Observatory, Washington Trails Association trip reports",
+    "ydsClass": "2",
+    "permitSeason": "Central Cascades Wilderness Permit required June 15–October 15: $1/person day use, $6/group overnight via Recreation.gov; Northwest Forest Pass or America the Beautiful Pass required at Devil's Lake Trailhead",
+    "heroImage": "/images/peaks/optimized/south-sister-hero-1440.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/South-Sister-Volcano/forecasts/3157",
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "crampons",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The upper mountain above treeline is fully exposed. Afternoon convective storms are common around South Sister from July through August. Most experienced parties aim to reach the summit by midday and clear the crater rim by early afternoon to stay ahead of lightning risk.",
+    "latitude": 43.9806,
+    "longitude": -121.7697,
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "South Sister permit system",
+        "description": "For current release windows, quota strategy, and day-use versus overnight rules, see the Wilderness Beta guide to the South Sister permit system.",
+        "href": "https://wildernessbeta.com/permits/south-sister/"
+      }
+    ],
+    "isolation": 40,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "$1/person day-use; $6/group overnight",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Deschutes NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "sierra-blanca-peak",
+    "name": "Sierra Blanca Peak",
+    "state": "NM",
+    "elevation": 11975,
+    "prominence": 5543,
+    "latitude": 33.37433,
+    "longitude": -105.80871,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 12,
+    "distanceDisplay": "9–12 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 3500,
+    "gainDisplay": "3,000–3,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 10.5,
+    "gain": 3250,
+    "mountainRange": "Sierra Blanca Range",
+    "season": "June-October",
+    "hazards": [
+      "rockfall",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "off-trail-navigation",
+      "altitude-sickness"
+    ],
+    "bestRoute": "Lookout Mountain Ridge Route",
+    "permitRequired": true,
+    "dataSource": "Mescalero Apache Tribe, Lincoln National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "permitSeason": "Tribal land access; verify current Mescalero Apache, Ski Apache, and Lincoln National Forest requirements",
+    "heroImage": "/images/peaks/sierra-blanca-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Sierra-Blanca/forecasts/3659",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "emergency-comm",
+        "gloves",
+        "hat",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Past forest fires have left fire-scarred slopes on upper sections of the route with increased rockfall hazard from loose, unstable rock. Beyond Lookout Mountain, the route fades and requires careful map and compass navigation on exposed terrain where route-finding becomes a significant consideration.",
+    "isolation": 168,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Varies; verify current access, tribal, and resort requirements",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Mescalero Apache Tribe",
+        "Lincoln NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "pikes-peak",
+    "name": "Pikes Peak",
+    "state": "CO",
+    "elevation": 14115,
+    "prominence": 5530,
+    "difficulty": 5,
+    "days": 3,
+    "distanceMin": 23,
+    "distanceMax": 29,
+    "distanceDisplay": "~23–29 miles round-trip",
+    "gainMin": 6550,
+    "gainMax": 8350,
+    "gainDisplay": "~6,550–8,350 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 26,
+    "gain": 7450,
+    "mountainRange": "Front Range",
+    "season": "June-September",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "dehydration",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "bestRoute": "Barr Trail",
+    "permitRequired": false,
+    "dataSource": "City of Manitou Springs, Pike National Forest, Barr Camp, SummitPost, PeakBagger, trip reports",
+    "ydsClass": "1",
+    "permitSeason": "No climbing permit required; Barr Trailhead parking fee typically $25–$32.50 per day (reserve in peak season)",
+    "heroImage": "/images/peaks/pikes-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Pikes-Peak/forecasts/4300",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "sunglasses",
+        "hat",
+        "water-capacity",
+        "high-calorie-food"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "sunscreen",
+        "gloves",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common in summer, and the upper route is exposed above treeline. Start early, set a firm turnaround time, and aim to be descending from the summit area by late morning or midday. Barr Camp can be a useful place to ask about recent conditions, but hikers should make independent weather decisions.",
+    "latitude": 38.8405,
+    "longitude": -104.8202,
+    "isolation": 61,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes"
+    ],
+    "permitFee": "Free (no climbing permit; trailhead parking fee applies)",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Pike NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-nebo",
+    "name": "Mount Nebo",
+    "state": "UT",
+    "elevation": 11928,
+    "prominence": 5500,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 9,
+    "distanceMax": 9,
+    "distanceDisplay": "9 miles round-trip",
+    "gainMin": 3150,
+    "gainMax": 3650,
+    "gainDisplay": "3,150 ft (3,650 ft round-trip cumulative)",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "4–6 hours",
+    "distance": 9,
+    "gain": 3150,
+    "mountainRange": "Wasatch Range",
+    "season": "June-September",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "rockfall",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "North Peak Trail from North Mount Nebo Trailhead",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Uinta-Wasatch-Cache NF, Peakery; Mount Nebo Wilderness (route, class, hazards, permits)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/mount-nebo.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Nebo/forecasts/3636",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "rock-scrambling-loose"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "helmet"
+      ],
+      "secondary": [
+        "water-capacity",
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Loose shale and black limestone on the final ridge create rockfall hazard in parties. Members should maintain separation on the upper pitch and avoid stopping beneath other climbers on the ascent.",
+    "latitude": 39.8161,
+    "longitude": -111.6558,
+    "isolation": 79,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "helmet"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Uinta-Wasatch-Cache NF",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map and Forest Service 11,928 ft; ListsOfJohn LiDAR 11,941 ft. Prominence: ListsOfJohn 5,500 ft; older sources may list about 5,488 ft."
+    },
+    "permitSeason": "No permit required for day hiking or overnight travel in Mount Nebo Wilderness"
+  },
+  {
+    "slug": "snowshoe-peak",
+    "name": "Snowshoe Peak",
+    "state": "MT",
+    "elevation": 8738,
+    "prominence": 5442,
+    "latitude": 48.2478,
+    "longitude": -115.8958,
+    "difficulty": 6,
+    "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 7,
+    "distanceDisplay": "5–7 miles round-trip",
+    "gainMin": 3600,
+    "gainMax": 4200,
+    "gainDisplay": "3,600–4,200 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 6,
+    "gain": 3900,
+    "mountainRange": "Cabinet Mountains",
+    "season": "July-September",
+    "hazards": [
+      "class-4-climbing",
+      "loose-rock-scree",
+      "scrambling-exposed",
+      "hypothermia",
+      "rockfall",
+      "off-trail-navigation",
+      "bears",
+      "crevasse-fall",
+      "lightning-exposure",
+      "exposure"
+    ],
+    "bestRoute": "Northeast Ridge via Leigh Lake",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, Kootenai NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
+    "ydsClass": "4",
+    "heroImage": "/images/peaks/snowshoe-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Snowshoe-Peak/forecasts/2663",
+    "technicalRequirements": [
+      "exposed-rock-climbing",
+      "rock-scrambling-loose",
+      "alpine-start",
+      "off-trail-nav",
+      "snow-travel",
+      "glacier-travel",
+      "exposed-scrambling"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "rope-harness",
+        "climbing-protection",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity"
+      ],
+      "secondary": [
+        "ice-axe",
+        "crampons",
+        "belay-device",
+        "compass",
+        "emergency-comm",
+        "gaiters",
+        "gloves",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The crux Class 4 chimney features moderate exposure and loose limestone; a rope team should be prepared for rapid weather deterioration on the exposed upper ridge. Descent of the crux and rocky creek-bed descent can be hazardous; a rope is strongly recommended for parties considering the descent route.",
+    "isolation": 80,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister",
+      "ice_axe",
+      "crampons",
+      "rope_harness"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "Kootenai NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Leigh Lake trailhead coordinates and high-clearance road access. Verify whether mid-summer parties can safely manage the crux without rope. Alternative Snowshoe Lake / west-side approach details pending."
+    },
+    "permitSeason": "No climbing permit required; bear-resistant food storage required under Kootenai NF rules"
+  },
+  {
+    "slug": "north-schell-peak",
+    "name": "North Schell Peak",
+    "state": "NV",
+    "elevation": 11891,
+    "prominence": 5403,
+    "latitude": 39.4133,
+    "longitude": -114.5998,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 6,
+    "distanceMax": 8,
+    "distanceDisplay": "~6–8 miles round-trip",
+    "gainMin": 2800,
+    "gainMax": 3100,
+    "gainDisplay": "~2,800–3,100 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–6 hours",
+    "distance": 7,
+    "gain": 2950,
+    "mountainRange": "Schell Creek Range",
+    "season": "June-October",
+    "hazards": [
+      "altitude-sickness",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "exposure",
+      "hypothermia",
+      "off-trail-navigation"
+    ],
+    "bestRoute": "Timber Creek Trail",
+    "permitRequired": false,
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/north-schell-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/North-Schell-Peak/forecasts/3622",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "water-capacity",
+        "compass"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "emergency-comm",
+        "microspikes",
+        "gloves",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Timber Creek Road access can vary due to maintenance, seasonal conditions, or temporary closures. Verify access with the Ely Ranger District at 775-289-3031 before traveling to the trailhead.",
+    "isolation": 24,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters",
+      "water_capacity"
+    ],
+    "permitFee": "Free; campground fees apply",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No day-hiking permit; Timber Creek Campground reservations and fees may apply"
+  },
+  {
+    "slug": "star-peak",
+    "name": "Star Peak",
+    "state": "NV",
+    "elevation": 9837,
+    "prominence": 5400,
+    "latitude": 40.52244,
+    "longitude": -118.17077,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 6,
+    "distanceMax": 10,
+    "distanceDisplay": "6–10 miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 5000,
+    "gainDisplay": "3,000–5,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–8 hours",
+    "distance": 8,
+    "gain": 4000,
+    "mountainRange": "Humboldt Range",
+    "season": "May-October",
+    "hazards": [
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "heat-exhaustion",
+      "exposure"
+    ],
+    "bestRoute": "El Dorado Canyon Road Approach",
+    "permitRequired": false,
+    "dataSource": "Nevada BLM Winnemucca District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/star-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Desatoya-Peak/forecasts/3041",
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "hat",
+        "high-calorie-food",
+        "gloves"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "El Dorado Canyon Road is rough and boulder-strewn, especially in the upper sections. High-clearance four-wheel drive should be the planning baseline. Lower portions may be accessible to standard vehicles depending on conditions, but undercarriage damage is possible. Choose your parking point and vehicle accordingly.",
+    "isolation": 69,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No permit required; verify current BLM road access and conditions"
+  },
+  {
+    "slug": "hayford-peak",
+    "name": "Hayford Peak",
+    "state": "NV",
+    "elevation": 9917,
+    "prominence": 5417,
+    "latitude": 36.6578,
+    "longitude": -115.2008,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 15,
+    "distanceMax": 18,
+    "distanceDisplay": "15–18 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 4250,
+    "gainDisplay": "4,000–4,250 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–10 hours",
+    "distance": 16.5,
+    "gain": 4125,
+    "mountainRange": "Sheep Range",
+    "season": "April-October",
+    "hazards": [
+      "lightning-exposure",
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "exposure",
+      "wind-extreme-weather",
+      "hypothermia"
+    ],
+    "bestRoute": "Deadman Canyon Route",
+    "permitRequired": false,
+    "dataSource": "Desert National Wildlife Refuge, FWS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/hayford-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Griffith-Peak/forecasts/3371",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "water-capacity",
+        "emergency-comm"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "gloves",
+        "high-calorie-food",
+        "microspikes"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Check the FWS current conditions page before departure. As of the May 28, 2026 FWS update, Alamo Road was only partially open, with sections between Hidden Forest Road and the Dry Lake bed closed. Access from Corn Creek to Hidden Forest Road requires high-clearance and 4WD vehicles. Because the route is remote and emergency response may be significantly delayed, parties should be prepared for self-rescue and carry communication devices.",
+    "isolation": 34,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Desert NWR",
+        "FWS",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Hidden Forest Cabin status, road closures, and Wiregrass Spring water availability before travel."
+    },
+    "permitSeason": "No backpacking permit required; confirm current refuge rules, road closures, and fire restrictions"
+  },
+  {
+    "slug": "diamond-peak",
+    "name": "Diamond Peak",
+    "state": "ID",
+    "elevation": 12200,
+    "prominence": 5377,
+    "latitude": 43.9103,
+    "longitude": -113.0847,
+    "difficulty": 4,
+    "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 6,
+    "distanceDisplay": "5–6 miles round-trip",
+    "gainMin": 4000,
+    "gainMax": 4000,
+    "gainDisplay": "4,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–8 hours",
+    "distance": 5.5,
+    "gain": 4000,
+    "mountainRange": "Lemhi Range",
+    "season": "June-September",
+    "hazards": [
+      "altitude-sickness",
+      "hypothermia",
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "rockfall",
+      "exposure"
+    ],
+    "bestRoute": "East Ridge via Birch Creek Valley",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, BLM, Caribou-Targhee NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/diamond-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "exposed-scrambling",
+      "rock-scrambling-loose",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "trekking-poles"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "sunscreen",
+        "gloves",
+        "insulating-hat",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms represent the primary hazard on the exposed ridge. Parties must plan to be off the summit by early afternoon, which typically necessitates a 5:00–6:00 AM start. The rapid elevation gain also demands adequate acclimatization; many parties spend a night at Birch Creek Campground or nearby alternatives before attempting the climb.",
+    "isolation": 33,
+    "gear": [
+      "helmet",
+      "insulating_layer",
+      "waterproof_shell",
+      "trekking_poles"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "BLM",
+        "Caribou-Targhee NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Elevation sources vary around 12,197–12,200 ft; prominence approximate at 5,377 ft. Confirm Birch Creek Campground trailhead coordinates and seasonal access."
+    },
+    "permitSeason": "No climbing permit required; confirm current BLM and Caribou-Targhee NF camping and fire rules"
+  },
+  {
+    "slug": "flat-top-mountain",
+    "name": "Flat Top Mountain",
+    "state": "UT",
+    "elevation": 10624,
+    "prominence": 5370,
+    "latitude": 40.5864,
+    "longitude": -111.9398,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 10,
+    "distanceDisplay": "~8–10 miles round-trip",
+    "gainMin": 2500,
+    "gainMax": 3000,
+    "gainDisplay": "~2,500–3,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6 hours",
+    "distance": 9,
+    "gain": 2750,
+    "mountainRange": "Oquirrh Mountains",
+    "season": "June-October",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "off-trail-navigation",
+      "exposure"
+    ],
+    "bestRoute": "South Fork Ophir Canyon Route",
+    "permitRequired": false,
+    "dataSource": "USGS GNIS, ListsOfJohn, PeakBagger/SummitPost (route, class, hazards, access)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/flat-top-mountain.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Flattop-Mountain/forecasts/3808",
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "gaiters",
+        "shell-jacket",
+        "insulating-layer",
+        "compass",
+        "water-capacity"
+      ],
+      "secondary": [
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Private land surrounds much of the approach and summit area. Current access permission must be independently verified with the appropriate landowner or land manager before any attempt. Stay on the approved route to avoid trespassing or entering restricted mining property.",
+    "isolation": 24,
+    "gear": [
+      "microspikes",
+      "trekking_poles",
+      "gaiters",
+      "insulating_layer"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "USGS GNIS",
+        "ListsOfJohn",
+        "PeakBagger"
+      ],
+      "notes": "Private land access must be verified independently before each attempt."
+    },
+    "permitSeason": "No wilderness permit; private landowner permission required — verify current access before attempting"
+  },
+  {
+    "slug": "mount-stuart",
+    "name": "Mount Stuart",
+    "state": "WA",
+    "elevation": 9415,
+    "prominence": 5354,
+    "latitude": 47.43671,
+    "longitude": -120.93711,
+    "difficulty": 3,
+    "days": 2,
+    "distanceMin": 12,
+    "distanceMax": 13,
+    "distanceDisplay": "12–13 miles round-trip",
+    "gainMin": 8000,
+    "gainMax": 8000,
+    "gainDisplay": "8,000 ft",
+    "daysMin": 1,
+    "daysMax": 2,
+    "daysDisplay": "1–2 days",
+    "distance": 12.5,
+    "gain": 8000,
+    "mountainRange": "Stuart Range",
+    "season": "June-October",
+    "hazards": [
+      "rockfall",
+      "scrambling-exposed",
+      "loose-rock-scree",
+      "off-trail-navigation",
+      "exposure",
+      "hypothermia",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "Cascadian Couloir",
+    "permitRequired": false,
+    "dataSource": "Okanogan-Wenatchee National Forest, USGS, Peakbagger, SummitPost, Cascade Alpine Guides",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/mount-stuart.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Stuart/forecasts/2869",
+    "technicalRequirements": [
+      "exposed-scrambling",
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "trekking-poles",
+        "compass",
+        "water-capacity"
+      ],
+      "secondary": [
+        "ice-axe",
+        "crampons",
+        "microspikes",
+        "gloves",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Rockfall is a serious overhead hazard in the Cascadian Couloir, especially when multiple parties are active. A climbing helmet should be considered essential. Route-finding on the upper mountain is complex and unmarked; carry a topographic map, GPS track, and the skills to navigate without relying on cairns alone. Early-season ascents may require an ice axe, crampons, and snow-climbing experience.",
+    "isolation": 45,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Northwest Forest Pass or equivalent required at trailhead",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Okanogan-Wenatchee National Forest",
+        "USGS",
+        "Peakbagger",
+        "SummitPost",
+        "Cascade Alpine Guides"
+      ],
+      "notes": "Prominence: 5,354 ft clean prominence per editorial sources; prior database value 5,335 ft."
+    },
+    "permitSeason": "No climbing permit required; Northwest Forest Pass or federal interagency pass required at Esmeralda Trailhead"
+  },
+  {
+    "slug": "blanca-peak",
+    "name": "Blanca Peak",
+    "state": "CO",
+    "elevation": 14351,
+    "prominence": 5331,
+    "latitude": 37.57753,
+    "longitude": -105.48566,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 17,
+    "distanceDisplay": "14–17 miles round-trip",
+    "gainMin": 6000,
+    "gainMax": 6500,
+    "gainDisplay": "6,000–6,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–12 hours",
+    "distance": 15.5,
+    "gain": 6250,
+    "mountainRange": "Sangre de Cristo Mountains",
+    "season": "July-September",
+    "hazards": [
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "exposure",
+      "loose-rock-scree",
+      "altitude-sickness",
+      "hypothermia"
+    ],
+    "bestRoute": "Lake Como Road Route",
+    "permitRequired": false,
+    "dataSource": "Rio Grande National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/blanca-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Blanca-Peak/forecasts/4372",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "gloves",
+        "insulating-hat"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
+        "high-calorie-food",
+        "gaiters"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Lake Como Road is extremely rough and impassable to standard passenger vehicles. Confirm vehicle capability before attempting to drive beyond the lower parking area. Snowmelt, runoff, washouts, and lingering snow can make sections of the road temporarily impassable, especially in June and early July.",
+    "isolation": 104,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Rio Grande NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No permit for standard day hiking; verify current Forest Service camping and fire restrictions"
+  },
+  {
+    "slug": "mount-timpanogos",
+    "name": "Mount Timpanogos",
+    "state": "UT",
+    "elevation": 11752,
+    "prominence": 5270,
+    "difficulty": 5,
+    "days": 1,
+    "distanceMin": 14,
+    "distanceMax": 14,
+    "distanceDisplay": "14 miles round-trip",
+    "gainMin": 4389,
+    "gainMax": 4389,
+    "gainDisplay": "4,389 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 14,
+    "gain": 4389,
+    "mountainRange": "Wasatch Range",
+    "season": "Late June-Early October",
+    "hazards": [
+      "lightning-exposure",
+      "altitude-sickness",
+      "avalanche",
+      "loose-rock-scree"
+    ],
+    "bestRoute": "Timpooneke Trail",
+    "permitRequired": false,
+    "dataSource": "Uinta-Wasatch-Cache National Forest, SummitPost, PeakBagger, Recreation.gov, trip reports",
+    "ydsClass": "2",
+    "permitSeason": "No climbing permit required; timed Timpooneke trailhead parking on summer weekends and holidays via Recreation.gov",
+    "heroImage": "/images/peaks/mount-timpanogos.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Timpanogos/forecasts/3581",
+    "technicalRequirements": [
+      "altitude-acclimatization",
+      "alpine-start",
+      "rock-scrambling-loose",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "ice-axe",
+        "gloves",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "An early start is strongly recommended, especially on weekends when parking fills early. Afternoon thunderstorms develop rapidly; plan a turnaround time that allows descent off the exposed ridge before early afternoon.",
+    "latitude": 40.3908,
+    "longitude": -111.646,
+    "isolation": 40,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free (timed parking permit required on weekends/holidays)",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "ibapah-peak",
+    "name": "Ibapah Peak",
+    "state": "UT",
+    "elevation": 12087,
+    "prominence": 5247,
+    "latitude": 39.794,
+    "longitude": -113.458,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 14.9,
+    "distanceMax": 14.9,
+    "distanceDisplay": "14.9 miles round-trip",
+    "gainMin": 5990,
+    "gainMax": 5990,
+    "gainDisplay": "5,990 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "10–12 hours",
+    "distance": 14.9,
+    "gain": 5990,
+    "mountainRange": "Deep Creek Range",
+    "season": "June-September",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "off-trail-navigation",
+      "lightning-exposure",
+      "exposure",
+      "water-crossing"
+    ],
+    "bestRoute": "Granite Creek Road Approach",
+    "permitRequired": false,
+    "dataSource": "Utah BLM, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/ibapah-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Ibapah/forecasts/3688",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "gaiters",
+        "high-calorie-food",
+        "gloves",
+        "microspikes",
+        "hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Access is severely constrained by the Goshute Indian Reservation, which blocks western approaches; remain on the Granite Creek corridor and do not cross reservation lands without explicit permission. The area is extremely remote with no cell service and emergency response many hours away. Water availability decreases above 10,000 feet; carry sufficient capacity for long dry stretches.",
+    "isolation": 62,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Utah BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No permit required; verify BLM fire restrictions and road conditions before travel"
+  },
+  {
+    "slug": "lassen-peak",
+    "name": "Lassen Peak",
+    "state": "CA",
+    "elevation": 10457,
+    "prominence": 5246,
+    "latitude": 40.4882,
+    "longitude": -121.505,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 5,
+    "distanceMax": 5,
+    "distanceDisplay": "5 miles round-trip",
+    "gainMin": 2000,
+    "gainMax": 2000,
+    "gainDisplay": "2,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "3–5 hours",
+    "distance": 5,
+    "gain": 2000,
+    "mountainRange": "Cascade Range",
+    "season": "June-September",
+    "hazards": [
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "heat-exhaustion"
+    ],
+    "bestRoute": "Lassen Peak Trail",
+    "permitRequired": true,
+    "dataSource": "Willhite Web, Lassen Volcanic NPS, USGS, Recreation.gov",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/lassen-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Lassen-Peak/forecasts/3187",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "trekking-poles",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "gaiters",
+        "crampons",
+        "ice-axe"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Start early and avoid electrical weather. Lassen Peak is exposed, windy, and above 10,000 feet. If thunderstorms are forecast or clouds are building, turn around before reaching the upper mountain.",
+    "isolation": 72,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Park entrance fee required; America the Beautiful Pass accepted",
+    "published": true,
+    "permitStatus": "fee",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Willhite Web",
+        "Lassen Volcanic NPS",
+        "USGS",
+        "Recreation.gov"
+      ],
+      "notes": "Elevation: NPS/traditional value 10,457 ft; Peakbagger lists 10,461.7 ft. Prominence: Peakbagger-style value 5,246 ft; public sources vary around 5,229–5,246 ft."
+    },
+    "permitSeason": "Park entrance pass required year-round; Lassen Peak Trail typically open late June through September depending on snow and park road access"
+  },
+  {
+    "slug": "mount-cleveland",
+    "name": "Mount Cleveland",
+    "state": "MT",
+    "elevation": 10466,
+    "prominence": 5252,
+    "latitude": 47.6092,
+    "longitude": -112.3839,
+    "difficulty": 4,
+    "days": 3,
+    "distanceMin": 28,
+    "distanceMax": 32,
+    "distanceDisplay": "~28–32 miles round-trip",
+    "gainMin": 6300,
+    "gainMax": 6700,
+    "gainDisplay": "~6,300–6,700 ft",
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 30,
+    "gain": 6500,
+    "mountainRange": "Lewis Range",
+    "season": "Late July-Mid-September",
+    "hazards": [
+      "altitude-sickness",
+      "avalanche",
+      "bears",
+      "exposure",
+      "hypothermia",
+      "loose-rock-scree",
+      "rockfall",
+      "scrambling-exposed",
+      "whiteout-conditions",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "Stoney Indian Route",
+    "permitRequired": true,
+    "dataSource": "Glacier National Park, Recreation.gov, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "4",
+    "heroImage": "/images/peaks/mount-cleveland.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Cleveland-Montana/forecasts/3190",
+    "technicalRequirements": [
+      "alpine-start",
+      "altitude-acclimatization",
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "snow-travel"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "compass"
+      ],
+      "secondary": [
+        "ice-axe",
+        "crampons",
+        "microspikes",
+        "avalanche-gear",
+        "gloves",
+        "insulating-hat",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Route-finding is difficult on the Stoney Indian Peaks traverse, particularly along the exposed east-side section. Parties commonly lose the route in poor visibility. Descending in deteriorating weather on loose, unstable rock is hazardous. Early-season attempts can involve lingering snow on narrow ledges, increasing avalanche and slip risk.",
+    "isolation": 98,
+    "gear": [
+      "helmet",
+      "mountaineering_boots",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister",
+      "ice_axe",
+      "crampons",
+      "avalanche_kit",
+      "water_capacity"
+    ],
+    "permitFee": "No climbing fee; entrance and backcountry permit fees apply",
+    "published": true,
+    "permitStatus": "limited",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Glacier National Park",
+        "Recreation.gov",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "Backcountry permit required for overnight itineraries; advance Recreation.gov reservations strongly recommended"
+  },
+  {
+    "slug": "arc-dome",
+    "name": "Arc Dome",
+    "state": "NV",
+    "elevation": 11778,
+    "prominence": 5213,
+    "latitude": 38.90009,
+    "longitude": -117.37609,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 14.6,
+    "distanceMax": 14.6,
+    "distanceDisplay": "14.6 miles round-trip",
+    "gainMin": 4335,
+    "gainMax": 4335,
+    "gainDisplay": "4,335 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–10 hours",
+    "distance": 14.6,
+    "gain": 4335,
+    "mountainRange": "Toiyabe Range",
+    "season": "June-September",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "exposure"
+    ],
+    "bestRoute": "Columbine Campground Route",
+    "permitRequired": false,
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/arc-dome.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Arc-Dome/forecasts/3589",
+    "technicalRequirements": [
+      "alpine-start",
+      "water-crossings"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "gaiters",
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "compass",
+        "emergency-comm",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common in the Toiyabe Range during summer. Start early and aim to be off the summit ridge and exposed high crest before storms develop. Much of the upper route is open terrain with limited shelter from lightning, wind, or sudden temperature drops.",
+    "isolation": 23,
+    "gear": [
+      "trekking_poles",
+      "gaiters",
+      "waterproof_shell",
+      "insulating_layer"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No climbing permit or fee; free Columbine Campground trailhead access"
+  },
+  {
+    "slug": "she-devil",
+    "name": "She-Devil",
+    "state": "ID",
+    "elevation": 9400,
+    "prominence": 5200,
+    "latitude": 45.56,
+    "longitude": -116.375,
+    "difficulty": 3,
+    "days": 1,
+    "distanceMin": 7,
+    "distanceMax": 7,
+    "distanceDisplay": "7+ miles round-trip",
+    "gainMin": 3000,
+    "gainMax": 4000,
+    "gainDisplay": "3,000–4,000 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 7,
+    "gain": 3500,
+    "mountainRange": "Seven Devils Mountains",
+    "season": "July-September",
+    "hazards": [
+      "loose-rock-scree",
+      "rockfall",
+      "scrambling-exposed",
+      "exposure",
+      "off-trail-navigation",
+      "lightning-exposure",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "She-Devil High Route",
+    "permitRequired": false,
+    "dataSource": "Nez Perce-Clearwater National Forest, Hells Canyon Wilderness, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "ydsClass": "3",
+    "heroImage": "/images/peaks/she-devil.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Seven-Devils-Mountains/forecasts/2859",
+    "technicalRequirements": [
+      "alpine-start",
+      "rock-scrambling-loose",
+      "exposed-scrambling",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "gaiters",
+        "high-calorie-food",
+        "sunscreen",
+        "sunglasses"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "A rope may provide limited benefit on much of this route because protection can be unreliable in loose volcanic rock, and party movement can increase rockfall exposure. Route-finding is essential; parties should carry detailed maps and possess competency in cross-country navigation through complex volcanic terrain.",
+    "isolation": 31,
+    "gear": [
+      "helmet",
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nez Perce-Clearwater NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "No standard recreation permit; check current Forest Service regulations and seasonal closures"
+  },
+  {
+    "slug": "abercrombie-mountain",
+    "name": "Abercrombie Mountain",
+    "state": "WA",
+    "elevation": 7310,
+    "prominence": 5174,
+    "difficulty": 2,
+    "days": 1,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8 miles round-trip",
+    "gainMin": 2300,
+    "gainMax": 2300,
+    "gainDisplay": "2,300 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "4–6 hours",
+    "distance": 8,
+    "gain": 2300,
+    "mountainRange": "Selkirk Mountains",
+    "season": "June-October",
+    "hazards": [
+      "bears",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "dehydration",
+      "wind-extreme-weather"
+    ],
+    "bestRoute": "Flume Creek Trail #502 (Eastern Approach)",
+    "permitRequired": false,
+    "dataSource": "Colville National Forest, Willhite Web, Out There Outdoors, Peakbagger, SummitPost, WTA",
+    "ydsClass": "2",
+    "heroImage": "/images/peaks/abercrombie-mountain.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Abercrombie-Peak/forecasts/2175",
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "insect-repellent",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Start early to reduce exposure to afternoon thunderstorms, which develop rapidly mid-summer over exposed alpine terrain where the summit offers minimal shelter.",
+    "latitude": 48.9281,
+    "longitude": -118.2764,
+    "isolation": 14,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Colville National Forest",
+        "Peakbagger",
+        "SummitPost",
+        "WTA",
+        "Out There Outdoors",
+        "Willhite Web"
+      ],
+      "notes": "Elevation: traditional/public value 7,310 ft; Peakbagger LiDAR lists 7,314.4 ft. Prominence: Peakbagger clean prominence 5,174 ft; optimistic prominence is 5,194 ft."
+    },
+    "permitSeason": "No permit required for day hiking on Colville National Forest land"
+  },
+  {
+    "slug": "mount-lemmon",
+    "name": "Mount Lemmon",
+    "state": "AZ",
+    "elevation": 9171,
+    "prominence": 5164,
+    "latitude": 32.4433,
+    "longitude": -110.7882,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 4,
+    "distanceMax": 9,
+    "distanceDisplay": "4–9 miles round-trip",
+    "gainMin": 2000,
+    "gainMax": 3500,
+    "gainDisplay": "2,000–3,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "4–6 hours",
+    "distance": 6.5,
+    "gain": 2750,
+    "mountainRange": "Santa Catalina Mountains",
+    "season": "May-October",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "bears"
+    ],
+    "bestRoute": "Aspen Trail / Marshall Gulch Trail",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Santa Catalina Ranger District (route, class, hazards, permits)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/mount-lemmon.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Lemmon/forecasts/2791",
+    "technicalRequirements": [
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "trekking-poles"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "high-calorie-food",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The summit is often 20 to 30 degrees Fahrenheit cooler than Tucson, especially during warm-season afternoons. Summer thunderstorms build rapidly on the ridgeline from July through September; plan to be off exposed terrain before midday.",
+    "isolation": 52,
+    "gear": [
+      "waterproof_shell",
+      "insulating_layer",
+      "water_capacity",
+      "trekking_poles"
+    ],
+    "permitFee": "$8 per vehicle",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery",
+        "Santa Catalina Ranger District"
+      ],
+      "notes": "Elevation: traditional/public summit 9,171 ft; PeakBagger LiDAR 9,166.5 ft; ListsOfJohn LiDAR 9,166 ft. Prominence: ListsOfJohn LiDAR 5,164 ft; PeakBagger 5,164.8 ft; map value 5,177 ft."
+    },
+    "permitSeason": "No hiking permit required; Coronado National Forest or Interagency pass required at Marshall Gulch ($8 day-use on-site)"
+  },
+  {
+    "slug": "chiricahua-peak",
+    "name": "Chiricahua Peak",
+    "state": "AZ",
+    "elevation": 9776,
+    "prominence": 5163,
+    "latitude": 31.84589,
+    "longitude": -109.2913,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 10.9,
+    "distanceMax": 10.9,
+    "distanceDisplay": "10.9 miles round-trip",
+    "gainMin": 2152,
+    "gainMax": 2152,
+    "gainDisplay": "2,152 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5.5–6 hours",
+    "distance": 10.9,
+    "gain": 2152,
+    "mountainRange": "Chiricahua Mountains",
+    "season": "May-September",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "lightning-exposure",
+      "bears",
+      "loose-rock-scree",
+      "off-trail-navigation"
+    ],
+    "bestRoute": "Crest Trail from Rustler Park",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Chiricahua Wilderness (route, class, hazards, permits)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/chiricahua-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Chiricahua-Peak/forecasts/2974",
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "bear-canister"
+      ],
+      "secondary": [
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "high-calorie-food",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common during monsoon season (July–August). Black bears inhabit the Chiricahua region; use proper food storage and bear boxes at developed sites for overnight trips.",
+    "isolation": 64,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "bear_canister"
+    ],
+    "permitFee": "$8 day-use at Rustler Park (verify; federal passes may apply)",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery"
+      ],
+      "notes": "Elevation: ListsOfJohn LiDAR 9,776 ft; traditional sources commonly list 9,759 ft. Prominence: ListsOfJohn LiDAR 5,163 ft; traditional sources commonly list ~5,139 ft. Confirm Crest Trail stats, current day-use fee, and campground closure windows."
+    },
+    "permitSeason": "No day-hiking permit; $8 day-use fee may apply at Rustler Park; confirm current fee and pass exemptions"
+  },
+  {
+    "slug": "mount-eddy",
+    "name": "Mount Eddy",
+    "state": "CA",
+    "elevation": 9025,
+    "prominence": 5153,
+    "latitude": 41.3207,
+    "longitude": -122.4544,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 9.5,
+    "distanceMax": 10.5,
+    "distanceDisplay": "9.5–10.5 miles round-trip",
+    "gainMin": 2150,
+    "gainMax": 2500,
+    "gainDisplay": "2,150–2,500 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "5–7 hours",
+    "distance": 10,
+    "gain": 2325,
+    "mountainRange": "Trinity Divide",
+    "season": "June-October",
+    "hazards": [
+      "lightning-exposure",
+      "hypothermia",
+      "wind-extreme-weather",
+      "bears",
+      "dehydration"
+    ],
+    "bestRoute": "Parks Creek Trail to Summit",
+    "permitRequired": false,
+    "dataSource": "Shasta-Trinity National Forest, Mount Shasta Trail Association, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/mount-eddy.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Eddy/forecasts/2751",
+    "technicalRequirements": [
+      "alpine-start"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses"
+      ],
+      "secondary": [
+        "microspikes",
+        "compass",
+        "emergency-comm",
+        "gloves",
+        "hat",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Mount Eddy's remote location at the crest of the Trinity Divide exposes hikers to rapid weather changes. Summer afternoon thunderstorms are common from July through September. Early-season ascents in June may encounter significant snow above 8,500 feet. Afternoon winds can be severe at the summit.",
+    "isolation": 15,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "self-register",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Mount Shasta Trail Association",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    },
+    "permitSeason": "Self-issue wilderness permit for overnight camping; California campfire permit required for stoves and fires"
+  },
+  {
+    "slug": "miller-peak",
+    "name": "Miller Peak",
+    "state": "AZ",
+    "elevation": 9468,
+    "prominence": 5007,
+    "latitude": 31.39277,
+    "longitude": -110.29285,
+    "difficulty": 1,
+    "days": 1,
+    "distanceMin": 11,
+    "distanceMax": 11,
+    "distanceDisplay": "11 miles round-trip",
+    "gainMin": 3150,
+    "gainMax": 3150,
+    "gainDisplay": "3,150 ft",
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8 hours",
+    "distance": 11,
+    "gain": 3150,
+    "mountainRange": "Huachuca Mountains",
+    "season": "October-May",
+    "hazards": [
+      "dehydration",
+      "heat-exhaustion",
+      "loose-rock-scree",
+      "bears",
+      "lightning-exposure"
+    ],
+    "bestRoute": "Huachuca Crest Trail from Montezuma Pass",
+    "permitRequired": false,
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Arizona Birding Trail (route, class, hazards)",
+    "ydsClass": "1",
+    "heroImage": "/images/peaks/miller-peak.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Miller-Peak-Arizona/forecasts/2885",
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "insulating-layer",
+        "shell-jacket",
+        "water-capacity"
+      ],
+      "secondary": [
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "high-calorie-food",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The area's proximity to the Mexico border makes situational awareness important. Standard hiking routes are commonly used by recreationists, but awareness of the border security context is advisable.",
+    "isolation": 67,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "permitFee": "Free",
+    "published": true,
+    "permitStatus": "none",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery",
+        "Arizona Birding Trail"
+      ],
+      "notes": "Elevation: ListsOfJohn LiDAR 9,468 ft; traditional sources commonly list 9,466–9,470 ft. Prominence: ListsOfJohn LiDAR 5,007 ft; Peakbagger key-col ~5,008 ft; public sources often list 5,006 ft. Confirm current Crest Trail condition and post-fire recovery status."
+    },
+    "permitSeason": "No permit required for day hiking; confirm current Coronado NF camping and fire rules"
+  }
+]

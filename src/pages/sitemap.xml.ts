@@ -1,4 +1,4 @@
-import peaksData from '../data/peaks.json';
+import peaksData from '../data/peaks';
 import { SITE_URL } from '../lib/constants';
 
 function escapeXml(value: string): string {

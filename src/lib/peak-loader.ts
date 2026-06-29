@@ -4,7 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
-import peaksData from '../data/peaks.json';
+import peaksData from '../data/peaks';
 import { SITE_URL } from './constants';
 import {
   generateMountainSchema,
@@ -24,7 +24,7 @@ import { isPeak, type Peak } from '../types/peak';
 const peaks = peaksData as Peak[];
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-export const PEAKS_JSON_PATH = join(__dirname, '../data/peaks.json');
+export const PEAKS_JSON_PATH = join(__dirname, '../data/peaks/peaks.json');
 export const DISK_CACHE_PATH = join(__dirname, '../data/generated/schema-cache.json');
 
 let diskCacheLoaded = false;

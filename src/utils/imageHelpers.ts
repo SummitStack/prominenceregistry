@@ -1,5 +1,5 @@
 import imageManifest from '../data/imageManifest.json';
-import peaksData from '../data/peaks.json';
+import peaksData from '../data/peaks';
 import { getStateName } from './stateNames';
 
 export type ImageFormatPair = {

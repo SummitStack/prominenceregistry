@@ -1,5 +1,5 @@
 import imageManifest from '../data/imageManifest.json';
-import peaksData from '../data/peaks.json';
+import peaksData from '../data/peaks';
 import { SITE_URL } from '../lib/constants';
 import { buildPeakImageAlt } from '../utils/imageHelpers';
 import { getStateName } from '../utils/stateNames';
