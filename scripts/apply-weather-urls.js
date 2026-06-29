@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const peaksPath = join(__dirname, '../src/data/peaks.ts');
+const peaksPath = join(__dirname, '../src/data/peaks/peaks.json');
 const BASE = 'https://www.mountain-forecast.com/peaks';
 
 /** slug → urlPart/elevationMeters (summit forecast) */

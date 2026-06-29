@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const path = 'src/data/peaks.ts';
+const path = 'src/data/peaks/peaks.json';
 const peaks = JSON.parse(fs.readFileSync(path, 'utf8'));
 
 function fmtGain(n) {
