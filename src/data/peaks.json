@@ -5238,11 +5238,11 @@
     "slug": "lassen-peak",
     "name": "Lassen Peak",
     "state": "CA",
-    "elevation": 10462,
-    "prominence": 5229,
+    "elevation": 10457,
+    "prominence": 5246,
     "latitude": 40.4882,
     "longitude": -121.505,
-    "difficulty": 4,
+    "difficulty": 1,
     "days": 1,
     "distanceMin": 5,
     "distanceMax": 5,
@@ -5252,68 +5252,90 @@
     "gainDisplay": "2,000 ft",
     "daysMin": 1,
     "daysMax": 1,
-    "daysDisplay": "1 day",
+    "daysDisplay": "3–5 hours",
     "distance": 5,
     "gain": 2000,
     "mountainRange": "Cascade Range",
-    "season": "June-October",
+    "season": "June-September",
     "hazards": [
-      "dehydration",
-      "hypothermia",
       "lightning-exposure",
-      "rockfall",
-      "exposure",
-      "wind-extreme-weather"
+      "wind-extreme-weather",
+      "dehydration",
+      "altitude-sickness",
+      "loose-rock-scree",
+      "heat-exhaustion"
     ],
     "bestRoute": "Lassen Peak Trail",
-    "permitRequired": false,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "permitRequired": true,
+    "dataSource": "Willhite Web, Lassen Volcanic NPS, USGS, Recreation.gov",
     "ydsClass": "1",
     "heroImage": "/images/peaks/lassen-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Lassen-Peak/forecasts/3187",
     "technicalRequirements": [
       "alpine-start",
-      "off-trail-nav",
-      "snow-travel"
+      "altitude-acclimatization"
     ],
     "requiredGear": {
       "priority": [
+        "insulating-layer",
+        "shell-jacket",
+        "trekking-poles",
         "water-capacity",
         "sunscreen",
-        "shell-jacket",
-        "insulating-layer",
         "sunglasses",
         "hat"
       ],
       "secondary": [
         "microspikes",
-        "gloves",
-        "compass",
-        "emergency-comm",
-        "high-calorie-food",
-        "gaiters"
+        "gaiters",
+        "crampons",
+        "ice-axe"
       ]
     },
     "hasCallout": false,
     "callout": "",
-    "hasSafetyNote": false,
-    "safetyNote": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Start early and avoid electrical weather. Lassen Peak is exposed, windy, and above 10,000 feet. If thunderstorms are forecast or clouds are building, turn around before reaching the upper mountain.",
     "isolation": 72,
-    "gear": [],
-    "permitFee": null,
-    "published": false,
-    "permitStatus": null,
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "permitFee": "Park entrance fee required; America the Beautiful Pass accepted",
+    "published": true,
+    "permitStatus": "fee",
     "verification": {
-      "status": "needs-review",
-      "lastChecked": null,
-      "checkedAgainst": [],
-      "notes": null
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Willhite Web",
+        "Lassen Volcanic NPS",
+        "USGS",
+        "Recreation.gov"
+      ],
+      "notes": "Elevation: NPS/traditional value 10,457 ft; Peakbagger lists 10,461.7 ft. Prominence: Peakbagger-style value 5,246 ft; public sources vary around 5,229–5,246 ft."
     },
-    "permitSeason": "Permit details pending editorial review",
+    "permitSeason": "Park entrance pass required year-round; Lassen Peak Trail typically open late June through September depending on snow and park road access",
     "content": {
       "overview": [
-        "Lassen Peak ranks No. 50 among the 57 ultra-prominent peaks in the contiguous United States, rising 10,462 feet in the Cascade Range of northern California with 5,229 feet of clean prominence. It is the highest point in Lassen Volcanic National Park and one of the southernmost Cascade volcanoes. Most hikers use the Lassen Peak Trail for 5 miles round-trip with 2,000 feet of gain on Class 1 terrain."
-      ]
+        "Lassen Peak ranks No. 50 among the 57 ultra-prominent peaks in the contiguous United States, rising 10,457 feet in the Cascade Range of northeastern California, with 5,246 feet of clean prominence. It is the highest point in Lassen Volcanic National Park and the southernmost active volcano in the Cascade Range. Most hikers use the Lassen Peak Trail for 5 miles round-trip with 2,000 feet of gain on Class 1 terrain.",
+        "Lassen Peak is commonly cited by the National Park Service as the world's largest volcanic dome. Its eruption sequence between 1914 and 1917 was the most recent Cascade Range eruption before Mount Saint Helens in 1980. Lassen Volcanic National Park remains geothermally active, with fumaroles, hot springs, and mud pots visible in hydrothermal areas throughout the park.",
+        "The standard Lassen Peak Trail requires only Class 1 hiking but gains roughly 2,000 feet in 2.5 miles across steep, exposed volcanic terrain. The route is well-maintained and straightforward, making the summit accessible to experienced day hikers while still demanding respect for elevation, sun exposure, wind, lingering snow, and rapid weather changes typical of high Cascade peaks.",
+        "Lassen Peak's volcanic dome is roughly 11,000 feet wide and 2,000 feet high, making it one of the defining features of the southern Cascade Range. The Lassen Peak Trail is one of the park's most heavily used summit hikes, particularly during July and August. Visits in June or September typically offer lighter crowds, while October can be quiet but brings higher risk of snow, ice, road closures, and storms."
+      ],
+      "routeDescription": [
+        "The Lassen Peak Trail begins at the Lassen Peak Trailhead at approximately 8,500 feet on the park highway. The route covers 5 miles round-trip with about 2,000 feet of elevation gain, typically requiring 3 to 5 hours. The trail climbs through long switchbacks on volcanic cinder and pumice, then follows an exposed ridge to the summit. The path is well-maintained Class 1 hiking throughout, with no technical scrambling required in normal summer conditions.",
+        "Early-season hikers may encounter lingering snow and ice on the upper trail, particularly in June and into July after heavy winters. Microspikes or crampons and an ice axe may be useful when snow covers the route. The upper mountain is fully exposed to sun, wind, and lightning; an alpine start is standard practice to clear the ridge before afternoon thunderstorms develop."
+      ],
+      "routeLandmarks": [
+        "Lassen Peak Trailhead (8,500 ft): parking, restrooms, seasonal information",
+        "Lassen Peak Summit (10,457 ft): panoramic views"
+      ],
+      "permitsClimbing": "A park entrance pass is required to access Lassen Volcanic National Park. No separate climbing permit is required for day hiking the Lassen Peak Trail. Entrance passes can be purchased at park entrance stations or online through Recreation.gov. America the Beautiful and other federal recreation passes are accepted in lieu of the standard entrance fee. Verify current fee amounts and pass requirements on the Lassen Volcanic National Park website or Recreation.gov before departure.",
+      "permitsCamping": "Developed campgrounds within Lassen Volcanic National Park include Manzanita Lake, Summit Lake, Southwest Walk-In, and others. Campground reservations are available through Recreation.gov and are strongly recommended during peak summer months. Park roads and campgrounds operate seasonally; the Lassen Park Highway (CA-89) typically closes in winter due to snow. Check current road, campground, and trail status with the park before planning overnight trips.",
+      "wildlife": "June through September is the standard climbing window for the Lassen Peak Trail, though exact opening dates depend on snowpack and park road access. Afternoon thunderstorms are common in summer; the exposed upper ridge offers no shelter from lightning. Wildfire smoke can affect air quality and visibility from July through October. Elsewhere in the park, hydrothermal areas present burn and injury hazards from boiling water, steam, and unstable ground; stay on designated boardwalks and trails in thermal zones. Volcanic rock on the summit trail can be loose and abrasive; sturdy footwear and trekking poles help on the cinder and pumice sections.",
+      "footnote": "Sources: Willhite Web | Lassen Volcanic NPS | USGS | Recreation.gov"
     }
   },
   {
