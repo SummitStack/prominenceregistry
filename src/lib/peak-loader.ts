@@ -25,10 +25,12 @@ const peaks = peaksData as Peak[];
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 export const PEAKS_JSON_PATH = join(__dirname, '../data/peaks/peaks.json');
+export const PEAKS_CONTENT_PATH = join(__dirname, '../data/peaks/content.json');
+const PEAK_DATA_WATCH_PATHS = [PEAKS_JSON_PATH, PEAKS_CONTENT_PATH];
 export const DISK_CACHE_PATH = join(__dirname, '../data/generated/schema-cache.json');
 
 let diskCacheLoaded = false;
-let peaksFileWatcher: FSWatcher | null = null;
+let peakDataWatchers: FSWatcher[] | null = null;
 
 function computePeakHash(peak: Peak, siteUrl = SITE_URL): string {
   return createHash('sha256')
@@ -127,7 +129,7 @@ export function getPeakSchema(peak: Peak, siteUrl = SITE_URL): PeakSchemaResult 
 }
 
 /**
- * Development helper: watch peaks.json and invalidate cache when the file changes.
+ * Development helper: watch split peak data and invalidate cache when either file changes.
  * Astro dev server will regenerate schema on the next page request.
  */
 export function watchPeakChanges(callback: (peakId: string) => void): FSWatcher | null {
@@ -135,22 +137,34 @@ export function watchPeakChanges(callback: (peakId: string) => void): FSWatcher 
     return null;
   }
 
-  if (peaksFileWatcher) {
-    return peaksFileWatcher;
+  if (peakDataWatchers) {
+    return peakDataWatchers[0] ?? null;
   }
 
+  const watchers: FSWatcher[] = [];
+
   try {
-    peaksFileWatcher = fsWatch(PEAKS_JSON_PATH, () => {
-      for (const peak of peaks) {
-        invalidateSchema(peak.slug);
-        callback(peak.slug);
-      }
-      diskCacheLoaded = false;
-      console.info('[schema] peaks.json changed — schema cache invalidated');
-    });
-    return peaksFileWatcher;
+    for (const watchPath of PEAK_DATA_WATCH_PATHS) {
+      watchers.push(
+        fsWatch(watchPath, () => {
+          for (const peak of peaks) {
+            invalidateSchema(peak.slug);
+            callback(peak.slug);
+          }
+          diskCacheLoaded = false;
+          console.info(`[schema] peak data changed (${watchPath}) — schema cache invalidated`);
+        }),
+      );
+    }
+
+    peakDataWatchers = watchers;
+    return watchers[0] ?? null;
   } catch (error) {
-    console.warn('[schema] Could not watch peaks.json:', error);
+    for (const watcher of watchers) {
+      watcher.close();
+    }
+    peakDataWatchers = null;
+    console.warn('[schema] Could not watch peak data:', error);
     return null;
   }
 }
