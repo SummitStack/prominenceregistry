@@ -26,6 +26,10 @@ const PEAK_TITLE_OVERRIDES: Record<string, string> = {
   'mount-shasta': 'Mount Shasta Climbing Guide: Permits, Route, Gear & Hazards',
   'grand-teton': 'Grand Teton Climbing Guide: Route, Permits, Gear & Hazards',
   'mount-olympus': 'Mount Olympus Climbing Guide: Route, Permits, Gear & Hazards',
+  'kings-peak': 'Kings Peak Hiking Guide: Route, Permits, Elevation & Difficulty',
+  'pikes-peak': 'Pikes Peak Hiking Guide: Route, Elevation & Difficulty',
+  'mount-mitchell': 'Mount Mitchell Hiking Guide: Route, Elevation & Difficulty',
+  'mount-cleveland': 'Mount Cleveland Climbing Guide: Route, Access, Gear & Hazards',
   'sierra-blanca-peak': 'Sierra Blanca Peak Access Guide: Route, Permits & Planning',
   'mcdonald-peak': 'McDonald Peak Access Guide: Route, Permits & Planning',
   'snowshoe-peak': 'Snowshoe Peak Climbing Guide: Route, Gear & Hazards',
@@ -43,6 +47,14 @@ const PEAK_DESCRIPTION_OVERRIDES: Record<string, string> = {
     'Plan Grand Teton with route options, climbing permits, camping zones, technical gear, exposure, hazards, and season timing.',
   'mount-olympus':
     'Plan Mount Olympus with Blue Glacier access, wilderness permits, camps, glacier travel, summit block climbing, and approach mileage.',
+  'kings-peak':
+    'Plan Kings Peak with the Henrys Fork route, Uinta access, mileage, gain, camping, altitude, season timing, and summit logistics.',
+  'pikes-peak':
+    'Plan Pikes Peak with Barr Trail, mileage, elevation gain, altitude, season timing, access, camping options, and summit logistics.',
+  'mount-mitchell':
+    'Plan Mount Mitchell with standard hiking routes, Blue Ridge access, mileage, gain, elevation, season timing, weather, and summit logistics.',
+  'mount-cleveland':
+    'Plan Mount Cleveland with Glacier backcountry access, route difficulty, scrambling hazards, mileage, gain, season timing, and planning notes.',
   'south-sister':
     'Plan South Sister with the standard route, Central Cascades permits, mileage, elevation gain, season timing, and volcanic terrain notes.',
   'sierra-blanca-peak':
