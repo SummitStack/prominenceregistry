@@ -2,7 +2,7 @@
  * In-memory schema cache keyed by peak slug.
  *
  * Avoids regenerating identical JSON-LD during a single build/dev session.
- * Pair with peak-loader hash checks so edits to peaks.json invalidate entries.
+ * Pair with peak-loader hash checks so edits to split peak data invalidate entries.
  * Call invalidateSchema() or invalidateAllSchemas() after bulk data updates.
  */
 

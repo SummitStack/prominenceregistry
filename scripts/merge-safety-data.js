@@ -1,5 +1,5 @@
 /**
- * Merges structured safety data from peaks-safety-data-full.json into peaks.json.
+ * Merges structured safety data from peaks-safety-data-full.json into peaks/peaks.json.
  * Run: node scripts/merge-safety-data.js
  */
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -7,8 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const dataDir = join(__dirname, '../src/data');
-const peaksPath = join(dataDir, 'peaks.json');
+const peaksPath = join(__dirname, '../src/data/peaks/peaks.json');
 const safetyPath = join(dataDir, 'peaks-safety-data-full.json');
 
 const VALID_HAZARDS = new Set([
@@ -133,7 +132,7 @@ function main() {
     process.exit(1);
   }
   if (extraInSafety.length > 0) {
-    console.error('Extra safety entries not in peaks.json:', extraInSafety);
+    console.error('Extra safety entries not in peaks/peaks.json:', extraInSafety);
     process.exit(1);
   }
 

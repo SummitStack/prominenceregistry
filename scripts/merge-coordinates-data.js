@@ -1,5 +1,5 @@
 /**
- * Merges GNIS coordinates and safety data from user-provided peak list into peaks.json.
+ * Merges GNIS coordinates and safety data from user-provided peak list into peaks/peaks.json.
  * Run: node scripts/merge-coordinates-data.js
  */
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -7,11 +7,10 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const dataDir = join(__dirname, '../src/data');
-const peaksPath = join(dataDir, 'peaks.json');
+const peaksPath = join(__dirname, '../src/data/peaks/peaks.json');
 const safetyPath = join(dataDir, 'peaks-safety-data-full.json');
 
-/** User-provided data keyed by peaks.json slug */
+/** User-provided data keyed by peaks/peaks.json slug */
 const MERGE_DATA = {
   'mount-rainier': {
     latitude: 46.8517,

@@ -54,7 +54,7 @@ function ensureDiskCacheLoaded(): void {
   }
 }
 
-/** Load a single peak by slug from peaks.json. */
+/** Load a single peak by slug from joined peak data. */
 export function getPeakData(slug: string): Peak | null {
   ensureDiskCacheLoaded();
   const peak = peaks.find((entry) => entry.slug === slug);
