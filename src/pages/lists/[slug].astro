@@ -135,7 +135,11 @@ function getRankLabel(index: number): string {
       border-bottom: 1px solid #2a3139;
       font-weight: 600;
       white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
     }
+    th:hover, th.active { color: #64b5f6; }
+    .sort-indicator { margin-left: 4px; color: #64b5f6; font-size: 10px; }
     td { padding: 16px; border-bottom: 1px solid #2a3139; font-size: 14px; }
     tr:hover { background: rgba(100, 181, 246, 0.05); }
     .range-cell { color: #8b92a1; font-size: 13px; }
@@ -174,23 +178,23 @@ function getRankLabel(index: number): string {
         <p class="table-desc">Registry rank is the overall prominence rank across the full internal prominence database. Published guide pages are linked; unpublished records are shown as coming soon.</p>
       </div>
       <div class="table-overflow">
-        <table>
+        <table id="peakListTable">
           <thead>
             <tr>
-              <th>List Rank</th>
-              <th>Registry Rank</th>
-              <th>Peak</th>
-              <th>State</th>
-              <th>Range</th>
-              <th>Elevation</th>
-              <th>Prominence</th>
-              <th>Isolation</th>
-              <th>Class</th>
+              <th data-sort="listRank" class="active">List Rank <span class="sort-indicator">↑</span></th>
+              <th data-sort="registryRank">Registry Rank <span class="sort-indicator"></span></th>
+              <th data-sort="name">Peak <span class="sort-indicator"></span></th>
+              <th data-sort="state">State <span class="sort-indicator"></span></th>
+              <th data-sort="mountainRange">Range <span class="sort-indicator"></span></th>
+              <th data-sort="elevation">Elevation <span class="sort-indicator"></span></th>
+              <th data-sort="prominence">Prominence <span class="sort-indicator"></span></th>
+              <th data-sort="isolation">Isolation <span class="sort-indicator"></span></th>
+              <th data-sort="easiestYdsClass">Class <span class="sort-indicator"></span></th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="peakListTableBody">
             {peaks.map((peak, index) => (
-              <tr>
+              <tr data-slug={peak.slug}>
                 <td class="mono">{getRankLabel(index)}</td>
                 <td class="mono">#{prominenceRankBySlug.get(peak.slug)}</td>
                 <td>
@@ -217,5 +221,94 @@ function getRankLabel(index: number): string {
     </section>
   </main>
   <SiteFooter />
+  <script define:vars={{ peaks, prominenceRankBySlug: Object.fromEntries(prominenceRankBySlug) }}>
+    const CLASS_ORDER = { '1': 1, '2': 2, '2+': 2.5, '3': 3, '3+': 3.5, '4': 4, '4+': 4.5, '5': 5 };
+    const rankMap = prominenceRankBySlug;
+    const listRankMap = Object.fromEntries(peaks.map((peak, index) => [peak.slug, index + 1]));
+    let sortColumn = 'listRank';
+    let sortDir = 'asc';
+
+    function getSortValue(peak, column) {
+      switch (column) {
+        case 'listRank':
+          return listRankMap[peak.slug] ?? 9999;
+        case 'registryRank':
+          return rankMap[peak.slug] ?? 9999;
+        case 'name':
+          return peak.name.toLowerCase();
+        case 'state':
+          return peak.state;
+        case 'mountainRange':
+          return (peak.mountainRange || '').toLowerCase();
+        case 'elevation':
+          return peak.elevation;
+        case 'prominence':
+          return peak.prominence;
+        case 'isolation':
+          return peak.isolation ?? -1;
+        case 'easiestYdsClass':
+          return CLASS_ORDER[peak.easiestYdsClass] ?? 0;
+        default:
+          return 0;
+      }
+    }
+
+    function comparePeaks(a, b) {
+      const aVal = getSortValue(a, sortColumn);
+      const bVal = getSortValue(b, sortColumn);
+      let result = 0;
+
+      if (typeof aVal === 'string') {
+        result = aVal.localeCompare(bVal);
+      } else {
+        result = aVal - bVal;
+      }
+
+      return sortDir === 'asc' ? result : -result;
+    }
+
+    function sortTableRows() {
+      const tbody = document.getElementById('peakListTableBody');
+      const rowBySlug = new Map();
+
+      tbody.querySelectorAll('tr[data-slug]').forEach((row) => {
+        rowBySlug.set(row.dataset.slug, row);
+      });
+
+      const sorted = [...peaks].sort(comparePeaks);
+      sorted.forEach((peak) => {
+        const row = rowBySlug.get(peak.slug);
+        if (row) tbody.appendChild(row);
+      });
+
+      updateSortIndicators();
+    }
+
+    function updateSortIndicators() {
+      document.querySelectorAll('#peakListTable th[data-sort]').forEach(th => {
+        const col = th.dataset.sort;
+        const indicator = th.querySelector('.sort-indicator');
+        const isActive = col === sortColumn;
+
+        th.classList.toggle('active', isActive);
+        indicator.textContent = isActive ? (sortDir === 'asc' ? '↑' : '↓') : '';
+      });
+    }
+
+    document.querySelectorAll('#peakListTable th[data-sort]').forEach(th => {
+      th.addEventListener('click', () => {
+        const col = th.dataset.sort;
+
+        if (sortColumn === col) {
+          sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+        } else {
+          sortColumn = col;
+          sortDir = col === 'listRank' || col === 'registryRank' || col === 'name' || col === 'state' || col === 'mountainRange' ? 'asc' : 'desc';
+        }
+
+        sortTableRows();
+      });
+    });
+  </script>
 </body>
 </html>
