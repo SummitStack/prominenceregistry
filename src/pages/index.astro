@@ -593,7 +593,7 @@ const itemListStructuredData = {
                 <th data-sort="prominence" class="active">Prominence (ft) <span class="sort-indicator">↓</span></th>
                 <th data-sort="keyCol">Key Col (ft) <span class="sort-indicator"></span></th>
                 <th data-sort="isolation">Isolation (mi) <span class="sort-indicator"></span></th>
-                <th data-sort="ydsClass">Class <span class="sort-indicator"></span></th>
+                <th data-sort="easiestYdsClass">Class <span class="sort-indicator"></span></th>
               </tr>
             </thead>
             <tbody id="tableBody">
@@ -607,7 +607,7 @@ const itemListStructuredData = {
                   <td>{peak.prominence.toLocaleString()}</td>
                   <td>{(peak.elevation - peak.prominence).toLocaleString()}</td>
                   <td>{peak.isolation}</td>
-                  <td>{peak.ydsClass}</td>
+                  <td>{peak.easiestYdsClass}</td>
                 </tr>
               ))}
             </tbody>
@@ -761,8 +761,8 @@ const itemListStructuredData = {
           return peak.elevation - peak.prominence;
         case 'isolation':
           return peak.isolation;
-        case 'ydsClass':
-          return CLASS_ORDER[peak.ydsClass] ?? 0;
+        case 'easiestYdsClass':
+          return CLASS_ORDER[peak.easiestYdsClass] ?? 0;
         default:
           return 0;
       }

@@ -42,16 +42,16 @@ export function getPeaksOverProminence(prominence: number): Peak[] {
 }
 
 export function getClassOnePeaks(): Peak[] {
-  return getPeaksByProminence().filter((peak) => peak.ydsClass === '1');
+  return getPeaksByProminence().filter((peak) => peak.easiestYdsClass === '1');
 }
 
 export function getClassTwoPeaks(): Peak[] {
-  return getPeaksByProminence().filter((peak) => peak.ydsClass === '2' || peak.ydsClass === '2+');
+  return getPeaksByProminence().filter((peak) => peak.easiestYdsClass === '2' || peak.easiestYdsClass === '2+');
 }
 
 export function getTechnicalPeaks(): Peak[] {
   return getPeaksByProminence().filter((peak) =>
-    ['3', '3+', '4', '4+', '5'].includes(peak.ydsClass)
+    ['3', '3+', '4', '4+', '5'].includes(peak.easiestYdsClass)
   );
 }
 
