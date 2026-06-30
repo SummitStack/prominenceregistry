@@ -40,7 +40,7 @@ const itemListStructuredData = {
     '@type': 'ListItem',
     position: index + 1,
     name: peak.name,
-    url: `${SITE_URL}/${peak.slug}/`,
+    ...(peak.published === true ? { url: `${SITE_URL}/${peak.slug}/` } : {}),
   })),
 };
 
@@ -140,6 +140,12 @@ function getRankLabel(index: number): string {
     tr:hover { background: rgba(100, 181, 246, 0.05); }
     .range-cell { color: #8b92a1; font-size: 13px; }
     .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; }
+    .coming-soon {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      color: #8b92a1;
+    }
   </style>
 </head>
 <body>
@@ -165,7 +171,7 @@ function getRankLabel(index: number): string {
     <section class="table-wrapper" aria-labelledby="list-table-heading">
       <div class="table-header">
         <h2 id="list-table-heading">Ranked Peaks</h2>
-        <p class="table-desc">Registry rank is the overall prominence rank across all 57 lower-48 ultra-prominent peaks.</p>
+        <p class="table-desc">Registry rank is the overall prominence rank across the full internal prominence database. Published guide pages are linked; unpublished records are shown as coming soon.</p>
       </div>
       <div class="table-overflow">
         <table>
@@ -187,7 +193,16 @@ function getRankLabel(index: number): string {
               <tr>
                 <td class="mono">{getRankLabel(index)}</td>
                 <td class="mono">#{prominenceRankBySlug.get(peak.slug)}</td>
-                <td><a href={`/${peak.slug}/`}>{peak.name}</a></td>
+                <td>
+                  {peak.published === true ? (
+                    <a href={`/${peak.slug}/`}>{peak.name}</a>
+                  ) : (
+                    <>
+                      {peak.name}
+                      <span class="coming-soon">Guide coming soon</span>
+                    </>
+                  )}
+                </td>
                 <td>{peak.state}</td>
                 <td class="range-cell">{peak.mountainRange}</td>
                 <td>{peak.elevation.toLocaleString()} ft</td>
