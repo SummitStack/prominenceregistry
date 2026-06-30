@@ -1,0 +1,206 @@
+---
+import FathomAnalytics from '../../components/FathomAnalytics.astro';
+import OrganizationSchema from '../../components/OrganizationSchema.astro';
+import SeoMeta from '../../components/SeoMeta.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_URL } from '../../lib/constants';
+import {
+  getProminenceRankBySlug,
+  peakListDefinitions,
+  type PeakListDefinition,
+} from '../../data/peakLists';
+
+export function getStaticPaths() {
+  return peakListDefinitions.map((definition) => ({
+    params: { slug: definition.slug },
+    props: { definition },
+  }));
+}
+
+type Props = {
+  definition: PeakListDefinition;
+};
+
+const { definition } = Astro.props as Props;
+const peaks = definition.getPeaks();
+const prominenceRankBySlug = getProminenceRankBySlug();
+const canonical = `${SITE_URL}/lists/${definition.slug}/`;
+const title = `${definition.title} | Prominence Registry`;
+const description = definition.description;
+
+const itemListStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: definition.title,
+  description,
+  url: canonical,
+  numberOfItems: peaks.length,
+  itemListOrder: 'https://schema.org/ItemListOrderDescending',
+  itemListElement: peaks.map((peak, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: peak.name,
+    url: `${SITE_URL}/${peak.slug}/`,
+  })),
+};
+
+function getRankLabel(index: number): string {
+  return String(index + 1).padStart(2, '0');
+}
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <FathomAnalytics />
+  <SeoMeta title={title} description={description} canonical={canonical} />
+  <OrganizationSchema />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListStructuredData)} />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f1419; color: #f0f1f3; font-family: system-ui; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .hero { padding: 64px 0 48px; }
+    .breadcrumb { margin-bottom: 32px; font-size: 14px; color: #8b92a1; }
+    .eyebrow {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64b5f6;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      font-size: 52px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      color: #e0e2e8;
+    }
+    .subtitle {
+      max-width: 760px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #c0c7d1;
+      margin-bottom: 24px;
+    }
+    .summary { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+    .summary-card {
+      background: #1a1f27;
+      border: 1px solid #2a3139;
+      border-radius: 10px;
+      padding: 16px 20px;
+      min-width: 160px;
+    }
+    .summary-label {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8b92a1;
+      margin-bottom: 6px;
+    }
+    .summary-value {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      color: #64b5f6;
+      font-size: 18px;
+    }
+    a { color: #64b5f6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .table-wrapper {
+      background: #1a1f27;
+      border: 1px solid #2a3139;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 80px;
+    }
+    .table-header { padding: 24px; border-bottom: 1px solid #2a3139; }
+    .table-header h2 {
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      font-size: 30px;
+      color: #e0e2e8;
+      margin-bottom: 8px;
+    }
+    .table-desc { color: #8b92a1; font-size: 14px; }
+    .table-overflow { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 920px; }
+    th {
+      padding: 16px;
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #8b92a1;
+      border-bottom: 1px solid #2a3139;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    td { padding: 16px; border-bottom: 1px solid #2a3139; font-size: 14px; }
+    tr:hover { background: rgba(100, 181, 246, 0.05); }
+    .range-cell { color: #8b92a1; font-size: 13px; }
+    .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="breadcrumb"><a href="/">Prominence Registry</a> / <a href="/lists/">Lists</a> / {definition.title}</div>
+      <div class="eyebrow">Peak List</div>
+      <h1>{definition.title}</h1>
+      <p class="subtitle">{definition.description}</p>
+
+      <div class="summary" aria-label="List summary">
+        <div class="summary-card">
+          <div class="summary-label">Peaks</div>
+          <div class="summary-value">{peaks.length}</div>
+        </div>
+        <div class="summary-card">
+          <div class="summary-label">Top Peak</div>
+          <div class="summary-value">{peaks[0]?.name ?? '—'}</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-wrapper" aria-labelledby="list-table-heading">
+      <div class="table-header">
+        <h2 id="list-table-heading">Ranked Peaks</h2>
+        <p class="table-desc">Registry rank is the overall prominence rank across all 57 lower-48 ultra-prominent peaks.</p>
+      </div>
+      <div class="table-overflow">
+        <table>
+          <thead>
+            <tr>
+              <th>List Rank</th>
+              <th>Registry Rank</th>
+              <th>Peak</th>
+              <th>State</th>
+              <th>Range</th>
+              <th>Elevation</th>
+              <th>Prominence</th>
+              <th>Isolation</th>
+              <th>Class</th>
+            </tr>
+          </thead>
+          <tbody>
+            {peaks.map((peak, index) => (
+              <tr>
+                <td class="mono">{getRankLabel(index)}</td>
+                <td class="mono">#{prominenceRankBySlug.get(peak.slug)}</td>
+                <td><a href={`/${peak.slug}/`}>{peak.name}</a></td>
+                <td>{peak.state}</td>
+                <td class="range-cell">{peak.mountainRange}</td>
+                <td>{peak.elevation.toLocaleString()} ft</td>
+                <td>{peak.prominence.toLocaleString()} ft</td>
+                <td>{peak.isolation ?? '—'} mi</td>
+                <td>{peak.ydsClass}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</body>
+</html>
