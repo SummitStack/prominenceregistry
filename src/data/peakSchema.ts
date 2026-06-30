@@ -25,6 +25,23 @@ const PermitStatusSchema = z.enum([
   'lottery',
 ]);
 
+const YdsClassSchema = z.enum([
+  '1',
+  '2',
+  '2+',
+  '3',
+  '3+',
+  '4',
+  '4+',
+  '5',
+  '5.0',
+  '5.1',
+  '5.2',
+  '5.3',
+  '5.4',
+  '5.5',
+]);
+
 const VerificationStatusSchema = z.enum([
   'draft',
   'needs-review',
@@ -43,13 +60,13 @@ export const PeakSchema = z.object({
   longitude: z.number().optional().nullable(),
   isolation: z.number().optional().nullable(),
   mountainRange: z.string().min(1),
-  easiestYdsClass: z.string().min(1),
+  easiestYdsClass: YdsClassSchema,
   published: z.boolean(),
 });
 
 export const PeakRouteSchema = z.object({
   slug: z.string().min(1),
-  ydsClass: z.string().min(1),
+  ydsClass: YdsClassSchema,
   difficulty: z.number().min(1).max(10),
   days: z.number().positive(),
   daysMin: z.number().positive(),
