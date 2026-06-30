@@ -1,4 +1,5 @@
 import peaksData from '../src/data/peaks';
+import { peakListDefinitions } from '../src/data/peakLists';
 import {
   ABOUT_META_DESCRIPTION,
   ABOUT_META_TITLE,
@@ -13,6 +14,10 @@ import {
 } from '../src/lib/seoMeta.ts';
 
 const errors: string[] = [];
+
+const LISTS_META_TITLE = 'Ultra-Prominent Peak Lists | Prominence Registry';
+const LISTS_META_DESCRIPTION =
+  'Browse lower-48 ultra-prominent peaks by prominence, elevation, isolation, route class, and climbing difficulty.';
 
 function checkDescription(label: string, description: string): void {
   if (!description || description.trim().length === 0) {
@@ -43,10 +48,12 @@ function checkTitle(label: string, title: string): void {
 checkDescription('homepage', HOMEPAGE_META_DESCRIPTION);
 checkDescription('glossary', GLOSSARY_META_DESCRIPTION);
 checkDescription('about', ABOUT_META_DESCRIPTION);
+checkDescription('lists', LISTS_META_DESCRIPTION);
 
 checkTitle('homepage', HOMEPAGE_META_TITLE);
 checkTitle('glossary', GLOSSARY_META_TITLE);
 checkTitle('about', ABOUT_META_TITLE);
+checkTitle('lists', LISTS_META_TITLE);
 
 const publishedPeaks = peaksData.filter((peak) => peak.published === true);
 
@@ -54,6 +61,13 @@ for (const peak of publishedPeaks) {
   checkDescription(peak.slug, buildPeakSeoDescription(peak));
   checkTitle(peak.slug, buildPeakSeoTitle(peak));
 }
+
+for (const list of peakListDefinitions) {
+  checkDescription(`lists/${list.slug}`, list.description);
+  checkTitle(`lists/${list.slug}`, `${list.title} | Prominence Registry`);
+}
+
+const pageCount = publishedPeaks.length + 4 + peakListDefinitions.length;
 
 if (errors.length > 0) {
   console.error('\n❌ SEO meta validation failed:\n');
@@ -64,5 +78,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `✅ SEO meta valid — ${publishedPeaks.length + 3} indexable pages: titles ≤ ${MAX_META_TITLE_LENGTH} chars, descriptions ≤ ${MAX_META_DESCRIPTION_LENGTH} chars`,
+  `✅ SEO meta valid — ${pageCount} indexable pages: titles ≤ ${MAX_META_TITLE_LENGTH} chars, descriptions ≤ ${MAX_META_DESCRIPTION_LENGTH} chars`,
 );
