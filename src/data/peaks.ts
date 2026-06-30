@@ -20,8 +20,9 @@ const verificationBySlug = new Map<string, PeakVerification>(
   verificationData.map((entry) => [entry.slug, entry])
 );
 
-export type Peak = PeakBase & Omit<PeakRoute, 'slug'> & {
-  route: PeakRoute;
+export type Peak = PeakBase & Partial<Omit<PeakRoute, 'slug'>> & {
+  route: PeakRoute | null;
+  hasRouteData: boolean;
   content: PeakContent | null;
   dataSource: PeakVerification['dataSource'] | null;
   verification: PeakVerification['verification'] | null;
@@ -31,14 +32,11 @@ export const peaks: Peak[] = peaksData.map((peak) => {
   const route = routeBySlug.get(peak.slug);
   const verificationEntry = verificationBySlug.get(peak.slug);
 
-  if (!route) {
-    throw new Error(`Missing route data for peak "${peak.slug}"`);
-  }
-
   return {
     ...peak,
-    ...route,
-    route,
+    ...(route ?? {}),
+    route: route ?? null,
+    hasRouteData: Boolean(route),
     content: contentBySlug.get(peak.slug) ?? null,
     dataSource: verificationEntry?.dataSource ?? null,
     verification: verificationEntry?.verification ?? null,

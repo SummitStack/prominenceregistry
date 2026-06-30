@@ -5,7 +5,7 @@ import { SITE_URL } from '../src/lib/constants';
 import { getPeakHeroImageUrl } from '../src/lib/schema-generator';
 import { buildPeakImageAlt } from '../src/utils/imageHelpers';
 
-const publishedPeaks = peaksData.filter((peak) => peak.published === true);
+const publishedPeaks = peaksData.filter((peak) => peak.published === true && peak.hasRouteData === true);
 const errors: string[] = [];
 const MAX_ALT_LENGTH = 125;
 
@@ -93,5 +93,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `✅ SEO images valid — ${publishedPeaks.length} published peaks passed hero image and alt text checks`,
+  `✅ SEO images valid — ${publishedPeaks.length} route-backed published peaks passed hero image and alt text checks`,
 );
