@@ -41,7 +41,13 @@ export const PeakSchema = z.object({
   prominence: z.number().min(4921), // ultra-prominent threshold
   latitude: z.number().optional().nullable(),
   longitude: z.number().optional().nullable(),
+  isolation: z.number().optional().nullable(),
   mountainRange: z.string().min(1),
+  published: z.boolean(),
+});
+
+export const PeakRouteSchema = z.object({
+  slug: z.string().min(1),
   ydsClass: z.string().min(1),
   difficulty: z.number().min(1).max(10),
   days: z.number().positive(),
@@ -63,21 +69,41 @@ export const PeakSchema = z.object({
   permitFee: z.string().nullable(),
   permitRequired: z.boolean(),
   permitSeason: z.string().min(1),
-  published: z.boolean(),
   heroImage: z.string().min(1),
-  isolation: z.number().optional().nullable(),
+  weatherForecastUrl: z.string().optional().nullable(),
   hazards: z.array(z.string()),
   technicalRequirements: z.array(z.string()),
-  verification: z
+  requiredGear: z
     .object({
-      status: VerificationStatusSchema,
-      lastChecked: z.string().optional().nullable(),
-      checkedAgainst: z.array(z.string()).optional(),
-      notes: z.string().optional().nullable(),
+      priority: z.array(z.string()).optional(),
+      secondary: z.array(z.string()).optional(),
     })
-    .optional()
-    .nullable(),
+    .optional(),
+  hasCallout: z.boolean().optional(),
+  callout: z.string().optional(),
+  hasSafetyNote: z.boolean().optional(),
+  safetyNote: z.string().optional(),
+  relatedLinks: z
+    .array(
+      z.object({
+        section: z.enum(['route-details', 'permits-camping']),
+        label: z.string().min(1),
+        description: z.string().min(1),
+        href: z.string().min(1),
+      })
+    )
+    .optional(),
+});
+
+export const PeakVerificationSchema = z.object({
+  status: VerificationStatusSchema,
+  lastChecked: z.string().optional().nullable(),
+  checkedAgainst: z.array(z.string()).optional(),
+  notes: z.string().optional().nullable(),
 });
 
 export type Peak = z.infer<typeof PeakSchema>;
+export type PeakRoute = z.infer<typeof PeakRouteSchema>;
+
 export const PeaksArraySchema = z.array(PeakSchema);
+export const PeakRoutesArraySchema = z.array(PeakRouteSchema);
