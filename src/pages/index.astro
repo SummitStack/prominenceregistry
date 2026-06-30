@@ -17,6 +17,9 @@ const eligibleFeaturedPeaks = peaksData.filter(
 );
 const featuredPeaks = selectFeaturedPeaks(eligibleFeaturedPeaks);
 const prominenceRankBySlug = new Map(peaksData.map((peak, index) => [peak.slug, index + 1]));
+const homepageTablePeaks = peaksData.filter(
+  (peak) => peak.published === true && peak.hasRouteData === true && peak.route !== null
+);
 
 const publishedPeaks = peaksData.filter(
   (peak) =>
@@ -579,7 +582,7 @@ const itemListStructuredData = {
       <div class="table-wrapper">
         <div class="table-header">
           <h2>Technical Database</h2>
-          <p class="table-desc">All 57 Ultra-prominent peaks. Click column headers to sort.</p>
+          <p class="table-desc">The 57 guide-ready ultra-prominent peaks. Click column headers to sort.</p>
         </div>
         <div class="table-overflow">
           <table id="peakTable">
@@ -597,7 +600,7 @@ const itemListStructuredData = {
               </tr>
             </thead>
             <tbody id="tableBody">
-              {peaksData.map(peak => (
+              {homepageTablePeaks.map(peak => (
                 <tr data-slug={peak.slug}>
                   <td>{String(prominenceRankBySlug.get(peak.slug) ?? 0).padStart(2, '0')}</td>
                   <td><a href={`/${peak.slug}/`}>{peak.name}</a></td>
@@ -737,7 +740,7 @@ const itemListStructuredData = {
     }
   </script>
 
-  <script define:vars={{ peaksData, prominenceRankBySlug: Object.fromEntries(prominenceRankBySlug) }}>
+  <script define:vars={{ peaksData: homepageTablePeaks, prominenceRankBySlug: Object.fromEntries(prominenceRankBySlug) }}>
     const CLASS_ORDER = { '1': 1, '2': 2, '2+': 2.5, '3': 3, '3+': 3.5, '4': 4, '4+': 4.5, '5': 5 };
     const rankMap = prominenceRankBySlug;
     let sortColumn = 'prominence';
