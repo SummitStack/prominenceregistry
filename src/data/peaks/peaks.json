@@ -780,15 +780,15 @@
     "published": true
   },
   {
-    "slug": "mount-linn",
-    "name": "Mount Linn",
+    "slug": "south-yolla-bolly-mountain",
+    "name": "South Yolla Bolly Mountain",
     "state": "CA",
-    "elevation": 8098,
-    "prominence": 4854,
+    "elevation": 8091.9,
+    "prominence": 4872.8,
     "latitude": 40.0365,
     "longitude": -122.8542,
     "isolation": 61.5,
-    "mountainRange": "Northern California Coast Range",
+    "mountainRange": "Northwest U.S. Coast Ranges",
     "easiestYdsClass": "1",
     "published": true
   },
@@ -975,6 +975,32 @@
     "published": true
   },
   {
+    "slug": "scotchman-peak",
+    "name": "Scotchman Peak",
+    "state": "ID",
+    "elevation": 7017.6,
+    "prominence": 4658,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 15.1,
+    "mountainRange": "Central Montana Rocky Mountains",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "mica-mountain",
+    "name": "Mica Mountain",
+    "state": "AZ",
+    "elevation": 8667.8,
+    "prominence": 4600.1,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 20.4,
+    "mountainRange": "Southwest Basins and Ranges",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
     "slug": "mount-saint-helens",
     "name": "Mount Saint Helens",
     "state": "WA",
@@ -1014,6 +1040,19 @@
     "published": true
   },
   {
+    "slug": "grapevine-peak",
+    "name": "Grapevine Peak",
+    "state": "NV",
+    "elevation": 8738.8,
+    "prominence": 4560.8,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 17.7,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
     "slug": "abajo-peak",
     "name": "Abajo Peak",
     "state": "UT",
@@ -1040,6 +1079,19 @@
     "published": true
   },
   {
+    "slug": "swasey-peak",
+    "name": "Swasey Peak",
+    "state": "UT",
+    "elevation": 9675.8,
+    "prominence": 4521.1,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 40.7,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
     "slug": "kuwohi",
     "name": "Kuwohi",
     "state": "NC",
@@ -1053,6 +1105,19 @@
     "published": true
   },
   {
+    "slug": "three-fingers",
+    "name": "Three Fingers",
+    "state": "WA",
+    "elevation": 6865.4,
+    "prominence": 4511.5,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 12.8,
+    "mountainRange": "Cascade Range",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
     "slug": "emory-peak",
     "name": "Emory Peak",
     "state": "TX",
@@ -1063,6 +1128,19 @@
     "isolation": 46.2,
     "mountainRange": "Chisos Mountains",
     "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "signal-peak-nevada",
+    "name": "Signal Peak",
+    "state": "NV",
+    "elevation": 10370.3,
+    "prominence": 4490,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 35.0,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
     "published": true
   },
   {
@@ -1089,6 +1167,19 @@
     "isolation": 69.5,
     "mountainRange": "Cascade Range",
     "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "rock-creek-butte",
+    "name": "Rock Creek Butte",
+    "state": "OR",
+    "elevation": 9110.4,
+    "prominence": 4470,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 43.4,
+    "mountainRange": "Columbia Plateau",
+    "easiestYdsClass": "2",
     "published": true
   },
   {
@@ -1235,6 +1326,19 @@
     "published": true
   },
   {
+    "slug": "mount-augusta",
+    "name": "Mount Augusta",
+    "state": "NV",
+    "elevation": 9970.9,
+    "prominence": 4370.1,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 14.8,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
     "slug": "eagle-peak-california",
     "name": "Eagle Peak",
     "state": "CA",
@@ -1245,6 +1349,19 @@
     "isolation": 87.4,
     "mountainRange": "Warner Mountains",
     "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "big-pryor-mountain",
+    "name": "Big Pryor Mountain",
+    "state": "MT",
+    "elevation": 8793.4,
+    "prominence": 4293,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 25.9,
+    "mountainRange": "Greater Yellowstone Rockies",
+    "easiestYdsClass": "2",
     "published": true
   },
   {
@@ -1274,6 +1391,19 @@
     "published": true
   },
   {
+    "slug": "mount-lewis",
+    "name": "Mount Lewis",
+    "state": "NV",
+    "elevation": 9676.6,
+    "prominence": 4277,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 34.9,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
     "slug": "uncompahgre-peak",
     "name": "Uncompahgre Peak",
     "state": "CO",
@@ -1283,6 +1413,19 @@
     "longitude": -107.4621,
     "isolation": 85.0,
     "mountainRange": "San Juan Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "scott-peak",
+    "name": "Scott Peak",
+    "state": "ID",
+    "elevation": 11400.0,
+    "prominence": 4255.4,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 19.3,
+    "mountainRange": "Idaho-Bitterroot Rocky Mountains",
     "easiestYdsClass": "2",
     "published": true
   },
@@ -1339,6 +1482,32 @@
     "published": true
   },
   {
+    "slug": "baboquivari-peak",
+    "name": "Baboquivari Peak",
+    "state": "AZ",
+    "elevation": 7734,
+    "prominence": 4194,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 42.0,
+    "mountainRange": "Southwest Basins and Ranges",
+    "easiestYdsClass": "5",
+    "published": true
+  },
+  {
+    "slug": "fish-lake-hightop",
+    "name": "Fish Lake Hightop",
+    "state": "UT",
+    "elevation": 11639.4,
+    "prominence": 4183,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 35.5,
+    "mountainRange": "Colorado Plateau",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
     "slug": "mount-patterson",
     "name": "Mount Patterson",
     "state": "CA",
@@ -1352,6 +1521,71 @@
     "published": true
   },
   {
+    "slug": "mcafee-peak",
+    "name": "McAfee Peak",
+    "state": "NV",
+    "elevation": 10442.4,
+    "prominence": 4171.0,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 35.6,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "duffer-peak",
+    "name": "Duffer Peak",
+    "state": "NV",
+    "elevation": 9435.4,
+    "prominence": 4146,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 55.1,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "moses-mountain",
+    "name": "Moses Mountain",
+    "state": "WA",
+    "elevation": 6774,
+    "prominence": 4134,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 28.0,
+    "mountainRange": "Columbia Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "mount-deception",
+    "name": "Mount Deception",
+    "state": "WA",
+    "elevation": 7786.5,
+    "prominence": 4129.8,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 21.8,
+    "mountainRange": "Northwest U.S. Coast Ranges",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "monroe-peak",
+    "name": "Monroe Peak",
+    "state": "UT",
+    "elevation": 11234,
+    "prominence": 4128,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 17.1,
+    "mountainRange": "Colorado Plateau",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
     "slug": "mount-edith-montana",
     "name": "Mount Edith",
     "state": "MT",
@@ -1361,6 +1595,19 @@
     "longitude": -111.1862,
     "isolation": 37.0,
     "mountainRange": "Big Belt Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "baldy-mountain-montana",
+    "name": "Baldy Mountain",
+    "state": "MT",
+    "elevation": 7469.2,
+    "prominence": 4099.8,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 27.7,
+    "mountainRange": "Central Montana Rocky Mountains",
     "easiestYdsClass": "2",
     "published": true
   },
@@ -1391,6 +1638,97 @@
     "published": true
   },
   {
+    "slug": "pinal-peak",
+    "name": "Pinal Peak",
+    "state": "AZ",
+    "elevation": 7848.6,
+    "prominence": 4089,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 35.1,
+    "mountainRange": "Southwest Basins and Ranges",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "strawberry-mountain",
+    "name": "Strawberry Mountain",
+    "state": "OR",
+    "elevation": 9044.8,
+    "prominence": 4088.5,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 46.1,
+    "mountainRange": "Columbia Plateau",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "piper-peak",
+    "name": "Piper Peak",
+    "state": "NV",
+    "elevation": 9455.2,
+    "prominence": 4088,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 14.9,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "greathouse-peak",
+    "name": "Greathouse Peak",
+    "state": "MT",
+    "elevation": 8692.3,
+    "prominence": 4082.0,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 55.9,
+    "mountainRange": "Central Montana Rocky Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "black-pine-mountains-high-point",
+    "name": "Black Pine Mountains High Point",
+    "state": "ID",
+    "elevation": 9390.5,
+    "prominence": 4070,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 18.1,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "mount-prophet",
+    "name": "Mount Prophet",
+    "state": "WA",
+    "elevation": 7672.6,
+    "prominence": 4067.5,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 5.0,
+    "mountainRange": "Cascade Range",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "flat-top-mountain-colorado",
+    "name": "Flat Top Mountain",
+    "state": "CO",
+    "elevation": 12358.7,
+    "prominence": 4063.4,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 40.8,
+    "mountainRange": "Southern Rocky Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
     "slug": "hilgard-peak",
     "name": "Hilgard Peak",
     "state": "MT",
@@ -1414,6 +1752,162 @@
     "isolation": 47.2,
     "mountainRange": "Absaroka Range",
     "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "mormon-peak",
+    "name": "Mormon Peak",
+    "state": "NV",
+    "elevation": 7414.8,
+    "prominence": 4037.6,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 27.6,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "ch-paa-qn-peak",
+    "name": "Ch-paa-qn Peak",
+    "state": "MT",
+    "elevation": 7999.6,
+    "prominence": 4036.8,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 19.2,
+    "mountainRange": "Central Montana Rocky Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "oxford-peak",
+    "name": "Oxford Peak",
+    "state": "ID",
+    "elevation": 9289,
+    "prominence": 4027,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 26.5,
+    "mountainRange": "Western Rocky Mountains",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "frisco-peak",
+    "name": "Frisco Peak",
+    "state": "UT",
+    "elevation": 9658.6,
+    "prominence": 4024.1,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 36.3,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "mount-wilson-colorado",
+    "name": "Mount Wilson",
+    "state": "CO",
+    "elevation": 14254.8,
+    "prominence": 4020,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 33.0,
+    "mountainRange": "Southern Rocky Mountains",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "north-gardner-mountain",
+    "name": "North Gardner Mountain",
+    "state": "WA",
+    "elevation": 8962.8,
+    "prominence": 4019.5,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 14.4,
+    "mountainRange": "Cascade Range",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "castle-peak-idaho",
+    "name": "Castle Peak",
+    "state": "ID",
+    "elevation": 11817.1,
+    "prominence": 4017,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 27.3,
+    "mountainRange": "Idaho-Bitterroot Rocky Mountains",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "tin-mountain",
+    "name": "Tin Mountain",
+    "state": "NV",
+    "elevation": 8954.1,
+    "prominence": 4006.8,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 28.1,
+    "mountainRange": "Great Basin Ranges",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "holland-peak",
+    "name": "Holland Peak",
+    "state": "MT",
+    "elevation": 9360.9,
+    "prominence": 4003.3,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 18.7,
+    "mountainRange": "Central Montana Rocky Mountains",
+    "easiestYdsClass": "3",
+    "published": true
+  },
+  {
+    "slug": "ute-peak",
+    "name": "Ute Peak",
+    "state": "CO",
+    "elevation": 9979.8,
+    "prominence": 4002.3,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 34.3,
+    "mountainRange": "Colorado Plateau",
+    "easiestYdsClass": "2",
+    "published": true
+  },
+  {
+    "slug": "toro-peak",
+    "name": "Toro Peak",
+    "state": "CA",
+    "elevation": 8717.6,
+    "prominence": 4001.7,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 20.7,
+    "mountainRange": "Central and Southern California Ranges",
+    "easiestYdsClass": "1",
+    "published": true
+  },
+  {
+    "slug": "truchas-peak",
+    "name": "Truchas Peak",
+    "state": "NM",
+    "elevation": 13106.8,
+    "prominence": 4001.4,
+    "latitude": null,
+    "longitude": null,
+    "isolation": 42.3,
+    "mountainRange": "Southern Rocky Mountains",
+    "easiestYdsClass": "3",
     "published": true
   }
 ]
