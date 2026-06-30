@@ -1,0 +1,143 @@
+---
+import FathomAnalytics from '../../components/FathomAnalytics.astro';
+import OrganizationSchema from '../../components/OrganizationSchema.astro';
+import SeoMeta from '../../components/SeoMeta.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { SITE_URL } from '../../lib/constants';
+import { peakListDefinitions } from '../../data/peakLists';
+
+const title = 'Ultra-Prominent Peak Lists | Prominence Registry';
+const description =
+  'Browse lower-48 ultra-prominent peaks by prominence, elevation, isolation, route class, and climbing difficulty.';
+
+const collectionStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  url: `${SITE_URL}/lists/`,
+  hasPart: peakListDefinitions.map((list) => ({
+    '@type': 'WebPage',
+    name: list.title,
+    description: list.description,
+    url: `${SITE_URL}/lists/${list.slug}/`,
+  })),
+};
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <FathomAnalytics />
+  <SeoMeta title={title} description={description} canonical={`${SITE_URL}/lists/`} />
+  <OrganizationSchema />
+  <script type="application/ld+json" set:html={JSON.stringify(collectionStructuredData)} />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0f1419; color: #f0f1f3; font-family: system-ui; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .hero { padding: 64px 0 48px; }
+    .eyebrow {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64b5f6;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      font-size: 52px;
+      line-height: 1.05;
+      margin-bottom: 20px;
+      color: #e0e2e8;
+    }
+    .subtitle {
+      max-width: 720px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #c0c7d1;
+    }
+    .breadcrumb {
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: #8b92a1;
+    }
+    a { color: #64b5f6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 0 0 80px;
+    }
+    @media (min-width: 768px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .list-card {
+      display: block;
+      background: #1a1f27;
+      border: 1px solid #2a3139;
+      border-radius: 12px;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .list-card:hover {
+      background: #1c222b;
+      border-color: rgba(100, 181, 246, 0.5);
+      text-decoration: none;
+    }
+    .list-card h2 {
+      font-family: 'Hanken Grotesk', system-ui, sans-serif;
+      font-size: 26px;
+      line-height: 1.2;
+      color: #e0e2e8;
+      margin-bottom: 12px;
+    }
+    .list-card p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #c0c7d1;
+      margin-bottom: 20px;
+    }
+    .meta {
+      font-family: 'JetBrains Mono', ui-monospace, monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64b5f6;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="breadcrumb"><a href="/">Prominence Registry</a> / Lists</div>
+      <div class="eyebrow">Registry Lists</div>
+      <h1>Ultra-Prominent Peak Lists</h1>
+      <p class="subtitle">
+        Focused rankings and filters for the 57 ultra-prominent peaks in the contiguous United States.
+      </p>
+    </section>
+
+    <section class="grid" aria-label="Peak lists">
+      {peakListDefinitions.map((list) => {
+        const count = list.getPeaks().length;
+
+        return (
+          <a href={`/lists/${list.slug}/`} class="list-card">
+            <h2>{list.title}</h2>
+            <p>{list.description}</p>
+            <div class="meta">{count} peaks</div>
+          </a>
+        );
+      })}
+    </section>
+  </main>
+  <SiteFooter />
+</body>
+</html>

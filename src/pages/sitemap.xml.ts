@@ -1,4 +1,5 @@
 import peaksData from '../data/peaks';
+import { peakListDefinitions } from '../data/peakLists';
 import { SITE_URL } from '../lib/constants';
 
 function escapeXml(value: string): string {
@@ -48,6 +49,18 @@ export async function GET() {
       changefreq: 'monthly',
       priority: '0.6',
     }),
+    urlEntry({
+      loc: `${SITE_URL}/lists/`,
+      changefreq: 'weekly',
+      priority: '0.8',
+    }),
+    ...peakListDefinitions.map((list) =>
+      urlEntry({
+        loc: `${SITE_URL}/lists/${list.slug}/`,
+        changefreq: 'weekly',
+        priority: '0.7',
+      }),
+    ),
     ...publishedPeaks.map((peak) =>
       urlEntry({
         loc: `${SITE_URL}/${peak.slug}/`,
