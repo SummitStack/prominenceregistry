@@ -21,7 +21,7 @@ export type MountainSchema = {
     value: string;
     unitCode: 'ft';
   };
-  geo: {
+  geo?: {
     '@type': 'GeoCoordinates';
     latitude: number;
     longitude: number;
@@ -108,22 +108,27 @@ export function validatePeakData(peak: Peak, siteUrl = SITE_URL): ValidationResu
     );
   }
 
-  if (typeof peak.latitude !== 'number' || Number.isNaN(peak.latitude)) {
-    errors.push('latitude is required and must be a number');
-  } else if (
-    peak.latitude < SCHEMA_VALIDATION.latitudeMin ||
-    peak.latitude > SCHEMA_VALIDATION.latitudeMax
+  const hasLatitude = typeof peak.latitude === 'number' && !Number.isNaN(peak.latitude);
+  const hasLongitude = typeof peak.longitude === 'number' && !Number.isNaN(peak.longitude);
+
+  if (hasLatitude !== hasLongitude) {
+    errors.push('latitude and longitude must both be present or both be absent');
+  }
+
+  if (
+    hasLatitude &&
+    (peak.latitude < SCHEMA_VALIDATION.latitudeMin ||
+      peak.latitude > SCHEMA_VALIDATION.latitudeMax)
   ) {
     errors.push(
       `latitude must be between ${SCHEMA_VALIDATION.latitudeMin} and ${SCHEMA_VALIDATION.latitudeMax} (got ${peak.latitude})`,
     );
   }
 
-  if (typeof peak.longitude !== 'number' || Number.isNaN(peak.longitude)) {
-    errors.push('longitude is required and must be a number');
-  } else if (
-    peak.longitude < SCHEMA_VALIDATION.longitudeMin ||
-    peak.longitude > SCHEMA_VALIDATION.longitudeMax
+  if (
+    hasLongitude &&
+    (peak.longitude < SCHEMA_VALIDATION.longitudeMin ||
+      peak.longitude > SCHEMA_VALIDATION.longitudeMax)
   ) {
     errors.push(
       `longitude must be between ${SCHEMA_VALIDATION.longitudeMin} and ${SCHEMA_VALIDATION.longitudeMax} (got ${peak.longitude})`,
@@ -167,11 +172,6 @@ export function generateMountainSchema(peak: Peak, siteUrl = SITE_URL): Mountain
       value: String(peak.elevation),
       unitCode: 'ft',
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: peak.latitude as number,
-      longitude: peak.longitude as number,
-    },
     url: getPeakPageUrl(peak, siteUrl),
     address: {
       '@type': 'PostalAddress',
@@ -179,6 +179,19 @@ export function generateMountainSchema(peak: Peak, siteUrl = SITE_URL): Mountain
       addressCountry: 'US',
     },
   };
+
+  if (
+    typeof peak.latitude === 'number' &&
+    !Number.isNaN(peak.latitude) &&
+    typeof peak.longitude === 'number' &&
+    !Number.isNaN(peak.longitude)
+  ) {
+    schema.geo = {
+      '@type': 'GeoCoordinates',
+      latitude: peak.latitude,
+      longitude: peak.longitude,
+    };
+  }
 
   if (typeof peak.alternateName === 'string' && peak.alternateName.trim().length > 0) {
     schema.alternateName = peak.alternateName.trim();

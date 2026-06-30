@@ -221,7 +221,7 @@ const seoTitle = buildPeakSeoTitle(peak);
 const seoDescription = buildPeakSeoDescription(peak);
 const seoImage = getPeakHeroImageUrl(peak);
 const peakStructuredData =
-  peak.published === true && latitude !== null && longitude !== null
+  peak.published === true
     ? buildPeakPageStructuredData({
         peak,
         peakPageUrl,
