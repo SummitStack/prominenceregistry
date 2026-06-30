@@ -25,10 +25,26 @@ if (!routeResult.success) {
 }
 
 if (!failed) {
-  const peakSlugs = new Set(peakResult.data.map((peak) => peak.slug));
-  const routeSlugs = new Set(routeResult.data.map((route) => route.slug));
+  const peakSlugs = new Set<string>();
+  const routeSlugs = new Set<string>();
+
+  for (const peak of peakResult.data) {
+    if (peakSlugs.has(peak.slug)) {
+      failed = true;
+      console.error(`\n❌ duplicate peak slug "${peak.slug}"`);
+    }
+
+    peakSlugs.add(peak.slug);
+  }
 
   for (const route of routeResult.data) {
+    if (routeSlugs.has(route.slug)) {
+      failed = true;
+      console.error(`\n❌ duplicate route slug "${route.slug}"`);
+    }
+
+    routeSlugs.add(route.slug);
+
     if (!peakSlugs.has(route.slug)) {
       failed = true;
       console.error(`\n❌ route record "${route.slug}" does not match any peak slug`);
