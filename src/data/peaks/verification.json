@@ -1,0 +1,830 @@
+[
+  {
+    "slug": "mount-rainier",
+    "dataSource": "Recreation.gov, Mount Rainier National Park (NPS), USGS Cascades Volcano Observatory, The Mountaineers, Washington Trails Association",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-whitney",
+    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Inyo National Forest",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-shasta",
+    "dataSource": "Shasta-Trinity National Forest, SummitPost, PeakBagger, USGS, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Recreation.gov",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-elbert",
+    "dataSource": "San Isabel National Forest, Leadville Ranger District, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Peakbagger",
+        "San Isabel NF"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-baker",
+    "dataSource": "USDA Forest Service, Mount Baker-Snoqualmie National Forest, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "san-jacinto-peak",
+    "dataSource": "Mount San Jacinto State Park, Palm Springs Aerial Tramway, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Mount San Jacinto State Park",
+        "Palm Springs Aerial Tramway",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "san-gorgonio-mountain",
+    "dataSource": "San Bernardino National Forest, SGWA, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "San Bernardino NF",
+        "SGWA",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "charleston-peak",
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-adams",
+    "dataSource": "Recreation.gov, Mount Adams Ranger District, Gifford Pinchot National Forest, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Gifford Pinchot NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-olympus",
+    "dataSource": "PeakBagger, USGS, Olympic National Park (NPS), Recreation.gov, The Mountaineers, Washington Trails Association, SummitPost",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "USGS",
+        "NPS",
+        "Recreation.gov",
+        "The Mountaineers",
+        "WTA"
+      ],
+      "notes": "West Peak commonly cited as 7,980 ft; Peakbagger LiDAR/NAVD88 lists 7,973.1 ft. Peakbagger lists 7,842 ft clean prominence; Wikipedia/traditional sources list 7,828–7,829 ft."
+    }
+  },
+  {
+    "slug": "mount-hood",
+    "dataSource": "Mount Hood National Forest, USGS, SummitPost, PeakBagger, Recreation.gov, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Hood NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "wheeler-peak",
+    "dataSource": "Great Basin National Park, SummitPost, PeakBagger, NPS",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Great Basin",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "glacier-peak",
+    "dataSource": "USGS Glacier Peak; Mt. Baker-Snoqualmie National Forest; Okanogan-Wenatchee National Forest; Washington Trails Association; Fred Beckey, Cascade Alpine Guides Vol. 2",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Mt Baker-Snoqualmie NF",
+        "USGS",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "white-mountain-peak",
+    "dataSource": "Inyo National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Inyo NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "gannett-peak",
+    "dataSource": "Shoshone National Forest, Bridger-Teton National Forest, PeakBagger, SummitPost, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Shoshone NF",
+        "Bridger-Teton NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "cloud-peak",
+    "dataSource": "Bighorn National Forest, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Bighorn NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "grand-teton",
+    "dataSource": "Grand Teton National Park, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "NPS Grand Teton",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "sacajawea-peak",
+    "dataSource": "Wallowa-Whitman National Forest, Eagle Cap Wilderness, SummitPost, PeakBagger, ListsOfJohn",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Wallowa-Whitman NF",
+        "Peakbagger",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "kings-peak",
+    "dataSource": "SummitPost, USGS/Utah Geological Survey, AllTrails, Paria Outdoor Products, multiple recent trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Ashley NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-graham",
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, USFS; Mount Graham International Observatory (access context)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "USFS",
+        "AZDOT"
+      ],
+      "notes": "Elevation: PeakBagger/ListsOfJohn LiDAR/NAVD88 10,709 ft; traditional sources commonly list 10,720 ft. Prominence: ListsOfJohn LiDAR 6,313 ft; Peakbagger 6,309 ft; older sources may list ~6,340 ft. Summit closed within Red Squirrel Refugium; confirm current closure boundaries and observatory tour availability."
+    }
+  },
+  {
+    "slug": "mount-san-antonio",
+    "dataSource": "PeakBagger, ListsOfJohn, Angeles National Forest, Peakery; San Gabriel Mountains (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Angeles National Forest",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map 10,064 ft; ListsOfJohn/PeakBagger LiDAR values are about 10,068 ft. Prominence: ListsOfJohn rise 6,247 ft; PeakBagger lists about 6,290 ft."
+    }
+  },
+  {
+    "slug": "telescope-peak",
+    "dataSource": "Death Valley National Park, NPS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Death Valley NPS",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-peale",
+    "dataSource": "PeakBagger, ListsOfJohn, Manti-La Sal NF, Peakery; Moab Ranger District (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Manti-La Sal NF",
+        "Peakery",
+        "Moab Ranger District",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: LiDAR 12,727 ft per ListsOfJohn and PeakBagger; traditional USGS/map value commonly listed as 12,721 ft. Prominence: ListsOfJohn LiDAR 6,180 ft; PeakBagger 6,167 ft; older/public sources may list about 6,161 ft."
+    }
+  },
+  {
+    "slug": "mount-washington",
+    "dataSource": "USGS, AMC, White Mountain National Forest, Mount Washington Avalanche Center; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "USGS",
+        "AMC",
+        "White Mountain National Forest",
+        "Mount Washington Avalanche Center"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-mitchell",
+    "dataSource": "USGS, NC State Parks, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "USGS",
+        "NC State Parks",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "humphreys-peak",
+    "dataSource": "Coconino National Forest, SummitPost, U.S. Highpoint Guide, Arizona Highways",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Coconino NF",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "borah-peak",
+    "dataSource": "Salmon–Challis National Forest, USGS GNIS, USGS Earthquake Hazards; Idaho: A Climbing Guide, Sawtooth Mountain Guides, SummitPost, U.S. Highpoint Guide",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Salmon-Challis NF",
+        "USGS GNIS",
+        "USGS Earthquake Hazards"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-jefferson-nv",
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Jefferson Summit trailhead parking, FR 44010 road conditions, and secondary summit elevations before travel."
+    }
+  },
+  {
+    "slug": "mount-ellen",
+    "dataSource": "BLM Hanksville-Henry Mountains Field Office, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "BLM Henry Mountains",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "deseret-peak",
+    "dataSource": "Uinta-Wasatch-Cache National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-jefferson-or",
+    "dataSource": "USGS Mount Jefferson; Willamette National Forest; Recreation.gov Central Cascades Wilderness Permit; Washington Trails Association trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Willamette NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "pilot-peak",
+    "dataSource": "Nevada BLM Elko District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "crazy-peak",
+    "dataSource": "Custer Gallatin National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "ListsOfJohn",
+        "Custer Gallatin NF",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mcdonald-peak",
+    "dataSource": "Confederated Salish & Kootenai Tribes, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "CSKT",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "south-sister",
+    "dataSource": "Deschutes National Forest, Recreation.gov Central Cascades Wilderness Permit, USGS Cascades Volcano Observatory, Washington Trails Association trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Deschutes NF",
+        "Recreation.gov",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "sierra-blanca-peak",
+    "dataSource": "Mescalero Apache Tribe, Lincoln National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Mescalero Apache Tribe",
+        "Lincoln NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "pikes-peak",
+    "dataSource": "City of Manitou Springs, Pike National Forest, Barr Camp, SummitPost, PeakBagger, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Pike NF",
+        "Peakbagger"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-nebo",
+    "dataSource": "PeakBagger, ListsOfJohn, Uinta-Wasatch-Cache NF, Peakery; Mount Nebo Wilderness (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Uinta-Wasatch-Cache NF",
+        "Peakery",
+        "USGS GNIS"
+      ],
+      "notes": "Elevation: traditional/map and Forest Service 11,928 ft; ListsOfJohn LiDAR 11,941 ft. Prominence: ListsOfJohn 5,500 ft; older sources may list about 5,488 ft."
+    }
+  },
+  {
+    "slug": "snowshoe-peak",
+    "dataSource": "PeakBagger, Kootenai NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "Kootenai NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Leigh Lake trailhead coordinates and high-clearance road access. Verify whether mid-summer parties can safely manage the crux without rope. Alternative Snowshoe Lake / west-side approach details pending."
+    }
+  },
+  {
+    "slug": "north-schell-peak",
+    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "star-peak",
+    "dataSource": "Nevada BLM Winnemucca District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nevada BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "hayford-peak",
+    "dataSource": "Desert National Wildlife Refuge, FWS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-27",
+      "checkedAgainst": [
+        "Desert NWR",
+        "FWS",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Confirm Hidden Forest Cabin status, road closures, and Wiregrass Spring water availability before travel."
+    }
+  },
+  {
+    "slug": "diamond-peak",
+    "dataSource": "PeakBagger, BLM, Caribou-Targhee NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "BLM",
+        "Caribou-Targhee NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Elevation sources vary around 12,197–12,200 ft; prominence approximate at 5,377 ft. Confirm Birch Creek Campground trailhead coordinates and seasonal access."
+    }
+  },
+  {
+    "slug": "flat-top-mountain",
+    "dataSource": "USGS GNIS, ListsOfJohn, PeakBagger/SummitPost (route, class, hazards, access)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "USGS GNIS",
+        "ListsOfJohn",
+        "PeakBagger"
+      ],
+      "notes": "Private land access must be verified independently before each attempt."
+    }
+  },
+  {
+    "slug": "mount-stuart",
+    "dataSource": "Okanogan-Wenatchee National Forest, USGS, Peakbagger, SummitPost, Cascade Alpine Guides",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Okanogan-Wenatchee National Forest",
+        "USGS",
+        "Peakbagger",
+        "SummitPost",
+        "Cascade Alpine Guides"
+      ],
+      "notes": "Prominence: 5,354 ft clean prominence per editorial sources; prior database value 5,335 ft."
+    }
+  },
+  {
+    "slug": "blanca-peak",
+    "dataSource": "Rio Grande National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Rio Grande NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "mount-timpanogos",
+    "dataSource": "Uinta-Wasatch-Cache National Forest, SummitPost, PeakBagger, Recreation.gov, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-24",
+      "checkedAgainst": [
+        "Uinta-Wasatch-Cache NF",
+        "Recreation.gov"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "ibapah-peak",
+    "dataSource": "Utah BLM, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Utah BLM",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "lassen-peak",
+    "dataSource": "Willhite Web, Lassen Volcanic NPS, USGS, Recreation.gov",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Willhite Web",
+        "Lassen Volcanic NPS",
+        "USGS",
+        "Recreation.gov"
+      ],
+      "notes": "Elevation: NPS/traditional value 10,457 ft; Peakbagger lists 10,461.7 ft. Prominence: Peakbagger-style value 5,246 ft; public sources vary around 5,229–5,246 ft."
+    }
+  },
+  {
+    "slug": "mount-cleveland",
+    "dataSource": "Glacier National Park, Recreation.gov, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Glacier National Park",
+        "Recreation.gov",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "arc-dome",
+    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-25",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe NF",
+        "USGS",
+        "ListsOfJohn"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "she-devil",
+    "dataSource": "Nez Perce-Clearwater National Forest, Hells Canyon Wilderness, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-26",
+      "checkedAgainst": [
+        "Nez Perce-Clearwater NF",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "abercrombie-mountain",
+    "dataSource": "Colville National Forest, Willhite Web, Out There Outdoors, Peakbagger, SummitPost, WTA",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Colville National Forest",
+        "Peakbagger",
+        "SummitPost",
+        "WTA",
+        "Out There Outdoors",
+        "Willhite Web"
+      ],
+      "notes": "Elevation: traditional/public value 7,310 ft; Peakbagger LiDAR lists 7,314.4 ft. Prominence: Peakbagger clean prominence 5,174 ft; optimistic prominence is 5,194 ft."
+    }
+  },
+  {
+    "slug": "mount-lemmon",
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Santa Catalina Ranger District (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery",
+        "Santa Catalina Ranger District"
+      ],
+      "notes": "Elevation: traditional/public summit 9,171 ft; PeakBagger LiDAR 9,166.5 ft; ListsOfJohn LiDAR 9,166 ft. Prominence: ListsOfJohn LiDAR 5,164 ft; PeakBagger 5,164.8 ft; map value 5,177 ft."
+    }
+  },
+  {
+    "slug": "chiricahua-peak",
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Chiricahua Wilderness (route, class, hazards, permits)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery"
+      ],
+      "notes": "Elevation: ListsOfJohn LiDAR 9,776 ft; traditional sources commonly list 9,759 ft. Prominence: ListsOfJohn LiDAR 5,163 ft; traditional sources commonly list ~5,139 ft. Confirm Crest Trail stats, current day-use fee, and campground closure windows."
+    }
+  },
+  {
+    "slug": "mount-eddy",
+    "dataSource": "Shasta-Trinity National Forest, Mount Shasta Trail Association, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Shasta-Trinity NF",
+        "Mount Shasta Trail Association",
+        "PeakBagger",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": null
+    }
+  },
+  {
+    "slug": "miller-peak",
+    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Arizona Birding Trail (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "PeakBagger",
+        "ListsOfJohn",
+        "Coronado NF",
+        "Peakery",
+        "Arizona Birding Trail"
+      ],
+      "notes": "Elevation: ListsOfJohn LiDAR 9,468 ft; traditional sources commonly list 9,466–9,470 ft. Prominence: ListsOfJohn LiDAR 5,007 ft; Peakbagger key-col ~5,008 ft; public sources often list 5,006 ft. Confirm current Crest Trail condition and post-fire recovery status."
+    }
+  }
+]

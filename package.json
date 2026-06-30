@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "npm run validate:peaks && npm run validate:peak-content && npm run validate:seo-images && npm run validate:seo-meta && npx tsx scripts/prebuild-schema.ts",
+    "prebuild": "npm run validate:peaks && npm run validate:peak-content && npm run validate:peak-verification && npm run validate:seo-images && npm run validate:seo-meta && npx tsx scripts/prebuild-schema.ts",
     "build": "astro build",
     "postbuild": "npm run validate:structured-data && npm run validate:favicons",
     "preview": "astro preview",
@@ -23,7 +23,8 @@
     "fetch-images": "node scripts/fetch-hero-images.js",
     "optimize-images": "node scripts/optimize-images.js",
     "fetch-weather-urls": "node scripts/apply-weather-urls.js",
-    "validate:peak-content": "npx tsx scripts/validatePeakContent.ts"
+    "validate:peak-content": "npx tsx scripts/validatePeakContent.ts",
+    "validate:peak-verification": "npx tsx scripts/validatePeakVerification.ts"
   },
   "dependencies": {
     "astro": "^6.4.7",

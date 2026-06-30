@@ -32,7 +32,6 @@
     ],
     "bestRoute": "Disappointment Cleaver",
     "permitRequired": true,
-    "dataSource": "Recreation.gov, Mount Rainier National Park (NPS), USGS Cascades Volcano Observatory, The Mountaineers, Washington Trails Association",
     "ydsClass": "3",
     "permitSeason": "Climbing permit required for glacier travel or above ~10,000 ft; wilderness reservations via Recreation.gov May–September",
     "heroImage": "/images/peaks/mount-rainier.jpg",
@@ -83,17 +82,7 @@
     ],
     "permitFee": "Verify current NPS fee",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "NPS",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "mount-whitney",
@@ -126,7 +115,6 @@
     ],
     "bestRoute": "Mount Whitney Trail",
     "permitRequired": true,
-    "dataSource": "PeakList.org (elevation, prominence); PeakBagger/SummitPost (route, class, hazards, permits)",
     "ydsClass": "1",
     "permitSeason": "May 1–November 1 (quota lottery); year-round wilderness permit required",
     "heroImage": "/images/peaks/mount-whitney.jpg",
@@ -168,17 +156,7 @@
     ],
     "permitFee": "Free (wilderness permit required)",
     "published": true,
-    "permitStatus": "lottery",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Inyo National Forest",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "lottery"
   },
   {
     "slug": "mount-shasta",
@@ -211,7 +189,6 @@
     ],
     "bestRoute": "Avalanche Gulch",
     "permitRequired": true,
-    "dataSource": "Shasta-Trinity National Forest, SummitPost, PeakBagger, USGS, trip reports",
     "ydsClass": "2",
     "permitSeason": "Free wilderness permit year-round; $25 summit pass above 10,000 ft (3 days) or $30 annual pass",
     "heroImage": "/images/peaks/mount-shasta.jpg",
@@ -260,18 +237,7 @@
     ],
     "permitFee": "$25 per person (summit pass, 3-day); $30 annual",
     "published": true,
-    "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Shasta-Trinity NF",
-        "Recreation.gov",
-        "USGS",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "fee"
   },
   {
     "slug": "mount-elbert",
@@ -303,7 +269,6 @@
     ],
     "bestRoute": "North Mount Elbert Trail",
     "permitRequired": false,
-    "dataSource": "San Isabel National Forest, Leadville Ranger District, SummitPost, PeakBagger, trip reports",
     "ydsClass": "1",
     "permitSeason": "No climbing permit required for standard summer day hikes",
     "heroImage": "/images/peaks/mount-elbert.jpg",
@@ -345,16 +310,7 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Peakbagger",
-        "San Isabel NF"
-      ],
-      "notes": null
-    }
+    "permitStatus": "none"
   },
   {
     "slug": "mount-baker",
@@ -387,7 +343,6 @@
     ],
     "bestRoute": "Coleman-Deming Glacier",
     "permitRequired": true,
-    "dataSource": "USDA Forest Service, Mount Baker-Snoqualmie National Forest, SummitPost, PeakBagger, trip reports",
     "ydsClass": "2+",
     "permitSeason": "No dedicated climbing permit; recreation/parking pass required at Heliotrope Ridge trailhead",
     "heroImage": "/images/peaks/mount-baker.jpg",
@@ -435,17 +390,7 @@
     ],
     "permitFee": "No climbing permit fee; parking pass required",
     "published": true,
-    "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Mt Baker-Snoqualmie NF",
-        "USGS",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "fee"
   },
   {
     "slug": "san-jacinto-peak",
@@ -481,7 +426,6 @@
     ],
     "bestRoute": "Round Valley Trail via Tramway",
     "permitRequired": true,
-    "dataSource": "Mount San Jacinto State Park, Palm Springs Aerial Tramway, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
     "ydsClass": "1",
     "permitSeason": "Free self-issue day-use wilderness permit required; $5/person overnight quota permit",
     "heroImage": "/images/peaks/san-jacinto-peak.jpg",
@@ -522,19 +466,7 @@
     ],
     "permitFee": "Free day-use permit; tram ticket additional",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Mount San Jacinto State Park",
-        "Palm Springs Aerial Tramway",
-        "PeakBagger",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "san-gorgonio-mountain",
@@ -569,7 +501,6 @@
     ],
     "bestRoute": "Vivian Creek Trail",
     "permitRequired": true,
-    "dataSource": "San Bernardino National Forest, SGWA, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "permitSeason": "Free wilderness permit required for all day and overnight trips via SGWA; Adventure Pass required for trailhead parking",
     "heroImage": "/images/peaks/san-gorgonio-mountain.jpg",
@@ -610,18 +541,7 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "San Bernardino NF",
-        "SGWA",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "charleston-peak",
@@ -658,7 +578,6 @@
     ],
     "bestRoute": "South Loop Trail",
     "permitRequired": false,
-    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/charleston-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Charleston/forecasts/3633",
@@ -703,16 +622,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Humboldt-Toiyabe NF",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No permit required for day hiking or backpacking in Mount Charleston Wilderness"
   },
   {
@@ -749,7 +658,6 @@
     ],
     "bestRoute": "South Spur",
     "permitRequired": true,
-    "dataSource": "Recreation.gov, Mount Adams Ranger District, Gifford Pinchot National Forest, SummitPost, PeakBagger, trip reports",
     "ydsClass": "2",
     "permitSeason": "Climbing pass required May 1–September 30 above 7,000 ft ($20/person via Recreation.gov); $5 day-use at Cold Springs trailhead",
     "heroImage": "/images/peaks/mount-adams.jpg",
@@ -796,17 +704,7 @@
     ],
     "permitFee": "$20 per person per climbing trip",
     "published": true,
-    "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Gifford Pinchot NF",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "fee"
   },
   {
     "slug": "mount-olympus",
@@ -845,7 +743,6 @@
     ],
     "bestRoute": "Hoh River Trail to Blue Glacier",
     "permitRequired": true,
-    "dataSource": "PeakBagger, USGS, Olympic National Park (NPS), Recreation.gov, The Mountaineers, Washington Trails Association, SummitPost",
     "ydsClass": "5",
     "permitSeason": "Wilderness permits required May 15–October 15; summer permits released April 15 via Recreation.gov",
     "heroImage": "/images/peaks/mount-olympus.jpg",
@@ -892,20 +789,7 @@
     ],
     "permitFee": "$6 reservation + $8/person/night (verify on Recreation.gov)",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "USGS",
-        "NPS",
-        "Recreation.gov",
-        "The Mountaineers",
-        "WTA"
-      ],
-      "notes": "West Peak commonly cited as 7,980 ft; Peakbagger LiDAR/NAVD88 lists 7,973.1 ft. Peakbagger lists 7,842 ft clean prominence; Wikipedia/traditional sources list 7,828–7,829 ft."
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "mount-hood",
@@ -938,7 +822,6 @@
     ],
     "bestRoute": "Hogsback",
     "permitRequired": true,
-    "dataSource": "Mount Hood National Forest, USGS, SummitPost, PeakBagger, Recreation.gov, trip reports",
     "ydsClass": "3",
     "permitSeason": "Mount Hood Climbing Permit required year-round above 9,500 ft via Recreation.gov",
     "heroImage": "/images/peaks/mount-hood.jpg",
@@ -987,17 +870,7 @@
     ],
     "permitFee": "Verify current Recreation.gov fee",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Mt Hood NF",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "wheeler-peak",
@@ -1028,7 +901,6 @@
     ],
     "bestRoute": "Wheeler Peak Summit Trail",
     "permitRequired": false,
-    "dataSource": "Great Basin National Park, SummitPost, PeakBagger, NPS",
     "ydsClass": "2",
     "heroImage": "/images/peaks/wheeler-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Wheeler-Peak/forecasts/3982",
@@ -1076,16 +948,7 @@
     ],
     "permitFee": "Free (no climbing permit; $20/site campground)",
     "published": true,
-    "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "NPS Great Basin",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "none"
   },
   {
     "slug": "glacier-peak",
@@ -1120,7 +983,6 @@
     ],
     "bestRoute": "North Fork Sauk Trail",
     "permitRequired": false,
-    "dataSource": "USGS Glacier Peak; Mt. Baker-Snoqualmie National Forest; Okanogan-Wenatchee National Forest; Washington Trails Association; Fred Beckey, Cascade Alpine Guides Vol. 2",
     "ydsClass": "3",
     "permitSeason": "No quota climbing permit; sign trailhead register. Northwest Forest Pass or federal interagency pass required at North Fork Sauk Trailhead",
     "heroImage": "/images/peaks/glacier-peak.jpg",
@@ -1168,18 +1030,7 @@
     ],
     "permitFee": "Free (wilderness)",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Mt Baker-Snoqualmie NF",
-        "USGS",
-        "Peakbagger",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "white-mountain-peak",
@@ -1214,7 +1065,6 @@
     ],
     "bestRoute": "South Face Route via Barcroft Gate",
     "permitRequired": false,
-    "dataSource": "Inyo National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/white-mountain-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/White-Mountain-Peak/forecasts/4342",
@@ -1254,16 +1104,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Inyo NF",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No day-hiking permit required; verify current road, gate, and fire restrictions"
   },
   {
@@ -1299,7 +1139,6 @@
     ],
     "bestRoute": "Glacier Trail Approach",
     "permitRequired": false,
-    "dataSource": "Shoshone National Forest, Bridger-Teton National Forest, PeakBagger, SummitPost, trip reports",
     "ydsClass": "3",
     "permitSeason": "Open for individual climbers; group-use visitor permit may be required for organized, commercial, or stock-supported parties",
     "heroImage": "/images/peaks/gannett-peak.jpg",
@@ -1349,18 +1188,7 @@
     ],
     "permitFee": "Free (wilderness)",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Shoshone NF",
-        "Bridger-Teton NF",
-        "Peakbagger",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "cloud-peak",
@@ -1394,7 +1222,6 @@
     ],
     "bestRoute": "West Tensleep Trail to Mistymoon Lake",
     "permitRequired": false,
-    "dataSource": "Bighorn National Forest, SummitPost, PeakBagger, trip reports",
     "ydsClass": "2",
     "permitSeason": "Free self-issued wilderness registration at trailhead; no climbing fee",
     "heroImage": "/images/peaks/cloud-peak.jpg",
@@ -1436,16 +1263,7 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Bighorn NF",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "grand-teton",
@@ -1478,7 +1296,6 @@
     ],
     "bestRoute": "Owen-Spalding Route",
     "permitRequired": true,
-    "dataSource": "Grand Teton National Park, SummitPost, PeakBagger, trip reports",
     "ydsClass": "5",
     "permitSeason": "No climbing permit for day use; backcountry permit required for overnight camping (quotas apply for Garnet Canyon and Lower Saddle)",
     "heroImage": "/images/peaks/grand-teton.jpg",
@@ -1526,16 +1343,7 @@
     ],
     "permitFee": "No day-use climbing fee; backcountry permit fee for overnight",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "NPS Grand Teton",
-        "Recreation.gov"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "sacajawea-peak",
@@ -1569,7 +1377,6 @@
     ],
     "bestRoute": "Hurricane Creek Trail / Thorp Creek East Ridge",
     "permitRequired": false,
-    "dataSource": "Wallowa-Whitman National Forest, Eagle Cap Wilderness, SummitPost, PeakBagger, ListsOfJohn",
     "ydsClass": "3",
     "permitSeason": "Free self-issue Eagle Cap Wilderness permit at trailhead; Northwest Forest Pass or America the Beautiful Pass required for Hurricane Creek Trailhead parking",
     "heroImage": "/images/peaks/sacajawea-peak.jpg",
@@ -1615,17 +1422,7 @@
     ],
     "permitFee": "Free (self-issue wilderness permit)",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Wallowa-Whitman NF",
-        "Peakbagger",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "kings-peak",
@@ -1658,7 +1455,6 @@
     ],
     "bestRoute": "Henry's Fork Trail",
     "permitRequired": false,
-    "dataSource": "SummitPost, USGS/Utah Geological Survey, AllTrails, Paria Outdoor Products, multiple recent trip reports",
     "ydsClass": "2",
     "permitSeason": "July through September; free sign-in kiosk at Henry's Fork Trailhead",
     "heroImage": "/images/kings-henrys-fork-basin.webp",
@@ -1709,16 +1505,7 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Ashley NF",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "self-register"
   },
   {
     "slug": "mount-graham",
@@ -1752,7 +1539,6 @@
     ],
     "bestRoute": "High Peak Road (summit closed to public)",
     "permitRequired": true,
-    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, USFS; Mount Graham International Observatory (access context)",
     "ydsClass": "1",
     "permitSeason": "Summit closed to public; special authorization required for legal entry",
     "heroImage": "/images/peaks/mount-graham.jpg",
@@ -1789,19 +1575,7 @@
     ],
     "permitFee": "No standard public summit access; observatory tours may be available seasonally",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Coronado NF",
-        "USFS",
-        "AZDOT"
-      ],
-      "notes": "Elevation: PeakBagger/ListsOfJohn LiDAR/NAVD88 10,709 ft; traditional sources commonly list 10,720 ft. Prominence: ListsOfJohn LiDAR 6,313 ft; Peakbagger 6,309 ft; older sources may list ~6,340 ft. Summit closed within Red Squirrel Refugium; confirm current closure boundaries and observatory tour availability."
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "mount-san-antonio",
@@ -1836,7 +1610,6 @@
     ],
     "bestRoute": "Devil's Backbone from Manker Flats",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Angeles National Forest, Peakery; San Gabriel Mountains (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-san-antonio.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-San-Antonio/forecasts/3068",
@@ -1879,18 +1652,6 @@
     "permitFee": "Parking/day-use fee at Manker Flats; verify current pass rules with Angeles National Forest",
     "published": true,
     "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Angeles National Forest",
-        "Peakery",
-        "USGS GNIS"
-      ],
-      "notes": "Elevation: traditional/map 10,064 ft; ListsOfJohn/PeakBagger LiDAR values are about 10,068 ft. Prominence: ListsOfJohn rise 6,247 ft; PeakBagger lists about 6,290 ft."
-    },
     "permitSeason": "Parking or federal recreation pass required at Manker Flats; free wilderness permit required for designated wilderness entry"
   },
   {
@@ -1926,7 +1687,6 @@
     ],
     "bestRoute": "Mahogany Flat Campground Trail",
     "permitRequired": false,
-    "dataSource": "Death Valley National Park, NPS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/telescope-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Telescope-Peak/forecasts/3368",
@@ -1970,16 +1730,6 @@
     "permitFee": "Free; Death Valley entrance fee may apply",
     "published": true,
     "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Death Valley NPS",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "Day hikes require no permit; voluntary backcountry permits for overnight trips; verify current NPS rules and road conditions"
   },
   {
@@ -2015,7 +1765,6 @@
     ],
     "bestRoute": "Burlfriends Trail from La Sal Pass",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Manti-La Sal NF, Peakery; Moab Ranger District (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-peale.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Peale/forecasts/3877",
@@ -2056,19 +1805,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Manti-La Sal NF",
-        "Peakery",
-        "Moab Ranger District",
-        "USGS GNIS"
-      ],
-      "notes": "Elevation: LiDAR 12,727 ft per ListsOfJohn and PeakBagger; traditional USGS/map value commonly listed as 12,721 ft. Prominence: ListsOfJohn LiDAR 6,180 ft; PeakBagger 6,167 ft; older/public sources may list about 6,161 ft."
-    },
     "permitSeason": "No permit required for climbing or dispersed camping; confirm current Manti-La Sal NF fire and road rules"
   },
   {
@@ -2105,7 +1841,6 @@
     ],
     "bestRoute": "Tuckerman Ravine Trail",
     "permitRequired": false,
-    "dataSource": "USGS, AMC, White Mountain National Forest, Mount Washington Avalanche Center; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-washington.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Washington-2/forecasts/1917",
@@ -2143,17 +1878,6 @@
     "permitFee": "Free; parking, recreation pass, or facility fees may apply by trailhead",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "USGS",
-        "AMC",
-        "White Mountain National Forest",
-        "Mount Washington Avalanche Center"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit for day hiking; parking, recreation pass, and facility fees vary by trailhead (AMC/WMNF)"
   },
   {
@@ -2187,7 +1911,6 @@
     ],
     "bestRoute": "Mount Mitchell Trail",
     "permitRequired": false,
-    "dataSource": "USGS, NC State Parks, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards, permits)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-mitchell.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Mitchell/forecasts/2037",
@@ -2226,16 +1949,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "USGS",
-        "NC State Parks",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit required; Black Mountain Campground closed 2025–2026 (reopens 2027)"
   },
   {
@@ -2270,7 +1983,6 @@
     ],
     "bestRoute": "Humphreys Peak Trail",
     "permitRequired": false,
-    "dataSource": "Coconino National Forest, SummitPost, U.S. Highpoint Guide, Arizona Highways",
     "ydsClass": "2",
     "permitSeason": "No permit required for day use; verify winter road access and any seasonal requirements with Coconino National Forest",
     "heroImage": "/images/peaks/humphreys-peak.jpg",
@@ -2314,16 +2026,7 @@
     ],
     "permitFee": "Free",
     "published": true,
-    "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Coconino NF",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "none"
   },
   {
     "slug": "borah-peak",
@@ -2357,7 +2060,6 @@
     ],
     "bestRoute": "Southwest Ridge",
     "permitRequired": false,
-    "dataSource": "Salmon–Challis National Forest, USGS GNIS, USGS Earthquake Hazards; Idaho: A Climbing Guide, Sawtooth Mountain Guides, SummitPost, U.S. Highpoint Guide",
     "ydsClass": "3",
     "heroImage": "/images/peaks/borah-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
@@ -2406,16 +2108,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Salmon-Challis NF",
-        "USGS GNIS",
-        "USGS Earthquake Hazards"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit required; primitive first-come trailhead campground at Borah Peak Trailhead"
   },
   {
@@ -2451,7 +2143,6 @@
     ],
     "bestRoute": "Jefferson Summit Access to South Summit",
     "permitRequired": false,
-    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-jefferson-nv.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Jefferson-Nevada/forecasts/3642",
@@ -2492,16 +2183,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-27",
-      "checkedAgainst": [
-        "Humboldt-Toiyabe NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": "Confirm Jefferson Summit trailhead parking, FR 44010 road conditions, and secondary summit elevations before travel."
-    },
     "permitSeason": "No permit generally required; confirm current fire, road, and wilderness restrictions"
   },
   {
@@ -2537,7 +2218,6 @@
     ],
     "bestRoute": "Bull Creek Pass to Mount Ellen North Ridge",
     "permitRequired": false,
-    "dataSource": "BLM Hanksville-Henry Mountains Field Office, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-ellen.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Ellen-Utah/forecasts/3512",
@@ -2575,16 +2255,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "BLM Henry Mountains",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit required; BLM-managed public land"
   },
   {
@@ -2619,7 +2289,6 @@
     ],
     "bestRoute": "Mill Fork Trail from Loop Campground",
     "permitRequired": false,
-    "dataSource": "Uinta-Wasatch-Cache National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/deseret-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Deseret-Peak/forecasts/3362",
@@ -2660,16 +2329,6 @@
     "permitFee": "Free; campground fees apply",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Uinta-Wasatch-Cache NF",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit required; campground fees apply at Loop Campground"
   },
   {
@@ -2706,7 +2365,6 @@
     ],
     "bestRoute": "South Ridge via Pamelia Lake",
     "permitRequired": true,
-    "dataSource": "USGS Mount Jefferson; Willamette National Forest; Recreation.gov Central Cascades Wilderness Permit; Washington Trails Association trip reports",
     "ydsClass": "4",
     "permitSeason": "Central Cascades Wilderness Permit required June 15–October 15: $1/person day use, $6/group overnight via Recreation.gov; federal recreation pass required at Pamelia Lake Trailhead",
     "heroImage": "/images/peaks/mount-jefferson-or.jpg",
@@ -2754,17 +2412,7 @@
     ],
     "permitFee": "$1/person day use; $6/group overnight",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Willamette NF",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "pilot-peak",
@@ -2800,7 +2448,6 @@
     ],
     "bestRoute": "Miners Canyon Route",
     "permitRequired": false,
-    "dataSource": "Nevada BLM Elko District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "3",
     "heroImage": "/images/peaks/pilot-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Pilot-Peak-Nevada/forecasts/3267",
@@ -2844,16 +2491,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Nevada BLM",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit or fee; BLM-managed public land"
   },
   {
@@ -2891,7 +2528,6 @@
     ],
     "bestRoute": "West Ridge Route",
     "permitRequired": false,
-    "dataSource": "Custer Gallatin National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "3",
     "heroImage": "/images/peaks/crazy-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Crazy-Peak/forecasts/3418",
@@ -2937,16 +2573,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "ListsOfJohn",
-        "Custer Gallatin NF",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit required; Half Moon Campground fee may apply"
   },
   {
@@ -2984,7 +2610,6 @@
     ],
     "bestRoute": "Red Horn Lane / Ashley Lakes Approach toward Duncan Lake",
     "permitRequired": true,
-    "dataSource": "Confederated Salish & Kootenai Tribes, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "3",
     "permitSeason": "Flathead Reservation Conservation License required; McDonald Peak Grizzly Bear Closure Area closed July 15–October 1 unless posted otherwise",
     "heroImage": "/images/peaks/mcdonald-peak.jpg",
@@ -3032,17 +2657,7 @@
     ],
     "permitFee": "$80 three-day Conservation License; $100 annual; $100 Camping License for overnight",
     "published": true,
-    "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "CSKT",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "fee"
   },
   {
     "slug": "south-sister",
@@ -3075,7 +2690,6 @@
     ],
     "bestRoute": "South Sister Climber Trail (Devil's Lake)",
     "permitRequired": true,
-    "dataSource": "Deschutes National Forest, Recreation.gov Central Cascades Wilderness Permit, USGS Cascades Volcano Observatory, Washington Trails Association trip reports",
     "ydsClass": "2",
     "permitSeason": "Central Cascades Wilderness Permit required June 15–October 15: $1/person day use, $6/group overnight via Recreation.gov; Northwest Forest Pass or America the Beautiful Pass required at Devil's Lake Trailhead",
     "heroImage": "/images/peaks/optimized/south-sister-hero-1440.jpg",
@@ -3127,17 +2741,7 @@
     ],
     "permitFee": "$1/person day-use; $6/group overnight",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Deschutes NF",
-        "Recreation.gov",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "sierra-blanca-peak",
@@ -3172,7 +2776,6 @@
     ],
     "bestRoute": "Lookout Mountain Ridge Route",
     "permitRequired": true,
-    "dataSource": "Mescalero Apache Tribe, Lincoln National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "permitSeason": "Tribal land access; verify current Mescalero Apache, Ski Apache, and Lincoln National Forest requirements",
     "heroImage": "/images/peaks/sierra-blanca-peak.jpg",
@@ -3215,18 +2818,7 @@
     ],
     "permitFee": "Varies; verify current access, tribal, and resort requirements",
     "published": true,
-    "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Mescalero Apache Tribe",
-        "Lincoln NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    }
+    "permitStatus": "limited"
   },
   {
     "slug": "pikes-peak",
@@ -3258,7 +2850,6 @@
     ],
     "bestRoute": "Barr Trail",
     "permitRequired": false,
-    "dataSource": "City of Manitou Springs, Pike National Forest, Barr Camp, SummitPost, PeakBagger, trip reports",
     "ydsClass": "1",
     "permitSeason": "No climbing permit required; Barr Trailhead parking fee typically $25–$32.50 per day (reserve in peak season)",
     "heroImage": "/images/peaks/pikes-peak.jpg",
@@ -3300,16 +2891,7 @@
     ],
     "permitFee": "Free (no climbing permit; trailhead parking fee applies)",
     "published": true,
-    "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Pike NF",
-        "Peakbagger"
-      ],
-      "notes": null
-    }
+    "permitStatus": "none"
   },
   {
     "slug": "mount-nebo",
@@ -3341,7 +2923,6 @@
     ],
     "bestRoute": "North Peak Trail from North Mount Nebo Trailhead",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Uinta-Wasatch-Cache NF, Peakery; Mount Nebo Wilderness (route, class, hazards, permits)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/mount-nebo.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Nebo/forecasts/3636",
@@ -3384,18 +2965,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Uinta-Wasatch-Cache NF",
-        "Peakery",
-        "USGS GNIS"
-      ],
-      "notes": "Elevation: traditional/map and Forest Service 11,928 ft; ListsOfJohn LiDAR 11,941 ft. Prominence: ListsOfJohn 5,500 ft; older sources may list about 5,488 ft."
-    },
     "permitSeason": "No permit required for day hiking or overnight travel in Mount Nebo Wilderness"
   },
   {
@@ -3435,7 +3004,6 @@
     ],
     "bestRoute": "Northeast Ridge via Leigh Lake",
     "permitRequired": false,
-    "dataSource": "PeakBagger, Kootenai NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
     "ydsClass": "4",
     "heroImage": "/images/peaks/snowshoe-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Snowshoe-Peak/forecasts/2663",
@@ -3485,17 +3053,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "Kootenai NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": "Confirm Leigh Lake trailhead coordinates and high-clearance road access. Verify whether mid-summer parties can safely manage the crux without rope. Alternative Snowshoe Lake / west-side approach details pending."
-    },
     "permitSeason": "No climbing permit required; bear-resistant food storage required under Kootenai NF rules"
   },
   {
@@ -3531,7 +3088,6 @@
     ],
     "bestRoute": "Timber Creek Trail",
     "permitRequired": false,
-    "dataSource": "Humboldt-Toiyabe National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/north-schell-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/North-Schell-Peak/forecasts/3622",
@@ -3573,16 +3129,6 @@
     "permitFee": "Free; campground fees apply",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Humboldt-Toiyabe NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No day-hiking permit; Timber Creek Campground reservations and fees may apply"
   },
   {
@@ -3617,7 +3163,6 @@
     ],
     "bestRoute": "El Dorado Canyon Road Approach",
     "permitRequired": false,
-    "dataSource": "Nevada BLM Winnemucca District, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/star-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Desatoya-Peak/forecasts/3041",
@@ -3656,16 +3201,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Nevada BLM",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No permit required; verify current BLM road access and conditions"
   },
   {
@@ -3702,7 +3237,6 @@
     ],
     "bestRoute": "Deadman Canyon Route",
     "permitRequired": false,
-    "dataSource": "Desert National Wildlife Refuge, FWS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/hayford-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Griffith-Peak/forecasts/3371",
@@ -3743,17 +3277,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-27",
-      "checkedAgainst": [
-        "Desert NWR",
-        "FWS",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": "Confirm Hidden Forest Cabin status, road closures, and Wiregrass Spring water availability before travel."
-    },
     "permitSeason": "No backpacking permit required; confirm current refuge rules, road closures, and fire restrictions"
   },
   {
@@ -3791,7 +3314,6 @@
     ],
     "bestRoute": "East Ridge via Birch Creek Valley",
     "permitRequired": false,
-    "dataSource": "PeakBagger, BLM, Caribou-Targhee NF, ListsOfJohn, USGS; SummitPost (route, class, hazards)",
     "ydsClass": "3",
     "heroImage": "/images/peaks/diamond-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Borah-Peak-Mount-Borah/forecasts/3859",
@@ -3833,18 +3355,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "BLM",
-        "Caribou-Targhee NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": "Elevation sources vary around 12,197–12,200 ft; prominence approximate at 5,377 ft. Confirm Birch Creek Campground trailhead coordinates and seasonal access."
-    },
     "permitSeason": "No climbing permit required; confirm current BLM and Caribou-Targhee NF camping and fire rules"
   },
   {
@@ -3880,7 +3390,6 @@
     ],
     "bestRoute": "South Fork Ophir Canyon Route",
     "permitRequired": false,
-    "dataSource": "USGS GNIS, ListsOfJohn, PeakBagger/SummitPost (route, class, hazards, access)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/flat-top-mountain.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Flattop-Mountain/forecasts/3808",
@@ -3919,16 +3428,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "USGS GNIS",
-        "ListsOfJohn",
-        "PeakBagger"
-      ],
-      "notes": "Private land access must be verified independently before each attempt."
-    },
     "permitSeason": "No wilderness permit; private landowner permission required — verify current access before attempting"
   },
   {
@@ -3965,7 +3464,6 @@
     ],
     "bestRoute": "Cascadian Couloir",
     "permitRequired": false,
-    "dataSource": "Okanogan-Wenatchee National Forest, USGS, Peakbagger, SummitPost, Cascade Alpine Guides",
     "ydsClass": "3",
     "heroImage": "/images/peaks/mount-stuart.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Stuart/forecasts/2869",
@@ -4007,18 +3505,6 @@
     "permitFee": "Northwest Forest Pass or equivalent required at trailhead",
     "published": true,
     "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Okanogan-Wenatchee National Forest",
-        "USGS",
-        "Peakbagger",
-        "SummitPost",
-        "Cascade Alpine Guides"
-      ],
-      "notes": "Prominence: 5,354 ft clean prominence per editorial sources; prior database value 5,335 ft."
-    },
     "permitSeason": "No climbing permit required; Northwest Forest Pass or federal interagency pass required at Esmeralda Trailhead"
   },
   {
@@ -4054,7 +3540,6 @@
     ],
     "bestRoute": "Lake Como Road Route",
     "permitRequired": false,
-    "dataSource": "Rio Grande National Forest, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/blanca-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Blanca-Peak/forecasts/4372",
@@ -4099,16 +3584,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Rio Grande NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No permit for standard day hiking; verify current Forest Service camping and fire restrictions"
   },
   {
@@ -4140,7 +3615,6 @@
     ],
     "bestRoute": "Timpooneke Trail",
     "permitRequired": false,
-    "dataSource": "Uinta-Wasatch-Cache National Forest, SummitPost, PeakBagger, Recreation.gov, trip reports",
     "ydsClass": "2",
     "permitSeason": "No climbing permit required; timed Timpooneke trailhead parking on summer weekends and holidays via Recreation.gov",
     "heroImage": "/images/peaks/mount-timpanogos.jpg",
@@ -4183,16 +3657,7 @@
     ],
     "permitFee": "Free (timed parking permit required on weekends/holidays)",
     "published": true,
-    "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-24",
-      "checkedAgainst": [
-        "Uinta-Wasatch-Cache NF",
-        "Recreation.gov"
-      ],
-      "notes": null
-    }
+    "permitStatus": "none"
   },
   {
     "slug": "ibapah-peak",
@@ -4228,7 +3693,6 @@
     ],
     "bestRoute": "Granite Creek Road Approach",
     "permitRequired": false,
-    "dataSource": "Utah BLM, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "2",
     "heroImage": "/images/peaks/ibapah-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Ibapah/forecasts/3688",
@@ -4271,16 +3735,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Utah BLM",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No permit required; verify BLM fire restrictions and road conditions before travel"
   },
   {
@@ -4316,7 +3770,6 @@
     ],
     "bestRoute": "Lassen Peak Trail",
     "permitRequired": true,
-    "dataSource": "Willhite Web, Lassen Volcanic NPS, USGS, Recreation.gov",
     "ydsClass": "1",
     "heroImage": "/images/peaks/lassen-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Lassen-Peak/forecasts/3187",
@@ -4354,17 +3807,6 @@
     "permitFee": "Park entrance fee required; America the Beautiful Pass accepted",
     "published": true,
     "permitStatus": "fee",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Willhite Web",
-        "Lassen Volcanic NPS",
-        "USGS",
-        "Recreation.gov"
-      ],
-      "notes": "Elevation: NPS/traditional value 10,457 ft; Peakbagger lists 10,461.7 ft. Prominence: Peakbagger-style value 5,246 ft; public sources vary around 5,229–5,246 ft."
-    },
     "permitSeason": "Park entrance pass required year-round; Lassen Peak Trail typically open late June through September depending on snow and park road access"
   },
   {
@@ -4404,7 +3846,6 @@
     ],
     "bestRoute": "Stoney Indian Route",
     "permitRequired": true,
-    "dataSource": "Glacier National Park, Recreation.gov, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "4",
     "heroImage": "/images/peaks/mount-cleveland.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Cleveland-Montana/forecasts/3190",
@@ -4454,17 +3895,6 @@
     "permitFee": "No climbing fee; entrance and backcountry permit fees apply",
     "published": true,
     "permitStatus": "limited",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Glacier National Park",
-        "Recreation.gov",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "Backcountry permit required for overnight itineraries; advance Recreation.gov reservations strongly recommended"
   },
   {
@@ -4500,7 +3930,6 @@
     ],
     "bestRoute": "Columbine Campground Route",
     "permitRequired": false,
-    "dataSource": "Humboldt-Toiyabe National Forest, USGS, ListsOfJohn; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/arc-dome.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Arc-Dome/forecasts/3589",
@@ -4539,16 +3968,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-25",
-      "checkedAgainst": [
-        "Humboldt-Toiyabe NF",
-        "USGS",
-        "ListsOfJohn"
-      ],
-      "notes": null
-    },
     "permitSeason": "No climbing permit or fee; free Columbine Campground trailhead access"
   },
   {
@@ -4585,7 +4004,6 @@
     ],
     "bestRoute": "She-Devil High Route",
     "permitRequired": false,
-    "dataSource": "Nez Perce-Clearwater National Forest, Hells Canyon Wilderness, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "ydsClass": "3",
     "heroImage": "/images/peaks/she-devil.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Seven-Devils-Mountains/forecasts/2859",
@@ -4627,16 +4045,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-26",
-      "checkedAgainst": [
-        "Nez Perce-Clearwater NF",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "No standard recreation permit; check current Forest Service regulations and seasonal closures"
   },
   {
@@ -4669,7 +4077,6 @@
     ],
     "bestRoute": "Flume Creek Trail #502 (Eastern Approach)",
     "permitRequired": false,
-    "dataSource": "Colville National Forest, Willhite Web, Out There Outdoors, Peakbagger, SummitPost, WTA",
     "ydsClass": "2",
     "heroImage": "/images/peaks/abercrombie-mountain.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Abercrombie-Peak/forecasts/2175",
@@ -4704,19 +4111,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Colville National Forest",
-        "Peakbagger",
-        "SummitPost",
-        "WTA",
-        "Out There Outdoors",
-        "Willhite Web"
-      ],
-      "notes": "Elevation: traditional/public value 7,310 ft; Peakbagger LiDAR lists 7,314.4 ft. Prominence: Peakbagger clean prominence 5,174 ft; optimistic prominence is 5,194 ft."
-    },
     "permitSeason": "No permit required for day hiking on Colville National Forest land"
   },
   {
@@ -4751,7 +4145,6 @@
     ],
     "bestRoute": "Aspen Trail / Marshall Gulch Trail",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Santa Catalina Ranger District (route, class, hazards, permits)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-lemmon.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Lemmon/forecasts/2791",
@@ -4788,18 +4181,6 @@
     "permitFee": "$8 per vehicle",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Coronado NF",
-        "Peakery",
-        "Santa Catalina Ranger District"
-      ],
-      "notes": "Elevation: traditional/public summit 9,171 ft; PeakBagger LiDAR 9,166.5 ft; ListsOfJohn LiDAR 9,166 ft. Prominence: ListsOfJohn LiDAR 5,164 ft; PeakBagger 5,164.8 ft; map value 5,177 ft."
-    },
     "permitSeason": "No hiking permit required; Coronado National Forest or Interagency pass required at Marshall Gulch ($8 day-use on-site)"
   },
   {
@@ -4835,7 +4216,6 @@
     ],
     "bestRoute": "Crest Trail from Rustler Park",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Chiricahua Wilderness (route, class, hazards, permits)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/chiricahua-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Chiricahua-Peak/forecasts/2974",
@@ -4874,17 +4254,6 @@
     "permitFee": "$8 day-use at Rustler Park (verify; federal passes may apply)",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Coronado NF",
-        "Peakery"
-      ],
-      "notes": "Elevation: ListsOfJohn LiDAR 9,776 ft; traditional sources commonly list 9,759 ft. Prominence: ListsOfJohn LiDAR 5,163 ft; traditional sources commonly list ~5,139 ft. Confirm Crest Trail stats, current day-use fee, and campground closure windows."
-    },
     "permitSeason": "No day-hiking permit; $8 day-use fee may apply at Rustler Park; confirm current fee and pass exemptions"
   },
   {
@@ -4919,7 +4288,6 @@
     ],
     "bestRoute": "Parks Creek Trail to Summit",
     "permitRequired": false,
-    "dataSource": "Shasta-Trinity National Forest, Mount Shasta Trail Association, ListsOfJohn, USGS; PeakBagger (elevation, prominence)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/mount-eddy.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Eddy/forecasts/2751",
@@ -4957,18 +4325,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "self-register",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "Shasta-Trinity NF",
-        "Mount Shasta Trail Association",
-        "PeakBagger",
-        "ListsOfJohn",
-        "USGS"
-      ],
-      "notes": null
-    },
     "permitSeason": "Self-issue wilderness permit for overnight camping; California campfire permit required for stoves and fires"
   },
   {
@@ -5003,7 +4359,6 @@
     ],
     "bestRoute": "Huachuca Crest Trail from Montezuma Pass",
     "permitRequired": false,
-    "dataSource": "PeakBagger, ListsOfJohn, Coronado NF, Peakery; Arizona Birding Trail (route, class, hazards)",
     "ydsClass": "1",
     "heroImage": "/images/peaks/miller-peak.jpg",
     "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Miller-Peak-Arizona/forecasts/2885",
@@ -5041,18 +4396,6 @@
     "permitFee": "Free",
     "published": true,
     "permitStatus": "none",
-    "verification": {
-      "status": "verified",
-      "lastChecked": "2026-06-21",
-      "checkedAgainst": [
-        "PeakBagger",
-        "ListsOfJohn",
-        "Coronado NF",
-        "Peakery",
-        "Arizona Birding Trail"
-      ],
-      "notes": "Elevation: ListsOfJohn LiDAR 9,468 ft; traditional sources commonly list 9,466–9,470 ft. Prominence: ListsOfJohn LiDAR 5,007 ft; Peakbagger key-col ~5,008 ft; public sources often list 5,006 ft. Confirm current Crest Trail condition and post-fire recovery status."
-    },
     "permitSeason": "No permit required for day hiking; confirm current Coronado NF camping and fire rules"
   }
 ]
