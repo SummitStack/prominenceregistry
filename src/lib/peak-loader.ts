@@ -26,7 +26,8 @@ const peaks = peaksData as Peak[];
 const __dirname = dirname(fileURLToPath(import.meta.url));
 export const PEAKS_JSON_PATH = join(__dirname, '../data/peaks/peaks.json');
 export const PEAKS_CONTENT_PATH = join(__dirname, '../data/peaks/content.json');
-const PEAK_DATA_WATCH_PATHS = [PEAKS_JSON_PATH, PEAKS_CONTENT_PATH];
+export const PEAKS_VERIFICATION_PATH = join(__dirname, '../data/peaks/verification.json');
+const PEAK_DATA_WATCH_PATHS = [PEAKS_JSON_PATH, PEAKS_CONTENT_PATH, PEAKS_VERIFICATION_PATH];
 export const DISK_CACHE_PATH = join(__dirname, '../data/generated/schema-cache.json');
 
 let diskCacheLoaded = false;
