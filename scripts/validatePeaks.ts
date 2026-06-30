@@ -50,13 +50,6 @@ if (!failed) {
       console.error(`\n❌ route record "${route.slug}" does not match any peak slug`);
     }
   }
-
-  for (const peak of peakResult.data) {
-    if (!routeSlugs.has(peak.slug)) {
-      failed = true;
-      console.error(`\n❌ peak "${peak.slug}" is missing a route record`);
-    }
-  }
 }
 
 if (failed) {
@@ -64,5 +57,5 @@ if (failed) {
 }
 
 console.log(
-  `✅ peak data valid — ${peakResult.data.length} registry peaks and ${routeResult.data.length} route records passed validation`
+  `✅ peak data valid — ${peakResult.data.length} registry peaks and ${routeResult.data.length} optional route records passed validation`
 );
