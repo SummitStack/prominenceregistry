@@ -239,16 +239,21 @@ function validateUnpublishedPeak(slug: string, html: string): void {
 
 for (const peak of peaksData) {
   const htmlPath = path.join(DIST_DIR, peak.slug, 'index.html');
-  if (!fs.existsSync(htmlPath)) {
-    errors.push(`[${peak.slug}] missing built page at dist/${peak.slug}/index.html`);
+  const hasBuiltPage = fs.existsSync(htmlPath);
+
+  if (peak.published === true) {
+    if (!hasBuiltPage) {
+      errors.push(`[${peak.slug}] missing built page at dist/${peak.slug}/index.html`);
+      continue;
+    }
+
+    const html = fs.readFileSync(htmlPath, 'utf8');
+    validatePublishedPeak(peak.slug, html);
     continue;
   }
 
-  const html = fs.readFileSync(htmlPath, 'utf8');
-
-  if (peak.published === true) {
-    validatePublishedPeak(peak.slug, html);
-  } else {
+  if (hasBuiltPage) {
+    const html = fs.readFileSync(htmlPath, 'utf8');
     validateUnpublishedPeak(peak.slug, html);
   }
 }

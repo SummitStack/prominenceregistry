@@ -21,7 +21,12 @@ export const prerender = true;
 
 export function getStaticPaths() {
   return peaksData
-    .filter((peak) => typeof peak.slug === 'string' && peak.slug.length > 0)
+    .filter(
+      (peak) =>
+        peak.published === true &&
+        typeof peak.slug === 'string' &&
+        peak.slug.length > 0
+    )
     .map((peak) => ({
       params: { slug: peak.slug },
       props: { peak },
