@@ -44,7 +44,7 @@ export type Peak = {
 
 export const VALID_STATE_CODES = [
   'WA', 'CA', 'CO', 'AZ', 'NV', 'UT', 'WY', 'MT', 'OR', 'ID', 'NM', 'TX',
-  'NH', 'NC', 'TN', 'SD', 'ND',
+  'NH', 'NC', 'TN', 'SD', 'ND', 'ME', 'NY',
 ] as const;
 
 export type StateCode = (typeof VALID_STATE_CODES)[number];

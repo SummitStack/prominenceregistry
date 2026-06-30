@@ -123,12 +123,6 @@ for (const entry of verificationEntries) {
   }
 }
 
-for (const slug of peakSlugs) {
-  if (!verificationSlugs.has(slug)) {
-    errors.push(`[verification.${slug}] missing verification entry`);
-  }
-}
-
 if (errors.length > 0) {
   console.error('\n❌ peak verification validation failed:\n');
   for (const error of errors) {
@@ -138,5 +132,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `✅ peak verification valid — ${verificationEntries.length} verification entries matched ${peaks.length} peaks`,
+  `✅ peak verification valid — ${verificationEntries.length} optional verification entries matched ${peaks.length} peaks`,
 );

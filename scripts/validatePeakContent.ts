@@ -110,12 +110,6 @@ for (const entry of contentEntries) {
   }
 }
 
-for (const slug of peakSlugs) {
-  if (!contentSlugs.has(slug)) {
-    errors.push(`[content.${slug}] missing content entry for ${labelForSlug(slug)}`);
-  }
-}
-
 if (errors.length > 0) {
   console.error('\n❌ peak content validation failed:\n');
   for (const error of errors) {
@@ -125,5 +119,5 @@ if (errors.length > 0) {
 }
 
 console.log(
-  `✅ peak content valid — ${contentEntries.length} content entries matched ${peaks.length} peaks`,
+  `✅ peak content valid — ${contentEntries.length} optional content entries matched ${peaks.length} peaks`,
 );

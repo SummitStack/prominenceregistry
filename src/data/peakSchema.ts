@@ -55,7 +55,7 @@ export const PeakSchema = z.object({
   name: z.string().min(1),
   state: z.string().length(2),
   elevation: z.number().positive(),
-  prominence: z.number().min(4921), // ultra-prominent threshold
+  prominence: z.number().min(4000), // P4k prominence threshold
   latitude: z.number().optional().nullable(),
   longitude: z.number().optional().nullable(),
   isolation: z.number().optional().nullable(),
