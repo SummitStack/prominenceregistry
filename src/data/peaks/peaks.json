@@ -914,13 +914,13 @@
     "name": "Granite Peak",
     "state": "MT",
     "elevation": 12807,
-    "prominence": 4779,
-    "latitude": 45.1634,
-    "longitude": -109.8075,
+    "prominence": 4764,
+    "latitude": 45.16342,
+    "longitude": -109.80732,
     "isolation": 86.0,
     "mountainRange": "Beartooth Mountains",
-    "easiestYdsClass": "3",
-    "published": false
+    "easiestYdsClass": "4",
+    "published": true
   },
   {
     "slug": "copper-butte",

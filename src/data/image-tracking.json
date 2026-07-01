@@ -120,6 +120,13 @@
       "needs_image": "no"
     },
     {
+      "slug": "granite-peak-montana",
+      "name": "Granite Peak",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:Granite_Peak_Montana_2.jpg",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
       "slug": "sacajawea-peak",
       "name": "Sacajawea Peak",
       "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mirror_Lake,_Eagle_Cap_Wilderness.jpg",

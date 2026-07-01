@@ -243,6 +243,23 @@
     }
   },
   {
+    "slug": "granite-peak-montana",
+    "dataSource": "Custer Gallatin National Forest, USGS, Peakbagger, SummitPost, Wikipedia, University of Montana",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-06-21",
+      "checkedAgainst": [
+        "Custer Gallatin National Forest",
+        "USGS",
+        "Peakbagger",
+        "SummitPost",
+        "Wikipedia",
+        "University of Montana"
+      ],
+      "notes": "Elevation: traditional/USGS sources list 12,799–12,807 ft; Peakbagger LiDAR/NAVD88 lists 12,803.6 ft. Prominence: 4,764 ft clean prominence per editorial sources; prior database value 4,779 ft."
+    }
+  },
+  {
     "slug": "sacajawea-peak",
     "dataSource": "Wallowa-Whitman National Forest, Eagle Cap Wilderness, SummitPost, PeakBagger, ListsOfJohn",
     "verification": {

@@ -43,6 +43,12 @@ const TARGETS = [
       'https://commons.wikimedia.org/wiki/File:Blanca_Peak_and_Ellingwood_Point.jpg',
   },
   {
+    slug: 'granite-peak-montana',
+    file: 'Granite_Peak_Montana_2.jpg',
+    commonsUrl:
+      'https://commons.wikimedia.org/wiki/File:Granite_Peak_Montana_2.jpg',
+  },
+  {
     slug: 'ibapah-peak',
     file: 'Ibapah_Peak.JPG',
     commonsUrl: 'https://commons.wikimedia.org/wiki/File:Ibapah_Peak.JPG',

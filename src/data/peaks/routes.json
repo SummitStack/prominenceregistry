@@ -1193,6 +1193,85 @@
     "safetyNote": "Route-finding on the descent from the Upper Saddle is a common source of error on this route, and afternoon storms can make the upper mountain dangerous quickly. Parties should confirm the descent line before committing to the upper route and plan to be off exposed terrain before thunderstorm development."
   },
   {
+    "slug": "granite-peak-montana",
+    "difficulty": 9,
+    "days": 3,
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 22.6,
+    "distanceMin": 22.6,
+    "distanceMax": 22.6,
+    "distanceDisplay": "22.6 miles round-trip",
+    "gain": 6750,
+    "gainMin": 6750,
+    "gainMax": 6750,
+    "gainDisplay": "6,750 ft",
+    "season": "July-September",
+    "bestRoute": "Froze-to-Death Plateau via Mystic Lake",
+    "ydsClass": "4",
+    "permitRequired": false,
+    "permitSeason": "No climbing permit required; verify current Custer Gallatin National Forest food-storage and wilderness regulations",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/granite-peak-montana.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Granite-Peak/forecasts/3904",
+    "hazards": [
+      "lightning-exposure",
+      "exposure",
+      "rockfall",
+      "loose-rock-scree",
+      "off-trail-navigation",
+      "altitude-sickness",
+      "bears",
+      "hypothermia",
+      "wind-extreme-weather",
+      "class-4-climbing"
+    ],
+    "technicalRequirements": [
+      "exposed-scrambling",
+      "exposed-rock-climbing",
+      "off-trail-nav",
+      "alpine-start",
+      "snow-travel",
+      "rock-scrambling-loose",
+      "altitude-acclimatization"
+    ],
+    "gear": [
+      "helmet",
+      "rope_harness",
+      "ice_axe",
+      "crampons",
+      "mountaineering_boots",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "requiredGear": {
+      "priority": [
+        "helmet",
+        "rope-harness",
+        "ice-axe",
+        "crampons",
+        "insulating-layer",
+        "shell-jacket",
+        "compass",
+        "water-capacity"
+      ],
+      "secondary": [
+        "gloves",
+        "microspikes",
+        "emergency-comm",
+        "high-calorie-food",
+        "sunscreen",
+        "sunglasses"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Keen route-finding and proper gear are essential on Granite Peak. Parties should study route descriptions before departure and carry maps, navigation tools, and backup navigation methods. Joe Josephson's Montana's Highest Point: A Climbing Guide & Map is a commonly cited dedicated guide for the standard route."
+  },
+  {
     "slug": "sacajawea-peak",
     "difficulty": 6,
     "days": 2,
