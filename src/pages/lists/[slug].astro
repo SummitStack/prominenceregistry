@@ -29,6 +29,9 @@ const title = `${definition.title} | Prominence Registry`;
 const description = definition.description;
 
 const listStates = [...new Set(peaks.map((peak) => peak.state))].sort();
+const listRanges = [...new Set(peaks.map((peak) => peak.mountainRange).filter(Boolean))].sort((a, b) =>
+  a.localeCompare(b)
+);
 const listYdsClasses = [...new Set(peaks.map((peak) => peak.easiestYdsClass))].sort((a, b) => {
   const order = ['1', '2', '2+', '3', '3+', '4', '4+', '5'];
   return order.indexOf(a) - order.indexOf(b);
@@ -259,20 +262,21 @@ function getRankLabel(index: number): string {
             </select>
           </label>
           <label class="filter-field">
+            <span class="filter-label">Range</span>
+            <select id="peakFilterRange" class="filter-select">
+              <option value="all">All ranges</option>
+              {listRanges.map((range) => (
+                <option value={range}>{range}</option>
+              ))}
+            </select>
+          </label>
+          <label class="filter-field">
             <span class="filter-label">Class</span>
             <select id="peakFilterClass" class="filter-select">
               <option value="all">All classes</option>
               {listYdsClasses.map((ydsClass) => (
                 <option value={ydsClass}>Class {ydsClass}</option>
               ))}
-            </select>
-          </label>
-          <label class="filter-field">
-            <span class="filter-label">Guide status</span>
-            <select id="peakFilterGuide" class="filter-select">
-              <option value="all">All records</option>
-              <option value="published">Guide available</option>
-              <option value="registry">Registry only</option>
             </select>
           </label>
         </div>
@@ -333,8 +337,8 @@ function getRankLabel(index: number): string {
 
     const searchInput = document.getElementById('peakFilterSearch');
     const stateSelect = document.getElementById('peakFilterState');
+    const rangeSelect = document.getElementById('peakFilterRange');
     const classSelect = document.getElementById('peakFilterClass');
-    const guideSelect = document.getElementById('peakFilterGuide');
     const countEl = document.getElementById('peakFilterCount');
     const emptyRow = document.getElementById('peakListEmptyState');
 
@@ -380,8 +384,8 @@ function getRankLabel(index: number): string {
     function getFilteredPeaks() {
       const search = searchInput.value.trim().toLowerCase();
       const state = stateSelect.value;
+      const range = rangeSelect.value;
       const ydsClass = classSelect.value;
-      const guideStatus = guideSelect.value;
 
       return peaks.filter((peak) => {
         if (search) {
@@ -390,9 +394,8 @@ function getRankLabel(index: number): string {
           if (!nameMatch && !rangeMatch) return false;
         }
         if (state !== 'all' && peak.state !== state) return false;
+        if (range !== 'all' && peak.mountainRange !== range) return false;
         if (ydsClass !== 'all' && peak.easiestYdsClass !== ydsClass) return false;
-        if (guideStatus === 'published' && peak.published !== true) return false;
-        if (guideStatus === 'registry' && peak.published === true) return false;
         return true;
       });
     }
@@ -457,7 +460,7 @@ function getRankLabel(index: number): string {
       });
     });
 
-    [searchInput, stateSelect, classSelect, guideSelect].forEach((control) => {
+    [searchInput, stateSelect, rangeSelect, classSelect].forEach((control) => {
       control.addEventListener('input', applyFiltersAndSort);
       control.addEventListener('change', applyFiltersAndSort);
     });
