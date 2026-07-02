@@ -1,8 +1,11 @@
 import peaksData from '../src/data/peaks/peaks.json';
+import california3000Data from '../src/data/peaks/california-3000.json';
 import routesData from '../src/data/peaks/routes.json';
 import { PeaksArraySchema, PeakRoutesArraySchema } from '../src/data/peakSchema';
 
-const peakResult = PeaksArraySchema.safeParse(peaksData);
+const registryPeaksData = [...peaksData, ...california3000Data];
+
+const peakResult = PeaksArraySchema.safeParse(registryPeaksData);
 const routeResult = PeakRoutesArraySchema.safeParse(routesData);
 let failed = false;
 
