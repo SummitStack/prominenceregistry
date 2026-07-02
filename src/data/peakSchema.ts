@@ -55,12 +55,12 @@ export const PeakSchema = z.object({
   name: z.string().min(1),
   state: z.string().length(2),
   elevation: z.number().positive(),
-  prominence: z.number().min(4000), // P4k prominence threshold
+  prominence: z.number().min(3000), // P3k prominence threshold for registry/list records
   latitude: z.number().optional().nullable(),
   longitude: z.number().optional().nullable(),
   isolation: z.number().optional().nullable(),
   mountainRange: z.string().min(1),
-  easiestYdsClass: YdsClassSchema,
+  easiestYdsClass: YdsClassSchema.optional().nullable(),
   published: z.boolean(),
 });
 

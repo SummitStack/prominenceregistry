@@ -32,7 +32,13 @@ const listStates = [...new Set(peaks.map((peak) => peak.state))].sort();
 const listRanges = [...new Set(peaks.map((peak) => peak.mountainRange).filter(Boolean))].sort((a, b) =>
   a.localeCompare(b)
 );
-const listYdsClasses = [...new Set(peaks.map((peak) => peak.easiestYdsClass))].sort((a, b) => {
+const listYdsClasses = [
+  ...new Set(
+    peaks
+      .map((peak) => peak.easiestYdsClass)
+      .filter((ydsClass): ydsClass is string => typeof ydsClass === 'string' && ydsClass.length > 0)
+  ),
+].sort((a, b) => {
   const order = ['1', '2', '2+', '3', '3+', '4', '4+', '5'];
   return order.indexOf(a) - order.indexOf(b);
 });
@@ -316,7 +322,7 @@ function getRankLabel(index: number): string {
                 <td>{peak.elevation.toLocaleString()} ft</td>
                 <td>{peak.prominence.toLocaleString()} ft</td>
                 <td>{peak.isolation ?? '—'} mi</td>
-                <td>{peak.easiestYdsClass}</td>
+                <td>{peak.easiestYdsClass ?? '—'}</td>
               </tr>
             ))}
             <tr id="peakListEmptyState" class="empty-state" hidden>
@@ -361,7 +367,7 @@ function getRankLabel(index: number): string {
         case 'isolation':
           return peak.isolation ?? -1;
         case 'easiestYdsClass':
-          return CLASS_ORDER[peak.easiestYdsClass] ?? 0;
+          return peak.easiestYdsClass ? (CLASS_ORDER[peak.easiestYdsClass] ?? 0) : 0;
         default:
           return 0;
       }
