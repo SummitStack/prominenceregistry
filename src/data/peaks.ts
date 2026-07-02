@@ -1,12 +1,9 @@
 import peaksData from './peaks/peaks.json';
-import california3000Data from './peaks/california-3000.json';
 import routesData from './peaks/routes.json';
 import contentData from './peaks/content.json';
 import verificationData from './peaks/verification.json';
 
-const registryPeaksData = [...peaksData, ...california3000Data];
-
-type PeakBase = (typeof registryPeaksData)[number];
+type PeakBase = (typeof peaksData)[number];
 type PeakRoute = (typeof routesData)[number];
 type PeakContent = (typeof contentData)[number];
 type PeakVerification = (typeof verificationData)[number];
@@ -31,7 +28,7 @@ export type Peak = PeakBase & Partial<Omit<PeakRoute, 'slug'>> & {
   verification: PeakVerification['verification'] | null;
 };
 
-export const peaks: Peak[] = registryPeaksData.map((peak) => {
+export const peaks: Peak[] = peaksData.map((peak) => {
   const route = routeBySlug.get(peak.slug);
   const verificationEntry = verificationBySlug.get(peak.slug);
 
