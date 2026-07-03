@@ -319,6 +319,23 @@
     }
   },
   {
+    "slug": "mount-saint-helens",
+    "dataSource": "USGS, Gifford Pinchot National Forest, MSHI, Recreation.gov, SummitPost, ListsOfJohn",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-03",
+      "checkedAgainst": [
+        "USGS",
+        "Gifford Pinchot National Forest",
+        "MSHI",
+        "Recreation.gov",
+        "SummitPost",
+        "ListsOfJohn"
+      ],
+      "notes": "Elevation: USGS LiDAR 2009 lists 8,330 ft; pre-1980 summit was 9,677 ft. Prominence: 4,595 ft per ListsOfJohn; prior database value 4,593 ft. Isolation 33.75 mi; line parent Mount Adams."
+    }
+  },
+  {
     "slug": "telescope-peak",
     "dataSource": "Death Valley National Park, NPS, ListsOfJohn, USGS; PeakBagger/SummitPost (route, class, hazards)",
     "verification": {
@@ -376,6 +393,21 @@
         "ListsOfJohn"
       ],
       "notes": null
+    }
+  },
+  {
+    "slug": "mount-mcloughlin",
+    "dataSource": "Rogue River-Siskiyou National Forest, Oregon Encyclopedia, ListsOfJohn, USGS; SummitPost/WTA (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-03",
+      "checkedAgainst": [
+        "Rogue River-Siskiyou National Forest",
+        "Oregon Encyclopedia",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Elevation 9,495 ft per user editorial; prior database value 9,499 ft. Prominence 4,475 ft (ListsOfJohn); key col 5,020 ft; line parent South Sister; isolation 71.76 mi. Trailhead coordinates approximate (N 42.376° W 122.313°); confirm via USFS map or USGS GNIS before map display. Trailhead elevation omitted from stats bar: Mountaineers cites 5,775 ft, Hike Oregon cites 5,575 ft, USFS does not specify. Overnight wilderness permit requirement unconfirmed; article directs readers to confirm with High Cascades Ranger District."
     }
   },
   {

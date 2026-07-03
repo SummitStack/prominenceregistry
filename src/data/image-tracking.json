@@ -22,6 +22,13 @@
       "needs_image": "no"
     },
     {
+      "slug": "mount-saint-helens",
+      "name": "Mount St. Helens",
+      "primary_image_url": "https://www.flickr.com/photos/forestservicenw/23563521879",
+      "has_raw_image": true,
+      "needs_image": "no"
+    },
+    {
       "slug": "mount-elbert",
       "name": "Mount Elbert",
       "primary_image_url": "https://commons.wikimedia.org/wiki/File:Mount_Elbert_and_horses.jpg",
@@ -181,6 +188,14 @@
       "primary_image_url": "https://commons.wikimedia.org/wiki/File:View_from_Mount_Mitchell.jpg",
       "has_raw_image": true,
       "needs_image": "no"
+    },
+    {
+      "slug": "mount-mcloughlin",
+      "name": "Mount McLoughlin",
+      "primary_image_url": "https://commons.wikimedia.org/wiki/File:MtMcLoughlin.jpg",
+      "has_raw_image": true,
+      "needs_image": "no",
+      "notes": "Raw source cropped to remove side trees and frame summit (430,40,1860x1045)."
     },
     {
       "slug": "humphreys-peak",

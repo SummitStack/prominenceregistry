@@ -3,7 +3,7 @@ import path from 'node:path';
 import peaksData from '../src/data/peaks';
 import { SITE_URL } from '../src/lib/constants';
 import { getPeakHeroImageUrl } from '../src/lib/schema-generator';
-import { buildPeakImageAlt } from '../src/utils/imageHelpers';
+import { buildPeakImageAlt, ULTRA_PROMINENCE_FT } from '../src/utils/imageHelpers';
 
 const publishedPeaks = peaksData.filter((peak) => peak.published === true && peak.hasRouteData === true);
 const errors: string[] = [];
@@ -80,6 +80,12 @@ for (const peak of publishedPeaks) {
   if (imageAlt.length > MAX_ALT_LENGTH) {
     errors.push(
       `[${slug}] hero image alt text is ${imageAlt.length} characters (max ${MAX_ALT_LENGTH})`,
+    );
+  }
+
+  if (peak.prominence < ULTRA_PROMINENCE_FT && /ultra-prominent/i.test(imageAlt)) {
+    errors.push(
+      `[${slug}] hero image alt text must not say "ultra-prominent" when prominence is below ${ULTRA_PROMINENCE_FT} ft (got "${imageAlt}")`,
     );
   }
 }

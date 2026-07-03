@@ -1002,16 +1002,16 @@
   },
   {
     "slug": "mount-saint-helens",
-    "name": "Mount Saint Helens",
+    "name": "Mount St. Helens",
     "state": "WA",
-    "elevation": 8363,
-    "prominence": 4593,
-    "latitude": 46.1914,
-    "longitude": -122.1956,
-    "isolation": 32.0,
+    "elevation": 8330,
+    "prominence": 4595,
+    "latitude": 46.19144,
+    "longitude": -122.19573,
+    "isolation": 33.75,
     "mountainRange": "Cascade Range",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "mount-wrightson",
@@ -1160,14 +1160,14 @@
     "slug": "mount-mcloughlin",
     "name": "Mount McLoughlin",
     "state": "OR",
-    "elevation": 9499,
+    "elevation": 9495,
     "prominence": 4475,
     "latitude": 42.4445,
-    "longitude": -122.3156,
-    "isolation": 69.5,
+    "longitude": -122.3158,
+    "isolation": 71.76,
     "mountainRange": "Cascade Range",
     "easiestYdsClass": "1",
-    "published": false
+    "published": true
   },
   {
     "slug": "rock-creek-butte",

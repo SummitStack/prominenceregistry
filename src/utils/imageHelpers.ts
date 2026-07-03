@@ -18,6 +18,9 @@ export type ImageManifest = Record<string, PeakImageSet>;
 
 const manifest = imageManifest as ImageManifest;
 
+/** Minimum clean prominence (ft) for the Lower 48 ultra list. */
+export const ULTRA_PROMINENCE_FT = 4921;
+
 type PeakImageAltSource = {
   slug: string;
   name: string;
@@ -79,7 +82,12 @@ export function buildPeakImageAlt(slug: string, fallbackAlt?: string): string {
     return peak.heroImageAlt.trim();
   }
 
-  return `${formatAltPeakName(peak.name)} in ${getStateName(peak.state)}, an ultra-prominent peak with ${formatNumber(peak.prominence)} ft of prominence`;
+  const prominenceLabel =
+    peak.prominence >= ULTRA_PROMINENCE_FT
+      ? 'an ultra-prominent peak'
+      : 'a major prominence peak';
+
+  return `${formatAltPeakName(peak.name)} in ${getStateName(peak.state)}, ${prominenceLabel} with ${formatNumber(peak.prominence)} ft of prominence`;
 }
 
 export function hasPeakImages(slug: string): boolean {

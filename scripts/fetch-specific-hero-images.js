@@ -8,6 +8,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import sharp from 'sharp';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
@@ -47,6 +48,12 @@ const TARGETS = [
     file: 'Granite_Peak_Montana_2.jpg',
     commonsUrl:
       'https://commons.wikimedia.org/wiki/File:Granite_Peak_Montana_2.jpg',
+  },
+  {
+    slug: 'mount-mcloughlin',
+    file: 'MtMcLoughlin.jpg',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/File:MtMcLoughlin.jpg',
+    crop: { left: 430, top: 40, width: 1860, height: 1045 },
   },
   {
     slug: 'ibapah-peak',
@@ -129,6 +136,15 @@ async function main() {
     const image = await resolveImageUrl(target.file);
     const rawPath = path.join(RAW_DIR, `${target.slug}.jpg`);
     await downloadImage(image.url, rawPath);
+
+    if (target.crop) {
+      const croppedPath = `${rawPath}.tmp.jpg`;
+      await sharp(rawPath)
+        .extract(target.crop)
+        .jpeg({ quality: 92, mozjpeg: true })
+        .toFile(croppedPath);
+      await fs.rename(croppedPath, rawPath);
+    }
 
     const legacyPath = path.join(LEGACY_DIR, `${target.slug}.jpg`);
     await fs.copyFile(rawPath, legacyPath);

@@ -1545,6 +1545,78 @@
     "safetyNote": "Afternoon thunderstorms develop rapidly over the summit July through August. The exposed Backbone ridge offers no shelter; parties should plan to be off the ridge by midday during monsoon season."
   },
   {
+    "slug": "mount-saint-helens",
+    "difficulty": 5,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–12 hours",
+    "distance": 10,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gain": 4500,
+    "gainMin": 4500,
+    "gainMax": 4500,
+    "gainDisplay": "4,500 ft",
+    "season": "June-September",
+    "bestRoute": "Monitor Ridge",
+    "ydsClass": "2",
+    "permitRequired": true,
+    "permitSeason": "Climbing permit required above 4,800 ft year-round; quota permits Apr 1–Oct 31 via Recreation.gov; free self-issue Nov 1–Mar 31",
+    "permitFee": "$20/person per day (Apr–Oct); $6 Recreation.gov transaction fee; free Nov–Mar",
+    "permitStatus": "limited",
+    "heroImage": "/images/peaks/mount-saint-helens.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-St-Helens/forecasts/2540",
+    "hazards": [
+      "rockfall",
+      "exposure",
+      "dehydration",
+      "lightning-exposure",
+      "loose-rock-scree",
+      "off-trail-navigation",
+      "wind-extreme-weather",
+      "heat-exhaustion"
+    ],
+    "technicalRequirements": [
+      "off-trail-nav",
+      "alpine-start",
+      "rock-scrambling-loose",
+      "altitude-acclimatization"
+    ],
+    "gear": [
+      "trekking_poles",
+      "water_capacity",
+      "gaiters",
+      "waterproof_shell",
+      "insulating_layer"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "water-capacity",
+        "gaiters",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "microspikes",
+        "ice-axe",
+        "crampons",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The crater rim cornice is present through much of the season and actively unstable; the overhang has caused fatal falls. Stay well back from the rim edge at all times and do not rely on wands or seasonal markings to define a safe margin."
+  },
+  {
     "slug": "telescope-peak",
     "difficulty": 2,
     "days": 1,
@@ -1804,6 +1876,64 @@
     "callout": "",
     "hasSafetyNote": true,
     "safetyNote": "Above 5,000 feet, fog and wind exposure increase markedly, and travel can feel significantly more severe than lower sections despite remaining on trail. Dense fog, cold rain, and strong winds can occur in any season; carry insulating layers and a waterproof shell."
+  },
+  {
+    "slug": "mount-mcloughlin",
+    "difficulty": 3,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–9 hours",
+    "distance": 10,
+    "distanceMin": 10,
+    "distanceMax": 10,
+    "distanceDisplay": "10 miles round-trip",
+    "gain": 4000,
+    "gainMin": 4000,
+    "gainMax": 4000,
+    "gainDisplay": "4,000 ft",
+    "season": "June-September",
+    "bestRoute": "Mt. McLoughlin Trail #3716",
+    "ydsClass": "1",
+    "permitRequired": false,
+    "permitSeason": "No climbing permit required; Northwest Forest Pass, America the Beautiful pass, or $5 day-use fee at trailhead",
+    "permitFee": "$5/vehicle parking fee; waived with Northwest Forest Pass or America the Beautiful pass",
+    "permitStatus": "fee",
+    "heroImage": "/images/peaks/mount-mcloughlin.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-McLoughlin/forecasts/2894",
+    "hazards": [
+      "dehydration",
+      "loose-rock-scree",
+      "off-trail-navigation",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "heat-exhaustion"
+    ],
+    "technicalRequirements": [],
+    "gear": [
+      "trekking_poles",
+      "water_capacity",
+      "insulating_layer",
+      "waterproof_shell",
+      "gaiters"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "water-capacity",
+        "insulating-layer",
+        "shell-jacket",
+        "gaiters",
+        "insect-repellent",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The Forest Service reports hikers becoming disoriented each year on the south-facing cinder slope, which draws parties off-route. Descending the sandy chute leads progressively farther from the trail; once below treeline on the south slope, recovering to the trail requires a roughly 2-mile traverse northeast through boulders. On descent, do not follow the south slope chute. Stay on or near the ridge, keep Fourmile Lake visible to the northeast, and follow the wooden posts, cairns, and white markers back to treeline."
   },
   {
     "slug": "humphreys-peak",
