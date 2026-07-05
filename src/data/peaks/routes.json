@@ -1878,6 +1878,63 @@
     "safetyNote": "Above 5,000 feet, fog and wind exposure increase markedly, and travel can feel significantly more severe than lower sections despite remaining on trail. Dense fog, cold rain, and strong winds can occur in any season; carry insulating layers and a waterproof shell."
   },
   {
+    "slug": "mount-marcy",
+    "difficulty": 3,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "7–10 hours",
+    "distance": 14.8,
+    "distanceMin": 14.8,
+    "distanceMax": 14.8,
+    "distanceDisplay": "14.8 miles round-trip",
+    "gain": 3166,
+    "gainMin": 3166,
+    "gainMax": 3166,
+    "gainDisplay": "3,166 ft",
+    "season": "June-October",
+    "bestRoute": "Van Hoevenberg Trail",
+    "ydsClass": "1",
+    "permitRequired": false,
+    "permitSeason": "No day-hiking permit required; paid parking at Adirondak Loj managed by Adirondack Mountain Club",
+    "permitFee": "Free; paid parking at Adirondak Loj ($18/day non-members before 1 p.m., $10 half-day after 1 p.m.; ADK member rates lower)",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/mount-marcy.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Marcy/forecasts/1628",
+    "hazards": [
+      "off-trail-navigation",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "exposure",
+      "dehydration"
+    ],
+    "technicalRequirements": [],
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "microspikes"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "microspikes"
+      ],
+      "secondary": [
+        "water-capacity",
+        "gloves",
+        "insulating-hat",
+        "compass"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Afternoon thunderstorms are common on the exposed summit cone from June through August. Parties above treeline when storms develop should descend immediately; the open summit area offers no shelter. On descent, stay on or near the ridge, keep Fourmile Lake visible to the northeast, and follow cairns and markers back to treeline; do not follow the south-facing slope off-route."
+  },
+  {
     "slug": "mount-mcloughlin",
     "difficulty": 3,
     "days": 1,
@@ -3242,6 +3299,79 @@
     "callout": "",
     "hasSafetyNote": true,
     "safetyNote": "Private land surrounds much of the approach and summit area. Current access permission must be independently verified with the appropriate landowner or land manager before any attempt. Stay on the approved route to avoid trespassing or entering restricted mining property."
+  },
+  {
+    "slug": "mount-shuksan",
+    "difficulty": 8,
+    "days": 3,
+    "daysMin": 2,
+    "daysMax": 3,
+    "daysDisplay": "2–3 days",
+    "distance": 16,
+    "distanceMin": 15,
+    "distanceMax": 17,
+    "distanceDisplay": "~16 miles round-trip",
+    "gain": 6600,
+    "gainMin": 6500,
+    "gainMax": 6700,
+    "gainDisplay": "~6,600 ft",
+    "season": "July-September",
+    "bestRoute": "Sulphide Glacier",
+    "ydsClass": "4",
+    "permitRequired": true,
+    "permitSeason": "Overnight backcountry permit required within North Cascades National Park; Recreation.gov reservations or walk-up at Wilderness Information Center",
+    "permitFee": "$10 per person plus $6 reservation fee; no standalone climbing fee",
+    "permitStatus": "limited",
+    "heroImage": "/images/peaks/mount-shuksan.jpg",
+    "weatherForecastUrl": "https://www.mountain-forecast.com/peaks/Mount-Shuksan/forecasts/2782",
+    "hazards": [
+      "crevasse-fall",
+      "bergschrund",
+      "rockfall",
+      "whiteout-conditions",
+      "wind-extreme-weather",
+      "hypothermia",
+      "class-4-climbing",
+      "exposure"
+    ],
+    "technicalRequirements": [
+      "glacier-travel",
+      "snow-travel",
+      "alpine-start",
+      "exposed-rock-climbing",
+      "off-trail-nav"
+    ],
+    "gear": [
+      "crampons",
+      "ice_axe",
+      "mountaineering_boots",
+      "helmet",
+      "rope_harness",
+      "insulating_layer",
+      "waterproof_shell"
+    ],
+    "requiredGear": {
+      "priority": [
+        "ice-axe",
+        "crampons",
+        "helmet",
+        "rope-harness",
+        "insulating-layer",
+        "shell-jacket"
+      ],
+      "secondary": [
+        "avalanche-gear",
+        "gaiters",
+        "gloves",
+        "sunglasses",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The summit pyramid gully collects parties from multiple rope teams; rockfall from above is a consistent hazard. An early start reduces simultaneous crowding on the pyramid and improves snow conditions on the glacier. Rope up before reaching the glacier margin, not after the transition from moraine to crevassed terrain."
   },
   {
     "slug": "mount-stuart",

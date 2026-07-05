@@ -56,6 +56,18 @@ const TARGETS = [
     crop: { left: 430, top: 40, width: 1860, height: 1045 },
   },
   {
+    slug: 'mount-marcy',
+    file: '2016-09-04_11_34_03_View_towards_the_summit_of_Mount_Marcy_from_the_Van_Hoevenberg_Trail_about_7.1_miles_south_of_the_trailhead_in_Keene,_Essex_County,_New_York.jpg',
+    commonsUrl:
+      'https://commons.wikimedia.org/wiki/File:2016-09-04_11_34_03_View_towards_the_summit_of_Mount_Marcy_from_the_Van_Hoevenberg_Trail_about_7.1_miles_south_of_the_trailhead_in_Keene,_Essex_County,_New_York.jpg',
+  },
+  {
+    slug: 'mount-shuksan',
+    file: 'Mount_Shuksan_reflected_in_Picture_Lake.jpg',
+    commonsUrl:
+      'https://commons.wikimedia.org/wiki/File:Mount_Shuksan_reflected_in_Picture_Lake.jpg',
+  },
+  {
     slug: 'ibapah-peak',
     file: 'Ibapah_Peak.JPG',
     commonsUrl: 'https://commons.wikimedia.org/wiki/File:Ibapah_Peak.JPG',

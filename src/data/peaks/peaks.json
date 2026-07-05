@@ -744,14 +744,14 @@
     "slug": "mount-marcy",
     "name": "Mount Marcy",
     "state": "NY",
-    "elevation": 5343,
-    "prominence": 4919,
-    "latitude": 44.1127,
+    "elevation": 5345,
+    "prominence": 4917,
+    "latitude": 44.11275,
     "longitude": -73.9237,
-    "isolation": 129.6,
+    "isolation": 129.93,
     "mountainRange": "Adirondack Mountains",
     "easiestYdsClass": "1",
-    "published": false
+    "published": true
   },
   {
     "slug": "mount-moriah-nevada",
@@ -1225,14 +1225,14 @@
     "slug": "mount-shuksan",
     "name": "Mount Shuksan",
     "state": "WA",
-    "elevation": 9135,
-    "prominence": 4431,
-    "latitude": 48.8315,
-    "longitude": -121.6032,
-    "isolation": 10.36,
+    "elevation": 9130,
+    "prominence": 4405,
+    "latitude": 48.83112,
+    "longitude": -121.60295,
+    "isolation": 10.35,
     "mountainRange": "Skagit Range",
-    "easiestYdsClass": "3",
-    "published": false
+    "easiestYdsClass": "4",
+    "published": true
   },
   {
     "slug": "table-mountain-montana",

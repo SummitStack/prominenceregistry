@@ -34,6 +34,8 @@ const PEAK_TITLE_OVERRIDES: Record<string, string> = {
   'mcdonald-peak': 'McDonald Peak Access Guide: Route, Permits & Planning',
   'snowshoe-peak': 'Snowshoe Peak Climbing Guide: Route, Gear & Hazards',
   'south-sister': 'South Sister Hiking Guide: Permits, Route & Difficulty',
+  'mount-marcy': 'Mount Marcy Hiking Guide: Route, Permits, Elevation & Difficulty',
+  'mount-shuksan': 'Mount Shuksan Climbing Guide: Route, Permits, Gear & Difficulty',
 };
 
 const PEAK_DESCRIPTION_OVERRIDES: Record<string, string> = {
@@ -57,6 +59,10 @@ const PEAK_DESCRIPTION_OVERRIDES: Record<string, string> = {
     'Plan Mount Cleveland with Glacier backcountry access, route difficulty, scrambling hazards, mileage, gain, season timing, and planning notes.',
   'south-sister':
     'Plan South Sister with the standard route, Central Cascades permits, mileage, elevation gain, season timing, and volcanic terrain notes.',
+  'mount-marcy':
+    "Hike Mount Marcy, New York's highest peak, via Van Hoevenberg Trail: 14.8 miles round trip, 3,166 ft gain, no day-use permit, 4,917 ft prominence.",
+  'mount-shuksan':
+    'Climb Mount Shuksan via Sulphide Glacier: 9,130 ft, 4,405 ft prominence, overnight backcountry permit required, technical summit pyramid.',
   'sierra-blanca-peak':
     'Sierra Blanca Peak guide with access rules, route context, permits, elevation, prominence, terrain notes, and planning cautions.',
   'mcdonald-peak':

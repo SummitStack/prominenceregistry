@@ -396,6 +396,21 @@
     }
   },
   {
+    "slug": "mount-marcy",
+    "dataSource": "NYSDEC, Adirondack Mountain Club, ListsOfJohn LiDAR, USGS; SummitPost/ADK (route, class, hazards, parking)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-05",
+      "checkedAgainst": [
+        "NYSDEC",
+        "Adirondack Mountain Club",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Trailhead elevation omitted from stats bar (sources cite ~5,575–5,775 ft). Marcy Dam campsite count and seasonal fire restrictions should be rechecked before major updates. Overnight wilderness permit policy should be confirmed with High Cascades Ranger District."
+    }
+  },
+  {
     "slug": "mount-mcloughlin",
     "dataSource": "Rogue River-Siskiyou National Forest, Oregon Encyclopedia, ListsOfJohn, USGS; SummitPost/WTA (route, class, hazards)",
     "verification": {
@@ -679,6 +694,21 @@
         "PeakBagger"
       ],
       "notes": "Private land access must be verified independently before each attempt."
+    }
+  },
+  {
+    "slug": "mount-shuksan",
+    "dataSource": "North Cascades National Park, NPS Backcountry Permits, ListsOfJohn LiDAR, USGS; SummitPost/American Alpine Institute (route, class, hazards)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-05",
+      "checkedAgainst": [
+        "North Cascades National Park",
+        "NPS Backcountry Permits",
+        "ListsOfJohn",
+        "USGS"
+      ],
+      "notes": "Summit pyramid height cited as roughly 500–600 ft by primary sources; guide services vary. Sulphide route mileage and gain are representative estimates. Crevasse rescue kit not in canonical gear schema."
     }
   },
   {
