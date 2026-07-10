@@ -978,14 +978,14 @@
     "slug": "scotchman-peak",
     "name": "Scotchman Peak",
     "state": "ID",
-    "elevation": 7017.6,
-    "prominence": 4658,
-    "latitude": null,
-    "longitude": null,
+    "elevation": 7018,
+    "prominence": 4665,
+    "latitude": 48.18882,
+    "longitude": -116.08184,
     "isolation": 15.1,
-    "mountainRange": "Central Montana Rocky Mountains",
+    "mountainRange": "Cabinet Mountains",
     "easiestYdsClass": "1",
-    "published": false
+    "published": true
   },
   {
     "slug": "mica-mountain",

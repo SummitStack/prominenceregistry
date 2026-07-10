@@ -4223,5 +4223,75 @@
     "callout": "",
     "hasSafetyNote": true,
     "safetyNote": "The area's proximity to the Mexico border makes situational awareness important. Standard hiking routes are commonly used by recreationists, but awareness of the border security context is advisable."
+  },
+  {
+    "slug": "scotchman-peak",
+    "difficulty": 1,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–10 hours",
+    "distance": 8,
+    "distanceMin": 8,
+    "distanceMax": 8,
+    "distanceDisplay": "8.0 miles round-trip",
+    "gain": 3700,
+    "gainMin": 3700,
+    "gainMax": 3700,
+    "gainDisplay": "3,700 ft",
+    "season": "June-September",
+    "bestRoute": "Scotchman Peak Trail #65",
+    "ydsClass": "1",
+    "permitRequired": false,
+    "permitSeason": "No permit required for day hiking on Idaho Panhandle National Forests land",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/scotchman-peak.jpg",
+    "hazards": [
+      "bears",
+      "lightning-exposure",
+      "dehydration",
+      "heat-exhaustion",
+      "wind-extreme-weather"
+    ],
+    "technicalRequirements": [
+      "alpine-start"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "high-calorie-food"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Habituated mountain goats on the upper trail and summit can approach aggressively. Keep at least 100 feet away, never feed them or allow salt access from skin or gear, and do not leave urine near the trail or summit. Start early to clear the exposed upper meadow before afternoon thunderstorms.",
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Friends of Scotchman Peaks Wilderness",
+        "description": "Trail conditions, goat safety guidance, and access updates for Scotchman Peak Trail #65.",
+        "href": "https://www.scotchmanpeaks.org/"
+      },
+      {
+        "section": "permits-camping",
+        "label": "Idaho Panhandle National Forests",
+        "description": "Current fire restrictions, food-storage orders, and Sandpoint Ranger District road conditions.",
+        "href": "https://www.fs.usda.gov/ipnf"
+      }
+    ]
   }
 ]

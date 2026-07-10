@@ -1061,6 +1061,24 @@
       "jpg": "/images/peaks/optimized/granite-peak-montana-card-300.jpg"
     }
   },
+  "scotchman-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/scotchman-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/scotchman-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/scotchman-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/scotchman-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/scotchman-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/scotchman-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/scotchman-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/scotchman-peak-card-300.jpg"
+    }
+  },
   "mount-saint-helens": {
     "heroDesktop": {
       "webp": "/images/peaks/optimized/mount-saint-helens-hero-1440.webp",

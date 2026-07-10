@@ -905,5 +905,20 @@
       ],
       "notes": "Elevation: ListsOfJohn LiDAR 9,468 ft; traditional sources commonly list 9,466–9,470 ft. Prominence: ListsOfJohn LiDAR 5,007 ft; Peakbagger key-col ~5,008 ft; public sources often list 5,006 ft. Confirm current Crest Trail condition and post-fire recovery status."
     }
+  },
+  {
+    "slug": "scotchman-peak",
+    "dataSource": "Idaho Panhandle National Forests, Friends of Scotchman Peaks Wilderness, Peakbagger, SummitPost, Idaho: A Climbing Guide (Lopez)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-10",
+      "checkedAgainst": [
+        "Idaho Panhandle National Forests",
+        "Friends of Scotchman Peaks Wilderness",
+        "Peakbagger",
+        "SummitPost"
+      ],
+      "notes": "Elevation: LiDAR/public value 7,018 ft; traditional hiking sources often list 7,009 ft; Peakbagger LiDAR previously listed 7,017.6 ft. Prominence: published page value 4,665 ft; Peakbagger clean prominence previously listed 4,658 ft. Coordinates: summit N 48.18882 W 116.08184; trailhead N 48.16439 W 116.09836. Mountain range set to Cabinet Mountains (was Central Montana Rocky Mountains in import)."
+    }
   }
 ]
