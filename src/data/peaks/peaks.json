@@ -757,14 +757,14 @@
     "slug": "mount-moriah-nevada",
     "name": "Mount Moriah",
     "state": "NV",
-    "elevation": 12072,
-    "prominence": 4909,
-    "latitude": 39.2732,
-    "longitude": -114.1988,
+    "elevation": 12065,
+    "prominence": 4906,
+    "latitude": 39.27319,
+    "longitude": -114.19881,
     "isolation": 20.3,
     "mountainRange": "Snake Range",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "quinn-peak",

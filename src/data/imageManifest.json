@@ -1132,5 +1132,23 @@
       "webp": "/images/peaks/optimized/mount-shuksan-card-300.webp",
       "jpg": "/images/peaks/optimized/mount-shuksan-card-300.jpg"
     }
+  },
+  "mount-moriah-nevada": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-moriah-nevada-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-moriah-nevada-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-moriah-nevada-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-moriah-nevada-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-moriah-nevada-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-moriah-nevada-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-moriah-nevada-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-moriah-nevada-card-300.jpg"
+    }
   }
 }

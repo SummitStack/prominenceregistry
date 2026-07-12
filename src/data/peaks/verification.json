@@ -920,5 +920,21 @@
       ],
       "notes": "Elevation: LiDAR/public value 7,018 ft; traditional hiking sources often list 7,009 ft; Peakbagger LiDAR previously listed 7,017.6 ft. Prominence: published page value 4,665 ft; Peakbagger clean prominence previously listed 4,658 ft. Coordinates: summit N 48.18882 W 116.08184; trailhead N 48.16439 W 116.09836. Mountain range set to Cabinet Mountains (was Central Montana Rocky Mountains in import)."
     }
+  },
+  {
+    "slug": "mount-moriah-nevada",
+    "dataSource": "Humboldt-Toiyabe National Forest (Ely Ranger District), Friends of Nevada Wilderness, ListsOfJohn, Girl on a Hike, Stav is Lost, WillHiteWeb, AllTrails",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-12",
+      "checkedAgainst": [
+        "Humboldt-Toiyabe National Forest",
+        "Friends of Nevada Wilderness",
+        "ListsOfJohn",
+        "WillHiteWeb",
+        "Girl on a Hike"
+      ],
+      "notes": "Elevation: published page value 12,065 ft; prior registry/Peakbagger value 12,072 ft. Prominence: published page value 4,906 ft; prior registry value 4,909 ft. Coordinates: summit N 39.27319 W 114.19881; Big Canyon Trailhead N 39.30143 W 114.21142 (9,513 ft). Slug remains mount-moriah-nevada for Nevada disambiguation."
+    }
   }
 ]

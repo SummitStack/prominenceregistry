@@ -4293,5 +4293,82 @@
         "href": "https://www.fs.usda.gov/ipnf"
       }
     ]
+  },
+  {
+    "slug": "mount-moriah-nevada",
+    "difficulty": 2,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–8 hours",
+    "distance": 8.2,
+    "distanceMin": 8.2,
+    "distanceMax": 8.2,
+    "distanceDisplay": "8.2 miles round-trip",
+    "gain": 2552,
+    "gainMin": 2552,
+    "gainMax": 2552,
+    "gainDisplay": "2,552 ft",
+    "season": "June-October",
+    "bestRoute": "Big Canyon Trail",
+    "ydsClass": "2",
+    "permitRequired": false,
+    "permitSeason": "No permit required for day hiking or overnight camping in Mount Moriah Wilderness",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/mount-moriah-nevada.jpg",
+    "hazards": [
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "off-trail-navigation"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "microspikes",
+      "gaiters"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "water-capacity",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "microspikes",
+        "gaiters",
+        "gloves",
+        "insulating-hat"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Big Canyon Road (Forest Road 469) requires high-clearance four-wheel drive under most conditions and can wash out without reliable repair timelines. Start early to clear the exposed summit ridge before afternoon thunderstorms from July through September.",
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Friends of Nevada Wilderness — Mount Moriah",
+        "description": "Wilderness overview, trail summaries, and access notes for Mount Moriah.",
+      "href": "https://www.nevadawilderness.org/mount_moriah_wilderness_plan_your_trip"
+    },
+    {
+      "section": "permits-camping",
+      "label": "Humboldt-Toiyabe National Forest",
+      "description": "Current fire restrictions, road conditions, and Ely Ranger District guidance.",
+      "href": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
+    }
+    ]
   }
 ]
