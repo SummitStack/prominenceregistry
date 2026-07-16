@@ -50,6 +50,16 @@ export async function GET() {
       priority: '0.6',
     }),
     urlEntry({
+      loc: `${SITE_URL}/privacy/`,
+      changefreq: 'yearly',
+      priority: '0.3',
+    }),
+    urlEntry({
+      loc: `${SITE_URL}/terms/`,
+      changefreq: 'yearly',
+      priority: '0.3',
+    }),
+    urlEntry({
       loc: `${SITE_URL}/lists/`,
       changefreq: 'weekly',
       priority: '0.8',
