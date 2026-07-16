@@ -6,6 +6,29 @@ import { SITE_URL } from '../lib/constants';
 
 const pageUrl = `${SITE_URL}/privacy/`;
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/** Escape plain text, then turn URLs and emails into links. */
+function linkify(text: string): string {
+  const escaped = escapeHtml(text);
+  return escaped
+    .replace(/(https?:\/\/[^\s<]+)/g, (match) => {
+      const trailing = match.match(/[.,;:!?)]+$/)?.[0] ?? '';
+      const href = trailing ? match.slice(0, -trailing.length) : match;
+      return `<a href="${href}" rel="noopener noreferrer">${href}</a>${trailing}`;
+    })
+    .replace(
+      /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+      '<a href="mailto:$1">$1</a>',
+    );
+}
+
 const sections = [
   {
     title: 'Overview',
@@ -13,7 +36,7 @@ const sections = [
   },
   {
     title: 'Information We Collect',
-    content: 'We collect limited information about your visit:\n\n• Usage data through Fathom Analytics (IP address, page visits, referrer, device type)\n• Information you voluntarily provide (e.g., when contacting us via email)'
+    content: 'We collect limited information about your visit:\n\n• Anonymized usage data through Fathom Analytics (page visits, referrer, and approximate device/browser type)\n• Information you voluntarily provide (e.g., when contacting us via email)'
   },
   {
     title: 'How We Use Your Information',
@@ -25,7 +48,7 @@ const sections = [
   },
   {
     title: 'Analytics',
-    content: 'We use Fathom Analytics, a privacy-focused analytics service that does not use cookies or collect personal information. Fathom collects anonymized usage data to help us understand site performance. For more information, visit fathom.analytics.'
+    content: 'We use Fathom Analytics, a privacy-focused analytics service that does not use cookies or store personal information. Fathom collects anonymized usage data to help us understand site performance. For more information, visit https://usefathom.com.'
   },
   {
     title: 'Cookies',
@@ -222,7 +245,7 @@ const sections = [
             {sections.map((section) => (
               <>
                 <h2>{section.title}</h2>
-                <p>{section.content}</p>
+                <p set:html={linkify(section.content)} />
               </>
             ))}
           </section>

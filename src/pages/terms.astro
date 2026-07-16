@@ -6,6 +6,29 @@ import { SITE_URL } from '../lib/constants';
 
 const pageUrl = `${SITE_URL}/terms/`;
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/** Escape plain text, then turn URLs and emails into links. */
+function linkify(text: string): string {
+  const escaped = escapeHtml(text);
+  return escaped
+    .replace(/(https?:\/\/[^\s<]+)/g, (match) => {
+      const trailing = match.match(/[.,;:!?)]+$/)?.[0] ?? '';
+      const href = trailing ? match.slice(0, -trailing.length) : match;
+      return `<a href="${href}" rel="noopener noreferrer">${href}</a>${trailing}`;
+    })
+    .replace(
+      /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g,
+      '<a href="mailto:$1">$1</a>',
+    );
+}
+
 const sections = [
   {
     title: 'Acceptance of Terms',
@@ -218,7 +241,7 @@ const sections = [
             {sections.map((section) => (
               <>
                 <h2>{section.title}</h2>
-                <p>{section.content}</p>
+                <p set:html={linkify(section.content)} />
               </>
             ))}
           </section>
