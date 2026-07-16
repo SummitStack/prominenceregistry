@@ -1,0 +1,244 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import FathomAnalytics from '../components/FathomAnalytics.astro';
+import SeoMeta from '../components/SeoMeta.astro';
+import { SITE_URL } from '../lib/constants';
+
+const pageUrl = `${SITE_URL}/privacy/`;
+
+const sections = [
+  {
+    title: 'Overview',
+    content: 'Prominence Registry ("we," "us," "our," or "Site") respects your privacy. This Privacy Policy explains how we collect, use, and protect your information when you visit prominenceregistry.com.'
+  },
+  {
+    title: 'Information We Collect',
+    content: 'We collect limited information about your visit:\n\n• Usage data through Fathom Analytics (IP address, page visits, referrer, device type)\n• Information you voluntarily provide (e.g., when contacting us via email)'
+  },
+  {
+    title: 'How We Use Your Information',
+    content: 'We use collected information to:\n\n• Understand how visitors use our site\n• Improve site performance and user experience\n• Respond to your inquiries\n• Display personalized advertising through Google AdSense'
+  },
+  {
+    title: 'Advertising',
+    content: 'Prominence Registry uses Google AdSense to display advertisements. Google uses cookies and similar technologies to serve ads based on your prior visits to this and other websites. You can opt out of personalized advertising through Google\'s Ads Settings at https://adssettings.google.com.'
+  },
+  {
+    title: 'Analytics',
+    content: 'We use Fathom Analytics, a privacy-focused analytics service that does not use cookies or collect personal information. Fathom collects anonymized usage data to help us understand site performance. For more information, visit fathom.analytics.'
+  },
+  {
+    title: 'Cookies',
+    content: 'Our site uses minimal cookies:\n\n• Google AdSense may set cookies for advertising purposes\n• Fathom Analytics operates without cookies\n• Your browser may store session data\n\nYou can control cookie settings through your browser preferences.'
+  },
+  {
+    title: 'Third-Party Links',
+    content: 'Prominence Registry contains links to external websites. We are not responsible for the privacy practices of third-party sites. We recommend reviewing their privacy policies before providing any information.'
+  },
+  {
+    title: 'Data Security',
+    content: 'We implement reasonable security measures to protect your information. However, no method of transmission over the internet is completely secure. We cannot guarantee absolute security.'
+  },
+  {
+    title: 'Your Rights',
+    content: 'Depending on your location, you may have rights regarding your personal information. If you have questions about your data or wish to request access, deletion, or correction of information we hold, please contact us at info@prominenceregistry.com.'
+  },
+  {
+    title: 'Children\'s Privacy',
+    content: 'Prominence Registry is not intended for children under 13. We do not knowingly collect information from children under 13. If we learn that we have collected information from a child under 13, we will delete it promptly.'
+  },
+  {
+    title: 'Changes to This Policy',
+    content: 'We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date below and, when required, by requesting your consent.'
+  },
+  {
+    title: 'Contact Us',
+    content: 'If you have questions about this Privacy Policy or our privacy practices, please contact us at info@prominenceregistry.com.'
+  }
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <FathomAnalytics />
+    <SeoMeta
+      title="Privacy Policy | Prominence Registry"
+      description="Privacy Policy for Prominence Registry. Learn how we collect and protect your information."
+      canonical={pageUrl}
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Hanken+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style is:inline>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        background: #101418;
+        color: #e0e2e8;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+      }
+      .alpine-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      a { color: inherit; text-decoration: none; }
+      .page-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
+        background: rgba(16, 20, 24, 0.8);
+        border-bottom: 1px solid #404850;
+        transition: box-shadow 0.15s;
+      }
+      .page-nav.nav-scrolled { box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4); }
+      .page-nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+        height: 64px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-inner { padding: 0 48px; }
+      }
+      .page-nav-brand {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: #e0e2e8;
+      }
+      .page-nav-links {
+        display: none;
+        gap: 32px;
+      }
+      @media (min-width: 768px) {
+        .page-nav-links { display: flex; }
+      }
+      .page-nav-links a {
+        color: #c0c7d1;
+        font-weight: 500;
+        transition: color 0.15s;
+      }
+      .page-nav-links a.active {
+        color: #9bcfff;
+        font-weight: 700;
+        border-bottom: 2px solid #9bcfff;
+        padding-bottom: 4px;
+      }
+      .page-nav-links a:hover { color: #9bcfff; }
+      main { padding: 96px 0 80px; }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+      @media (min-width: 768px) {
+        .container { padding: 0 48px; }
+      }
+      .policy-article {
+        max-width: 672px;
+        margin: 0 auto;
+      }
+      .policy-header {
+        margin-bottom: 48px;
+      }
+      .page-title {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #e0e2e8;
+        margin-bottom: 16px;
+      }
+      @media (min-width: 768px) {
+        .page-title { font-size: 56px; }
+      }
+      .policy-accent {
+        width: 64px;
+        height: 4px;
+        background: #9bcfff;
+        border-radius: 999px;
+      }
+      .policy-date {
+        font-size: 14px;
+        color: #8b92a1;
+        margin-top: 16px;
+      }
+      .prose { color: #c0c7d1; line-height: 1.7; }
+      .prose h2 {
+        font-family: 'Hanken Grotesk', system-ui, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #e0e2e8;
+        margin: 32px 0 16px;
+      }
+      .prose h2:first-child { margin-top: 0; }
+      .prose p {
+        margin-bottom: 16px;
+        white-space: pre-line;
+      }
+      .prose a {
+        color: #9bcfff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: color 0.15s;
+      }
+      .prose a:hover { color: #ffbe57; }
+    </style>
+  </head>
+  <body>
+    <nav class="page-nav alpine-blur">
+      <div class="page-nav-inner">
+        <a href="/" class="page-nav-brand">Prominence Registry</a>
+        <div class="page-nav-links">
+          <a href="/#database">Directory</a>
+          <a href="/glossary/">Glossary</a>
+          <a href="/about/">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <article class="policy-article">
+          <header class="policy-header">
+            <h1 class="page-title">Privacy Policy</h1>
+            <div class="policy-accent" aria-hidden="true"></div>
+            <div class="policy-date">Last updated: July 2026</div>
+          </header>
+
+          <section class="prose">
+            {sections.map((section) => (
+              <>
+                <h2>{section.title}</h2>
+                <p>{section.content}</p>
+              </>
+            ))}
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <SiteFooter />
+
+    <script is:inline>
+      window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.page-nav');
+        if (nav) {
+          nav.classList.toggle('nav-scrolled', window.scrollY > 10);
+        }
+      });
+    </script>
+  </body>
+</html>
