@@ -936,5 +936,20 @@
       ],
       "notes": "Elevation: published page value 12,065 ft; prior registry/Peakbagger value 12,072 ft. Prominence: published page value 4,906 ft; prior registry value 4,909 ft. Coordinates: summit N 39.27319 W 114.19881; Big Canyon Trailhead N 39.30143 W 114.21142 (9,513 ft). Slug remains mount-moriah-nevada for Nevada disambiguation."
     }
+  },
+  {
+    "slug": "ruby-dome",
+    "dataSource": "Spring Creek Association, Humboldt-Toiyabe National Forest, SummitPost, ListsOfJohn, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-20",
+      "checkedAgainst": [
+        "Spring Creek Association ActivityReg",
+        "Humboldt-Toiyabe National Forest",
+        "SummitPost",
+        "ListsOfJohn"
+      ],
+      "notes": "Elevation 11,392 ft. Prominence: published page value 4,793 ft; prior registry value 4,810 ft. Gate access fee verified July 20, 2026 via SCA ActivityReg cart ($25 parking + $3.50 processing = $28.50). Stage 1 fire restrictions noted as of June 2026 on Mountain City–Ruby Mountains–Jarbidge RD—confirm current status. Bear presence confirmed; no published canister requirement found for Ruby Mountains Wilderness backcountry. 14-day camping limit is forest-wide USFS regulation. Water reliable to Griswold Lake (9,227 ft); seasonal above. Saddle 10,146 ft. Time estimate 8–12 hours validated across trip reports."
+    }
   }
 ]

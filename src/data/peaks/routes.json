@@ -4361,14 +4361,100 @@
         "section": "route-details",
         "label": "Friends of Nevada Wilderness — Mount Moriah",
         "description": "Wilderness overview, trail summaries, and access notes for Mount Moriah.",
-      "href": "https://www.nevadawilderness.org/mount_moriah_wilderness_plan_your_trip"
+        "href": "https://www.nevadawilderness.org/mount_moriah_wilderness_plan_your_trip"
+      },
+      {
+        "section": "permits-camping",
+        "label": "Humboldt-Toiyabe National Forest",
+        "description": "Current fire restrictions, road conditions, and Ely Ranger District guidance.",
+        "href": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
+      }
+    ]
+  },
+  {
+    "slug": "ruby-dome",
+    "difficulty": 4,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "8–12 hours",
+    "distance": 13,
+    "distanceMin": 12,
+    "distanceMax": 14,
+    "distanceDisplay": "12–14 miles round-trip",
+    "gain": 5400,
+    "gainMin": 5400,
+    "gainMax": 5400,
+    "gainDisplay": "5,400 ft",
+    "season": "June-September",
+    "bestRoute": "West Ridge from Hennen Canyon",
+    "ydsClass": "2",
+    "permitRequired": true,
+    "permitSeason": "Spring Creek Association day pass required year-round for gate access; no federal wilderness permit for day use or overnight camping",
+    "permitFee": "$28.50 per person ($25 parking + $3.50 processing)",
+    "permitStatus": "fee",
+    "heroImage": "/images/peaks/ruby-dome.jpg",
+    "hazards": [
+      "off-trail-navigation",
+      "loose-rock-scree",
+      "lightning-exposure",
+      "wind-extreme-weather",
+      "dehydration",
+      "bears",
+      "avalanche"
+    ],
+    "technicalRequirements": [
+      "off-trail-nav",
+      "rock-scrambling-loose",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "crampons",
+      "ice_axe",
+      "microspikes"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "water-capacity",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "compass"
+      ],
+      "secondary": [
+        "crampons",
+        "ice-axe",
+        "microspikes",
+        "gaiters",
+        "gloves",
+        "insulating-hat",
+        "emergency-comm"
+      ]
     },
-    {
-      "section": "permits-camping",
-      "label": "Humboldt-Toiyabe National Forest",
-      "description": "Current fire restrictions, road conditions, and Ely Ranger District guidance.",
-      "href": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
-    }
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Above Griswold Lake the trail disappears into talus with sparse cairns; the descent is harder to read than the ascent. In spring and early summer, steep snowfields and cornices may require mountaineering crampons and an ice axe—microspikes alone are not enough.",
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "Spring Creek Association Day Pass",
+        "description": "Purchase the private-gate day pass required for Hennen Canyon access ($28.50 total).",
+        "href": "https://springcreekassociation.activityreg.com/daypass_t2.wcs"
+      },
+      {
+        "section": "permits-camping",
+        "label": "Humboldt-Toiyabe National Forest",
+        "description": "Current fire restrictions, wilderness regulations, and Mountain City–Ruby Mountains–Jarbidge Ranger District updates.",
+        "href": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
+      }
     ]
   }
 ]

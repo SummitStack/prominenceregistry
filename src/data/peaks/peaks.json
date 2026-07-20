@@ -862,13 +862,13 @@
     "name": "Ruby Dome",
     "state": "NV",
     "elevation": 11392,
-    "prominence": 4810,
+    "prominence": 4793,
     "latitude": 40.6217,
     "longitude": -115.4754,
     "isolation": 94.7,
     "mountainRange": "Ruby Mountains",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "mount-pinos",
