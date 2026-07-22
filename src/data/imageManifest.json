@@ -1168,5 +1168,23 @@
       "webp": "/images/peaks/optimized/ruby-dome-card-300.webp",
       "jpg": "/images/peaks/optimized/ruby-dome-card-300.jpg"
     }
+  },
+  "quinn-peak": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/quinn-peak-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/quinn-peak-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/quinn-peak-hero-768.webp",
+      "jpg": "/images/peaks/optimized/quinn-peak-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/quinn-peak-card-400.webp",
+      "jpg": "/images/peaks/optimized/quinn-peak-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/quinn-peak-card-300.webp",
+      "jpg": "/images/peaks/optimized/quinn-peak-card-300.jpg"
+    }
   }
 }

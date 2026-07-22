@@ -951,5 +951,20 @@
       ],
       "notes": "Elevation 11,392 ft. Prominence: published page value 4,793 ft; prior registry value 4,810 ft. Gate access fee verified July 20, 2026 via SCA ActivityReg cart ($25 parking + $3.50 processing = $28.50). Stage 1 fire restrictions noted as of June 2026 on Mountain City–Ruby Mountains–Jarbidge RD—confirm current status. Bear presence confirmed; no published canister requirement found for Ruby Mountains Wilderness backcountry. 14-day camping limit is forest-wide USFS regulation. Water reliable to Griswold Lake (9,227 ft); seasonal above. Saddle 10,146 ft. Time estimate 8–12 hours validated across trip reports."
     }
+  },
+  {
+    "slug": "quinn-peak",
+    "dataSource": "ListsOfJohn, BLM Winnemucca District, SummitPost, trip reports (Redbird Mine approach)",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-22",
+      "checkedAgainst": [
+        "ListsOfJohn",
+        "BLM",
+        "SummitPost",
+        "trip reports"
+      ],
+      "notes": "Elevation: published page value 9,098 ft (LiDAR, ListsOfJohn); prior registry value 9,099 ft. Prominence: published page value 4,850 ft (LiDAR, ListsOfJohn); prior registry value 4,879 ft. Coordinates: summit N 41.30333 W 118.41639; Redbird Mine area N 41.2985 W 118.4267. Standard route stats 2.2–2.6 miles / 1,200–1,400 ft from mine parking; longer ~12-mile saddle approach is a minor alternative (one secondary cite ~9 miles unconfirmed). Hero image: contributor photo of the approach road toward Quinn Peak (installed July 22, 2026)."
+    }
   }
 ]

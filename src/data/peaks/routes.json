@@ -4456,5 +4456,74 @@
         "href": "https://www.fs.usda.gov/r04/humboldt-toiyabe"
       }
     ]
+  },
+  {
+    "slug": "quinn-peak",
+    "difficulty": 2,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "2–3 hours",
+    "distance": 2.4,
+    "distanceMin": 2.2,
+    "distanceMax": 2.6,
+    "distanceDisplay": "2.2–2.6 miles round-trip",
+    "gain": 1400,
+    "gainMin": 1200,
+    "gainMax": 1400,
+    "gainDisplay": "1,200–1,400 ft",
+    "season": "late May-October",
+    "bestRoute": "Redbird Mine Road Route",
+    "ydsClass": "2",
+    "permitRequired": false,
+    "permitSeason": "No permit required; summit on BLM land with private thru-road segments on the Bottle Creek approach",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/quinn-peak.jpg",
+    "hazards": [
+      "lightning-exposure",
+      "loose-rock-scree",
+      "dehydration",
+      "wind-extreme-weather",
+      "heat-exhaustion"
+    ],
+    "technicalRequirements": [
+      "off-trail-nav",
+      "alpine-start"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "compass",
+        "emergency-comm",
+        "gloves"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "The summit and upper slopes are fully exposed. Check the forecast before leaving the trailhead, and avoid the upper mountain when thunderstorms or unstable weather are expected. Stay out of all mine shafts and structures.",
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "BLM Winnemucca District",
+        "description": "Public-land status, road conditions, and fire restrictions for the Jackson Mountains area.",
+        "href": "https://www.blm.gov/office/winnemucca-district-office"
+      }
+    ]
   }
 ]

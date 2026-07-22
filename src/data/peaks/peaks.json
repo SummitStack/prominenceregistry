@@ -770,14 +770,14 @@
     "slug": "quinn-peak",
     "name": "Quinn Peak",
     "state": "NV",
-    "elevation": 9099,
-    "prominence": 4879,
-    "latitude": 41.3033,
-    "longitude": -118.4163,
+    "elevation": 9098,
+    "prominence": 4850,
+    "latitude": 41.30333,
+    "longitude": -118.41639,
     "isolation": 29.2,
     "mountainRange": "Jackson Mountains",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "south-yolla-bolly-mountain",
