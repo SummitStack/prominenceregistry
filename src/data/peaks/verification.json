@@ -966,5 +966,20 @@
       ],
       "notes": "Elevation: published page value 9,098 ft (LiDAR, ListsOfJohn); prior registry value 9,099 ft. Prominence: published page value 4,850 ft (LiDAR, ListsOfJohn); prior registry value 4,879 ft. Coordinates: summit N 41.30333 W 118.41639; Redbird Mine area N 41.2985 W 118.4267. Standard route stats 2.2–2.6 miles / 1,200–1,400 ft from mine parking; longer ~12-mile saddle approach is a minor alternative (one secondary cite ~9 miles unconfirmed). Hero image: contributor photo of the approach road toward Quinn Peak (installed July 22, 2026)."
     }
+  },
+  {
+    "slug": "culebra-peak",
+    "dataSource": "Cielo Vista Ranch, 14ers.com, Colorado Mountain Club, ListsOfJohn",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-07-30",
+      "checkedAgainst": [
+        "Cielo Vista Ranch",
+        "14ers.com",
+        "Colorado Mountain Club",
+        "ListsOfJohn"
+      ],
+      "notes": "Elevation 14,053 ft. Prominence: published page value 4,803 ft; prior registry value 4,827 ft. Coordinates: summit N 37.12233 W 105.18573. Access fee $150/person via Cielo Vista Ranch; Fri–Sun only, Jan–Jul; 6:00 AM gate / 6:15 AM lock; 6:00 PM sign-out. Confirm current ranch rules before booking."
+    }
   }
 ]

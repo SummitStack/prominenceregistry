@@ -823,13 +823,13 @@
     "name": "Culebra Peak",
     "state": "CO",
     "elevation": 14053,
-    "prominence": 4827,
-    "latitude": 37.1224,
-    "longitude": -105.1858,
+    "prominence": 4803,
+    "latitude": 37.12233,
+    "longitude": -105.18573,
     "isolation": 35.4,
     "mountainRange": "Culebra Range",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "hyndman-peak",

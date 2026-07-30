@@ -4525,5 +4525,94 @@
         "href": "https://www.blm.gov/office/winnemucca-district-office"
       }
     ]
+  },
+  {
+    "slug": "culebra-peak",
+    "difficulty": 3,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "1 day",
+    "distance": 5,
+    "distanceMin": 5,
+    "distanceMax": 5,
+    "distanceDisplay": "5 miles round-trip",
+    "gain": 2700,
+    "gainMin": 2700,
+    "gainMax": 2700,
+    "gainDisplay": "2,700 ft",
+    "season": "January-July",
+    "bestRoute": "Northwest Ridge",
+    "ydsClass": "2",
+    "permitRequired": true,
+    "permitSeason": "Advance Cielo Vista Ranch reservation required; access Fridays–Sundays, first weekend of January through last weekend of July only",
+    "permitFee": "$150 per person",
+    "permitStatus": "fee",
+    "heroImage": "/images/peaks/culebra-peak.jpg",
+    "hazards": [
+      "wind-extreme-weather",
+      "lightning-exposure",
+      "avalanche",
+      "off-trail-navigation",
+      "loose-rock-scree",
+      "hypothermia",
+      "altitude-sickness"
+    ],
+    "technicalRequirements": [
+      "alpine-start",
+      "off-trail-nav",
+      "altitude-acclimatization",
+      "snow-travel"
+    ],
+    "gear": [
+      "trekking_poles",
+      "waterproof_shell",
+      "insulating_layer",
+      "gaiters",
+      "microspikes",
+      "crampons",
+      "ice_axe",
+      "avalanche_kit"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "gaiters",
+        "microspikes",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "water-capacity"
+      ],
+      "secondary": [
+        "crampons",
+        "ice-axe",
+        "avalanche-gear",
+        "gloves",
+        "insulating-hat",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": true,
+    "callout": "Culebra Peak has no public route. Access is entirely through Cielo Vista Ranch and requires an advance $150 per-person reservation; the North Headquarters gate closes at 6:15 AM.",
+    "hasSafetyNote": true,
+    "safetyNote": "Climbers who fail to sign out by 6:00 PM trigger the ranch's emergency-response procedure and are required under the ranch's waiver terms to make a $100 contribution to Costilla County Search and Rescue. The ridge is fully exposed above treeline; winter winds of 35–45 mph with gusts to 75 mph have turned parties back.",
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "Cielo Vista Ranch — Book Climbing",
+        "description": "Official $150 per-person reservation, waiver upload, and climbing-access calendar for Culebra Peak.",
+        "href": "https://www.cielo-vista-ranch.info/product/hiking-culebra/"
+      },
+      {
+        "section": "route-details",
+        "label": "Cielo Vista Ranch Climbing Info",
+        "description": "Gate times, vehicle requirements, season dates, and ranch climbing rules.",
+        "href": "https://www.cielo-vista-ranch.info/activities/climbing-hiking/"
+      }
+    ]
   }
 ]
