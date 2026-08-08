@@ -255,7 +255,7 @@
     "latitude": 32.70167,
     "longitude": -109.87141,
     "isolation": 83,
-    "mountainRange": "Pinale\u00f1o Mountains",
+    "mountainRange": "Pinaleño Mountains",
     "easiestYdsClass": "1",
     "published": true
   },
@@ -796,14 +796,14 @@
     "slug": "mount-tobin",
     "name": "Mount Tobin",
     "state": "NV",
-    "elevation": 9778,
-    "prominence": 4851,
-    "latitude": 40.3765,
-    "longitude": -117.5261,
+    "elevation": 9779,
+    "prominence": 4831,
+    "latitude": 40.37649,
+    "longitude": -117.52606,
     "isolation": 35.4,
     "mountainRange": "Tobin Range",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "hole-in-the-mountain-peak",

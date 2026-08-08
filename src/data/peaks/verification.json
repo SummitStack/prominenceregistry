@@ -981,5 +981,20 @@
       ],
       "notes": "Elevation 14,053 ft. Prominence: published page value 4,803 ft; prior registry value 4,827 ft. Coordinates: summit N 37.12233 W 105.18573. Access fee $150/person via Cielo Vista Ranch; Fri–Sun only, Jan–Jul; 6:00 AM gate / 6:15 AM lock; 6:00 PM sign-out. Confirm current ranch rules before booking."
     }
+  },
+  {
+    "slug": "mount-tobin",
+    "dataSource": "BLM Winnemucca District, SummitPost, ListsOfJohn, trip reports",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-08-08",
+      "checkedAgainst": [
+        "BLM",
+        "SummitPost",
+        "ListsOfJohn",
+        "trip reports"
+      ],
+      "notes": "Elevation: published page value 9,779 ft (LiDAR); USGS/topographic map elevation commonly listed as 9,775 ft; prior registry value 9,778 ft. Prominence: published page value 4,831 ft; prior registry value 4,851 ft. Summit coords N 40.37649 W 117.52606. Trailhead GPS for Point 8682 parking not independently verified—SummitPost gives 40.3219, -117.5194 for the south ridge junction at 6,660 ft (~2,000 vertical feet below parking). Hero image installed from SummitPost (images-sp.summitpost.org /901772.jpg) August 8, 2026. Access across private ranch land before BLM is traditional but not a guaranteed right-of-way."
+    }
   }
 ]

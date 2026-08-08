@@ -4614,5 +4614,76 @@
         "href": "https://www.cielo-vista-ranch.info/activities/climbing-hiking/"
       }
     ]
+  },
+  {
+    "slug": "mount-tobin",
+    "difficulty": 2,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "3–4 hours",
+    "distance": 3,
+    "distanceMin": 3,
+    "distanceMax": 19,
+    "distanceDisplay": "3–19 miles round-trip",
+    "gain": 1450,
+    "gainMin": 1450,
+    "gainMax": 5100,
+    "gainDisplay": "1,450–5,100+ ft",
+    "season": "June-October",
+    "bestRoute": "Southeast Ridge from Point 8682",
+    "ydsClass": "2",
+    "permitRequired": false,
+    "permitSeason": "No BLM permit required for the summit; southern approach crosses private ranch land—confirm access before travel",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/mount-tobin.jpg",
+    "hazards": [
+      "off-trail-navigation",
+      "dehydration",
+      "lightning-exposure",
+      "heat-exhaustion",
+      "wind-extreme-weather",
+      "loose-rock-scree"
+    ],
+    "technicalRequirements": [
+      "off-trail-nav",
+      "alpine-start"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "water_capacity"
+    ],
+    "requiredGear": {
+      "priority": [
+        "water-capacity",
+        "trekking-poles",
+        "shell-jacket",
+        "insulating-layer",
+        "sunscreen",
+        "sunglasses",
+        "hat",
+        "compass"
+      ],
+      "secondary": [
+        "emergency-comm",
+        "gloves",
+        "insulating-hat"
+      ]
+    },
+    "hasCallout": true,
+    "callout": "Road conditions determine the length of the day. A low-range 4WD can park near Point 8682 for a ~3-mile hike; without it, lower starts from Golconda Canyon can exceed 14 miles.",
+    "hasSafetyNote": true,
+    "safetyNote": "The southern approach crosses private ranch land before reaching BLM public land. Confirm current access with Vesco Ranch or the BLM Winnemucca District before relying on the route; leave gates as found, stay on the main road, and avoid buildings.",
+    "relatedLinks": [
+      {
+        "section": "permits-camping",
+        "label": "BLM Winnemucca District",
+        "description": "Public-land status, WSA management, and access contacts for the Tobin Range area.",
+        "href": "https://www.blm.gov/office/winnemucca-district-office"
+      }
+    ]
   }
 ]

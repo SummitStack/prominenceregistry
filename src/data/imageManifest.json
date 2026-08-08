@@ -1204,5 +1204,23 @@
       "webp": "/images/peaks/optimized/culebra-peak-card-300.webp",
       "jpg": "/images/peaks/optimized/culebra-peak-card-300.jpg"
     }
+  },
+  "mount-tobin": {
+    "heroDesktop": {
+      "webp": "/images/peaks/optimized/mount-tobin-hero-1440.webp",
+      "jpg": "/images/peaks/optimized/mount-tobin-hero-1440.jpg"
+    },
+    "heroMobile": {
+      "webp": "/images/peaks/optimized/mount-tobin-hero-768.webp",
+      "jpg": "/images/peaks/optimized/mount-tobin-hero-768.jpg"
+    },
+    "cardDesktop": {
+      "webp": "/images/peaks/optimized/mount-tobin-card-400.webp",
+      "jpg": "/images/peaks/optimized/mount-tobin-card-400.jpg"
+    },
+    "cardMobile": {
+      "webp": "/images/peaks/optimized/mount-tobin-card-300.webp",
+      "jpg": "/images/peaks/optimized/mount-tobin-card-300.jpg"
+    }
   }
 }
