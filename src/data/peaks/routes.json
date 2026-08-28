@@ -4685,5 +4685,82 @@
         "href": "https://www.blm.gov/office/winnemucca-district-office"
       }
     ]
+  },
+  {
+    "slug": "uncompahgre-peak",
+    "difficulty": 2,
+    "days": 1,
+    "daysMin": 1,
+    "daysMax": 1,
+    "daysDisplay": "6–8 hours",
+    "distance": 7.5,
+    "distanceMin": 7.5,
+    "distanceMax": 15.5,
+    "distanceDisplay": "7.5–15.5 miles round-trip depending on 4WD access",
+    "gain": 3000,
+    "gainMin": 3000,
+    "gainMax": 5500,
+    "gainDisplay": "3,000–5,500 ft depending on 4WD access",
+    "season": "June-September",
+    "bestRoute": "South Ridge via Nellie Creek",
+    "ydsClass": "2",
+    "permitRequired": false,
+    "permitSeason": "No permit or registration required; check current GMUG closures, group limits, and fire restrictions",
+    "permitFee": "Free",
+    "permitStatus": "none",
+    "heroImage": "/images/peaks/uncompahgre-peak.jpg",
+    "hazards": [
+      "lightning-exposure",
+      "loose-rock-scree",
+      "rockfall",
+      "water-crossing",
+      "wind-extreme-weather",
+      "whiteout-conditions"
+    ],
+    "technicalRequirements": [
+      "rock-scrambling-loose",
+      "alpine-start",
+      "snow-travel"
+    ],
+    "gear": [
+      "trekking_poles",
+      "insulating_layer",
+      "waterproof_shell",
+      "insulating_hat",
+      "water_capacity"
+    ],
+    "requiredGear": {
+      "priority": [
+        "trekking-poles",
+        "water-capacity",
+        "shell-jacket",
+        "insulating-layer",
+        "insulating-hat",
+        "sunscreen",
+        "sunglasses",
+        "hat"
+      ],
+      "secondary": [
+        "gaiters",
+        "microspikes",
+        "crampons",
+        "ice-axe",
+        "gloves",
+        "compass",
+        "emergency-comm"
+      ]
+    },
+    "hasCallout": false,
+    "callout": "",
+    "hasSafetyNote": true,
+    "safetyNote": "Start by first light and plan to be off the exposed ridge and summit plateau before afternoon thunderstorms. The west-face crux is steep and loose; protect climbers below from rockfall and use an alternate line or turn around if conditions are icy or unstable.",
+    "relatedLinks": [
+      {
+        "section": "route-details",
+        "label": "Grand Mesa, Uncompahgre and Gunnison National Forests",
+        "description": "Current trailhead access, closures, group limits, fire restrictions, and forest alerts.",
+        "href": "https://www.fs.usda.gov/r02/gmug"
+      }
+    ]
   }
 ]

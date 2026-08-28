@@ -1407,14 +1407,14 @@
     "slug": "uncompahgre-peak",
     "name": "Uncompahgre Peak",
     "state": "CO",
-    "elevation": 14321,
-    "prominence": 4277,
-    "latitude": 38.0717,
-    "longitude": -107.4621,
+    "elevation": 14318,
+    "prominence": 4249,
+    "latitude": 38.07168,
+    "longitude": -107.46211,
     "isolation": 85.0,
     "mountainRange": "San Juan Mountains",
     "easiestYdsClass": "2",
-    "published": false
+    "published": true
   },
   {
     "slug": "scott-peak",

@@ -996,5 +996,20 @@
       ],
       "notes": "Elevation: published page value 9,779 ft (LiDAR); USGS/topographic map elevation commonly listed as 9,775 ft; prior registry value 9,778 ft. Prominence: published page value 4,831 ft; prior registry value 4,851 ft. Summit coords N 40.37649 W 117.52606. Trailhead GPS for Point 8682 parking not independently verified—SummitPost gives 40.3219, -117.5194 for the south ridge junction at 6,660 ft (~2,000 vertical feet below parking). Hero image installed from SummitPost (images-sp.summitpost.org /901772.jpg) August 8, 2026. Access across private ranch land before BLM is traditional but not a guaranteed right-of-way."
     }
+  },
+  {
+    "slug": "uncompahgre-peak",
+    "dataSource": "Grand Mesa, Uncompahgre and Gunnison National Forests, USGS, ListsOfJohn, route documentation",
+    "verification": {
+      "status": "verified",
+      "lastChecked": "2026-08-27",
+      "checkedAgainst": [
+        "Grand Mesa, Uncompahgre and Gunnison National Forests",
+        "USGS",
+        "ListsOfJohn",
+        "route documentation"
+      ],
+      "notes": "Elevation: published page value 14,318 ft (LiDAR); USGS/topographic maps commonly list 14,309 ft; prior registry value 14,321 ft. Prominence: published page value 4,249 ft (LiDAR); map-based sources commonly list 4,242 ft; prior registry value 4,277 ft. Summit coordinates N 38.07168 W 107.46211; Nellie Creek Trailhead N 38.11361 W 107.44528. Standard South Ridge stats: 7.5 miles round-trip and 3,000 ft gain from 4WD trailhead; 2WD start adds approximately 8 miles and 2,500 ft gain. Confirm current GMUG forest orders, road conditions, stream crossings, group limits, and fire restrictions before travel."
+    }
   }
 ]
